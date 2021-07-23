@@ -23,7 +23,7 @@ foreach ($framework in $xmlData.Frameworks.Framework)
     $documentationFiles = (Get-ChildItem -Path $prefix -Filter *.xml -Recurse -ErrorAction SilentlyContinue -Force)
     foreach($docXml in $documentationFiles)
     {
-        $targetImport = $prefix + "\" + $docXml
+        $targetImport = $docXml
         $importElement = $xmlData.CreateElement("import")
         $importElement.InnerText = $targetImport
         $framework.AppendChild($importElement)
