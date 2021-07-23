@@ -19,6 +19,7 @@ $xmlData = [xml]$data
 foreach ($framework in $xmlData.Frameworks.Framework)
 {
     $prefix = $framework.attributes['Source'].value
+    Write-Host $prefix
     $documentationFiles = (Get-ChildItem -Path $prefix -Filter *.xml -Recurse -ErrorAction SilentlyContinue -Force)
     foreach($docXml in $documentationFiles)
     {
