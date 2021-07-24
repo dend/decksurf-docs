@@ -7,3 +7,7 @@
 - [CLI & Base Plugins](https://github.com/dend/decksurf)
 - [Software Development Kit](https://github.com/dend/decksurf-SDK)
 - [Documentation](https://github.com/dend/decksurf-docs)
+
+## Questions & Feedback
+
+Reach out to [Den Delimarsky](https://den.dev) on [Twitter](https://twitter.com/denniscode).
