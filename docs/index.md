@@ -1,6 +1,6 @@
 # DeckSurf - Open Stream Deck SDK & Tooling
 
-[DeckSurf](https://deck.surf) is an open-source project designed to make it easy to do whatever you want with a Stream Deck device.
+[DeckSurf](https://deck.surf) is an open-source project designed to make it easy to do whatever you want with a Stream Deck device. Keep in mind that this is **not the official SDK** - if you want to build plugins for the official Stream Deck software, you need to use the [Elgato tooling](https://developer.elgato.com/documentation/stream-deck/sdk/overview/).
 
 ## Repositories
 
