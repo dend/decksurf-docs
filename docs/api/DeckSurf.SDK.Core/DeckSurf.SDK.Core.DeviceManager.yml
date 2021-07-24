@@ -9,7 +9,6 @@ items:
   - DeckSurf.SDK.Core.DeviceManager.IsSupported(System.Int32,System.Int32)
   - DeckSurf.SDK.Core.DeviceManager.SetKey(DeckSurf.SDK.Models.ConnectedDevice,System.Int32,System.Byte[])
   - DeckSurf.SDK.Core.DeviceManager.SetupDevice(DeckSurf.SDK.Models.ConfigurationProfile)
-  - DeckSurf.SDK.Core.DeviceManager.SetupDeviceButtonMap(DeckSurf.SDK.Models.ConnectedDevice,System.Collections.Generic.IEnumerable{DeckSurf.SDK.Models.CommandMapping})
   langs:
   - csharp
   name: DeviceManager
@@ -98,18 +97,19 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Core
+  summary: Determines whether a given vendor ID (VID) and product ID (PID) are supported by the SDK. VID and PID should be representing a Stream Deck device.
   syntax:
     content: public static bool IsSupported (int vid, int pid);
     parameters:
     - id: vid
       type: System.Int32
-      description: ''
+      description: Device VID.
     - id: pid
       type: System.Int32
-      description: ''
+      description: Device PID.
     return:
       type: System.Boolean
-      description: ''
+      description: True if device is supported, false if not.
     content.csharp: public static bool IsSupported (int vid, int pid);
   overload: DeckSurf.SDK.Core.DeviceManager.IsSupported*
   exceptions: []
@@ -168,47 +168,18 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Core
+  summary: Gets a connected Stream Deck device based on a pre-defined configuration profiles.
   syntax:
     content: public static DeckSurf.SDK.Models.ConnectedDevice SetupDevice (DeckSurf.SDK.Models.ConfigurationProfile profile);
     parameters:
     - id: profile
       type: DeckSurf.SDK.Models.ConfigurationProfile
-      description: ''
+      description: An instance representing the pre-defined configuration profile.
     return:
       type: DeckSurf.SDK.Models.ConnectedDevice
-      description: ''
+      description: If the call is successful, returns a Stream Deck device.
     content.csharp: public static DeckSurf.SDK.Models.ConnectedDevice SetupDevice (DeckSurf.SDK.Models.ConfigurationProfile profile);
   overload: DeckSurf.SDK.Core.DeviceManager.SetupDevice*
-  exceptions: []
-  modifiers.csharp:
-  - public
-  - static
-  monikers:
-  - net5.0
-- uid: DeckSurf.SDK.Core.DeviceManager.SetupDeviceButtonMap(DeckSurf.SDK.Models.ConnectedDevice,System.Collections.Generic.IEnumerable{DeckSurf.SDK.Models.CommandMapping})
-  commentId: M:DeckSurf.SDK.Core.DeviceManager.SetupDeviceButtonMap(DeckSurf.SDK.Models.ConnectedDevice,System.Collections.Generic.IEnumerable{DeckSurf.SDK.Models.CommandMapping})
-  id: SetupDeviceButtonMap(DeckSurf.SDK.Models.ConnectedDevice,System.Collections.Generic.IEnumerable{DeckSurf.SDK.Models.CommandMapping})
-  parent: DeckSurf.SDK.Core.DeviceManager
-  langs:
-  - csharp
-  name: SetupDeviceButtonMap(ConnectedDevice, IEnumerable<CommandMapping>)
-  nameWithType: DeviceManager.SetupDeviceButtonMap(ConnectedDevice, IEnumerable<CommandMapping>)
-  fullName: DeckSurf.SDK.Core.DeviceManager.SetupDeviceButtonMap(ConnectedDevice, IEnumerable<CommandMapping>)
-  type: Method
-  assemblies:
-  - DeckSurf.SDK
-  namespace: DeckSurf.SDK.Core
-  syntax:
-    content: public static void SetupDeviceButtonMap (DeckSurf.SDK.Models.ConnectedDevice device, System.Collections.Generic.IEnumerable<DeckSurf.SDK.Models.CommandMapping> buttonMap);
-    parameters:
-    - id: device
-      type: DeckSurf.SDK.Models.ConnectedDevice
-      description: ''
-    - id: buttonMap
-      type: System.Collections.Generic.IEnumerable{DeckSurf.SDK.Models.CommandMapping}
-      description: ''
-    content.csharp: public static void SetupDeviceButtonMap (DeckSurf.SDK.Models.ConnectedDevice device, System.Collections.Generic.IEnumerable<DeckSurf.SDK.Models.CommandMapping> buttonMap);
-  overload: DeckSurf.SDK.Core.DeviceManager.SetupDeviceButtonMap*
   exceptions: []
   modifiers.csharp:
   - public
@@ -329,37 +300,6 @@ references:
   name: ConfigurationProfile
   nameWithType: ConfigurationProfile
   fullName: DeckSurf.SDK.Models.ConfigurationProfile
-- uid: DeckSurf.SDK.Core.DeviceManager.SetupDeviceButtonMap(DeckSurf.SDK.Models.ConnectedDevice,System.Collections.Generic.IEnumerable{DeckSurf.SDK.Models.CommandMapping})
-  parent: DeckSurf.SDK.Core.DeviceManager
-  isExternal: false
-  name: SetupDeviceButtonMap(ConnectedDevice, IEnumerable<CommandMapping>)
-  nameWithType: DeviceManager.SetupDeviceButtonMap(ConnectedDevice, IEnumerable<CommandMapping>)
-  fullName: DeckSurf.SDK.Core.DeviceManager.SetupDeviceButtonMap(ConnectedDevice, IEnumerable<CommandMapping>)
-  type: method
-- uid: DeckSurf.SDK.Models.CommandMapping
-  name: CommandMapping
-  nameWithType: CommandMapping
-  fullName: DeckSurf.SDK.Models.CommandMapping
-- uid: System.Collections.Generic.IEnumerable{DeckSurf.SDK.Models.CommandMapping}
-  parent: System.Collections.Generic
-  name: IEnumerable<CommandMapping>
-  nameWithType: IEnumerable<CommandMapping>
-  fullName: System.Collections.Generic.IEnumerable<DeckSurf.SDK.Models.CommandMapping>
-  spec.csharp:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
-    nameWithType: IEnumerable
-    fullName: System.Collections.Generic.IEnumerable
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: DeckSurf.SDK.Models.CommandMapping
-    name: CommandMapping
-    nameWithType: CommandMapping
-    fullName: DeckSurf.SDK.Models.CommandMapping
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
 - uid: DeckSurf.SDK.Core.DeviceManager.#ctor*
   commentId: Overload:DeckSurf.SDK.Core.DeviceManager.#ctor
   parent: DeckSurf.SDK.Core.DeviceManager
@@ -407,16 +347,6 @@ references:
   name: SetupDevice
   nameWithType: DeviceManager.SetupDevice
   fullName: DeckSurf.SDK.Core.DeviceManager.SetupDevice
-  monikers:
-  - net5.0
-  type: method
-- uid: DeckSurf.SDK.Core.DeviceManager.SetupDeviceButtonMap*
-  commentId: Overload:DeckSurf.SDK.Core.DeviceManager.SetupDeviceButtonMap
-  parent: DeckSurf.SDK.Core.DeviceManager
-  isExternal: false
-  name: SetupDeviceButtonMap
-  nameWithType: DeviceManager.SetupDeviceButtonMap
-  fullName: DeckSurf.SDK.Core.DeviceManager.SetupDeviceButtonMap
   monikers:
   - net5.0
   type: method

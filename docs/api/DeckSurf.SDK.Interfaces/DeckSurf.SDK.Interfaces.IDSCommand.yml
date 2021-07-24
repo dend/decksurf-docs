@@ -42,6 +42,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Interfaces
+  summary: Gets the description of the command.
   syntax:
     content: public string Description { get; }
     return:
@@ -68,18 +69,19 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Interfaces
+  summary: Function that is executed when the command is triggered by a mapped button.
   syntax:
     content: public void ExecuteOnAction (DeckSurf.SDK.Models.CommandMapping mappedCommand, DeckSurf.SDK.Models.ConnectedDevice mappedDevice, int activatingButton = -1);
     parameters:
     - id: mappedCommand
       type: DeckSurf.SDK.Models.CommandMapping
-      description: ''
+      description: Instance of a command mapped to a button.
     - id: mappedDevice
       type: DeckSurf.SDK.Models.ConnectedDevice
-      description: ''
+      description: Connected Stream Deck device.
     - id: activatingButton
       type: System.Int32
-      description: ''
+      description: The numeric ID of the button activating the command. -1 is used for any button on the Stream Deck surface.
     content.csharp: public void ExecuteOnAction (DeckSurf.SDK.Models.CommandMapping mappedCommand, DeckSurf.SDK.Models.ConnectedDevice mappedDevice, int activatingButton = -1);
   overload: DeckSurf.SDK.Interfaces.IDSCommand.ExecuteOnAction*
   exceptions: []
@@ -100,15 +102,16 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Interfaces
+  summary: Function that is executed when the command is initialized by the plugin loader.
   syntax:
     content: public void ExecuteOnActivation (DeckSurf.SDK.Models.CommandMapping mappedCommand, DeckSurf.SDK.Models.ConnectedDevice mappedDevice);
     parameters:
     - id: mappedCommand
       type: DeckSurf.SDK.Models.CommandMapping
-      description: ''
+      description: Instance of a command mapped to a button.
     - id: mappedDevice
       type: DeckSurf.SDK.Models.ConnectedDevice
-      description: ''
+      description: Connected Stream Deck device.
     content.csharp: public void ExecuteOnActivation (DeckSurf.SDK.Models.CommandMapping mappedCommand, DeckSurf.SDK.Models.ConnectedDevice mappedDevice);
   overload: DeckSurf.SDK.Interfaces.IDSCommand.ExecuteOnActivation*
   exceptions: []
@@ -129,6 +132,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Interfaces
+  summary: Gets the name of the command.
   syntax:
     content: public string Name { get; }
     return:
