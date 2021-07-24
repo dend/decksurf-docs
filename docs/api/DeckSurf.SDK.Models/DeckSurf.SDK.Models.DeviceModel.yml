@@ -1,0 +1,171 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Models.DeviceModel
+  commentId: T:DeckSurf.SDK.Models.DeviceModel
+  id: DeviceModel
+  children:
+  - DeckSurf.SDK.Models.DeviceModel.MINI
+  - DeckSurf.SDK.Models.DeviceModel.ORIGINAL
+  - DeckSurf.SDK.Models.DeviceModel.ORIGINAL_V2
+  - DeckSurf.SDK.Models.DeviceModel.XL
+  langs:
+  - csharp
+  name: DeviceModel
+  nameWithType: DeckSurf.SDK.Models.DeviceModel
+  fullName: DeckSurf.SDK.Models.DeviceModel
+  type: Enum
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  syntax:
+    content: public enum DeviceModel
+    content.csharp: public enum DeviceModel
+  inheritance:
+  - System.Enum
+  modifiers.csharp:
+  - public
+  monikers:
+  - net5.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net5.0
+- uid: DeckSurf.SDK.Models.DeviceModel.MINI
+  commentId: F:DeckSurf.SDK.Models.DeviceModel.MINI
+  id: MINI
+  parent: DeckSurf.SDK.Models.DeviceModel
+  langs:
+  - csharp
+  name: MINI
+  nameWithType: DeviceModel.MINI
+  fullName: DeckSurf.SDK.Models.DeviceModel.MINI
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  syntax:
+    content: MINI
+    return:
+      type: DeckSurf.SDK.Models.DeviceModel
+      description: ''
+    content.csharp: MINI
+  exceptions: []
+  monikers:
+  - net5.0
+  literalValue: "99"
+- uid: DeckSurf.SDK.Models.DeviceModel.ORIGINAL
+  commentId: F:DeckSurf.SDK.Models.DeviceModel.ORIGINAL
+  id: ORIGINAL
+  parent: DeckSurf.SDK.Models.DeviceModel
+  langs:
+  - csharp
+  name: ORIGINAL
+  nameWithType: DeviceModel.ORIGINAL
+  fullName: DeckSurf.SDK.Models.DeviceModel.ORIGINAL
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  syntax:
+    content: ORIGINAL
+    return:
+      type: DeckSurf.SDK.Models.DeviceModel
+      description: ''
+    content.csharp: ORIGINAL
+  exceptions: []
+  monikers:
+  - net5.0
+  literalValue: "96"
+- uid: DeckSurf.SDK.Models.DeviceModel.ORIGINAL_V2
+  commentId: F:DeckSurf.SDK.Models.DeviceModel.ORIGINAL_V2
+  id: ORIGINAL_V2
+  parent: DeckSurf.SDK.Models.DeviceModel
+  langs:
+  - csharp
+  name: ORIGINAL_V2
+  nameWithType: DeviceModel.ORIGINAL_V2
+  fullName: DeckSurf.SDK.Models.DeviceModel.ORIGINAL_V2
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  syntax:
+    content: ORIGINAL_V2
+    return:
+      type: DeckSurf.SDK.Models.DeviceModel
+      description: ''
+    content.csharp: ORIGINAL_V2
+  exceptions: []
+  monikers:
+  - net5.0
+  literalValue: "109"
+- uid: DeckSurf.SDK.Models.DeviceModel.XL
+  commentId: F:DeckSurf.SDK.Models.DeviceModel.XL
+  id: XL
+  parent: DeckSurf.SDK.Models.DeviceModel
+  langs:
+  - csharp
+  name: XL
+  nameWithType: DeviceModel.XL
+  fullName: DeckSurf.SDK.Models.DeviceModel.XL
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  syntax:
+    content: XL
+    return:
+      type: DeckSurf.SDK.Models.DeviceModel
+      description: ''
+    content.csharp: XL
+  exceptions: []
+  monikers:
+  - net5.0
+  literalValue: "108"
+references:
+- uid: DeckSurf.SDK.Models
+  commentId: N:DeckSurf.SDK.Models
+  isExternal: false
+  name: DeckSurf.SDK.Models
+  nameWithType: DeckSurf.SDK.Models
+  fullName: DeckSurf.SDK.Models
+  type: namespace
+- uid: System.Enum
+  parent: System
+  isExternal: true
+  name: Enum
+  nameWithType: Enum
+  fullName: System.Enum
+- uid: DeckSurf.SDK.Models.DeviceModel.MINI
+  parent: DeckSurf.SDK.Models.DeviceModel
+  isExternal: false
+  name: MINI
+  nameWithType: DeviceModel.MINI
+  fullName: DeckSurf.SDK.Models.DeviceModel.MINI
+  type: field
+- uid: DeckSurf.SDK.Models.DeviceModel
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: DeviceModel
+  nameWithType: DeviceModel
+  fullName: DeckSurf.SDK.Models.DeviceModel
+- uid: DeckSurf.SDK.Models.DeviceModel.ORIGINAL
+  parent: DeckSurf.SDK.Models.DeviceModel
+  isExternal: false
+  name: ORIGINAL
+  nameWithType: DeviceModel.ORIGINAL
+  fullName: DeckSurf.SDK.Models.DeviceModel.ORIGINAL
+  type: field
+- uid: DeckSurf.SDK.Models.DeviceModel.ORIGINAL_V2
+  parent: DeckSurf.SDK.Models.DeviceModel
+  isExternal: false
+  name: ORIGINAL_V2
+  nameWithType: DeviceModel.ORIGINAL_V2
+  fullName: DeckSurf.SDK.Models.DeviceModel.ORIGINAL_V2
+  type: field
+- uid: DeckSurf.SDK.Models.DeviceModel.XL
+  parent: DeckSurf.SDK.Models.DeviceModel
+  isExternal: false
+  name: XL
+  nameWithType: DeviceModel.XL
+  fullName: DeckSurf.SDK.Models.DeviceModel.XL
+  type: field

@@ -1,0 +1,93 @@
+### YamlMime:TableOfContent
+- uid: DeckSurf.SDK.Core
+  name: DeckSurf.SDK.Core
+  items:
+  - uid: DeckSurf.SDK.Core.DeviceConstants
+    name: DeviceConstants
+    monikers:
+    - net5.0
+  - uid: DeckSurf.SDK.Core.DeviceManager
+    name: DeviceManager
+    monikers:
+    - net5.0
+  monikers:
+  - net5.0
+- uid: DeckSurf.SDK.Interfaces
+  name: DeckSurf.SDK.Interfaces
+  items:
+  - uid: DeckSurf.SDK.Interfaces.IDSCommand
+    name: IDSCommand
+    monikers:
+    - net5.0
+  - uid: DeckSurf.SDK.Interfaces.IDSPlugin
+    name: IDSPlugin
+    monikers:
+    - net5.0
+  monikers:
+  - net5.0
+- uid: DeckSurf.SDK.Models
+  name: DeckSurf.SDK.Models
+  items:
+  - uid: DeckSurf.SDK.Models.ButtonEventKind
+    name: ButtonEventKind
+    monikers:
+    - net5.0
+  - uid: DeckSurf.SDK.Models.ButtonPressEventArgs
+    name: ButtonPressEventArgs
+    monikers:
+    - net5.0
+  - uid: DeckSurf.SDK.Models.CommandMapping
+    name: CommandMapping
+    monikers:
+    - net5.0
+  - uid: DeckSurf.SDK.Models.CompatibleWithAttribute
+    name: CompatibleWithAttribute
+    monikers:
+    - net5.0
+  - uid: DeckSurf.SDK.Models.ConfigurationProfile
+    name: ConfigurationProfile
+    monikers:
+    - net5.0
+  - uid: DeckSurf.SDK.Models.ConnectedDevice
+    name: ConnectedDevice
+    monikers:
+    - net5.0
+  - uid: DeckSurf.SDK.Models.ConnectedDevice.ReceivedButtonPressHandler
+    name: ConnectedDevice.ReceivedButtonPressHandler
+    monikers:
+    - net5.0
+  - uid: DeckSurf.SDK.Models.DeviceModel
+    name: DeviceModel
+    monikers:
+    - net5.0
+  - uid: DeckSurf.SDK.Models.PluginMetadata
+    name: PluginMetadata
+    monikers:
+    - net5.0
+  - uid: DeckSurf.SDK.Models.RGBQUAD
+    name: RGBQUAD
+    monikers:
+    - net5.0
+  - uid: DeckSurf.SDK.Models.SIIGBF
+    name: SIIGBF
+    monikers:
+    - net5.0
+  monikers:
+  - net5.0
+- uid: DeckSurf.SDK.Util
+  name: DeckSurf.SDK.Util
+  items:
+  - uid: DeckSurf.SDK.Util.ConfigurationHelper
+    name: ConfigurationHelper
+    monikers:
+    - net5.0
+  - uid: DeckSurf.SDK.Util.DataHelpers
+    name: DataHelpers
+    monikers:
+    - net5.0
+  - uid: DeckSurf.SDK.Util.ImageHelpers
+    name: ImageHelpers
+    monikers:
+    - net5.0
+  monikers:
+  - net5.0

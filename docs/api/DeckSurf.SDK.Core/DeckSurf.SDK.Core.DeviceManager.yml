@@ -1,0 +1,421 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Core.DeviceManager
+  commentId: T:DeckSurf.SDK.Core.DeviceManager
+  id: DeviceManager
+  children:
+  - DeckSurf.SDK.Core.DeviceManager.#ctor
+  - DeckSurf.SDK.Core.DeviceManager.GetDeviceList
+  - DeckSurf.SDK.Core.DeviceManager.IsSupported(System.Int32,System.Int32)
+  - DeckSurf.SDK.Core.DeviceManager.SetKey(DeckSurf.SDK.Models.ConnectedDevice,System.Int32,System.Byte[])
+  - DeckSurf.SDK.Core.DeviceManager.SetupDevice(DeckSurf.SDK.Models.ConfigurationProfile)
+  - DeckSurf.SDK.Core.DeviceManager.SetupDeviceButtonMap(DeckSurf.SDK.Models.ConnectedDevice,System.Collections.Generic.IEnumerable{DeckSurf.SDK.Models.CommandMapping})
+  langs:
+  - csharp
+  name: DeviceManager
+  nameWithType: DeckSurf.SDK.Core.DeviceManager
+  fullName: DeckSurf.SDK.Core.DeviceManager
+  type: Class
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Core
+  summary: Class used to manage connected Stream Deck devices.
+  syntax:
+    content: public class DeviceManager
+    content.csharp: public class DeviceManager
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net5.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net5.0
+- uid: DeckSurf.SDK.Core.DeviceManager.#ctor
+  commentId: M:DeckSurf.SDK.Core.DeviceManager.#ctor
+  id: '#ctor'
+  parent: DeckSurf.SDK.Core.DeviceManager
+  langs:
+  - csharp
+  name: DeviceManager()
+  nameWithType: DeviceManager.DeviceManager()
+  fullName: DeckSurf.SDK.Core.DeviceManager.DeviceManager()
+  type: Constructor
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Core
+  syntax:
+    content: public DeviceManager ();
+    parameters: []
+    content.csharp: public DeviceManager ();
+  overload: DeckSurf.SDK.Core.DeviceManager.#ctor*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net5.0
+- uid: DeckSurf.SDK.Core.DeviceManager.GetDeviceList
+  commentId: M:DeckSurf.SDK.Core.DeviceManager.GetDeviceList
+  id: GetDeviceList
+  parent: DeckSurf.SDK.Core.DeviceManager
+  langs:
+  - csharp
+  name: GetDeviceList()
+  nameWithType: DeviceManager.GetDeviceList()
+  fullName: DeckSurf.SDK.Core.DeviceManager.GetDeviceList()
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Core
+  summary: Return a list of connected Stream Deck devices supported by DeckSurf.
+  syntax:
+    content: public static System.Collections.Generic.IEnumerable<DeckSurf.SDK.Models.ConnectedDevice> GetDeviceList ();
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{DeckSurf.SDK.Models.ConnectedDevice}
+      description: Enumerable containing a list of supported devices.
+    content.csharp: public static System.Collections.Generic.IEnumerable<DeckSurf.SDK.Models.ConnectedDevice> GetDeviceList ();
+  overload: DeckSurf.SDK.Core.DeviceManager.GetDeviceList*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net5.0
+- uid: DeckSurf.SDK.Core.DeviceManager.IsSupported(System.Int32,System.Int32)
+  commentId: M:DeckSurf.SDK.Core.DeviceManager.IsSupported(System.Int32,System.Int32)
+  id: IsSupported(System.Int32,System.Int32)
+  parent: DeckSurf.SDK.Core.DeviceManager
+  langs:
+  - csharp
+  name: IsSupported(Int32, Int32)
+  nameWithType: DeviceManager.IsSupported(Int32, Int32)
+  fullName: DeckSurf.SDK.Core.DeviceManager.IsSupported(Int32, Int32)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Core
+  syntax:
+    content: public static bool IsSupported (int vid, int pid);
+    parameters:
+    - id: vid
+      type: System.Int32
+      description: ''
+    - id: pid
+      type: System.Int32
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.csharp: public static bool IsSupported (int vid, int pid);
+  overload: DeckSurf.SDK.Core.DeviceManager.IsSupported*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net5.0
+- uid: DeckSurf.SDK.Core.DeviceManager.SetKey(DeckSurf.SDK.Models.ConnectedDevice,System.Int32,System.Byte[])
+  commentId: M:DeckSurf.SDK.Core.DeviceManager.SetKey(DeckSurf.SDK.Models.ConnectedDevice,System.Int32,System.Byte[])
+  id: SetKey(DeckSurf.SDK.Models.ConnectedDevice,System.Int32,System.Byte[])
+  parent: DeckSurf.SDK.Core.DeviceManager
+  langs:
+  - csharp
+  name: SetKey(ConnectedDevice, Int32, Byte[])
+  nameWithType: DeviceManager.SetKey(ConnectedDevice, Int32, Byte[])
+  fullName: DeckSurf.SDK.Core.DeviceManager.SetKey(ConnectedDevice, Int32, Byte[])
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Core
+  syntax:
+    content: public static bool SetKey (DeckSurf.SDK.Models.ConnectedDevice device, int keyId, byte[] image);
+    parameters:
+    - id: device
+      type: DeckSurf.SDK.Models.ConnectedDevice
+      description: ''
+    - id: keyId
+      type: System.Int32
+      description: ''
+    - id: image
+      type: System.Byte[]
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.csharp: public static bool SetKey (DeckSurf.SDK.Models.ConnectedDevice device, int keyId, byte[] image);
+  overload: DeckSurf.SDK.Core.DeviceManager.SetKey*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net5.0
+- uid: DeckSurf.SDK.Core.DeviceManager.SetupDevice(DeckSurf.SDK.Models.ConfigurationProfile)
+  commentId: M:DeckSurf.SDK.Core.DeviceManager.SetupDevice(DeckSurf.SDK.Models.ConfigurationProfile)
+  id: SetupDevice(DeckSurf.SDK.Models.ConfigurationProfile)
+  parent: DeckSurf.SDK.Core.DeviceManager
+  langs:
+  - csharp
+  name: SetupDevice(ConfigurationProfile)
+  nameWithType: DeviceManager.SetupDevice(ConfigurationProfile)
+  fullName: DeckSurf.SDK.Core.DeviceManager.SetupDevice(ConfigurationProfile)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Core
+  syntax:
+    content: public static DeckSurf.SDK.Models.ConnectedDevice SetupDevice (DeckSurf.SDK.Models.ConfigurationProfile profile);
+    parameters:
+    - id: profile
+      type: DeckSurf.SDK.Models.ConfigurationProfile
+      description: ''
+    return:
+      type: DeckSurf.SDK.Models.ConnectedDevice
+      description: ''
+    content.csharp: public static DeckSurf.SDK.Models.ConnectedDevice SetupDevice (DeckSurf.SDK.Models.ConfigurationProfile profile);
+  overload: DeckSurf.SDK.Core.DeviceManager.SetupDevice*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net5.0
+- uid: DeckSurf.SDK.Core.DeviceManager.SetupDeviceButtonMap(DeckSurf.SDK.Models.ConnectedDevice,System.Collections.Generic.IEnumerable{DeckSurf.SDK.Models.CommandMapping})
+  commentId: M:DeckSurf.SDK.Core.DeviceManager.SetupDeviceButtonMap(DeckSurf.SDK.Models.ConnectedDevice,System.Collections.Generic.IEnumerable{DeckSurf.SDK.Models.CommandMapping})
+  id: SetupDeviceButtonMap(DeckSurf.SDK.Models.ConnectedDevice,System.Collections.Generic.IEnumerable{DeckSurf.SDK.Models.CommandMapping})
+  parent: DeckSurf.SDK.Core.DeviceManager
+  langs:
+  - csharp
+  name: SetupDeviceButtonMap(ConnectedDevice, IEnumerable<CommandMapping>)
+  nameWithType: DeviceManager.SetupDeviceButtonMap(ConnectedDevice, IEnumerable<CommandMapping>)
+  fullName: DeckSurf.SDK.Core.DeviceManager.SetupDeviceButtonMap(ConnectedDevice, IEnumerable<CommandMapping>)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Core
+  syntax:
+    content: public static void SetupDeviceButtonMap (DeckSurf.SDK.Models.ConnectedDevice device, System.Collections.Generic.IEnumerable<DeckSurf.SDK.Models.CommandMapping> buttonMap);
+    parameters:
+    - id: device
+      type: DeckSurf.SDK.Models.ConnectedDevice
+      description: ''
+    - id: buttonMap
+      type: System.Collections.Generic.IEnumerable{DeckSurf.SDK.Models.CommandMapping}
+      description: ''
+    content.csharp: public static void SetupDeviceButtonMap (DeckSurf.SDK.Models.ConnectedDevice device, System.Collections.Generic.IEnumerable<DeckSurf.SDK.Models.CommandMapping> buttonMap);
+  overload: DeckSurf.SDK.Core.DeviceManager.SetupDeviceButtonMap*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net5.0
+references:
+- uid: DeckSurf.SDK.Core
+  commentId: N:DeckSurf.SDK.Core
+  isExternal: false
+  name: DeckSurf.SDK.Core
+  nameWithType: DeckSurf.SDK.Core
+  fullName: DeckSurf.SDK.Core
+  type: namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: DeckSurf.SDK.Core.DeviceManager.#ctor
+  parent: DeckSurf.SDK.Core.DeviceManager
+  isExternal: false
+  name: DeviceManager()
+  nameWithType: DeviceManager.DeviceManager()
+  fullName: DeckSurf.SDK.Core.DeviceManager.DeviceManager()
+  type: constructor
+- uid: DeckSurf.SDK.Core.DeviceManager.GetDeviceList
+  parent: DeckSurf.SDK.Core.DeviceManager
+  isExternal: false
+  name: GetDeviceList()
+  nameWithType: DeviceManager.GetDeviceList()
+  fullName: DeckSurf.SDK.Core.DeviceManager.GetDeviceList()
+  type: method
+- uid: System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.Generic.IEnumerable
+- uid: DeckSurf.SDK.Models.ConnectedDevice
+  name: ConnectedDevice
+  nameWithType: ConnectedDevice
+  fullName: DeckSurf.SDK.Models.ConnectedDevice
+- uid: System.Collections.Generic.IEnumerable{DeckSurf.SDK.Models.ConnectedDevice}
+  parent: System.Collections.Generic
+  name: IEnumerable<ConnectedDevice>
+  nameWithType: IEnumerable<ConnectedDevice>
+  fullName: System.Collections.Generic.IEnumerable<DeckSurf.SDK.Models.ConnectedDevice>
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: DeckSurf.SDK.Models.ConnectedDevice
+    name: ConnectedDevice
+    nameWithType: ConnectedDevice
+    fullName: DeckSurf.SDK.Models.ConnectedDevice
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: DeckSurf.SDK.Core.DeviceManager.IsSupported(System.Int32,System.Int32)
+  parent: DeckSurf.SDK.Core.DeviceManager
+  isExternal: false
+  name: IsSupported(Int32, Int32)
+  nameWithType: DeviceManager.IsSupported(Int32, Int32)
+  fullName: DeckSurf.SDK.Core.DeviceManager.IsSupported(Int32, Int32)
+  type: method
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: DeckSurf.SDK.Core.DeviceManager.SetKey(DeckSurf.SDK.Models.ConnectedDevice,System.Int32,System.Byte[])
+  parent: DeckSurf.SDK.Core.DeviceManager
+  isExternal: false
+  name: SetKey(ConnectedDevice, Int32, Byte[])
+  nameWithType: DeviceManager.SetKey(ConnectedDevice, Int32, Byte[])
+  fullName: DeckSurf.SDK.Core.DeviceManager.SetKey(ConnectedDevice, Int32, Byte[])
+  type: method
+- uid: System.Byte
+  isExternal: true
+  name: Byte
+  nameWithType: Byte
+  fullName: System.Byte
+- uid: System.Byte[]
+  parent: System
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: DeckSurf.SDK.Core.DeviceManager.SetupDevice(DeckSurf.SDK.Models.ConfigurationProfile)
+  parent: DeckSurf.SDK.Core.DeviceManager
+  isExternal: false
+  name: SetupDevice(ConfigurationProfile)
+  nameWithType: DeviceManager.SetupDevice(ConfigurationProfile)
+  fullName: DeckSurf.SDK.Core.DeviceManager.SetupDevice(ConfigurationProfile)
+  type: method
+- uid: DeckSurf.SDK.Models.ConfigurationProfile
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: ConfigurationProfile
+  nameWithType: ConfigurationProfile
+  fullName: DeckSurf.SDK.Models.ConfigurationProfile
+- uid: DeckSurf.SDK.Core.DeviceManager.SetupDeviceButtonMap(DeckSurf.SDK.Models.ConnectedDevice,System.Collections.Generic.IEnumerable{DeckSurf.SDK.Models.CommandMapping})
+  parent: DeckSurf.SDK.Core.DeviceManager
+  isExternal: false
+  name: SetupDeviceButtonMap(ConnectedDevice, IEnumerable<CommandMapping>)
+  nameWithType: DeviceManager.SetupDeviceButtonMap(ConnectedDevice, IEnumerable<CommandMapping>)
+  fullName: DeckSurf.SDK.Core.DeviceManager.SetupDeviceButtonMap(ConnectedDevice, IEnumerable<CommandMapping>)
+  type: method
+- uid: DeckSurf.SDK.Models.CommandMapping
+  name: CommandMapping
+  nameWithType: CommandMapping
+  fullName: DeckSurf.SDK.Models.CommandMapping
+- uid: System.Collections.Generic.IEnumerable{DeckSurf.SDK.Models.CommandMapping}
+  parent: System.Collections.Generic
+  name: IEnumerable<CommandMapping>
+  nameWithType: IEnumerable<CommandMapping>
+  fullName: System.Collections.Generic.IEnumerable<DeckSurf.SDK.Models.CommandMapping>
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: DeckSurf.SDK.Models.CommandMapping
+    name: CommandMapping
+    nameWithType: CommandMapping
+    fullName: DeckSurf.SDK.Models.CommandMapping
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: DeckSurf.SDK.Core.DeviceManager.#ctor*
+  commentId: Overload:DeckSurf.SDK.Core.DeviceManager.#ctor
+  parent: DeckSurf.SDK.Core.DeviceManager
+  isExternal: false
+  name: DeviceManager
+  nameWithType: DeviceManager.DeviceManager
+  fullName: DeckSurf.SDK.Core.DeviceManager.DeviceManager
+  monikers:
+  - net5.0
+  type: constructor
+- uid: DeckSurf.SDK.Core.DeviceManager.GetDeviceList*
+  commentId: Overload:DeckSurf.SDK.Core.DeviceManager.GetDeviceList
+  parent: DeckSurf.SDK.Core.DeviceManager
+  isExternal: false
+  name: GetDeviceList
+  nameWithType: DeviceManager.GetDeviceList
+  fullName: DeckSurf.SDK.Core.DeviceManager.GetDeviceList
+  monikers:
+  - net5.0
+  type: method
+- uid: DeckSurf.SDK.Core.DeviceManager.IsSupported*
+  commentId: Overload:DeckSurf.SDK.Core.DeviceManager.IsSupported
+  parent: DeckSurf.SDK.Core.DeviceManager
+  isExternal: false
+  name: IsSupported
+  nameWithType: DeviceManager.IsSupported
+  fullName: DeckSurf.SDK.Core.DeviceManager.IsSupported
+  monikers:
+  - net5.0
+  type: method
+- uid: DeckSurf.SDK.Core.DeviceManager.SetKey*
+  commentId: Overload:DeckSurf.SDK.Core.DeviceManager.SetKey
+  parent: DeckSurf.SDK.Core.DeviceManager
+  isExternal: false
+  name: SetKey
+  nameWithType: DeviceManager.SetKey
+  fullName: DeckSurf.SDK.Core.DeviceManager.SetKey
+  monikers:
+  - net5.0
+  type: method
+- uid: DeckSurf.SDK.Core.DeviceManager.SetupDevice*
+  commentId: Overload:DeckSurf.SDK.Core.DeviceManager.SetupDevice
+  parent: DeckSurf.SDK.Core.DeviceManager
+  isExternal: false
+  name: SetupDevice
+  nameWithType: DeviceManager.SetupDevice
+  fullName: DeckSurf.SDK.Core.DeviceManager.SetupDevice
+  monikers:
+  - net5.0
+  type: method
+- uid: DeckSurf.SDK.Core.DeviceManager.SetupDeviceButtonMap*
+  commentId: Overload:DeckSurf.SDK.Core.DeviceManager.SetupDeviceButtonMap
+  parent: DeckSurf.SDK.Core.DeviceManager
+  isExternal: false
+  name: SetupDeviceButtonMap
+  nameWithType: DeviceManager.SetupDeviceButtonMap
+  fullName: DeckSurf.SDK.Core.DeviceManager.SetupDeviceButtonMap
+  monikers:
+  - net5.0
+  type: method

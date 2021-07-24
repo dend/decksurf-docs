@@ -1,0 +1,156 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Util.DataHelpers
+  commentId: T:DeckSurf.SDK.Util.DataHelpers
+  id: DataHelpers
+  children:
+  - DeckSurf.SDK.Util.DataHelpers.#ctor
+  - DeckSurf.SDK.Util.DataHelpers.ByteArrayToString(System.Byte[])
+  langs:
+  - csharp
+  name: DataHelpers
+  nameWithType: DeckSurf.SDK.Util.DataHelpers
+  fullName: DeckSurf.SDK.Util.DataHelpers
+  type: Class
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Util
+  syntax:
+    content: public class DataHelpers
+    content.csharp: public class DataHelpers
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net5.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net5.0
+- uid: DeckSurf.SDK.Util.DataHelpers.#ctor
+  commentId: M:DeckSurf.SDK.Util.DataHelpers.#ctor
+  id: '#ctor'
+  parent: DeckSurf.SDK.Util.DataHelpers
+  langs:
+  - csharp
+  name: DataHelpers()
+  nameWithType: DataHelpers.DataHelpers()
+  fullName: DeckSurf.SDK.Util.DataHelpers.DataHelpers()
+  type: Constructor
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Util
+  syntax:
+    content: public DataHelpers ();
+    parameters: []
+    content.csharp: public DataHelpers ();
+  overload: DeckSurf.SDK.Util.DataHelpers.#ctor*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net5.0
+- uid: DeckSurf.SDK.Util.DataHelpers.ByteArrayToString(System.Byte[])
+  commentId: M:DeckSurf.SDK.Util.DataHelpers.ByteArrayToString(System.Byte[])
+  id: ByteArrayToString(System.Byte[])
+  parent: DeckSurf.SDK.Util.DataHelpers
+  langs:
+  - csharp
+  name: ByteArrayToString(Byte[])
+  nameWithType: DataHelpers.ByteArrayToString(Byte[])
+  fullName: DeckSurf.SDK.Util.DataHelpers.ByteArrayToString(Byte[])
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Util
+  syntax:
+    content: public static string ByteArrayToString (byte[] data);
+    parameters:
+    - id: data
+      type: System.Byte[]
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.csharp: public static string ByteArrayToString (byte[] data);
+  overload: DeckSurf.SDK.Util.DataHelpers.ByteArrayToString*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net5.0
+references:
+- uid: DeckSurf.SDK.Util
+  commentId: N:DeckSurf.SDK.Util
+  isExternal: false
+  name: DeckSurf.SDK.Util
+  nameWithType: DeckSurf.SDK.Util
+  fullName: DeckSurf.SDK.Util
+  type: namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: DeckSurf.SDK.Util.DataHelpers.#ctor
+  parent: DeckSurf.SDK.Util.DataHelpers
+  isExternal: false
+  name: DataHelpers()
+  nameWithType: DataHelpers.DataHelpers()
+  fullName: DeckSurf.SDK.Util.DataHelpers.DataHelpers()
+  type: constructor
+- uid: DeckSurf.SDK.Util.DataHelpers.ByteArrayToString(System.Byte[])
+  parent: DeckSurf.SDK.Util.DataHelpers
+  isExternal: false
+  name: ByteArrayToString(Byte[])
+  nameWithType: DataHelpers.ByteArrayToString(Byte[])
+  fullName: DeckSurf.SDK.Util.DataHelpers.ByteArrayToString(Byte[])
+  type: method
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Byte
+  isExternal: true
+  name: Byte
+  nameWithType: Byte
+  fullName: System.Byte
+- uid: System.Byte[]
+  parent: System
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: DeckSurf.SDK.Util.DataHelpers.#ctor*
+  commentId: Overload:DeckSurf.SDK.Util.DataHelpers.#ctor
+  parent: DeckSurf.SDK.Util.DataHelpers
+  isExternal: false
+  name: DataHelpers
+  nameWithType: DataHelpers.DataHelpers
+  fullName: DeckSurf.SDK.Util.DataHelpers.DataHelpers
+  monikers:
+  - net5.0
+  type: constructor
+- uid: DeckSurf.SDK.Util.DataHelpers.ByteArrayToString*
+  commentId: Overload:DeckSurf.SDK.Util.DataHelpers.ByteArrayToString
+  parent: DeckSurf.SDK.Util.DataHelpers
+  isExternal: false
+  name: ByteArrayToString
+  nameWithType: DataHelpers.ByteArrayToString
+  fullName: DeckSurf.SDK.Util.DataHelpers.ByteArrayToString
+  monikers:
+  - net5.0
+  type: method

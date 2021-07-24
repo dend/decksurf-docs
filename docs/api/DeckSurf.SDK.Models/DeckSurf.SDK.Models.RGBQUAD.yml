@@ -1,0 +1,176 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Models.RGBQUAD
+  commentId: T:DeckSurf.SDK.Models.RGBQUAD
+  id: RGBQUAD
+  children:
+  - DeckSurf.SDK.Models.RGBQUAD.rgbBlue
+  - DeckSurf.SDK.Models.RGBQUAD.rgbGreen
+  - DeckSurf.SDK.Models.RGBQUAD.rgbRed
+  - DeckSurf.SDK.Models.RGBQUAD.rgbReserved
+  langs:
+  - csharp
+  name: RGBQUAD
+  nameWithType: DeckSurf.SDK.Models.RGBQUAD
+  fullName: DeckSurf.SDK.Models.RGBQUAD
+  type: Struct
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  syntax:
+    content: public struct RGBQUAD
+    content.csharp: public struct RGBQUAD
+  inheritance:
+  - System.ValueType
+  implements: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net5.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net5.0
+- uid: DeckSurf.SDK.Models.RGBQUAD.rgbBlue
+  commentId: F:DeckSurf.SDK.Models.RGBQUAD.rgbBlue
+  id: rgbBlue
+  parent: DeckSurf.SDK.Models.RGBQUAD
+  langs:
+  - csharp
+  name: rgbBlue
+  nameWithType: RGBQUAD.rgbBlue
+  fullName: DeckSurf.SDK.Models.RGBQUAD.rgbBlue
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  syntax:
+    content: public byte rgbBlue;
+    return:
+      type: System.Byte
+      description: ''
+    content.csharp: public byte rgbBlue;
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net5.0
+- uid: DeckSurf.SDK.Models.RGBQUAD.rgbGreen
+  commentId: F:DeckSurf.SDK.Models.RGBQUAD.rgbGreen
+  id: rgbGreen
+  parent: DeckSurf.SDK.Models.RGBQUAD
+  langs:
+  - csharp
+  name: rgbGreen
+  nameWithType: RGBQUAD.rgbGreen
+  fullName: DeckSurf.SDK.Models.RGBQUAD.rgbGreen
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  syntax:
+    content: public byte rgbGreen;
+    return:
+      type: System.Byte
+      description: ''
+    content.csharp: public byte rgbGreen;
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net5.0
+- uid: DeckSurf.SDK.Models.RGBQUAD.rgbRed
+  commentId: F:DeckSurf.SDK.Models.RGBQUAD.rgbRed
+  id: rgbRed
+  parent: DeckSurf.SDK.Models.RGBQUAD
+  langs:
+  - csharp
+  name: rgbRed
+  nameWithType: RGBQUAD.rgbRed
+  fullName: DeckSurf.SDK.Models.RGBQUAD.rgbRed
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  syntax:
+    content: public byte rgbRed;
+    return:
+      type: System.Byte
+      description: ''
+    content.csharp: public byte rgbRed;
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net5.0
+- uid: DeckSurf.SDK.Models.RGBQUAD.rgbReserved
+  commentId: F:DeckSurf.SDK.Models.RGBQUAD.rgbReserved
+  id: rgbReserved
+  parent: DeckSurf.SDK.Models.RGBQUAD
+  langs:
+  - csharp
+  name: rgbReserved
+  nameWithType: RGBQUAD.rgbReserved
+  fullName: DeckSurf.SDK.Models.RGBQUAD.rgbReserved
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  syntax:
+    content: public byte rgbReserved;
+    return:
+      type: System.Byte
+      description: ''
+    content.csharp: public byte rgbReserved;
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net5.0
+references:
+- uid: DeckSurf.SDK.Models
+  commentId: N:DeckSurf.SDK.Models
+  isExternal: false
+  name: DeckSurf.SDK.Models
+  nameWithType: DeckSurf.SDK.Models
+  fullName: DeckSurf.SDK.Models
+  type: namespace
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: DeckSurf.SDK.Models.RGBQUAD.rgbBlue
+  parent: DeckSurf.SDK.Models.RGBQUAD
+  isExternal: false
+  name: rgbBlue
+  nameWithType: RGBQUAD.rgbBlue
+  fullName: DeckSurf.SDK.Models.RGBQUAD.rgbBlue
+  type: field
+- uid: System.Byte
+  parent: System
+  isExternal: true
+  name: Byte
+  nameWithType: Byte
+  fullName: System.Byte
+- uid: DeckSurf.SDK.Models.RGBQUAD.rgbGreen
+  parent: DeckSurf.SDK.Models.RGBQUAD
+  isExternal: false
+  name: rgbGreen
+  nameWithType: RGBQUAD.rgbGreen
+  fullName: DeckSurf.SDK.Models.RGBQUAD.rgbGreen
+  type: field
+- uid: DeckSurf.SDK.Models.RGBQUAD.rgbRed
+  parent: DeckSurf.SDK.Models.RGBQUAD
+  isExternal: false
+  name: rgbRed
+  nameWithType: RGBQUAD.rgbRed
+  fullName: DeckSurf.SDK.Models.RGBQUAD.rgbRed
+  type: field
+- uid: DeckSurf.SDK.Models.RGBQUAD.rgbReserved
+  parent: DeckSurf.SDK.Models.RGBQUAD
+  isExternal: false
+  name: rgbReserved
+  nameWithType: RGBQUAD.rgbReserved
+  fullName: DeckSurf.SDK.Models.RGBQUAD.rgbReserved
+  type: field

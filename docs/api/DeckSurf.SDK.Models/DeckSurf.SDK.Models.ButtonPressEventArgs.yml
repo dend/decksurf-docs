@@ -1,0 +1,190 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Models.ButtonPressEventArgs
+  commentId: T:DeckSurf.SDK.Models.ButtonPressEventArgs
+  id: ButtonPressEventArgs
+  children:
+  - DeckSurf.SDK.Models.ButtonPressEventArgs.#ctor(System.Int32,DeckSurf.SDK.Models.ButtonEventKind)
+  - DeckSurf.SDK.Models.ButtonPressEventArgs.Id
+  - DeckSurf.SDK.Models.ButtonPressEventArgs.Kind
+  langs:
+  - csharp
+  name: ButtonPressEventArgs
+  nameWithType: DeckSurf.SDK.Models.ButtonPressEventArgs
+  fullName: DeckSurf.SDK.Models.ButtonPressEventArgs
+  type: Class
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  syntax:
+    content: 'public class ButtonPressEventArgs : EventArgs'
+    content.csharp: 'public class ButtonPressEventArgs : EventArgs'
+  inheritance:
+  - System.EventArgs
+  implements: []
+  inheritedMembers: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net5.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net5.0
+- uid: DeckSurf.SDK.Models.ButtonPressEventArgs.#ctor(System.Int32,DeckSurf.SDK.Models.ButtonEventKind)
+  commentId: M:DeckSurf.SDK.Models.ButtonPressEventArgs.#ctor(System.Int32,DeckSurf.SDK.Models.ButtonEventKind)
+  id: '#ctor(System.Int32,DeckSurf.SDK.Models.ButtonEventKind)'
+  parent: DeckSurf.SDK.Models.ButtonPressEventArgs
+  langs:
+  - csharp
+  name: ButtonPressEventArgs(Int32, ButtonEventKind)
+  nameWithType: ButtonPressEventArgs.ButtonPressEventArgs(Int32, ButtonEventKind)
+  fullName: DeckSurf.SDK.Models.ButtonPressEventArgs.ButtonPressEventArgs(Int32, ButtonEventKind)
+  type: Constructor
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  syntax:
+    content: public ButtonPressEventArgs (int id, DeckSurf.SDK.Models.ButtonEventKind kind);
+    parameters:
+    - id: id
+      type: System.Int32
+      description: ''
+    - id: kind
+      type: DeckSurf.SDK.Models.ButtonEventKind
+      description: ''
+    content.csharp: public ButtonPressEventArgs (int id, DeckSurf.SDK.Models.ButtonEventKind kind);
+  overload: DeckSurf.SDK.Models.ButtonPressEventArgs.#ctor*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net5.0
+- uid: DeckSurf.SDK.Models.ButtonPressEventArgs.Id
+  commentId: P:DeckSurf.SDK.Models.ButtonPressEventArgs.Id
+  id: Id
+  parent: DeckSurf.SDK.Models.ButtonPressEventArgs
+  langs:
+  - csharp
+  name: Id
+  nameWithType: ButtonPressEventArgs.Id
+  fullName: DeckSurf.SDK.Models.ButtonPressEventArgs.Id
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  syntax:
+    content: public int Id { get; }
+    return:
+      type: System.Int32
+      description: ''
+    content.csharp: public int Id { get; }
+  overload: DeckSurf.SDK.Models.ButtonPressEventArgs.Id*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net5.0
+- uid: DeckSurf.SDK.Models.ButtonPressEventArgs.Kind
+  commentId: P:DeckSurf.SDK.Models.ButtonPressEventArgs.Kind
+  id: Kind
+  parent: DeckSurf.SDK.Models.ButtonPressEventArgs
+  langs:
+  - csharp
+  name: Kind
+  nameWithType: ButtonPressEventArgs.Kind
+  fullName: DeckSurf.SDK.Models.ButtonPressEventArgs.Kind
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  syntax:
+    content: public DeckSurf.SDK.Models.ButtonEventKind Kind { get; }
+    return:
+      type: DeckSurf.SDK.Models.ButtonEventKind
+      description: ''
+    content.csharp: public DeckSurf.SDK.Models.ButtonEventKind Kind { get; }
+  overload: DeckSurf.SDK.Models.ButtonPressEventArgs.Kind*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net5.0
+references:
+- uid: DeckSurf.SDK.Models
+  commentId: N:DeckSurf.SDK.Models
+  isExternal: false
+  name: DeckSurf.SDK.Models
+  nameWithType: DeckSurf.SDK.Models
+  fullName: DeckSurf.SDK.Models
+  type: namespace
+- uid: System.EventArgs
+  parent: System
+  isExternal: true
+  name: EventArgs
+  nameWithType: EventArgs
+  fullName: System.EventArgs
+- uid: DeckSurf.SDK.Models.ButtonPressEventArgs.#ctor(System.Int32,DeckSurf.SDK.Models.ButtonEventKind)
+  parent: DeckSurf.SDK.Models.ButtonPressEventArgs
+  isExternal: false
+  name: ButtonPressEventArgs(Int32, ButtonEventKind)
+  nameWithType: ButtonPressEventArgs.ButtonPressEventArgs(Int32, ButtonEventKind)
+  fullName: DeckSurf.SDK.Models.ButtonPressEventArgs.ButtonPressEventArgs(Int32, ButtonEventKind)
+  type: constructor
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: DeckSurf.SDK.Models.ButtonEventKind
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: ButtonEventKind
+  nameWithType: ButtonEventKind
+  fullName: DeckSurf.SDK.Models.ButtonEventKind
+- uid: DeckSurf.SDK.Models.ButtonPressEventArgs.Id
+  parent: DeckSurf.SDK.Models.ButtonPressEventArgs
+  isExternal: false
+  name: Id
+  nameWithType: ButtonPressEventArgs.Id
+  fullName: DeckSurf.SDK.Models.ButtonPressEventArgs.Id
+  type: property
+- uid: DeckSurf.SDK.Models.ButtonPressEventArgs.Kind
+  parent: DeckSurf.SDK.Models.ButtonPressEventArgs
+  isExternal: false
+  name: Kind
+  nameWithType: ButtonPressEventArgs.Kind
+  fullName: DeckSurf.SDK.Models.ButtonPressEventArgs.Kind
+  type: property
+- uid: DeckSurf.SDK.Models.ButtonPressEventArgs.#ctor*
+  commentId: Overload:DeckSurf.SDK.Models.ButtonPressEventArgs.#ctor
+  parent: DeckSurf.SDK.Models.ButtonPressEventArgs
+  isExternal: false
+  name: ButtonPressEventArgs
+  nameWithType: ButtonPressEventArgs.ButtonPressEventArgs
+  fullName: DeckSurf.SDK.Models.ButtonPressEventArgs.ButtonPressEventArgs
+  monikers:
+  - net5.0
+  type: constructor
+- uid: DeckSurf.SDK.Models.ButtonPressEventArgs.Id*
+  commentId: Overload:DeckSurf.SDK.Models.ButtonPressEventArgs.Id
+  parent: DeckSurf.SDK.Models.ButtonPressEventArgs
+  isExternal: false
+  name: Id
+  nameWithType: ButtonPressEventArgs.Id
+  fullName: DeckSurf.SDK.Models.ButtonPressEventArgs.Id
+  monikers:
+  - net5.0
+  type: property
+- uid: DeckSurf.SDK.Models.ButtonPressEventArgs.Kind*
+  commentId: Overload:DeckSurf.SDK.Models.ButtonPressEventArgs.Kind
+  parent: DeckSurf.SDK.Models.ButtonPressEventArgs
+  isExternal: false
+  name: Kind
+  nameWithType: ButtonPressEventArgs.Kind
+  fullName: DeckSurf.SDK.Models.ButtonPressEventArgs.Kind
+  monikers:
+  - net5.0
+  type: property

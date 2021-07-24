@@ -1,0 +1,306 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Core.DeviceConstants
+  commentId: T:DeckSurf.SDK.Core.DeviceConstants
+  id: DeviceConstants
+  children:
+  - DeckSurf.SDK.Core.DeviceConstants.MiniButtonCount
+  - DeckSurf.SDK.Core.DeviceConstants.OriginalButtonCount
+  - DeckSurf.SDK.Core.DeviceConstants.UniversalButtonSize
+  - DeckSurf.SDK.Core.DeviceConstants.XLButtonCount
+  - DeckSurf.SDK.Core.DeviceConstants.XLButtonSize
+  - DeckSurf.SDK.Core.DeviceConstants.XLDefaultBlackButton
+  - DeckSurf.SDK.Core.DeviceConstants.XLDefaultWhiteButton
+  langs:
+  - csharp
+  name: DeviceConstants
+  nameWithType: DeckSurf.SDK.Core.DeviceConstants
+  fullName: DeckSurf.SDK.Core.DeviceConstants
+  type: Class
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Core
+  summary: Helper class that contains re-usable constants for different types of Stream Deck devices.
+  syntax:
+    content: public static class DeviceConstants
+    content.csharp: public static class DeviceConstants
+  inheritance:
+  - System.Object
+  implements: []
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net5.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net5.0
+- uid: DeckSurf.SDK.Core.DeviceConstants.MiniButtonCount
+  commentId: F:DeckSurf.SDK.Core.DeviceConstants.MiniButtonCount
+  id: MiniButtonCount
+  parent: DeckSurf.SDK.Core.DeviceConstants
+  langs:
+  - csharp
+  name: MiniButtonCount
+  nameWithType: DeviceConstants.MiniButtonCount
+  fullName: DeckSurf.SDK.Core.DeviceConstants.MiniButtonCount
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Core
+  syntax:
+    content: public const int MiniButtonCount = 6;
+    return:
+      type: System.Int32
+      description: ''
+    content.csharp: public const int MiniButtonCount = 6;
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - const
+  monikers:
+  - net5.0
+  literalValue: "6"
+- uid: DeckSurf.SDK.Core.DeviceConstants.OriginalButtonCount
+  commentId: F:DeckSurf.SDK.Core.DeviceConstants.OriginalButtonCount
+  id: OriginalButtonCount
+  parent: DeckSurf.SDK.Core.DeviceConstants
+  langs:
+  - csharp
+  name: OriginalButtonCount
+  nameWithType: DeviceConstants.OriginalButtonCount
+  fullName: DeckSurf.SDK.Core.DeviceConstants.OriginalButtonCount
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Core
+  syntax:
+    content: public const int OriginalButtonCount = 15;
+    return:
+      type: System.Int32
+      description: ''
+    content.csharp: public const int OriginalButtonCount = 15;
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - const
+  monikers:
+  - net5.0
+  literalValue: "15"
+- uid: DeckSurf.SDK.Core.DeviceConstants.UniversalButtonSize
+  commentId: F:DeckSurf.SDK.Core.DeviceConstants.UniversalButtonSize
+  id: UniversalButtonSize
+  parent: DeckSurf.SDK.Core.DeviceConstants
+  langs:
+  - csharp
+  name: UniversalButtonSize
+  nameWithType: DeviceConstants.UniversalButtonSize
+  fullName: DeckSurf.SDK.Core.DeviceConstants.UniversalButtonSize
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Core
+  syntax:
+    content: public const int UniversalButtonSize = 72;
+    return:
+      type: System.Int32
+      description: ''
+    content.csharp: public const int UniversalButtonSize = 72;
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - const
+  monikers:
+  - net5.0
+  literalValue: "72"
+- uid: DeckSurf.SDK.Core.DeviceConstants.XLButtonCount
+  commentId: F:DeckSurf.SDK.Core.DeviceConstants.XLButtonCount
+  id: XLButtonCount
+  parent: DeckSurf.SDK.Core.DeviceConstants
+  langs:
+  - csharp
+  name: XLButtonCount
+  nameWithType: DeviceConstants.XLButtonCount
+  fullName: DeckSurf.SDK.Core.DeviceConstants.XLButtonCount
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Core
+  syntax:
+    content: public const int XLButtonCount = 32;
+    return:
+      type: System.Int32
+      description: ''
+    content.csharp: public const int XLButtonCount = 32;
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - const
+  monikers:
+  - net5.0
+  literalValue: "32"
+- uid: DeckSurf.SDK.Core.DeviceConstants.XLButtonSize
+  commentId: F:DeckSurf.SDK.Core.DeviceConstants.XLButtonSize
+  id: XLButtonSize
+  parent: DeckSurf.SDK.Core.DeviceConstants
+  langs:
+  - csharp
+  name: XLButtonSize
+  nameWithType: DeviceConstants.XLButtonSize
+  fullName: DeckSurf.SDK.Core.DeviceConstants.XLButtonSize
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Core
+  syntax:
+    content: public const int XLButtonSize = 96;
+    return:
+      type: System.Int32
+      description: ''
+    content.csharp: public const int XLButtonSize = 96;
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - const
+  monikers:
+  - net5.0
+  literalValue: "96"
+- uid: DeckSurf.SDK.Core.DeviceConstants.XLDefaultBlackButton
+  commentId: F:DeckSurf.SDK.Core.DeviceConstants.XLDefaultBlackButton
+  id: XLDefaultBlackButton
+  parent: DeckSurf.SDK.Core.DeviceConstants
+  langs:
+  - csharp
+  name: XLDefaultBlackButton
+  nameWithType: DeviceConstants.XLDefaultBlackButton
+  fullName: DeckSurf.SDK.Core.DeviceConstants.XLDefaultBlackButton
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Core
+  syntax:
+    content: public static readonly byte[] XLDefaultBlackButton;
+    return:
+      type: System.Byte[]
+      description: ''
+    content.csharp: public static readonly byte[] XLDefaultBlackButton;
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  monikers:
+  - net5.0
+- uid: DeckSurf.SDK.Core.DeviceConstants.XLDefaultWhiteButton
+  commentId: F:DeckSurf.SDK.Core.DeviceConstants.XLDefaultWhiteButton
+  id: XLDefaultWhiteButton
+  parent: DeckSurf.SDK.Core.DeviceConstants
+  langs:
+  - csharp
+  name: XLDefaultWhiteButton
+  nameWithType: DeviceConstants.XLDefaultWhiteButton
+  fullName: DeckSurf.SDK.Core.DeviceConstants.XLDefaultWhiteButton
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Core
+  syntax:
+    content: public static readonly byte[] XLDefaultWhiteButton;
+    return:
+      type: System.Byte[]
+      description: ''
+    content.csharp: public static readonly byte[] XLDefaultWhiteButton;
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  monikers:
+  - net5.0
+references:
+- uid: DeckSurf.SDK.Core
+  commentId: N:DeckSurf.SDK.Core
+  isExternal: false
+  name: DeckSurf.SDK.Core
+  nameWithType: DeckSurf.SDK.Core
+  fullName: DeckSurf.SDK.Core
+  type: namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: DeckSurf.SDK.Core.DeviceConstants.MiniButtonCount
+  parent: DeckSurf.SDK.Core.DeviceConstants
+  isExternal: false
+  name: MiniButtonCount
+  nameWithType: DeviceConstants.MiniButtonCount
+  fullName: DeckSurf.SDK.Core.DeviceConstants.MiniButtonCount
+  type: field
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: DeckSurf.SDK.Core.DeviceConstants.OriginalButtonCount
+  parent: DeckSurf.SDK.Core.DeviceConstants
+  isExternal: false
+  name: OriginalButtonCount
+  nameWithType: DeviceConstants.OriginalButtonCount
+  fullName: DeckSurf.SDK.Core.DeviceConstants.OriginalButtonCount
+  type: field
+- uid: DeckSurf.SDK.Core.DeviceConstants.UniversalButtonSize
+  parent: DeckSurf.SDK.Core.DeviceConstants
+  isExternal: false
+  name: UniversalButtonSize
+  nameWithType: DeviceConstants.UniversalButtonSize
+  fullName: DeckSurf.SDK.Core.DeviceConstants.UniversalButtonSize
+  type: field
+- uid: DeckSurf.SDK.Core.DeviceConstants.XLButtonCount
+  parent: DeckSurf.SDK.Core.DeviceConstants
+  isExternal: false
+  name: XLButtonCount
+  nameWithType: DeviceConstants.XLButtonCount
+  fullName: DeckSurf.SDK.Core.DeviceConstants.XLButtonCount
+  type: field
+- uid: DeckSurf.SDK.Core.DeviceConstants.XLButtonSize
+  parent: DeckSurf.SDK.Core.DeviceConstants
+  isExternal: false
+  name: XLButtonSize
+  nameWithType: DeviceConstants.XLButtonSize
+  fullName: DeckSurf.SDK.Core.DeviceConstants.XLButtonSize
+  type: field
+- uid: DeckSurf.SDK.Core.DeviceConstants.XLDefaultBlackButton
+  parent: DeckSurf.SDK.Core.DeviceConstants
+  isExternal: false
+  name: XLDefaultBlackButton
+  nameWithType: DeviceConstants.XLDefaultBlackButton
+  fullName: DeckSurf.SDK.Core.DeviceConstants.XLDefaultBlackButton
+  type: field
+- uid: System.Byte
+  isExternal: true
+  name: Byte
+  nameWithType: Byte
+  fullName: System.Byte
+- uid: System.Byte[]
+  parent: System
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: DeckSurf.SDK.Core.DeviceConstants.XLDefaultWhiteButton
+  parent: DeckSurf.SDK.Core.DeviceConstants
+  isExternal: false
+  name: XLDefaultWhiteButton
+  nameWithType: DeviceConstants.XLDefaultWhiteButton
+  fullName: DeckSurf.SDK.Core.DeviceConstants.XLDefaultWhiteButton
+  type: field

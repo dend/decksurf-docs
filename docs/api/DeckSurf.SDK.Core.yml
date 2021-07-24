@@ -1,0 +1,33 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Core
+  commentId: N:DeckSurf.SDK.Core
+  id: DeckSurf.SDK.Core
+  children:
+  - DeckSurf.SDK.Core.DeviceConstants
+  - DeckSurf.SDK.Core.DeviceManager
+  langs:
+  - csharp
+  name: DeckSurf.SDK.Core
+  nameWithType: DeckSurf.SDK.Core
+  fullName: DeckSurf.SDK.Core
+  type: Namespace
+  monikers:
+  - net5.0
+references:
+- uid: DeckSurf.SDK.Core.DeviceConstants
+  commentId: T:DeckSurf.SDK.Core.DeviceConstants
+  parent: DeckSurf.SDK.Core
+  isExternal: false
+  name: DeviceConstants
+  nameWithType: DeckSurf.SDK.Core.DeviceConstants
+  fullName: DeckSurf.SDK.Core.DeviceConstants
+  type: class
+- uid: DeckSurf.SDK.Core.DeviceManager
+  commentId: T:DeckSurf.SDK.Core.DeviceManager
+  parent: DeckSurf.SDK.Core
+  isExternal: false
+  name: DeviceManager
+  nameWithType: DeckSurf.SDK.Core.DeviceManager
+  fullName: DeckSurf.SDK.Core.DeviceManager
+  type: class
