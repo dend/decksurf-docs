@@ -131,21 +131,22 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Core
+  summary: Sets the content of a key on a Stream Deck device.
   syntax:
     content: public static bool SetKey (DeckSurf.SDK.Models.ConnectedDevice device, int keyId, byte[] image);
     parameters:
     - id: device
       type: DeckSurf.SDK.Models.ConnectedDevice
-      description: ''
+      description: Instance of a connected Stream Deck device.
     - id: keyId
       type: System.Int32
-      description: ''
+      description: Numberic ID of the key that needs to be set.
     - id: image
       type: System.Byte[]
-      description: ''
+      description: Binary content (JPEG) of the image that needs to be set on the key. The image will be resized to match the expectations of the connected device.
     return:
       type: System.Boolean
-      description: ''
+      description: True if succesful, false if not.
     content.csharp: public static bool SetKey (DeckSurf.SDK.Models.ConnectedDevice device, int keyId, byte[] image);
   overload: DeckSurf.SDK.Core.DeviceManager.SetKey*
   exceptions: []
