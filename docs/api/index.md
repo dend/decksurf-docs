@@ -1,2 +1,3 @@
-# PLACEHOLDER
-TODO: Add .NET projects to the *src* folder and run `docfx` to generate **REAL** *API Documentation*!
+# DeckSurf .NET SDK
+
+Software Development Kit for DeckSurf, available for developers building .NET applications.
