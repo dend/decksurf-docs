@@ -16,6 +16,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Event arguments that are passed back to the developer when a Stream Deck button is pressed.
   syntax:
     content: 'public class ButtonPressEventArgs : EventArgs'
     content.csharp: 'public class ButtonPressEventArgs : EventArgs'
@@ -43,15 +44,16 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Initializes a new instance of the <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.ButtonPressEventArgs"></xref> class. Default constructor for button press event arguments.
   syntax:
     content: public ButtonPressEventArgs (int id, DeckSurf.SDK.Models.ButtonEventKind kind);
     parameters:
     - id: id
       type: System.Int32
-      description: ''
+      description: Numeric ID of the button being pressed.
     - id: kind
       type: DeckSurf.SDK.Models.ButtonEventKind
-      description: ''
+      description: Kind of event.
     content.csharp: public ButtonPressEventArgs (int id, DeckSurf.SDK.Models.ButtonEventKind kind);
   overload: DeckSurf.SDK.Models.ButtonPressEventArgs.#ctor*
   exceptions: []
@@ -72,6 +74,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Gets the numeric ID of the button being pressed.
   syntax:
     content: public int Id { get; }
     return:
@@ -98,6 +101,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Gets the kind of event.
   syntax:
     content: public DeckSurf.SDK.Models.ButtonEventKind Kind { get; }
     return:

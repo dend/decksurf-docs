@@ -19,6 +19,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Command mapping used to associate Stream Deck buttons with specific plugins and commands.
   syntax:
     content: public class CommandMapping
     content.csharp: public class CommandMapping
@@ -69,6 +70,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Gets or sets the default image from the local file system that is loaded for a given Stream Deck button.
   syntax:
     content: >-
       [[System.Text.Json.Serialization.JsonPropertyName("button_image_path")]]
@@ -104,6 +106,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Gets or sets the numeric index of the button on the Stream Deck that is associated with a command.
   syntax:
     content: >-
       [[System.Text.Json.Serialization.JsonPropertyName("button_index")]]
@@ -139,6 +142,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Gets or sets the ID of the command that needs to be called when the button is initialized or pressed.
   syntax:
     content: >-
       [[System.Text.Json.Serialization.JsonPropertyName("command")]]
@@ -174,6 +178,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Gets or sets a string value representing arguments that are passed to the command.
   syntax:
     content: >-
       [[System.Text.Json.Serialization.JsonPropertyName("command_arguments")]]
@@ -209,6 +214,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Gets or sets the ID of the plugin that is associated with a button.
   syntax:
     content: >-
       [[System.Text.Json.Serialization.JsonPropertyName("plugin")]]

@@ -40,12 +40,13 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Interfaces
+  summary: Provides a list of commands that the plugin exposes.
   syntax:
     content: public System.Collections.Generic.List<Type> GetSupportedCommands ();
     parameters: []
     return:
       type: System.Collections.Generic.List{System.Type}
-      description: ''
+      description: List of managed types that represent <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Interfaces.IDSCommand"></xref> implementations.
     content.csharp: public System.Collections.Generic.List<Type> GetSupportedCommands ();
   overload: DeckSurf.SDK.Interfaces.IDSPlugin.GetSupportedCommands*
   exceptions: []
@@ -66,6 +67,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Interfaces
+  summary: Gets non-functional information about the plugin.
   syntax:
     content: public DeckSurf.SDK.Models.PluginMetadata Metadata { get; }
     return:
