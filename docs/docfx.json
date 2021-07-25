@@ -50,7 +50,9 @@
     ],
     "xrefService": [ "https://xref.docs.microsoft.com/query?uid={uid}" ],
     "dest": "_site",
-    "titleSuffix": "| DeckSurf - Open Stream Deck Tooling and SDK",
+    "globalMetadata": {
+      "titleSuffix": "| DeckSurf - Open Stream Deck Tooling and SDK"
+    },
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": [
