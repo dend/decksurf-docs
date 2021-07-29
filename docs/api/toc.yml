@@ -74,6 +74,15 @@
     - net5.0
   monikers:
   - net5.0
+- uid: DeckSurf.SDK.Models.Devices
+  name: DeckSurf.SDK.Models.Devices
+  items:
+  - uid: DeckSurf.SDK.Models.Devices.StreamDeckXL
+    name: StreamDeckXL
+    monikers:
+    - net5.0
+  monikers:
+  - net5.0
 - uid: DeckSurf.SDK.Util
   name: DeckSurf.SDK.Util
   items:

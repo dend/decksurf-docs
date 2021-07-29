@@ -7,7 +7,6 @@ items:
   - DeckSurf.SDK.Core.DeviceManager.#ctor
   - DeckSurf.SDK.Core.DeviceManager.GetDeviceList
   - DeckSurf.SDK.Core.DeviceManager.IsSupported(System.Int32,System.Int32)
-  - DeckSurf.SDK.Core.DeviceManager.SetKey(DeckSurf.SDK.Models.ConnectedDevice,System.Int32,System.Byte[])
   - DeckSurf.SDK.Core.DeviceManager.SetupDevice(DeckSurf.SDK.Models.ConfigurationProfile)
   langs:
   - csharp
@@ -112,43 +111,6 @@ items:
       description: True if device is supported, false if not.
     content.csharp: public static bool IsSupported (int vid, int pid);
   overload: DeckSurf.SDK.Core.DeviceManager.IsSupported*
-  exceptions: []
-  modifiers.csharp:
-  - public
-  - static
-  monikers:
-  - net5.0
-- uid: DeckSurf.SDK.Core.DeviceManager.SetKey(DeckSurf.SDK.Models.ConnectedDevice,System.Int32,System.Byte[])
-  commentId: M:DeckSurf.SDK.Core.DeviceManager.SetKey(DeckSurf.SDK.Models.ConnectedDevice,System.Int32,System.Byte[])
-  id: SetKey(DeckSurf.SDK.Models.ConnectedDevice,System.Int32,System.Byte[])
-  parent: DeckSurf.SDK.Core.DeviceManager
-  langs:
-  - csharp
-  name: SetKey(ConnectedDevice, Int32, Byte[])
-  nameWithType: DeviceManager.SetKey(ConnectedDevice, Int32, Byte[])
-  fullName: DeckSurf.SDK.Core.DeviceManager.SetKey(ConnectedDevice, Int32, Byte[])
-  type: Method
-  assemblies:
-  - DeckSurf.SDK
-  namespace: DeckSurf.SDK.Core
-  summary: Sets the content of a key on a Stream Deck device.
-  syntax:
-    content: public static bool SetKey (DeckSurf.SDK.Models.ConnectedDevice device, int keyId, byte[] image);
-    parameters:
-    - id: device
-      type: DeckSurf.SDK.Models.ConnectedDevice
-      description: Instance of a connected Stream Deck device.
-    - id: keyId
-      type: System.Int32
-      description: Numberic ID of the key that needs to be set.
-    - id: image
-      type: System.Byte[]
-      description: Binary content (JPEG) of the image that needs to be set on the key. The image will be resized to match the expectations of the connected device.
-    return:
-      type: System.Boolean
-      description: True if succesful, false if not.
-    content.csharp: public static bool SetKey (DeckSurf.SDK.Models.ConnectedDevice device, int keyId, byte[] image);
-  overload: DeckSurf.SDK.Core.DeviceManager.SetKey*
   exceptions: []
   modifiers.csharp:
   - public
@@ -262,31 +224,6 @@ references:
   name: Int32
   nameWithType: Int32
   fullName: System.Int32
-- uid: DeckSurf.SDK.Core.DeviceManager.SetKey(DeckSurf.SDK.Models.ConnectedDevice,System.Int32,System.Byte[])
-  parent: DeckSurf.SDK.Core.DeviceManager
-  isExternal: false
-  name: SetKey(ConnectedDevice, Int32, Byte[])
-  nameWithType: DeviceManager.SetKey(ConnectedDevice, Int32, Byte[])
-  fullName: DeckSurf.SDK.Core.DeviceManager.SetKey(ConnectedDevice, Int32, Byte[])
-  type: method
-- uid: System.Byte
-  isExternal: true
-  name: Byte
-  nameWithType: Byte
-  fullName: System.Byte
-- uid: System.Byte[]
-  parent: System
-  name: Byte[]
-  nameWithType: Byte[]
-  fullName: System.Byte[]
-  spec.csharp:
-  - uid: System.Byte
-    name: Byte
-    nameWithType: Byte
-    fullName: System.Byte
-  - name: '[]'
-    nameWithType: '[]'
-    fullName: '[]'
 - uid: DeckSurf.SDK.Core.DeviceManager.SetupDevice(DeckSurf.SDK.Models.ConfigurationProfile)
   parent: DeckSurf.SDK.Core.DeviceManager
   isExternal: false
@@ -327,16 +264,6 @@ references:
   name: IsSupported
   nameWithType: DeviceManager.IsSupported
   fullName: DeckSurf.SDK.Core.DeviceManager.IsSupported
-  monikers:
-  - net5.0
-  type: method
-- uid: DeckSurf.SDK.Core.DeviceManager.SetKey*
-  commentId: Overload:DeckSurf.SDK.Core.DeviceManager.SetKey
-  parent: DeckSurf.SDK.Core.DeviceManager
-  isExternal: false
-  name: SetKey
-  nameWithType: DeviceManager.SetKey
-  fullName: DeckSurf.SDK.Core.DeviceManager.SetKey
   monikers:
   - net5.0
   type: method

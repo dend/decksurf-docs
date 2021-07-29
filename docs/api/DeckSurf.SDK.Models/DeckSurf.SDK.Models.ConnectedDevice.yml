@@ -15,6 +15,9 @@ items:
   - DeckSurf.SDK.Models.ConnectedDevice.Open
   - DeckSurf.SDK.Models.ConnectedDevice.Path
   - DeckSurf.SDK.Models.ConnectedDevice.PId
+  - DeckSurf.SDK.Models.ConnectedDevice.SetBrightness(System.Byte)
+  - DeckSurf.SDK.Models.ConnectedDevice.SetKey(System.Int32,System.Byte[])
+  - DeckSurf.SDK.Models.ConnectedDevice.SetupDeviceButtonMap(System.Collections.Generic.IEnumerable{DeckSurf.SDK.Models.CommandMapping})
   - DeckSurf.SDK.Models.ConnectedDevice.VId
   langs:
   - csharp
@@ -26,14 +29,17 @@ items:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
   syntax:
-    content: public class ConnectedDevice
-    content.csharp: public class ConnectedDevice
+    content: public abstract class ConnectedDevice
+    content.csharp: public abstract class ConnectedDevice
   inheritance:
   - System.Object
+  derivedClasses:
+  - DeckSurf.SDK.Models.Devices.StreamDeckXL
   implements: []
   inheritedMembers: []
   modifiers.csharp:
   - public
+  - abstract
   monikers:
   - net5.0
   _op_AssemblyMonikerMapping:
@@ -261,12 +267,12 @@ items:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
   syntax:
-    content: public HidSharp.DeviceStream Open ();
+    content: public HidSharp.HidStream Open ();
     parameters: []
     return:
-      type: HidSharp.DeviceStream
+      type: HidSharp.HidStream
       description: ''
-    content.csharp: public HidSharp.DeviceStream Open ();
+    content.csharp: public HidSharp.HidStream Open ();
   overload: DeckSurf.SDK.Models.ConnectedDevice.Open*
   exceptions: []
   modifiers.csharp:
@@ -325,6 +331,91 @@ items:
   - public
   - get
   - set
+  monikers:
+  - net5.0
+- uid: DeckSurf.SDK.Models.ConnectedDevice.SetBrightness(System.Byte)
+  commentId: M:DeckSurf.SDK.Models.ConnectedDevice.SetBrightness(System.Byte)
+  id: SetBrightness(System.Byte)
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  langs:
+  - csharp
+  name: SetBrightness(Byte)
+  nameWithType: ConnectedDevice.SetBrightness(Byte)
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.SetBrightness(Byte)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  syntax:
+    content: public void SetBrightness (byte percentage);
+    parameters:
+    - id: percentage
+      type: System.Byte
+      description: ''
+    content.csharp: public void SetBrightness (byte percentage);
+  overload: DeckSurf.SDK.Models.ConnectedDevice.SetBrightness*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net5.0
+- uid: DeckSurf.SDK.Models.ConnectedDevice.SetKey(System.Int32,System.Byte[])
+  commentId: M:DeckSurf.SDK.Models.ConnectedDevice.SetKey(System.Int32,System.Byte[])
+  id: SetKey(System.Int32,System.Byte[])
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  langs:
+  - csharp
+  name: SetKey(Int32, Byte[])
+  nameWithType: ConnectedDevice.SetKey(Int32, Byte[])
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.SetKey(Int32, Byte[])
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Sets the content of a key on a Stream Deck device.
+  syntax:
+    content: public bool SetKey (int keyId, byte[] image);
+    parameters:
+    - id: keyId
+      type: System.Int32
+      description: Numberic ID of the key that needs to be set.
+    - id: image
+      type: System.Byte[]
+      description: Binary content (JPEG) of the image that needs to be set on the key. The image will be resized to match the expectations of the connected device.
+    return:
+      type: System.Boolean
+      description: True if succesful, false if not.
+    content.csharp: public bool SetKey (int keyId, byte[] image);
+  overload: DeckSurf.SDK.Models.ConnectedDevice.SetKey*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net5.0
+- uid: DeckSurf.SDK.Models.ConnectedDevice.SetupDeviceButtonMap(System.Collections.Generic.IEnumerable{DeckSurf.SDK.Models.CommandMapping})
+  commentId: M:DeckSurf.SDK.Models.ConnectedDevice.SetupDeviceButtonMap(System.Collections.Generic.IEnumerable{DeckSurf.SDK.Models.CommandMapping})
+  id: SetupDeviceButtonMap(System.Collections.Generic.IEnumerable{DeckSurf.SDK.Models.CommandMapping})
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  langs:
+  - csharp
+  name: SetupDeviceButtonMap(IEnumerable<CommandMapping>)
+  nameWithType: ConnectedDevice.SetupDeviceButtonMap(IEnumerable<CommandMapping>)
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.SetupDeviceButtonMap(IEnumerable<CommandMapping>)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  syntax:
+    content: public void SetupDeviceButtonMap (System.Collections.Generic.IEnumerable<DeckSurf.SDK.Models.CommandMapping> buttonMap);
+    parameters:
+    - id: buttonMap
+      type: System.Collections.Generic.IEnumerable{DeckSurf.SDK.Models.CommandMapping}
+      description: ''
+    content.csharp: public void SetupDeviceButtonMap (System.Collections.Generic.IEnumerable<DeckSurf.SDK.Models.CommandMapping> buttonMap);
+  overload: DeckSurf.SDK.Models.ConnectedDevice.SetupDeviceButtonMap*
+  exceptions: []
+  modifiers.csharp:
+  - public
   monikers:
   - net5.0
 - uid: DeckSurf.SDK.Models.ConnectedDevice.VId
@@ -455,12 +546,12 @@ references:
   nameWithType: ConnectedDevice.Open()
   fullName: DeckSurf.SDK.Models.ConnectedDevice.Open()
   type: method
-- uid: HidSharp.DeviceStream
+- uid: HidSharp.HidStream
   parent: HidSharp
   isExternal: true
-  name: DeviceStream
-  nameWithType: DeviceStream
-  fullName: HidSharp.DeviceStream
+  name: HidStream
+  nameWithType: HidStream
+  fullName: HidSharp.HidStream
 - uid: DeckSurf.SDK.Models.ConnectedDevice.Path
   parent: DeckSurf.SDK.Models.ConnectedDevice
   isExternal: false
@@ -475,6 +566,81 @@ references:
   nameWithType: ConnectedDevice.PId
   fullName: DeckSurf.SDK.Models.ConnectedDevice.PId
   type: property
+- uid: DeckSurf.SDK.Models.ConnectedDevice.SetBrightness(System.Byte)
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: SetBrightness(Byte)
+  nameWithType: ConnectedDevice.SetBrightness(Byte)
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.SetBrightness(Byte)
+  type: method
+- uid: System.Byte
+  parent: System
+  isExternal: true
+  name: Byte
+  nameWithType: Byte
+  fullName: System.Byte
+- uid: DeckSurf.SDK.Models.ConnectedDevice.SetKey(System.Int32,System.Byte[])
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: SetKey(Int32, Byte[])
+  nameWithType: ConnectedDevice.SetKey(Int32, Byte[])
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.SetKey(Int32, Byte[])
+  type: method
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Byte[]
+  parent: System
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: DeckSurf.SDK.Models.ConnectedDevice.SetupDeviceButtonMap(System.Collections.Generic.IEnumerable{DeckSurf.SDK.Models.CommandMapping})
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: SetupDeviceButtonMap(IEnumerable<CommandMapping>)
+  nameWithType: ConnectedDevice.SetupDeviceButtonMap(IEnumerable<CommandMapping>)
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.SetupDeviceButtonMap(IEnumerable<CommandMapping>)
+  type: method
+- uid: System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.Generic.IEnumerable
+- uid: DeckSurf.SDK.Models.CommandMapping
+  name: CommandMapping
+  nameWithType: CommandMapping
+  fullName: DeckSurf.SDK.Models.CommandMapping
+- uid: System.Collections.Generic.IEnumerable{DeckSurf.SDK.Models.CommandMapping}
+  parent: System.Collections.Generic
+  name: IEnumerable<CommandMapping>
+  nameWithType: IEnumerable<CommandMapping>
+  fullName: System.Collections.Generic.IEnumerable<DeckSurf.SDK.Models.CommandMapping>
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: DeckSurf.SDK.Models.CommandMapping
+    name: CommandMapping
+    nameWithType: CommandMapping
+    fullName: DeckSurf.SDK.Models.CommandMapping
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
 - uid: DeckSurf.SDK.Models.ConnectedDevice.VId
   parent: DeckSurf.SDK.Models.ConnectedDevice
   isExternal: false
@@ -572,6 +738,36 @@ references:
   monikers:
   - net5.0
   type: property
+- uid: DeckSurf.SDK.Models.ConnectedDevice.SetBrightness*
+  commentId: Overload:DeckSurf.SDK.Models.ConnectedDevice.SetBrightness
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: SetBrightness
+  nameWithType: ConnectedDevice.SetBrightness
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.SetBrightness
+  monikers:
+  - net5.0
+  type: method
+- uid: DeckSurf.SDK.Models.ConnectedDevice.SetKey*
+  commentId: Overload:DeckSurf.SDK.Models.ConnectedDevice.SetKey
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: SetKey
+  nameWithType: ConnectedDevice.SetKey
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.SetKey
+  monikers:
+  - net5.0
+  type: method
+- uid: DeckSurf.SDK.Models.ConnectedDevice.SetupDeviceButtonMap*
+  commentId: Overload:DeckSurf.SDK.Models.ConnectedDevice.SetupDeviceButtonMap
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: SetupDeviceButtonMap
+  nameWithType: ConnectedDevice.SetupDeviceButtonMap
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.SetupDeviceButtonMap
+  monikers:
+  - net5.0
+  type: method
 - uid: DeckSurf.SDK.Models.ConnectedDevice.VId*
   commentId: Overload:DeckSurf.SDK.Models.ConnectedDevice.VId
   parent: DeckSurf.SDK.Models.ConnectedDevice
@@ -582,3 +778,11 @@ references:
   monikers:
   - net5.0
   type: property
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckXL
+  commentId: T:DeckSurf.SDK.Models.Devices.StreamDeckXL
+  parent: DeckSurf.SDK.Models.Devices
+  isExternal: false
+  name: StreamDeckXL
+  nameWithType: DeckSurf.SDK.Models.Devices.StreamDeckXL
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckXL
+  type: class
