@@ -17,6 +17,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Enum represening Stream Deck device models and their respective USB product IDs (PIDs).
   syntax:
     content: public enum DeviceModel
     content.csharp: public enum DeviceModel
@@ -42,6 +43,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: The <a href="https://www.elgato.com/en/stream-deck-mini">Mini model</a> of the Stream Deck device.
   syntax:
     content: MINI
     return:
@@ -65,6 +67,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: The original model of the Stream Deck device.
   syntax:
     content: ORIGINAL
     return:
@@ -88,6 +91,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: The <a href="https://www.elgato.com/en/stream-deck">updated original model</a> of the Stream Deck device.
   syntax:
     content: ORIGINAL_V2
     return:
@@ -111,6 +115,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: The <a href="https://www.elgato.com/en/stream-deck-xl">XL model</a> of the Stream Deck device.
   syntax:
     content: XL
     return:

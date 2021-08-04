@@ -15,6 +15,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Attribute that determines the class of Stream Deck devices that a plugin is compatible with.
   syntax:
     content: >-
       [[System.AttributeUsage(System.AttributeTargets.Class, AllowMultiple=true, Inherited=false)]]
@@ -50,12 +51,13 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Initializes a new instance of the <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.CompatibleWithAttribute"></xref> class.
   syntax:
     content: public CompatibleWithAttribute (DeckSurf.SDK.Models.DeviceModel model);
     parameters:
     - id: model
       type: DeckSurf.SDK.Models.DeviceModel
-      description: ''
+      description: Reference to the <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.DeviceModel"></xref> device model type.
     content.csharp: public CompatibleWithAttribute (DeckSurf.SDK.Models.DeviceModel model);
   overload: DeckSurf.SDK.Models.CompatibleWithAttribute.#ctor*
   exceptions: []
@@ -76,6 +78,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Gets or sets the <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.DeviceModel"></xref> device model type.
   syntax:
     content: public DeckSurf.SDK.Models.DeviceModel CompatibleModel { get; set; }
     return:

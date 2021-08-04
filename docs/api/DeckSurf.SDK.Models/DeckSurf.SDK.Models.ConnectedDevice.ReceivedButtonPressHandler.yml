@@ -12,15 +12,16 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Delegate responsible for handling Stream Deck button presses.
   syntax:
     content: public delegate void ConnectedDevice.ReceivedButtonPressHandler(object source, ButtonPressEventArgs e);
     parameters:
     - id: source
       type: System.Object
-      description: ''
+      description: The device where the button was pressed.
     - id: e
       type: DeckSurf.SDK.Models.ButtonPressEventArgs
-      description: ''
+      description: Information on the button press.
     content.csharp: public delegate void ConnectedDevice.ReceivedButtonPressHandler(object source, ButtonPressEventArgs e);
   inheritance:
   - System.Delegate

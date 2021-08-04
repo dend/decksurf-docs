@@ -13,7 +13,6 @@ items:
   - DeckSurf.SDK.Models.ConnectedDevice.ReceivedButtonPressHandler
   - DeckSurf.SDK.Models.DeviceModel
   - DeckSurf.SDK.Models.PluginMetadata
-  - DeckSurf.SDK.Models.RGBQUAD
   - DeckSurf.SDK.Models.SIIGBF
   langs:
   - csharp
@@ -96,14 +95,6 @@ references:
   nameWithType: DeckSurf.SDK.Models.PluginMetadata
   fullName: DeckSurf.SDK.Models.PluginMetadata
   type: class
-- uid: DeckSurf.SDK.Models.RGBQUAD
-  commentId: T:DeckSurf.SDK.Models.RGBQUAD
-  parent: DeckSurf.SDK.Models
-  isExternal: false
-  name: RGBQUAD
-  nameWithType: DeckSurf.SDK.Models.RGBQUAD
-  fullName: DeckSurf.SDK.Models.RGBQUAD
-  type: struct
 - uid: DeckSurf.SDK.Models.SIIGBF
   commentId: T:DeckSurf.SDK.Models.SIIGBF
   parent: DeckSurf.SDK.Models

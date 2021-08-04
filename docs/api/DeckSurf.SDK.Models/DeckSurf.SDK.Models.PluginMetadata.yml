@@ -18,6 +18,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Metadata that describes the plugin.
   syntax:
     content: public class PluginMetadata
     content.csharp: public class PluginMetadata
@@ -68,6 +69,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Gets or sets the plugin author.
   syntax:
     content: public string Author { get; set; }
     return:
@@ -95,6 +97,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Gets or sets the plugin ID string.
   syntax:
     content: public string Id { get; set; }
     return:
@@ -122,6 +125,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Gets or sets the plugin version.
   syntax:
     content: public string Version { get; set; }
     return:
@@ -149,6 +153,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Gets or sets the plugin home page.
   syntax:
     content: public string Website { get; set; }
     return:

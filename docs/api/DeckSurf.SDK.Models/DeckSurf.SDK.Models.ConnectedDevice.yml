@@ -28,6 +28,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Abstract class representing a connected Stream Deck device. Use specific implementations for a given connected model.
   syntax:
     content: public abstract class ConnectedDevice
     content.csharp: public abstract class ConnectedDevice
@@ -58,6 +59,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Initializes a new instance of the <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.ConnectedDevice"></xref> class.
   syntax:
     content: public ConnectedDevice ();
     parameters: []
@@ -81,24 +83,25 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Initializes a new instance of the <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.ConnectedDevice"></xref> class with given device parameters.
   syntax:
     content: public ConnectedDevice (int vid, int pid, string path, string name, DeckSurf.SDK.Models.DeviceModel model);
     parameters:
     - id: vid
       type: System.Int32
-      description: ''
+      description: Vendor ID.
     - id: pid
       type: System.Int32
-      description: ''
+      description: Product ID.
     - id: path
       type: System.String
-      description: ''
+      description: Path to the USB HID device.
     - id: name
       type: System.String
-      description: ''
+      description: Name of the USB HID device.
     - id: model
       type: DeckSurf.SDK.Models.DeviceModel
-      description: ''
+      description: Stream Deck model.
     content.csharp: public ConnectedDevice (int vid, int pid, string path, string name, DeckSurf.SDK.Models.DeviceModel model);
   overload: DeckSurf.SDK.Models.ConnectedDevice.#ctor*
   exceptions: []
@@ -119,6 +122,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Gets the number of buttons on the connected Stream Deck device.
   syntax:
     content: public int ButtonCount { get; }
     return:
@@ -145,6 +149,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Clear the contents of the Stream Deck buttons.
   syntax:
     content: public void ClearPanel ();
     parameters: []
@@ -168,6 +173,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Initialize the device and start reading the input stream.
   syntax:
     content: public void InitializeDevice ();
     parameters: []
@@ -191,18 +197,18 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Gets the Stream Deck device model.
   syntax:
-    content: public DeckSurf.SDK.Models.DeviceModel Model { get; set; }
+    content: public DeckSurf.SDK.Models.DeviceModel Model { get; }
     return:
       type: DeckSurf.SDK.Models.DeviceModel
       description: ''
-    content.csharp: public DeckSurf.SDK.Models.DeviceModel Model { get; set; }
+    content.csharp: public DeckSurf.SDK.Models.DeviceModel Model { get; }
   overload: DeckSurf.SDK.Models.ConnectedDevice.Model*
   exceptions: []
   modifiers.csharp:
   - public
   - get
-  - set
   monikers:
   - net5.0
 - uid: DeckSurf.SDK.Models.ConnectedDevice.Name
@@ -218,18 +224,18 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Gets the USB HID device name.
   syntax:
-    content: public string Name { get; set; }
+    content: public string Name { get; }
     return:
       type: System.String
       description: ''
-    content.csharp: public string Name { get; set; }
+    content.csharp: public string Name { get; }
   overload: DeckSurf.SDK.Models.ConnectedDevice.Name*
   exceptions: []
   modifiers.csharp:
   - public
   - get
-  - set
   monikers:
   - net5.0
 - uid: DeckSurf.SDK.Models.ConnectedDevice.OnButtonPress
@@ -245,6 +251,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Button press event handler.
   syntax:
     content: public event DeckSurf.SDK.Models.ConnectedDevice.ReceivedButtonPressHandler OnButtonPress;
     content.csharp: public event DeckSurf.SDK.Models.ConnectedDevice.ReceivedButtonPressHandler OnButtonPress;
@@ -266,12 +273,13 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Open the underlying Stream Deck device.
   syntax:
     content: public HidSharp.HidStream Open ();
     parameters: []
     return:
       type: HidSharp.HidStream
-      description: ''
+      description: HID stream that can be read or written to.
     content.csharp: public HidSharp.HidStream Open ();
   overload: DeckSurf.SDK.Models.ConnectedDevice.Open*
   exceptions: []
@@ -292,18 +300,18 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Gets the USB HID device path.
   syntax:
-    content: public string Path { get; set; }
+    content: public string Path { get; }
     return:
       type: System.String
       description: ''
-    content.csharp: public string Path { get; set; }
+    content.csharp: public string Path { get; }
   overload: DeckSurf.SDK.Models.ConnectedDevice.Path*
   exceptions: []
   modifiers.csharp:
   - public
   - get
-  - set
   monikers:
   - net5.0
 - uid: DeckSurf.SDK.Models.ConnectedDevice.PId
@@ -319,18 +327,18 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Gets the product ID.
   syntax:
-    content: public int PId { get; set; }
+    content: public int PId { get; }
     return:
       type: System.Int32
       description: ''
-    content.csharp: public int PId { get; set; }
+    content.csharp: public int PId { get; }
   overload: DeckSurf.SDK.Models.ConnectedDevice.PId*
   exceptions: []
   modifiers.csharp:
   - public
   - get
-  - set
   monikers:
   - net5.0
 - uid: DeckSurf.SDK.Models.ConnectedDevice.SetBrightness(System.Byte)
@@ -346,12 +354,13 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Sets the brightness of the Stream Deck device display.
   syntax:
     content: public void SetBrightness (byte percentage);
     parameters:
     - id: percentage
       type: System.Byte
-      description: ''
+      description: Percentage, from 0 to 100, to which brightness should be set. Any values larger than 100 will be set to 100.
     content.csharp: public void SetBrightness (byte percentage);
   overload: DeckSurf.SDK.Models.ConnectedDevice.SetBrightness*
   exceptions: []
@@ -405,12 +414,13 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Sets up the button mapping to associated plugins.
   syntax:
     content: public void SetupDeviceButtonMap (System.Collections.Generic.IEnumerable<DeckSurf.SDK.Models.CommandMapping> buttonMap);
     parameters:
     - id: buttonMap
       type: System.Collections.Generic.IEnumerable{DeckSurf.SDK.Models.CommandMapping}
-      description: ''
+      description: List of mappings, usually loaded from a configuration file.
     content.csharp: public void SetupDeviceButtonMap (System.Collections.Generic.IEnumerable<DeckSurf.SDK.Models.CommandMapping> buttonMap);
   overload: DeckSurf.SDK.Models.ConnectedDevice.SetupDeviceButtonMap*
   exceptions: []
@@ -431,18 +441,18 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Gets the vendor ID.
   syntax:
-    content: public int VId { get; set; }
+    content: public int VId { get; }
     return:
       type: System.Int32
       description: ''
-    content.csharp: public int VId { get; set; }
+    content.csharp: public int VId { get; }
   overload: DeckSurf.SDK.Models.ConnectedDevice.VId*
   exceptions: []
   modifiers.csharp:
   - public
   - get
-  - set
   monikers:
   - net5.0
 references:

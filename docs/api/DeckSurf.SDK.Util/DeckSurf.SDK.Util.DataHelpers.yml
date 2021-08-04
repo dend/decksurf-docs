@@ -15,6 +15,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Util
+  summary: Helper class used for data conversion and management.
   syntax:
     content: public class DataHelpers
     content.csharp: public class DataHelpers
@@ -65,15 +66,16 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Util
+  summary: Converts a byte array to string.
   syntax:
     content: public static string ByteArrayToString (byte[] data);
     parameters:
     - id: data
       type: System.Byte[]
-      description: ''
+      description: Source byte array.
     return:
       type: System.String
-      description: ''
+      description: String, generated from byte array.
     content.csharp: public static string ByteArrayToString (byte[] data);
   overload: DeckSurf.SDK.Util.DataHelpers.ByteArrayToString*
   exceptions: []

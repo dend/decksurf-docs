@@ -17,6 +17,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Util
+  summary: Class that is used to manage DeckSurf configuration files.
   syntax:
     content: public class ConfigurationHelper
     content.csharp: public class ConfigurationHelper
@@ -67,15 +68,16 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Util
+  summary: Gets the profile object for a given profile name.
   syntax:
     content: public static DeckSurf.SDK.Models.ConfigurationProfile GetProfile (string profile);
     parameters:
     - id: profile
       type: System.String
-      description: ''
+      description: Name of the profile.
     return:
       type: DeckSurf.SDK.Models.ConfigurationProfile
-      description: ''
+      description: Object representing the DeckSurf configuration profile.
     content.csharp: public static DeckSurf.SDK.Models.ConfigurationProfile GetProfile (string profile);
   overload: DeckSurf.SDK.Util.ConfigurationHelper.GetProfile*
   exceptions: []
@@ -97,15 +99,16 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Util
+  summary: Returns the fully qualified path to a given DeckSurf configuration profile.
   syntax:
     content: public static string GetProfilePath (string name);
     parameters:
     - id: name
       type: System.String
-      description: ''
+      description: Name of the profile.
     return:
       type: System.String
-      description: ''
+      description: Fully qualified path to the profile JSON file.
     content.csharp: public static string GetProfilePath (string name);
   overload: DeckSurf.SDK.Util.ConfigurationHelper.GetProfilePath*
   exceptions: []
@@ -127,21 +130,22 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Util
+  summary: Stores the DeckSurf configuration profile.
   syntax:
     content: public static DeckSurf.SDK.Models.ConfigurationProfile WriteToConfiguration (string profile, int deviceIndex, DeckSurf.SDK.Models.CommandMapping mapping);
     parameters:
     - id: profile
       type: System.String
-      description: ''
+      description: Name of the profile.
     - id: deviceIndex
       type: System.Int32
-      description: ''
+      description: Zero-based index of the Stream Deck device associated with a profile.
     - id: mapping
       type: DeckSurf.SDK.Models.CommandMapping
-      description: ''
+      description: Object representing buttons mapped to plugins and commands.
     return:
       type: DeckSurf.SDK.Models.ConfigurationProfile
-      description: ''
+      description: Object representing the DeckSurf configuration profile.
     content.csharp: public static DeckSurf.SDK.Models.ConfigurationProfile WriteToConfiguration (string profile, int deviceIndex, DeckSurf.SDK.Models.CommandMapping mapping);
   overload: DeckSurf.SDK.Util.ConfigurationHelper.WriteToConfiguration*
   exceptions: []

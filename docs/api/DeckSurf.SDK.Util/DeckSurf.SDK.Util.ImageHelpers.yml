@@ -19,6 +19,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Util
+  summary: Collection of methods used for image manipulation, allowing easier Stream Deck button image preparation.
   syntax:
     content: public class ImageHelpers
     content.csharp: public class ImageHelpers
@@ -69,24 +70,25 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Util
+  summary: Gets the Windows icon for a given file.
   syntax:
     content: public static System.Drawing.Bitmap GetFileIcon (string fileName, int width, int height, DeckSurf.SDK.Models.SIIGBF options);
     parameters:
     - id: fileName
       type: System.String
-      description: ''
+      description: Path to the file.
     - id: width
       type: System.Int32
-      description: ''
+      description: Desired icon width.
     - id: height
       type: System.Int32
-      description: ''
+      description: Desired icon height.
     - id: options
       type: DeckSurf.SDK.Models.SIIGBF
-      description: ''
+      description: Icon extraction flags, represented by a standard Windows API <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.SIIGBF"></xref> enum.
     return:
       type: System.Drawing.Bitmap
-      description: ''
+      description: Bitmap object containing the file icon.
     content.csharp: public static System.Drawing.Bitmap GetFileIcon (string fileName, int width, int height, DeckSurf.SDK.Models.SIIGBF options);
   overload: DeckSurf.SDK.Util.ImageHelpers.GetFileIcon*
   exceptions: []
@@ -108,15 +110,16 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Util
+  summary: Converts a byte array to an Image object.
   syntax:
     content: public static System.Drawing.Image GetImage (byte[] buffer);
     parameters:
     - id: buffer
       type: System.Byte[]
-      description: ''
+      description: Byte array containing the image.
     return:
       type: System.Drawing.Image
-      description: ''
+      description: Image object, generated from a given byte array.
     content.csharp: public static System.Drawing.Image GetImage (byte[] buffer);
   overload: DeckSurf.SDK.Util.ImageHelpers.GetImage*
   exceptions: []
@@ -138,15 +141,16 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Util
+  summary: Converts an Icon object to a byte array.
   syntax:
     content: public static byte[] GetImageBuffer (System.Drawing.Icon icon);
     parameters:
     - id: icon
       type: System.Drawing.Icon
-      description: ''
+      description: Icon object containing the image.
     return:
       type: System.Byte[]
-      description: ''
+      description: Byte array, generated from an Icon object.
     content.csharp: public static byte[] GetImageBuffer (System.Drawing.Icon icon);
   overload: DeckSurf.SDK.Util.ImageHelpers.GetImageBuffer*
   exceptions: []
@@ -168,15 +172,16 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Util
+  summary: Converts an Image object to a byte array.
   syntax:
     content: public static byte[] GetImageBuffer (System.Drawing.Image image);
     parameters:
     - id: image
       type: System.Drawing.Image
-      description: ''
+      description: Image object containing the image.
     return:
       type: System.Byte[]
-      description: ''
+      description: Byte array, generated from an Image object.
     content.csharp: public static byte[] GetImageBuffer (System.Drawing.Image image);
   overload: DeckSurf.SDK.Util.ImageHelpers.GetImageBuffer*
   exceptions: []
@@ -198,21 +203,22 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Util
+  summary: Resize an image buffer to the expected size, in pixels.
   syntax:
     content: public static byte[] ResizeImage (byte[] buffer, int width, int height);
     parameters:
     - id: buffer
       type: System.Byte[]
-      description: ''
+      description: Byte array containing the image.
     - id: width
       type: System.Int32
-      description: ''
+      description: Target width, in pixels.
     - id: height
       type: System.Int32
-      description: ''
+      description: Target height, in pixels.
     return:
       type: System.Byte[]
-      description: ''
+      description: Byte array representing the resized image.
     content.csharp: public static byte[] ResizeImage (byte[] buffer, int width, int height);
   overload: DeckSurf.SDK.Util.ImageHelpers.ResizeImage*
   exceptions: []

@@ -23,6 +23,10 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: >-
+    Gets an HBITMAP that represents an <a href="https://docs.microsoft.com/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellitem">IShellItem</a>.
+
+    Refer to <a href="https://docs.microsoft.com/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishellitemimagefactory-getimage">Microsoft documentation</a> on the enum.
   syntax:
     content: >-
       [[System.Flags]]
@@ -56,6 +60,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Passed by callers if they want to stretch the returned image themselves.
   syntax:
     content: SIIGBF_BIGGERSIZEOK
     return:
@@ -79,6 +84,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Introduced in Windows 8. If necessary, crop the bitmap to a square.
   syntax:
     content: SIIGBF_CROPTOSQUARE
     return:
@@ -102,6 +108,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Introduced in Windows 8. If returning an icon, paint a background using the associated app's registered background color.
   syntax:
     content: SIIGBF_ICONBACKGROUND
     return:
@@ -125,6 +132,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Return only the icon, never the thumbnail.
   syntax:
     content: SIIGBF_ICONONLY
     return:
@@ -148,6 +156,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Allows access to the disk, but only to retrieve a cached item.
   syntax:
     content: SIIGBF_INCACHEONLY
     return:
@@ -171,6 +180,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Return the item only if it is already in memory.
   syntax:
     content: SIIGBF_MEMORYONLY
     return:
@@ -194,6 +204,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Shrink the bitmap as necessary to fit, preserving its aspect ratio.
   syntax:
     content: SIIGBF_RESIZETOFIT
     return:
@@ -217,6 +228,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Introduced in Windows 8. If necessary, stretch the bitmap so that the height and width fit the given size.
   syntax:
     content: SIIGBF_SCALEUP
     return:
@@ -240,6 +252,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Return only the thumbnail, never the icon.
   syntax:
     content: SIIGBF_THUMBNAILONLY
     return:
@@ -263,6 +276,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Introduced in Windows 8. Stretch and crop the bitmap to a 0.7 aspect ratio.
   syntax:
     content: SIIGBF_WIDETHUMBNAILS
     return:

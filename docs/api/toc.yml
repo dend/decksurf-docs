@@ -64,10 +64,6 @@
     name: PluginMetadata
     monikers:
     - net5.0
-  - uid: DeckSurf.SDK.Models.RGBQUAD
-    name: RGBQUAD
-    monikers:
-    - net5.0
   - uid: DeckSurf.SDK.Models.SIIGBF
     name: SIIGBF
     monikers:
