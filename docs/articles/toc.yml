@@ -1,6 +1,6 @@
 - name: Getting Started
   href: intro.md
-- name: Release notes
+- name: Release Notes
   items:
     - name: July 2021 (0.0.3)
       href: release-notes/july-2021.md
