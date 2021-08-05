@@ -9,4 +9,4 @@ To get started, start a new .NET 5.0 console application project in Visual Studi
 >[!NOTE]
 >The SDK is designed to work with Windows only at this time. Future releases might be updated to support other platforms.
 
-![Creating a new project in Visual Studio](images/intro-to-decksurf/new-project.png)
+![Creating a new project in Visual Studio](/images/intro-to-decksurf/new-project.png)
