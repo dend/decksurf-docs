@@ -45,3 +45,55 @@ If the device is successfully identified, you should see the device model and fu
 ![Example console output for the DeckSurf program](../images/intro-to-decksurf/console-output.png)
 
 With a device connected, you can now set up the application to listen to individual keys. To do that, you will need to make sure that you add a [`ManualResetEvent`](https://docs.microsoft.com/dotnet/api/system.threading.manualresetevent?view=net-5.0), which will act as a semaphore, that will prevent your application from closing once it finishes device initialization (_console applications behave this way_).
+
+To do that, add these two lines in your `Main` function:
+
+```csharp
+var exitSignal = new ManualResetEvent(false);
+
+// Your code will go here.
+
+exitSignal.WaitOne();
+```
+
+This will also require that you add a reference to [`System.Threading`](https://docs.microsoft.com/dotnet/api/system.threading?view=net-5.0) in your `using` statement section:
+
+```csharp
+using System.Threading;
+```
+
+To listen to device key presses, you will need to:
+
+1. Get a list of devices.
+1. Get an instance of the _specific_ device you want to listen to.
+1. Create an event handler.
+1. Initialize the device (_opens the stream to the device_).
+
+In C# code form, that will look like this:
+
+```csharp
+var devices = DeviceManager.GetDeviceList();
+var device = ((List<ConnectedDevice>)devices)[0];
+device.OnButtonPress += (s, e) =>
+{
+    Console.WriteLine(e.Id);
+};
+device.InitializeDevice();
+```
+
+To use the [`ConnectedDevice`](https://docs.deck.surf/api/DeckSurf.SDK.Models/DeckSurf.SDK.Models.ConnectedDevice.html) class, you need to add a reference to [`DeckSurf.SDK.Models`](https://docs.deck.surf/api/DeckSurf.SDK.Models.html):
+
+```csharp
+using DeckSurf.SDK.Models;
+```
+
+>[!NOTE]
+>Keep in mind that the snippet above is for demo purposes only - I am making a _very_ risky assumption, and that is taking the first device in the list of returned devices. It's entirely possible that there are zero devices connected. You need to make sure that you check for that.
+
+Once you build and run the application, for every button press you will see the button numeric ID shown in the terminal:
+
+![Example of C# application listening to Stream Deck key presses](../images/intro-to-decksurf/key-listener.gif)
+
+When the key is lifted, the ID shown is -1.
+
+Congratulations - you just built your first DeckSurf-powered application!
