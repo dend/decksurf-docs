@@ -10,3 +10,7 @@ To get started, start a new .NET 5.0 console application project in Visual Studi
 >The SDK is designed to work with Windows only at this time. Future releases might be updated to support other platforms.
 
 ![Creating a new project in Visual Studio](../images/intro-to-decksurf/new-project.png)
+
+Once the project is bootstrapped, you can add a new package reference by right-clicking on the project in the **Solution Explorer** and selecting the option to **Manage NuGet Packages...**
+
+![Creating a new project in Visual Studio](../images/intro-to-decksurf/add-nuget-project.png)
