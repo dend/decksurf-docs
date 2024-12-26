@@ -23,10 +23,10 @@ items:
   modifiers.csharp:
   - public
   monikers:
-  - net5.0
+  - net9.0
   _op_AssemblyMonikerMapping:
     DeckSurf.SDK:
-    - net5.0
+    - net9.0
 - uid: DeckSurf.SDK.Interfaces.IDSPlugin.GetSupportedCommands
   commentId: M:DeckSurf.SDK.Interfaces.IDSPlugin.GetSupportedCommands
   id: GetSupportedCommands
@@ -53,7 +53,7 @@ items:
   modifiers.csharp:
   - public
   monikers:
-  - net5.0
+  - net9.0
 - uid: DeckSurf.SDK.Interfaces.IDSPlugin.Metadata
   commentId: P:DeckSurf.SDK.Interfaces.IDSPlugin.Metadata
   id: Metadata
@@ -80,7 +80,7 @@ items:
   - public
   - get
   monikers:
-  - net5.0
+  - net9.0
 references:
 - uid: DeckSurf.SDK.Interfaces
   commentId: N:DeckSurf.SDK.Interfaces
@@ -147,7 +147,7 @@ references:
   nameWithType: IDSPlugin.GetSupportedCommands
   fullName: DeckSurf.SDK.Interfaces.IDSPlugin.GetSupportedCommands
   monikers:
-  - net5.0
+  - net9.0
   type: method
 - uid: DeckSurf.SDK.Interfaces.IDSPlugin.Metadata*
   commentId: Overload:DeckSurf.SDK.Interfaces.IDSPlugin.Metadata
@@ -157,5 +157,5 @@ references:
   nameWithType: IDSPlugin.Metadata
   fullName: DeckSurf.SDK.Interfaces.IDSPlugin.Metadata
   monikers:
-  - net5.0
+  - net9.0
   type: property

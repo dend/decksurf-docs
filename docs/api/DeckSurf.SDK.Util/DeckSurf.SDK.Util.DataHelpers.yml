@@ -6,6 +6,8 @@ items:
   children:
   - DeckSurf.SDK.Util.DataHelpers.#ctor
   - DeckSurf.SDK.Util.DataHelpers.ByteArrayToString(System.Byte[])
+  - DeckSurf.SDK.Util.DataHelpers.GetIntFromLittleEndianBytes(System.Byte[])
+  - DeckSurf.SDK.Util.DataHelpers.GetLittleEndianBytesFromInt(System.Int32)
   langs:
   - csharp
   name: DataHelpers
@@ -26,10 +28,10 @@ items:
   modifiers.csharp:
   - public
   monikers:
-  - net5.0
+  - net9.0
   _op_AssemblyMonikerMapping:
     DeckSurf.SDK:
-    - net5.0
+    - net9.0
 - uid: DeckSurf.SDK.Util.DataHelpers.#ctor
   commentId: M:DeckSurf.SDK.Util.DataHelpers.#ctor
   id: '#ctor'
@@ -52,7 +54,7 @@ items:
   modifiers.csharp:
   - public
   monikers:
-  - net5.0
+  - net9.0
 - uid: DeckSurf.SDK.Util.DataHelpers.ByteArrayToString(System.Byte[])
   commentId: M:DeckSurf.SDK.Util.DataHelpers.ByteArrayToString(System.Byte[])
   id: ByteArrayToString(System.Byte[])
@@ -83,7 +85,72 @@ items:
   - public
   - static
   monikers:
-  - net5.0
+  - net9.0
+- uid: DeckSurf.SDK.Util.DataHelpers.GetIntFromLittleEndianBytes(System.Byte[])
+  commentId: M:DeckSurf.SDK.Util.DataHelpers.GetIntFromLittleEndianBytes(System.Byte[])
+  id: GetIntFromLittleEndianBytes(System.Byte[])
+  parent: DeckSurf.SDK.Util.DataHelpers
+  langs:
+  - csharp
+  name: GetIntFromLittleEndianBytes(Byte[])
+  nameWithType: DataHelpers.GetIntFromLittleEndianBytes(Byte[])
+  fullName: DeckSurf.SDK.Util.DataHelpers.GetIntFromLittleEndianBytes(Byte[])
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Util
+  summary: Converts a byte array representation in Little Endian back into an integer.
+  syntax:
+    content: public static int GetIntFromLittleEndianBytes (byte[] littleEndianBytes);
+    parameters:
+    - id: littleEndianBytes
+      type: System.Byte[]
+      description: Array of bytes in Little Endian format.
+    return:
+      type: System.Int32
+      description: An unsigned integer obtained from the byte array.
+    content.csharp: public static int GetIntFromLittleEndianBytes (byte[] littleEndianBytes);
+  overload: DeckSurf.SDK.Util.DataHelpers.GetIntFromLittleEndianBytes*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Util.DataHelpers.GetLittleEndianBytesFromInt(System.Int32)
+  commentId: M:DeckSurf.SDK.Util.DataHelpers.GetLittleEndianBytesFromInt(System.Int32)
+  id: GetLittleEndianBytesFromInt(System.Int32)
+  parent: DeckSurf.SDK.Util.DataHelpers
+  langs:
+  - csharp
+  name: GetLittleEndianBytesFromInt(Int32)
+  nameWithType: DataHelpers.GetLittleEndianBytesFromInt(Int32)
+  fullName: DeckSurf.SDK.Util.DataHelpers.GetLittleEndianBytesFromInt(Int32)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Util
+  summary: >-
+    Converts an unsigned integer into a byte array representation that can be used
+
+    in packet payloads. Contains the Little Endian representation.
+  syntax:
+    content: public static byte[] GetLittleEndianBytesFromInt (int value);
+    parameters:
+    - id: value
+      type: System.Int32
+      description: Value to be converted.
+    return:
+      type: System.Byte[]
+      description: An array of <xref data-throw-if-not-resolved="true" uid="System.Byte"></xref> that represents the Little Endian representation.
+    content.csharp: public static byte[] GetLittleEndianBytesFromInt (int value);
+  overload: DeckSurf.SDK.Util.DataHelpers.GetLittleEndianBytesFromInt*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net9.0
 references:
 - uid: DeckSurf.SDK.Util
   commentId: N:DeckSurf.SDK.Util
@@ -136,6 +203,26 @@ references:
   - name: '[]'
     nameWithType: '[]'
     fullName: '[]'
+- uid: DeckSurf.SDK.Util.DataHelpers.GetIntFromLittleEndianBytes(System.Byte[])
+  parent: DeckSurf.SDK.Util.DataHelpers
+  isExternal: false
+  name: GetIntFromLittleEndianBytes(Byte[])
+  nameWithType: DataHelpers.GetIntFromLittleEndianBytes(Byte[])
+  fullName: DeckSurf.SDK.Util.DataHelpers.GetIntFromLittleEndianBytes(Byte[])
+  type: method
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: DeckSurf.SDK.Util.DataHelpers.GetLittleEndianBytesFromInt(System.Int32)
+  parent: DeckSurf.SDK.Util.DataHelpers
+  isExternal: false
+  name: GetLittleEndianBytesFromInt(Int32)
+  nameWithType: DataHelpers.GetLittleEndianBytesFromInt(Int32)
+  fullName: DeckSurf.SDK.Util.DataHelpers.GetLittleEndianBytesFromInt(Int32)
+  type: method
 - uid: DeckSurf.SDK.Util.DataHelpers.#ctor*
   commentId: Overload:DeckSurf.SDK.Util.DataHelpers.#ctor
   parent: DeckSurf.SDK.Util.DataHelpers
@@ -144,7 +231,7 @@ references:
   nameWithType: DataHelpers.DataHelpers
   fullName: DeckSurf.SDK.Util.DataHelpers.DataHelpers
   monikers:
-  - net5.0
+  - net9.0
   type: constructor
 - uid: DeckSurf.SDK.Util.DataHelpers.ByteArrayToString*
   commentId: Overload:DeckSurf.SDK.Util.DataHelpers.ByteArrayToString
@@ -154,5 +241,25 @@ references:
   nameWithType: DataHelpers.ByteArrayToString
   fullName: DeckSurf.SDK.Util.DataHelpers.ByteArrayToString
   monikers:
-  - net5.0
+  - net9.0
+  type: method
+- uid: DeckSurf.SDK.Util.DataHelpers.GetIntFromLittleEndianBytes*
+  commentId: Overload:DeckSurf.SDK.Util.DataHelpers.GetIntFromLittleEndianBytes
+  parent: DeckSurf.SDK.Util.DataHelpers
+  isExternal: false
+  name: GetIntFromLittleEndianBytes
+  nameWithType: DataHelpers.GetIntFromLittleEndianBytes
+  fullName: DeckSurf.SDK.Util.DataHelpers.GetIntFromLittleEndianBytes
+  monikers:
+  - net9.0
+  type: method
+- uid: DeckSurf.SDK.Util.DataHelpers.GetLittleEndianBytesFromInt*
+  commentId: Overload:DeckSurf.SDK.Util.DataHelpers.GetLittleEndianBytesFromInt
+  parent: DeckSurf.SDK.Util.DataHelpers
+  isExternal: false
+  name: GetLittleEndianBytesFromInt
+  nameWithType: DataHelpers.GetLittleEndianBytesFromInt
+  fullName: DeckSurf.SDK.Util.DataHelpers.GetLittleEndianBytesFromInt
+  monikers:
+  - net9.0
   type: method

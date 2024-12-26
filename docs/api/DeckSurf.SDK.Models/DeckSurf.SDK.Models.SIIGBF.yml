@@ -43,10 +43,10 @@ items:
   modifiers.csharp:
   - public
   monikers:
-  - net5.0
+  - net9.0
   _op_AssemblyMonikerMapping:
     DeckSurf.SDK:
-    - net5.0
+    - net9.0
 - uid: DeckSurf.SDK.Models.SIIGBF.SIIGBF_BIGGERSIZEOK
   commentId: F:DeckSurf.SDK.Models.SIIGBF.SIIGBF_BIGGERSIZEOK
   id: SIIGBF_BIGGERSIZEOK
@@ -69,7 +69,7 @@ items:
     content.csharp: SIIGBF_BIGGERSIZEOK
   exceptions: []
   monikers:
-  - net5.0
+  - net9.0
   literalValue: "1"
 - uid: DeckSurf.SDK.Models.SIIGBF.SIIGBF_CROPTOSQUARE
   commentId: F:DeckSurf.SDK.Models.SIIGBF.SIIGBF_CROPTOSQUARE
@@ -93,7 +93,7 @@ items:
     content.csharp: SIIGBF_CROPTOSQUARE
   exceptions: []
   monikers:
-  - net5.0
+  - net9.0
   literalValue: "32"
 - uid: DeckSurf.SDK.Models.SIIGBF.SIIGBF_ICONBACKGROUND
   commentId: F:DeckSurf.SDK.Models.SIIGBF.SIIGBF_ICONBACKGROUND
@@ -117,7 +117,7 @@ items:
     content.csharp: SIIGBF_ICONBACKGROUND
   exceptions: []
   monikers:
-  - net5.0
+  - net9.0
   literalValue: "128"
 - uid: DeckSurf.SDK.Models.SIIGBF.SIIGBF_ICONONLY
   commentId: F:DeckSurf.SDK.Models.SIIGBF.SIIGBF_ICONONLY
@@ -141,7 +141,7 @@ items:
     content.csharp: SIIGBF_ICONONLY
   exceptions: []
   monikers:
-  - net5.0
+  - net9.0
   literalValue: "4"
 - uid: DeckSurf.SDK.Models.SIIGBF.SIIGBF_INCACHEONLY
   commentId: F:DeckSurf.SDK.Models.SIIGBF.SIIGBF_INCACHEONLY
@@ -165,7 +165,7 @@ items:
     content.csharp: SIIGBF_INCACHEONLY
   exceptions: []
   monikers:
-  - net5.0
+  - net9.0
   literalValue: "16"
 - uid: DeckSurf.SDK.Models.SIIGBF.SIIGBF_MEMORYONLY
   commentId: F:DeckSurf.SDK.Models.SIIGBF.SIIGBF_MEMORYONLY
@@ -189,7 +189,7 @@ items:
     content.csharp: SIIGBF_MEMORYONLY
   exceptions: []
   monikers:
-  - net5.0
+  - net9.0
   literalValue: "2"
 - uid: DeckSurf.SDK.Models.SIIGBF.SIIGBF_RESIZETOFIT
   commentId: F:DeckSurf.SDK.Models.SIIGBF.SIIGBF_RESIZETOFIT
@@ -213,7 +213,7 @@ items:
     content.csharp: SIIGBF_RESIZETOFIT
   exceptions: []
   monikers:
-  - net5.0
+  - net9.0
   literalValue: "0"
 - uid: DeckSurf.SDK.Models.SIIGBF.SIIGBF_SCALEUP
   commentId: F:DeckSurf.SDK.Models.SIIGBF.SIIGBF_SCALEUP
@@ -237,7 +237,7 @@ items:
     content.csharp: SIIGBF_SCALEUP
   exceptions: []
   monikers:
-  - net5.0
+  - net9.0
   literalValue: "256"
 - uid: DeckSurf.SDK.Models.SIIGBF.SIIGBF_THUMBNAILONLY
   commentId: F:DeckSurf.SDK.Models.SIIGBF.SIIGBF_THUMBNAILONLY
@@ -261,7 +261,7 @@ items:
     content.csharp: SIIGBF_THUMBNAILONLY
   exceptions: []
   monikers:
-  - net5.0
+  - net9.0
   literalValue: "8"
 - uid: DeckSurf.SDK.Models.SIIGBF.SIIGBF_WIDETHUMBNAILS
   commentId: F:DeckSurf.SDK.Models.SIIGBF.SIIGBF_WIDETHUMBNAILS
@@ -285,7 +285,7 @@ items:
     content.csharp: SIIGBF_WIDETHUMBNAILS
   exceptions: []
   monikers:
-  - net5.0
+  - net9.0
   literalValue: "64"
 references:
 - uid: DeckSurf.SDK.Models

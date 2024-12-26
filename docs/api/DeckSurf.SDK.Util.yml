@@ -14,7 +14,7 @@ items:
   fullName: DeckSurf.SDK.Util
   type: Namespace
   monikers:
-  - net5.0
+  - net9.0
 references:
 - uid: DeckSurf.SDK.Util.ConfigurationHelper
   commentId: T:DeckSurf.SDK.Util.ConfigurationHelper

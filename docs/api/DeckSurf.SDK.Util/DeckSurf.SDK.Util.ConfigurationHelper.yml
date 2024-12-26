@@ -28,10 +28,10 @@ items:
   modifiers.csharp:
   - public
   monikers:
-  - net5.0
+  - net9.0
   _op_AssemblyMonikerMapping:
     DeckSurf.SDK:
-    - net5.0
+    - net9.0
 - uid: DeckSurf.SDK.Util.ConfigurationHelper.#ctor
   commentId: M:DeckSurf.SDK.Util.ConfigurationHelper.#ctor
   id: '#ctor'
@@ -54,7 +54,7 @@ items:
   modifiers.csharp:
   - public
   monikers:
-  - net5.0
+  - net9.0
 - uid: DeckSurf.SDK.Util.ConfigurationHelper.GetProfile(System.String)
   commentId: M:DeckSurf.SDK.Util.ConfigurationHelper.GetProfile(System.String)
   id: GetProfile(System.String)
@@ -85,7 +85,7 @@ items:
   - public
   - static
   monikers:
-  - net5.0
+  - net9.0
 - uid: DeckSurf.SDK.Util.ConfigurationHelper.GetProfilePath(System.String)
   commentId: M:DeckSurf.SDK.Util.ConfigurationHelper.GetProfilePath(System.String)
   id: GetProfilePath(System.String)
@@ -116,7 +116,7 @@ items:
   - public
   - static
   monikers:
-  - net5.0
+  - net9.0
 - uid: DeckSurf.SDK.Util.ConfigurationHelper.WriteToConfiguration(System.String,System.Int32,DeckSurf.SDK.Models.CommandMapping)
   commentId: M:DeckSurf.SDK.Util.ConfigurationHelper.WriteToConfiguration(System.String,System.Int32,DeckSurf.SDK.Models.CommandMapping)
   id: WriteToConfiguration(System.String,System.Int32,DeckSurf.SDK.Models.CommandMapping)
@@ -153,7 +153,7 @@ items:
   - public
   - static
   monikers:
-  - net5.0
+  - net9.0
 references:
 - uid: DeckSurf.SDK.Util
   commentId: N:DeckSurf.SDK.Util
@@ -228,7 +228,7 @@ references:
   nameWithType: ConfigurationHelper.ConfigurationHelper
   fullName: DeckSurf.SDK.Util.ConfigurationHelper.ConfigurationHelper
   monikers:
-  - net5.0
+  - net9.0
   type: constructor
 - uid: DeckSurf.SDK.Util.ConfigurationHelper.GetProfile*
   commentId: Overload:DeckSurf.SDK.Util.ConfigurationHelper.GetProfile
@@ -238,7 +238,7 @@ references:
   nameWithType: ConfigurationHelper.GetProfile
   fullName: DeckSurf.SDK.Util.ConfigurationHelper.GetProfile
   monikers:
-  - net5.0
+  - net9.0
   type: method
 - uid: DeckSurf.SDK.Util.ConfigurationHelper.GetProfilePath*
   commentId: Overload:DeckSurf.SDK.Util.ConfigurationHelper.GetProfilePath
@@ -248,7 +248,7 @@ references:
   nameWithType: ConfigurationHelper.GetProfilePath
   fullName: DeckSurf.SDK.Util.ConfigurationHelper.GetProfilePath
   monikers:
-  - net5.0
+  - net9.0
   type: method
 - uid: DeckSurf.SDK.Util.ConfigurationHelper.WriteToConfiguration*
   commentId: Overload:DeckSurf.SDK.Util.ConfigurationHelper.WriteToConfiguration
@@ -258,5 +258,5 @@ references:
   nameWithType: ConfigurationHelper.WriteToConfiguration
   fullName: DeckSurf.SDK.Util.ConfigurationHelper.WriteToConfiguration
   monikers:
-  - net5.0
+  - net9.0
   type: method

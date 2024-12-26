@@ -16,6 +16,7 @@ items:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
   summary: Attribute that determines the class of Stream Deck devices that a plugin is compatible with.
+  remarks: Initializes a new instance of the <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.CompatibleWithAttribute"></xref> class.
   syntax:
     content: >-
       [[System.AttributeUsage(System.AttributeTargets.Class, AllowMultiple=true, Inherited=false)]]
@@ -34,10 +35,10 @@ items:
   modifiers.csharp:
   - public
   monikers:
-  - net5.0
+  - net9.0
   _op_AssemblyMonikerMapping:
     DeckSurf.SDK:
-    - net5.0
+    - net9.0
 - uid: DeckSurf.SDK.Models.CompatibleWithAttribute.#ctor(DeckSurf.SDK.Models.DeviceModel)
   commentId: M:DeckSurf.SDK.Models.CompatibleWithAttribute.#ctor(DeckSurf.SDK.Models.DeviceModel)
   id: '#ctor(DeckSurf.SDK.Models.DeviceModel)'
@@ -51,7 +52,8 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
-  summary: Initializes a new instance of the <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.CompatibleWithAttribute"></xref> class.
+  summary: Attribute that determines the class of Stream Deck devices that a plugin is compatible with.
+  remarks: Initializes a new instance of the <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.CompatibleWithAttribute"></xref> class.
   syntax:
     content: public CompatibleWithAttribute (DeckSurf.SDK.Models.DeviceModel model);
     parameters:
@@ -64,7 +66,7 @@ items:
   modifiers.csharp:
   - public
   monikers:
-  - net5.0
+  - net9.0
 - uid: DeckSurf.SDK.Models.CompatibleWithAttribute.CompatibleModel
   commentId: P:DeckSurf.SDK.Models.CompatibleWithAttribute.CompatibleModel
   id: CompatibleModel
@@ -92,7 +94,7 @@ items:
   - get
   - set
   monikers:
-  - net5.0
+  - net9.0
 references:
 - uid: DeckSurf.SDK.Models
   commentId: N:DeckSurf.SDK.Models
@@ -135,7 +137,7 @@ references:
   nameWithType: CompatibleWithAttribute.CompatibleWithAttribute
   fullName: DeckSurf.SDK.Models.CompatibleWithAttribute.CompatibleWithAttribute
   monikers:
-  - net5.0
+  - net9.0
   type: constructor
 - uid: DeckSurf.SDK.Models.CompatibleWithAttribute.CompatibleModel*
   commentId: Overload:DeckSurf.SDK.Models.CompatibleWithAttribute.CompatibleModel
@@ -145,5 +147,5 @@ references:
   nameWithType: CompatibleWithAttribute.CompatibleModel
   fullName: DeckSurf.SDK.Models.CompatibleWithAttribute.CompatibleModel
   monikers:
-  - net5.0
+  - net9.0
   type: property

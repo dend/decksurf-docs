@@ -7,6 +7,7 @@ items:
   - DeckSurf.SDK.Models.DeviceModel.MINI
   - DeckSurf.SDK.Models.DeviceModel.ORIGINAL
   - DeckSurf.SDK.Models.DeviceModel.ORIGINAL_V2
+  - DeckSurf.SDK.Models.DeviceModel.PLUS
   - DeckSurf.SDK.Models.DeviceModel.XL
   langs:
   - csharp
@@ -26,10 +27,10 @@ items:
   modifiers.csharp:
   - public
   monikers:
-  - net5.0
+  - net9.0
   _op_AssemblyMonikerMapping:
     DeckSurf.SDK:
-    - net5.0
+    - net9.0
 - uid: DeckSurf.SDK.Models.DeviceModel.MINI
   commentId: F:DeckSurf.SDK.Models.DeviceModel.MINI
   id: MINI
@@ -43,7 +44,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
-  summary: The <a href="https://www.elgato.com/en/stream-deck-mini">Mini model</a> of the Stream Deck device.
+  summary: The <a href="https://www.elgato.com/us/en/p/stream-deck-mini">Mini model</a> of the Stream Deck device.
   syntax:
     content: MINI
     return:
@@ -52,7 +53,7 @@ items:
     content.csharp: MINI
   exceptions: []
   monikers:
-  - net5.0
+  - net9.0
   literalValue: "99"
 - uid: DeckSurf.SDK.Models.DeviceModel.ORIGINAL
   commentId: F:DeckSurf.SDK.Models.DeviceModel.ORIGINAL
@@ -76,7 +77,7 @@ items:
     content.csharp: ORIGINAL
   exceptions: []
   monikers:
-  - net5.0
+  - net9.0
   literalValue: "96"
 - uid: DeckSurf.SDK.Models.DeviceModel.ORIGINAL_V2
   commentId: F:DeckSurf.SDK.Models.DeviceModel.ORIGINAL_V2
@@ -100,8 +101,32 @@ items:
     content.csharp: ORIGINAL_V2
   exceptions: []
   monikers:
-  - net5.0
+  - net9.0
   literalValue: "109"
+- uid: DeckSurf.SDK.Models.DeviceModel.PLUS
+  commentId: F:DeckSurf.SDK.Models.DeviceModel.PLUS
+  id: PLUS
+  parent: DeckSurf.SDK.Models.DeviceModel
+  langs:
+  - csharp
+  name: PLUS
+  nameWithType: DeviceModel.PLUS
+  fullName: DeckSurf.SDK.Models.DeviceModel.PLUS
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: The <a href="https://www.elgato.com/us/en/p/stream-deck-plus-black">XL model</a> of the Stream Deck device.
+  syntax:
+    content: PLUS
+    return:
+      type: DeckSurf.SDK.Models.DeviceModel
+      description: ''
+    content.csharp: PLUS
+  exceptions: []
+  monikers:
+  - net9.0
+  literalValue: "132"
 - uid: DeckSurf.SDK.Models.DeviceModel.XL
   commentId: F:DeckSurf.SDK.Models.DeviceModel.XL
   id: XL
@@ -115,7 +140,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
-  summary: The <a href="https://www.elgato.com/en/stream-deck-xl">XL model</a> of the Stream Deck device.
+  summary: The <a href="https://www.elgato.com/us/en/p/stream-deck-xl">XL model</a> of the Stream Deck device.
   syntax:
     content: XL
     return:
@@ -124,7 +149,7 @@ items:
     content.csharp: XL
   exceptions: []
   monikers:
-  - net5.0
+  - net9.0
   literalValue: "108"
 references:
 - uid: DeckSurf.SDK.Models
@@ -166,6 +191,13 @@ references:
   name: ORIGINAL_V2
   nameWithType: DeviceModel.ORIGINAL_V2
   fullName: DeckSurf.SDK.Models.DeviceModel.ORIGINAL_V2
+  type: field
+- uid: DeckSurf.SDK.Models.DeviceModel.PLUS
+  parent: DeckSurf.SDK.Models.DeviceModel
+  isExternal: false
+  name: PLUS
+  nameWithType: DeviceModel.PLUS
+  fullName: DeckSurf.SDK.Models.DeviceModel.PLUS
   type: field
 - uid: DeckSurf.SDK.Models.DeviceModel.XL
   parent: DeckSurf.SDK.Models.DeviceModel

@@ -30,10 +30,10 @@ items:
   modifiers.csharp:
   - public
   monikers:
-  - net5.0
+  - net9.0
   _op_AssemblyMonikerMapping:
     DeckSurf.SDK:
-    - net5.0
+    - net9.0
 - uid: DeckSurf.SDK.Models.CommandMapping.#ctor
   commentId: M:DeckSurf.SDK.Models.CommandMapping.#ctor
   id: '#ctor'
@@ -56,7 +56,7 @@ items:
   modifiers.csharp:
   - public
   monikers:
-  - net5.0
+  - net9.0
 - uid: DeckSurf.SDK.Models.CommandMapping.ButtonImagePath
   commentId: P:DeckSurf.SDK.Models.CommandMapping.ButtonImagePath
   id: ButtonImagePath
@@ -92,7 +92,7 @@ items:
   - get
   - set
   monikers:
-  - net5.0
+  - net9.0
 - uid: DeckSurf.SDK.Models.CommandMapping.ButtonIndex
   commentId: P:DeckSurf.SDK.Models.CommandMapping.ButtonIndex
   id: ButtonIndex
@@ -128,7 +128,7 @@ items:
   - get
   - set
   monikers:
-  - net5.0
+  - net9.0
 - uid: DeckSurf.SDK.Models.CommandMapping.Command
   commentId: P:DeckSurf.SDK.Models.CommandMapping.Command
   id: Command
@@ -164,7 +164,7 @@ items:
   - get
   - set
   monikers:
-  - net5.0
+  - net9.0
 - uid: DeckSurf.SDK.Models.CommandMapping.CommandArguments
   commentId: P:DeckSurf.SDK.Models.CommandMapping.CommandArguments
   id: CommandArguments
@@ -200,7 +200,7 @@ items:
   - get
   - set
   monikers:
-  - net5.0
+  - net9.0
 - uid: DeckSurf.SDK.Models.CommandMapping.Plugin
   commentId: P:DeckSurf.SDK.Models.CommandMapping.Plugin
   id: Plugin
@@ -236,7 +236,7 @@ items:
   - get
   - set
   monikers:
-  - net5.0
+  - net9.0
 references:
 - uid: DeckSurf.SDK.Models
   commentId: N:DeckSurf.SDK.Models
@@ -313,7 +313,7 @@ references:
   nameWithType: CommandMapping.CommandMapping
   fullName: DeckSurf.SDK.Models.CommandMapping.CommandMapping
   monikers:
-  - net5.0
+  - net9.0
   type: constructor
 - uid: DeckSurf.SDK.Models.CommandMapping.ButtonImagePath*
   commentId: Overload:DeckSurf.SDK.Models.CommandMapping.ButtonImagePath
@@ -323,7 +323,7 @@ references:
   nameWithType: CommandMapping.ButtonImagePath
   fullName: DeckSurf.SDK.Models.CommandMapping.ButtonImagePath
   monikers:
-  - net5.0
+  - net9.0
   type: property
 - uid: DeckSurf.SDK.Models.CommandMapping.ButtonIndex*
   commentId: Overload:DeckSurf.SDK.Models.CommandMapping.ButtonIndex
@@ -333,7 +333,7 @@ references:
   nameWithType: CommandMapping.ButtonIndex
   fullName: DeckSurf.SDK.Models.CommandMapping.ButtonIndex
   monikers:
-  - net5.0
+  - net9.0
   type: property
 - uid: DeckSurf.SDK.Models.CommandMapping.Command*
   commentId: Overload:DeckSurf.SDK.Models.CommandMapping.Command
@@ -343,7 +343,7 @@ references:
   nameWithType: CommandMapping.Command
   fullName: DeckSurf.SDK.Models.CommandMapping.Command
   monikers:
-  - net5.0
+  - net9.0
   type: property
 - uid: DeckSurf.SDK.Models.CommandMapping.CommandArguments*
   commentId: Overload:DeckSurf.SDK.Models.CommandMapping.CommandArguments
@@ -353,7 +353,7 @@ references:
   nameWithType: CommandMapping.CommandArguments
   fullName: DeckSurf.SDK.Models.CommandMapping.CommandArguments
   monikers:
-  - net5.0
+  - net9.0
   type: property
 - uid: DeckSurf.SDK.Models.CommandMapping.Plugin*
   commentId: Overload:DeckSurf.SDK.Models.CommandMapping.Plugin
@@ -363,5 +363,5 @@ references:
   nameWithType: CommandMapping.Plugin
   fullName: DeckSurf.SDK.Models.CommandMapping.Plugin
   monikers:
-  - net5.0
+  - net9.0
   type: property

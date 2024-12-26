@@ -29,10 +29,10 @@ items:
   modifiers.csharp:
   - public
   monikers:
-  - net5.0
+  - net9.0
   _op_AssemblyMonikerMapping:
     DeckSurf.SDK:
-    - net5.0
+    - net9.0
 - uid: DeckSurf.SDK.Models.PluginMetadata.#ctor
   commentId: M:DeckSurf.SDK.Models.PluginMetadata.#ctor
   id: '#ctor'
@@ -55,7 +55,7 @@ items:
   modifiers.csharp:
   - public
   monikers:
-  - net5.0
+  - net9.0
 - uid: DeckSurf.SDK.Models.PluginMetadata.Author
   commentId: P:DeckSurf.SDK.Models.PluginMetadata.Author
   id: Author
@@ -83,7 +83,7 @@ items:
   - get
   - set
   monikers:
-  - net5.0
+  - net9.0
 - uid: DeckSurf.SDK.Models.PluginMetadata.Id
   commentId: P:DeckSurf.SDK.Models.PluginMetadata.Id
   id: Id
@@ -111,7 +111,7 @@ items:
   - get
   - set
   monikers:
-  - net5.0
+  - net9.0
 - uid: DeckSurf.SDK.Models.PluginMetadata.Version
   commentId: P:DeckSurf.SDK.Models.PluginMetadata.Version
   id: Version
@@ -139,7 +139,7 @@ items:
   - get
   - set
   monikers:
-  - net5.0
+  - net9.0
 - uid: DeckSurf.SDK.Models.PluginMetadata.Website
   commentId: P:DeckSurf.SDK.Models.PluginMetadata.Website
   id: Website
@@ -167,7 +167,7 @@ items:
   - get
   - set
   monikers:
-  - net5.0
+  - net9.0
 references:
 - uid: DeckSurf.SDK.Models
   commentId: N:DeckSurf.SDK.Models
@@ -231,7 +231,7 @@ references:
   nameWithType: PluginMetadata.PluginMetadata
   fullName: DeckSurf.SDK.Models.PluginMetadata.PluginMetadata
   monikers:
-  - net5.0
+  - net9.0
   type: constructor
 - uid: DeckSurf.SDK.Models.PluginMetadata.Author*
   commentId: Overload:DeckSurf.SDK.Models.PluginMetadata.Author
@@ -241,7 +241,7 @@ references:
   nameWithType: PluginMetadata.Author
   fullName: DeckSurf.SDK.Models.PluginMetadata.Author
   monikers:
-  - net5.0
+  - net9.0
   type: property
 - uid: DeckSurf.SDK.Models.PluginMetadata.Id*
   commentId: Overload:DeckSurf.SDK.Models.PluginMetadata.Id
@@ -251,7 +251,7 @@ references:
   nameWithType: PluginMetadata.Id
   fullName: DeckSurf.SDK.Models.PluginMetadata.Id
   monikers:
-  - net5.0
+  - net9.0
   type: property
 - uid: DeckSurf.SDK.Models.PluginMetadata.Version*
   commentId: Overload:DeckSurf.SDK.Models.PluginMetadata.Version
@@ -261,7 +261,7 @@ references:
   nameWithType: PluginMetadata.Version
   fullName: DeckSurf.SDK.Models.PluginMetadata.Version
   monikers:
-  - net5.0
+  - net9.0
   type: property
 - uid: DeckSurf.SDK.Models.PluginMetadata.Website*
   commentId: Overload:DeckSurf.SDK.Models.PluginMetadata.Website
@@ -271,5 +271,5 @@ references:
   nameWithType: PluginMetadata.Website
   fullName: DeckSurf.SDK.Models.PluginMetadata.Website
   monikers:
-  - net5.0
+  - net9.0
   type: property

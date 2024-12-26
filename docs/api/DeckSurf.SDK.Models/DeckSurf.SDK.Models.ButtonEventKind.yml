@@ -24,10 +24,10 @@ items:
   modifiers.csharp:
   - public
   monikers:
-  - net5.0
+  - net9.0
   _op_AssemblyMonikerMapping:
     DeckSurf.SDK:
-    - net5.0
+    - net9.0
 - uid: DeckSurf.SDK.Models.ButtonEventKind.DOWN
   commentId: F:DeckSurf.SDK.Models.ButtonEventKind.DOWN
   id: DOWN
@@ -41,6 +41,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Button is pressed.
   syntax:
     content: DOWN
     return:
@@ -49,7 +50,7 @@ items:
     content.csharp: DOWN
   exceptions: []
   monikers:
-  - net5.0
+  - net9.0
   literalValue: "0"
 - uid: DeckSurf.SDK.Models.ButtonEventKind.UP
   commentId: F:DeckSurf.SDK.Models.ButtonEventKind.UP
@@ -64,6 +65,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
+  summary: Button is released.
   syntax:
     content: UP
     return:
@@ -72,7 +74,7 @@ items:
     content.csharp: UP
   exceptions: []
   monikers:
-  - net5.0
+  - net9.0
   literalValue: "1"
 references:
 - uid: DeckSurf.SDK.Models

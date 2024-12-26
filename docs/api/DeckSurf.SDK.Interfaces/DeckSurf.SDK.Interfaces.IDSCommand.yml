@@ -25,10 +25,10 @@ items:
   modifiers.csharp:
   - public
   monikers:
-  - net5.0
+  - net9.0
   _op_AssemblyMonikerMapping:
     DeckSurf.SDK:
-    - net5.0
+    - net9.0
 - uid: DeckSurf.SDK.Interfaces.IDSCommand.Description
   commentId: P:DeckSurf.SDK.Interfaces.IDSCommand.Description
   id: Description
@@ -55,7 +55,7 @@ items:
   - public
   - get
   monikers:
-  - net5.0
+  - net9.0
 - uid: DeckSurf.SDK.Interfaces.IDSCommand.ExecuteOnAction(DeckSurf.SDK.Models.CommandMapping,DeckSurf.SDK.Models.ConnectedDevice,System.Int32)
   commentId: M:DeckSurf.SDK.Interfaces.IDSCommand.ExecuteOnAction(DeckSurf.SDK.Models.CommandMapping,DeckSurf.SDK.Models.ConnectedDevice,System.Int32)
   id: ExecuteOnAction(DeckSurf.SDK.Models.CommandMapping,DeckSurf.SDK.Models.ConnectedDevice,System.Int32)
@@ -88,7 +88,7 @@ items:
   modifiers.csharp:
   - public
   monikers:
-  - net5.0
+  - net9.0
 - uid: DeckSurf.SDK.Interfaces.IDSCommand.ExecuteOnActivation(DeckSurf.SDK.Models.CommandMapping,DeckSurf.SDK.Models.ConnectedDevice)
   commentId: M:DeckSurf.SDK.Interfaces.IDSCommand.ExecuteOnActivation(DeckSurf.SDK.Models.CommandMapping,DeckSurf.SDK.Models.ConnectedDevice)
   id: ExecuteOnActivation(DeckSurf.SDK.Models.CommandMapping,DeckSurf.SDK.Models.ConnectedDevice)
@@ -118,7 +118,7 @@ items:
   modifiers.csharp:
   - public
   monikers:
-  - net5.0
+  - net9.0
 - uid: DeckSurf.SDK.Interfaces.IDSCommand.Name
   commentId: P:DeckSurf.SDK.Interfaces.IDSCommand.Name
   id: Name
@@ -145,7 +145,7 @@ items:
   - public
   - get
   monikers:
-  - net5.0
+  - net9.0
 references:
 - uid: DeckSurf.SDK.Interfaces
   commentId: N:DeckSurf.SDK.Interfaces
@@ -214,7 +214,7 @@ references:
   nameWithType: IDSCommand.Description
   fullName: DeckSurf.SDK.Interfaces.IDSCommand.Description
   monikers:
-  - net5.0
+  - net9.0
   type: property
 - uid: DeckSurf.SDK.Interfaces.IDSCommand.ExecuteOnAction*
   commentId: Overload:DeckSurf.SDK.Interfaces.IDSCommand.ExecuteOnAction
@@ -224,7 +224,7 @@ references:
   nameWithType: IDSCommand.ExecuteOnAction
   fullName: DeckSurf.SDK.Interfaces.IDSCommand.ExecuteOnAction
   monikers:
-  - net5.0
+  - net9.0
   type: method
 - uid: DeckSurf.SDK.Interfaces.IDSCommand.ExecuteOnActivation*
   commentId: Overload:DeckSurf.SDK.Interfaces.IDSCommand.ExecuteOnActivation
@@ -234,7 +234,7 @@ references:
   nameWithType: IDSCommand.ExecuteOnActivation
   fullName: DeckSurf.SDK.Interfaces.IDSCommand.ExecuteOnActivation
   monikers:
-  - net5.0
+  - net9.0
   type: method
 - uid: DeckSurf.SDK.Interfaces.IDSCommand.Name*
   commentId: Overload:DeckSurf.SDK.Interfaces.IDSCommand.Name
@@ -244,5 +244,5 @@ references:
   nameWithType: IDSCommand.Name
   fullName: DeckSurf.SDK.Interfaces.IDSCommand.Name
   monikers:
-  - net5.0
+  - net9.0
   type: property

@@ -28,10 +28,10 @@ items:
   modifiers.csharp:
   - public
   monikers:
-  - net5.0
+  - net9.0
   _op_AssemblyMonikerMapping:
     DeckSurf.SDK:
-    - net5.0
+    - net9.0
 - uid: DeckSurf.SDK.Core.DeviceManager.#ctor
   commentId: M:DeckSurf.SDK.Core.DeviceManager.#ctor
   id: '#ctor'
@@ -54,7 +54,7 @@ items:
   modifiers.csharp:
   - public
   monikers:
-  - net5.0
+  - net9.0
 - uid: DeckSurf.SDK.Core.DeviceManager.GetDeviceList
   commentId: M:DeckSurf.SDK.Core.DeviceManager.GetDeviceList
   id: GetDeviceList
@@ -82,7 +82,7 @@ items:
   - public
   - static
   monikers:
-  - net5.0
+  - net9.0
 - uid: DeckSurf.SDK.Core.DeviceManager.IsSupported(System.Int32,System.Int32)
   commentId: M:DeckSurf.SDK.Core.DeviceManager.IsSupported(System.Int32,System.Int32)
   id: IsSupported(System.Int32,System.Int32)
@@ -116,7 +116,7 @@ items:
   - public
   - static
   monikers:
-  - net5.0
+  - net9.0
 - uid: DeckSurf.SDK.Core.DeviceManager.SetupDevice(DeckSurf.SDK.Models.ConfigurationProfile)
   commentId: M:DeckSurf.SDK.Core.DeviceManager.SetupDevice(DeckSurf.SDK.Models.ConfigurationProfile)
   id: SetupDevice(DeckSurf.SDK.Models.ConfigurationProfile)
@@ -130,7 +130,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Core
-  summary: Gets a connected Stream Deck device based on a pre-defined configuration profiles.
+  summary: Gets a connected Stream Deck device based on a pre-defined configuration profile.
   syntax:
     content: public static DeckSurf.SDK.Models.ConnectedDevice SetupDevice (DeckSurf.SDK.Models.ConfigurationProfile profile);
     parameters:
@@ -147,7 +147,7 @@ items:
   - public
   - static
   monikers:
-  - net5.0
+  - net9.0
 references:
 - uid: DeckSurf.SDK.Core
   commentId: N:DeckSurf.SDK.Core
@@ -245,7 +245,7 @@ references:
   nameWithType: DeviceManager.DeviceManager
   fullName: DeckSurf.SDK.Core.DeviceManager.DeviceManager
   monikers:
-  - net5.0
+  - net9.0
   type: constructor
 - uid: DeckSurf.SDK.Core.DeviceManager.GetDeviceList*
   commentId: Overload:DeckSurf.SDK.Core.DeviceManager.GetDeviceList
@@ -255,7 +255,7 @@ references:
   nameWithType: DeviceManager.GetDeviceList
   fullName: DeckSurf.SDK.Core.DeviceManager.GetDeviceList
   monikers:
-  - net5.0
+  - net9.0
   type: method
 - uid: DeckSurf.SDK.Core.DeviceManager.IsSupported*
   commentId: Overload:DeckSurf.SDK.Core.DeviceManager.IsSupported
@@ -265,7 +265,7 @@ references:
   nameWithType: DeviceManager.IsSupported
   fullName: DeckSurf.SDK.Core.DeviceManager.IsSupported
   monikers:
-  - net5.0
+  - net9.0
   type: method
 - uid: DeckSurf.SDK.Core.DeviceManager.SetupDevice*
   commentId: Overload:DeckSurf.SDK.Core.DeviceManager.SetupDevice
@@ -275,5 +275,5 @@ references:
   nameWithType: DeviceManager.SetupDevice
   fullName: DeckSurf.SDK.Core.DeviceManager.SetupDevice
   monikers:
-  - net5.0
+  - net9.0
   type: method
