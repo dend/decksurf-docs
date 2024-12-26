@@ -1,0 +1,703 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckMini
+  commentId: T:DeckSurf.SDK.Models.Devices.StreamDeckMini
+  id: StreamDeckMini
+  children:
+  - DeckSurf.SDK.Models.Devices.StreamDeckMini.#ctor(System.Int32,System.Int32,System.String,System.String)
+  - DeckSurf.SDK.Models.Devices.StreamDeckMini.ButtonColumns
+  - DeckSurf.SDK.Models.Devices.StreamDeckMini.ButtonCount
+  - DeckSurf.SDK.Models.Devices.StreamDeckMini.ButtonResolution
+  - DeckSurf.SDK.Models.Devices.StreamDeckMini.ButtonRows
+  - DeckSurf.SDK.Models.Devices.StreamDeckMini.IsButtonImageFlipRequired
+  - DeckSurf.SDK.Models.Devices.StreamDeckMini.IsKnobSupported
+  - DeckSurf.SDK.Models.Devices.StreamDeckMini.IsScreenSupported
+  - DeckSurf.SDK.Models.Devices.StreamDeckMini.Model
+  - DeckSurf.SDK.Models.Devices.StreamDeckMini.ScreenHeight
+  - DeckSurf.SDK.Models.Devices.StreamDeckMini.ScreenSegmentWidth
+  - DeckSurf.SDK.Models.Devices.StreamDeckMini.ScreenWidth
+  langs:
+  - csharp
+  name: StreamDeckMini
+  nameWithType: DeckSurf.SDK.Models.Devices.StreamDeckMini
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckMini
+  type: Class
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models.Devices
+  summary: Implementation for a Stream Deck Mini connected device.
+  syntax:
+    content: 'public class StreamDeckMini : DeckSurf.SDK.Models.ConnectedDevice'
+    content.csharp: 'public class StreamDeckMini : DeckSurf.SDK.Models.ConnectedDevice'
+  inheritance:
+  - System.Object
+  - DeckSurf.SDK.Models.ConnectedDevice
+  implements: []
+  inheritedMembers:
+  - DeckSurf.SDK.Models.ConnectedDevice.ClearButtons
+  - DeckSurf.SDK.Models.ConnectedDevice.Name
+  - DeckSurf.SDK.Models.ConnectedDevice.OnButtonPress
+  - DeckSurf.SDK.Models.ConnectedDevice.Open
+  - DeckSurf.SDK.Models.ConnectedDevice.Path
+  - DeckSurf.SDK.Models.ConnectedDevice.SetBrightness(System.Byte)
+  - DeckSurf.SDK.Models.ConnectedDevice.SetKey(System.Int32,System.Byte[])
+  - DeckSurf.SDK.Models.ConnectedDevice.SetScreen(System.Byte[],System.Int32,System.Int32,System.Int32)
+  - DeckSurf.SDK.Models.ConnectedDevice.SetupDeviceButtonMap(System.Collections.Generic.IEnumerable{DeckSurf.SDK.Models.CommandMapping})
+  - DeckSurf.SDK.Models.ConnectedDevice.StartListening
+  - DeckSurf.SDK.Models.ConnectedDevice.StopListening
+  - DeckSurf.SDK.Models.ConnectedDevice.VId
+  modifiers.csharp:
+  - public
+  monikers:
+  - net9.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net9.0
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckMini.#ctor(System.Int32,System.Int32,System.String,System.String)
+  commentId: M:DeckSurf.SDK.Models.Devices.StreamDeckMini.#ctor(System.Int32,System.Int32,System.String,System.String)
+  id: '#ctor(System.Int32,System.Int32,System.String,System.String)'
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckMini
+  langs:
+  - csharp
+  name: StreamDeckMini(Int32, Int32, String, String)
+  nameWithType: StreamDeckMini.StreamDeckMini(Int32, Int32, String, String)
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckMini.StreamDeckMini(Int32, Int32, String, String)
+  type: Constructor
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models.Devices
+  summary: Implementation for a Stream Deck Mini connected device.
+  syntax:
+    content: public StreamDeckMini (int vid, int pid, string path, string name);
+    parameters:
+    - id: vid
+      type: System.Int32
+      description: ''
+    - id: pid
+      type: System.Int32
+      description: ''
+    - id: path
+      type: System.String
+      description: ''
+    - id: name
+      type: System.String
+      description: ''
+    content.csharp: public StreamDeckMini (int vid, int pid, string path, string name);
+  overload: DeckSurf.SDK.Models.Devices.StreamDeckMini.#ctor*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckMini.ButtonColumns
+  commentId: P:DeckSurf.SDK.Models.Devices.StreamDeckMini.ButtonColumns
+  id: ButtonColumns
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckMini
+  langs:
+  - csharp
+  name: ButtonColumns
+  nameWithType: StreamDeckMini.ButtonColumns
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckMini.ButtonColumns
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models.Devices
+  syntax:
+    content: public override int ButtonColumns { get; }
+    return:
+      type: System.Int32
+      description: ''
+    content.csharp: public override int ButtonColumns { get; }
+  overload: DeckSurf.SDK.Models.Devices.StreamDeckMini.ButtonColumns*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckMini.ButtonCount
+  commentId: P:DeckSurf.SDK.Models.Devices.StreamDeckMini.ButtonCount
+  id: ButtonCount
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckMini
+  langs:
+  - csharp
+  name: ButtonCount
+  nameWithType: StreamDeckMini.ButtonCount
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckMini.ButtonCount
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models.Devices
+  syntax:
+    content: public override int ButtonCount { get; }
+    return:
+      type: System.Int32
+      description: ''
+    content.csharp: public override int ButtonCount { get; }
+  overload: DeckSurf.SDK.Models.Devices.StreamDeckMini.ButtonCount*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckMini.ButtonResolution
+  commentId: P:DeckSurf.SDK.Models.Devices.StreamDeckMini.ButtonResolution
+  id: ButtonResolution
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckMini
+  langs:
+  - csharp
+  name: ButtonResolution
+  nameWithType: StreamDeckMini.ButtonResolution
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckMini.ButtonResolution
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models.Devices
+  syntax:
+    content: public override int ButtonResolution { get; }
+    return:
+      type: System.Int32
+      description: ''
+    content.csharp: public override int ButtonResolution { get; }
+  overload: DeckSurf.SDK.Models.Devices.StreamDeckMini.ButtonResolution*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckMini.ButtonRows
+  commentId: P:DeckSurf.SDK.Models.Devices.StreamDeckMini.ButtonRows
+  id: ButtonRows
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckMini
+  langs:
+  - csharp
+  name: ButtonRows
+  nameWithType: StreamDeckMini.ButtonRows
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckMini.ButtonRows
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models.Devices
+  syntax:
+    content: public override int ButtonRows { get; }
+    return:
+      type: System.Int32
+      description: ''
+    content.csharp: public override int ButtonRows { get; }
+  overload: DeckSurf.SDK.Models.Devices.StreamDeckMini.ButtonRows*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckMini.IsButtonImageFlipRequired
+  commentId: P:DeckSurf.SDK.Models.Devices.StreamDeckMini.IsButtonImageFlipRequired
+  id: IsButtonImageFlipRequired
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckMini
+  langs:
+  - csharp
+  name: IsButtonImageFlipRequired
+  nameWithType: StreamDeckMini.IsButtonImageFlipRequired
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckMini.IsButtonImageFlipRequired
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models.Devices
+  syntax:
+    content: public override bool IsButtonImageFlipRequired { get; }
+    return:
+      type: System.Boolean
+      description: ''
+    content.csharp: public override bool IsButtonImageFlipRequired { get; }
+  overload: DeckSurf.SDK.Models.Devices.StreamDeckMini.IsButtonImageFlipRequired*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckMini.IsKnobSupported
+  commentId: P:DeckSurf.SDK.Models.Devices.StreamDeckMini.IsKnobSupported
+  id: IsKnobSupported
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckMini
+  langs:
+  - csharp
+  name: IsKnobSupported
+  nameWithType: StreamDeckMini.IsKnobSupported
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckMini.IsKnobSupported
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models.Devices
+  syntax:
+    content: public override bool IsKnobSupported { get; }
+    return:
+      type: System.Boolean
+      description: ''
+    content.csharp: public override bool IsKnobSupported { get; }
+  overload: DeckSurf.SDK.Models.Devices.StreamDeckMini.IsKnobSupported*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckMini.IsScreenSupported
+  commentId: P:DeckSurf.SDK.Models.Devices.StreamDeckMini.IsScreenSupported
+  id: IsScreenSupported
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckMini
+  langs:
+  - csharp
+  name: IsScreenSupported
+  nameWithType: StreamDeckMini.IsScreenSupported
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckMini.IsScreenSupported
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models.Devices
+  syntax:
+    content: public override bool IsScreenSupported { get; }
+    return:
+      type: System.Boolean
+      description: ''
+    content.csharp: public override bool IsScreenSupported { get; }
+  overload: DeckSurf.SDK.Models.Devices.StreamDeckMini.IsScreenSupported*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckMini.Model
+  commentId: P:DeckSurf.SDK.Models.Devices.StreamDeckMini.Model
+  id: Model
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckMini
+  langs:
+  - csharp
+  name: Model
+  nameWithType: StreamDeckMini.Model
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckMini.Model
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models.Devices
+  syntax:
+    content: public override DeckSurf.SDK.Models.DeviceModel Model { get; }
+    return:
+      type: DeckSurf.SDK.Models.DeviceModel
+      description: ''
+    content.csharp: public override DeckSurf.SDK.Models.DeviceModel Model { get; }
+  overload: DeckSurf.SDK.Models.Devices.StreamDeckMini.Model*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckMini.ScreenHeight
+  commentId: P:DeckSurf.SDK.Models.Devices.StreamDeckMini.ScreenHeight
+  id: ScreenHeight
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckMini
+  langs:
+  - csharp
+  name: ScreenHeight
+  nameWithType: StreamDeckMini.ScreenHeight
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckMini.ScreenHeight
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models.Devices
+  syntax:
+    content: public override int ScreenHeight { get; }
+    return:
+      type: System.Int32
+      description: ''
+    content.csharp: public override int ScreenHeight { get; }
+  overload: DeckSurf.SDK.Models.Devices.StreamDeckMini.ScreenHeight*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckMini.ScreenSegmentWidth
+  commentId: P:DeckSurf.SDK.Models.Devices.StreamDeckMini.ScreenSegmentWidth
+  id: ScreenSegmentWidth
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckMini
+  langs:
+  - csharp
+  name: ScreenSegmentWidth
+  nameWithType: StreamDeckMini.ScreenSegmentWidth
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckMini.ScreenSegmentWidth
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models.Devices
+  syntax:
+    content: public override int ScreenSegmentWidth { get; }
+    return:
+      type: System.Int32
+      description: ''
+    content.csharp: public override int ScreenSegmentWidth { get; }
+  overload: DeckSurf.SDK.Models.Devices.StreamDeckMini.ScreenSegmentWidth*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckMini.ScreenWidth
+  commentId: P:DeckSurf.SDK.Models.Devices.StreamDeckMini.ScreenWidth
+  id: ScreenWidth
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckMini
+  langs:
+  - csharp
+  name: ScreenWidth
+  nameWithType: StreamDeckMini.ScreenWidth
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckMini.ScreenWidth
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models.Devices
+  syntax:
+    content: public override int ScreenWidth { get; }
+    return:
+      type: System.Int32
+      description: ''
+    content.csharp: public override int ScreenWidth { get; }
+  overload: DeckSurf.SDK.Models.Devices.StreamDeckMini.ScreenWidth*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net9.0
+references:
+- uid: DeckSurf.SDK.Models.Devices
+  commentId: N:DeckSurf.SDK.Models.Devices
+  isExternal: false
+  name: DeckSurf.SDK.Models.Devices
+  nameWithType: DeckSurf.SDK.Models.Devices
+  fullName: DeckSurf.SDK.Models.Devices
+  type: namespace
+- uid: DeckSurf.SDK.Models.ConnectedDevice
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: ConnectedDevice
+  nameWithType: ConnectedDevice
+  fullName: DeckSurf.SDK.Models.ConnectedDevice
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckMini.#ctor(System.Int32,System.Int32,System.String,System.String)
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckMini
+  isExternal: false
+  name: StreamDeckMini(Int32, Int32, String, String)
+  nameWithType: StreamDeckMini.StreamDeckMini(Int32, Int32, String, String)
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckMini.StreamDeckMini(Int32, Int32, String, String)
+  type: constructor
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckMini.ButtonColumns
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckMini
+  isExternal: false
+  name: ButtonColumns
+  nameWithType: StreamDeckMini.ButtonColumns
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckMini.ButtonColumns
+  type: property
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckMini.ButtonCount
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckMini
+  isExternal: false
+  name: ButtonCount
+  nameWithType: StreamDeckMini.ButtonCount
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckMini.ButtonCount
+  type: property
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckMini.ButtonResolution
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckMini
+  isExternal: false
+  name: ButtonResolution
+  nameWithType: StreamDeckMini.ButtonResolution
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckMini.ButtonResolution
+  type: property
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckMini.ButtonRows
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckMini
+  isExternal: false
+  name: ButtonRows
+  nameWithType: StreamDeckMini.ButtonRows
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckMini.ButtonRows
+  type: property
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckMini.IsButtonImageFlipRequired
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckMini
+  isExternal: false
+  name: IsButtonImageFlipRequired
+  nameWithType: StreamDeckMini.IsButtonImageFlipRequired
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckMini.IsButtonImageFlipRequired
+  type: property
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckMini.IsKnobSupported
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckMini
+  isExternal: false
+  name: IsKnobSupported
+  nameWithType: StreamDeckMini.IsKnobSupported
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckMini.IsKnobSupported
+  type: property
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckMini.IsScreenSupported
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckMini
+  isExternal: false
+  name: IsScreenSupported
+  nameWithType: StreamDeckMini.IsScreenSupported
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckMini.IsScreenSupported
+  type: property
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckMini.Model
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckMini
+  isExternal: false
+  name: Model
+  nameWithType: StreamDeckMini.Model
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckMini.Model
+  type: property
+- uid: DeckSurf.SDK.Models.DeviceModel
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: DeviceModel
+  nameWithType: DeviceModel
+  fullName: DeckSurf.SDK.Models.DeviceModel
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckMini.ScreenHeight
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckMini
+  isExternal: false
+  name: ScreenHeight
+  nameWithType: StreamDeckMini.ScreenHeight
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckMini.ScreenHeight
+  type: property
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckMini.ScreenSegmentWidth
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckMini
+  isExternal: false
+  name: ScreenSegmentWidth
+  nameWithType: StreamDeckMini.ScreenSegmentWidth
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckMini.ScreenSegmentWidth
+  type: property
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckMini.ScreenWidth
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckMini
+  isExternal: false
+  name: ScreenWidth
+  nameWithType: StreamDeckMini.ScreenWidth
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckMini.ScreenWidth
+  type: property
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckMini.#ctor*
+  commentId: Overload:DeckSurf.SDK.Models.Devices.StreamDeckMini.#ctor
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckMini
+  isExternal: false
+  name: StreamDeckMini
+  nameWithType: StreamDeckMini.StreamDeckMini
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckMini.StreamDeckMini
+  monikers:
+  - net9.0
+  type: constructor
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckMini.ButtonColumns*
+  commentId: Overload:DeckSurf.SDK.Models.Devices.StreamDeckMini.ButtonColumns
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckMini
+  isExternal: false
+  name: ButtonColumns
+  nameWithType: StreamDeckMini.ButtonColumns
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckMini.ButtonColumns
+  monikers:
+  - net9.0
+  type: property
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckMini.ButtonCount*
+  commentId: Overload:DeckSurf.SDK.Models.Devices.StreamDeckMini.ButtonCount
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckMini
+  isExternal: false
+  name: ButtonCount
+  nameWithType: StreamDeckMini.ButtonCount
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckMini.ButtonCount
+  monikers:
+  - net9.0
+  type: property
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckMini.ButtonResolution*
+  commentId: Overload:DeckSurf.SDK.Models.Devices.StreamDeckMini.ButtonResolution
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckMini
+  isExternal: false
+  name: ButtonResolution
+  nameWithType: StreamDeckMini.ButtonResolution
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckMini.ButtonResolution
+  monikers:
+  - net9.0
+  type: property
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckMini.ButtonRows*
+  commentId: Overload:DeckSurf.SDK.Models.Devices.StreamDeckMini.ButtonRows
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckMini
+  isExternal: false
+  name: ButtonRows
+  nameWithType: StreamDeckMini.ButtonRows
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckMini.ButtonRows
+  monikers:
+  - net9.0
+  type: property
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckMini.IsButtonImageFlipRequired*
+  commentId: Overload:DeckSurf.SDK.Models.Devices.StreamDeckMini.IsButtonImageFlipRequired
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckMini
+  isExternal: false
+  name: IsButtonImageFlipRequired
+  nameWithType: StreamDeckMini.IsButtonImageFlipRequired
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckMini.IsButtonImageFlipRequired
+  monikers:
+  - net9.0
+  type: property
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckMini.IsKnobSupported*
+  commentId: Overload:DeckSurf.SDK.Models.Devices.StreamDeckMini.IsKnobSupported
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckMini
+  isExternal: false
+  name: IsKnobSupported
+  nameWithType: StreamDeckMini.IsKnobSupported
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckMini.IsKnobSupported
+  monikers:
+  - net9.0
+  type: property
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckMini.IsScreenSupported*
+  commentId: Overload:DeckSurf.SDK.Models.Devices.StreamDeckMini.IsScreenSupported
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckMini
+  isExternal: false
+  name: IsScreenSupported
+  nameWithType: StreamDeckMini.IsScreenSupported
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckMini.IsScreenSupported
+  monikers:
+  - net9.0
+  type: property
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckMini.Model*
+  commentId: Overload:DeckSurf.SDK.Models.Devices.StreamDeckMini.Model
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckMini
+  isExternal: false
+  name: Model
+  nameWithType: StreamDeckMini.Model
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckMini.Model
+  monikers:
+  - net9.0
+  type: property
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckMini.ScreenHeight*
+  commentId: Overload:DeckSurf.SDK.Models.Devices.StreamDeckMini.ScreenHeight
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckMini
+  isExternal: false
+  name: ScreenHeight
+  nameWithType: StreamDeckMini.ScreenHeight
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckMini.ScreenHeight
+  monikers:
+  - net9.0
+  type: property
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckMini.ScreenSegmentWidth*
+  commentId: Overload:DeckSurf.SDK.Models.Devices.StreamDeckMini.ScreenSegmentWidth
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckMini
+  isExternal: false
+  name: ScreenSegmentWidth
+  nameWithType: StreamDeckMini.ScreenSegmentWidth
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckMini.ScreenSegmentWidth
+  monikers:
+  - net9.0
+  type: property
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckMini.ScreenWidth*
+  commentId: Overload:DeckSurf.SDK.Models.Devices.StreamDeckMini.ScreenWidth
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckMini
+  isExternal: false
+  name: ScreenWidth
+  nameWithType: StreamDeckMini.ScreenWidth
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckMini.ScreenWidth
+  monikers:
+  - net9.0
+  type: property
+- uid: DeckSurf.SDK.Models.ConnectedDevice.ClearButtons
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: ClearButtons()
+  nameWithType: ConnectedDevice.ClearButtons()
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.ClearButtons()
+  type: method
+- uid: DeckSurf.SDK.Models.ConnectedDevice.Name
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: Name
+  nameWithType: ConnectedDevice.Name
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.Name
+  type: property
+- uid: DeckSurf.SDK.Models.ConnectedDevice.OnButtonPress
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: OnButtonPress
+  nameWithType: ConnectedDevice.OnButtonPress
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.OnButtonPress
+  type: event
+- uid: DeckSurf.SDK.Models.ConnectedDevice.Open
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: Open()
+  nameWithType: ConnectedDevice.Open()
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.Open()
+  type: method
+- uid: DeckSurf.SDK.Models.ConnectedDevice.Path
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: Path
+  nameWithType: ConnectedDevice.Path
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.Path
+  type: property
+- uid: DeckSurf.SDK.Models.ConnectedDevice.SetBrightness(System.Byte)
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: SetBrightness(Byte)
+  nameWithType: ConnectedDevice.SetBrightness(Byte)
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.SetBrightness(Byte)
+  type: method
+- uid: DeckSurf.SDK.Models.ConnectedDevice.SetKey(System.Int32,System.Byte[])
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: SetKey(Int32, Byte[])
+  nameWithType: ConnectedDevice.SetKey(Int32, Byte[])
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.SetKey(Int32, Byte[])
+  type: method
+- uid: DeckSurf.SDK.Models.ConnectedDevice.SetScreen(System.Byte[],System.Int32,System.Int32,System.Int32)
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: SetScreen(Byte[], Int32, Int32, Int32)
+  nameWithType: ConnectedDevice.SetScreen(Byte[], Int32, Int32, Int32)
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.SetScreen(Byte[], Int32, Int32, Int32)
+  type: method
+- uid: DeckSurf.SDK.Models.ConnectedDevice.SetupDeviceButtonMap(System.Collections.Generic.IEnumerable{DeckSurf.SDK.Models.CommandMapping})
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: SetupDeviceButtonMap(IEnumerable<CommandMapping>)
+  nameWithType: ConnectedDevice.SetupDeviceButtonMap(IEnumerable<CommandMapping>)
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.SetupDeviceButtonMap(IEnumerable<CommandMapping>)
+  type: method
+- uid: DeckSurf.SDK.Models.ConnectedDevice.StartListening
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: StartListening()
+  nameWithType: ConnectedDevice.StartListening()
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.StartListening()
+  type: method
+- uid: DeckSurf.SDK.Models.ConnectedDevice.StopListening
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: StopListening()
+  nameWithType: ConnectedDevice.StopListening()
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.StopListening()
+  type: method
+- uid: DeckSurf.SDK.Models.ConnectedDevice.VId
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: VId
+  nameWithType: ConnectedDevice.VId
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.VId
+  type: property

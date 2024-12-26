@@ -77,6 +77,22 @@
 - uid: DeckSurf.SDK.Models.Devices
   name: DeckSurf.SDK.Models.Devices
   items:
+  - uid: DeckSurf.SDK.Models.Devices.StreamDeckMini
+    name: StreamDeckMini
+    monikers:
+    - net9.0
+  - uid: DeckSurf.SDK.Models.Devices.StreamDeckOriginal
+    name: StreamDeckOriginal
+    monikers:
+    - net9.0
+  - uid: DeckSurf.SDK.Models.Devices.StreamDeckOriginalV2
+    name: StreamDeckOriginalV2
+    monikers:
+    - net9.0
+  - uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus
+    name: StreamDeckPlus
+    monikers:
+    - net9.0
   - uid: DeckSurf.SDK.Models.Devices.StreamDeckXL
     name: StreamDeckXL
     monikers:

@@ -4,6 +4,10 @@ items:
   commentId: N:DeckSurf.SDK.Models.Devices
   id: DeckSurf.SDK.Models.Devices
   children:
+  - DeckSurf.SDK.Models.Devices.StreamDeckMini
+  - DeckSurf.SDK.Models.Devices.StreamDeckOriginal
+  - DeckSurf.SDK.Models.Devices.StreamDeckOriginalV2
+  - DeckSurf.SDK.Models.Devices.StreamDeckPlus
   - DeckSurf.SDK.Models.Devices.StreamDeckXL
   langs:
   - csharp
@@ -14,6 +18,38 @@ items:
   monikers:
   - net9.0
 references:
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckMini
+  commentId: T:DeckSurf.SDK.Models.Devices.StreamDeckMini
+  parent: DeckSurf.SDK.Models.Devices
+  isExternal: false
+  name: StreamDeckMini
+  nameWithType: DeckSurf.SDK.Models.Devices.StreamDeckMini
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckMini
+  type: class
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckOriginal
+  commentId: T:DeckSurf.SDK.Models.Devices.StreamDeckOriginal
+  parent: DeckSurf.SDK.Models.Devices
+  isExternal: false
+  name: StreamDeckOriginal
+  nameWithType: DeckSurf.SDK.Models.Devices.StreamDeckOriginal
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckOriginal
+  type: class
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckOriginalV2
+  commentId: T:DeckSurf.SDK.Models.Devices.StreamDeckOriginalV2
+  parent: DeckSurf.SDK.Models.Devices
+  isExternal: false
+  name: StreamDeckOriginalV2
+  nameWithType: DeckSurf.SDK.Models.Devices.StreamDeckOriginalV2
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckOriginalV2
+  type: class
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus
+  commentId: T:DeckSurf.SDK.Models.Devices.StreamDeckPlus
+  parent: DeckSurf.SDK.Models.Devices
+  isExternal: false
+  name: StreamDeckPlus
+  nameWithType: DeckSurf.SDK.Models.Devices.StreamDeckPlus
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus
+  type: class
 - uid: DeckSurf.SDK.Models.Devices.StreamDeckXL
   commentId: T:DeckSurf.SDK.Models.Devices.StreamDeckXL
   parent: DeckSurf.SDK.Models.Devices
