@@ -1,10 +1,12 @@
 # Getting Started with DeckSurf
 
-This article will tell you how to go from zero to comfortable with DeckSurf. The idea behind the SDK is to give you direct access to a Stream Deck device that is connected to your computer. If you want to learn more about the inner working of the tooling, refer to [a blog post I put together](https://den.dev/blog/reverse-engineering-stream-deck/) that documents how I reverse engineered the USB protocol.
+This article will tell you how to go from zero to comfortable with DeckSurf.
+
+The idea behind the SDK is to give you direct access to a Stream Deck device that is connected to your computer. If you want to learn more about the inner workings of the device itself, refer to [a blog post I put together](https://den.dev/blog/reverse-engineering-stream-deck/) that documents how I reverse engineered the USB protocol.
 
 ## Installing the package
 
-To get started, start a new .NET 5.0 console application project in Visual Studio. You can bootstrap a project through other means - the internals will be the same.
+To get started, start a new .NET console application project in Visual Studio. You can bootstrap a project through other means - the internals will be the same.
 
 >[!NOTE]
 >The SDK is designed to work with Windows only at this time. Future releases might be updated to support other platforms.
@@ -78,7 +80,7 @@ device.OnButtonPress += (s, e) =>
 {
     Console.WriteLine(e.Id);
 };
-device.InitializeDevice();
+device.StartListening();
 ```
 
 To use the [`ConnectedDevice`](https://docs.deck.surf/api/DeckSurf.SDK.Models/DeckSurf.SDK.Models.ConnectedDevice.html) class, you need to add a reference to [`DeckSurf.SDK.Models`](https://docs.deck.surf/api/DeckSurf.SDK.Models.html):
@@ -95,5 +97,23 @@ Once you build and run the application, for every button press you will see the 
 ![Example of C# application listening to Stream Deck key presses](../images/intro-to-decksurf/key-listener.gif)
 
 When the key is lifted, the ID shown is -1.
+
+You can also access various metadata about the button action in the event handler. For example, instead of inlining the event, you may want to define a custom event handler, and have it print the button actions:
+
+```csharp
+private static void Device_OnButtonPress(object source, ButtonPressEventArgs e)
+{
+    Console.WriteLine($"Button with ID {e.Id} was pressed. It's identified as {e.ButtonKind}. Event is {e.EventKind}. If this is a touch screen, coordinates are {e.TapCoordinates.X} and {e.TapCoordinates.Y}. Is knob rotated: {e.IsKnobRotating}. Rotation direction: {e.KnobRotationDirection}.");
+}
+```
+
+If you'd like to set an image for a device button, you can use the [`SetKey`](xref:DeckSurf.SDK.Models.ConnectedDevice.SetKey(System.Int32,System.Byte[])) function.
+
+Prior to that, however, you should resize the image to fit the device requirements with the help of the [`ResizeImage`](xref:DeckSurf.SDK.Util.ImageHelpers.ResizeImage(System.Byte[],System.Int32,System.Int32,System.Boolean)) helper.
+
+```csharp
+var keyImage = ImageHelpers.ResizeImage(testImage, device.ButtonResolution, device.ButtonResolution, device.IsButtonImageFlipRequired);
+device.SetKey(1, keyImage);
+```
 
 Congratulations - you just built your first DeckSurf-powered application!
