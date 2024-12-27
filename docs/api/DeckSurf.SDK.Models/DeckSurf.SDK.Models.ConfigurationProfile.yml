@@ -8,6 +8,7 @@ items:
   - DeckSurf.SDK.Models.ConfigurationProfile.ButtonMap
   - DeckSurf.SDK.Models.ConfigurationProfile.DeviceIndex
   - DeckSurf.SDK.Models.ConfigurationProfile.DeviceModel
+  - DeckSurf.SDK.Models.ConfigurationProfile.DeviceSerial
   langs:
   - csharp
   name: ConfigurationProfile
@@ -164,6 +165,42 @@ items:
   - set
   monikers:
   - net9.0
+- uid: DeckSurf.SDK.Models.ConfigurationProfile.DeviceSerial
+  commentId: P:DeckSurf.SDK.Models.ConfigurationProfile.DeviceSerial
+  id: DeviceSerial
+  parent: DeckSurf.SDK.Models.ConfigurationProfile
+  langs:
+  - csharp
+  name: DeviceSerial
+  nameWithType: ConfigurationProfile.DeviceSerial
+  fullName: DeckSurf.SDK.Models.ConfigurationProfile.DeviceSerial
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets or sets the device serial number associated with the configuration profile.
+  syntax:
+    content: >-
+      [[System.Text.Json.Serialization.JsonPropertyName("device_serial")]]
+
+      public string DeviceSerial { get; set; }
+    return:
+      type: System.String
+      description: ''
+    content.csharp: >-
+      [[System.Text.Json.Serialization.JsonPropertyName("device_serial")]]
+
+      public string DeviceSerial { get; set; }
+  overload: DeckSurf.SDK.Models.ConfigurationProfile.DeviceSerial*
+  exceptions: []
+  attributes:
+  - type: '[System.Text.Json.Serialization.JsonPropertyNameAttribute'
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  monikers:
+  - net9.0
 references:
 - uid: DeckSurf.SDK.Models
   commentId: N:DeckSurf.SDK.Models
@@ -247,6 +284,19 @@ references:
   name: DeviceModel
   nameWithType: DeviceModel
   fullName: DeckSurf.SDK.Models.DeviceModel
+- uid: DeckSurf.SDK.Models.ConfigurationProfile.DeviceSerial
+  parent: DeckSurf.SDK.Models.ConfigurationProfile
+  isExternal: false
+  name: DeviceSerial
+  nameWithType: ConfigurationProfile.DeviceSerial
+  fullName: DeckSurf.SDK.Models.ConfigurationProfile.DeviceSerial
+  type: property
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: DeckSurf.SDK.Models.ConfigurationProfile.#ctor*
   commentId: Overload:DeckSurf.SDK.Models.ConfigurationProfile.#ctor
   parent: DeckSurf.SDK.Models.ConfigurationProfile
@@ -284,6 +334,16 @@ references:
   name: DeviceModel
   nameWithType: ConfigurationProfile.DeviceModel
   fullName: DeckSurf.SDK.Models.ConfigurationProfile.DeviceModel
+  monikers:
+  - net9.0
+  type: property
+- uid: DeckSurf.SDK.Models.ConfigurationProfile.DeviceSerial*
+  commentId: Overload:DeckSurf.SDK.Models.ConfigurationProfile.DeviceSerial
+  parent: DeckSurf.SDK.Models.ConfigurationProfile
+  isExternal: false
+  name: DeviceSerial
+  nameWithType: ConfigurationProfile.DeviceSerial
+  fullName: DeckSurf.SDK.Models.ConfigurationProfile.DeviceSerial
   monikers:
   - net9.0
   type: property
