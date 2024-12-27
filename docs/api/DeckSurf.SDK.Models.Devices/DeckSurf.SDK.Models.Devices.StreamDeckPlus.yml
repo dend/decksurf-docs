@@ -4,7 +4,7 @@ items:
   commentId: T:DeckSurf.SDK.Models.Devices.StreamDeckPlus
   id: StreamDeckPlus
   children:
-  - DeckSurf.SDK.Models.Devices.StreamDeckPlus.#ctor(System.Int32,System.Int32,System.String,System.String)
+  - DeckSurf.SDK.Models.Devices.StreamDeckPlus.#ctor(System.Int32,System.Int32,System.String,System.String,System.String)
   - DeckSurf.SDK.Models.Devices.StreamDeckPlus.ButtonColumns
   - DeckSurf.SDK.Models.Devices.StreamDeckPlus.ButtonCount
   - DeckSurf.SDK.Models.Devices.StreamDeckPlus.ButtonResolution
@@ -39,6 +39,7 @@ items:
   - DeckSurf.SDK.Models.ConnectedDevice.OnButtonPress
   - DeckSurf.SDK.Models.ConnectedDevice.Open
   - DeckSurf.SDK.Models.ConnectedDevice.Path
+  - DeckSurf.SDK.Models.ConnectedDevice.Serial
   - DeckSurf.SDK.Models.ConnectedDevice.SetBrightness(System.Byte)
   - DeckSurf.SDK.Models.ConnectedDevice.SetKey(System.Int32,System.Byte[])
   - DeckSurf.SDK.Models.ConnectedDevice.SetScreen(System.Byte[],System.Int32,System.Int32,System.Int32)
@@ -53,22 +54,22 @@ items:
   _op_AssemblyMonikerMapping:
     DeckSurf.SDK:
     - net9.0
-- uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.#ctor(System.Int32,System.Int32,System.String,System.String)
-  commentId: M:DeckSurf.SDK.Models.Devices.StreamDeckPlus.#ctor(System.Int32,System.Int32,System.String,System.String)
-  id: '#ctor(System.Int32,System.Int32,System.String,System.String)'
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.#ctor(System.Int32,System.Int32,System.String,System.String,System.String)
+  commentId: M:DeckSurf.SDK.Models.Devices.StreamDeckPlus.#ctor(System.Int32,System.Int32,System.String,System.String,System.String)
+  id: '#ctor(System.Int32,System.Int32,System.String,System.String,System.String)'
   parent: DeckSurf.SDK.Models.Devices.StreamDeckPlus
   langs:
   - csharp
-  name: StreamDeckPlus(Int32, Int32, String, String)
-  nameWithType: StreamDeckPlus.StreamDeckPlus(Int32, Int32, String, String)
-  fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.StreamDeckPlus(Int32, Int32, String, String)
+  name: StreamDeckPlus(Int32, Int32, String, String, String)
+  nameWithType: StreamDeckPlus.StreamDeckPlus(Int32, Int32, String, String, String)
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.StreamDeckPlus(Int32, Int32, String, String, String)
   type: Constructor
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models.Devices
   summary: Implementation for a Stream Deck Plus connected device.
   syntax:
-    content: public StreamDeckPlus (int vid, int pid, string path, string name);
+    content: public StreamDeckPlus (int vid, int pid, string path, string name, string serial);
     parameters:
     - id: vid
       type: System.Int32
@@ -82,7 +83,10 @@ items:
     - id: name
       type: System.String
       description: ''
-    content.csharp: public StreamDeckPlus (int vid, int pid, string path, string name);
+    - id: serial
+      type: System.String
+      description: ''
+    content.csharp: public StreamDeckPlus (int vid, int pid, string path, string name, string serial);
   overload: DeckSurf.SDK.Models.Devices.StreamDeckPlus.#ctor*
   exceptions: []
   modifiers.csharp:
@@ -389,12 +393,12 @@ references:
   name: ConnectedDevice
   nameWithType: ConnectedDevice
   fullName: DeckSurf.SDK.Models.ConnectedDevice
-- uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.#ctor(System.Int32,System.Int32,System.String,System.String)
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.#ctor(System.Int32,System.Int32,System.String,System.String,System.String)
   parent: DeckSurf.SDK.Models.Devices.StreamDeckPlus
   isExternal: false
-  name: StreamDeckPlus(Int32, Int32, String, String)
-  nameWithType: StreamDeckPlus.StreamDeckPlus(Int32, Int32, String, String)
-  fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.StreamDeckPlus(Int32, Int32, String, String)
+  name: StreamDeckPlus(Int32, Int32, String, String, String)
+  nameWithType: StreamDeckPlus.StreamDeckPlus(Int32, Int32, String, String, String)
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.StreamDeckPlus(Int32, Int32, String, String, String)
   type: constructor
 - uid: System.Int32
   parent: System
@@ -651,6 +655,13 @@ references:
   name: Path
   nameWithType: ConnectedDevice.Path
   fullName: DeckSurf.SDK.Models.ConnectedDevice.Path
+  type: property
+- uid: DeckSurf.SDK.Models.ConnectedDevice.Serial
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: Serial
+  nameWithType: ConnectedDevice.Serial
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.Serial
   type: property
 - uid: DeckSurf.SDK.Models.ConnectedDevice.SetBrightness(System.Byte)
   parent: DeckSurf.SDK.Models.ConnectedDevice

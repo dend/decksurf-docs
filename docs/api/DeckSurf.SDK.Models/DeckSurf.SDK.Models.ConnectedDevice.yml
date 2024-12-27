@@ -5,7 +5,7 @@ items:
   id: ConnectedDevice
   children:
   - DeckSurf.SDK.Models.ConnectedDevice.#ctor
-  - DeckSurf.SDK.Models.ConnectedDevice.#ctor(System.Int32,System.Int32,System.String,System.String)
+  - DeckSurf.SDK.Models.ConnectedDevice.#ctor(System.Int32,System.Int32,System.String,System.String,System.String)
   - DeckSurf.SDK.Models.ConnectedDevice.ButtonColumns
   - DeckSurf.SDK.Models.ConnectedDevice.ButtonCount
   - DeckSurf.SDK.Models.ConnectedDevice.ButtonResolution
@@ -22,6 +22,7 @@ items:
   - DeckSurf.SDK.Models.ConnectedDevice.ScreenHeight
   - DeckSurf.SDK.Models.ConnectedDevice.ScreenSegmentWidth
   - DeckSurf.SDK.Models.ConnectedDevice.ScreenWidth
+  - DeckSurf.SDK.Models.ConnectedDevice.Serial
   - DeckSurf.SDK.Models.ConnectedDevice.SetBrightness(System.Byte)
   - DeckSurf.SDK.Models.ConnectedDevice.SetKey(System.Int32,System.Byte[])
   - DeckSurf.SDK.Models.ConnectedDevice.SetScreen(System.Byte[],System.Int32,System.Int32,System.Int32)
@@ -46,10 +47,14 @@ items:
   - System.Object
   derivedClasses:
   - DeckSurf.SDK.Models.Devices.StreamDeckMini
+  - DeckSurf.SDK.Models.Devices.StreamDeckMini2022
+  - DeckSurf.SDK.Models.Devices.StreamDeckMK2
+  - DeckSurf.SDK.Models.Devices.StreamDeckNeo
   - DeckSurf.SDK.Models.Devices.StreamDeckOriginal
-  - DeckSurf.SDK.Models.Devices.StreamDeckOriginalV2
+  - DeckSurf.SDK.Models.Devices.StreamDeckOriginal2019
   - DeckSurf.SDK.Models.Devices.StreamDeckPlus
   - DeckSurf.SDK.Models.Devices.StreamDeckXL
+  - DeckSurf.SDK.Models.Devices.StreamDeckXL2022
   implements: []
   inheritedMembers: []
   modifiers.csharp:
@@ -84,22 +89,22 @@ items:
   - public
   monikers:
   - net9.0
-- uid: DeckSurf.SDK.Models.ConnectedDevice.#ctor(System.Int32,System.Int32,System.String,System.String)
-  commentId: M:DeckSurf.SDK.Models.ConnectedDevice.#ctor(System.Int32,System.Int32,System.String,System.String)
-  id: '#ctor(System.Int32,System.Int32,System.String,System.String)'
+- uid: DeckSurf.SDK.Models.ConnectedDevice.#ctor(System.Int32,System.Int32,System.String,System.String,System.String)
+  commentId: M:DeckSurf.SDK.Models.ConnectedDevice.#ctor(System.Int32,System.Int32,System.String,System.String,System.String)
+  id: '#ctor(System.Int32,System.Int32,System.String,System.String,System.String)'
   parent: DeckSurf.SDK.Models.ConnectedDevice
   langs:
   - csharp
-  name: ConnectedDevice(Int32, Int32, String, String)
-  nameWithType: ConnectedDevice.ConnectedDevice(Int32, Int32, String, String)
-  fullName: DeckSurf.SDK.Models.ConnectedDevice.ConnectedDevice(Int32, Int32, String, String)
+  name: ConnectedDevice(Int32, Int32, String, String, String)
+  nameWithType: ConnectedDevice.ConnectedDevice(Int32, Int32, String, String, String)
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.ConnectedDevice(Int32, Int32, String, String, String)
   type: Constructor
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
   summary: Initializes a new instance of the <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.ConnectedDevice"></xref> class with given device parameters.
   syntax:
-    content: public ConnectedDevice (int vid, int pid, string path, string name);
+    content: public ConnectedDevice (int vid, int pid, string path, string name, string serial);
     parameters:
     - id: vid
       type: System.Int32
@@ -113,7 +118,10 @@ items:
     - id: name
       type: System.String
       description: Name of the USB HID device.
-    content.csharp: public ConnectedDevice (int vid, int pid, string path, string name);
+    - id: serial
+      type: System.String
+      description: Serial number for the device.
+    content.csharp: public ConnectedDevice (int vid, int pid, string path, string name, string serial);
   overload: DeckSurf.SDK.Models.ConnectedDevice.#ctor*
   exceptions: []
   modifiers.csharp:
@@ -558,6 +566,33 @@ items:
   - get
   monikers:
   - net9.0
+- uid: DeckSurf.SDK.Models.ConnectedDevice.Serial
+  commentId: P:DeckSurf.SDK.Models.ConnectedDevice.Serial
+  id: Serial
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  langs:
+  - csharp
+  name: Serial
+  nameWithType: ConnectedDevice.Serial
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.Serial
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets the device serial number.
+  syntax:
+    content: public string Serial { get; }
+    return:
+      type: System.String
+      description: ''
+    content.csharp: public string Serial { get; }
+  overload: DeckSurf.SDK.Models.ConnectedDevice.Serial*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net9.0
 - uid: DeckSurf.SDK.Models.ConnectedDevice.SetBrightness(System.Byte)
   commentId: M:DeckSurf.SDK.Models.ConnectedDevice.SetBrightness(System.Byte)
   id: SetBrightness(System.Byte)
@@ -781,12 +816,12 @@ references:
   nameWithType: ConnectedDevice.ConnectedDevice()
   fullName: DeckSurf.SDK.Models.ConnectedDevice.ConnectedDevice()
   type: constructor
-- uid: DeckSurf.SDK.Models.ConnectedDevice.#ctor(System.Int32,System.Int32,System.String,System.String)
+- uid: DeckSurf.SDK.Models.ConnectedDevice.#ctor(System.Int32,System.Int32,System.String,System.String,System.String)
   parent: DeckSurf.SDK.Models.ConnectedDevice
   isExternal: false
-  name: ConnectedDevice(Int32, Int32, String, String)
-  nameWithType: ConnectedDevice.ConnectedDevice(Int32, Int32, String, String)
-  fullName: DeckSurf.SDK.Models.ConnectedDevice.ConnectedDevice(Int32, Int32, String, String)
+  name: ConnectedDevice(Int32, Int32, String, String, String)
+  nameWithType: ConnectedDevice.ConnectedDevice(Int32, Int32, String, String, String)
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.ConnectedDevice(Int32, Int32, String, String, String)
   type: constructor
 - uid: System.Int32
   parent: System
@@ -935,6 +970,13 @@ references:
   name: ScreenWidth
   nameWithType: ConnectedDevice.ScreenWidth
   fullName: DeckSurf.SDK.Models.ConnectedDevice.ScreenWidth
+  type: property
+- uid: DeckSurf.SDK.Models.ConnectedDevice.Serial
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: Serial
+  nameWithType: ConnectedDevice.Serial
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.Serial
   type: property
 - uid: DeckSurf.SDK.Models.ConnectedDevice.SetBrightness(System.Byte)
   parent: DeckSurf.SDK.Models.ConnectedDevice
@@ -1193,6 +1235,16 @@ references:
   monikers:
   - net9.0
   type: property
+- uid: DeckSurf.SDK.Models.ConnectedDevice.Serial*
+  commentId: Overload:DeckSurf.SDK.Models.ConnectedDevice.Serial
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: Serial
+  nameWithType: ConnectedDevice.Serial
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.Serial
+  monikers:
+  - net9.0
+  type: property
 - uid: DeckSurf.SDK.Models.ConnectedDevice.SetBrightness*
   commentId: Overload:DeckSurf.SDK.Models.ConnectedDevice.SetBrightness
   parent: DeckSurf.SDK.Models.ConnectedDevice
@@ -1271,6 +1323,30 @@ references:
   nameWithType: DeckSurf.SDK.Models.Devices.StreamDeckMini
   fullName: DeckSurf.SDK.Models.Devices.StreamDeckMini
   type: class
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckMini2022
+  commentId: T:DeckSurf.SDK.Models.Devices.StreamDeckMini2022
+  parent: DeckSurf.SDK.Models.Devices
+  isExternal: false
+  name: StreamDeckMini2022
+  nameWithType: DeckSurf.SDK.Models.Devices.StreamDeckMini2022
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckMini2022
+  type: class
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckMK2
+  commentId: T:DeckSurf.SDK.Models.Devices.StreamDeckMK2
+  parent: DeckSurf.SDK.Models.Devices
+  isExternal: false
+  name: StreamDeckMK2
+  nameWithType: DeckSurf.SDK.Models.Devices.StreamDeckMK2
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckMK2
+  type: class
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckNeo
+  commentId: T:DeckSurf.SDK.Models.Devices.StreamDeckNeo
+  parent: DeckSurf.SDK.Models.Devices
+  isExternal: false
+  name: StreamDeckNeo
+  nameWithType: DeckSurf.SDK.Models.Devices.StreamDeckNeo
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckNeo
+  type: class
 - uid: DeckSurf.SDK.Models.Devices.StreamDeckOriginal
   commentId: T:DeckSurf.SDK.Models.Devices.StreamDeckOriginal
   parent: DeckSurf.SDK.Models.Devices
@@ -1279,13 +1355,13 @@ references:
   nameWithType: DeckSurf.SDK.Models.Devices.StreamDeckOriginal
   fullName: DeckSurf.SDK.Models.Devices.StreamDeckOriginal
   type: class
-- uid: DeckSurf.SDK.Models.Devices.StreamDeckOriginalV2
-  commentId: T:DeckSurf.SDK.Models.Devices.StreamDeckOriginalV2
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckOriginal2019
+  commentId: T:DeckSurf.SDK.Models.Devices.StreamDeckOriginal2019
   parent: DeckSurf.SDK.Models.Devices
   isExternal: false
-  name: StreamDeckOriginalV2
-  nameWithType: DeckSurf.SDK.Models.Devices.StreamDeckOriginalV2
-  fullName: DeckSurf.SDK.Models.Devices.StreamDeckOriginalV2
+  name: StreamDeckOriginal2019
+  nameWithType: DeckSurf.SDK.Models.Devices.StreamDeckOriginal2019
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckOriginal2019
   type: class
 - uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus
   commentId: T:DeckSurf.SDK.Models.Devices.StreamDeckPlus
@@ -1302,4 +1378,12 @@ references:
   name: StreamDeckXL
   nameWithType: DeckSurf.SDK.Models.Devices.StreamDeckXL
   fullName: DeckSurf.SDK.Models.Devices.StreamDeckXL
+  type: class
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckXL2022
+  commentId: T:DeckSurf.SDK.Models.Devices.StreamDeckXL2022
+  parent: DeckSurf.SDK.Models.Devices
+  isExternal: false
+  name: StreamDeckXL2022
+  nameWithType: DeckSurf.SDK.Models.Devices.StreamDeckXL2022
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckXL2022
   type: class

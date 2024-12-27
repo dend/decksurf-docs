@@ -81,12 +81,24 @@
     name: StreamDeckMini
     monikers:
     - net9.0
+  - uid: DeckSurf.SDK.Models.Devices.StreamDeckMini2022
+    name: StreamDeckMini2022
+    monikers:
+    - net9.0
+  - uid: DeckSurf.SDK.Models.Devices.StreamDeckMK2
+    name: StreamDeckMK2
+    monikers:
+    - net9.0
+  - uid: DeckSurf.SDK.Models.Devices.StreamDeckNeo
+    name: StreamDeckNeo
+    monikers:
+    - net9.0
   - uid: DeckSurf.SDK.Models.Devices.StreamDeckOriginal
     name: StreamDeckOriginal
     monikers:
     - net9.0
-  - uid: DeckSurf.SDK.Models.Devices.StreamDeckOriginalV2
-    name: StreamDeckOriginalV2
+  - uid: DeckSurf.SDK.Models.Devices.StreamDeckOriginal2019
+    name: StreamDeckOriginal2019
     monikers:
     - net9.0
   - uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus
@@ -95,6 +107,10 @@
     - net9.0
   - uid: DeckSurf.SDK.Models.Devices.StreamDeckXL
     name: StreamDeckXL
+    monikers:
+    - net9.0
+  - uid: DeckSurf.SDK.Models.Devices.StreamDeckXL2022
+    name: StreamDeckXL2022
     monikers:
     - net9.0
   monikers:
