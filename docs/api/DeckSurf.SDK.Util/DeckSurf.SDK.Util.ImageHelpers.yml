@@ -10,7 +10,7 @@ items:
   - DeckSurf.SDK.Util.ImageHelpers.GetImage(System.Byte[])
   - DeckSurf.SDK.Util.ImageHelpers.GetImageBuffer(System.Drawing.Icon)
   - DeckSurf.SDK.Util.ImageHelpers.GetImageBuffer(System.Drawing.Image)
-  - DeckSurf.SDK.Util.ImageHelpers.ResizeImage(System.Byte[],System.Int32,System.Int32,System.Boolean)
+  - DeckSurf.SDK.Util.ImageHelpers.ResizeImage(System.Byte[],System.Int32,System.Int32,System.Drawing.RotateFlipType,System.Drawing.Imaging.ImageFormat)
   langs:
   - csharp
   name: ImageHelpers
@@ -225,22 +225,22 @@ items:
   - static
   monikers:
   - net9.0
-- uid: DeckSurf.SDK.Util.ImageHelpers.ResizeImage(System.Byte[],System.Int32,System.Int32,System.Boolean)
-  commentId: M:DeckSurf.SDK.Util.ImageHelpers.ResizeImage(System.Byte[],System.Int32,System.Int32,System.Boolean)
-  id: ResizeImage(System.Byte[],System.Int32,System.Int32,System.Boolean)
+- uid: DeckSurf.SDK.Util.ImageHelpers.ResizeImage(System.Byte[],System.Int32,System.Int32,System.Drawing.RotateFlipType,System.Drawing.Imaging.ImageFormat)
+  commentId: M:DeckSurf.SDK.Util.ImageHelpers.ResizeImage(System.Byte[],System.Int32,System.Int32,System.Drawing.RotateFlipType,System.Drawing.Imaging.ImageFormat)
+  id: ResizeImage(System.Byte[],System.Int32,System.Int32,System.Drawing.RotateFlipType,System.Drawing.Imaging.ImageFormat)
   parent: DeckSurf.SDK.Util.ImageHelpers
   langs:
   - csharp
-  name: ResizeImage(Byte[], Int32, Int32, Boolean)
-  nameWithType: ImageHelpers.ResizeImage(Byte[], Int32, Int32, Boolean)
-  fullName: DeckSurf.SDK.Util.ImageHelpers.ResizeImage(Byte[], Int32, Int32, Boolean)
+  name: ResizeImage(Byte[], Int32, Int32, RotateFlipType, ImageFormat)
+  nameWithType: ImageHelpers.ResizeImage(Byte[], Int32, Int32, RotateFlipType, ImageFormat)
+  fullName: DeckSurf.SDK.Util.ImageHelpers.ResizeImage(Byte[], Int32, Int32, RotateFlipType, ImageFormat)
   type: Method
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Util
   summary: Resize an image buffer to the expected size, in pixels.
   syntax:
-    content: public static byte[] ResizeImage (byte[] buffer, int width, int height, bool flip);
+    content: public static byte[] ResizeImage (byte[] buffer, int width, int height, System.Drawing.RotateFlipType flipType, System.Drawing.Imaging.ImageFormat format);
     parameters:
     - id: buffer
       type: System.Byte[]
@@ -251,13 +251,16 @@ items:
     - id: height
       type: System.Int32
       description: Target height, in pixels.
-    - id: flip
-      type: System.Boolean
-      description: Determines whether the image needs to be flipped upside-down.
+    - id: flipType
+      type: System.Drawing.RotateFlipType
+      description: Determines the flip type for a given image.
+    - id: format
+      type: System.Drawing.Imaging.ImageFormat
+      description: Image format to be sent to the device.
     return:
       type: System.Byte[]
       description: Byte array representing the resized image.
-    content.csharp: public static byte[] ResizeImage (byte[] buffer, int width, int height, bool flip);
+    content.csharp: public static byte[] ResizeImage (byte[] buffer, int width, int height, System.Drawing.RotateFlipType flipType, System.Drawing.Imaging.ImageFormat format);
   overload: DeckSurf.SDK.Util.ImageHelpers.ResizeImage*
   exceptions: []
   modifiers.csharp:
@@ -381,19 +384,25 @@ references:
   nameWithType: ImageHelpers.GetImageBuffer(Image)
   fullName: DeckSurf.SDK.Util.ImageHelpers.GetImageBuffer(Image)
   type: method
-- uid: DeckSurf.SDK.Util.ImageHelpers.ResizeImage(System.Byte[],System.Int32,System.Int32,System.Boolean)
+- uid: DeckSurf.SDK.Util.ImageHelpers.ResizeImage(System.Byte[],System.Int32,System.Int32,System.Drawing.RotateFlipType,System.Drawing.Imaging.ImageFormat)
   parent: DeckSurf.SDK.Util.ImageHelpers
   isExternal: false
-  name: ResizeImage(Byte[], Int32, Int32, Boolean)
-  nameWithType: ImageHelpers.ResizeImage(Byte[], Int32, Int32, Boolean)
-  fullName: DeckSurf.SDK.Util.ImageHelpers.ResizeImage(Byte[], Int32, Int32, Boolean)
+  name: ResizeImage(Byte[], Int32, Int32, RotateFlipType, ImageFormat)
+  nameWithType: ImageHelpers.ResizeImage(Byte[], Int32, Int32, RotateFlipType, ImageFormat)
+  fullName: DeckSurf.SDK.Util.ImageHelpers.ResizeImage(Byte[], Int32, Int32, RotateFlipType, ImageFormat)
   type: method
-- uid: System.Boolean
-  parent: System
+- uid: System.Drawing.RotateFlipType
+  parent: System.Drawing
   isExternal: true
-  name: Boolean
-  nameWithType: Boolean
-  fullName: System.Boolean
+  name: RotateFlipType
+  nameWithType: RotateFlipType
+  fullName: System.Drawing.RotateFlipType
+- uid: System.Drawing.Imaging.ImageFormat
+  parent: System.Drawing.Imaging
+  isExternal: true
+  name: ImageFormat
+  nameWithType: ImageFormat
+  fullName: System.Drawing.Imaging.ImageFormat
 - uid: DeckSurf.SDK.Util.ImageHelpers.#ctor*
   commentId: Overload:DeckSurf.SDK.Util.ImageHelpers.#ctor
   parent: DeckSurf.SDK.Util.ImageHelpers
