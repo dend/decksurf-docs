@@ -1,0 +1,33 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Interfaces
+  commentId: N:DeckSurf.SDK.Interfaces
+  id: DeckSurf.SDK.Interfaces
+  children:
+  - DeckSurf.SDK.Interfaces.IDSCommand
+  - DeckSurf.SDK.Interfaces.IDSPlugin
+  langs:
+  - csharp
+  name: DeckSurf.SDK.Interfaces
+  nameWithType: DeckSurf.SDK.Interfaces
+  fullName: DeckSurf.SDK.Interfaces
+  type: Namespace
+  monikers:
+  - net9.0
+references:
+- uid: DeckSurf.SDK.Interfaces.IDSCommand
+  commentId: T:DeckSurf.SDK.Interfaces.IDSCommand
+  parent: DeckSurf.SDK.Interfaces
+  isExternal: false
+  name: IDSCommand
+  nameWithType: DeckSurf.SDK.Interfaces.IDSCommand
+  fullName: DeckSurf.SDK.Interfaces.IDSCommand
+  type: interface
+- uid: DeckSurf.SDK.Interfaces.IDSPlugin
+  commentId: T:DeckSurf.SDK.Interfaces.IDSPlugin
+  parent: DeckSurf.SDK.Interfaces
+  isExternal: false
+  name: IDSPlugin
+  nameWithType: DeckSurf.SDK.Interfaces.IDSPlugin
+  fullName: DeckSurf.SDK.Interfaces.IDSPlugin
+  type: interface

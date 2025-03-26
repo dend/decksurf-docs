@@ -1,0 +1,279 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Core.DeviceManager
+  commentId: T:DeckSurf.SDK.Core.DeviceManager
+  id: DeviceManager
+  children:
+  - DeckSurf.SDK.Core.DeviceManager.#ctor
+  - DeckSurf.SDK.Core.DeviceManager.GetDeviceList
+  - DeckSurf.SDK.Core.DeviceManager.IsSupported(System.Int32,System.Int32)
+  - DeckSurf.SDK.Core.DeviceManager.SetupDevice(DeckSurf.SDK.Models.ConfigurationProfile)
+  langs:
+  - csharp
+  name: DeviceManager
+  nameWithType: DeckSurf.SDK.Core.DeviceManager
+  fullName: DeckSurf.SDK.Core.DeviceManager
+  type: Class
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Core
+  summary: Class used to manage connected Stream Deck devices.
+  syntax:
+    content: public class DeviceManager
+    content.csharp: public class DeviceManager
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net9.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net9.0
+- uid: DeckSurf.SDK.Core.DeviceManager.#ctor
+  commentId: M:DeckSurf.SDK.Core.DeviceManager.#ctor
+  id: '#ctor'
+  parent: DeckSurf.SDK.Core.DeviceManager
+  langs:
+  - csharp
+  name: DeviceManager()
+  nameWithType: DeviceManager.DeviceManager()
+  fullName: DeckSurf.SDK.Core.DeviceManager.DeviceManager()
+  type: Constructor
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Core
+  syntax:
+    content: public DeviceManager ();
+    parameters: []
+    content.csharp: public DeviceManager ();
+  overload: DeckSurf.SDK.Core.DeviceManager.#ctor*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Core.DeviceManager.GetDeviceList
+  commentId: M:DeckSurf.SDK.Core.DeviceManager.GetDeviceList
+  id: GetDeviceList
+  parent: DeckSurf.SDK.Core.DeviceManager
+  langs:
+  - csharp
+  name: GetDeviceList()
+  nameWithType: DeviceManager.GetDeviceList()
+  fullName: DeckSurf.SDK.Core.DeviceManager.GetDeviceList()
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Core
+  summary: Return a list of connected Stream Deck devices supported by DeckSurf.
+  syntax:
+    content: public static System.Collections.Generic.IEnumerable<DeckSurf.SDK.Models.ConnectedDevice> GetDeviceList ();
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{DeckSurf.SDK.Models.ConnectedDevice}
+      description: Enumerable containing a list of supported devices.
+    content.csharp: public static System.Collections.Generic.IEnumerable<DeckSurf.SDK.Models.ConnectedDevice> GetDeviceList ();
+  overload: DeckSurf.SDK.Core.DeviceManager.GetDeviceList*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Core.DeviceManager.IsSupported(System.Int32,System.Int32)
+  commentId: M:DeckSurf.SDK.Core.DeviceManager.IsSupported(System.Int32,System.Int32)
+  id: IsSupported(System.Int32,System.Int32)
+  parent: DeckSurf.SDK.Core.DeviceManager
+  langs:
+  - csharp
+  name: IsSupported(Int32, Int32)
+  nameWithType: DeviceManager.IsSupported(Int32, Int32)
+  fullName: DeckSurf.SDK.Core.DeviceManager.IsSupported(Int32, Int32)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Core
+  summary: Determines whether a given vendor ID (VID) and product ID (PID) are supported by the SDK. VID and PID should be representing a Stream Deck device.
+  syntax:
+    content: public static bool IsSupported (int vid, int pid);
+    parameters:
+    - id: vid
+      type: System.Int32
+      description: Device VID.
+    - id: pid
+      type: System.Int32
+      description: Device PID.
+    return:
+      type: System.Boolean
+      description: True if device is supported, false if not.
+    content.csharp: public static bool IsSupported (int vid, int pid);
+  overload: DeckSurf.SDK.Core.DeviceManager.IsSupported*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Core.DeviceManager.SetupDevice(DeckSurf.SDK.Models.ConfigurationProfile)
+  commentId: M:DeckSurf.SDK.Core.DeviceManager.SetupDevice(DeckSurf.SDK.Models.ConfigurationProfile)
+  id: SetupDevice(DeckSurf.SDK.Models.ConfigurationProfile)
+  parent: DeckSurf.SDK.Core.DeviceManager
+  langs:
+  - csharp
+  name: SetupDevice(ConfigurationProfile)
+  nameWithType: DeviceManager.SetupDevice(ConfigurationProfile)
+  fullName: DeckSurf.SDK.Core.DeviceManager.SetupDevice(ConfigurationProfile)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Core
+  summary: Gets a connected Stream Deck device based on a pre-defined configuration profile.
+  syntax:
+    content: public static DeckSurf.SDK.Models.ConnectedDevice SetupDevice (DeckSurf.SDK.Models.ConfigurationProfile profile);
+    parameters:
+    - id: profile
+      type: DeckSurf.SDK.Models.ConfigurationProfile
+      description: An instance representing the pre-defined configuration profile.
+    return:
+      type: DeckSurf.SDK.Models.ConnectedDevice
+      description: If the call is successful, returns a Stream Deck device.
+    content.csharp: public static DeckSurf.SDK.Models.ConnectedDevice SetupDevice (DeckSurf.SDK.Models.ConfigurationProfile profile);
+  overload: DeckSurf.SDK.Core.DeviceManager.SetupDevice*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net9.0
+references:
+- uid: DeckSurf.SDK.Core
+  commentId: N:DeckSurf.SDK.Core
+  isExternal: false
+  name: DeckSurf.SDK.Core
+  nameWithType: DeckSurf.SDK.Core
+  fullName: DeckSurf.SDK.Core
+  type: namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: DeckSurf.SDK.Core.DeviceManager.#ctor
+  parent: DeckSurf.SDK.Core.DeviceManager
+  isExternal: false
+  name: DeviceManager()
+  nameWithType: DeviceManager.DeviceManager()
+  fullName: DeckSurf.SDK.Core.DeviceManager.DeviceManager()
+  type: constructor
+- uid: DeckSurf.SDK.Core.DeviceManager.GetDeviceList
+  parent: DeckSurf.SDK.Core.DeviceManager
+  isExternal: false
+  name: GetDeviceList()
+  nameWithType: DeviceManager.GetDeviceList()
+  fullName: DeckSurf.SDK.Core.DeviceManager.GetDeviceList()
+  type: method
+- uid: System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.Generic.IEnumerable
+- uid: DeckSurf.SDK.Models.ConnectedDevice
+  name: ConnectedDevice
+  nameWithType: ConnectedDevice
+  fullName: DeckSurf.SDK.Models.ConnectedDevice
+- uid: System.Collections.Generic.IEnumerable{DeckSurf.SDK.Models.ConnectedDevice}
+  parent: System.Collections.Generic
+  name: IEnumerable<ConnectedDevice>
+  nameWithType: IEnumerable<ConnectedDevice>
+  fullName: System.Collections.Generic.IEnumerable<DeckSurf.SDK.Models.ConnectedDevice>
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: DeckSurf.SDK.Models.ConnectedDevice
+    name: ConnectedDevice
+    nameWithType: ConnectedDevice
+    fullName: DeckSurf.SDK.Models.ConnectedDevice
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: DeckSurf.SDK.Core.DeviceManager.IsSupported(System.Int32,System.Int32)
+  parent: DeckSurf.SDK.Core.DeviceManager
+  isExternal: false
+  name: IsSupported(Int32, Int32)
+  nameWithType: DeviceManager.IsSupported(Int32, Int32)
+  fullName: DeckSurf.SDK.Core.DeviceManager.IsSupported(Int32, Int32)
+  type: method
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: DeckSurf.SDK.Core.DeviceManager.SetupDevice(DeckSurf.SDK.Models.ConfigurationProfile)
+  parent: DeckSurf.SDK.Core.DeviceManager
+  isExternal: false
+  name: SetupDevice(ConfigurationProfile)
+  nameWithType: DeviceManager.SetupDevice(ConfigurationProfile)
+  fullName: DeckSurf.SDK.Core.DeviceManager.SetupDevice(ConfigurationProfile)
+  type: method
+- uid: DeckSurf.SDK.Models.ConfigurationProfile
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: ConfigurationProfile
+  nameWithType: ConfigurationProfile
+  fullName: DeckSurf.SDK.Models.ConfigurationProfile
+- uid: DeckSurf.SDK.Core.DeviceManager.#ctor*
+  commentId: Overload:DeckSurf.SDK.Core.DeviceManager.#ctor
+  parent: DeckSurf.SDK.Core.DeviceManager
+  isExternal: false
+  name: DeviceManager
+  nameWithType: DeviceManager.DeviceManager
+  fullName: DeckSurf.SDK.Core.DeviceManager.DeviceManager
+  monikers:
+  - net9.0
+  type: constructor
+- uid: DeckSurf.SDK.Core.DeviceManager.GetDeviceList*
+  commentId: Overload:DeckSurf.SDK.Core.DeviceManager.GetDeviceList
+  parent: DeckSurf.SDK.Core.DeviceManager
+  isExternal: false
+  name: GetDeviceList
+  nameWithType: DeviceManager.GetDeviceList
+  fullName: DeckSurf.SDK.Core.DeviceManager.GetDeviceList
+  monikers:
+  - net9.0
+  type: method
+- uid: DeckSurf.SDK.Core.DeviceManager.IsSupported*
+  commentId: Overload:DeckSurf.SDK.Core.DeviceManager.IsSupported
+  parent: DeckSurf.SDK.Core.DeviceManager
+  isExternal: false
+  name: IsSupported
+  nameWithType: DeviceManager.IsSupported
+  fullName: DeckSurf.SDK.Core.DeviceManager.IsSupported
+  monikers:
+  - net9.0
+  type: method
+- uid: DeckSurf.SDK.Core.DeviceManager.SetupDevice*
+  commentId: Overload:DeckSurf.SDK.Core.DeviceManager.SetupDevice
+  parent: DeckSurf.SDK.Core.DeviceManager
+  isExternal: false
+  name: SetupDevice
+  nameWithType: DeviceManager.SetupDevice
+  fullName: DeckSurf.SDK.Core.DeviceManager.SetupDevice
+  monikers:
+  - net9.0
+  type: method

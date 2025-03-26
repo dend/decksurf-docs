@@ -1,0 +1,42 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Util
+  commentId: N:DeckSurf.SDK.Util
+  id: DeckSurf.SDK.Util
+  children:
+  - DeckSurf.SDK.Util.ConfigurationHelper
+  - DeckSurf.SDK.Util.DataHelpers
+  - DeckSurf.SDK.Util.ImageHelpers
+  langs:
+  - csharp
+  name: DeckSurf.SDK.Util
+  nameWithType: DeckSurf.SDK.Util
+  fullName: DeckSurf.SDK.Util
+  type: Namespace
+  monikers:
+  - net9.0
+references:
+- uid: DeckSurf.SDK.Util.ConfigurationHelper
+  commentId: T:DeckSurf.SDK.Util.ConfigurationHelper
+  parent: DeckSurf.SDK.Util
+  isExternal: false
+  name: ConfigurationHelper
+  nameWithType: DeckSurf.SDK.Util.ConfigurationHelper
+  fullName: DeckSurf.SDK.Util.ConfigurationHelper
+  type: class
+- uid: DeckSurf.SDK.Util.DataHelpers
+  commentId: T:DeckSurf.SDK.Util.DataHelpers
+  parent: DeckSurf.SDK.Util
+  isExternal: false
+  name: DataHelpers
+  nameWithType: DeckSurf.SDK.Util.DataHelpers
+  fullName: DeckSurf.SDK.Util.DataHelpers
+  type: class
+- uid: DeckSurf.SDK.Util.ImageHelpers
+  commentId: T:DeckSurf.SDK.Util.ImageHelpers
+  parent: DeckSurf.SDK.Util
+  isExternal: false
+  name: ImageHelpers
+  nameWithType: DeckSurf.SDK.Util.ImageHelpers
+  fullName: DeckSurf.SDK.Util.ImageHelpers
+  type: class

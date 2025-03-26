@@ -1,0 +1,161 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Interfaces.IDSPlugin
+  commentId: T:DeckSurf.SDK.Interfaces.IDSPlugin
+  id: IDSPlugin
+  children:
+  - DeckSurf.SDK.Interfaces.IDSPlugin.GetSupportedCommands
+  - DeckSurf.SDK.Interfaces.IDSPlugin.Metadata
+  langs:
+  - csharp
+  name: IDSPlugin
+  nameWithType: DeckSurf.SDK.Interfaces.IDSPlugin
+  fullName: DeckSurf.SDK.Interfaces.IDSPlugin
+  type: Interface
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Interfaces
+  summary: Interface required by DeckSurf plugins to be recognized by DeckSurf tooling.
+  syntax:
+    content: public interface IDSPlugin
+    content.csharp: public interface IDSPlugin
+  implements: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net9.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net9.0
+- uid: DeckSurf.SDK.Interfaces.IDSPlugin.GetSupportedCommands
+  commentId: M:DeckSurf.SDK.Interfaces.IDSPlugin.GetSupportedCommands
+  id: GetSupportedCommands
+  parent: DeckSurf.SDK.Interfaces.IDSPlugin
+  langs:
+  - csharp
+  name: GetSupportedCommands()
+  nameWithType: IDSPlugin.GetSupportedCommands()
+  fullName: DeckSurf.SDK.Interfaces.IDSPlugin.GetSupportedCommands()
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Interfaces
+  summary: Provides a list of commands that the plugin exposes.
+  syntax:
+    content: public System.Collections.Generic.List<Type> GetSupportedCommands ();
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.Type}
+      description: List of managed types that represent <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Interfaces.IDSCommand"></xref> implementations.
+    content.csharp: public System.Collections.Generic.List<Type> GetSupportedCommands ();
+  overload: DeckSurf.SDK.Interfaces.IDSPlugin.GetSupportedCommands*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Interfaces.IDSPlugin.Metadata
+  commentId: P:DeckSurf.SDK.Interfaces.IDSPlugin.Metadata
+  id: Metadata
+  parent: DeckSurf.SDK.Interfaces.IDSPlugin
+  langs:
+  - csharp
+  name: Metadata
+  nameWithType: IDSPlugin.Metadata
+  fullName: DeckSurf.SDK.Interfaces.IDSPlugin.Metadata
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Interfaces
+  summary: Gets non-functional information about the plugin.
+  syntax:
+    content: public DeckSurf.SDK.Models.PluginMetadata Metadata { get; }
+    return:
+      type: DeckSurf.SDK.Models.PluginMetadata
+      description: ''
+    content.csharp: public DeckSurf.SDK.Models.PluginMetadata Metadata { get; }
+  overload: DeckSurf.SDK.Interfaces.IDSPlugin.Metadata*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net9.0
+references:
+- uid: DeckSurf.SDK.Interfaces
+  commentId: N:DeckSurf.SDK.Interfaces
+  isExternal: false
+  name: DeckSurf.SDK.Interfaces
+  nameWithType: DeckSurf.SDK.Interfaces
+  fullName: DeckSurf.SDK.Interfaces
+  type: namespace
+- uid: DeckSurf.SDK.Interfaces.IDSPlugin.GetSupportedCommands
+  parent: DeckSurf.SDK.Interfaces.IDSPlugin
+  isExternal: false
+  name: GetSupportedCommands()
+  nameWithType: IDSPlugin.GetSupportedCommands()
+  fullName: DeckSurf.SDK.Interfaces.IDSPlugin.GetSupportedCommands()
+  type: method
+- uid: System.Collections.Generic.List`1
+  isExternal: true
+  name: List
+  nameWithType: List
+  fullName: System.Collections.Generic.List
+- uid: System.Type
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Collections.Generic.List{System.Type}
+  parent: System.Collections.Generic
+  name: List<Type>
+  nameWithType: List<Type>
+  fullName: System.Collections.Generic.List<System.Type>
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: DeckSurf.SDK.Interfaces.IDSPlugin.Metadata
+  parent: DeckSurf.SDK.Interfaces.IDSPlugin
+  isExternal: false
+  name: Metadata
+  nameWithType: IDSPlugin.Metadata
+  fullName: DeckSurf.SDK.Interfaces.IDSPlugin.Metadata
+  type: property
+- uid: DeckSurf.SDK.Models.PluginMetadata
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: PluginMetadata
+  nameWithType: PluginMetadata
+  fullName: DeckSurf.SDK.Models.PluginMetadata
+- uid: DeckSurf.SDK.Interfaces.IDSPlugin.GetSupportedCommands*
+  commentId: Overload:DeckSurf.SDK.Interfaces.IDSPlugin.GetSupportedCommands
+  parent: DeckSurf.SDK.Interfaces.IDSPlugin
+  isExternal: false
+  name: GetSupportedCommands
+  nameWithType: IDSPlugin.GetSupportedCommands
+  fullName: DeckSurf.SDK.Interfaces.IDSPlugin.GetSupportedCommands
+  monikers:
+  - net9.0
+  type: method
+- uid: DeckSurf.SDK.Interfaces.IDSPlugin.Metadata*
+  commentId: Overload:DeckSurf.SDK.Interfaces.IDSPlugin.Metadata
+  parent: DeckSurf.SDK.Interfaces.IDSPlugin
+  isExternal: false
+  name: Metadata
+  nameWithType: IDSPlugin.Metadata
+  fullName: DeckSurf.SDK.Interfaces.IDSPlugin.Metadata
+  monikers:
+  - net9.0
+  type: property

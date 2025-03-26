@@ -1,0 +1,60 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Models.ConnectedDevice.ReceivedButtonPressHandler
+  commentId: T:DeckSurf.SDK.Models.ConnectedDevice.ReceivedButtonPressHandler
+  id: ConnectedDevice.ReceivedButtonPressHandler
+  langs:
+  - csharp
+  name: ConnectedDevice.ReceivedButtonPressHandler
+  nameWithType: DeckSurf.SDK.Models.ConnectedDevice.ReceivedButtonPressHandler
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.ReceivedButtonPressHandler
+  type: Delegate
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Delegate responsible for handling Stream Deck button presses.
+  syntax:
+    content: public delegate void ConnectedDevice.ReceivedButtonPressHandler(object source, ButtonPressEventArgs e);
+    parameters:
+    - id: source
+      type: System.Object
+      description: The device where the button was pressed.
+    - id: e
+      type: DeckSurf.SDK.Models.ButtonPressEventArgs
+      description: Information on the button press.
+    content.csharp: public delegate void ConnectedDevice.ReceivedButtonPressHandler(object source, ButtonPressEventArgs e);
+  inheritance:
+  - System.Delegate
+  modifiers.csharp:
+  - public
+  monikers:
+  - net9.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net9.0
+references:
+- uid: DeckSurf.SDK.Models
+  commentId: N:DeckSurf.SDK.Models
+  isExternal: false
+  name: DeckSurf.SDK.Models
+  nameWithType: DeckSurf.SDK.Models
+  fullName: DeckSurf.SDK.Models
+  type: namespace
+- uid: System.Delegate
+  parent: System
+  isExternal: true
+  name: Delegate
+  nameWithType: Delegate
+  fullName: System.Delegate
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: DeckSurf.SDK.Models.ButtonPressEventArgs
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: ButtonPressEventArgs
+  nameWithType: ButtonPressEventArgs
+  fullName: DeckSurf.SDK.Models.ButtonPressEventArgs

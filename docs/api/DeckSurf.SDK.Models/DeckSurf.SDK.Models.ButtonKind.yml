@@ -1,0 +1,176 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Models.ButtonKind
+  commentId: T:DeckSurf.SDK.Models.ButtonKind
+  id: ButtonKind
+  children:
+  - DeckSurf.SDK.Models.ButtonKind.Button
+  - DeckSurf.SDK.Models.ButtonKind.Knob
+  - DeckSurf.SDK.Models.ButtonKind.Screen
+  - DeckSurf.SDK.Models.ButtonKind.Unknown
+  langs:
+  - csharp
+  name: ButtonKind
+  nameWithType: DeckSurf.SDK.Models.ButtonKind
+  fullName: DeckSurf.SDK.Models.ButtonKind
+  type: Enum
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Represents the type of button used on the Stream Deck device.
+  syntax:
+    content: public enum ButtonKind
+    content.csharp: public enum ButtonKind
+  inheritance:
+  - System.Enum
+  modifiers.csharp:
+  - public
+  monikers:
+  - net9.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net9.0
+- uid: DeckSurf.SDK.Models.ButtonKind.Button
+  commentId: F:DeckSurf.SDK.Models.ButtonKind.Button
+  id: Button
+  parent: DeckSurf.SDK.Models.ButtonKind
+  langs:
+  - csharp
+  name: Button
+  nameWithType: ButtonKind.Button
+  fullName: DeckSurf.SDK.Models.ButtonKind.Button
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Standard button.
+  syntax:
+    content: Button
+    return:
+      type: DeckSurf.SDK.Models.ButtonKind
+      description: ''
+    content.csharp: Button
+  exceptions: []
+  monikers:
+  - net9.0
+  literalValue: "0"
+- uid: DeckSurf.SDK.Models.ButtonKind.Knob
+  commentId: F:DeckSurf.SDK.Models.ButtonKind.Knob
+  id: Knob
+  parent: DeckSurf.SDK.Models.ButtonKind
+  langs:
+  - csharp
+  name: Knob
+  nameWithType: ButtonKind.Knob
+  fullName: DeckSurf.SDK.Models.ButtonKind.Knob
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Knob, as used on the Stream Deck Plus.
+  syntax:
+    content: Knob
+    return:
+      type: DeckSurf.SDK.Models.ButtonKind
+      description: ''
+    content.csharp: Knob
+  exceptions: []
+  monikers:
+  - net9.0
+  literalValue: "1"
+- uid: DeckSurf.SDK.Models.ButtonKind.Screen
+  commentId: F:DeckSurf.SDK.Models.ButtonKind.Screen
+  id: Screen
+  parent: DeckSurf.SDK.Models.ButtonKind
+  langs:
+  - csharp
+  name: Screen
+  nameWithType: ButtonKind.Screen
+  fullName: DeckSurf.SDK.Models.ButtonKind.Screen
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Touch screen, as used on the Stream Deck Plus.
+  syntax:
+    content: Screen
+    return:
+      type: DeckSurf.SDK.Models.ButtonKind
+      description: ''
+    content.csharp: Screen
+  exceptions: []
+  monikers:
+  - net9.0
+  literalValue: "2"
+- uid: DeckSurf.SDK.Models.ButtonKind.Unknown
+  commentId: F:DeckSurf.SDK.Models.ButtonKind.Unknown
+  id: Unknown
+  parent: DeckSurf.SDK.Models.ButtonKind
+  langs:
+  - csharp
+  name: Unknown
+  nameWithType: ButtonKind.Unknown
+  fullName: DeckSurf.SDK.Models.ButtonKind.Unknown
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Unknown button type.
+  syntax:
+    content: Unknown
+    return:
+      type: DeckSurf.SDK.Models.ButtonKind
+      description: ''
+    content.csharp: Unknown
+  exceptions: []
+  monikers:
+  - net9.0
+  literalValue: "3"
+references:
+- uid: DeckSurf.SDK.Models
+  commentId: N:DeckSurf.SDK.Models
+  isExternal: false
+  name: DeckSurf.SDK.Models
+  nameWithType: DeckSurf.SDK.Models
+  fullName: DeckSurf.SDK.Models
+  type: namespace
+- uid: System.Enum
+  parent: System
+  isExternal: true
+  name: Enum
+  nameWithType: Enum
+  fullName: System.Enum
+- uid: DeckSurf.SDK.Models.ButtonKind.Button
+  parent: DeckSurf.SDK.Models.ButtonKind
+  isExternal: false
+  name: Button
+  nameWithType: ButtonKind.Button
+  fullName: DeckSurf.SDK.Models.ButtonKind.Button
+  type: field
+- uid: DeckSurf.SDK.Models.ButtonKind
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: ButtonKind
+  nameWithType: ButtonKind
+  fullName: DeckSurf.SDK.Models.ButtonKind
+- uid: DeckSurf.SDK.Models.ButtonKind.Knob
+  parent: DeckSurf.SDK.Models.ButtonKind
+  isExternal: false
+  name: Knob
+  nameWithType: ButtonKind.Knob
+  fullName: DeckSurf.SDK.Models.ButtonKind.Knob
+  type: field
+- uid: DeckSurf.SDK.Models.ButtonKind.Screen
+  parent: DeckSurf.SDK.Models.ButtonKind
+  isExternal: false
+  name: Screen
+  nameWithType: ButtonKind.Screen
+  fullName: DeckSurf.SDK.Models.ButtonKind.Screen
+  type: field
+- uid: DeckSurf.SDK.Models.ButtonKind.Unknown
+  parent: DeckSurf.SDK.Models.ButtonKind
+  isExternal: false
+  name: Unknown
+  nameWithType: ButtonKind.Unknown
+  fullName: DeckSurf.SDK.Models.ButtonKind.Unknown
+  type: field

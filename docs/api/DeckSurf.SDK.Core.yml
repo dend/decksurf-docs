@@ -1,0 +1,24 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Core
+  commentId: N:DeckSurf.SDK.Core
+  id: DeckSurf.SDK.Core
+  children:
+  - DeckSurf.SDK.Core.DeviceManager
+  langs:
+  - csharp
+  name: DeckSurf.SDK.Core
+  nameWithType: DeckSurf.SDK.Core
+  fullName: DeckSurf.SDK.Core
+  type: Namespace
+  monikers:
+  - net9.0
+references:
+- uid: DeckSurf.SDK.Core.DeviceManager
+  commentId: T:DeckSurf.SDK.Core.DeviceManager
+  parent: DeckSurf.SDK.Core
+  isExternal: false
+  name: DeviceManager
+  nameWithType: DeckSurf.SDK.Core.DeviceManager
+  fullName: DeckSurf.SDK.Core.DeviceManager
+  type: class

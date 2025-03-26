@@ -1,0 +1,45 @@
+name: Publish Documentation
+
+on:
+  push:
+    paths-ignore:
+      - '**/*.gitignore'
+      - '**/*.gitattributes'
+  workflow_dispatch:
+    paths-ignore:
+      - '**/*.gitignore'
+      - '**/*.gitattributes'
+
+jobs:
+  build:
+    runs-on: windows-latest
+    timeout-minutes: 15
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        submodules: 'recursive'
+    - name: Download DocFX
+      run: Invoke-WebRequest https://github.com/dotnet/docfx/releases/download/v2.58/docfx.zip -OutFile docfx.zip
+    - name: Extract DocFX
+      run: Expand-Archive -Path docfx.zip -DestinationPath _docfx
+    - name: Build DocFX docs
+      working-directory: docs
+      run: ${{ github.workspace }}\_docfx\docfx.exe build
+    - name: Checkout HTML repo
+      uses: actions/checkout@v2
+      with:
+        repository: 'dend/decksurf-docs-compiled'
+        path: '_docs'
+        token: ${{ secrets.DOCS_PAT }}
+    - name: Copy new files
+      working-directory: docs
+      run: Copy-item -Force -Recurse -Verbose _site\* -Destination ${{ github.workspace }}\_docs
+    - name: Commit and push all the documentation changes
+      working-directory: _docs
+      run: |
+        git add -A -v
+        git config --global user.name 'Den Delimarsky'
+        git config --global user.email '1389609+dend@users.noreply.github.com'
+        git commit -m "Docs update."
+        git push origin main

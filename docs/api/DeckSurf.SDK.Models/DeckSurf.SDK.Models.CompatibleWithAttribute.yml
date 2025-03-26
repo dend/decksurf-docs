@@ -1,0 +1,151 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Models.CompatibleWithAttribute
+  commentId: T:DeckSurf.SDK.Models.CompatibleWithAttribute
+  id: CompatibleWithAttribute
+  children:
+  - DeckSurf.SDK.Models.CompatibleWithAttribute.#ctor(DeckSurf.SDK.Models.DeviceModel)
+  - DeckSurf.SDK.Models.CompatibleWithAttribute.CompatibleModel
+  langs:
+  - csharp
+  name: CompatibleWithAttribute
+  nameWithType: DeckSurf.SDK.Models.CompatibleWithAttribute
+  fullName: DeckSurf.SDK.Models.CompatibleWithAttribute
+  type: Class
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Attribute that determines the class of Stream Deck devices that a plugin is compatible with.
+  remarks: Initializes a new instance of the <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.CompatibleWithAttribute"></xref> class.
+  syntax:
+    content: >-
+      [[System.AttributeUsage(System.AttributeTargets.Class, AllowMultiple=true, Inherited=false)]]
+
+      public class CompatibleWithAttribute : Attribute
+    content.csharp: >-
+      [[System.AttributeUsage(System.AttributeTargets.Class, AllowMultiple=true, Inherited=false)]]
+
+      public class CompatibleWithAttribute : Attribute
+  inheritance:
+  - System.Attribute
+  implements: []
+  inheritedMembers: []
+  attributes:
+  - type: '[System.AttributeUsageAttribute'
+  modifiers.csharp:
+  - public
+  monikers:
+  - net9.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net9.0
+- uid: DeckSurf.SDK.Models.CompatibleWithAttribute.#ctor(DeckSurf.SDK.Models.DeviceModel)
+  commentId: M:DeckSurf.SDK.Models.CompatibleWithAttribute.#ctor(DeckSurf.SDK.Models.DeviceModel)
+  id: '#ctor(DeckSurf.SDK.Models.DeviceModel)'
+  parent: DeckSurf.SDK.Models.CompatibleWithAttribute
+  langs:
+  - csharp
+  name: CompatibleWithAttribute(DeviceModel)
+  nameWithType: CompatibleWithAttribute.CompatibleWithAttribute(DeviceModel)
+  fullName: DeckSurf.SDK.Models.CompatibleWithAttribute.CompatibleWithAttribute(DeviceModel)
+  type: Constructor
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Attribute that determines the class of Stream Deck devices that a plugin is compatible with.
+  remarks: Initializes a new instance of the <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.CompatibleWithAttribute"></xref> class.
+  syntax:
+    content: public CompatibleWithAttribute (DeckSurf.SDK.Models.DeviceModel model);
+    parameters:
+    - id: model
+      type: DeckSurf.SDK.Models.DeviceModel
+      description: Reference to the <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.DeviceModel"></xref> device model type.
+    content.csharp: public CompatibleWithAttribute (DeckSurf.SDK.Models.DeviceModel model);
+  overload: DeckSurf.SDK.Models.CompatibleWithAttribute.#ctor*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Models.CompatibleWithAttribute.CompatibleModel
+  commentId: P:DeckSurf.SDK.Models.CompatibleWithAttribute.CompatibleModel
+  id: CompatibleModel
+  parent: DeckSurf.SDK.Models.CompatibleWithAttribute
+  langs:
+  - csharp
+  name: CompatibleModel
+  nameWithType: CompatibleWithAttribute.CompatibleModel
+  fullName: DeckSurf.SDK.Models.CompatibleWithAttribute.CompatibleModel
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets or sets the <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.DeviceModel"></xref> device model type.
+  syntax:
+    content: public DeckSurf.SDK.Models.DeviceModel CompatibleModel { get; set; }
+    return:
+      type: DeckSurf.SDK.Models.DeviceModel
+      description: ''
+    content.csharp: public DeckSurf.SDK.Models.DeviceModel CompatibleModel { get; set; }
+  overload: DeckSurf.SDK.Models.CompatibleWithAttribute.CompatibleModel*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  monikers:
+  - net9.0
+references:
+- uid: DeckSurf.SDK.Models
+  commentId: N:DeckSurf.SDK.Models
+  isExternal: false
+  name: DeckSurf.SDK.Models
+  nameWithType: DeckSurf.SDK.Models
+  fullName: DeckSurf.SDK.Models
+  type: namespace
+- uid: System.Attribute
+  parent: System
+  isExternal: true
+  name: Attribute
+  nameWithType: Attribute
+  fullName: System.Attribute
+- uid: DeckSurf.SDK.Models.CompatibleWithAttribute.#ctor(DeckSurf.SDK.Models.DeviceModel)
+  parent: DeckSurf.SDK.Models.CompatibleWithAttribute
+  isExternal: false
+  name: CompatibleWithAttribute(DeviceModel)
+  nameWithType: CompatibleWithAttribute.CompatibleWithAttribute(DeviceModel)
+  fullName: DeckSurf.SDK.Models.CompatibleWithAttribute.CompatibleWithAttribute(DeviceModel)
+  type: constructor
+- uid: DeckSurf.SDK.Models.DeviceModel
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: DeviceModel
+  nameWithType: DeviceModel
+  fullName: DeckSurf.SDK.Models.DeviceModel
+- uid: DeckSurf.SDK.Models.CompatibleWithAttribute.CompatibleModel
+  parent: DeckSurf.SDK.Models.CompatibleWithAttribute
+  isExternal: false
+  name: CompatibleModel
+  nameWithType: CompatibleWithAttribute.CompatibleModel
+  fullName: DeckSurf.SDK.Models.CompatibleWithAttribute.CompatibleModel
+  type: property
+- uid: DeckSurf.SDK.Models.CompatibleWithAttribute.#ctor*
+  commentId: Overload:DeckSurf.SDK.Models.CompatibleWithAttribute.#ctor
+  parent: DeckSurf.SDK.Models.CompatibleWithAttribute
+  isExternal: false
+  name: CompatibleWithAttribute
+  nameWithType: CompatibleWithAttribute.CompatibleWithAttribute
+  fullName: DeckSurf.SDK.Models.CompatibleWithAttribute.CompatibleWithAttribute
+  monikers:
+  - net9.0
+  type: constructor
+- uid: DeckSurf.SDK.Models.CompatibleWithAttribute.CompatibleModel*
+  commentId: Overload:DeckSurf.SDK.Models.CompatibleWithAttribute.CompatibleModel
+  parent: DeckSurf.SDK.Models.CompatibleWithAttribute
+  isExternal: false
+  name: CompatibleModel
+  nameWithType: CompatibleWithAttribute.CompatibleModel
+  fullName: DeckSurf.SDK.Models.CompatibleWithAttribute.CompatibleModel
+  monikers:
+  - net9.0
+  type: property

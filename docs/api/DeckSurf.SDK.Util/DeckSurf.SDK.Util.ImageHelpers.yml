@@ -1,0 +1,465 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Util.ImageHelpers
+  commentId: T:DeckSurf.SDK.Util.ImageHelpers
+  id: ImageHelpers
+  children:
+  - DeckSurf.SDK.Util.ImageHelpers.#ctor
+  - DeckSurf.SDK.Util.ImageHelpers.CreateBlankImage(System.Int32,System.Drawing.Color)
+  - DeckSurf.SDK.Util.ImageHelpers.GetFileIcon(System.String,System.Int32,System.Int32,DeckSurf.SDK.Models.SIIGBF)
+  - DeckSurf.SDK.Util.ImageHelpers.GetImage(System.Byte[])
+  - DeckSurf.SDK.Util.ImageHelpers.GetImageBuffer(System.Drawing.Icon)
+  - DeckSurf.SDK.Util.ImageHelpers.GetImageBuffer(System.Drawing.Image)
+  - DeckSurf.SDK.Util.ImageHelpers.ResizeImage(System.Byte[],System.Int32,System.Int32,System.Drawing.RotateFlipType,System.Drawing.Imaging.ImageFormat)
+  langs:
+  - csharp
+  name: ImageHelpers
+  nameWithType: DeckSurf.SDK.Util.ImageHelpers
+  fullName: DeckSurf.SDK.Util.ImageHelpers
+  type: Class
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Util
+  summary: Collection of methods used for image manipulation, allowing easier Stream Deck button image preparation.
+  syntax:
+    content: public class ImageHelpers
+    content.csharp: public class ImageHelpers
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net9.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net9.0
+- uid: DeckSurf.SDK.Util.ImageHelpers.#ctor
+  commentId: M:DeckSurf.SDK.Util.ImageHelpers.#ctor
+  id: '#ctor'
+  parent: DeckSurf.SDK.Util.ImageHelpers
+  langs:
+  - csharp
+  name: ImageHelpers()
+  nameWithType: ImageHelpers.ImageHelpers()
+  fullName: DeckSurf.SDK.Util.ImageHelpers.ImageHelpers()
+  type: Constructor
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Util
+  syntax:
+    content: public ImageHelpers ();
+    parameters: []
+    content.csharp: public ImageHelpers ();
+  overload: DeckSurf.SDK.Util.ImageHelpers.#ctor*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Util.ImageHelpers.CreateBlankImage(System.Int32,System.Drawing.Color)
+  commentId: M:DeckSurf.SDK.Util.ImageHelpers.CreateBlankImage(System.Int32,System.Drawing.Color)
+  id: CreateBlankImage(System.Int32,System.Drawing.Color)
+  parent: DeckSurf.SDK.Util.ImageHelpers
+  langs:
+  - csharp
+  name: CreateBlankImage(Int32, Color)
+  nameWithType: ImageHelpers.CreateBlankImage(Int32, Color)
+  fullName: DeckSurf.SDK.Util.ImageHelpers.CreateBlankImage(Int32, Color)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Util
+  summary: Creates a new blank square.
+  syntax:
+    content: public static byte[] CreateBlankImage (int pixelSize, System.Drawing.Color color);
+    parameters:
+    - id: pixelSize
+      type: System.Int32
+      description: Size, in pixels, of the square sides.
+    - id: color
+      type: System.Drawing.Color
+      description: The color of the blank square to be created.
+    return:
+      type: System.Byte[]
+      description: If successful, returns a byte array representing the JPEG representation of the blank square.
+    content.csharp: public static byte[] CreateBlankImage (int pixelSize, System.Drawing.Color color);
+  overload: DeckSurf.SDK.Util.ImageHelpers.CreateBlankImage*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Util.ImageHelpers.GetFileIcon(System.String,System.Int32,System.Int32,DeckSurf.SDK.Models.SIIGBF)
+  commentId: M:DeckSurf.SDK.Util.ImageHelpers.GetFileIcon(System.String,System.Int32,System.Int32,DeckSurf.SDK.Models.SIIGBF)
+  id: GetFileIcon(System.String,System.Int32,System.Int32,DeckSurf.SDK.Models.SIIGBF)
+  parent: DeckSurf.SDK.Util.ImageHelpers
+  langs:
+  - csharp
+  name: GetFileIcon(String, Int32, Int32, SIIGBF)
+  nameWithType: ImageHelpers.GetFileIcon(String, Int32, Int32, SIIGBF)
+  fullName: DeckSurf.SDK.Util.ImageHelpers.GetFileIcon(String, Int32, Int32, SIIGBF)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Util
+  summary: Gets the Windows icon for a given file.
+  syntax:
+    content: public static System.Drawing.Bitmap GetFileIcon (string fileName, int width, int height, DeckSurf.SDK.Models.SIIGBF options);
+    parameters:
+    - id: fileName
+      type: System.String
+      description: Path to the file.
+    - id: width
+      type: System.Int32
+      description: Desired icon width.
+    - id: height
+      type: System.Int32
+      description: Desired icon height.
+    - id: options
+      type: DeckSurf.SDK.Models.SIIGBF
+      description: Icon extraction flags, represented by a standard Windows API <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.SIIGBF"></xref> enum.
+    return:
+      type: System.Drawing.Bitmap
+      description: Bitmap object containing the file icon.
+    content.csharp: public static System.Drawing.Bitmap GetFileIcon (string fileName, int width, int height, DeckSurf.SDK.Models.SIIGBF options);
+  overload: DeckSurf.SDK.Util.ImageHelpers.GetFileIcon*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Util.ImageHelpers.GetImage(System.Byte[])
+  commentId: M:DeckSurf.SDK.Util.ImageHelpers.GetImage(System.Byte[])
+  id: GetImage(System.Byte[])
+  parent: DeckSurf.SDK.Util.ImageHelpers
+  langs:
+  - csharp
+  name: GetImage(Byte[])
+  nameWithType: ImageHelpers.GetImage(Byte[])
+  fullName: DeckSurf.SDK.Util.ImageHelpers.GetImage(Byte[])
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Util
+  summary: Converts a byte array to an Image object.
+  syntax:
+    content: public static System.Drawing.Image GetImage (byte[] buffer);
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+      description: Byte array containing the image.
+    return:
+      type: System.Drawing.Image
+      description: Image object, generated from a given byte array.
+    content.csharp: public static System.Drawing.Image GetImage (byte[] buffer);
+  overload: DeckSurf.SDK.Util.ImageHelpers.GetImage*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Util.ImageHelpers.GetImageBuffer(System.Drawing.Icon)
+  commentId: M:DeckSurf.SDK.Util.ImageHelpers.GetImageBuffer(System.Drawing.Icon)
+  id: GetImageBuffer(System.Drawing.Icon)
+  parent: DeckSurf.SDK.Util.ImageHelpers
+  langs:
+  - csharp
+  name: GetImageBuffer(Icon)
+  nameWithType: ImageHelpers.GetImageBuffer(Icon)
+  fullName: DeckSurf.SDK.Util.ImageHelpers.GetImageBuffer(Icon)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Util
+  summary: Converts an Icon object to a byte array.
+  syntax:
+    content: public static byte[] GetImageBuffer (System.Drawing.Icon icon);
+    parameters:
+    - id: icon
+      type: System.Drawing.Icon
+      description: Icon object containing the image.
+    return:
+      type: System.Byte[]
+      description: Byte array, generated from an Icon object.
+    content.csharp: public static byte[] GetImageBuffer (System.Drawing.Icon icon);
+  overload: DeckSurf.SDK.Util.ImageHelpers.GetImageBuffer*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Util.ImageHelpers.GetImageBuffer(System.Drawing.Image)
+  commentId: M:DeckSurf.SDK.Util.ImageHelpers.GetImageBuffer(System.Drawing.Image)
+  id: GetImageBuffer(System.Drawing.Image)
+  parent: DeckSurf.SDK.Util.ImageHelpers
+  langs:
+  - csharp
+  name: GetImageBuffer(Image)
+  nameWithType: ImageHelpers.GetImageBuffer(Image)
+  fullName: DeckSurf.SDK.Util.ImageHelpers.GetImageBuffer(Image)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Util
+  summary: Converts an Image object to a byte array.
+  syntax:
+    content: public static byte[] GetImageBuffer (System.Drawing.Image image);
+    parameters:
+    - id: image
+      type: System.Drawing.Image
+      description: Image object containing the image.
+    return:
+      type: System.Byte[]
+      description: Byte array, generated from an Image object.
+    content.csharp: public static byte[] GetImageBuffer (System.Drawing.Image image);
+  overload: DeckSurf.SDK.Util.ImageHelpers.GetImageBuffer*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Util.ImageHelpers.ResizeImage(System.Byte[],System.Int32,System.Int32,System.Drawing.RotateFlipType,System.Drawing.Imaging.ImageFormat)
+  commentId: M:DeckSurf.SDK.Util.ImageHelpers.ResizeImage(System.Byte[],System.Int32,System.Int32,System.Drawing.RotateFlipType,System.Drawing.Imaging.ImageFormat)
+  id: ResizeImage(System.Byte[],System.Int32,System.Int32,System.Drawing.RotateFlipType,System.Drawing.Imaging.ImageFormat)
+  parent: DeckSurf.SDK.Util.ImageHelpers
+  langs:
+  - csharp
+  name: ResizeImage(Byte[], Int32, Int32, RotateFlipType, ImageFormat)
+  nameWithType: ImageHelpers.ResizeImage(Byte[], Int32, Int32, RotateFlipType, ImageFormat)
+  fullName: DeckSurf.SDK.Util.ImageHelpers.ResizeImage(Byte[], Int32, Int32, RotateFlipType, ImageFormat)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Util
+  summary: Resize an image buffer to the expected size, in pixels.
+  syntax:
+    content: public static byte[] ResizeImage (byte[] buffer, int width, int height, System.Drawing.RotateFlipType flipType, System.Drawing.Imaging.ImageFormat format);
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+      description: Byte array containing the image.
+    - id: width
+      type: System.Int32
+      description: Target width, in pixels.
+    - id: height
+      type: System.Int32
+      description: Target height, in pixels.
+    - id: flipType
+      type: System.Drawing.RotateFlipType
+      description: Determines the flip type for a given image.
+    - id: format
+      type: System.Drawing.Imaging.ImageFormat
+      description: Image format to be sent to the device.
+    return:
+      type: System.Byte[]
+      description: Byte array representing the resized image.
+    content.csharp: public static byte[] ResizeImage (byte[] buffer, int width, int height, System.Drawing.RotateFlipType flipType, System.Drawing.Imaging.ImageFormat format);
+  overload: DeckSurf.SDK.Util.ImageHelpers.ResizeImage*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net9.0
+references:
+- uid: DeckSurf.SDK.Util
+  commentId: N:DeckSurf.SDK.Util
+  isExternal: false
+  name: DeckSurf.SDK.Util
+  nameWithType: DeckSurf.SDK.Util
+  fullName: DeckSurf.SDK.Util
+  type: namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: DeckSurf.SDK.Util.ImageHelpers.#ctor
+  parent: DeckSurf.SDK.Util.ImageHelpers
+  isExternal: false
+  name: ImageHelpers()
+  nameWithType: ImageHelpers.ImageHelpers()
+  fullName: DeckSurf.SDK.Util.ImageHelpers.ImageHelpers()
+  type: constructor
+- uid: DeckSurf.SDK.Util.ImageHelpers.CreateBlankImage(System.Int32,System.Drawing.Color)
+  parent: DeckSurf.SDK.Util.ImageHelpers
+  isExternal: false
+  name: CreateBlankImage(Int32, Color)
+  nameWithType: ImageHelpers.CreateBlankImage(Int32, Color)
+  fullName: DeckSurf.SDK.Util.ImageHelpers.CreateBlankImage(Int32, Color)
+  type: method
+- uid: System.Byte
+  isExternal: true
+  name: Byte
+  nameWithType: Byte
+  fullName: System.Byte
+- uid: System.Byte[]
+  parent: System
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Drawing.Color
+  parent: System.Drawing
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: System.Drawing.Color
+- uid: DeckSurf.SDK.Util.ImageHelpers.GetFileIcon(System.String,System.Int32,System.Int32,DeckSurf.SDK.Models.SIIGBF)
+  parent: DeckSurf.SDK.Util.ImageHelpers
+  isExternal: false
+  name: GetFileIcon(String, Int32, Int32, SIIGBF)
+  nameWithType: ImageHelpers.GetFileIcon(String, Int32, Int32, SIIGBF)
+  fullName: DeckSurf.SDK.Util.ImageHelpers.GetFileIcon(String, Int32, Int32, SIIGBF)
+  type: method
+- uid: System.Drawing.Bitmap
+  parent: System.Drawing
+  isExternal: true
+  name: Bitmap
+  nameWithType: Bitmap
+  fullName: System.Drawing.Bitmap
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DeckSurf.SDK.Models.SIIGBF
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: SIIGBF
+  nameWithType: SIIGBF
+  fullName: DeckSurf.SDK.Models.SIIGBF
+- uid: DeckSurf.SDK.Util.ImageHelpers.GetImage(System.Byte[])
+  parent: DeckSurf.SDK.Util.ImageHelpers
+  isExternal: false
+  name: GetImage(Byte[])
+  nameWithType: ImageHelpers.GetImage(Byte[])
+  fullName: DeckSurf.SDK.Util.ImageHelpers.GetImage(Byte[])
+  type: method
+- uid: System.Drawing.Image
+  parent: System.Drawing
+  isExternal: true
+  name: Image
+  nameWithType: Image
+  fullName: System.Drawing.Image
+- uid: DeckSurf.SDK.Util.ImageHelpers.GetImageBuffer(System.Drawing.Icon)
+  parent: DeckSurf.SDK.Util.ImageHelpers
+  isExternal: false
+  name: GetImageBuffer(Icon)
+  nameWithType: ImageHelpers.GetImageBuffer(Icon)
+  fullName: DeckSurf.SDK.Util.ImageHelpers.GetImageBuffer(Icon)
+  type: method
+- uid: System.Drawing.Icon
+  parent: System.Drawing
+  isExternal: true
+  name: Icon
+  nameWithType: Icon
+  fullName: System.Drawing.Icon
+- uid: DeckSurf.SDK.Util.ImageHelpers.GetImageBuffer(System.Drawing.Image)
+  parent: DeckSurf.SDK.Util.ImageHelpers
+  isExternal: false
+  name: GetImageBuffer(Image)
+  nameWithType: ImageHelpers.GetImageBuffer(Image)
+  fullName: DeckSurf.SDK.Util.ImageHelpers.GetImageBuffer(Image)
+  type: method
+- uid: DeckSurf.SDK.Util.ImageHelpers.ResizeImage(System.Byte[],System.Int32,System.Int32,System.Drawing.RotateFlipType,System.Drawing.Imaging.ImageFormat)
+  parent: DeckSurf.SDK.Util.ImageHelpers
+  isExternal: false
+  name: ResizeImage(Byte[], Int32, Int32, RotateFlipType, ImageFormat)
+  nameWithType: ImageHelpers.ResizeImage(Byte[], Int32, Int32, RotateFlipType, ImageFormat)
+  fullName: DeckSurf.SDK.Util.ImageHelpers.ResizeImage(Byte[], Int32, Int32, RotateFlipType, ImageFormat)
+  type: method
+- uid: System.Drawing.RotateFlipType
+  parent: System.Drawing
+  isExternal: true
+  name: RotateFlipType
+  nameWithType: RotateFlipType
+  fullName: System.Drawing.RotateFlipType
+- uid: System.Drawing.Imaging.ImageFormat
+  parent: System.Drawing.Imaging
+  isExternal: true
+  name: ImageFormat
+  nameWithType: ImageFormat
+  fullName: System.Drawing.Imaging.ImageFormat
+- uid: DeckSurf.SDK.Util.ImageHelpers.#ctor*
+  commentId: Overload:DeckSurf.SDK.Util.ImageHelpers.#ctor
+  parent: DeckSurf.SDK.Util.ImageHelpers
+  isExternal: false
+  name: ImageHelpers
+  nameWithType: ImageHelpers.ImageHelpers
+  fullName: DeckSurf.SDK.Util.ImageHelpers.ImageHelpers
+  monikers:
+  - net9.0
+  type: constructor
+- uid: DeckSurf.SDK.Util.ImageHelpers.CreateBlankImage*
+  commentId: Overload:DeckSurf.SDK.Util.ImageHelpers.CreateBlankImage
+  parent: DeckSurf.SDK.Util.ImageHelpers
+  isExternal: false
+  name: CreateBlankImage
+  nameWithType: ImageHelpers.CreateBlankImage
+  fullName: DeckSurf.SDK.Util.ImageHelpers.CreateBlankImage
+  monikers:
+  - net9.0
+  type: method
+- uid: DeckSurf.SDK.Util.ImageHelpers.GetFileIcon*
+  commentId: Overload:DeckSurf.SDK.Util.ImageHelpers.GetFileIcon
+  parent: DeckSurf.SDK.Util.ImageHelpers
+  isExternal: false
+  name: GetFileIcon
+  nameWithType: ImageHelpers.GetFileIcon
+  fullName: DeckSurf.SDK.Util.ImageHelpers.GetFileIcon
+  monikers:
+  - net9.0
+  type: method
+- uid: DeckSurf.SDK.Util.ImageHelpers.GetImage*
+  commentId: Overload:DeckSurf.SDK.Util.ImageHelpers.GetImage
+  parent: DeckSurf.SDK.Util.ImageHelpers
+  isExternal: false
+  name: GetImage
+  nameWithType: ImageHelpers.GetImage
+  fullName: DeckSurf.SDK.Util.ImageHelpers.GetImage
+  monikers:
+  - net9.0
+  type: method
+- uid: DeckSurf.SDK.Util.ImageHelpers.GetImageBuffer*
+  commentId: Overload:DeckSurf.SDK.Util.ImageHelpers.GetImageBuffer
+  parent: DeckSurf.SDK.Util.ImageHelpers
+  isExternal: false
+  name: GetImageBuffer
+  nameWithType: ImageHelpers.GetImageBuffer
+  fullName: DeckSurf.SDK.Util.ImageHelpers.GetImageBuffer
+  monikers:
+  - net9.0
+  type: method
+- uid: DeckSurf.SDK.Util.ImageHelpers.ResizeImage*
+  commentId: Overload:DeckSurf.SDK.Util.ImageHelpers.ResizeImage
+  parent: DeckSurf.SDK.Util.ImageHelpers
+  isExternal: false
+  name: ResizeImage
+  nameWithType: ImageHelpers.ResizeImage
+  fullName: DeckSurf.SDK.Util.ImageHelpers.ResizeImage
+  monikers:
+  - net9.0
+  type: method

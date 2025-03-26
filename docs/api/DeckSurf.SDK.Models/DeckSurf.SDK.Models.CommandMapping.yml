@@ -1,0 +1,367 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Models.CommandMapping
+  commentId: T:DeckSurf.SDK.Models.CommandMapping
+  id: CommandMapping
+  children:
+  - DeckSurf.SDK.Models.CommandMapping.#ctor
+  - DeckSurf.SDK.Models.CommandMapping.ButtonImagePath
+  - DeckSurf.SDK.Models.CommandMapping.ButtonIndex
+  - DeckSurf.SDK.Models.CommandMapping.Command
+  - DeckSurf.SDK.Models.CommandMapping.CommandArguments
+  - DeckSurf.SDK.Models.CommandMapping.Plugin
+  langs:
+  - csharp
+  name: CommandMapping
+  nameWithType: DeckSurf.SDK.Models.CommandMapping
+  fullName: DeckSurf.SDK.Models.CommandMapping
+  type: Class
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Command mapping used to associate Stream Deck buttons with specific plugins and commands.
+  syntax:
+    content: public class CommandMapping
+    content.csharp: public class CommandMapping
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net9.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net9.0
+- uid: DeckSurf.SDK.Models.CommandMapping.#ctor
+  commentId: M:DeckSurf.SDK.Models.CommandMapping.#ctor
+  id: '#ctor'
+  parent: DeckSurf.SDK.Models.CommandMapping
+  langs:
+  - csharp
+  name: CommandMapping()
+  nameWithType: CommandMapping.CommandMapping()
+  fullName: DeckSurf.SDK.Models.CommandMapping.CommandMapping()
+  type: Constructor
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  syntax:
+    content: public CommandMapping ();
+    parameters: []
+    content.csharp: public CommandMapping ();
+  overload: DeckSurf.SDK.Models.CommandMapping.#ctor*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Models.CommandMapping.ButtonImagePath
+  commentId: P:DeckSurf.SDK.Models.CommandMapping.ButtonImagePath
+  id: ButtonImagePath
+  parent: DeckSurf.SDK.Models.CommandMapping
+  langs:
+  - csharp
+  name: ButtonImagePath
+  nameWithType: CommandMapping.ButtonImagePath
+  fullName: DeckSurf.SDK.Models.CommandMapping.ButtonImagePath
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets or sets the default image from the local file system that is loaded for a given Stream Deck button.
+  syntax:
+    content: >-
+      [[System.Text.Json.Serialization.JsonPropertyName("button_image_path")]]
+
+      public string ButtonImagePath { get; set; }
+    return:
+      type: System.String
+      description: ''
+    content.csharp: >-
+      [[System.Text.Json.Serialization.JsonPropertyName("button_image_path")]]
+
+      public string ButtonImagePath { get; set; }
+  overload: DeckSurf.SDK.Models.CommandMapping.ButtonImagePath*
+  exceptions: []
+  attributes:
+  - type: '[System.Text.Json.Serialization.JsonPropertyNameAttribute'
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Models.CommandMapping.ButtonIndex
+  commentId: P:DeckSurf.SDK.Models.CommandMapping.ButtonIndex
+  id: ButtonIndex
+  parent: DeckSurf.SDK.Models.CommandMapping
+  langs:
+  - csharp
+  name: ButtonIndex
+  nameWithType: CommandMapping.ButtonIndex
+  fullName: DeckSurf.SDK.Models.CommandMapping.ButtonIndex
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets or sets the numeric index of the button on the Stream Deck that is associated with a command.
+  syntax:
+    content: >-
+      [[System.Text.Json.Serialization.JsonPropertyName("button_index")]]
+
+      public int ButtonIndex { get; set; }
+    return:
+      type: System.Int32
+      description: ''
+    content.csharp: >-
+      [[System.Text.Json.Serialization.JsonPropertyName("button_index")]]
+
+      public int ButtonIndex { get; set; }
+  overload: DeckSurf.SDK.Models.CommandMapping.ButtonIndex*
+  exceptions: []
+  attributes:
+  - type: '[System.Text.Json.Serialization.JsonPropertyNameAttribute'
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Models.CommandMapping.Command
+  commentId: P:DeckSurf.SDK.Models.CommandMapping.Command
+  id: Command
+  parent: DeckSurf.SDK.Models.CommandMapping
+  langs:
+  - csharp
+  name: Command
+  nameWithType: CommandMapping.Command
+  fullName: DeckSurf.SDK.Models.CommandMapping.Command
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets or sets the ID of the command that needs to be called when the button is initialized or pressed.
+  syntax:
+    content: >-
+      [[System.Text.Json.Serialization.JsonPropertyName("command")]]
+
+      public string Command { get; set; }
+    return:
+      type: System.String
+      description: ''
+    content.csharp: >-
+      [[System.Text.Json.Serialization.JsonPropertyName("command")]]
+
+      public string Command { get; set; }
+  overload: DeckSurf.SDK.Models.CommandMapping.Command*
+  exceptions: []
+  attributes:
+  - type: '[System.Text.Json.Serialization.JsonPropertyNameAttribute'
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Models.CommandMapping.CommandArguments
+  commentId: P:DeckSurf.SDK.Models.CommandMapping.CommandArguments
+  id: CommandArguments
+  parent: DeckSurf.SDK.Models.CommandMapping
+  langs:
+  - csharp
+  name: CommandArguments
+  nameWithType: CommandMapping.CommandArguments
+  fullName: DeckSurf.SDK.Models.CommandMapping.CommandArguments
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets or sets a string value representing arguments that are passed to the command.
+  syntax:
+    content: >-
+      [[System.Text.Json.Serialization.JsonPropertyName("command_arguments")]]
+
+      public string CommandArguments { get; set; }
+    return:
+      type: System.String
+      description: ''
+    content.csharp: >-
+      [[System.Text.Json.Serialization.JsonPropertyName("command_arguments")]]
+
+      public string CommandArguments { get; set; }
+  overload: DeckSurf.SDK.Models.CommandMapping.CommandArguments*
+  exceptions: []
+  attributes:
+  - type: '[System.Text.Json.Serialization.JsonPropertyNameAttribute'
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Models.CommandMapping.Plugin
+  commentId: P:DeckSurf.SDK.Models.CommandMapping.Plugin
+  id: Plugin
+  parent: DeckSurf.SDK.Models.CommandMapping
+  langs:
+  - csharp
+  name: Plugin
+  nameWithType: CommandMapping.Plugin
+  fullName: DeckSurf.SDK.Models.CommandMapping.Plugin
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets or sets the ID of the plugin that is associated with a button.
+  syntax:
+    content: >-
+      [[System.Text.Json.Serialization.JsonPropertyName("plugin")]]
+
+      public string Plugin { get; set; }
+    return:
+      type: System.String
+      description: ''
+    content.csharp: >-
+      [[System.Text.Json.Serialization.JsonPropertyName("plugin")]]
+
+      public string Plugin { get; set; }
+  overload: DeckSurf.SDK.Models.CommandMapping.Plugin*
+  exceptions: []
+  attributes:
+  - type: '[System.Text.Json.Serialization.JsonPropertyNameAttribute'
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  monikers:
+  - net9.0
+references:
+- uid: DeckSurf.SDK.Models
+  commentId: N:DeckSurf.SDK.Models
+  isExternal: false
+  name: DeckSurf.SDK.Models
+  nameWithType: DeckSurf.SDK.Models
+  fullName: DeckSurf.SDK.Models
+  type: namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: DeckSurf.SDK.Models.CommandMapping.#ctor
+  parent: DeckSurf.SDK.Models.CommandMapping
+  isExternal: false
+  name: CommandMapping()
+  nameWithType: CommandMapping.CommandMapping()
+  fullName: DeckSurf.SDK.Models.CommandMapping.CommandMapping()
+  type: constructor
+- uid: DeckSurf.SDK.Models.CommandMapping.ButtonImagePath
+  parent: DeckSurf.SDK.Models.CommandMapping
+  isExternal: false
+  name: ButtonImagePath
+  nameWithType: CommandMapping.ButtonImagePath
+  fullName: DeckSurf.SDK.Models.CommandMapping.ButtonImagePath
+  type: property
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DeckSurf.SDK.Models.CommandMapping.ButtonIndex
+  parent: DeckSurf.SDK.Models.CommandMapping
+  isExternal: false
+  name: ButtonIndex
+  nameWithType: CommandMapping.ButtonIndex
+  fullName: DeckSurf.SDK.Models.CommandMapping.ButtonIndex
+  type: property
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: DeckSurf.SDK.Models.CommandMapping.Command
+  parent: DeckSurf.SDK.Models.CommandMapping
+  isExternal: false
+  name: Command
+  nameWithType: CommandMapping.Command
+  fullName: DeckSurf.SDK.Models.CommandMapping.Command
+  type: property
+- uid: DeckSurf.SDK.Models.CommandMapping.CommandArguments
+  parent: DeckSurf.SDK.Models.CommandMapping
+  isExternal: false
+  name: CommandArguments
+  nameWithType: CommandMapping.CommandArguments
+  fullName: DeckSurf.SDK.Models.CommandMapping.CommandArguments
+  type: property
+- uid: DeckSurf.SDK.Models.CommandMapping.Plugin
+  parent: DeckSurf.SDK.Models.CommandMapping
+  isExternal: false
+  name: Plugin
+  nameWithType: CommandMapping.Plugin
+  fullName: DeckSurf.SDK.Models.CommandMapping.Plugin
+  type: property
+- uid: DeckSurf.SDK.Models.CommandMapping.#ctor*
+  commentId: Overload:DeckSurf.SDK.Models.CommandMapping.#ctor
+  parent: DeckSurf.SDK.Models.CommandMapping
+  isExternal: false
+  name: CommandMapping
+  nameWithType: CommandMapping.CommandMapping
+  fullName: DeckSurf.SDK.Models.CommandMapping.CommandMapping
+  monikers:
+  - net9.0
+  type: constructor
+- uid: DeckSurf.SDK.Models.CommandMapping.ButtonImagePath*
+  commentId: Overload:DeckSurf.SDK.Models.CommandMapping.ButtonImagePath
+  parent: DeckSurf.SDK.Models.CommandMapping
+  isExternal: false
+  name: ButtonImagePath
+  nameWithType: CommandMapping.ButtonImagePath
+  fullName: DeckSurf.SDK.Models.CommandMapping.ButtonImagePath
+  monikers:
+  - net9.0
+  type: property
+- uid: DeckSurf.SDK.Models.CommandMapping.ButtonIndex*
+  commentId: Overload:DeckSurf.SDK.Models.CommandMapping.ButtonIndex
+  parent: DeckSurf.SDK.Models.CommandMapping
+  isExternal: false
+  name: ButtonIndex
+  nameWithType: CommandMapping.ButtonIndex
+  fullName: DeckSurf.SDK.Models.CommandMapping.ButtonIndex
+  monikers:
+  - net9.0
+  type: property
+- uid: DeckSurf.SDK.Models.CommandMapping.Command*
+  commentId: Overload:DeckSurf.SDK.Models.CommandMapping.Command
+  parent: DeckSurf.SDK.Models.CommandMapping
+  isExternal: false
+  name: Command
+  nameWithType: CommandMapping.Command
+  fullName: DeckSurf.SDK.Models.CommandMapping.Command
+  monikers:
+  - net9.0
+  type: property
+- uid: DeckSurf.SDK.Models.CommandMapping.CommandArguments*
+  commentId: Overload:DeckSurf.SDK.Models.CommandMapping.CommandArguments
+  parent: DeckSurf.SDK.Models.CommandMapping
+  isExternal: false
+  name: CommandArguments
+  nameWithType: CommandMapping.CommandArguments
+  fullName: DeckSurf.SDK.Models.CommandMapping.CommandArguments
+  monikers:
+  - net9.0
+  type: property
+- uid: DeckSurf.SDK.Models.CommandMapping.Plugin*
+  commentId: Overload:DeckSurf.SDK.Models.CommandMapping.Plugin
+  parent: DeckSurf.SDK.Models.CommandMapping
+  isExternal: false
+  name: Plugin
+  nameWithType: CommandMapping.Plugin
+  fullName: DeckSurf.SDK.Models.CommandMapping.Plugin
+  monikers:
+  - net9.0
+  type: property

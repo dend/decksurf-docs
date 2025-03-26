@@ -1,0 +1,379 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Models.SIIGBF
+  commentId: T:DeckSurf.SDK.Models.SIIGBF
+  id: SIIGBF
+  children:
+  - DeckSurf.SDK.Models.SIIGBF.SIIGBF_BIGGERSIZEOK
+  - DeckSurf.SDK.Models.SIIGBF.SIIGBF_CROPTOSQUARE
+  - DeckSurf.SDK.Models.SIIGBF.SIIGBF_ICONBACKGROUND
+  - DeckSurf.SDK.Models.SIIGBF.SIIGBF_ICONONLY
+  - DeckSurf.SDK.Models.SIIGBF.SIIGBF_INCACHEONLY
+  - DeckSurf.SDK.Models.SIIGBF.SIIGBF_MEMORYONLY
+  - DeckSurf.SDK.Models.SIIGBF.SIIGBF_RESIZETOFIT
+  - DeckSurf.SDK.Models.SIIGBF.SIIGBF_SCALEUP
+  - DeckSurf.SDK.Models.SIIGBF.SIIGBF_THUMBNAILONLY
+  - DeckSurf.SDK.Models.SIIGBF.SIIGBF_WIDETHUMBNAILS
+  langs:
+  - csharp
+  name: SIIGBF
+  nameWithType: DeckSurf.SDK.Models.SIIGBF
+  fullName: DeckSurf.SDK.Models.SIIGBF
+  type: Enum
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: >-
+    Gets an HBITMAP that represents an <a href="https://docs.microsoft.com/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellitem">IShellItem</a>.
+
+    Refer to <a href="https://docs.microsoft.com/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishellitemimagefactory-getimage">Microsoft documentation</a> on the enum.
+  syntax:
+    content: >-
+      [[System.Flags]]
+
+      public enum SIIGBF
+    content.csharp: >-
+      [[System.Flags]]
+
+      public enum SIIGBF
+  inheritance:
+  - System.Enum
+  attributes:
+  - type: '[System.Flags]Attribute'
+  modifiers.csharp:
+  - public
+  monikers:
+  - net9.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net9.0
+- uid: DeckSurf.SDK.Models.SIIGBF.SIIGBF_BIGGERSIZEOK
+  commentId: F:DeckSurf.SDK.Models.SIIGBF.SIIGBF_BIGGERSIZEOK
+  id: SIIGBF_BIGGERSIZEOK
+  parent: DeckSurf.SDK.Models.SIIGBF
+  langs:
+  - csharp
+  name: SIIGBF_BIGGERSIZEOK
+  nameWithType: SIIGBF.SIIGBF_BIGGERSIZEOK
+  fullName: DeckSurf.SDK.Models.SIIGBF.SIIGBF_BIGGERSIZEOK
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Passed by callers if they want to stretch the returned image themselves.
+  syntax:
+    content: SIIGBF_BIGGERSIZEOK
+    return:
+      type: DeckSurf.SDK.Models.SIIGBF
+      description: ''
+    content.csharp: SIIGBF_BIGGERSIZEOK
+  exceptions: []
+  monikers:
+  - net9.0
+  literalValue: "1"
+- uid: DeckSurf.SDK.Models.SIIGBF.SIIGBF_CROPTOSQUARE
+  commentId: F:DeckSurf.SDK.Models.SIIGBF.SIIGBF_CROPTOSQUARE
+  id: SIIGBF_CROPTOSQUARE
+  parent: DeckSurf.SDK.Models.SIIGBF
+  langs:
+  - csharp
+  name: SIIGBF_CROPTOSQUARE
+  nameWithType: SIIGBF.SIIGBF_CROPTOSQUARE
+  fullName: DeckSurf.SDK.Models.SIIGBF.SIIGBF_CROPTOSQUARE
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Introduced in Windows 8. If necessary, crop the bitmap to a square.
+  syntax:
+    content: SIIGBF_CROPTOSQUARE
+    return:
+      type: DeckSurf.SDK.Models.SIIGBF
+      description: ''
+    content.csharp: SIIGBF_CROPTOSQUARE
+  exceptions: []
+  monikers:
+  - net9.0
+  literalValue: "32"
+- uid: DeckSurf.SDK.Models.SIIGBF.SIIGBF_ICONBACKGROUND
+  commentId: F:DeckSurf.SDK.Models.SIIGBF.SIIGBF_ICONBACKGROUND
+  id: SIIGBF_ICONBACKGROUND
+  parent: DeckSurf.SDK.Models.SIIGBF
+  langs:
+  - csharp
+  name: SIIGBF_ICONBACKGROUND
+  nameWithType: SIIGBF.SIIGBF_ICONBACKGROUND
+  fullName: DeckSurf.SDK.Models.SIIGBF.SIIGBF_ICONBACKGROUND
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Introduced in Windows 8. If returning an icon, paint a background using the associated app's registered background color.
+  syntax:
+    content: SIIGBF_ICONBACKGROUND
+    return:
+      type: DeckSurf.SDK.Models.SIIGBF
+      description: ''
+    content.csharp: SIIGBF_ICONBACKGROUND
+  exceptions: []
+  monikers:
+  - net9.0
+  literalValue: "128"
+- uid: DeckSurf.SDK.Models.SIIGBF.SIIGBF_ICONONLY
+  commentId: F:DeckSurf.SDK.Models.SIIGBF.SIIGBF_ICONONLY
+  id: SIIGBF_ICONONLY
+  parent: DeckSurf.SDK.Models.SIIGBF
+  langs:
+  - csharp
+  name: SIIGBF_ICONONLY
+  nameWithType: SIIGBF.SIIGBF_ICONONLY
+  fullName: DeckSurf.SDK.Models.SIIGBF.SIIGBF_ICONONLY
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Return only the icon, never the thumbnail.
+  syntax:
+    content: SIIGBF_ICONONLY
+    return:
+      type: DeckSurf.SDK.Models.SIIGBF
+      description: ''
+    content.csharp: SIIGBF_ICONONLY
+  exceptions: []
+  monikers:
+  - net9.0
+  literalValue: "4"
+- uid: DeckSurf.SDK.Models.SIIGBF.SIIGBF_INCACHEONLY
+  commentId: F:DeckSurf.SDK.Models.SIIGBF.SIIGBF_INCACHEONLY
+  id: SIIGBF_INCACHEONLY
+  parent: DeckSurf.SDK.Models.SIIGBF
+  langs:
+  - csharp
+  name: SIIGBF_INCACHEONLY
+  nameWithType: SIIGBF.SIIGBF_INCACHEONLY
+  fullName: DeckSurf.SDK.Models.SIIGBF.SIIGBF_INCACHEONLY
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Allows access to the disk, but only to retrieve a cached item.
+  syntax:
+    content: SIIGBF_INCACHEONLY
+    return:
+      type: DeckSurf.SDK.Models.SIIGBF
+      description: ''
+    content.csharp: SIIGBF_INCACHEONLY
+  exceptions: []
+  monikers:
+  - net9.0
+  literalValue: "16"
+- uid: DeckSurf.SDK.Models.SIIGBF.SIIGBF_MEMORYONLY
+  commentId: F:DeckSurf.SDK.Models.SIIGBF.SIIGBF_MEMORYONLY
+  id: SIIGBF_MEMORYONLY
+  parent: DeckSurf.SDK.Models.SIIGBF
+  langs:
+  - csharp
+  name: SIIGBF_MEMORYONLY
+  nameWithType: SIIGBF.SIIGBF_MEMORYONLY
+  fullName: DeckSurf.SDK.Models.SIIGBF.SIIGBF_MEMORYONLY
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Return the item only if it is already in memory.
+  syntax:
+    content: SIIGBF_MEMORYONLY
+    return:
+      type: DeckSurf.SDK.Models.SIIGBF
+      description: ''
+    content.csharp: SIIGBF_MEMORYONLY
+  exceptions: []
+  monikers:
+  - net9.0
+  literalValue: "2"
+- uid: DeckSurf.SDK.Models.SIIGBF.SIIGBF_RESIZETOFIT
+  commentId: F:DeckSurf.SDK.Models.SIIGBF.SIIGBF_RESIZETOFIT
+  id: SIIGBF_RESIZETOFIT
+  parent: DeckSurf.SDK.Models.SIIGBF
+  langs:
+  - csharp
+  name: SIIGBF_RESIZETOFIT
+  nameWithType: SIIGBF.SIIGBF_RESIZETOFIT
+  fullName: DeckSurf.SDK.Models.SIIGBF.SIIGBF_RESIZETOFIT
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Shrink the bitmap as necessary to fit, preserving its aspect ratio.
+  syntax:
+    content: SIIGBF_RESIZETOFIT
+    return:
+      type: DeckSurf.SDK.Models.SIIGBF
+      description: ''
+    content.csharp: SIIGBF_RESIZETOFIT
+  exceptions: []
+  monikers:
+  - net9.0
+  literalValue: "0"
+- uid: DeckSurf.SDK.Models.SIIGBF.SIIGBF_SCALEUP
+  commentId: F:DeckSurf.SDK.Models.SIIGBF.SIIGBF_SCALEUP
+  id: SIIGBF_SCALEUP
+  parent: DeckSurf.SDK.Models.SIIGBF
+  langs:
+  - csharp
+  name: SIIGBF_SCALEUP
+  nameWithType: SIIGBF.SIIGBF_SCALEUP
+  fullName: DeckSurf.SDK.Models.SIIGBF.SIIGBF_SCALEUP
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Introduced in Windows 8. If necessary, stretch the bitmap so that the height and width fit the given size.
+  syntax:
+    content: SIIGBF_SCALEUP
+    return:
+      type: DeckSurf.SDK.Models.SIIGBF
+      description: ''
+    content.csharp: SIIGBF_SCALEUP
+  exceptions: []
+  monikers:
+  - net9.0
+  literalValue: "256"
+- uid: DeckSurf.SDK.Models.SIIGBF.SIIGBF_THUMBNAILONLY
+  commentId: F:DeckSurf.SDK.Models.SIIGBF.SIIGBF_THUMBNAILONLY
+  id: SIIGBF_THUMBNAILONLY
+  parent: DeckSurf.SDK.Models.SIIGBF
+  langs:
+  - csharp
+  name: SIIGBF_THUMBNAILONLY
+  nameWithType: SIIGBF.SIIGBF_THUMBNAILONLY
+  fullName: DeckSurf.SDK.Models.SIIGBF.SIIGBF_THUMBNAILONLY
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Return only the thumbnail, never the icon.
+  syntax:
+    content: SIIGBF_THUMBNAILONLY
+    return:
+      type: DeckSurf.SDK.Models.SIIGBF
+      description: ''
+    content.csharp: SIIGBF_THUMBNAILONLY
+  exceptions: []
+  monikers:
+  - net9.0
+  literalValue: "8"
+- uid: DeckSurf.SDK.Models.SIIGBF.SIIGBF_WIDETHUMBNAILS
+  commentId: F:DeckSurf.SDK.Models.SIIGBF.SIIGBF_WIDETHUMBNAILS
+  id: SIIGBF_WIDETHUMBNAILS
+  parent: DeckSurf.SDK.Models.SIIGBF
+  langs:
+  - csharp
+  name: SIIGBF_WIDETHUMBNAILS
+  nameWithType: SIIGBF.SIIGBF_WIDETHUMBNAILS
+  fullName: DeckSurf.SDK.Models.SIIGBF.SIIGBF_WIDETHUMBNAILS
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Introduced in Windows 8. Stretch and crop the bitmap to a 0.7 aspect ratio.
+  syntax:
+    content: SIIGBF_WIDETHUMBNAILS
+    return:
+      type: DeckSurf.SDK.Models.SIIGBF
+      description: ''
+    content.csharp: SIIGBF_WIDETHUMBNAILS
+  exceptions: []
+  monikers:
+  - net9.0
+  literalValue: "64"
+references:
+- uid: DeckSurf.SDK.Models
+  commentId: N:DeckSurf.SDK.Models
+  isExternal: false
+  name: DeckSurf.SDK.Models
+  nameWithType: DeckSurf.SDK.Models
+  fullName: DeckSurf.SDK.Models
+  type: namespace
+- uid: System.Enum
+  parent: System
+  isExternal: true
+  name: Enum
+  nameWithType: Enum
+  fullName: System.Enum
+- uid: DeckSurf.SDK.Models.SIIGBF.SIIGBF_BIGGERSIZEOK
+  parent: DeckSurf.SDK.Models.SIIGBF
+  isExternal: false
+  name: SIIGBF_BIGGERSIZEOK
+  nameWithType: SIIGBF.SIIGBF_BIGGERSIZEOK
+  fullName: DeckSurf.SDK.Models.SIIGBF.SIIGBF_BIGGERSIZEOK
+  type: field
+- uid: DeckSurf.SDK.Models.SIIGBF
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: SIIGBF
+  nameWithType: SIIGBF
+  fullName: DeckSurf.SDK.Models.SIIGBF
+- uid: DeckSurf.SDK.Models.SIIGBF.SIIGBF_CROPTOSQUARE
+  parent: DeckSurf.SDK.Models.SIIGBF
+  isExternal: false
+  name: SIIGBF_CROPTOSQUARE
+  nameWithType: SIIGBF.SIIGBF_CROPTOSQUARE
+  fullName: DeckSurf.SDK.Models.SIIGBF.SIIGBF_CROPTOSQUARE
+  type: field
+- uid: DeckSurf.SDK.Models.SIIGBF.SIIGBF_ICONBACKGROUND
+  parent: DeckSurf.SDK.Models.SIIGBF
+  isExternal: false
+  name: SIIGBF_ICONBACKGROUND
+  nameWithType: SIIGBF.SIIGBF_ICONBACKGROUND
+  fullName: DeckSurf.SDK.Models.SIIGBF.SIIGBF_ICONBACKGROUND
+  type: field
+- uid: DeckSurf.SDK.Models.SIIGBF.SIIGBF_ICONONLY
+  parent: DeckSurf.SDK.Models.SIIGBF
+  isExternal: false
+  name: SIIGBF_ICONONLY
+  nameWithType: SIIGBF.SIIGBF_ICONONLY
+  fullName: DeckSurf.SDK.Models.SIIGBF.SIIGBF_ICONONLY
+  type: field
+- uid: DeckSurf.SDK.Models.SIIGBF.SIIGBF_INCACHEONLY
+  parent: DeckSurf.SDK.Models.SIIGBF
+  isExternal: false
+  name: SIIGBF_INCACHEONLY
+  nameWithType: SIIGBF.SIIGBF_INCACHEONLY
+  fullName: DeckSurf.SDK.Models.SIIGBF.SIIGBF_INCACHEONLY
+  type: field
+- uid: DeckSurf.SDK.Models.SIIGBF.SIIGBF_MEMORYONLY
+  parent: DeckSurf.SDK.Models.SIIGBF
+  isExternal: false
+  name: SIIGBF_MEMORYONLY
+  nameWithType: SIIGBF.SIIGBF_MEMORYONLY
+  fullName: DeckSurf.SDK.Models.SIIGBF.SIIGBF_MEMORYONLY
+  type: field
+- uid: DeckSurf.SDK.Models.SIIGBF.SIIGBF_RESIZETOFIT
+  parent: DeckSurf.SDK.Models.SIIGBF
+  isExternal: false
+  name: SIIGBF_RESIZETOFIT
+  nameWithType: SIIGBF.SIIGBF_RESIZETOFIT
+  fullName: DeckSurf.SDK.Models.SIIGBF.SIIGBF_RESIZETOFIT
+  type: field
+- uid: DeckSurf.SDK.Models.SIIGBF.SIIGBF_SCALEUP
+  parent: DeckSurf.SDK.Models.SIIGBF
+  isExternal: false
+  name: SIIGBF_SCALEUP
+  nameWithType: SIIGBF.SIIGBF_SCALEUP
+  fullName: DeckSurf.SDK.Models.SIIGBF.SIIGBF_SCALEUP
+  type: field
+- uid: DeckSurf.SDK.Models.SIIGBF.SIIGBF_THUMBNAILONLY
+  parent: DeckSurf.SDK.Models.SIIGBF
+  isExternal: false
+  name: SIIGBF_THUMBNAILONLY
+  nameWithType: SIIGBF.SIIGBF_THUMBNAILONLY
+  fullName: DeckSurf.SDK.Models.SIIGBF.SIIGBF_THUMBNAILONLY
+  type: field
+- uid: DeckSurf.SDK.Models.SIIGBF.SIIGBF_WIDETHUMBNAILS
+  parent: DeckSurf.SDK.Models.SIIGBF
+  isExternal: false
+  name: SIIGBF_WIDETHUMBNAILS
+  nameWithType: SIIGBF.SIIGBF_WIDETHUMBNAILS
+  fullName: DeckSurf.SDK.Models.SIIGBF.SIIGBF_WIDETHUMBNAILS
+  type: field

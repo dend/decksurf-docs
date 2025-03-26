@@ -1,0 +1,112 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Models.ButtonEventKind
+  commentId: T:DeckSurf.SDK.Models.ButtonEventKind
+  id: ButtonEventKind
+  children:
+  - DeckSurf.SDK.Models.ButtonEventKind.DOWN
+  - DeckSurf.SDK.Models.ButtonEventKind.UP
+  langs:
+  - csharp
+  name: ButtonEventKind
+  nameWithType: DeckSurf.SDK.Models.ButtonEventKind
+  fullName: DeckSurf.SDK.Models.ButtonEventKind
+  type: Enum
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Represents a Stream Deck button state.
+  syntax:
+    content: public enum ButtonEventKind
+    content.csharp: public enum ButtonEventKind
+  inheritance:
+  - System.Enum
+  modifiers.csharp:
+  - public
+  monikers:
+  - net9.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net9.0
+- uid: DeckSurf.SDK.Models.ButtonEventKind.DOWN
+  commentId: F:DeckSurf.SDK.Models.ButtonEventKind.DOWN
+  id: DOWN
+  parent: DeckSurf.SDK.Models.ButtonEventKind
+  langs:
+  - csharp
+  name: DOWN
+  nameWithType: ButtonEventKind.DOWN
+  fullName: DeckSurf.SDK.Models.ButtonEventKind.DOWN
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Button is pressed.
+  syntax:
+    content: DOWN
+    return:
+      type: DeckSurf.SDK.Models.ButtonEventKind
+      description: ''
+    content.csharp: DOWN
+  exceptions: []
+  monikers:
+  - net9.0
+  literalValue: "0"
+- uid: DeckSurf.SDK.Models.ButtonEventKind.UP
+  commentId: F:DeckSurf.SDK.Models.ButtonEventKind.UP
+  id: UP
+  parent: DeckSurf.SDK.Models.ButtonEventKind
+  langs:
+  - csharp
+  name: UP
+  nameWithType: ButtonEventKind.UP
+  fullName: DeckSurf.SDK.Models.ButtonEventKind.UP
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Button is released.
+  syntax:
+    content: UP
+    return:
+      type: DeckSurf.SDK.Models.ButtonEventKind
+      description: ''
+    content.csharp: UP
+  exceptions: []
+  monikers:
+  - net9.0
+  literalValue: "1"
+references:
+- uid: DeckSurf.SDK.Models
+  commentId: N:DeckSurf.SDK.Models
+  isExternal: false
+  name: DeckSurf.SDK.Models
+  nameWithType: DeckSurf.SDK.Models
+  fullName: DeckSurf.SDK.Models
+  type: namespace
+- uid: System.Enum
+  parent: System
+  isExternal: true
+  name: Enum
+  nameWithType: Enum
+  fullName: System.Enum
+- uid: DeckSurf.SDK.Models.ButtonEventKind.DOWN
+  parent: DeckSurf.SDK.Models.ButtonEventKind
+  isExternal: false
+  name: DOWN
+  nameWithType: ButtonEventKind.DOWN
+  fullName: DeckSurf.SDK.Models.ButtonEventKind.DOWN
+  type: field
+- uid: DeckSurf.SDK.Models.ButtonEventKind
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: ButtonEventKind
+  nameWithType: ButtonEventKind
+  fullName: DeckSurf.SDK.Models.ButtonEventKind
+- uid: DeckSurf.SDK.Models.ButtonEventKind.UP
+  parent: DeckSurf.SDK.Models.ButtonEventKind
+  isExternal: false
+  name: UP
+  nameWithType: ButtonEventKind.UP
+  fullName: DeckSurf.SDK.Models.ButtonEventKind.UP
+  type: field

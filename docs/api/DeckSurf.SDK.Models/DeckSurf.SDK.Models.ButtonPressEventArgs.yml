@@ -1,0 +1,491 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Models.ButtonPressEventArgs
+  commentId: T:DeckSurf.SDK.Models.ButtonPressEventArgs
+  id: ButtonPressEventArgs
+  children:
+  - DeckSurf.SDK.Models.ButtonPressEventArgs.#ctor(System.Int32,DeckSurf.SDK.Models.ButtonEventKind,System.Nullable{DeckSurf.SDK.Models.ButtonKind},System.Nullable{System.Drawing.Point},System.Nullable{System.Boolean},System.Nullable{DeckSurf.SDK.Models.KnobRotationDirection})
+  - DeckSurf.SDK.Models.ButtonPressEventArgs.ButtonKind
+  - DeckSurf.SDK.Models.ButtonPressEventArgs.EventKind
+  - DeckSurf.SDK.Models.ButtonPressEventArgs.Id
+  - DeckSurf.SDK.Models.ButtonPressEventArgs.IsKnobRotating
+  - DeckSurf.SDK.Models.ButtonPressEventArgs.KnobRotationDirection
+  - DeckSurf.SDK.Models.ButtonPressEventArgs.TapCoordinates
+  langs:
+  - csharp
+  name: ButtonPressEventArgs
+  nameWithType: DeckSurf.SDK.Models.ButtonPressEventArgs
+  fullName: DeckSurf.SDK.Models.ButtonPressEventArgs
+  type: Class
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Event arguments that are passed back to the developer when a Stream Deck button is pressed.
+  remarks: Initializes a new instance of the <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.ButtonPressEventArgs"></xref> class. Default constructor for button press event arguments.
+  syntax:
+    content: 'public class ButtonPressEventArgs : EventArgs'
+    content.csharp: 'public class ButtonPressEventArgs : EventArgs'
+  inheritance:
+  - System.EventArgs
+  implements: []
+  inheritedMembers: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net9.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net9.0
+- uid: DeckSurf.SDK.Models.ButtonPressEventArgs.#ctor(System.Int32,DeckSurf.SDK.Models.ButtonEventKind,System.Nullable{DeckSurf.SDK.Models.ButtonKind},System.Nullable{System.Drawing.Point},System.Nullable{System.Boolean},System.Nullable{DeckSurf.SDK.Models.KnobRotationDirection})
+  commentId: M:DeckSurf.SDK.Models.ButtonPressEventArgs.#ctor(System.Int32,DeckSurf.SDK.Models.ButtonEventKind,System.Nullable{DeckSurf.SDK.Models.ButtonKind},System.Nullable{System.Drawing.Point},System.Nullable{System.Boolean},System.Nullable{DeckSurf.SDK.Models.KnobRotationDirection})
+  id: '#ctor(System.Int32,DeckSurf.SDK.Models.ButtonEventKind,System.Nullable{DeckSurf.SDK.Models.ButtonKind},System.Nullable{System.Drawing.Point},System.Nullable{System.Boolean},System.Nullable{DeckSurf.SDK.Models.KnobRotationDirection})'
+  parent: DeckSurf.SDK.Models.ButtonPressEventArgs
+  langs:
+  - csharp
+  name: ButtonPressEventArgs(Int32, ButtonEventKind, Nullable<ButtonKind>, Nullable<Point>, Nullable<Boolean>, Nullable<KnobRotationDirection>)
+  nameWithType: ButtonPressEventArgs.ButtonPressEventArgs(Int32, ButtonEventKind, Nullable<ButtonKind>, Nullable<Point>, Nullable<Boolean>, Nullable<KnobRotationDirection>)
+  fullName: DeckSurf.SDK.Models.ButtonPressEventArgs.ButtonPressEventArgs(Int32, ButtonEventKind, Nullable<ButtonKind>, Nullable<Point>, Nullable<Boolean>, Nullable<KnobRotationDirection>)
+  type: Constructor
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Event arguments that are passed back to the developer when a Stream Deck button is pressed.
+  remarks: Initializes a new instance of the <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.ButtonPressEventArgs"></xref> class. Default constructor for button press event arguments.
+  syntax:
+    content: public ButtonPressEventArgs (int id, DeckSurf.SDK.Models.ButtonEventKind eventKind, DeckSurf.SDK.Models.ButtonKind? buttonKind, System.Drawing.Point? tapCoordinates, bool? isKnobRotating, DeckSurf.SDK.Models.KnobRotationDirection? knobRotationDirection);
+    parameters:
+    - id: id
+      type: System.Int32
+      description: Numeric ID of the button being pressed.
+    - id: eventKind
+      type: DeckSurf.SDK.Models.ButtonEventKind
+      description: Kind of event.
+    - id: buttonKind
+      type: System.Nullable{DeckSurf.SDK.Models.ButtonKind}
+      description: Kind of button pressed.
+    - id: tapCoordinates
+      type: System.Nullable{System.Drawing.Point}
+      description: Coordinates on the touch screen where a tap occurred.
+    - id: isKnobRotating
+      type: System.Nullable{System.Boolean}
+      description: Determines whether a knob is being rotated.
+    - id: knobRotationDirection
+      type: System.Nullable{DeckSurf.SDK.Models.KnobRotationDirection}
+      description: Direction of a knob being rotated.
+    content.csharp: public ButtonPressEventArgs (int id, DeckSurf.SDK.Models.ButtonEventKind eventKind, DeckSurf.SDK.Models.ButtonKind? buttonKind, System.Drawing.Point? tapCoordinates, bool? isKnobRotating, DeckSurf.SDK.Models.KnobRotationDirection? knobRotationDirection);
+  overload: DeckSurf.SDK.Models.ButtonPressEventArgs.#ctor*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Models.ButtonPressEventArgs.ButtonKind
+  commentId: P:DeckSurf.SDK.Models.ButtonPressEventArgs.ButtonKind
+  id: ButtonKind
+  parent: DeckSurf.SDK.Models.ButtonPressEventArgs
+  langs:
+  - csharp
+  name: ButtonKind
+  nameWithType: ButtonPressEventArgs.ButtonKind
+  fullName: DeckSurf.SDK.Models.ButtonPressEventArgs.ButtonKind
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets the kind of the button pressed.
+  syntax:
+    content: public DeckSurf.SDK.Models.ButtonKind? ButtonKind { get; }
+    return:
+      type: System.Nullable{DeckSurf.SDK.Models.ButtonKind}
+      description: ''
+    content.csharp: public DeckSurf.SDK.Models.ButtonKind? ButtonKind { get; }
+  overload: DeckSurf.SDK.Models.ButtonPressEventArgs.ButtonKind*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Models.ButtonPressEventArgs.EventKind
+  commentId: P:DeckSurf.SDK.Models.ButtonPressEventArgs.EventKind
+  id: EventKind
+  parent: DeckSurf.SDK.Models.ButtonPressEventArgs
+  langs:
+  - csharp
+  name: EventKind
+  nameWithType: ButtonPressEventArgs.EventKind
+  fullName: DeckSurf.SDK.Models.ButtonPressEventArgs.EventKind
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets the kind of event.
+  syntax:
+    content: public DeckSurf.SDK.Models.ButtonEventKind EventKind { get; }
+    return:
+      type: DeckSurf.SDK.Models.ButtonEventKind
+      description: ''
+    content.csharp: public DeckSurf.SDK.Models.ButtonEventKind EventKind { get; }
+  overload: DeckSurf.SDK.Models.ButtonPressEventArgs.EventKind*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Models.ButtonPressEventArgs.Id
+  commentId: P:DeckSurf.SDK.Models.ButtonPressEventArgs.Id
+  id: Id
+  parent: DeckSurf.SDK.Models.ButtonPressEventArgs
+  langs:
+  - csharp
+  name: Id
+  nameWithType: ButtonPressEventArgs.Id
+  fullName: DeckSurf.SDK.Models.ButtonPressEventArgs.Id
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets the numeric ID of the button being pressed.
+  syntax:
+    content: public int Id { get; }
+    return:
+      type: System.Int32
+      description: ''
+    content.csharp: public int Id { get; }
+  overload: DeckSurf.SDK.Models.ButtonPressEventArgs.Id*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Models.ButtonPressEventArgs.IsKnobRotating
+  commentId: P:DeckSurf.SDK.Models.ButtonPressEventArgs.IsKnobRotating
+  id: IsKnobRotating
+  parent: DeckSurf.SDK.Models.ButtonPressEventArgs
+  langs:
+  - csharp
+  name: IsKnobRotating
+  nameWithType: ButtonPressEventArgs.IsKnobRotating
+  fullName: DeckSurf.SDK.Models.ButtonPressEventArgs.IsKnobRotating
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets a value indicating whether a knob is being rotated.
+  syntax:
+    content: public bool? IsKnobRotating { get; }
+    return:
+      type: System.Nullable{System.Boolean}
+      description: ''
+    content.csharp: public bool? IsKnobRotating { get; }
+  overload: DeckSurf.SDK.Models.ButtonPressEventArgs.IsKnobRotating*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Models.ButtonPressEventArgs.KnobRotationDirection
+  commentId: P:DeckSurf.SDK.Models.ButtonPressEventArgs.KnobRotationDirection
+  id: KnobRotationDirection
+  parent: DeckSurf.SDK.Models.ButtonPressEventArgs
+  langs:
+  - csharp
+  name: KnobRotationDirection
+  nameWithType: ButtonPressEventArgs.KnobRotationDirection
+  fullName: DeckSurf.SDK.Models.ButtonPressEventArgs.KnobRotationDirection
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets the knob rotation direction if the button is a knob and was rotated.
+  syntax:
+    content: public DeckSurf.SDK.Models.KnobRotationDirection? KnobRotationDirection { get; }
+    return:
+      type: System.Nullable{DeckSurf.SDK.Models.KnobRotationDirection}
+      description: ''
+    content.csharp: public DeckSurf.SDK.Models.KnobRotationDirection? KnobRotationDirection { get; }
+  overload: DeckSurf.SDK.Models.ButtonPressEventArgs.KnobRotationDirection*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Models.ButtonPressEventArgs.TapCoordinates
+  commentId: P:DeckSurf.SDK.Models.ButtonPressEventArgs.TapCoordinates
+  id: TapCoordinates
+  parent: DeckSurf.SDK.Models.ButtonPressEventArgs
+  langs:
+  - csharp
+  name: TapCoordinates
+  nameWithType: ButtonPressEventArgs.TapCoordinates
+  fullName: DeckSurf.SDK.Models.ButtonPressEventArgs.TapCoordinates
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets the coordinates on the touch screen where the tap occurred.
+  syntax:
+    content: public System.Drawing.Point? TapCoordinates { get; }
+    return:
+      type: System.Nullable{System.Drawing.Point}
+      description: ''
+    content.csharp: public System.Drawing.Point? TapCoordinates { get; }
+  overload: DeckSurf.SDK.Models.ButtonPressEventArgs.TapCoordinates*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net9.0
+references:
+- uid: DeckSurf.SDK.Models
+  commentId: N:DeckSurf.SDK.Models
+  isExternal: false
+  name: DeckSurf.SDK.Models
+  nameWithType: DeckSurf.SDK.Models
+  fullName: DeckSurf.SDK.Models
+  type: namespace
+- uid: System.EventArgs
+  parent: System
+  isExternal: true
+  name: EventArgs
+  nameWithType: EventArgs
+  fullName: System.EventArgs
+- uid: DeckSurf.SDK.Models.ButtonPressEventArgs.#ctor(System.Int32,DeckSurf.SDK.Models.ButtonEventKind,System.Nullable{DeckSurf.SDK.Models.ButtonKind},System.Nullable{System.Drawing.Point},System.Nullable{System.Boolean},System.Nullable{DeckSurf.SDK.Models.KnobRotationDirection})
+  parent: DeckSurf.SDK.Models.ButtonPressEventArgs
+  isExternal: false
+  name: ButtonPressEventArgs(Int32, ButtonEventKind, Nullable<ButtonKind>, Nullable<Point>, Nullable<Boolean>, Nullable<KnobRotationDirection>)
+  nameWithType: ButtonPressEventArgs.ButtonPressEventArgs(Int32, ButtonEventKind, Nullable<ButtonKind>, Nullable<Point>, Nullable<Boolean>, Nullable<KnobRotationDirection>)
+  fullName: DeckSurf.SDK.Models.ButtonPressEventArgs.ButtonPressEventArgs(Int32, ButtonEventKind, Nullable<ButtonKind>, Nullable<Point>, Nullable<Boolean>, Nullable<KnobRotationDirection>)
+  type: constructor
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: DeckSurf.SDK.Models.ButtonEventKind
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: ButtonEventKind
+  nameWithType: ButtonEventKind
+  fullName: DeckSurf.SDK.Models.ButtonEventKind
+- uid: System.Nullable`1
+  isExternal: true
+  name: Nullable
+  nameWithType: Nullable
+  fullName: System.Nullable
+- uid: DeckSurf.SDK.Models.ButtonKind
+  name: ButtonKind
+  nameWithType: ButtonKind
+  fullName: DeckSurf.SDK.Models.ButtonKind
+- uid: System.Nullable{DeckSurf.SDK.Models.ButtonKind}
+  parent: System
+  name: Nullable<ButtonKind>
+  nameWithType: Nullable<ButtonKind>
+  fullName: System.Nullable<DeckSurf.SDK.Models.ButtonKind>
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: DeckSurf.SDK.Models.ButtonKind
+    name: ButtonKind
+    nameWithType: ButtonKind
+    fullName: DeckSurf.SDK.Models.ButtonKind
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.Drawing.Point
+  isExternal: true
+  name: Point
+  nameWithType: Point
+  fullName: System.Drawing.Point
+- uid: System.Nullable{System.Drawing.Point}
+  parent: System
+  name: Nullable<Point>
+  nameWithType: Nullable<Point>
+  fullName: System.Nullable<System.Drawing.Point>
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Drawing.Point
+    name: Point
+    nameWithType: Point
+    fullName: System.Drawing.Point
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Nullable{System.Boolean}
+  parent: System
+  name: Nullable<Boolean>
+  nameWithType: Nullable<Boolean>
+  fullName: System.Nullable<System.Boolean>
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: DeckSurf.SDK.Models.KnobRotationDirection
+  name: KnobRotationDirection
+  nameWithType: KnobRotationDirection
+  fullName: DeckSurf.SDK.Models.KnobRotationDirection
+- uid: System.Nullable{DeckSurf.SDK.Models.KnobRotationDirection}
+  parent: System
+  name: Nullable<KnobRotationDirection>
+  nameWithType: Nullable<KnobRotationDirection>
+  fullName: System.Nullable<DeckSurf.SDK.Models.KnobRotationDirection>
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: DeckSurf.SDK.Models.KnobRotationDirection
+    name: KnobRotationDirection
+    nameWithType: KnobRotationDirection
+    fullName: DeckSurf.SDK.Models.KnobRotationDirection
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: DeckSurf.SDK.Models.ButtonPressEventArgs.ButtonKind
+  parent: DeckSurf.SDK.Models.ButtonPressEventArgs
+  isExternal: false
+  name: ButtonKind
+  nameWithType: ButtonPressEventArgs.ButtonKind
+  fullName: DeckSurf.SDK.Models.ButtonPressEventArgs.ButtonKind
+  type: property
+- uid: DeckSurf.SDK.Models.ButtonPressEventArgs.EventKind
+  parent: DeckSurf.SDK.Models.ButtonPressEventArgs
+  isExternal: false
+  name: EventKind
+  nameWithType: ButtonPressEventArgs.EventKind
+  fullName: DeckSurf.SDK.Models.ButtonPressEventArgs.EventKind
+  type: property
+- uid: DeckSurf.SDK.Models.ButtonPressEventArgs.Id
+  parent: DeckSurf.SDK.Models.ButtonPressEventArgs
+  isExternal: false
+  name: Id
+  nameWithType: ButtonPressEventArgs.Id
+  fullName: DeckSurf.SDK.Models.ButtonPressEventArgs.Id
+  type: property
+- uid: DeckSurf.SDK.Models.ButtonPressEventArgs.IsKnobRotating
+  parent: DeckSurf.SDK.Models.ButtonPressEventArgs
+  isExternal: false
+  name: IsKnobRotating
+  nameWithType: ButtonPressEventArgs.IsKnobRotating
+  fullName: DeckSurf.SDK.Models.ButtonPressEventArgs.IsKnobRotating
+  type: property
+- uid: DeckSurf.SDK.Models.ButtonPressEventArgs.KnobRotationDirection
+  parent: DeckSurf.SDK.Models.ButtonPressEventArgs
+  isExternal: false
+  name: KnobRotationDirection
+  nameWithType: ButtonPressEventArgs.KnobRotationDirection
+  fullName: DeckSurf.SDK.Models.ButtonPressEventArgs.KnobRotationDirection
+  type: property
+- uid: DeckSurf.SDK.Models.ButtonPressEventArgs.TapCoordinates
+  parent: DeckSurf.SDK.Models.ButtonPressEventArgs
+  isExternal: false
+  name: TapCoordinates
+  nameWithType: ButtonPressEventArgs.TapCoordinates
+  fullName: DeckSurf.SDK.Models.ButtonPressEventArgs.TapCoordinates
+  type: property
+- uid: DeckSurf.SDK.Models.ButtonPressEventArgs.#ctor*
+  commentId: Overload:DeckSurf.SDK.Models.ButtonPressEventArgs.#ctor
+  parent: DeckSurf.SDK.Models.ButtonPressEventArgs
+  isExternal: false
+  name: ButtonPressEventArgs
+  nameWithType: ButtonPressEventArgs.ButtonPressEventArgs
+  fullName: DeckSurf.SDK.Models.ButtonPressEventArgs.ButtonPressEventArgs
+  monikers:
+  - net9.0
+  type: constructor
+- uid: DeckSurf.SDK.Models.ButtonPressEventArgs.ButtonKind*
+  commentId: Overload:DeckSurf.SDK.Models.ButtonPressEventArgs.ButtonKind
+  parent: DeckSurf.SDK.Models.ButtonPressEventArgs
+  isExternal: false
+  name: ButtonKind
+  nameWithType: ButtonPressEventArgs.ButtonKind
+  fullName: DeckSurf.SDK.Models.ButtonPressEventArgs.ButtonKind
+  monikers:
+  - net9.0
+  type: property
+- uid: DeckSurf.SDK.Models.ButtonPressEventArgs.EventKind*
+  commentId: Overload:DeckSurf.SDK.Models.ButtonPressEventArgs.EventKind
+  parent: DeckSurf.SDK.Models.ButtonPressEventArgs
+  isExternal: false
+  name: EventKind
+  nameWithType: ButtonPressEventArgs.EventKind
+  fullName: DeckSurf.SDK.Models.ButtonPressEventArgs.EventKind
+  monikers:
+  - net9.0
+  type: property
+- uid: DeckSurf.SDK.Models.ButtonPressEventArgs.Id*
+  commentId: Overload:DeckSurf.SDK.Models.ButtonPressEventArgs.Id
+  parent: DeckSurf.SDK.Models.ButtonPressEventArgs
+  isExternal: false
+  name: Id
+  nameWithType: ButtonPressEventArgs.Id
+  fullName: DeckSurf.SDK.Models.ButtonPressEventArgs.Id
+  monikers:
+  - net9.0
+  type: property
+- uid: DeckSurf.SDK.Models.ButtonPressEventArgs.IsKnobRotating*
+  commentId: Overload:DeckSurf.SDK.Models.ButtonPressEventArgs.IsKnobRotating
+  parent: DeckSurf.SDK.Models.ButtonPressEventArgs
+  isExternal: false
+  name: IsKnobRotating
+  nameWithType: ButtonPressEventArgs.IsKnobRotating
+  fullName: DeckSurf.SDK.Models.ButtonPressEventArgs.IsKnobRotating
+  monikers:
+  - net9.0
+  type: property
+- uid: DeckSurf.SDK.Models.ButtonPressEventArgs.KnobRotationDirection*
+  commentId: Overload:DeckSurf.SDK.Models.ButtonPressEventArgs.KnobRotationDirection
+  parent: DeckSurf.SDK.Models.ButtonPressEventArgs
+  isExternal: false
+  name: KnobRotationDirection
+  nameWithType: ButtonPressEventArgs.KnobRotationDirection
+  fullName: DeckSurf.SDK.Models.ButtonPressEventArgs.KnobRotationDirection
+  monikers:
+  - net9.0
+  type: property
+- uid: DeckSurf.SDK.Models.ButtonPressEventArgs.TapCoordinates*
+  commentId: Overload:DeckSurf.SDK.Models.ButtonPressEventArgs.TapCoordinates
+  parent: DeckSurf.SDK.Models.ButtonPressEventArgs
+  isExternal: false
+  name: TapCoordinates
+  nameWithType: ButtonPressEventArgs.TapCoordinates
+  fullName: DeckSurf.SDK.Models.ButtonPressEventArgs.TapCoordinates
+  monikers:
+  - net9.0
+  type: property

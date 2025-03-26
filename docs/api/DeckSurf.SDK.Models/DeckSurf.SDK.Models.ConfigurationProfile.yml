@@ -1,0 +1,349 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Models.ConfigurationProfile
+  commentId: T:DeckSurf.SDK.Models.ConfigurationProfile
+  id: ConfigurationProfile
+  children:
+  - DeckSurf.SDK.Models.ConfigurationProfile.#ctor
+  - DeckSurf.SDK.Models.ConfigurationProfile.ButtonMap
+  - DeckSurf.SDK.Models.ConfigurationProfile.DeviceIndex
+  - DeckSurf.SDK.Models.ConfigurationProfile.DeviceModel
+  - DeckSurf.SDK.Models.ConfigurationProfile.DeviceSerial
+  langs:
+  - csharp
+  name: ConfigurationProfile
+  nameWithType: DeckSurf.SDK.Models.ConfigurationProfile
+  fullName: DeckSurf.SDK.Models.ConfigurationProfile
+  type: Class
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Configuration profile that represents the mapping of buttons on a Stream Deck device to plugins and commands.
+  syntax:
+    content: public class ConfigurationProfile
+    content.csharp: public class ConfigurationProfile
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net9.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net9.0
+- uid: DeckSurf.SDK.Models.ConfigurationProfile.#ctor
+  commentId: M:DeckSurf.SDK.Models.ConfigurationProfile.#ctor
+  id: '#ctor'
+  parent: DeckSurf.SDK.Models.ConfigurationProfile
+  langs:
+  - csharp
+  name: ConfigurationProfile()
+  nameWithType: ConfigurationProfile.ConfigurationProfile()
+  fullName: DeckSurf.SDK.Models.ConfigurationProfile.ConfigurationProfile()
+  type: Constructor
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Initializes a new instance of the <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.ConfigurationProfile"></xref> class.
+  syntax:
+    content: public ConfigurationProfile ();
+    parameters: []
+    content.csharp: public ConfigurationProfile ();
+  overload: DeckSurf.SDK.Models.ConfigurationProfile.#ctor*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Models.ConfigurationProfile.ButtonMap
+  commentId: P:DeckSurf.SDK.Models.ConfigurationProfile.ButtonMap
+  id: ButtonMap
+  parent: DeckSurf.SDK.Models.ConfigurationProfile
+  langs:
+  - csharp
+  name: ButtonMap
+  nameWithType: ConfigurationProfile.ButtonMap
+  fullName: DeckSurf.SDK.Models.ConfigurationProfile.ButtonMap
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets or sets the mapping between buttons and the commands they trigger.
+  syntax:
+    content: >-
+      [[System.Text.Json.Serialization.JsonPropertyName("button_map")]]
+
+      public System.Collections.Generic.List<DeckSurf.SDK.Models.CommandMapping> ButtonMap { get; set; }
+    return:
+      type: System.Collections.Generic.List{DeckSurf.SDK.Models.CommandMapping}
+      description: ''
+    content.csharp: >-
+      [[System.Text.Json.Serialization.JsonPropertyName("button_map")]]
+
+      public System.Collections.Generic.List<DeckSurf.SDK.Models.CommandMapping> ButtonMap { get; set; }
+  overload: DeckSurf.SDK.Models.ConfigurationProfile.ButtonMap*
+  exceptions: []
+  attributes:
+  - type: '[System.Text.Json.Serialization.JsonPropertyNameAttribute'
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Models.ConfigurationProfile.DeviceIndex
+  commentId: P:DeckSurf.SDK.Models.ConfigurationProfile.DeviceIndex
+  id: DeviceIndex
+  parent: DeckSurf.SDK.Models.ConfigurationProfile
+  langs:
+  - csharp
+  name: DeviceIndex
+  nameWithType: ConfigurationProfile.DeviceIndex
+  fullName: DeckSurf.SDK.Models.ConfigurationProfile.DeviceIndex
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets or sets the zero-based index for the device the configuration profile is associated with.
+  syntax:
+    content: >-
+      [[System.Text.Json.Serialization.JsonPropertyName("device_index")]]
+
+      public int DeviceIndex { get; set; }
+    return:
+      type: System.Int32
+      description: ''
+    content.csharp: >-
+      [[System.Text.Json.Serialization.JsonPropertyName("device_index")]]
+
+      public int DeviceIndex { get; set; }
+  overload: DeckSurf.SDK.Models.ConfigurationProfile.DeviceIndex*
+  exceptions: []
+  attributes:
+  - type: '[System.Text.Json.Serialization.JsonPropertyNameAttribute'
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Models.ConfigurationProfile.DeviceModel
+  commentId: P:DeckSurf.SDK.Models.ConfigurationProfile.DeviceModel
+  id: DeviceModel
+  parent: DeckSurf.SDK.Models.ConfigurationProfile
+  langs:
+  - csharp
+  name: DeviceModel
+  nameWithType: ConfigurationProfile.DeviceModel
+  fullName: DeckSurf.SDK.Models.ConfigurationProfile.DeviceModel
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets or sets the device model associated with the configuration profile.
+  syntax:
+    content: >-
+      [[System.Text.Json.Serialization.JsonPropertyName("device_model")]]
+
+      public DeckSurf.SDK.Models.DeviceModel DeviceModel { get; set; }
+    return:
+      type: DeckSurf.SDK.Models.DeviceModel
+      description: ''
+    content.csharp: >-
+      [[System.Text.Json.Serialization.JsonPropertyName("device_model")]]
+
+      public DeckSurf.SDK.Models.DeviceModel DeviceModel { get; set; }
+  overload: DeckSurf.SDK.Models.ConfigurationProfile.DeviceModel*
+  exceptions: []
+  attributes:
+  - type: '[System.Text.Json.Serialization.JsonPropertyNameAttribute'
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Models.ConfigurationProfile.DeviceSerial
+  commentId: P:DeckSurf.SDK.Models.ConfigurationProfile.DeviceSerial
+  id: DeviceSerial
+  parent: DeckSurf.SDK.Models.ConfigurationProfile
+  langs:
+  - csharp
+  name: DeviceSerial
+  nameWithType: ConfigurationProfile.DeviceSerial
+  fullName: DeckSurf.SDK.Models.ConfigurationProfile.DeviceSerial
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets or sets the device serial number associated with the configuration profile.
+  syntax:
+    content: >-
+      [[System.Text.Json.Serialization.JsonPropertyName("device_serial")]]
+
+      public string DeviceSerial { get; set; }
+    return:
+      type: System.String
+      description: ''
+    content.csharp: >-
+      [[System.Text.Json.Serialization.JsonPropertyName("device_serial")]]
+
+      public string DeviceSerial { get; set; }
+  overload: DeckSurf.SDK.Models.ConfigurationProfile.DeviceSerial*
+  exceptions: []
+  attributes:
+  - type: '[System.Text.Json.Serialization.JsonPropertyNameAttribute'
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  monikers:
+  - net9.0
+references:
+- uid: DeckSurf.SDK.Models
+  commentId: N:DeckSurf.SDK.Models
+  isExternal: false
+  name: DeckSurf.SDK.Models
+  nameWithType: DeckSurf.SDK.Models
+  fullName: DeckSurf.SDK.Models
+  type: namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: DeckSurf.SDK.Models.ConfigurationProfile.#ctor
+  parent: DeckSurf.SDK.Models.ConfigurationProfile
+  isExternal: false
+  name: ConfigurationProfile()
+  nameWithType: ConfigurationProfile.ConfigurationProfile()
+  fullName: DeckSurf.SDK.Models.ConfigurationProfile.ConfigurationProfile()
+  type: constructor
+- uid: DeckSurf.SDK.Models.ConfigurationProfile.ButtonMap
+  parent: DeckSurf.SDK.Models.ConfigurationProfile
+  isExternal: false
+  name: ButtonMap
+  nameWithType: ConfigurationProfile.ButtonMap
+  fullName: DeckSurf.SDK.Models.ConfigurationProfile.ButtonMap
+  type: property
+- uid: System.Collections.Generic.List`1
+  isExternal: true
+  name: List
+  nameWithType: List
+  fullName: System.Collections.Generic.List
+- uid: DeckSurf.SDK.Models.CommandMapping
+  name: CommandMapping
+  nameWithType: CommandMapping
+  fullName: DeckSurf.SDK.Models.CommandMapping
+- uid: System.Collections.Generic.List{DeckSurf.SDK.Models.CommandMapping}
+  parent: System.Collections.Generic
+  name: List<CommandMapping>
+  nameWithType: List<CommandMapping>
+  fullName: System.Collections.Generic.List<DeckSurf.SDK.Models.CommandMapping>
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: DeckSurf.SDK.Models.CommandMapping
+    name: CommandMapping
+    nameWithType: CommandMapping
+    fullName: DeckSurf.SDK.Models.CommandMapping
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: DeckSurf.SDK.Models.ConfigurationProfile.DeviceIndex
+  parent: DeckSurf.SDK.Models.ConfigurationProfile
+  isExternal: false
+  name: DeviceIndex
+  nameWithType: ConfigurationProfile.DeviceIndex
+  fullName: DeckSurf.SDK.Models.ConfigurationProfile.DeviceIndex
+  type: property
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: DeckSurf.SDK.Models.ConfigurationProfile.DeviceModel
+  parent: DeckSurf.SDK.Models.ConfigurationProfile
+  isExternal: false
+  name: DeviceModel
+  nameWithType: ConfigurationProfile.DeviceModel
+  fullName: DeckSurf.SDK.Models.ConfigurationProfile.DeviceModel
+  type: property
+- uid: DeckSurf.SDK.Models.DeviceModel
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: DeviceModel
+  nameWithType: DeviceModel
+  fullName: DeckSurf.SDK.Models.DeviceModel
+- uid: DeckSurf.SDK.Models.ConfigurationProfile.DeviceSerial
+  parent: DeckSurf.SDK.Models.ConfigurationProfile
+  isExternal: false
+  name: DeviceSerial
+  nameWithType: ConfigurationProfile.DeviceSerial
+  fullName: DeckSurf.SDK.Models.ConfigurationProfile.DeviceSerial
+  type: property
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DeckSurf.SDK.Models.ConfigurationProfile.#ctor*
+  commentId: Overload:DeckSurf.SDK.Models.ConfigurationProfile.#ctor
+  parent: DeckSurf.SDK.Models.ConfigurationProfile
+  isExternal: false
+  name: ConfigurationProfile
+  nameWithType: ConfigurationProfile.ConfigurationProfile
+  fullName: DeckSurf.SDK.Models.ConfigurationProfile.ConfigurationProfile
+  monikers:
+  - net9.0
+  type: constructor
+- uid: DeckSurf.SDK.Models.ConfigurationProfile.ButtonMap*
+  commentId: Overload:DeckSurf.SDK.Models.ConfigurationProfile.ButtonMap
+  parent: DeckSurf.SDK.Models.ConfigurationProfile
+  isExternal: false
+  name: ButtonMap
+  nameWithType: ConfigurationProfile.ButtonMap
+  fullName: DeckSurf.SDK.Models.ConfigurationProfile.ButtonMap
+  monikers:
+  - net9.0
+  type: property
+- uid: DeckSurf.SDK.Models.ConfigurationProfile.DeviceIndex*
+  commentId: Overload:DeckSurf.SDK.Models.ConfigurationProfile.DeviceIndex
+  parent: DeckSurf.SDK.Models.ConfigurationProfile
+  isExternal: false
+  name: DeviceIndex
+  nameWithType: ConfigurationProfile.DeviceIndex
+  fullName: DeckSurf.SDK.Models.ConfigurationProfile.DeviceIndex
+  monikers:
+  - net9.0
+  type: property
+- uid: DeckSurf.SDK.Models.ConfigurationProfile.DeviceModel*
+  commentId: Overload:DeckSurf.SDK.Models.ConfigurationProfile.DeviceModel
+  parent: DeckSurf.SDK.Models.ConfigurationProfile
+  isExternal: false
+  name: DeviceModel
+  nameWithType: ConfigurationProfile.DeviceModel
+  fullName: DeckSurf.SDK.Models.ConfigurationProfile.DeviceModel
+  monikers:
+  - net9.0
+  type: property
+- uid: DeckSurf.SDK.Models.ConfigurationProfile.DeviceSerial*
+  commentId: Overload:DeckSurf.SDK.Models.ConfigurationProfile.DeviceSerial
+  parent: DeckSurf.SDK.Models.ConfigurationProfile
+  isExternal: false
+  name: DeviceSerial
+  nameWithType: ConfigurationProfile.DeviceSerial
+  fullName: DeckSurf.SDK.Models.ConfigurationProfile.DeviceSerial
+  monikers:
+  - net9.0
+  type: property

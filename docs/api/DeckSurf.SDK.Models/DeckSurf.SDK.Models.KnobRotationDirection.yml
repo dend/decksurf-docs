@@ -1,0 +1,144 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Models.KnobRotationDirection
+  commentId: T:DeckSurf.SDK.Models.KnobRotationDirection
+  id: KnobRotationDirection
+  children:
+  - DeckSurf.SDK.Models.KnobRotationDirection.Left
+  - DeckSurf.SDK.Models.KnobRotationDirection.None
+  - DeckSurf.SDK.Models.KnobRotationDirection.Right
+  langs:
+  - csharp
+  name: KnobRotationDirection
+  nameWithType: DeckSurf.SDK.Models.KnobRotationDirection
+  fullName: DeckSurf.SDK.Models.KnobRotationDirection
+  type: Enum
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Defines the direction of a Stream Deck knob rotation.
+  syntax:
+    content: public enum KnobRotationDirection
+    content.csharp: public enum KnobRotationDirection
+  inheritance:
+  - System.Enum
+  modifiers.csharp:
+  - public
+  monikers:
+  - net9.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net9.0
+- uid: DeckSurf.SDK.Models.KnobRotationDirection.Left
+  commentId: F:DeckSurf.SDK.Models.KnobRotationDirection.Left
+  id: Left
+  parent: DeckSurf.SDK.Models.KnobRotationDirection
+  langs:
+  - csharp
+  name: Left
+  nameWithType: KnobRotationDirection.Left
+  fullName: DeckSurf.SDK.Models.KnobRotationDirection.Left
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Knob rotated to the left.
+  syntax:
+    content: Left
+    return:
+      type: DeckSurf.SDK.Models.KnobRotationDirection
+      description: ''
+    content.csharp: Left
+  exceptions: []
+  monikers:
+  - net9.0
+  literalValue: "1"
+- uid: DeckSurf.SDK.Models.KnobRotationDirection.None
+  commentId: F:DeckSurf.SDK.Models.KnobRotationDirection.None
+  id: None
+  parent: DeckSurf.SDK.Models.KnobRotationDirection
+  langs:
+  - csharp
+  name: None
+  nameWithType: KnobRotationDirection.None
+  fullName: DeckSurf.SDK.Models.KnobRotationDirection.None
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Knob not rotated.
+  syntax:
+    content: None
+    return:
+      type: DeckSurf.SDK.Models.KnobRotationDirection
+      description: ''
+    content.csharp: None
+  exceptions: []
+  monikers:
+  - net9.0
+  literalValue: "2"
+- uid: DeckSurf.SDK.Models.KnobRotationDirection.Right
+  commentId: F:DeckSurf.SDK.Models.KnobRotationDirection.Right
+  id: Right
+  parent: DeckSurf.SDK.Models.KnobRotationDirection
+  langs:
+  - csharp
+  name: Right
+  nameWithType: KnobRotationDirection.Right
+  fullName: DeckSurf.SDK.Models.KnobRotationDirection.Right
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Knob rotated to the right.
+  syntax:
+    content: Right
+    return:
+      type: DeckSurf.SDK.Models.KnobRotationDirection
+      description: ''
+    content.csharp: Right
+  exceptions: []
+  monikers:
+  - net9.0
+  literalValue: "0"
+references:
+- uid: DeckSurf.SDK.Models
+  commentId: N:DeckSurf.SDK.Models
+  isExternal: false
+  name: DeckSurf.SDK.Models
+  nameWithType: DeckSurf.SDK.Models
+  fullName: DeckSurf.SDK.Models
+  type: namespace
+- uid: System.Enum
+  parent: System
+  isExternal: true
+  name: Enum
+  nameWithType: Enum
+  fullName: System.Enum
+- uid: DeckSurf.SDK.Models.KnobRotationDirection.Left
+  parent: DeckSurf.SDK.Models.KnobRotationDirection
+  isExternal: false
+  name: Left
+  nameWithType: KnobRotationDirection.Left
+  fullName: DeckSurf.SDK.Models.KnobRotationDirection.Left
+  type: field
+- uid: DeckSurf.SDK.Models.KnobRotationDirection
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: KnobRotationDirection
+  nameWithType: KnobRotationDirection
+  fullName: DeckSurf.SDK.Models.KnobRotationDirection
+- uid: DeckSurf.SDK.Models.KnobRotationDirection.None
+  parent: DeckSurf.SDK.Models.KnobRotationDirection
+  isExternal: false
+  name: None
+  nameWithType: KnobRotationDirection.None
+  fullName: DeckSurf.SDK.Models.KnobRotationDirection.None
+  type: field
+- uid: DeckSurf.SDK.Models.KnobRotationDirection.Right
+  parent: DeckSurf.SDK.Models.KnobRotationDirection
+  isExternal: false
+  name: Right
+  nameWithType: KnobRotationDirection.Right
+  fullName: DeckSurf.SDK.Models.KnobRotationDirection.Right
+  type: field

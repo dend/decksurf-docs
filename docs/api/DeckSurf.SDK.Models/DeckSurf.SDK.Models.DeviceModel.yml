@@ -1,0 +1,369 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Models.DeviceModel
+  commentId: T:DeckSurf.SDK.Models.DeviceModel
+  id: DeviceModel
+  children:
+  - DeckSurf.SDK.Models.DeviceModel.Mini
+  - DeckSurf.SDK.Models.DeviceModel.Mini2022
+  - DeckSurf.SDK.Models.DeviceModel.MK2
+  - DeckSurf.SDK.Models.DeviceModel.MK2Scissor
+  - DeckSurf.SDK.Models.DeviceModel.Neo
+  - DeckSurf.SDK.Models.DeviceModel.Original
+  - DeckSurf.SDK.Models.DeviceModel.Original2019
+  - DeckSurf.SDK.Models.DeviceModel.Plus
+  - DeckSurf.SDK.Models.DeviceModel.XL
+  - DeckSurf.SDK.Models.DeviceModel.XL2022
+  langs:
+  - csharp
+  name: DeviceModel
+  nameWithType: DeckSurf.SDK.Models.DeviceModel
+  fullName: DeckSurf.SDK.Models.DeviceModel
+  type: Enum
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Enum represening Stream Deck device models and their respective USB product IDs (PIDs).
+  syntax:
+    content: public enum DeviceModel
+    content.csharp: public enum DeviceModel
+  inheritance:
+  - System.Enum
+  modifiers.csharp:
+  - public
+  monikers:
+  - net9.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net9.0
+- uid: DeckSurf.SDK.Models.DeviceModel.Mini
+  commentId: F:DeckSurf.SDK.Models.DeviceModel.Mini
+  id: Mini
+  parent: DeckSurf.SDK.Models.DeviceModel
+  langs:
+  - csharp
+  name: Mini
+  nameWithType: DeviceModel.Mini
+  fullName: DeckSurf.SDK.Models.DeviceModel.Mini
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: The <a href="https://www.elgato.com/us/en/p/stream-deck-mini">Mini model</a> of the Stream Deck device.
+  syntax:
+    content: Mini
+    return:
+      type: DeckSurf.SDK.Models.DeviceModel
+      description: ''
+    content.csharp: Mini
+  exceptions: []
+  monikers:
+  - net9.0
+  literalValue: "99"
+- uid: DeckSurf.SDK.Models.DeviceModel.Mini2022
+  commentId: F:DeckSurf.SDK.Models.DeviceModel.Mini2022
+  id: Mini2022
+  parent: DeckSurf.SDK.Models.DeviceModel
+  langs:
+  - csharp
+  name: Mini2022
+  nameWithType: DeviceModel.Mini2022
+  fullName: DeckSurf.SDK.Models.DeviceModel.Mini2022
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: The <a href="https://www.elgato.com/us/en/p/stream-deck-mini">Mini (2022) model</a> of the Stream Deck device.
+  syntax:
+    content: Mini2022
+    return:
+      type: DeckSurf.SDK.Models.DeviceModel
+      description: ''
+    content.csharp: Mini2022
+  exceptions: []
+  monikers:
+  - net9.0
+  literalValue: "144"
+- uid: DeckSurf.SDK.Models.DeviceModel.MK2
+  commentId: F:DeckSurf.SDK.Models.DeviceModel.MK2
+  id: MK2
+  parent: DeckSurf.SDK.Models.DeviceModel
+  langs:
+  - csharp
+  name: MK2
+  nameWithType: DeviceModel.MK2
+  fullName: DeckSurf.SDK.Models.DeviceModel.MK2
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: The <a href="https://www.elgato.com/us/en/p/stream-deck-mk2-black">MK.2</a> of the Stream Deck device.
+  syntax:
+    content: MK2
+    return:
+      type: DeckSurf.SDK.Models.DeviceModel
+      description: ''
+    content.csharp: MK2
+  exceptions: []
+  monikers:
+  - net9.0
+  literalValue: "128"
+- uid: DeckSurf.SDK.Models.DeviceModel.MK2Scissor
+  commentId: F:DeckSurf.SDK.Models.DeviceModel.MK2Scissor
+  id: MK2Scissor
+  parent: DeckSurf.SDK.Models.DeviceModel
+  langs:
+  - csharp
+  name: MK2Scissor
+  nameWithType: DeviceModel.MK2Scissor
+  fullName: DeckSurf.SDK.Models.DeviceModel.MK2Scissor
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: The MK.2 Scissor of the Stream Deck device.
+  remarks: Need to document what the "Scissor" variant actually is.
+  syntax:
+    content: MK2Scissor
+    return:
+      type: DeckSurf.SDK.Models.DeviceModel
+      description: ''
+    content.csharp: MK2Scissor
+  exceptions: []
+  monikers:
+  - net9.0
+  literalValue: "165"
+- uid: DeckSurf.SDK.Models.DeviceModel.Neo
+  commentId: F:DeckSurf.SDK.Models.DeviceModel.Neo
+  id: Neo
+  parent: DeckSurf.SDK.Models.DeviceModel
+  langs:
+  - csharp
+  name: Neo
+  nameWithType: DeviceModel.Neo
+  fullName: DeckSurf.SDK.Models.DeviceModel.Neo
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: The <a href="https://www.elgato.com/us/en/p/stream-deck-neo">Neo model</a> of the Stream Deck device.
+  syntax:
+    content: Neo
+    return:
+      type: DeckSurf.SDK.Models.DeviceModel
+      description: ''
+    content.csharp: Neo
+  exceptions: []
+  monikers:
+  - net9.0
+  literalValue: "154"
+- uid: DeckSurf.SDK.Models.DeviceModel.Original
+  commentId: F:DeckSurf.SDK.Models.DeviceModel.Original
+  id: Original
+  parent: DeckSurf.SDK.Models.DeviceModel
+  langs:
+  - csharp
+  name: Original
+  nameWithType: DeviceModel.Original
+  fullName: DeckSurf.SDK.Models.DeviceModel.Original
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: The original model of the Stream Deck device.
+  syntax:
+    content: Original
+    return:
+      type: DeckSurf.SDK.Models.DeviceModel
+      description: ''
+    content.csharp: Original
+  exceptions: []
+  monikers:
+  - net9.0
+  literalValue: "96"
+- uid: DeckSurf.SDK.Models.DeviceModel.Original2019
+  commentId: F:DeckSurf.SDK.Models.DeviceModel.Original2019
+  id: Original2019
+  parent: DeckSurf.SDK.Models.DeviceModel
+  langs:
+  - csharp
+  name: Original2019
+  nameWithType: DeviceModel.Original2019
+  fullName: DeckSurf.SDK.Models.DeviceModel.Original2019
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: The <a href="https://www.elgato.com/en/stream-deck">updated original model</a> of the Stream Deck device.
+  syntax:
+    content: Original2019
+    return:
+      type: DeckSurf.SDK.Models.DeviceModel
+      description: ''
+    content.csharp: Original2019
+  exceptions: []
+  monikers:
+  - net9.0
+  literalValue: "109"
+- uid: DeckSurf.SDK.Models.DeviceModel.Plus
+  commentId: F:DeckSurf.SDK.Models.DeviceModel.Plus
+  id: Plus
+  parent: DeckSurf.SDK.Models.DeviceModel
+  langs:
+  - csharp
+  name: Plus
+  nameWithType: DeviceModel.Plus
+  fullName: DeckSurf.SDK.Models.DeviceModel.Plus
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: The <a href="https://www.elgato.com/us/en/p/stream-deck-plus-black">Plus model</a> of the Stream Deck device.
+  syntax:
+    content: Plus
+    return:
+      type: DeckSurf.SDK.Models.DeviceModel
+      description: ''
+    content.csharp: Plus
+  exceptions: []
+  monikers:
+  - net9.0
+  literalValue: "132"
+- uid: DeckSurf.SDK.Models.DeviceModel.XL
+  commentId: F:DeckSurf.SDK.Models.DeviceModel.XL
+  id: XL
+  parent: DeckSurf.SDK.Models.DeviceModel
+  langs:
+  - csharp
+  name: XL
+  nameWithType: DeviceModel.XL
+  fullName: DeckSurf.SDK.Models.DeviceModel.XL
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: The <a href="https://www.elgato.com/us/en/p/stream-deck-xl">XL model</a> of the Stream Deck device.
+  syntax:
+    content: XL
+    return:
+      type: DeckSurf.SDK.Models.DeviceModel
+      description: ''
+    content.csharp: XL
+  exceptions: []
+  monikers:
+  - net9.0
+  literalValue: "108"
+- uid: DeckSurf.SDK.Models.DeviceModel.XL2022
+  commentId: F:DeckSurf.SDK.Models.DeviceModel.XL2022
+  id: XL2022
+  parent: DeckSurf.SDK.Models.DeviceModel
+  langs:
+  - csharp
+  name: XL2022
+  nameWithType: DeviceModel.XL2022
+  fullName: DeckSurf.SDK.Models.DeviceModel.XL2022
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: The <a href="https://www.elgato.com/us/en/p/stream-deck-xl">XL (2022) model</a> of the Stream Deck device.
+  syntax:
+    content: XL2022
+    return:
+      type: DeckSurf.SDK.Models.DeviceModel
+      description: ''
+    content.csharp: XL2022
+  exceptions: []
+  monikers:
+  - net9.0
+  literalValue: "143"
+references:
+- uid: DeckSurf.SDK.Models
+  commentId: N:DeckSurf.SDK.Models
+  isExternal: false
+  name: DeckSurf.SDK.Models
+  nameWithType: DeckSurf.SDK.Models
+  fullName: DeckSurf.SDK.Models
+  type: namespace
+- uid: System.Enum
+  parent: System
+  isExternal: true
+  name: Enum
+  nameWithType: Enum
+  fullName: System.Enum
+- uid: DeckSurf.SDK.Models.DeviceModel.Mini
+  parent: DeckSurf.SDK.Models.DeviceModel
+  isExternal: false
+  name: Mini
+  nameWithType: DeviceModel.Mini
+  fullName: DeckSurf.SDK.Models.DeviceModel.Mini
+  type: field
+- uid: DeckSurf.SDK.Models.DeviceModel
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: DeviceModel
+  nameWithType: DeviceModel
+  fullName: DeckSurf.SDK.Models.DeviceModel
+- uid: DeckSurf.SDK.Models.DeviceModel.Mini2022
+  parent: DeckSurf.SDK.Models.DeviceModel
+  isExternal: false
+  name: Mini2022
+  nameWithType: DeviceModel.Mini2022
+  fullName: DeckSurf.SDK.Models.DeviceModel.Mini2022
+  type: field
+- uid: DeckSurf.SDK.Models.DeviceModel.MK2
+  parent: DeckSurf.SDK.Models.DeviceModel
+  isExternal: false
+  name: MK2
+  nameWithType: DeviceModel.MK2
+  fullName: DeckSurf.SDK.Models.DeviceModel.MK2
+  type: field
+- uid: DeckSurf.SDK.Models.DeviceModel.MK2Scissor
+  parent: DeckSurf.SDK.Models.DeviceModel
+  isExternal: false
+  name: MK2Scissor
+  nameWithType: DeviceModel.MK2Scissor
+  fullName: DeckSurf.SDK.Models.DeviceModel.MK2Scissor
+  type: field
+- uid: DeckSurf.SDK.Models.DeviceModel.Neo
+  parent: DeckSurf.SDK.Models.DeviceModel
+  isExternal: false
+  name: Neo
+  nameWithType: DeviceModel.Neo
+  fullName: DeckSurf.SDK.Models.DeviceModel.Neo
+  type: field
+- uid: DeckSurf.SDK.Models.DeviceModel.Original
+  parent: DeckSurf.SDK.Models.DeviceModel
+  isExternal: false
+  name: Original
+  nameWithType: DeviceModel.Original
+  fullName: DeckSurf.SDK.Models.DeviceModel.Original
+  type: field
+- uid: DeckSurf.SDK.Models.DeviceModel.Original2019
+  parent: DeckSurf.SDK.Models.DeviceModel
+  isExternal: false
+  name: Original2019
+  nameWithType: DeviceModel.Original2019
+  fullName: DeckSurf.SDK.Models.DeviceModel.Original2019
+  type: field
+- uid: DeckSurf.SDK.Models.DeviceModel.Plus
+  parent: DeckSurf.SDK.Models.DeviceModel
+  isExternal: false
+  name: Plus
+  nameWithType: DeviceModel.Plus
+  fullName: DeckSurf.SDK.Models.DeviceModel.Plus
+  type: field
+- uid: DeckSurf.SDK.Models.DeviceModel.XL
+  parent: DeckSurf.SDK.Models.DeviceModel
+  isExternal: false
+  name: XL
+  nameWithType: DeviceModel.XL
+  fullName: DeckSurf.SDK.Models.DeviceModel.XL
+  type: field
+- uid: DeckSurf.SDK.Models.DeviceModel.XL2022
+  parent: DeckSurf.SDK.Models.DeviceModel
+  isExternal: false
+  name: XL2022
+  nameWithType: DeviceModel.XL2022
+  fullName: DeckSurf.SDK.Models.DeviceModel.XL2022
+  type: field

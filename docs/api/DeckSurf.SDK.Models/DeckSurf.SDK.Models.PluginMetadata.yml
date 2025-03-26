@@ -1,0 +1,275 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Models.PluginMetadata
+  commentId: T:DeckSurf.SDK.Models.PluginMetadata
+  id: PluginMetadata
+  children:
+  - DeckSurf.SDK.Models.PluginMetadata.#ctor
+  - DeckSurf.SDK.Models.PluginMetadata.Author
+  - DeckSurf.SDK.Models.PluginMetadata.Id
+  - DeckSurf.SDK.Models.PluginMetadata.Version
+  - DeckSurf.SDK.Models.PluginMetadata.Website
+  langs:
+  - csharp
+  name: PluginMetadata
+  nameWithType: DeckSurf.SDK.Models.PluginMetadata
+  fullName: DeckSurf.SDK.Models.PluginMetadata
+  type: Class
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Metadata that describes the plugin.
+  syntax:
+    content: public class PluginMetadata
+    content.csharp: public class PluginMetadata
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net9.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net9.0
+- uid: DeckSurf.SDK.Models.PluginMetadata.#ctor
+  commentId: M:DeckSurf.SDK.Models.PluginMetadata.#ctor
+  id: '#ctor'
+  parent: DeckSurf.SDK.Models.PluginMetadata
+  langs:
+  - csharp
+  name: PluginMetadata()
+  nameWithType: PluginMetadata.PluginMetadata()
+  fullName: DeckSurf.SDK.Models.PluginMetadata.PluginMetadata()
+  type: Constructor
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  syntax:
+    content: public PluginMetadata ();
+    parameters: []
+    content.csharp: public PluginMetadata ();
+  overload: DeckSurf.SDK.Models.PluginMetadata.#ctor*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Models.PluginMetadata.Author
+  commentId: P:DeckSurf.SDK.Models.PluginMetadata.Author
+  id: Author
+  parent: DeckSurf.SDK.Models.PluginMetadata
+  langs:
+  - csharp
+  name: Author
+  nameWithType: PluginMetadata.Author
+  fullName: DeckSurf.SDK.Models.PluginMetadata.Author
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets or sets the plugin author.
+  syntax:
+    content: public string Author { get; set; }
+    return:
+      type: System.String
+      description: ''
+    content.csharp: public string Author { get; set; }
+  overload: DeckSurf.SDK.Models.PluginMetadata.Author*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Models.PluginMetadata.Id
+  commentId: P:DeckSurf.SDK.Models.PluginMetadata.Id
+  id: Id
+  parent: DeckSurf.SDK.Models.PluginMetadata
+  langs:
+  - csharp
+  name: Id
+  nameWithType: PluginMetadata.Id
+  fullName: DeckSurf.SDK.Models.PluginMetadata.Id
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets or sets the plugin ID string.
+  syntax:
+    content: public string Id { get; set; }
+    return:
+      type: System.String
+      description: ''
+    content.csharp: public string Id { get; set; }
+  overload: DeckSurf.SDK.Models.PluginMetadata.Id*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Models.PluginMetadata.Version
+  commentId: P:DeckSurf.SDK.Models.PluginMetadata.Version
+  id: Version
+  parent: DeckSurf.SDK.Models.PluginMetadata
+  langs:
+  - csharp
+  name: Version
+  nameWithType: PluginMetadata.Version
+  fullName: DeckSurf.SDK.Models.PluginMetadata.Version
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets or sets the plugin version.
+  syntax:
+    content: public string Version { get; set; }
+    return:
+      type: System.String
+      description: ''
+    content.csharp: public string Version { get; set; }
+  overload: DeckSurf.SDK.Models.PluginMetadata.Version*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Models.PluginMetadata.Website
+  commentId: P:DeckSurf.SDK.Models.PluginMetadata.Website
+  id: Website
+  parent: DeckSurf.SDK.Models.PluginMetadata
+  langs:
+  - csharp
+  name: Website
+  nameWithType: PluginMetadata.Website
+  fullName: DeckSurf.SDK.Models.PluginMetadata.Website
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets or sets the plugin home page.
+  syntax:
+    content: public string Website { get; set; }
+    return:
+      type: System.String
+      description: ''
+    content.csharp: public string Website { get; set; }
+  overload: DeckSurf.SDK.Models.PluginMetadata.Website*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  monikers:
+  - net9.0
+references:
+- uid: DeckSurf.SDK.Models
+  commentId: N:DeckSurf.SDK.Models
+  isExternal: false
+  name: DeckSurf.SDK.Models
+  nameWithType: DeckSurf.SDK.Models
+  fullName: DeckSurf.SDK.Models
+  type: namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: DeckSurf.SDK.Models.PluginMetadata.#ctor
+  parent: DeckSurf.SDK.Models.PluginMetadata
+  isExternal: false
+  name: PluginMetadata()
+  nameWithType: PluginMetadata.PluginMetadata()
+  fullName: DeckSurf.SDK.Models.PluginMetadata.PluginMetadata()
+  type: constructor
+- uid: DeckSurf.SDK.Models.PluginMetadata.Author
+  parent: DeckSurf.SDK.Models.PluginMetadata
+  isExternal: false
+  name: Author
+  nameWithType: PluginMetadata.Author
+  fullName: DeckSurf.SDK.Models.PluginMetadata.Author
+  type: property
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DeckSurf.SDK.Models.PluginMetadata.Id
+  parent: DeckSurf.SDK.Models.PluginMetadata
+  isExternal: false
+  name: Id
+  nameWithType: PluginMetadata.Id
+  fullName: DeckSurf.SDK.Models.PluginMetadata.Id
+  type: property
+- uid: DeckSurf.SDK.Models.PluginMetadata.Version
+  parent: DeckSurf.SDK.Models.PluginMetadata
+  isExternal: false
+  name: Version
+  nameWithType: PluginMetadata.Version
+  fullName: DeckSurf.SDK.Models.PluginMetadata.Version
+  type: property
+- uid: DeckSurf.SDK.Models.PluginMetadata.Website
+  parent: DeckSurf.SDK.Models.PluginMetadata
+  isExternal: false
+  name: Website
+  nameWithType: PluginMetadata.Website
+  fullName: DeckSurf.SDK.Models.PluginMetadata.Website
+  type: property
+- uid: DeckSurf.SDK.Models.PluginMetadata.#ctor*
+  commentId: Overload:DeckSurf.SDK.Models.PluginMetadata.#ctor
+  parent: DeckSurf.SDK.Models.PluginMetadata
+  isExternal: false
+  name: PluginMetadata
+  nameWithType: PluginMetadata.PluginMetadata
+  fullName: DeckSurf.SDK.Models.PluginMetadata.PluginMetadata
+  monikers:
+  - net9.0
+  type: constructor
+- uid: DeckSurf.SDK.Models.PluginMetadata.Author*
+  commentId: Overload:DeckSurf.SDK.Models.PluginMetadata.Author
+  parent: DeckSurf.SDK.Models.PluginMetadata
+  isExternal: false
+  name: Author
+  nameWithType: PluginMetadata.Author
+  fullName: DeckSurf.SDK.Models.PluginMetadata.Author
+  monikers:
+  - net9.0
+  type: property
+- uid: DeckSurf.SDK.Models.PluginMetadata.Id*
+  commentId: Overload:DeckSurf.SDK.Models.PluginMetadata.Id
+  parent: DeckSurf.SDK.Models.PluginMetadata
+  isExternal: false
+  name: Id
+  nameWithType: PluginMetadata.Id
+  fullName: DeckSurf.SDK.Models.PluginMetadata.Id
+  monikers:
+  - net9.0
+  type: property
+- uid: DeckSurf.SDK.Models.PluginMetadata.Version*
+  commentId: Overload:DeckSurf.SDK.Models.PluginMetadata.Version
+  parent: DeckSurf.SDK.Models.PluginMetadata
+  isExternal: false
+  name: Version
+  nameWithType: PluginMetadata.Version
+  fullName: DeckSurf.SDK.Models.PluginMetadata.Version
+  monikers:
+  - net9.0
+  type: property
+- uid: DeckSurf.SDK.Models.PluginMetadata.Website*
+  commentId: Overload:DeckSurf.SDK.Models.PluginMetadata.Website
+  parent: DeckSurf.SDK.Models.PluginMetadata
+  isExternal: false
+  name: Website
+  nameWithType: PluginMetadata.Website
+  fullName: DeckSurf.SDK.Models.PluginMetadata.Website
+  monikers:
+  - net9.0
+  type: property

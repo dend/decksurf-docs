@@ -1,0 +1,134 @@
+### YamlMime:TableOfContent
+- uid: DeckSurf.SDK.Core
+  name: DeckSurf.SDK.Core
+  items:
+  - uid: DeckSurf.SDK.Core.DeviceManager
+    name: DeviceManager
+    monikers:
+    - net9.0
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Interfaces
+  name: DeckSurf.SDK.Interfaces
+  items:
+  - uid: DeckSurf.SDK.Interfaces.IDSCommand
+    name: IDSCommand
+    monikers:
+    - net9.0
+  - uid: DeckSurf.SDK.Interfaces.IDSPlugin
+    name: IDSPlugin
+    monikers:
+    - net9.0
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Models
+  name: DeckSurf.SDK.Models
+  items:
+  - uid: DeckSurf.SDK.Models.ButtonEventKind
+    name: ButtonEventKind
+    monikers:
+    - net9.0
+  - uid: DeckSurf.SDK.Models.ButtonKind
+    name: ButtonKind
+    monikers:
+    - net9.0
+  - uid: DeckSurf.SDK.Models.ButtonPressEventArgs
+    name: ButtonPressEventArgs
+    monikers:
+    - net9.0
+  - uid: DeckSurf.SDK.Models.CommandMapping
+    name: CommandMapping
+    monikers:
+    - net9.0
+  - uid: DeckSurf.SDK.Models.CompatibleWithAttribute
+    name: CompatibleWithAttribute
+    monikers:
+    - net9.0
+  - uid: DeckSurf.SDK.Models.ConfigurationProfile
+    name: ConfigurationProfile
+    monikers:
+    - net9.0
+  - uid: DeckSurf.SDK.Models.ConnectedDevice
+    name: ConnectedDevice
+    monikers:
+    - net9.0
+  - uid: DeckSurf.SDK.Models.ConnectedDevice.ReceivedButtonPressHandler
+    name: ConnectedDevice.ReceivedButtonPressHandler
+    monikers:
+    - net9.0
+  - uid: DeckSurf.SDK.Models.DeviceModel
+    name: DeviceModel
+    monikers:
+    - net9.0
+  - uid: DeckSurf.SDK.Models.KnobRotationDirection
+    name: KnobRotationDirection
+    monikers:
+    - net9.0
+  - uid: DeckSurf.SDK.Models.PluginMetadata
+    name: PluginMetadata
+    monikers:
+    - net9.0
+  - uid: DeckSurf.SDK.Models.SIIGBF
+    name: SIIGBF
+    monikers:
+    - net9.0
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Models.Devices
+  name: DeckSurf.SDK.Models.Devices
+  items:
+  - uid: DeckSurf.SDK.Models.Devices.StreamDeckMini
+    name: StreamDeckMini
+    monikers:
+    - net9.0
+  - uid: DeckSurf.SDK.Models.Devices.StreamDeckMini2022
+    name: StreamDeckMini2022
+    monikers:
+    - net9.0
+  - uid: DeckSurf.SDK.Models.Devices.StreamDeckMK2
+    name: StreamDeckMK2
+    monikers:
+    - net9.0
+  - uid: DeckSurf.SDK.Models.Devices.StreamDeckNeo
+    name: StreamDeckNeo
+    monikers:
+    - net9.0
+  - uid: DeckSurf.SDK.Models.Devices.StreamDeckOriginal
+    name: StreamDeckOriginal
+    monikers:
+    - net9.0
+  - uid: DeckSurf.SDK.Models.Devices.StreamDeckOriginal2019
+    name: StreamDeckOriginal2019
+    monikers:
+    - net9.0
+  - uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus
+    name: StreamDeckPlus
+    monikers:
+    - net9.0
+  - uid: DeckSurf.SDK.Models.Devices.StreamDeckXL
+    name: StreamDeckXL
+    monikers:
+    - net9.0
+  - uid: DeckSurf.SDK.Models.Devices.StreamDeckXL2022
+    name: StreamDeckXL2022
+    monikers:
+    - net9.0
+  monikers:
+  - net9.0
+- uid: DeckSurf.SDK.Util
+  name: DeckSurf.SDK.Util
+  items:
+  - uid: DeckSurf.SDK.Util.ConfigurationHelper
+    name: ConfigurationHelper
+    monikers:
+    - net9.0
+  - uid: DeckSurf.SDK.Util.DataHelpers
+    name: DataHelpers
+    monikers:
+    - net9.0
+  - uid: DeckSurf.SDK.Util.ImageHelpers
+    name: ImageHelpers
+    monikers:
+    - net9.0
+  monikers:
+  - net9.0

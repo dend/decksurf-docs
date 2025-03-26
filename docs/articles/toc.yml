@@ -1,0 +1,13 @@
+- name: Getting Started
+  href: intro.md
+- name: Release Notes
+  items:
+    - name: July 2021 (0.0.3)
+      href: release-notes/july-2021.md
+    - name: December 2024 (0.0.4)
+      href: release-notes/december-2024.md
+    - name: December 2024 - Batch 2 (0.0.5)
+      href: release-notes/december-2024-batch-2.md
+    - name: February 2025 (0.0.6)
+      href: release-notes/february-2025.md
+
