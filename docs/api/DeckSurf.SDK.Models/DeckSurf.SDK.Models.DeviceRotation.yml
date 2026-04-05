@@ -1,0 +1,144 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Models.DeviceRotation
+  commentId: T:DeckSurf.SDK.Models.DeviceRotation
+  id: DeviceRotation
+  children:
+  - DeckSurf.SDK.Models.DeviceRotation.None
+  - DeckSurf.SDK.Models.DeviceRotation.Rotate180
+  - DeckSurf.SDK.Models.DeviceRotation.Rotate270
+  langs:
+  - csharp
+  name: DeviceRotation
+  nameWithType: DeckSurf.SDK.Models.DeviceRotation
+  fullName: DeckSurf.SDK.Models.DeviceRotation
+  type: Enum
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Represents the rotation and flip transformation applied to images sent to a Stream Deck device.
+  syntax:
+    content: public enum DeviceRotation
+    content.csharp: public enum DeviceRotation
+  inheritance:
+  - System.Enum
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net10.0
+- uid: DeckSurf.SDK.Models.DeviceRotation.None
+  commentId: F:DeckSurf.SDK.Models.DeviceRotation.None
+  id: None
+  parent: DeckSurf.SDK.Models.DeviceRotation
+  langs:
+  - csharp
+  name: None
+  nameWithType: DeviceRotation.None
+  fullName: DeckSurf.SDK.Models.DeviceRotation.None
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: No rotation applied.
+  syntax:
+    content: None
+    return:
+      type: DeckSurf.SDK.Models.DeviceRotation
+      description: ''
+    content.csharp: None
+  exceptions: []
+  monikers:
+  - net10.0
+  literalValue: "0"
+- uid: DeckSurf.SDK.Models.DeviceRotation.Rotate180
+  commentId: F:DeckSurf.SDK.Models.DeviceRotation.Rotate180
+  id: Rotate180
+  parent: DeckSurf.SDK.Models.DeviceRotation
+  langs:
+  - csharp
+  name: Rotate180
+  nameWithType: DeviceRotation.Rotate180
+  fullName: DeckSurf.SDK.Models.DeviceRotation.Rotate180
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Rotate the image 180 degrees.
+  syntax:
+    content: Rotate180
+    return:
+      type: DeckSurf.SDK.Models.DeviceRotation
+      description: ''
+    content.csharp: Rotate180
+  exceptions: []
+  monikers:
+  - net10.0
+  literalValue: "1"
+- uid: DeckSurf.SDK.Models.DeviceRotation.Rotate270
+  commentId: F:DeckSurf.SDK.Models.DeviceRotation.Rotate270
+  id: Rotate270
+  parent: DeckSurf.SDK.Models.DeviceRotation
+  langs:
+  - csharp
+  name: Rotate270
+  nameWithType: DeviceRotation.Rotate270
+  fullName: DeckSurf.SDK.Models.DeviceRotation.Rotate270
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Rotate the image 270 degrees.
+  syntax:
+    content: Rotate270
+    return:
+      type: DeckSurf.SDK.Models.DeviceRotation
+      description: ''
+    content.csharp: Rotate270
+  exceptions: []
+  monikers:
+  - net10.0
+  literalValue: "2"
+references:
+- uid: DeckSurf.SDK.Models
+  commentId: N:DeckSurf.SDK.Models
+  isExternal: false
+  name: DeckSurf.SDK.Models
+  nameWithType: DeckSurf.SDK.Models
+  fullName: DeckSurf.SDK.Models
+  type: namespace
+- uid: System.Enum
+  parent: System
+  isExternal: true
+  name: Enum
+  nameWithType: Enum
+  fullName: System.Enum
+- uid: DeckSurf.SDK.Models.DeviceRotation.None
+  parent: DeckSurf.SDK.Models.DeviceRotation
+  isExternal: false
+  name: None
+  nameWithType: DeviceRotation.None
+  fullName: DeckSurf.SDK.Models.DeviceRotation.None
+  type: field
+- uid: DeckSurf.SDK.Models.DeviceRotation
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: DeviceRotation
+  nameWithType: DeviceRotation
+  fullName: DeckSurf.SDK.Models.DeviceRotation
+- uid: DeckSurf.SDK.Models.DeviceRotation.Rotate180
+  parent: DeckSurf.SDK.Models.DeviceRotation
+  isExternal: false
+  name: Rotate180
+  nameWithType: DeviceRotation.Rotate180
+  fullName: DeckSurf.SDK.Models.DeviceRotation.Rotate180
+  type: field
+- uid: DeckSurf.SDK.Models.DeviceRotation.Rotate270
+  parent: DeckSurf.SDK.Models.DeviceRotation
+  isExternal: false
+  name: Rotate270
+  nameWithType: DeviceRotation.Rotate270
+  fullName: DeckSurf.SDK.Models.DeviceRotation.Rotate270
+  type: field

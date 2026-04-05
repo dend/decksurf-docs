@@ -1,0 +1,532 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Core.DeviceWatcher
+  commentId: T:DeckSurf.SDK.Core.DeviceWatcher
+  id: DeviceWatcher
+  children:
+  - DeckSurf.SDK.Core.DeviceWatcher.#ctor(System.String)
+  - DeckSurf.SDK.Core.DeviceWatcher.CurrentDevice
+  - DeckSurf.SDK.Core.DeviceWatcher.DeviceConnected
+  - DeckSurf.SDK.Core.DeviceWatcher.DeviceLost
+  - DeckSurf.SDK.Core.DeviceWatcher.Dispose
+  - DeckSurf.SDK.Core.DeviceWatcher.Dispose(System.Boolean)
+  - DeckSurf.SDK.Core.DeviceWatcher.Finalize
+  - DeckSurf.SDK.Core.DeviceWatcher.IsConnected
+  - DeckSurf.SDK.Core.DeviceWatcher.Start
+  - DeckSurf.SDK.Core.DeviceWatcher.Stop
+  langs:
+  - csharp
+  name: DeviceWatcher
+  nameWithType: DeckSurf.SDK.Core.DeviceWatcher
+  fullName: DeckSurf.SDK.Core.DeviceWatcher
+  type: Class
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Core
+  summary: >-
+    Watches for the connection and disconnection of a specific Stream Deck device
+
+    identified by its serial number. Subscribe to <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Core.DeviceWatcher.DeviceConnected"></xref> and
+
+    <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Core.DeviceWatcher.DeviceLost"></xref> to react to hardware changes without polling.
+  syntax:
+    content: 'public class DeviceWatcher : IDisposable'
+    content.csharp: 'public class DeviceWatcher : IDisposable'
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net10.0
+- uid: DeckSurf.SDK.Core.DeviceWatcher.#ctor(System.String)
+  commentId: M:DeckSurf.SDK.Core.DeviceWatcher.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: DeckSurf.SDK.Core.DeviceWatcher
+  langs:
+  - csharp
+  name: DeviceWatcher(String)
+  nameWithType: DeviceWatcher.DeviceWatcher(String)
+  fullName: DeckSurf.SDK.Core.DeviceWatcher.DeviceWatcher(String)
+  type: Constructor
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Core
+  summary: >-
+    Initializes a new instance of the <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Core.DeviceWatcher"></xref> class that monitors
+
+    the device with the specified serial number.
+  syntax:
+    content: public DeviceWatcher (string deviceSerial);
+    parameters:
+    - id: deviceSerial
+      type: System.String
+      description: The serial number of the device to watch. Must not be <code data-dev-comment-type="c">null</code> or empty.
+    content.csharp: public DeviceWatcher (string deviceSerial);
+  overload: DeckSurf.SDK.Core.DeviceWatcher.#ctor*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code data-dev-comment-type="paramref">deviceSerial</code> is <code data-dev-comment-type="c">null</code> or empty.
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Core.DeviceWatcher.CurrentDevice
+  commentId: P:DeckSurf.SDK.Core.DeviceWatcher.CurrentDevice
+  id: CurrentDevice
+  parent: DeckSurf.SDK.Core.DeviceWatcher
+  langs:
+  - csharp
+  name: CurrentDevice
+  nameWithType: DeviceWatcher.CurrentDevice
+  fullName: DeckSurf.SDK.Core.DeviceWatcher.CurrentDevice
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Core
+  summary: Gets the currently connected device, or <code data-dev-comment-type="c">null</code> if the device is not connected.
+  syntax:
+    content: public DeckSurf.SDK.Models.ConnectedDevice CurrentDevice { get; }
+    return:
+      type: DeckSurf.SDK.Models.ConnectedDevice
+      description: ''
+    content.csharp: public DeckSurf.SDK.Models.ConnectedDevice CurrentDevice { get; }
+  overload: DeckSurf.SDK.Core.DeviceWatcher.CurrentDevice*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Core.DeviceWatcher.DeviceConnected
+  commentId: E:DeckSurf.SDK.Core.DeviceWatcher.DeviceConnected
+  id: DeviceConnected
+  parent: DeckSurf.SDK.Core.DeviceWatcher
+  langs:
+  - csharp
+  name: DeviceConnected
+  nameWithType: DeviceWatcher.DeviceConnected
+  fullName: DeckSurf.SDK.Core.DeviceWatcher.DeviceConnected
+  type: Event
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Core
+  summary: >-
+    Event raised when the watched device is connected. The event arguments contain
+
+    the fully initialized <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.ConnectedDevice"></xref> instance.
+  syntax:
+    content: public event EventHandler<DeckSurf.SDK.Models.ConnectedDevice> DeviceConnected;
+    content.csharp: public event EventHandler<DeckSurf.SDK.Models.ConnectedDevice> DeviceConnected;
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Core.DeviceWatcher.DeviceLost
+  commentId: E:DeckSurf.SDK.Core.DeviceWatcher.DeviceLost
+  id: DeviceLost
+  parent: DeckSurf.SDK.Core.DeviceWatcher
+  langs:
+  - csharp
+  name: DeviceLost
+  nameWithType: DeviceWatcher.DeviceLost
+  fullName: DeckSurf.SDK.Core.DeviceWatcher.DeviceLost
+  type: Event
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Core
+  summary: Event raised when the watched device is disconnected.
+  syntax:
+    content: public event EventHandler DeviceLost;
+    content.csharp: public event EventHandler DeviceLost;
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Core.DeviceWatcher.Dispose
+  commentId: M:DeckSurf.SDK.Core.DeviceWatcher.Dispose
+  id: Dispose
+  parent: DeckSurf.SDK.Core.DeviceWatcher
+  langs:
+  - csharp
+  name: Dispose()
+  nameWithType: DeviceWatcher.Dispose()
+  fullName: DeckSurf.SDK.Core.DeviceWatcher.Dispose()
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Core
+  syntax:
+    content: public void Dispose ();
+    parameters: []
+    content.csharp: public void Dispose ();
+  overload: DeckSurf.SDK.Core.DeviceWatcher.Dispose*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Core.DeviceWatcher.Dispose(System.Boolean)
+  commentId: M:DeckSurf.SDK.Core.DeviceWatcher.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: DeckSurf.SDK.Core.DeviceWatcher
+  langs:
+  - csharp
+  name: Dispose(Boolean)
+  nameWithType: DeviceWatcher.Dispose(Boolean)
+  fullName: DeckSurf.SDK.Core.DeviceWatcher.Dispose(Boolean)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Core
+  summary: Releases unmanaged and optionally managed resources.
+  syntax:
+    content: protected virtual void Dispose (bool disposing);
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: >-
+        <code data-dev-comment-type="c">true</code> to release both managed and unmanaged resources;
+
+        <code data-dev-comment-type="c">false</code> to release only unmanaged resources.
+    content.csharp: protected virtual void Dispose (bool disposing);
+  overload: DeckSurf.SDK.Core.DeviceWatcher.Dispose*
+  exceptions: []
+  modifiers.csharp:
+  - protected
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Core.DeviceWatcher.Finalize
+  commentId: M:DeckSurf.SDK.Core.DeviceWatcher.Finalize
+  id: Finalize
+  parent: DeckSurf.SDK.Core.DeviceWatcher
+  langs:
+  - csharp
+  name: Finalize()
+  nameWithType: DeviceWatcher.Finalize()
+  fullName: DeckSurf.SDK.Core.DeviceWatcher.Finalize()
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Core
+  summary: Finalizes an instance of the <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Core.DeviceWatcher"></xref> class.
+  syntax:
+    content: ~DeviceWatcher ();
+    parameters: []
+    content.csharp: ~DeviceWatcher ();
+  overload: DeckSurf.SDK.Core.DeviceWatcher.Finalize*
+  exceptions: []
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Core.DeviceWatcher.IsConnected
+  commentId: P:DeckSurf.SDK.Core.DeviceWatcher.IsConnected
+  id: IsConnected
+  parent: DeckSurf.SDK.Core.DeviceWatcher
+  langs:
+  - csharp
+  name: IsConnected
+  nameWithType: DeviceWatcher.IsConnected
+  fullName: DeckSurf.SDK.Core.DeviceWatcher.IsConnected
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Core
+  summary: Gets a value indicating whether the watched device is currently connected.
+  syntax:
+    content: public bool IsConnected { get; }
+    return:
+      type: System.Boolean
+      description: ''
+    content.csharp: public bool IsConnected { get; }
+  overload: DeckSurf.SDK.Core.DeviceWatcher.IsConnected*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Core.DeviceWatcher.Start
+  commentId: M:DeckSurf.SDK.Core.DeviceWatcher.Start
+  id: Start
+  parent: DeckSurf.SDK.Core.DeviceWatcher
+  langs:
+  - csharp
+  name: Start()
+  nameWithType: DeviceWatcher.Start()
+  fullName: DeckSurf.SDK.Core.DeviceWatcher.Start()
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Core
+  summary: >-
+    Starts watching for device connection and disconnection events.
+
+    If the device is already connected when this method is called, the
+
+    <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Core.DeviceWatcher.DeviceConnected"></xref> event is raised immediately.
+  syntax:
+    content: public void Start ();
+    parameters: []
+    content.csharp: public void Start ();
+  overload: DeckSurf.SDK.Core.DeviceWatcher.Start*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Thrown when the watcher has been disposed.
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: Thrown when the watcher is already running.
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Core.DeviceWatcher.Stop
+  commentId: M:DeckSurf.SDK.Core.DeviceWatcher.Stop
+  id: Stop
+  parent: DeckSurf.SDK.Core.DeviceWatcher
+  langs:
+  - csharp
+  name: Stop()
+  nameWithType: DeviceWatcher.Stop()
+  fullName: DeckSurf.SDK.Core.DeviceWatcher.Stop()
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Core
+  summary: Stops watching for device connection and disconnection events.
+  syntax:
+    content: public void Stop ();
+    parameters: []
+    content.csharp: public void Stop ();
+  overload: DeckSurf.SDK.Core.DeviceWatcher.Stop*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+references:
+- uid: DeckSurf.SDK.Core
+  commentId: N:DeckSurf.SDK.Core
+  isExternal: false
+  name: DeckSurf.SDK.Core
+  nameWithType: DeckSurf.SDK.Core
+  fullName: DeckSurf.SDK.Core
+  type: namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.ArgumentException
+  isExternal: true
+  name: System.ArgumentException
+- uid: System.ObjectDisposedException
+  isExternal: true
+  name: System.ObjectDisposedException
+- uid: System.InvalidOperationException
+  isExternal: true
+  name: System.InvalidOperationException
+- uid: DeckSurf.SDK.Core.DeviceWatcher.#ctor(System.String)
+  parent: DeckSurf.SDK.Core.DeviceWatcher
+  isExternal: false
+  name: DeviceWatcher(String)
+  nameWithType: DeviceWatcher.DeviceWatcher(String)
+  fullName: DeckSurf.SDK.Core.DeviceWatcher.DeviceWatcher(String)
+  type: constructor
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DeckSurf.SDK.Core.DeviceWatcher.CurrentDevice
+  parent: DeckSurf.SDK.Core.DeviceWatcher
+  isExternal: false
+  name: CurrentDevice
+  nameWithType: DeviceWatcher.CurrentDevice
+  fullName: DeckSurf.SDK.Core.DeviceWatcher.CurrentDevice
+  type: property
+- uid: DeckSurf.SDK.Models.ConnectedDevice
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: ConnectedDevice
+  nameWithType: ConnectedDevice
+  fullName: DeckSurf.SDK.Models.ConnectedDevice
+- uid: DeckSurf.SDK.Core.DeviceWatcher.DeviceConnected
+  parent: DeckSurf.SDK.Core.DeviceWatcher
+  isExternal: false
+  name: DeviceConnected
+  nameWithType: DeviceWatcher.DeviceConnected
+  fullName: DeckSurf.SDK.Core.DeviceWatcher.DeviceConnected
+  type: event
+- uid: System.EventHandler`1
+  isExternal: true
+  name: EventHandler
+  nameWithType: EventHandler
+  fullName: System.EventHandler
+- uid: System.EventHandler{DeckSurf.SDK.Models.ConnectedDevice}
+  parent: System
+  name: EventHandler<ConnectedDevice>
+  nameWithType: EventHandler<ConnectedDevice>
+  fullName: System.EventHandler<DeckSurf.SDK.Models.ConnectedDevice>
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: DeckSurf.SDK.Models.ConnectedDevice
+    name: ConnectedDevice
+    nameWithType: ConnectedDevice
+    fullName: DeckSurf.SDK.Models.ConnectedDevice
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: DeckSurf.SDK.Core.DeviceWatcher.DeviceLost
+  parent: DeckSurf.SDK.Core.DeviceWatcher
+  isExternal: false
+  name: DeviceLost
+  nameWithType: DeviceWatcher.DeviceLost
+  fullName: DeckSurf.SDK.Core.DeviceWatcher.DeviceLost
+  type: event
+- uid: System.EventHandler
+  parent: System
+  isExternal: true
+  name: EventHandler
+  nameWithType: EventHandler
+  fullName: System.EventHandler
+- uid: DeckSurf.SDK.Core.DeviceWatcher.Dispose
+  parent: DeckSurf.SDK.Core.DeviceWatcher
+  isExternal: false
+  name: Dispose()
+  nameWithType: DeviceWatcher.Dispose()
+  fullName: DeckSurf.SDK.Core.DeviceWatcher.Dispose()
+  type: method
+- uid: DeckSurf.SDK.Core.DeviceWatcher.Dispose(System.Boolean)
+  parent: DeckSurf.SDK.Core.DeviceWatcher
+  isExternal: false
+  name: Dispose(Boolean)
+  nameWithType: DeviceWatcher.Dispose(Boolean)
+  fullName: DeckSurf.SDK.Core.DeviceWatcher.Dispose(Boolean)
+  type: method
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: DeckSurf.SDK.Core.DeviceWatcher.Finalize
+  parent: DeckSurf.SDK.Core.DeviceWatcher
+  isExternal: false
+  name: Finalize()
+  nameWithType: DeviceWatcher.Finalize()
+  fullName: DeckSurf.SDK.Core.DeviceWatcher.Finalize()
+  type: method
+- uid: DeckSurf.SDK.Core.DeviceWatcher.IsConnected
+  parent: DeckSurf.SDK.Core.DeviceWatcher
+  isExternal: false
+  name: IsConnected
+  nameWithType: DeviceWatcher.IsConnected
+  fullName: DeckSurf.SDK.Core.DeviceWatcher.IsConnected
+  type: property
+- uid: DeckSurf.SDK.Core.DeviceWatcher.Start
+  parent: DeckSurf.SDK.Core.DeviceWatcher
+  isExternal: false
+  name: Start()
+  nameWithType: DeviceWatcher.Start()
+  fullName: DeckSurf.SDK.Core.DeviceWatcher.Start()
+  type: method
+- uid: DeckSurf.SDK.Core.DeviceWatcher.Stop
+  parent: DeckSurf.SDK.Core.DeviceWatcher
+  isExternal: false
+  name: Stop()
+  nameWithType: DeviceWatcher.Stop()
+  fullName: DeckSurf.SDK.Core.DeviceWatcher.Stop()
+  type: method
+- uid: DeckSurf.SDK.Core.DeviceWatcher.#ctor*
+  commentId: Overload:DeckSurf.SDK.Core.DeviceWatcher.#ctor
+  parent: DeckSurf.SDK.Core.DeviceWatcher
+  isExternal: false
+  name: DeviceWatcher
+  nameWithType: DeviceWatcher.DeviceWatcher
+  fullName: DeckSurf.SDK.Core.DeviceWatcher.DeviceWatcher
+  monikers:
+  - net10.0
+  type: constructor
+- uid: DeckSurf.SDK.Core.DeviceWatcher.CurrentDevice*
+  commentId: Overload:DeckSurf.SDK.Core.DeviceWatcher.CurrentDevice
+  parent: DeckSurf.SDK.Core.DeviceWatcher
+  isExternal: false
+  name: CurrentDevice
+  nameWithType: DeviceWatcher.CurrentDevice
+  fullName: DeckSurf.SDK.Core.DeviceWatcher.CurrentDevice
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Core.DeviceWatcher.Dispose*
+  commentId: Overload:DeckSurf.SDK.Core.DeviceWatcher.Dispose
+  parent: DeckSurf.SDK.Core.DeviceWatcher
+  isExternal: false
+  name: Dispose
+  nameWithType: DeviceWatcher.Dispose
+  fullName: DeckSurf.SDK.Core.DeviceWatcher.Dispose
+  monikers:
+  - net10.0
+  type: method
+- uid: DeckSurf.SDK.Core.DeviceWatcher.Finalize*
+  commentId: Overload:DeckSurf.SDK.Core.DeviceWatcher.Finalize
+  parent: DeckSurf.SDK.Core.DeviceWatcher
+  isExternal: false
+  name: Finalize
+  nameWithType: DeviceWatcher.Finalize
+  fullName: DeckSurf.SDK.Core.DeviceWatcher.Finalize
+  monikers:
+  - net10.0
+  type: method
+- uid: DeckSurf.SDK.Core.DeviceWatcher.IsConnected*
+  commentId: Overload:DeckSurf.SDK.Core.DeviceWatcher.IsConnected
+  parent: DeckSurf.SDK.Core.DeviceWatcher
+  isExternal: false
+  name: IsConnected
+  nameWithType: DeviceWatcher.IsConnected
+  fullName: DeckSurf.SDK.Core.DeviceWatcher.IsConnected
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Core.DeviceWatcher.Start*
+  commentId: Overload:DeckSurf.SDK.Core.DeviceWatcher.Start
+  parent: DeckSurf.SDK.Core.DeviceWatcher
+  isExternal: false
+  name: Start
+  nameWithType: DeviceWatcher.Start
+  fullName: DeckSurf.SDK.Core.DeviceWatcher.Start
+  monikers:
+  - net10.0
+  type: method
+- uid: DeckSurf.SDK.Core.DeviceWatcher.Stop*
+  commentId: Overload:DeckSurf.SDK.Core.DeviceWatcher.Stop
+  parent: DeckSurf.SDK.Core.DeviceWatcher
+  isExternal: false
+  name: Stop
+  nameWithType: DeviceWatcher.Stop
+  fullName: DeckSurf.SDK.Core.DeviceWatcher.Stop
+  monikers:
+  - net10.0
+  type: method
+- uid: System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable

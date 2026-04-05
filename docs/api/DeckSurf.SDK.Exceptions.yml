@@ -1,0 +1,60 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Exceptions
+  commentId: N:DeckSurf.SDK.Exceptions
+  id: DeckSurf.SDK.Exceptions
+  children:
+  - DeckSurf.SDK.Exceptions.DeckSurfException
+  - DeckSurf.SDK.Exceptions.DeviceCommunicationException
+  - DeckSurf.SDK.Exceptions.DeviceDisconnectedException
+  - DeckSurf.SDK.Exceptions.DeviceNotFoundException
+  - DeckSurf.SDK.Exceptions.ImageProcessingException
+  langs:
+  - csharp
+  name: DeckSurf.SDK.Exceptions
+  nameWithType: DeckSurf.SDK.Exceptions
+  fullName: DeckSurf.SDK.Exceptions
+  type: Namespace
+  monikers:
+  - net10.0
+references:
+- uid: DeckSurf.SDK.Exceptions.DeckSurfException
+  commentId: T:DeckSurf.SDK.Exceptions.DeckSurfException
+  parent: DeckSurf.SDK.Exceptions
+  isExternal: false
+  name: DeckSurfException
+  nameWithType: DeckSurf.SDK.Exceptions.DeckSurfException
+  fullName: DeckSurf.SDK.Exceptions.DeckSurfException
+  type: class
+- uid: DeckSurf.SDK.Exceptions.DeviceCommunicationException
+  commentId: T:DeckSurf.SDK.Exceptions.DeviceCommunicationException
+  parent: DeckSurf.SDK.Exceptions
+  isExternal: false
+  name: DeviceCommunicationException
+  nameWithType: DeckSurf.SDK.Exceptions.DeviceCommunicationException
+  fullName: DeckSurf.SDK.Exceptions.DeviceCommunicationException
+  type: class
+- uid: DeckSurf.SDK.Exceptions.DeviceDisconnectedException
+  commentId: T:DeckSurf.SDK.Exceptions.DeviceDisconnectedException
+  parent: DeckSurf.SDK.Exceptions
+  isExternal: false
+  name: DeviceDisconnectedException
+  nameWithType: DeckSurf.SDK.Exceptions.DeviceDisconnectedException
+  fullName: DeckSurf.SDK.Exceptions.DeviceDisconnectedException
+  type: class
+- uid: DeckSurf.SDK.Exceptions.DeviceNotFoundException
+  commentId: T:DeckSurf.SDK.Exceptions.DeviceNotFoundException
+  parent: DeckSurf.SDK.Exceptions
+  isExternal: false
+  name: DeviceNotFoundException
+  nameWithType: DeckSurf.SDK.Exceptions.DeviceNotFoundException
+  fullName: DeckSurf.SDK.Exceptions.DeviceNotFoundException
+  type: class
+- uid: DeckSurf.SDK.Exceptions.ImageProcessingException
+  commentId: T:DeckSurf.SDK.Exceptions.ImageProcessingException
+  parent: DeckSurf.SDK.Exceptions
+  isExternal: false
+  name: ImageProcessingException
+  nameWithType: DeckSurf.SDK.Exceptions.ImageProcessingException
+  fullName: DeckSurf.SDK.Exceptions.ImageProcessingException
+  type: class

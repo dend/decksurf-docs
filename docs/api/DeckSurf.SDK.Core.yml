@@ -4,7 +4,10 @@ items:
   commentId: N:DeckSurf.SDK.Core
   id: DeckSurf.SDK.Core
   children:
+  - DeckSurf.SDK.Core.DeckSurfConfiguration
   - DeckSurf.SDK.Core.DeviceManager
+  - DeckSurf.SDK.Core.DeviceRegistry
+  - DeckSurf.SDK.Core.DeviceWatcher
   langs:
   - csharp
   name: DeckSurf.SDK.Core
@@ -12,8 +15,16 @@ items:
   fullName: DeckSurf.SDK.Core
   type: Namespace
   monikers:
-  - net9.0
+  - net10.0
 references:
+- uid: DeckSurf.SDK.Core.DeckSurfConfiguration
+  commentId: T:DeckSurf.SDK.Core.DeckSurfConfiguration
+  parent: DeckSurf.SDK.Core
+  isExternal: false
+  name: DeckSurfConfiguration
+  nameWithType: DeckSurf.SDK.Core.DeckSurfConfiguration
+  fullName: DeckSurf.SDK.Core.DeckSurfConfiguration
+  type: class
 - uid: DeckSurf.SDK.Core.DeviceManager
   commentId: T:DeckSurf.SDK.Core.DeviceManager
   parent: DeckSurf.SDK.Core
@@ -21,4 +32,20 @@ references:
   name: DeviceManager
   nameWithType: DeckSurf.SDK.Core.DeviceManager
   fullName: DeckSurf.SDK.Core.DeviceManager
+  type: class
+- uid: DeckSurf.SDK.Core.DeviceRegistry
+  commentId: T:DeckSurf.SDK.Core.DeviceRegistry
+  parent: DeckSurf.SDK.Core
+  isExternal: false
+  name: DeviceRegistry
+  nameWithType: DeckSurf.SDK.Core.DeviceRegistry
+  fullName: DeckSurf.SDK.Core.DeviceRegistry
+  type: class
+- uid: DeckSurf.SDK.Core.DeviceWatcher
+  commentId: T:DeckSurf.SDK.Core.DeviceWatcher
+  parent: DeckSurf.SDK.Core
+  isExternal: false
+  name: DeviceWatcher
+  nameWithType: DeckSurf.SDK.Core.DeviceWatcher
+  fullName: DeckSurf.SDK.Core.DeviceWatcher
   type: class

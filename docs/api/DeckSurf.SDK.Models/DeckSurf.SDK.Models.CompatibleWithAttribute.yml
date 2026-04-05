@@ -35,10 +35,10 @@ items:
   modifiers.csharp:
   - public
   monikers:
-  - net9.0
+  - net10.0
   _op_AssemblyMonikerMapping:
     DeckSurf.SDK:
-    - net9.0
+    - net10.0
 - uid: DeckSurf.SDK.Models.CompatibleWithAttribute.#ctor(DeckSurf.SDK.Models.DeviceModel)
   commentId: M:DeckSurf.SDK.Models.CompatibleWithAttribute.#ctor(DeckSurf.SDK.Models.DeviceModel)
   id: '#ctor(DeckSurf.SDK.Models.DeviceModel)'
@@ -66,7 +66,7 @@ items:
   modifiers.csharp:
   - public
   monikers:
-  - net9.0
+  - net10.0
 - uid: DeckSurf.SDK.Models.CompatibleWithAttribute.CompatibleModel
   commentId: P:DeckSurf.SDK.Models.CompatibleWithAttribute.CompatibleModel
   id: CompatibleModel
@@ -94,7 +94,7 @@ items:
   - get
   - set
   monikers:
-  - net9.0
+  - net10.0
 references:
 - uid: DeckSurf.SDK.Models
   commentId: N:DeckSurf.SDK.Models
@@ -137,7 +137,7 @@ references:
   nameWithType: CompatibleWithAttribute.CompatibleWithAttribute
   fullName: DeckSurf.SDK.Models.CompatibleWithAttribute.CompatibleWithAttribute
   monikers:
-  - net9.0
+  - net10.0
   type: constructor
 - uid: DeckSurf.SDK.Models.CompatibleWithAttribute.CompatibleModel*
   commentId: Overload:DeckSurf.SDK.Models.CompatibleWithAttribute.CompatibleModel
@@ -147,5 +147,5 @@ references:
   nameWithType: CompatibleWithAttribute.CompatibleModel
   fullName: DeckSurf.SDK.Models.CompatibleWithAttribute.CompatibleModel
   monikers:
-  - net9.0
+  - net10.0
   type: property

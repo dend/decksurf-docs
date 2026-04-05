@@ -32,10 +32,10 @@ items:
   modifiers.csharp:
   - public
   monikers:
-  - net9.0
+  - net10.0
   _op_AssemblyMonikerMapping:
     DeckSurf.SDK:
-    - net9.0
+    - net10.0
 - uid: DeckSurf.SDK.Models.DeviceModel.Mini
   commentId: F:DeckSurf.SDK.Models.DeviceModel.Mini
   id: Mini
@@ -58,7 +58,7 @@ items:
     content.csharp: Mini
   exceptions: []
   monikers:
-  - net9.0
+  - net10.0
   literalValue: "99"
 - uid: DeckSurf.SDK.Models.DeviceModel.Mini2022
   commentId: F:DeckSurf.SDK.Models.DeviceModel.Mini2022
@@ -82,7 +82,7 @@ items:
     content.csharp: Mini2022
   exceptions: []
   monikers:
-  - net9.0
+  - net10.0
   literalValue: "144"
 - uid: DeckSurf.SDK.Models.DeviceModel.MK2
   commentId: F:DeckSurf.SDK.Models.DeviceModel.MK2
@@ -106,7 +106,7 @@ items:
     content.csharp: MK2
   exceptions: []
   monikers:
-  - net9.0
+  - net10.0
   literalValue: "128"
 - uid: DeckSurf.SDK.Models.DeviceModel.MK2Scissor
   commentId: F:DeckSurf.SDK.Models.DeviceModel.MK2Scissor
@@ -121,8 +121,7 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
-  summary: The MK.2 Scissor of the Stream Deck device.
-  remarks: Need to document what the "Scissor" variant actually is.
+  summary: The Stream Deck MK.2 Scissor variant.
   syntax:
     content: MK2Scissor
     return:
@@ -131,7 +130,7 @@ items:
     content.csharp: MK2Scissor
   exceptions: []
   monikers:
-  - net9.0
+  - net10.0
   literalValue: "165"
 - uid: DeckSurf.SDK.Models.DeviceModel.Neo
   commentId: F:DeckSurf.SDK.Models.DeviceModel.Neo
@@ -155,7 +154,7 @@ items:
     content.csharp: Neo
   exceptions: []
   monikers:
-  - net9.0
+  - net10.0
   literalValue: "154"
 - uid: DeckSurf.SDK.Models.DeviceModel.Original
   commentId: F:DeckSurf.SDK.Models.DeviceModel.Original
@@ -179,7 +178,7 @@ items:
     content.csharp: Original
   exceptions: []
   monikers:
-  - net9.0
+  - net10.0
   literalValue: "96"
 - uid: DeckSurf.SDK.Models.DeviceModel.Original2019
   commentId: F:DeckSurf.SDK.Models.DeviceModel.Original2019
@@ -203,7 +202,7 @@ items:
     content.csharp: Original2019
   exceptions: []
   monikers:
-  - net9.0
+  - net10.0
   literalValue: "109"
 - uid: DeckSurf.SDK.Models.DeviceModel.Plus
   commentId: F:DeckSurf.SDK.Models.DeviceModel.Plus
@@ -227,7 +226,7 @@ items:
     content.csharp: Plus
   exceptions: []
   monikers:
-  - net9.0
+  - net10.0
   literalValue: "132"
 - uid: DeckSurf.SDK.Models.DeviceModel.XL
   commentId: F:DeckSurf.SDK.Models.DeviceModel.XL
@@ -251,7 +250,7 @@ items:
     content.csharp: XL
   exceptions: []
   monikers:
-  - net9.0
+  - net10.0
   literalValue: "108"
 - uid: DeckSurf.SDK.Models.DeviceModel.XL2022
   commentId: F:DeckSurf.SDK.Models.DeviceModel.XL2022
@@ -275,7 +274,7 @@ items:
     content.csharp: XL2022
   exceptions: []
   monikers:
-  - net9.0
+  - net10.0
   literalValue: "143"
 references:
 - uid: DeckSurf.SDK.Models

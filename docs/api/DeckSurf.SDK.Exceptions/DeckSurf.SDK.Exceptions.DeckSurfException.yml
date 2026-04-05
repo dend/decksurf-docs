@@ -1,0 +1,205 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Exceptions.DeckSurfException
+  commentId: T:DeckSurf.SDK.Exceptions.DeckSurfException
+  id: DeckSurfException
+  children:
+  - DeckSurf.SDK.Exceptions.DeckSurfException.#ctor
+  - DeckSurf.SDK.Exceptions.DeckSurfException.#ctor(System.String)
+  - DeckSurf.SDK.Exceptions.DeckSurfException.#ctor(System.String,System.Exception)
+  langs:
+  - csharp
+  name: DeckSurfException
+  nameWithType: DeckSurf.SDK.Exceptions.DeckSurfException
+  fullName: DeckSurf.SDK.Exceptions.DeckSurfException
+  type: Class
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Exceptions
+  summary: Base exception for all DeckSurf SDK errors.
+  syntax:
+    content: 'public class DeckSurfException : Exception'
+    content.csharp: 'public class DeckSurfException : Exception'
+  inheritance:
+  - System.Exception
+  derivedClasses:
+  - DeckSurf.SDK.Exceptions.DeviceCommunicationException
+  - DeckSurf.SDK.Exceptions.DeviceDisconnectedException
+  - DeckSurf.SDK.Exceptions.DeviceNotFoundException
+  - DeckSurf.SDK.Exceptions.ImageProcessingException
+  implements: []
+  inheritedMembers: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net10.0
+- uid: DeckSurf.SDK.Exceptions.DeckSurfException.#ctor
+  commentId: M:DeckSurf.SDK.Exceptions.DeckSurfException.#ctor
+  id: '#ctor'
+  parent: DeckSurf.SDK.Exceptions.DeckSurfException
+  langs:
+  - csharp
+  name: DeckSurfException()
+  nameWithType: DeckSurfException.DeckSurfException()
+  fullName: DeckSurf.SDK.Exceptions.DeckSurfException.DeckSurfException()
+  type: Constructor
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Exceptions
+  summary: Initializes a new instance of the <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Exceptions.DeckSurfException"></xref> class.
+  syntax:
+    content: public DeckSurfException ();
+    parameters: []
+    content.csharp: public DeckSurfException ();
+  overload: DeckSurf.SDK.Exceptions.DeckSurfException.#ctor*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Exceptions.DeckSurfException.#ctor(System.String)
+  commentId: M:DeckSurf.SDK.Exceptions.DeckSurfException.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: DeckSurf.SDK.Exceptions.DeckSurfException
+  langs:
+  - csharp
+  name: DeckSurfException(String)
+  nameWithType: DeckSurfException.DeckSurfException(String)
+  fullName: DeckSurf.SDK.Exceptions.DeckSurfException.DeckSurfException(String)
+  type: Constructor
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Exceptions
+  summary: Initializes a new instance of the <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Exceptions.DeckSurfException"></xref> class with a specified error message.
+  syntax:
+    content: public DeckSurfException (string message);
+    parameters:
+    - id: message
+      type: System.String
+      description: The message that describes the error.
+    content.csharp: public DeckSurfException (string message);
+  overload: DeckSurf.SDK.Exceptions.DeckSurfException.#ctor*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Exceptions.DeckSurfException.#ctor(System.String,System.Exception)
+  commentId: M:DeckSurf.SDK.Exceptions.DeckSurfException.#ctor(System.String,System.Exception)
+  id: '#ctor(System.String,System.Exception)'
+  parent: DeckSurf.SDK.Exceptions.DeckSurfException
+  langs:
+  - csharp
+  name: DeckSurfException(String, Exception)
+  nameWithType: DeckSurfException.DeckSurfException(String, Exception)
+  fullName: DeckSurf.SDK.Exceptions.DeckSurfException.DeckSurfException(String, Exception)
+  type: Constructor
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Exceptions
+  summary: >-
+    Initializes a new instance of the <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Exceptions.DeckSurfException"></xref> class with a specified error message
+
+    and a reference to the inner exception that is the cause of this exception.
+  syntax:
+    content: public DeckSurfException (string message, Exception innerException);
+    parameters:
+    - id: message
+      type: System.String
+      description: The message that describes the error.
+    - id: innerException
+      type: System.Exception
+      description: The exception that is the cause of the current exception.
+    content.csharp: public DeckSurfException (string message, Exception innerException);
+  overload: DeckSurf.SDK.Exceptions.DeckSurfException.#ctor*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+references:
+- uid: DeckSurf.SDK.Exceptions
+  commentId: N:DeckSurf.SDK.Exceptions
+  isExternal: false
+  name: DeckSurf.SDK.Exceptions
+  nameWithType: DeckSurf.SDK.Exceptions
+  fullName: DeckSurf.SDK.Exceptions
+  type: namespace
+- uid: System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: DeckSurf.SDK.Exceptions.DeckSurfException.#ctor
+  parent: DeckSurf.SDK.Exceptions.DeckSurfException
+  isExternal: false
+  name: DeckSurfException()
+  nameWithType: DeckSurfException.DeckSurfException()
+  fullName: DeckSurf.SDK.Exceptions.DeckSurfException.DeckSurfException()
+  type: constructor
+- uid: DeckSurf.SDK.Exceptions.DeckSurfException.#ctor(System.String)
+  parent: DeckSurf.SDK.Exceptions.DeckSurfException
+  isExternal: false
+  name: DeckSurfException(String)
+  nameWithType: DeckSurfException.DeckSurfException(String)
+  fullName: DeckSurf.SDK.Exceptions.DeckSurfException.DeckSurfException(String)
+  type: constructor
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DeckSurf.SDK.Exceptions.DeckSurfException.#ctor(System.String,System.Exception)
+  parent: DeckSurf.SDK.Exceptions.DeckSurfException
+  isExternal: false
+  name: DeckSurfException(String, Exception)
+  nameWithType: DeckSurfException.DeckSurfException(String, Exception)
+  fullName: DeckSurf.SDK.Exceptions.DeckSurfException.DeckSurfException(String, Exception)
+  type: constructor
+- uid: DeckSurf.SDK.Exceptions.DeckSurfException.#ctor*
+  commentId: Overload:DeckSurf.SDK.Exceptions.DeckSurfException.#ctor
+  parent: DeckSurf.SDK.Exceptions.DeckSurfException
+  isExternal: false
+  name: DeckSurfException
+  nameWithType: DeckSurfException.DeckSurfException
+  fullName: DeckSurf.SDK.Exceptions.DeckSurfException.DeckSurfException
+  monikers:
+  - net10.0
+  type: constructor
+- uid: DeckSurf.SDK.Exceptions.DeviceCommunicationException
+  commentId: T:DeckSurf.SDK.Exceptions.DeviceCommunicationException
+  parent: DeckSurf.SDK.Exceptions
+  isExternal: false
+  name: DeviceCommunicationException
+  nameWithType: DeckSurf.SDK.Exceptions.DeviceCommunicationException
+  fullName: DeckSurf.SDK.Exceptions.DeviceCommunicationException
+  type: class
+- uid: DeckSurf.SDK.Exceptions.DeviceDisconnectedException
+  commentId: T:DeckSurf.SDK.Exceptions.DeviceDisconnectedException
+  parent: DeckSurf.SDK.Exceptions
+  isExternal: false
+  name: DeviceDisconnectedException
+  nameWithType: DeckSurf.SDK.Exceptions.DeviceDisconnectedException
+  fullName: DeckSurf.SDK.Exceptions.DeviceDisconnectedException
+  type: class
+- uid: DeckSurf.SDK.Exceptions.DeviceNotFoundException
+  commentId: T:DeckSurf.SDK.Exceptions.DeviceNotFoundException
+  parent: DeckSurf.SDK.Exceptions
+  isExternal: false
+  name: DeviceNotFoundException
+  nameWithType: DeckSurf.SDK.Exceptions.DeviceNotFoundException
+  fullName: DeckSurf.SDK.Exceptions.DeviceNotFoundException
+  type: class
+- uid: DeckSurf.SDK.Exceptions.ImageProcessingException
+  commentId: T:DeckSurf.SDK.Exceptions.ImageProcessingException
+  parent: DeckSurf.SDK.Exceptions
+  isExternal: false
+  name: ImageProcessingException
+  nameWithType: DeckSurf.SDK.Exceptions.ImageProcessingException
+  fullName: DeckSurf.SDK.Exceptions.ImageProcessingException
+  type: class

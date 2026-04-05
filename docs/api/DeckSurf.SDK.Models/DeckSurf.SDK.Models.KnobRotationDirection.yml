@@ -25,10 +25,10 @@ items:
   modifiers.csharp:
   - public
   monikers:
-  - net9.0
+  - net10.0
   _op_AssemblyMonikerMapping:
     DeckSurf.SDK:
-    - net9.0
+    - net10.0
 - uid: DeckSurf.SDK.Models.KnobRotationDirection.Left
   commentId: F:DeckSurf.SDK.Models.KnobRotationDirection.Left
   id: Left
@@ -51,7 +51,7 @@ items:
     content.csharp: Left
   exceptions: []
   monikers:
-  - net9.0
+  - net10.0
   literalValue: "1"
 - uid: DeckSurf.SDK.Models.KnobRotationDirection.None
   commentId: F:DeckSurf.SDK.Models.KnobRotationDirection.None
@@ -75,7 +75,7 @@ items:
     content.csharp: None
   exceptions: []
   monikers:
-  - net9.0
+  - net10.0
   literalValue: "2"
 - uid: DeckSurf.SDK.Models.KnobRotationDirection.Right
   commentId: F:DeckSurf.SDK.Models.KnobRotationDirection.Right
@@ -99,7 +99,7 @@ items:
     content.csharp: Right
   exceptions: []
   monikers:
-  - net9.0
+  - net10.0
   literalValue: "0"
 references:
 - uid: DeckSurf.SDK.Models

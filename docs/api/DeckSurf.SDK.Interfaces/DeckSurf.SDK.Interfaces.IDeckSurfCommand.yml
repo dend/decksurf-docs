@@ -1,0 +1,325 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Interfaces.IDeckSurfCommand
+  commentId: T:DeckSurf.SDK.Interfaces.IDeckSurfCommand
+  id: IDeckSurfCommand
+  children:
+  - DeckSurf.SDK.Interfaces.IDeckSurfCommand.Description
+  - DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnAction(DeckSurf.SDK.Models.CommandMapping,DeckSurf.SDK.Interfaces.IConnectedDevice,System.Int32)
+  - DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnActionAsync(DeckSurf.SDK.Models.CommandMapping,DeckSurf.SDK.Interfaces.IConnectedDevice,System.Int32,System.Threading.CancellationToken)
+  - DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnActivation(DeckSurf.SDK.Models.CommandMapping,DeckSurf.SDK.Interfaces.IConnectedDevice)
+  - DeckSurf.SDK.Interfaces.IDeckSurfCommand.Name
+  langs:
+  - csharp
+  name: IDeckSurfCommand
+  nameWithType: DeckSurf.SDK.Interfaces.IDeckSurfCommand
+  fullName: DeckSurf.SDK.Interfaces.IDeckSurfCommand
+  type: Interface
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Interfaces
+  summary: Interface used to implement executable commands for a DeckSurf plugin.
+  syntax:
+    content: 'public interface IDeckSurfCommand : IDisposable'
+    content.csharp: 'public interface IDeckSurfCommand : IDisposable'
+  implements:
+  - System.IDisposable
+  inheritedMembers: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net10.0
+- uid: DeckSurf.SDK.Interfaces.IDeckSurfCommand.Description
+  commentId: P:DeckSurf.SDK.Interfaces.IDeckSurfCommand.Description
+  id: Description
+  parent: DeckSurf.SDK.Interfaces.IDeckSurfCommand
+  langs:
+  - csharp
+  name: Description
+  nameWithType: IDeckSurfCommand.Description
+  fullName: DeckSurf.SDK.Interfaces.IDeckSurfCommand.Description
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Interfaces
+  summary: Gets the description of the command.
+  syntax:
+    content: public string Description { get; }
+    return:
+      type: System.String
+      description: ''
+    content.csharp: public string Description { get; }
+  overload: DeckSurf.SDK.Interfaces.IDeckSurfCommand.Description*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnAction(DeckSurf.SDK.Models.CommandMapping,DeckSurf.SDK.Interfaces.IConnectedDevice,System.Int32)
+  commentId: M:DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnAction(DeckSurf.SDK.Models.CommandMapping,DeckSurf.SDK.Interfaces.IConnectedDevice,System.Int32)
+  id: ExecuteOnAction(DeckSurf.SDK.Models.CommandMapping,DeckSurf.SDK.Interfaces.IConnectedDevice,System.Int32)
+  parent: DeckSurf.SDK.Interfaces.IDeckSurfCommand
+  langs:
+  - csharp
+  name: ExecuteOnAction(CommandMapping, IConnectedDevice, Int32)
+  nameWithType: IDeckSurfCommand.ExecuteOnAction(CommandMapping, IConnectedDevice, Int32)
+  fullName: DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnAction(CommandMapping, IConnectedDevice, Int32)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Interfaces
+  summary: Function that is executed when the command is triggered by a mapped button.
+  syntax:
+    content: public void ExecuteOnAction (DeckSurf.SDK.Models.CommandMapping mappedCommand, DeckSurf.SDK.Interfaces.IConnectedDevice mappedDevice, int activatingButton = -1);
+    parameters:
+    - id: mappedCommand
+      type: DeckSurf.SDK.Models.CommandMapping
+      description: Instance of a command mapped to a button.
+    - id: mappedDevice
+      type: DeckSurf.SDK.Interfaces.IConnectedDevice
+      description: Connected Stream Deck device.
+    - id: activatingButton
+      type: System.Int32
+      description: The numeric ID of the button activating the command. -1 is used for any button on the Stream Deck surface.
+    content.csharp: public void ExecuteOnAction (DeckSurf.SDK.Models.CommandMapping mappedCommand, DeckSurf.SDK.Interfaces.IConnectedDevice mappedDevice, int activatingButton = -1);
+  overload: DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnAction*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnActionAsync(DeckSurf.SDK.Models.CommandMapping,DeckSurf.SDK.Interfaces.IConnectedDevice,System.Int32,System.Threading.CancellationToken)
+  commentId: M:DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnActionAsync(DeckSurf.SDK.Models.CommandMapping,DeckSurf.SDK.Interfaces.IConnectedDevice,System.Int32,System.Threading.CancellationToken)
+  id: ExecuteOnActionAsync(DeckSurf.SDK.Models.CommandMapping,DeckSurf.SDK.Interfaces.IConnectedDevice,System.Int32,System.Threading.CancellationToken)
+  parent: DeckSurf.SDK.Interfaces.IDeckSurfCommand
+  langs:
+  - csharp
+  name: ExecuteOnActionAsync(CommandMapping, IConnectedDevice, Int32, CancellationToken)
+  nameWithType: IDeckSurfCommand.ExecuteOnActionAsync(CommandMapping, IConnectedDevice, Int32, CancellationToken)
+  fullName: DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnActionAsync(CommandMapping, IConnectedDevice, Int32, CancellationToken)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Interfaces
+  summary: Async version of ExecuteOnAction. Override for commands that need async operations.
+  syntax:
+    content: public virtual System.Threading.Tasks.Task ExecuteOnActionAsync (DeckSurf.SDK.Models.CommandMapping mappedCommand, DeckSurf.SDK.Interfaces.IConnectedDevice mappedDevice, int activatingButton = -1, System.Threading.CancellationToken cancellationToken = default);
+    parameters:
+    - id: mappedCommand
+      type: DeckSurf.SDK.Models.CommandMapping
+      description: Instance of a command mapped to a button.
+    - id: mappedDevice
+      type: DeckSurf.SDK.Interfaces.IConnectedDevice
+      description: Connected Stream Deck device.
+    - id: activatingButton
+      type: System.Int32
+      description: The numeric ID of the button activating the command. -1 is used for any button on the Stream Deck surface.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token to cancel the async operation.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task representing the asynchronous operation.
+    content.csharp: public virtual System.Threading.Tasks.Task ExecuteOnActionAsync (DeckSurf.SDK.Models.CommandMapping mappedCommand, DeckSurf.SDK.Interfaces.IConnectedDevice mappedDevice, int activatingButton = -1, System.Threading.CancellationToken cancellationToken = default);
+  overload: DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnActionAsync*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnActivation(DeckSurf.SDK.Models.CommandMapping,DeckSurf.SDK.Interfaces.IConnectedDevice)
+  commentId: M:DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnActivation(DeckSurf.SDK.Models.CommandMapping,DeckSurf.SDK.Interfaces.IConnectedDevice)
+  id: ExecuteOnActivation(DeckSurf.SDK.Models.CommandMapping,DeckSurf.SDK.Interfaces.IConnectedDevice)
+  parent: DeckSurf.SDK.Interfaces.IDeckSurfCommand
+  langs:
+  - csharp
+  name: ExecuteOnActivation(CommandMapping, IConnectedDevice)
+  nameWithType: IDeckSurfCommand.ExecuteOnActivation(CommandMapping, IConnectedDevice)
+  fullName: DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnActivation(CommandMapping, IConnectedDevice)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Interfaces
+  summary: Function that is executed when the command is initialized by the plugin loader.
+  syntax:
+    content: public void ExecuteOnActivation (DeckSurf.SDK.Models.CommandMapping mappedCommand, DeckSurf.SDK.Interfaces.IConnectedDevice mappedDevice);
+    parameters:
+    - id: mappedCommand
+      type: DeckSurf.SDK.Models.CommandMapping
+      description: Instance of a command mapped to a button.
+    - id: mappedDevice
+      type: DeckSurf.SDK.Interfaces.IConnectedDevice
+      description: Connected Stream Deck device.
+    content.csharp: public void ExecuteOnActivation (DeckSurf.SDK.Models.CommandMapping mappedCommand, DeckSurf.SDK.Interfaces.IConnectedDevice mappedDevice);
+  overload: DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnActivation*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Interfaces.IDeckSurfCommand.Name
+  commentId: P:DeckSurf.SDK.Interfaces.IDeckSurfCommand.Name
+  id: Name
+  parent: DeckSurf.SDK.Interfaces.IDeckSurfCommand
+  langs:
+  - csharp
+  name: Name
+  nameWithType: IDeckSurfCommand.Name
+  fullName: DeckSurf.SDK.Interfaces.IDeckSurfCommand.Name
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Interfaces
+  summary: Gets the name of the command.
+  syntax:
+    content: public string Name { get; }
+    return:
+      type: System.String
+      description: ''
+    content.csharp: public string Name { get; }
+  overload: DeckSurf.SDK.Interfaces.IDeckSurfCommand.Name*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net10.0
+references:
+- uid: DeckSurf.SDK.Interfaces
+  commentId: N:DeckSurf.SDK.Interfaces
+  isExternal: false
+  name: DeckSurf.SDK.Interfaces
+  nameWithType: DeckSurf.SDK.Interfaces
+  fullName: DeckSurf.SDK.Interfaces
+  type: namespace
+- uid: DeckSurf.SDK.Interfaces.IDeckSurfCommand.Description
+  parent: DeckSurf.SDK.Interfaces.IDeckSurfCommand
+  isExternal: false
+  name: Description
+  nameWithType: IDeckSurfCommand.Description
+  fullName: DeckSurf.SDK.Interfaces.IDeckSurfCommand.Description
+  type: property
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnAction(DeckSurf.SDK.Models.CommandMapping,DeckSurf.SDK.Interfaces.IConnectedDevice,System.Int32)
+  parent: DeckSurf.SDK.Interfaces.IDeckSurfCommand
+  isExternal: false
+  name: ExecuteOnAction(CommandMapping, IConnectedDevice, Int32)
+  nameWithType: IDeckSurfCommand.ExecuteOnAction(CommandMapping, IConnectedDevice, Int32)
+  fullName: DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnAction(CommandMapping, IConnectedDevice, Int32)
+  type: method
+- uid: DeckSurf.SDK.Models.CommandMapping
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: CommandMapping
+  nameWithType: CommandMapping
+  fullName: DeckSurf.SDK.Models.CommandMapping
+- uid: DeckSurf.SDK.Interfaces.IConnectedDevice
+  parent: DeckSurf.SDK.Interfaces
+  isExternal: false
+  name: IConnectedDevice
+  nameWithType: IConnectedDevice
+  fullName: DeckSurf.SDK.Interfaces.IConnectedDevice
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnActionAsync(DeckSurf.SDK.Models.CommandMapping,DeckSurf.SDK.Interfaces.IConnectedDevice,System.Int32,System.Threading.CancellationToken)
+  parent: DeckSurf.SDK.Interfaces.IDeckSurfCommand
+  isExternal: false
+  name: ExecuteOnActionAsync(CommandMapping, IConnectedDevice, Int32, CancellationToken)
+  nameWithType: IDeckSurfCommand.ExecuteOnActionAsync(CommandMapping, IConnectedDevice, Int32, CancellationToken)
+  fullName: DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnActionAsync(CommandMapping, IConnectedDevice, Int32, CancellationToken)
+  type: method
+- uid: System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnActivation(DeckSurf.SDK.Models.CommandMapping,DeckSurf.SDK.Interfaces.IConnectedDevice)
+  parent: DeckSurf.SDK.Interfaces.IDeckSurfCommand
+  isExternal: false
+  name: ExecuteOnActivation(CommandMapping, IConnectedDevice)
+  nameWithType: IDeckSurfCommand.ExecuteOnActivation(CommandMapping, IConnectedDevice)
+  fullName: DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnActivation(CommandMapping, IConnectedDevice)
+  type: method
+- uid: DeckSurf.SDK.Interfaces.IDeckSurfCommand.Name
+  parent: DeckSurf.SDK.Interfaces.IDeckSurfCommand
+  isExternal: false
+  name: Name
+  nameWithType: IDeckSurfCommand.Name
+  fullName: DeckSurf.SDK.Interfaces.IDeckSurfCommand.Name
+  type: property
+- uid: DeckSurf.SDK.Interfaces.IDeckSurfCommand.Description*
+  commentId: Overload:DeckSurf.SDK.Interfaces.IDeckSurfCommand.Description
+  parent: DeckSurf.SDK.Interfaces.IDeckSurfCommand
+  isExternal: false
+  name: Description
+  nameWithType: IDeckSurfCommand.Description
+  fullName: DeckSurf.SDK.Interfaces.IDeckSurfCommand.Description
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnAction*
+  commentId: Overload:DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnAction
+  parent: DeckSurf.SDK.Interfaces.IDeckSurfCommand
+  isExternal: false
+  name: ExecuteOnAction
+  nameWithType: IDeckSurfCommand.ExecuteOnAction
+  fullName: DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnAction
+  monikers:
+  - net10.0
+  type: method
+- uid: DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnActionAsync*
+  commentId: Overload:DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnActionAsync
+  parent: DeckSurf.SDK.Interfaces.IDeckSurfCommand
+  isExternal: false
+  name: ExecuteOnActionAsync
+  nameWithType: IDeckSurfCommand.ExecuteOnActionAsync
+  fullName: DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnActionAsync
+  monikers:
+  - net10.0
+  type: method
+- uid: DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnActivation*
+  commentId: Overload:DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnActivation
+  parent: DeckSurf.SDK.Interfaces.IDeckSurfCommand
+  isExternal: false
+  name: ExecuteOnActivation
+  nameWithType: IDeckSurfCommand.ExecuteOnActivation
+  fullName: DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnActivation
+  monikers:
+  - net10.0
+  type: method
+- uid: DeckSurf.SDK.Interfaces.IDeckSurfCommand.Name*
+  commentId: Overload:DeckSurf.SDK.Interfaces.IDeckSurfCommand.Name
+  parent: DeckSurf.SDK.Interfaces.IDeckSurfCommand
+  isExternal: false
+  name: Name
+  nameWithType: IDeckSurfCommand.Name
+  fullName: DeckSurf.SDK.Interfaces.IDeckSurfCommand.Name
+  monikers:
+  - net10.0
+  type: property
+- uid: System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable

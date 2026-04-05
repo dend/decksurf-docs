@@ -26,10 +26,10 @@ items:
   modifiers.csharp:
   - public
   monikers:
-  - net9.0
+  - net10.0
   _op_AssemblyMonikerMapping:
     DeckSurf.SDK:
-    - net9.0
+    - net10.0
 - uid: DeckSurf.SDK.Models.ButtonKind.Button
   commentId: F:DeckSurf.SDK.Models.ButtonKind.Button
   id: Button
@@ -52,7 +52,7 @@ items:
     content.csharp: Button
   exceptions: []
   monikers:
-  - net9.0
+  - net10.0
   literalValue: "0"
 - uid: DeckSurf.SDK.Models.ButtonKind.Knob
   commentId: F:DeckSurf.SDK.Models.ButtonKind.Knob
@@ -76,7 +76,7 @@ items:
     content.csharp: Knob
   exceptions: []
   monikers:
-  - net9.0
+  - net10.0
   literalValue: "1"
 - uid: DeckSurf.SDK.Models.ButtonKind.Screen
   commentId: F:DeckSurf.SDK.Models.ButtonKind.Screen
@@ -100,7 +100,7 @@ items:
     content.csharp: Screen
   exceptions: []
   monikers:
-  - net9.0
+  - net10.0
   literalValue: "2"
 - uid: DeckSurf.SDK.Models.ButtonKind.Unknown
   commentId: F:DeckSurf.SDK.Models.ButtonKind.Unknown
@@ -124,7 +124,7 @@ items:
     content.csharp: Unknown
   exceptions: []
   monikers:
-  - net9.0
+  - net10.0
   literalValue: "3"
 references:
 - uid: DeckSurf.SDK.Models

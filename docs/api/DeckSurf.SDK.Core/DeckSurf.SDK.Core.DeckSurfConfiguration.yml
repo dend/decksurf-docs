@@ -1,0 +1,116 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Core.DeckSurfConfiguration
+  commentId: T:DeckSurf.SDK.Core.DeckSurfConfiguration
+  id: DeckSurfConfiguration
+  children:
+  - DeckSurf.SDK.Core.DeckSurfConfiguration.LoggerFactory
+  langs:
+  - csharp
+  name: DeckSurfConfiguration
+  nameWithType: DeckSurf.SDK.Core.DeckSurfConfiguration
+  fullName: DeckSurf.SDK.Core.DeckSurfConfiguration
+  type: Class
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Core
+  summary: Provides global configuration for the DeckSurf SDK.
+  remarks: >-
+    Set <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Core.DeckSurfConfiguration.LoggerFactory"></xref> before creating any device instances to enable
+
+    structured logging throughout the SDK. When no factory is configured, all log
+
+    calls are no-ops via <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.Logging.Abstractions.NullLoggerFactory"></xref>.
+  syntax:
+    content: >-
+      [[System.Runtime.CompilerServices.Nullable(0)]]
+
+      [[System.Runtime.CompilerServices.NullableContext(2)]]
+
+      public static class DeckSurfConfiguration
+    content.csharp: >-
+      [[System.Runtime.CompilerServices.Nullable(0)]]
+
+      [[System.Runtime.CompilerServices.NullableContext(2)]]
+
+      public static class DeckSurfConfiguration
+  inheritance:
+  - System.Object
+  implements: []
+  attributes:
+  - type: '[System.Runtime.CompilerServices.NullableAttribute'
+  - type: '[System.Runtime.CompilerServices.NullableContextAttribute'
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net10.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net10.0
+- uid: DeckSurf.SDK.Core.DeckSurfConfiguration.LoggerFactory
+  commentId: P:DeckSurf.SDK.Core.DeckSurfConfiguration.LoggerFactory
+  id: LoggerFactory
+  parent: DeckSurf.SDK.Core.DeckSurfConfiguration
+  langs:
+  - csharp
+  name: LoggerFactory
+  nameWithType: DeckSurfConfiguration.LoggerFactory
+  fullName: DeckSurf.SDK.Core.DeckSurfConfiguration.LoggerFactory
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Core
+  summary: Gets or sets the <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.Logging.ILoggerFactory"></xref> used to create loggers for SDK components.
+  syntax:
+    content: public static Microsoft.Extensions.Logging.ILoggerFactory? LoggerFactory { get; set; }
+    return:
+      type: Microsoft.Extensions.Logging.ILoggerFactory
+      description: An <xref data-throw-if-not-resolved="true" uid="Microsoft.Extensions.Logging.ILoggerFactory"></xref> instance, or <code data-dev-comment-type="langword">null</code> to use the default no-op logger.
+    content.csharp: public static Microsoft.Extensions.Logging.ILoggerFactory? LoggerFactory { get; set; }
+  overload: DeckSurf.SDK.Core.DeckSurfConfiguration.LoggerFactory*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  - set
+  monikers:
+  - net10.0
+references:
+- uid: DeckSurf.SDK.Core
+  commentId: N:DeckSurf.SDK.Core
+  isExternal: false
+  name: DeckSurf.SDK.Core
+  nameWithType: DeckSurf.SDK.Core
+  fullName: DeckSurf.SDK.Core
+  type: namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: DeckSurf.SDK.Core.DeckSurfConfiguration.LoggerFactory
+  parent: DeckSurf.SDK.Core.DeckSurfConfiguration
+  isExternal: false
+  name: LoggerFactory
+  nameWithType: DeckSurfConfiguration.LoggerFactory
+  fullName: DeckSurf.SDK.Core.DeckSurfConfiguration.LoggerFactory
+  type: property
+- uid: Microsoft.Extensions.Logging.ILoggerFactory
+  parent: Microsoft.Extensions.Logging
+  isExternal: true
+  name: ILoggerFactory
+  nameWithType: ILoggerFactory
+  fullName: Microsoft.Extensions.Logging.ILoggerFactory
+- uid: DeckSurf.SDK.Core.DeckSurfConfiguration.LoggerFactory*
+  commentId: Overload:DeckSurf.SDK.Core.DeckSurfConfiguration.LoggerFactory
+  parent: DeckSurf.SDK.Core.DeckSurfConfiguration
+  isExternal: false
+  name: LoggerFactory
+  nameWithType: DeckSurfConfiguration.LoggerFactory
+  fullName: DeckSurf.SDK.Core.DeckSurfConfiguration.LoggerFactory
+  monikers:
+  - net10.0
+  type: property

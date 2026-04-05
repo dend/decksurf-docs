@@ -11,11 +11,18 @@ items:
   - DeckSurf.SDK.Models.CompatibleWithAttribute
   - DeckSurf.SDK.Models.ConfigurationProfile
   - DeckSurf.SDK.Models.ConnectedDevice
-  - DeckSurf.SDK.Models.ConnectedDevice.ReceivedButtonPressHandler
+  - DeckSurf.SDK.Models.DeviceColor
+  - DeckSurf.SDK.Models.DeviceErrorCategory
+  - DeckSurf.SDK.Models.DeviceErrorEventArgs
+  - DeckSurf.SDK.Models.DeviceImageFormat
+  - DeckSurf.SDK.Models.DeviceInfo
+  - DeckSurf.SDK.Models.DeviceListChangedEventArgs
   - DeckSurf.SDK.Models.DeviceModel
+  - DeckSurf.SDK.Models.DeviceRotation
   - DeckSurf.SDK.Models.KnobRotationDirection
   - DeckSurf.SDK.Models.PluginMetadata
   - DeckSurf.SDK.Models.SIIGBF
+  - DeckSurf.SDK.Models.TouchPoint
   langs:
   - csharp
   name: DeckSurf.SDK.Models
@@ -23,7 +30,7 @@ items:
   fullName: DeckSurf.SDK.Models
   type: Namespace
   monikers:
-  - net9.0
+  - net10.0
 references:
 - uid: DeckSurf.SDK.Models.ButtonEventKind
   commentId: T:DeckSurf.SDK.Models.ButtonEventKind
@@ -81,14 +88,54 @@ references:
   nameWithType: DeckSurf.SDK.Models.ConnectedDevice
   fullName: DeckSurf.SDK.Models.ConnectedDevice
   type: class
-- uid: DeckSurf.SDK.Models.ConnectedDevice.ReceivedButtonPressHandler
-  commentId: T:DeckSurf.SDK.Models.ConnectedDevice.ReceivedButtonPressHandler
+- uid: DeckSurf.SDK.Models.DeviceColor
+  commentId: T:DeckSurf.SDK.Models.DeviceColor
   parent: DeckSurf.SDK.Models
   isExternal: false
-  name: ConnectedDevice.ReceivedButtonPressHandler
-  nameWithType: DeckSurf.SDK.Models.ConnectedDevice.ReceivedButtonPressHandler
-  fullName: DeckSurf.SDK.Models.ConnectedDevice.ReceivedButtonPressHandler
-  type: delegate
+  name: DeviceColor
+  nameWithType: DeckSurf.SDK.Models.DeviceColor
+  fullName: DeckSurf.SDK.Models.DeviceColor
+  type: struct
+- uid: DeckSurf.SDK.Models.DeviceErrorCategory
+  commentId: T:DeckSurf.SDK.Models.DeviceErrorCategory
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: DeviceErrorCategory
+  nameWithType: DeckSurf.SDK.Models.DeviceErrorCategory
+  fullName: DeckSurf.SDK.Models.DeviceErrorCategory
+  type: enum
+- uid: DeckSurf.SDK.Models.DeviceErrorEventArgs
+  commentId: T:DeckSurf.SDK.Models.DeviceErrorEventArgs
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: DeviceErrorEventArgs
+  nameWithType: DeckSurf.SDK.Models.DeviceErrorEventArgs
+  fullName: DeckSurf.SDK.Models.DeviceErrorEventArgs
+  type: class
+- uid: DeckSurf.SDK.Models.DeviceImageFormat
+  commentId: T:DeckSurf.SDK.Models.DeviceImageFormat
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: DeviceImageFormat
+  nameWithType: DeckSurf.SDK.Models.DeviceImageFormat
+  fullName: DeckSurf.SDK.Models.DeviceImageFormat
+  type: enum
+- uid: DeckSurf.SDK.Models.DeviceInfo
+  commentId: T:DeckSurf.SDK.Models.DeviceInfo
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: DeviceInfo
+  nameWithType: DeckSurf.SDK.Models.DeviceInfo
+  fullName: DeckSurf.SDK.Models.DeviceInfo
+  type: struct
+- uid: DeckSurf.SDK.Models.DeviceListChangedEventArgs
+  commentId: T:DeckSurf.SDK.Models.DeviceListChangedEventArgs
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: DeviceListChangedEventArgs
+  nameWithType: DeckSurf.SDK.Models.DeviceListChangedEventArgs
+  fullName: DeckSurf.SDK.Models.DeviceListChangedEventArgs
+  type: class
 - uid: DeckSurf.SDK.Models.DeviceModel
   commentId: T:DeckSurf.SDK.Models.DeviceModel
   parent: DeckSurf.SDK.Models
@@ -96,6 +143,14 @@ references:
   name: DeviceModel
   nameWithType: DeckSurf.SDK.Models.DeviceModel
   fullName: DeckSurf.SDK.Models.DeviceModel
+  type: enum
+- uid: DeckSurf.SDK.Models.DeviceRotation
+  commentId: T:DeckSurf.SDK.Models.DeviceRotation
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: DeviceRotation
+  nameWithType: DeckSurf.SDK.Models.DeviceRotation
+  fullName: DeckSurf.SDK.Models.DeviceRotation
   type: enum
 - uid: DeckSurf.SDK.Models.KnobRotationDirection
   commentId: T:DeckSurf.SDK.Models.KnobRotationDirection
@@ -121,3 +176,11 @@ references:
   nameWithType: DeckSurf.SDK.Models.SIIGBF
   fullName: DeckSurf.SDK.Models.SIIGBF
   type: enum
+- uid: DeckSurf.SDK.Models.TouchPoint
+  commentId: T:DeckSurf.SDK.Models.TouchPoint
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: TouchPoint
+  nameWithType: DeckSurf.SDK.Models.TouchPoint
+  fullName: DeckSurf.SDK.Models.TouchPoint
+  type: struct

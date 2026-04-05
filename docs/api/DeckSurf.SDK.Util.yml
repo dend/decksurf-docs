@@ -4,9 +4,10 @@ items:
   commentId: N:DeckSurf.SDK.Util
   id: DeckSurf.SDK.Util
   children:
+  - DeckSurf.SDK.Util.CommandArgumentParser
   - DeckSurf.SDK.Util.ConfigurationHelper
-  - DeckSurf.SDK.Util.DataHelpers
-  - DeckSurf.SDK.Util.ImageHelpers
+  - DeckSurf.SDK.Util.DataHelper
+  - DeckSurf.SDK.Util.ImageHelper
   langs:
   - csharp
   name: DeckSurf.SDK.Util
@@ -14,8 +15,16 @@ items:
   fullName: DeckSurf.SDK.Util
   type: Namespace
   monikers:
-  - net9.0
+  - net10.0
 references:
+- uid: DeckSurf.SDK.Util.CommandArgumentParser
+  commentId: T:DeckSurf.SDK.Util.CommandArgumentParser
+  parent: DeckSurf.SDK.Util
+  isExternal: false
+  name: CommandArgumentParser
+  nameWithType: DeckSurf.SDK.Util.CommandArgumentParser
+  fullName: DeckSurf.SDK.Util.CommandArgumentParser
+  type: class
 - uid: DeckSurf.SDK.Util.ConfigurationHelper
   commentId: T:DeckSurf.SDK.Util.ConfigurationHelper
   parent: DeckSurf.SDK.Util
@@ -24,19 +33,19 @@ references:
   nameWithType: DeckSurf.SDK.Util.ConfigurationHelper
   fullName: DeckSurf.SDK.Util.ConfigurationHelper
   type: class
-- uid: DeckSurf.SDK.Util.DataHelpers
-  commentId: T:DeckSurf.SDK.Util.DataHelpers
+- uid: DeckSurf.SDK.Util.DataHelper
+  commentId: T:DeckSurf.SDK.Util.DataHelper
   parent: DeckSurf.SDK.Util
   isExternal: false
-  name: DataHelpers
-  nameWithType: DeckSurf.SDK.Util.DataHelpers
-  fullName: DeckSurf.SDK.Util.DataHelpers
+  name: DataHelper
+  nameWithType: DeckSurf.SDK.Util.DataHelper
+  fullName: DeckSurf.SDK.Util.DataHelper
   type: class
-- uid: DeckSurf.SDK.Util.ImageHelpers
-  commentId: T:DeckSurf.SDK.Util.ImageHelpers
+- uid: DeckSurf.SDK.Util.ImageHelper
+  commentId: T:DeckSurf.SDK.Util.ImageHelper
   parent: DeckSurf.SDK.Util
   isExternal: false
-  name: ImageHelpers
-  nameWithType: DeckSurf.SDK.Util.ImageHelpers
-  fullName: DeckSurf.SDK.Util.ImageHelpers
+  name: ImageHelper
+  nameWithType: DeckSurf.SDK.Util.ImageHelper
+  fullName: DeckSurf.SDK.Util.ImageHelper
   type: class

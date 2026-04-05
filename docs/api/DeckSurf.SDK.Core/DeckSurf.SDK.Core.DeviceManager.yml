@@ -4,10 +4,14 @@ items:
   commentId: T:DeckSurf.SDK.Core.DeviceManager
   id: DeviceManager
   children:
-  - DeckSurf.SDK.Core.DeviceManager.#ctor
+  - DeckSurf.SDK.Core.DeviceManager.DeviceListChanged
+  - DeckSurf.SDK.Core.DeviceManager.GetDeviceByPath(System.String)
+  - DeckSurf.SDK.Core.DeviceManager.GetDeviceBySerial(System.String)
   - DeckSurf.SDK.Core.DeviceManager.GetDeviceList
   - DeckSurf.SDK.Core.DeviceManager.IsSupported(System.Int32,System.Int32)
   - DeckSurf.SDK.Core.DeviceManager.SetupDevice(DeckSurf.SDK.Models.ConfigurationProfile)
+  - DeckSurf.SDK.Core.DeviceManager.TryGetDeviceByPath(System.String,DeckSurf.SDK.Models.ConnectedDevice@)
+  - DeckSurf.SDK.Core.DeviceManager.TryGetDeviceBySerial(System.String,DeckSurf.SDK.Models.ConnectedDevice@)
   langs:
   - csharp
   name: DeviceManager
@@ -19,42 +23,121 @@ items:
   namespace: DeckSurf.SDK.Core
   summary: Class used to manage connected Stream Deck devices.
   syntax:
-    content: public class DeviceManager
-    content.csharp: public class DeviceManager
+    content: public static class DeviceManager
+    content.csharp: public static class DeviceManager
   inheritance:
   - System.Object
   implements: []
-  inheritedMembers: []
   modifiers.csharp:
   - public
+  - static
   monikers:
-  - net9.0
+  - net10.0
   _op_AssemblyMonikerMapping:
     DeckSurf.SDK:
-    - net9.0
-- uid: DeckSurf.SDK.Core.DeviceManager.#ctor
-  commentId: M:DeckSurf.SDK.Core.DeviceManager.#ctor
-  id: '#ctor'
+    - net10.0
+- uid: DeckSurf.SDK.Core.DeviceManager.DeviceListChanged
+  commentId: E:DeckSurf.SDK.Core.DeviceManager.DeviceListChanged
+  id: DeviceListChanged
   parent: DeckSurf.SDK.Core.DeviceManager
   langs:
   - csharp
-  name: DeviceManager()
-  nameWithType: DeviceManager.DeviceManager()
-  fullName: DeckSurf.SDK.Core.DeviceManager.DeviceManager()
-  type: Constructor
+  name: DeviceListChanged
+  nameWithType: DeviceManager.DeviceListChanged
+  fullName: DeckSurf.SDK.Core.DeviceManager.DeviceListChanged
+  type: Event
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Core
+  summary: >-
+    Event raised when the system detects a change in connected HID devices.
+
+    The event arguments include the lists of added and removed devices since the
+
+    previous evaluation.
   syntax:
-    content: public DeviceManager ();
-    parameters: []
-    content.csharp: public DeviceManager ();
-  overload: DeckSurf.SDK.Core.DeviceManager.#ctor*
+    content: public static event EventHandler<DeckSurf.SDK.Models.DeviceListChangedEventArgs> DeviceListChanged;
+    content.csharp: public static event EventHandler<DeckSurf.SDK.Models.DeviceListChangedEventArgs> DeviceListChanged;
   exceptions: []
   modifiers.csharp:
   - public
+  - static
   monikers:
-  - net9.0
+  - net10.0
+- uid: DeckSurf.SDK.Core.DeviceManager.GetDeviceByPath(System.String)
+  commentId: M:DeckSurf.SDK.Core.DeviceManager.GetDeviceByPath(System.String)
+  id: GetDeviceByPath(System.String)
+  parent: DeckSurf.SDK.Core.DeviceManager
+  langs:
+  - csharp
+  name: GetDeviceByPath(String)
+  nameWithType: DeviceManager.GetDeviceByPath(String)
+  fullName: DeckSurf.SDK.Core.DeviceManager.GetDeviceByPath(String)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Core
+  summary: Gets a connected Stream Deck device that matches the specified USB HID device path.
+  syntax:
+    content: public static DeckSurf.SDK.Models.ConnectedDevice GetDeviceByPath (string devicePath);
+    parameters:
+    - id: devicePath
+      type: System.String
+      description: The USB HID device path to match.
+    return:
+      type: DeckSurf.SDK.Models.ConnectedDevice
+      description: The first <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.ConnectedDevice"></xref> whose path matches.
+    content.csharp: public static DeckSurf.SDK.Models.ConnectedDevice GetDeviceByPath (string devicePath);
+  overload: DeckSurf.SDK.Core.DeviceManager.GetDeviceByPath*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code data-dev-comment-type="paramref">devicePath</code> is <code data-dev-comment-type="c">null</code>.
+  - type: DeckSurf.SDK.Exceptions.DeviceNotFoundException
+    commentId: T:DeckSurf.SDK.Exceptions.DeviceNotFoundException
+    description: Thrown when no device with the specified path is found.
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Core.DeviceManager.GetDeviceBySerial(System.String)
+  commentId: M:DeckSurf.SDK.Core.DeviceManager.GetDeviceBySerial(System.String)
+  id: GetDeviceBySerial(System.String)
+  parent: DeckSurf.SDK.Core.DeviceManager
+  langs:
+  - csharp
+  name: GetDeviceBySerial(String)
+  nameWithType: DeviceManager.GetDeviceBySerial(String)
+  fullName: DeckSurf.SDK.Core.DeviceManager.GetDeviceBySerial(String)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Core
+  summary: Gets a connected Stream Deck device that matches the specified serial number.
+  syntax:
+    content: public static DeckSurf.SDK.Models.ConnectedDevice GetDeviceBySerial (string serial);
+    parameters:
+    - id: serial
+      type: System.String
+      description: The serial number of the device to find.
+    return:
+      type: DeckSurf.SDK.Models.ConnectedDevice
+      description: The first <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.ConnectedDevice"></xref> whose serial matches.
+    content.csharp: public static DeckSurf.SDK.Models.ConnectedDevice GetDeviceBySerial (string serial);
+  overload: DeckSurf.SDK.Core.DeviceManager.GetDeviceBySerial*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code data-dev-comment-type="paramref">serial</code> is <code data-dev-comment-type="c">null</code>.
+  - type: DeckSurf.SDK.Exceptions.DeviceNotFoundException
+    commentId: T:DeckSurf.SDK.Exceptions.DeviceNotFoundException
+    description: Thrown when no device with the specified serial number is found.
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net10.0
 - uid: DeckSurf.SDK.Core.DeviceManager.GetDeviceList
   commentId: M:DeckSurf.SDK.Core.DeviceManager.GetDeviceList
   id: GetDeviceList
@@ -70,19 +153,19 @@ items:
   namespace: DeckSurf.SDK.Core
   summary: Return a list of connected Stream Deck devices supported by DeckSurf.
   syntax:
-    content: public static System.Collections.Generic.IEnumerable<DeckSurf.SDK.Models.ConnectedDevice> GetDeviceList ();
+    content: public static System.Collections.Generic.IReadOnlyList<DeckSurf.SDK.Models.ConnectedDevice> GetDeviceList ();
     parameters: []
     return:
-      type: System.Collections.Generic.IEnumerable{DeckSurf.SDK.Models.ConnectedDevice}
-      description: Enumerable containing a list of supported devices.
-    content.csharp: public static System.Collections.Generic.IEnumerable<DeckSurf.SDK.Models.ConnectedDevice> GetDeviceList ();
+      type: System.Collections.Generic.IReadOnlyList{DeckSurf.SDK.Models.ConnectedDevice}
+      description: Read-only list containing supported devices.
+    content.csharp: public static System.Collections.Generic.IReadOnlyList<DeckSurf.SDK.Models.ConnectedDevice> GetDeviceList ();
   overload: DeckSurf.SDK.Core.DeviceManager.GetDeviceList*
   exceptions: []
   modifiers.csharp:
   - public
   - static
   monikers:
-  - net9.0
+  - net10.0
 - uid: DeckSurf.SDK.Core.DeviceManager.IsSupported(System.Int32,System.Int32)
   commentId: M:DeckSurf.SDK.Core.DeviceManager.IsSupported(System.Int32,System.Int32)
   id: IsSupported(System.Int32,System.Int32)
@@ -98,25 +181,25 @@ items:
   namespace: DeckSurf.SDK.Core
   summary: Determines whether a given vendor ID (VID) and product ID (PID) are supported by the SDK. VID and PID should be representing a Stream Deck device.
   syntax:
-    content: public static bool IsSupported (int vid, int pid);
+    content: public static bool IsSupported (int vendorId, int productId);
     parameters:
-    - id: vid
+    - id: vendorId
       type: System.Int32
       description: Device VID.
-    - id: pid
+    - id: productId
       type: System.Int32
       description: Device PID.
     return:
       type: System.Boolean
       description: True if device is supported, false if not.
-    content.csharp: public static bool IsSupported (int vid, int pid);
+    content.csharp: public static bool IsSupported (int vendorId, int productId);
   overload: DeckSurf.SDK.Core.DeviceManager.IsSupported*
   exceptions: []
   modifiers.csharp:
   - public
   - static
   monikers:
-  - net9.0
+  - net10.0
 - uid: DeckSurf.SDK.Core.DeviceManager.SetupDevice(DeckSurf.SDK.Models.ConfigurationProfile)
   commentId: M:DeckSurf.SDK.Core.DeviceManager.SetupDevice(DeckSurf.SDK.Models.ConfigurationProfile)
   id: SetupDevice(DeckSurf.SDK.Models.ConfigurationProfile)
@@ -130,7 +213,14 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Core
-  summary: Gets a connected Stream Deck device based on a pre-defined configuration profile.
+  summary: >-
+    Gets a connected Stream Deck device based on a pre-defined configuration profile.
+
+    The method prefers matching by <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.ConfigurationProfile.DeviceSerial"></xref> (which is
+
+    stable across re-plugs) and falls back to <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.ConfigurationProfile.DeviceIndex"></xref>
+
+    when no serial match is found.
   syntax:
     content: public static DeckSurf.SDK.Models.ConnectedDevice SetupDevice (DeckSurf.SDK.Models.ConfigurationProfile profile);
     parameters:
@@ -139,15 +229,86 @@ items:
       description: An instance representing the pre-defined configuration profile.
     return:
       type: DeckSurf.SDK.Models.ConnectedDevice
-      description: If the call is successful, returns a Stream Deck device.
+      description: The matching <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.ConnectedDevice"></xref> with its button map configured.
     content.csharp: public static DeckSurf.SDK.Models.ConnectedDevice SetupDevice (DeckSurf.SDK.Models.ConfigurationProfile profile);
   overload: DeckSurf.SDK.Core.DeviceManager.SetupDevice*
+  exceptions:
+  - type: DeckSurf.SDK.Exceptions.DeviceNotFoundException
+    commentId: T:DeckSurf.SDK.Exceptions.DeviceNotFoundException
+    description: Thrown when no device matches the serial number or index specified in <code data-dev-comment-type="paramref">profile</code>.
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Core.DeviceManager.TryGetDeviceByPath(System.String,DeckSurf.SDK.Models.ConnectedDevice@)
+  commentId: M:DeckSurf.SDK.Core.DeviceManager.TryGetDeviceByPath(System.String,DeckSurf.SDK.Models.ConnectedDevice@)
+  id: TryGetDeviceByPath(System.String,DeckSurf.SDK.Models.ConnectedDevice@)
+  parent: DeckSurf.SDK.Core.DeviceManager
+  langs:
+  - csharp
+  name: TryGetDeviceByPath(String, ConnectedDevice)
+  nameWithType: DeviceManager.TryGetDeviceByPath(String, ConnectedDevice)
+  fullName: DeckSurf.SDK.Core.DeviceManager.TryGetDeviceByPath(String, ConnectedDevice)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Core
+  summary: Attempts to get a connected Stream Deck device that matches the specified USB HID device path.
+  syntax:
+    content: public static bool TryGetDeviceByPath (string devicePath, out DeckSurf.SDK.Models.ConnectedDevice device);
+    parameters:
+    - id: devicePath
+      type: System.String
+      description: The USB HID device path to match.
+    - id: device
+      type: DeckSurf.SDK.Models.ConnectedDevice
+      description: When this method returns <code data-dev-comment-type="c">true</code>, contains the matching <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.ConnectedDevice"></xref>; otherwise, <code data-dev-comment-type="c">null</code>.
+    return:
+      type: System.Boolean
+      description: <code data-dev-comment-type="c">true</code> if a device with the specified path was found; otherwise, <code data-dev-comment-type="c">false</code>.
+    content.csharp: public static bool TryGetDeviceByPath (string devicePath, out DeckSurf.SDK.Models.ConnectedDevice device);
+  overload: DeckSurf.SDK.Core.DeviceManager.TryGetDeviceByPath*
   exceptions: []
   modifiers.csharp:
   - public
   - static
   monikers:
-  - net9.0
+  - net10.0
+- uid: DeckSurf.SDK.Core.DeviceManager.TryGetDeviceBySerial(System.String,DeckSurf.SDK.Models.ConnectedDevice@)
+  commentId: M:DeckSurf.SDK.Core.DeviceManager.TryGetDeviceBySerial(System.String,DeckSurf.SDK.Models.ConnectedDevice@)
+  id: TryGetDeviceBySerial(System.String,DeckSurf.SDK.Models.ConnectedDevice@)
+  parent: DeckSurf.SDK.Core.DeviceManager
+  langs:
+  - csharp
+  name: TryGetDeviceBySerial(String, ConnectedDevice)
+  nameWithType: DeviceManager.TryGetDeviceBySerial(String, ConnectedDevice)
+  fullName: DeckSurf.SDK.Core.DeviceManager.TryGetDeviceBySerial(String, ConnectedDevice)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Core
+  summary: Attempts to get a connected Stream Deck device that matches the specified serial number.
+  syntax:
+    content: public static bool TryGetDeviceBySerial (string serial, out DeckSurf.SDK.Models.ConnectedDevice device);
+    parameters:
+    - id: serial
+      type: System.String
+      description: The serial number of the device to find.
+    - id: device
+      type: DeckSurf.SDK.Models.ConnectedDevice
+      description: When this method returns <code data-dev-comment-type="c">true</code>, contains the matching <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.ConnectedDevice"></xref>; otherwise, <code data-dev-comment-type="c">null</code>.
+    return:
+      type: System.Boolean
+      description: <code data-dev-comment-type="c">true</code> if a device with the specified serial was found; otherwise, <code data-dev-comment-type="c">false</code>.
+    content.csharp: public static bool TryGetDeviceBySerial (string serial, out DeckSurf.SDK.Models.ConnectedDevice device);
+  overload: DeckSurf.SDK.Core.DeviceManager.TryGetDeviceBySerial*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net10.0
 references:
 - uid: DeckSurf.SDK.Core
   commentId: N:DeckSurf.SDK.Core
@@ -162,13 +323,79 @@ references:
   name: Object
   nameWithType: Object
   fullName: System.Object
-- uid: DeckSurf.SDK.Core.DeviceManager.#ctor
+- uid: System.ArgumentNullException
+  isExternal: true
+  name: System.ArgumentNullException
+- uid: DeckSurf.SDK.Exceptions.DeviceNotFoundException
+  commentId: T:DeckSurf.SDK.Exceptions.DeviceNotFoundException
+  parent: DeckSurf.SDK.Exceptions
+  isExternal: false
+  name: DeviceNotFoundException
+  nameWithType: DeckSurf.SDK.Exceptions.DeviceNotFoundException
+  fullName: DeckSurf.SDK.Exceptions.DeviceNotFoundException
+  type: class
+- uid: DeckSurf.SDK.Core.DeviceManager.DeviceListChanged
   parent: DeckSurf.SDK.Core.DeviceManager
   isExternal: false
-  name: DeviceManager()
-  nameWithType: DeviceManager.DeviceManager()
-  fullName: DeckSurf.SDK.Core.DeviceManager.DeviceManager()
-  type: constructor
+  name: DeviceListChanged
+  nameWithType: DeviceManager.DeviceListChanged
+  fullName: DeckSurf.SDK.Core.DeviceManager.DeviceListChanged
+  type: event
+- uid: System.EventHandler`1
+  isExternal: true
+  name: EventHandler
+  nameWithType: EventHandler
+  fullName: System.EventHandler
+- uid: DeckSurf.SDK.Models.DeviceListChangedEventArgs
+  name: DeviceListChangedEventArgs
+  nameWithType: DeviceListChangedEventArgs
+  fullName: DeckSurf.SDK.Models.DeviceListChangedEventArgs
+- uid: System.EventHandler{DeckSurf.SDK.Models.DeviceListChangedEventArgs}
+  parent: System
+  name: EventHandler<DeviceListChangedEventArgs>
+  nameWithType: EventHandler<DeviceListChangedEventArgs>
+  fullName: System.EventHandler<DeckSurf.SDK.Models.DeviceListChangedEventArgs>
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: DeckSurf.SDK.Models.DeviceListChangedEventArgs
+    name: DeviceListChangedEventArgs
+    nameWithType: DeviceListChangedEventArgs
+    fullName: DeckSurf.SDK.Models.DeviceListChangedEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: DeckSurf.SDK.Core.DeviceManager.GetDeviceByPath(System.String)
+  parent: DeckSurf.SDK.Core.DeviceManager
+  isExternal: false
+  name: GetDeviceByPath(String)
+  nameWithType: DeviceManager.GetDeviceByPath(String)
+  fullName: DeckSurf.SDK.Core.DeviceManager.GetDeviceByPath(String)
+  type: method
+- uid: DeckSurf.SDK.Models.ConnectedDevice
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: ConnectedDevice
+  nameWithType: ConnectedDevice
+  fullName: DeckSurf.SDK.Models.ConnectedDevice
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DeckSurf.SDK.Core.DeviceManager.GetDeviceBySerial(System.String)
+  parent: DeckSurf.SDK.Core.DeviceManager
+  isExternal: false
+  name: GetDeviceBySerial(String)
+  nameWithType: DeviceManager.GetDeviceBySerial(String)
+  fullName: DeckSurf.SDK.Core.DeviceManager.GetDeviceBySerial(String)
+  type: method
 - uid: DeckSurf.SDK.Core.DeviceManager.GetDeviceList
   parent: DeckSurf.SDK.Core.DeviceManager
   isExternal: false
@@ -176,25 +403,21 @@ references:
   nameWithType: DeviceManager.GetDeviceList()
   fullName: DeckSurf.SDK.Core.DeviceManager.GetDeviceList()
   type: method
-- uid: System.Collections.Generic.IEnumerable`1
+- uid: System.Collections.Generic.IReadOnlyList`1
   isExternal: true
-  name: IEnumerable
-  nameWithType: IEnumerable
-  fullName: System.Collections.Generic.IEnumerable
-- uid: DeckSurf.SDK.Models.ConnectedDevice
-  name: ConnectedDevice
-  nameWithType: ConnectedDevice
-  fullName: DeckSurf.SDK.Models.ConnectedDevice
-- uid: System.Collections.Generic.IEnumerable{DeckSurf.SDK.Models.ConnectedDevice}
+  name: IReadOnlyList
+  nameWithType: IReadOnlyList
+  fullName: System.Collections.Generic.IReadOnlyList
+- uid: System.Collections.Generic.IReadOnlyList{DeckSurf.SDK.Models.ConnectedDevice}
   parent: System.Collections.Generic
-  name: IEnumerable<ConnectedDevice>
-  nameWithType: IEnumerable<ConnectedDevice>
-  fullName: System.Collections.Generic.IEnumerable<DeckSurf.SDK.Models.ConnectedDevice>
+  name: IReadOnlyList<ConnectedDevice>
+  nameWithType: IReadOnlyList<ConnectedDevice>
+  fullName: System.Collections.Generic.IReadOnlyList<DeckSurf.SDK.Models.ConnectedDevice>
   spec.csharp:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
-    nameWithType: IEnumerable
-    fullName: System.Collections.Generic.IEnumerable
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
   - name: <
     nameWithType: <
     fullName: <
@@ -237,16 +460,40 @@ references:
   name: ConfigurationProfile
   nameWithType: ConfigurationProfile
   fullName: DeckSurf.SDK.Models.ConfigurationProfile
-- uid: DeckSurf.SDK.Core.DeviceManager.#ctor*
-  commentId: Overload:DeckSurf.SDK.Core.DeviceManager.#ctor
+- uid: DeckSurf.SDK.Core.DeviceManager.TryGetDeviceByPath(System.String,DeckSurf.SDK.Models.ConnectedDevice@)
   parent: DeckSurf.SDK.Core.DeviceManager
   isExternal: false
-  name: DeviceManager
-  nameWithType: DeviceManager.DeviceManager
-  fullName: DeckSurf.SDK.Core.DeviceManager.DeviceManager
+  name: TryGetDeviceByPath(String, ConnectedDevice)
+  nameWithType: DeviceManager.TryGetDeviceByPath(String, ConnectedDevice)
+  fullName: DeckSurf.SDK.Core.DeviceManager.TryGetDeviceByPath(String, ConnectedDevice)
+  type: method
+- uid: DeckSurf.SDK.Core.DeviceManager.TryGetDeviceBySerial(System.String,DeckSurf.SDK.Models.ConnectedDevice@)
+  parent: DeckSurf.SDK.Core.DeviceManager
+  isExternal: false
+  name: TryGetDeviceBySerial(String, ConnectedDevice)
+  nameWithType: DeviceManager.TryGetDeviceBySerial(String, ConnectedDevice)
+  fullName: DeckSurf.SDK.Core.DeviceManager.TryGetDeviceBySerial(String, ConnectedDevice)
+  type: method
+- uid: DeckSurf.SDK.Core.DeviceManager.GetDeviceByPath*
+  commentId: Overload:DeckSurf.SDK.Core.DeviceManager.GetDeviceByPath
+  parent: DeckSurf.SDK.Core.DeviceManager
+  isExternal: false
+  name: GetDeviceByPath
+  nameWithType: DeviceManager.GetDeviceByPath
+  fullName: DeckSurf.SDK.Core.DeviceManager.GetDeviceByPath
   monikers:
-  - net9.0
-  type: constructor
+  - net10.0
+  type: method
+- uid: DeckSurf.SDK.Core.DeviceManager.GetDeviceBySerial*
+  commentId: Overload:DeckSurf.SDK.Core.DeviceManager.GetDeviceBySerial
+  parent: DeckSurf.SDK.Core.DeviceManager
+  isExternal: false
+  name: GetDeviceBySerial
+  nameWithType: DeviceManager.GetDeviceBySerial
+  fullName: DeckSurf.SDK.Core.DeviceManager.GetDeviceBySerial
+  monikers:
+  - net10.0
+  type: method
 - uid: DeckSurf.SDK.Core.DeviceManager.GetDeviceList*
   commentId: Overload:DeckSurf.SDK.Core.DeviceManager.GetDeviceList
   parent: DeckSurf.SDK.Core.DeviceManager
@@ -255,7 +502,7 @@ references:
   nameWithType: DeviceManager.GetDeviceList
   fullName: DeckSurf.SDK.Core.DeviceManager.GetDeviceList
   monikers:
-  - net9.0
+  - net10.0
   type: method
 - uid: DeckSurf.SDK.Core.DeviceManager.IsSupported*
   commentId: Overload:DeckSurf.SDK.Core.DeviceManager.IsSupported
@@ -265,7 +512,7 @@ references:
   nameWithType: DeviceManager.IsSupported
   fullName: DeckSurf.SDK.Core.DeviceManager.IsSupported
   monikers:
-  - net9.0
+  - net10.0
   type: method
 - uid: DeckSurf.SDK.Core.DeviceManager.SetupDevice*
   commentId: Overload:DeckSurf.SDK.Core.DeviceManager.SetupDevice
@@ -275,5 +522,25 @@ references:
   nameWithType: DeviceManager.SetupDevice
   fullName: DeckSurf.SDK.Core.DeviceManager.SetupDevice
   monikers:
-  - net9.0
+  - net10.0
+  type: method
+- uid: DeckSurf.SDK.Core.DeviceManager.TryGetDeviceByPath*
+  commentId: Overload:DeckSurf.SDK.Core.DeviceManager.TryGetDeviceByPath
+  parent: DeckSurf.SDK.Core.DeviceManager
+  isExternal: false
+  name: TryGetDeviceByPath
+  nameWithType: DeviceManager.TryGetDeviceByPath
+  fullName: DeckSurf.SDK.Core.DeviceManager.TryGetDeviceByPath
+  monikers:
+  - net10.0
+  type: method
+- uid: DeckSurf.SDK.Core.DeviceManager.TryGetDeviceBySerial*
+  commentId: Overload:DeckSurf.SDK.Core.DeviceManager.TryGetDeviceBySerial
+  parent: DeckSurf.SDK.Core.DeviceManager
+  isExternal: false
+  name: TryGetDeviceBySerial
+  nameWithType: DeviceManager.TryGetDeviceBySerial
+  fullName: DeckSurf.SDK.Core.DeviceManager.TryGetDeviceBySerial
+  monikers:
+  - net10.0
   type: method

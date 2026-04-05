@@ -1,0 +1,240 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Models.DeviceErrorCategory
+  commentId: T:DeckSurf.SDK.Models.DeviceErrorCategory
+  id: DeviceErrorCategory
+  children:
+  - DeckSurf.SDK.Models.DeviceErrorCategory.CommunicationFailure
+  - DeckSurf.SDK.Models.DeviceErrorCategory.DeviceDisposed
+  - DeckSurf.SDK.Models.DeviceErrorCategory.Disconnected
+  - DeckSurf.SDK.Models.DeviceErrorCategory.ImageProcessing
+  - DeckSurf.SDK.Models.DeviceErrorCategory.InvalidParameter
+  - DeckSurf.SDK.Models.DeviceErrorCategory.Unknown
+  langs:
+  - csharp
+  name: DeviceErrorCategory
+  nameWithType: DeckSurf.SDK.Models.DeviceErrorCategory
+  fullName: DeckSurf.SDK.Models.DeviceErrorCategory
+  type: Enum
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Classifies the category of a device error.
+  syntax:
+    content: public enum DeviceErrorCategory
+    content.csharp: public enum DeviceErrorCategory
+  inheritance:
+  - System.Enum
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net10.0
+- uid: DeckSurf.SDK.Models.DeviceErrorCategory.CommunicationFailure
+  commentId: F:DeckSurf.SDK.Models.DeviceErrorCategory.CommunicationFailure
+  id: CommunicationFailure
+  parent: DeckSurf.SDK.Models.DeviceErrorCategory
+  langs:
+  - csharp
+  name: CommunicationFailure
+  nameWithType: DeviceErrorCategory.CommunicationFailure
+  fullName: DeckSurf.SDK.Models.DeviceErrorCategory.CommunicationFailure
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: A communication failure occurred during USB I/O with the device.
+  syntax:
+    content: CommunicationFailure
+    return:
+      type: DeckSurf.SDK.Models.DeviceErrorCategory
+      description: ''
+    content.csharp: CommunicationFailure
+  exceptions: []
+  monikers:
+  - net10.0
+  literalValue: "2"
+- uid: DeckSurf.SDK.Models.DeviceErrorCategory.DeviceDisposed
+  commentId: F:DeckSurf.SDK.Models.DeviceErrorCategory.DeviceDisposed
+  id: DeviceDisposed
+  parent: DeckSurf.SDK.Models.DeviceErrorCategory
+  langs:
+  - csharp
+  name: DeviceDisposed
+  nameWithType: DeviceErrorCategory.DeviceDisposed
+  fullName: DeckSurf.SDK.Models.DeviceErrorCategory.DeviceDisposed
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: The device has been disposed and can no longer be used.
+  syntax:
+    content: DeviceDisposed
+    return:
+      type: DeckSurf.SDK.Models.DeviceErrorCategory
+      description: ''
+    content.csharp: DeviceDisposed
+  exceptions: []
+  monikers:
+  - net10.0
+  literalValue: "5"
+- uid: DeckSurf.SDK.Models.DeviceErrorCategory.Disconnected
+  commentId: F:DeckSurf.SDK.Models.DeviceErrorCategory.Disconnected
+  id: Disconnected
+  parent: DeckSurf.SDK.Models.DeviceErrorCategory
+  langs:
+  - csharp
+  name: Disconnected
+  nameWithType: DeviceErrorCategory.Disconnected
+  fullName: DeckSurf.SDK.Models.DeviceErrorCategory.Disconnected
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: The device was disconnected during an operation.
+  syntax:
+    content: Disconnected
+    return:
+      type: DeckSurf.SDK.Models.DeviceErrorCategory
+      description: ''
+    content.csharp: Disconnected
+  exceptions: []
+  monikers:
+  - net10.0
+  literalValue: "1"
+- uid: DeckSurf.SDK.Models.DeviceErrorCategory.ImageProcessing
+  commentId: F:DeckSurf.SDK.Models.DeviceErrorCategory.ImageProcessing
+  id: ImageProcessing
+  parent: DeckSurf.SDK.Models.DeviceErrorCategory
+  langs:
+  - csharp
+  name: ImageProcessing
+  nameWithType: DeviceErrorCategory.ImageProcessing
+  fullName: DeckSurf.SDK.Models.DeviceErrorCategory.ImageProcessing
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: An error occurred while processing an image for the device.
+  syntax:
+    content: ImageProcessing
+    return:
+      type: DeckSurf.SDK.Models.DeviceErrorCategory
+      description: ''
+    content.csharp: ImageProcessing
+  exceptions: []
+  monikers:
+  - net10.0
+  literalValue: "3"
+- uid: DeckSurf.SDK.Models.DeviceErrorCategory.InvalidParameter
+  commentId: F:DeckSurf.SDK.Models.DeviceErrorCategory.InvalidParameter
+  id: InvalidParameter
+  parent: DeckSurf.SDK.Models.DeviceErrorCategory
+  langs:
+  - csharp
+  name: InvalidParameter
+  nameWithType: DeviceErrorCategory.InvalidParameter
+  fullName: DeckSurf.SDK.Models.DeviceErrorCategory.InvalidParameter
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: An invalid parameter was provided to a device operation.
+  syntax:
+    content: InvalidParameter
+    return:
+      type: DeckSurf.SDK.Models.DeviceErrorCategory
+      description: ''
+    content.csharp: InvalidParameter
+  exceptions: []
+  monikers:
+  - net10.0
+  literalValue: "4"
+- uid: DeckSurf.SDK.Models.DeviceErrorCategory.Unknown
+  commentId: F:DeckSurf.SDK.Models.DeviceErrorCategory.Unknown
+  id: Unknown
+  parent: DeckSurf.SDK.Models.DeviceErrorCategory
+  langs:
+  - csharp
+  name: Unknown
+  nameWithType: DeviceErrorCategory.Unknown
+  fullName: DeckSurf.SDK.Models.DeviceErrorCategory.Unknown
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: The error category is unknown or does not match any other classification.
+  syntax:
+    content: Unknown
+    return:
+      type: DeckSurf.SDK.Models.DeviceErrorCategory
+      description: ''
+    content.csharp: Unknown
+  exceptions: []
+  monikers:
+  - net10.0
+  literalValue: "0"
+references:
+- uid: DeckSurf.SDK.Models
+  commentId: N:DeckSurf.SDK.Models
+  isExternal: false
+  name: DeckSurf.SDK.Models
+  nameWithType: DeckSurf.SDK.Models
+  fullName: DeckSurf.SDK.Models
+  type: namespace
+- uid: System.Enum
+  parent: System
+  isExternal: true
+  name: Enum
+  nameWithType: Enum
+  fullName: System.Enum
+- uid: DeckSurf.SDK.Models.DeviceErrorCategory.CommunicationFailure
+  parent: DeckSurf.SDK.Models.DeviceErrorCategory
+  isExternal: false
+  name: CommunicationFailure
+  nameWithType: DeviceErrorCategory.CommunicationFailure
+  fullName: DeckSurf.SDK.Models.DeviceErrorCategory.CommunicationFailure
+  type: field
+- uid: DeckSurf.SDK.Models.DeviceErrorCategory
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: DeviceErrorCategory
+  nameWithType: DeviceErrorCategory
+  fullName: DeckSurf.SDK.Models.DeviceErrorCategory
+- uid: DeckSurf.SDK.Models.DeviceErrorCategory.DeviceDisposed
+  parent: DeckSurf.SDK.Models.DeviceErrorCategory
+  isExternal: false
+  name: DeviceDisposed
+  nameWithType: DeviceErrorCategory.DeviceDisposed
+  fullName: DeckSurf.SDK.Models.DeviceErrorCategory.DeviceDisposed
+  type: field
+- uid: DeckSurf.SDK.Models.DeviceErrorCategory.Disconnected
+  parent: DeckSurf.SDK.Models.DeviceErrorCategory
+  isExternal: false
+  name: Disconnected
+  nameWithType: DeviceErrorCategory.Disconnected
+  fullName: DeckSurf.SDK.Models.DeviceErrorCategory.Disconnected
+  type: field
+- uid: DeckSurf.SDK.Models.DeviceErrorCategory.ImageProcessing
+  parent: DeckSurf.SDK.Models.DeviceErrorCategory
+  isExternal: false
+  name: ImageProcessing
+  nameWithType: DeviceErrorCategory.ImageProcessing
+  fullName: DeckSurf.SDK.Models.DeviceErrorCategory.ImageProcessing
+  type: field
+- uid: DeckSurf.SDK.Models.DeviceErrorCategory.InvalidParameter
+  parent: DeckSurf.SDK.Models.DeviceErrorCategory
+  isExternal: false
+  name: InvalidParameter
+  nameWithType: DeviceErrorCategory.InvalidParameter
+  fullName: DeckSurf.SDK.Models.DeviceErrorCategory.InvalidParameter
+  type: field
+- uid: DeckSurf.SDK.Models.DeviceErrorCategory.Unknown
+  parent: DeckSurf.SDK.Models.DeviceErrorCategory
+  isExternal: false
+  name: Unknown
+  nameWithType: DeviceErrorCategory.Unknown
+  fullName: DeckSurf.SDK.Models.DeviceErrorCategory.Unknown
+  type: field

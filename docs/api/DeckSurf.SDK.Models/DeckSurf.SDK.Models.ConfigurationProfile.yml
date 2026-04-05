@@ -29,10 +29,10 @@ items:
   modifiers.csharp:
   - public
   monikers:
-  - net9.0
+  - net10.0
   _op_AssemblyMonikerMapping:
     DeckSurf.SDK:
-    - net9.0
+    - net10.0
 - uid: DeckSurf.SDK.Models.ConfigurationProfile.#ctor
   commentId: M:DeckSurf.SDK.Models.ConfigurationProfile.#ctor
   id: '#ctor'
@@ -56,7 +56,7 @@ items:
   modifiers.csharp:
   - public
   monikers:
-  - net9.0
+  - net10.0
 - uid: DeckSurf.SDK.Models.ConfigurationProfile.ButtonMap
   commentId: P:DeckSurf.SDK.Models.ConfigurationProfile.ButtonMap
   id: ButtonMap
@@ -92,7 +92,7 @@ items:
   - get
   - set
   monikers:
-  - net9.0
+  - net10.0
 - uid: DeckSurf.SDK.Models.ConfigurationProfile.DeviceIndex
   commentId: P:DeckSurf.SDK.Models.ConfigurationProfile.DeviceIndex
   id: DeviceIndex
@@ -128,7 +128,7 @@ items:
   - get
   - set
   monikers:
-  - net9.0
+  - net10.0
 - uid: DeckSurf.SDK.Models.ConfigurationProfile.DeviceModel
   commentId: P:DeckSurf.SDK.Models.ConfigurationProfile.DeviceModel
   id: DeviceModel
@@ -164,7 +164,7 @@ items:
   - get
   - set
   monikers:
-  - net9.0
+  - net10.0
 - uid: DeckSurf.SDK.Models.ConfigurationProfile.DeviceSerial
   commentId: P:DeckSurf.SDK.Models.ConfigurationProfile.DeviceSerial
   id: DeviceSerial
@@ -200,7 +200,7 @@ items:
   - get
   - set
   monikers:
-  - net9.0
+  - net10.0
 references:
 - uid: DeckSurf.SDK.Models
   commentId: N:DeckSurf.SDK.Models
@@ -305,7 +305,7 @@ references:
   nameWithType: ConfigurationProfile.ConfigurationProfile
   fullName: DeckSurf.SDK.Models.ConfigurationProfile.ConfigurationProfile
   monikers:
-  - net9.0
+  - net10.0
   type: constructor
 - uid: DeckSurf.SDK.Models.ConfigurationProfile.ButtonMap*
   commentId: Overload:DeckSurf.SDK.Models.ConfigurationProfile.ButtonMap
@@ -315,7 +315,7 @@ references:
   nameWithType: ConfigurationProfile.ButtonMap
   fullName: DeckSurf.SDK.Models.ConfigurationProfile.ButtonMap
   monikers:
-  - net9.0
+  - net10.0
   type: property
 - uid: DeckSurf.SDK.Models.ConfigurationProfile.DeviceIndex*
   commentId: Overload:DeckSurf.SDK.Models.ConfigurationProfile.DeviceIndex
@@ -325,7 +325,7 @@ references:
   nameWithType: ConfigurationProfile.DeviceIndex
   fullName: DeckSurf.SDK.Models.ConfigurationProfile.DeviceIndex
   monikers:
-  - net9.0
+  - net10.0
   type: property
 - uid: DeckSurf.SDK.Models.ConfigurationProfile.DeviceModel*
   commentId: Overload:DeckSurf.SDK.Models.ConfigurationProfile.DeviceModel
@@ -335,7 +335,7 @@ references:
   nameWithType: ConfigurationProfile.DeviceModel
   fullName: DeckSurf.SDK.Models.ConfigurationProfile.DeviceModel
   monikers:
-  - net9.0
+  - net10.0
   type: property
 - uid: DeckSurf.SDK.Models.ConfigurationProfile.DeviceSerial*
   commentId: Overload:DeckSurf.SDK.Models.ConfigurationProfile.DeviceSerial
@@ -345,5 +345,5 @@ references:
   nameWithType: ConfigurationProfile.DeviceSerial
   fullName: DeckSurf.SDK.Models.ConfigurationProfile.DeviceSerial
   monikers:
-  - net9.0
+  - net10.0
   type: property

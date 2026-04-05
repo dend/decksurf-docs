@@ -9,20 +9,17 @@ items:
   - DeckSurf.SDK.Models.Devices.StreamDeckPlus.ButtonCount
   - DeckSurf.SDK.Models.Devices.StreamDeckPlus.ButtonResolution
   - DeckSurf.SDK.Models.Devices.StreamDeckPlus.ButtonRows
-  - DeckSurf.SDK.Models.Devices.StreamDeckPlus.FlipType
-  - DeckSurf.SDK.Models.Devices.StreamDeckPlus.GetKeySetupHeader(System.Int32,System.Int32,System.Int32,System.Int32)
   - DeckSurf.SDK.Models.Devices.StreamDeckPlus.HandleKeyPress(System.IAsyncResult,System.Byte[])
   - DeckSurf.SDK.Models.Devices.StreamDeckPlus.IsKnobSupported
-  - DeckSurf.SDK.Models.Devices.StreamDeckPlus.IsScreenSupported
-  - DeckSurf.SDK.Models.Devices.StreamDeckPlus.KeyImageFormat
-  - DeckSurf.SDK.Models.Devices.StreamDeckPlus.KeyImageHeaderSize
   - DeckSurf.SDK.Models.Devices.StreamDeckPlus.Model
-  - DeckSurf.SDK.Models.Devices.StreamDeckPlus.PacketSize
   - DeckSurf.SDK.Models.Devices.StreamDeckPlus.ScreenHeight
   - DeckSurf.SDK.Models.Devices.StreamDeckPlus.ScreenImageHeaderSize
   - DeckSurf.SDK.Models.Devices.StreamDeckPlus.ScreenSegmentWidth
   - DeckSurf.SDK.Models.Devices.StreamDeckPlus.ScreenWidth
-  - DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetScreen(System.Byte[],System.Int32,System.Int32,System.Int32)
+  - DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetBackgroundImage(System.Byte[])
+  - DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetBootLogo(System.Byte[])
+  - DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetFullScreenImage(System.Byte[])
+  - DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetScreen(System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32)
   - DeckSurf.SDK.Models.Devices.StreamDeckPlus.TouchButtonCount
   langs:
   - csharp
@@ -35,33 +32,46 @@ items:
   namespace: DeckSurf.SDK.Models.Devices
   summary: Implementation for a Stream Deck Plus connected device.
   syntax:
-    content: 'public class StreamDeckPlus : DeckSurf.SDK.Models.ConnectedDevice'
-    content.csharp: 'public class StreamDeckPlus : DeckSurf.SDK.Models.ConnectedDevice'
+    content: 'public class StreamDeckPlus : DeckSurf.SDK.Models.Devices.ScreenDevice'
+    content.csharp: 'public class StreamDeckPlus : DeckSurf.SDK.Models.Devices.ScreenDevice'
   inheritance:
   - System.Object
   - DeckSurf.SDK.Models.ConnectedDevice
+  - DeckSurf.SDK.Models.Devices.ScreenDevice
   implements: []
   inheritedMembers:
+  - DeckSurf.SDK.Models.ConnectedDevice.ButtonPressed
   - DeckSurf.SDK.Models.ConnectedDevice.ClearButtons
+  - DeckSurf.SDK.Models.ConnectedDevice.DeviceDisconnected
+  - DeckSurf.SDK.Models.ConnectedDevice.DeviceErrorOccurred
+  - DeckSurf.SDK.Models.ConnectedDevice.DisplayName
+  - DeckSurf.SDK.Models.ConnectedDevice.Dispose
+  - DeckSurf.SDK.Models.ConnectedDevice.Dispose(System.Boolean)
+  - DeckSurf.SDK.Models.ConnectedDevice.IsListening
   - DeckSurf.SDK.Models.ConnectedDevice.Name
-  - DeckSurf.SDK.Models.ConnectedDevice.OnButtonPress
-  - DeckSurf.SDK.Models.ConnectedDevice.Open
   - DeckSurf.SDK.Models.ConnectedDevice.Path
   - DeckSurf.SDK.Models.ConnectedDevice.Serial
   - DeckSurf.SDK.Models.ConnectedDevice.SetBrightness(System.Byte)
-  - DeckSurf.SDK.Models.ConnectedDevice.SetKey(System.Int32,System.Byte[])
-  - DeckSurf.SDK.Models.ConnectedDevice.SetKeyColor(System.Int32,System.Drawing.Color)
+  - DeckSurf.SDK.Models.ConnectedDevice.SetKey(System.Int32,System.Byte[],System.Boolean)
+  - DeckSurf.SDK.Models.ConnectedDevice.SetKeyColor(System.Int32,DeckSurf.SDK.Models.DeviceColor)
+  - DeckSurf.SDK.Models.ConnectedDevice.SetScreen(System.Byte[],System.Int32,System.Int32,System.Int32)
   - DeckSurf.SDK.Models.ConnectedDevice.SetupDeviceButtonMap(System.Collections.Generic.IEnumerable{DeckSurf.SDK.Models.CommandMapping})
   - DeckSurf.SDK.Models.ConnectedDevice.StartListening
   - DeckSurf.SDK.Models.ConnectedDevice.StopListening
-  - DeckSurf.SDK.Models.ConnectedDevice.VId
+  - DeckSurf.SDK.Models.ConnectedDevice.VendorId
+  - DeckSurf.SDK.Models.Devices.ScreenDevice.GetKeySetupHeader(System.Int32,System.Int32,System.Int32,System.Int32)
+  - DeckSurf.SDK.Models.Devices.ScreenDevice.ImageRotation
+  - DeckSurf.SDK.Models.Devices.ScreenDevice.IsScreenSupported
+  - DeckSurf.SDK.Models.Devices.ScreenDevice.KeyImageFormat
+  - DeckSurf.SDK.Models.Devices.ScreenDevice.KeyImageHeaderSize
+  - DeckSurf.SDK.Models.Devices.ScreenDevice.PacketSize
   modifiers.csharp:
   - public
   monikers:
-  - net9.0
+  - net10.0
   _op_AssemblyMonikerMapping:
     DeckSurf.SDK:
-    - net9.0
+    - net10.0
 - uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.#ctor(System.Int32,System.Int32,System.String,System.String,System.String)
   commentId: M:DeckSurf.SDK.Models.Devices.StreamDeckPlus.#ctor(System.Int32,System.Int32,System.String,System.String,System.String)
   id: '#ctor(System.Int32,System.Int32,System.String,System.String,System.String)'
@@ -100,7 +110,7 @@ items:
   modifiers.csharp:
   - public
   monikers:
-  - net9.0
+  - net10.0
 - uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.ButtonColumns
   commentId: P:DeckSurf.SDK.Models.Devices.StreamDeckPlus.ButtonColumns
   id: ButtonColumns
@@ -126,7 +136,7 @@ items:
   - public
   - get
   monikers:
-  - net9.0
+  - net10.0
 - uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.ButtonCount
   commentId: P:DeckSurf.SDK.Models.Devices.StreamDeckPlus.ButtonCount
   id: ButtonCount
@@ -152,7 +162,7 @@ items:
   - public
   - get
   monikers:
-  - net9.0
+  - net10.0
 - uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.ButtonResolution
   commentId: P:DeckSurf.SDK.Models.Devices.StreamDeckPlus.ButtonResolution
   id: ButtonResolution
@@ -178,7 +188,7 @@ items:
   - public
   - get
   monikers:
-  - net9.0
+  - net10.0
 - uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.ButtonRows
   commentId: P:DeckSurf.SDK.Models.Devices.StreamDeckPlus.ButtonRows
   id: ButtonRows
@@ -204,71 +214,7 @@ items:
   - public
   - get
   monikers:
-  - net9.0
-- uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.FlipType
-  commentId: P:DeckSurf.SDK.Models.Devices.StreamDeckPlus.FlipType
-  id: FlipType
-  parent: DeckSurf.SDK.Models.Devices.StreamDeckPlus
-  langs:
-  - csharp
-  name: FlipType
-  nameWithType: StreamDeckPlus.FlipType
-  fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.FlipType
-  type: Property
-  assemblies:
-  - DeckSurf.SDK
-  namespace: DeckSurf.SDK.Models.Devices
-  syntax:
-    content: public override System.Drawing.RotateFlipType FlipType { get; }
-    return:
-      type: System.Drawing.RotateFlipType
-      description: ''
-    content.csharp: public override System.Drawing.RotateFlipType FlipType { get; }
-  overload: DeckSurf.SDK.Models.Devices.StreamDeckPlus.FlipType*
-  exceptions: []
-  modifiers.csharp:
-  - public
-  - get
-  monikers:
-  - net9.0
-- uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.GetKeySetupHeader(System.Int32,System.Int32,System.Int32,System.Int32)
-  commentId: M:DeckSurf.SDK.Models.Devices.StreamDeckPlus.GetKeySetupHeader(System.Int32,System.Int32,System.Int32,System.Int32)
-  id: GetKeySetupHeader(System.Int32,System.Int32,System.Int32,System.Int32)
-  parent: DeckSurf.SDK.Models.Devices.StreamDeckPlus
-  langs:
-  - csharp
-  name: GetKeySetupHeader(Int32, Int32, Int32, Int32)
-  nameWithType: StreamDeckPlus.GetKeySetupHeader(Int32, Int32, Int32, Int32)
-  fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.GetKeySetupHeader(Int32, Int32, Int32, Int32)
-  type: Method
-  assemblies:
-  - DeckSurf.SDK
-  namespace: DeckSurf.SDK.Models.Devices
-  syntax:
-    content: public override byte[] GetKeySetupHeader (int keyId, int sliceLength, int iteration, int remainingBytes);
-    parameters:
-    - id: keyId
-      type: System.Int32
-      description: ''
-    - id: sliceLength
-      type: System.Int32
-      description: ''
-    - id: iteration
-      type: System.Int32
-      description: ''
-    - id: remainingBytes
-      type: System.Int32
-      description: ''
-    return:
-      type: System.Byte[]
-      description: ''
-    content.csharp: public override byte[] GetKeySetupHeader (int keyId, int sliceLength, int iteration, int remainingBytes);
-  overload: DeckSurf.SDK.Models.Devices.StreamDeckPlus.GetKeySetupHeader*
-  exceptions: []
-  modifiers.csharp:
-  - public
-  monikers:
-  - net9.0
+  - net10.0
 - uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.HandleKeyPress(System.IAsyncResult,System.Byte[])
   commentId: M:DeckSurf.SDK.Models.Devices.StreamDeckPlus.HandleKeyPress(System.IAsyncResult,System.Byte[])
   id: HandleKeyPress(System.IAsyncResult,System.Byte[])
@@ -300,7 +246,7 @@ items:
   modifiers.csharp:
   - protected
   monikers:
-  - net9.0
+  - net10.0
 - uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.IsKnobSupported
   commentId: P:DeckSurf.SDK.Models.Devices.StreamDeckPlus.IsKnobSupported
   id: IsKnobSupported
@@ -326,85 +272,7 @@ items:
   - public
   - get
   monikers:
-  - net9.0
-- uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.IsScreenSupported
-  commentId: P:DeckSurf.SDK.Models.Devices.StreamDeckPlus.IsScreenSupported
-  id: IsScreenSupported
-  parent: DeckSurf.SDK.Models.Devices.StreamDeckPlus
-  langs:
-  - csharp
-  name: IsScreenSupported
-  nameWithType: StreamDeckPlus.IsScreenSupported
-  fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.IsScreenSupported
-  type: Property
-  assemblies:
-  - DeckSurf.SDK
-  namespace: DeckSurf.SDK.Models.Devices
-  syntax:
-    content: public override bool IsScreenSupported { get; }
-    return:
-      type: System.Boolean
-      description: ''
-    content.csharp: public override bool IsScreenSupported { get; }
-  overload: DeckSurf.SDK.Models.Devices.StreamDeckPlus.IsScreenSupported*
-  exceptions: []
-  modifiers.csharp:
-  - public
-  - get
-  monikers:
-  - net9.0
-- uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.KeyImageFormat
-  commentId: P:DeckSurf.SDK.Models.Devices.StreamDeckPlus.KeyImageFormat
-  id: KeyImageFormat
-  parent: DeckSurf.SDK.Models.Devices.StreamDeckPlus
-  langs:
-  - csharp
-  name: KeyImageFormat
-  nameWithType: StreamDeckPlus.KeyImageFormat
-  fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.KeyImageFormat
-  type: Property
-  assemblies:
-  - DeckSurf.SDK
-  namespace: DeckSurf.SDK.Models.Devices
-  syntax:
-    content: public override System.Drawing.Imaging.ImageFormat KeyImageFormat { get; }
-    return:
-      type: System.Drawing.Imaging.ImageFormat
-      description: ''
-    content.csharp: public override System.Drawing.Imaging.ImageFormat KeyImageFormat { get; }
-  overload: DeckSurf.SDK.Models.Devices.StreamDeckPlus.KeyImageFormat*
-  exceptions: []
-  modifiers.csharp:
-  - public
-  - get
-  monikers:
-  - net9.0
-- uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.KeyImageHeaderSize
-  commentId: P:DeckSurf.SDK.Models.Devices.StreamDeckPlus.KeyImageHeaderSize
-  id: KeyImageHeaderSize
-  parent: DeckSurf.SDK.Models.Devices.StreamDeckPlus
-  langs:
-  - csharp
-  name: KeyImageHeaderSize
-  nameWithType: StreamDeckPlus.KeyImageHeaderSize
-  fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.KeyImageHeaderSize
-  type: Property
-  assemblies:
-  - DeckSurf.SDK
-  namespace: DeckSurf.SDK.Models.Devices
-  syntax:
-    content: public override int KeyImageHeaderSize { get; }
-    return:
-      type: System.Int32
-      description: ''
-    content.csharp: public override int KeyImageHeaderSize { get; }
-  overload: DeckSurf.SDK.Models.Devices.StreamDeckPlus.KeyImageHeaderSize*
-  exceptions: []
-  modifiers.csharp:
-  - public
-  - get
-  monikers:
-  - net9.0
+  - net10.0
 - uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.Model
   commentId: P:DeckSurf.SDK.Models.Devices.StreamDeckPlus.Model
   id: Model
@@ -430,33 +298,7 @@ items:
   - public
   - get
   monikers:
-  - net9.0
-- uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.PacketSize
-  commentId: P:DeckSurf.SDK.Models.Devices.StreamDeckPlus.PacketSize
-  id: PacketSize
-  parent: DeckSurf.SDK.Models.Devices.StreamDeckPlus
-  langs:
-  - csharp
-  name: PacketSize
-  nameWithType: StreamDeckPlus.PacketSize
-  fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.PacketSize
-  type: Property
-  assemblies:
-  - DeckSurf.SDK
-  namespace: DeckSurf.SDK.Models.Devices
-  syntax:
-    content: public override int PacketSize { get; }
-    return:
-      type: System.Int32
-      description: ''
-    content.csharp: public override int PacketSize { get; }
-  overload: DeckSurf.SDK.Models.Devices.StreamDeckPlus.PacketSize*
-  exceptions: []
-  modifiers.csharp:
-  - public
-  - get
-  monikers:
-  - net9.0
+  - net10.0
 - uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.ScreenHeight
   commentId: P:DeckSurf.SDK.Models.Devices.StreamDeckPlus.ScreenHeight
   id: ScreenHeight
@@ -482,7 +324,7 @@ items:
   - public
   - get
   monikers:
-  - net9.0
+  - net10.0
 - uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.ScreenImageHeaderSize
   commentId: P:DeckSurf.SDK.Models.Devices.StreamDeckPlus.ScreenImageHeaderSize
   id: ScreenImageHeaderSize
@@ -508,7 +350,7 @@ items:
   - public
   - get
   monikers:
-  - net9.0
+  - net10.0
 - uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.ScreenSegmentWidth
   commentId: P:DeckSurf.SDK.Models.Devices.StreamDeckPlus.ScreenSegmentWidth
   id: ScreenSegmentWidth
@@ -534,7 +376,7 @@ items:
   - public
   - get
   monikers:
-  - net9.0
+  - net10.0
 - uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.ScreenWidth
   commentId: P:DeckSurf.SDK.Models.Devices.StreamDeckPlus.ScreenWidth
   id: ScreenWidth
@@ -560,27 +402,138 @@ items:
   - public
   - get
   monikers:
-  - net9.0
-- uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetScreen(System.Byte[],System.Int32,System.Int32,System.Int32)
-  commentId: M:DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetScreen(System.Byte[],System.Int32,System.Int32,System.Int32)
-  id: SetScreen(System.Byte[],System.Int32,System.Int32,System.Int32)
+  - net10.0
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetBackgroundImage(System.Byte[])
+  commentId: M:DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetBackgroundImage(System.Byte[])
+  id: SetBackgroundImage(System.Byte[])
   parent: DeckSurf.SDK.Models.Devices.StreamDeckPlus
   langs:
   - csharp
-  name: SetScreen(Byte[], Int32, Int32, Int32)
-  nameWithType: StreamDeckPlus.SetScreen(Byte[], Int32, Int32, Int32)
-  fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetScreen(Byte[], Int32, Int32, Int32)
+  name: SetBackgroundImage(Byte[])
+  nameWithType: StreamDeckPlus.SetBackgroundImage(Byte[])
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetBackgroundImage(Byte[])
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models.Devices
+  summary: Sets the background image for the Stream Deck Plus LCD.
+  syntax:
+    content: public void SetBackgroundImage (byte[] image);
+    parameters:
+    - id: image
+      type: System.Byte[]
+      description: JPEG image data for the background (800x100).
+    content.csharp: public void SetBackgroundImage (byte[] image);
+  overload: DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetBackgroundImage*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code data-dev-comment-type="paramref">image</code> is null.
+  - type: DeckSurf.SDK.Exceptions.DeviceCommunicationException
+    commentId: T:DeckSurf.SDK.Exceptions.DeviceCommunicationException
+    description: Thrown when a USB I/O failure occurs.
+  - type: DeckSurf.SDK.Exceptions.DeviceDisconnectedException
+    commentId: T:DeckSurf.SDK.Exceptions.DeviceDisconnectedException
+    description: Thrown when the device is disconnected during the operation.
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetBootLogo(System.Byte[])
+  commentId: M:DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetBootLogo(System.Byte[])
+  id: SetBootLogo(System.Byte[])
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckPlus
+  langs:
+  - csharp
+  name: SetBootLogo(Byte[])
+  nameWithType: StreamDeckPlus.SetBootLogo(Byte[])
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetBootLogo(Byte[])
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models.Devices
+  summary: Sets the boot logo displayed when the Stream Deck Plus powers on.
+  syntax:
+    content: public void SetBootLogo (byte[] image);
+    parameters:
+    - id: image
+      type: System.Byte[]
+      description: JPEG image data for the boot logo (800x100).
+    content.csharp: public void SetBootLogo (byte[] image);
+  overload: DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetBootLogo*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code data-dev-comment-type="paramref">image</code> is null.
+  - type: DeckSurf.SDK.Exceptions.DeviceCommunicationException
+    commentId: T:DeckSurf.SDK.Exceptions.DeviceCommunicationException
+    description: Thrown when a USB I/O failure occurs.
+  - type: DeckSurf.SDK.Exceptions.DeviceDisconnectedException
+    commentId: T:DeckSurf.SDK.Exceptions.DeviceDisconnectedException
+    description: Thrown when the device is disconnected during the operation.
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetFullScreenImage(System.Byte[])
+  commentId: M:DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetFullScreenImage(System.Byte[])
+  id: SetFullScreenImage(System.Byte[])
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckPlus
+  langs:
+  - csharp
+  name: SetFullScreenImage(Byte[])
+  nameWithType: StreamDeckPlus.SetFullScreenImage(Byte[])
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetFullScreenImage(Byte[])
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models.Devices
+  summary: Sets a full-screen image on the Stream Deck Plus LCD.
+  syntax:
+    content: public void SetFullScreenImage (byte[] image);
+    parameters:
+    - id: image
+      type: System.Byte[]
+      description: JPEG image data for the full 800x100 screen.
+    content.csharp: public void SetFullScreenImage (byte[] image);
+  overload: DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetFullScreenImage*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code data-dev-comment-type="paramref">image</code> is null.
+  - type: DeckSurf.SDK.Exceptions.DeviceCommunicationException
+    commentId: T:DeckSurf.SDK.Exceptions.DeviceCommunicationException
+    description: Thrown when a USB I/O failure occurs.
+  - type: DeckSurf.SDK.Exceptions.DeviceDisconnectedException
+    commentId: T:DeckSurf.SDK.Exceptions.DeviceDisconnectedException
+    description: Thrown when the device is disconnected during the operation.
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetScreen(System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetScreen(System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32)
+  id: SetScreen(System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckPlus
+  langs:
+  - csharp
+  name: SetScreen(Byte[], Int32, Int32, Int32, Int32)
+  nameWithType: StreamDeckPlus.SetScreen(Byte[], Int32, Int32, Int32, Int32)
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetScreen(Byte[], Int32, Int32, Int32, Int32)
   type: Method
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models.Devices
   syntax:
-    content: public override bool SetScreen (byte[] image, int offset, int width, int height);
+    content: public override bool SetScreen (byte[] image, int xOffset, int yOffset, int width, int height);
     parameters:
     - id: image
       type: System.Byte[]
       description: ''
-    - id: offset
+    - id: xOffset
+      type: System.Int32
+      description: ''
+    - id: yOffset
       type: System.Int32
       description: ''
     - id: width
@@ -592,13 +545,13 @@ items:
     return:
       type: System.Boolean
       description: ''
-    content.csharp: public override bool SetScreen (byte[] image, int offset, int width, int height);
+    content.csharp: public override bool SetScreen (byte[] image, int xOffset, int yOffset, int width, int height);
   overload: DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetScreen*
   exceptions: []
   modifiers.csharp:
   - public
   monikers:
-  - net9.0
+  - net10.0
 - uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.TouchButtonCount
   commentId: P:DeckSurf.SDK.Models.Devices.StreamDeckPlus.TouchButtonCount
   id: TouchButtonCount
@@ -624,7 +577,7 @@ items:
   - public
   - get
   monikers:
-  - net9.0
+  - net10.0
 references:
 - uid: DeckSurf.SDK.Models.Devices
   commentId: N:DeckSurf.SDK.Models.Devices
@@ -633,12 +586,31 @@ references:
   nameWithType: DeckSurf.SDK.Models.Devices
   fullName: DeckSurf.SDK.Models.Devices
   type: namespace
-- uid: DeckSurf.SDK.Models.ConnectedDevice
-  parent: DeckSurf.SDK.Models
+- uid: DeckSurf.SDK.Models.Devices.ScreenDevice
+  parent: DeckSurf.SDK.Models.Devices
   isExternal: false
-  name: ConnectedDevice
-  nameWithType: ConnectedDevice
-  fullName: DeckSurf.SDK.Models.ConnectedDevice
+  name: ScreenDevice
+  nameWithType: ScreenDevice
+  fullName: DeckSurf.SDK.Models.Devices.ScreenDevice
+- uid: System.ArgumentNullException
+  isExternal: true
+  name: System.ArgumentNullException
+- uid: DeckSurf.SDK.Exceptions.DeviceCommunicationException
+  commentId: T:DeckSurf.SDK.Exceptions.DeviceCommunicationException
+  parent: DeckSurf.SDK.Exceptions
+  isExternal: false
+  name: DeviceCommunicationException
+  nameWithType: DeckSurf.SDK.Exceptions.DeviceCommunicationException
+  fullName: DeckSurf.SDK.Exceptions.DeviceCommunicationException
+  type: class
+- uid: DeckSurf.SDK.Exceptions.DeviceDisconnectedException
+  commentId: T:DeckSurf.SDK.Exceptions.DeviceDisconnectedException
+  parent: DeckSurf.SDK.Exceptions
+  isExternal: false
+  name: DeviceDisconnectedException
+  nameWithType: DeckSurf.SDK.Exceptions.DeviceDisconnectedException
+  fullName: DeckSurf.SDK.Exceptions.DeviceDisconnectedException
+  type: class
 - uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.#ctor(System.Int32,System.Int32,System.String,System.String,System.String)
   parent: DeckSurf.SDK.Models.Devices.StreamDeckPlus
   isExternal: false
@@ -686,44 +658,6 @@ references:
   nameWithType: StreamDeckPlus.ButtonRows
   fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.ButtonRows
   type: property
-- uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.FlipType
-  parent: DeckSurf.SDK.Models.Devices.StreamDeckPlus
-  isExternal: false
-  name: FlipType
-  nameWithType: StreamDeckPlus.FlipType
-  fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.FlipType
-  type: property
-- uid: System.Drawing.RotateFlipType
-  parent: System.Drawing
-  isExternal: true
-  name: RotateFlipType
-  nameWithType: RotateFlipType
-  fullName: System.Drawing.RotateFlipType
-- uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.GetKeySetupHeader(System.Int32,System.Int32,System.Int32,System.Int32)
-  parent: DeckSurf.SDK.Models.Devices.StreamDeckPlus
-  isExternal: false
-  name: GetKeySetupHeader(Int32, Int32, Int32, Int32)
-  nameWithType: StreamDeckPlus.GetKeySetupHeader(Int32, Int32, Int32, Int32)
-  fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.GetKeySetupHeader(Int32, Int32, Int32, Int32)
-  type: method
-- uid: System.Byte
-  isExternal: true
-  name: Byte
-  nameWithType: Byte
-  fullName: System.Byte
-- uid: System.Byte[]
-  parent: System
-  name: Byte[]
-  nameWithType: Byte[]
-  fullName: System.Byte[]
-  spec.csharp:
-  - uid: System.Byte
-    name: Byte
-    nameWithType: Byte
-    fullName: System.Byte
-  - name: '[]'
-    nameWithType: '[]'
-    fullName: '[]'
 - uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.HandleKeyPress(System.IAsyncResult,System.Byte[])
   parent: DeckSurf.SDK.Models.Devices.StreamDeckPlus
   isExternal: false
@@ -743,6 +677,24 @@ references:
   name: IAsyncResult
   nameWithType: IAsyncResult
   fullName: System.IAsyncResult
+- uid: System.Byte
+  isExternal: true
+  name: Byte
+  nameWithType: Byte
+  fullName: System.Byte
+- uid: System.Byte[]
+  parent: System
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
 - uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.IsKnobSupported
   parent: DeckSurf.SDK.Models.Devices.StreamDeckPlus
   isExternal: false
@@ -756,33 +708,6 @@ references:
   name: Boolean
   nameWithType: Boolean
   fullName: System.Boolean
-- uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.IsScreenSupported
-  parent: DeckSurf.SDK.Models.Devices.StreamDeckPlus
-  isExternal: false
-  name: IsScreenSupported
-  nameWithType: StreamDeckPlus.IsScreenSupported
-  fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.IsScreenSupported
-  type: property
-- uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.KeyImageFormat
-  parent: DeckSurf.SDK.Models.Devices.StreamDeckPlus
-  isExternal: false
-  name: KeyImageFormat
-  nameWithType: StreamDeckPlus.KeyImageFormat
-  fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.KeyImageFormat
-  type: property
-- uid: System.Drawing.Imaging.ImageFormat
-  parent: System.Drawing.Imaging
-  isExternal: true
-  name: ImageFormat
-  nameWithType: ImageFormat
-  fullName: System.Drawing.Imaging.ImageFormat
-- uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.KeyImageHeaderSize
-  parent: DeckSurf.SDK.Models.Devices.StreamDeckPlus
-  isExternal: false
-  name: KeyImageHeaderSize
-  nameWithType: StreamDeckPlus.KeyImageHeaderSize
-  fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.KeyImageHeaderSize
-  type: property
 - uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.Model
   parent: DeckSurf.SDK.Models.Devices.StreamDeckPlus
   isExternal: false
@@ -796,13 +721,6 @@ references:
   name: DeviceModel
   nameWithType: DeviceModel
   fullName: DeckSurf.SDK.Models.DeviceModel
-- uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.PacketSize
-  parent: DeckSurf.SDK.Models.Devices.StreamDeckPlus
-  isExternal: false
-  name: PacketSize
-  nameWithType: StreamDeckPlus.PacketSize
-  fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.PacketSize
-  type: property
 - uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.ScreenHeight
   parent: DeckSurf.SDK.Models.Devices.StreamDeckPlus
   isExternal: false
@@ -831,12 +749,33 @@ references:
   nameWithType: StreamDeckPlus.ScreenWidth
   fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.ScreenWidth
   type: property
-- uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetScreen(System.Byte[],System.Int32,System.Int32,System.Int32)
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetBackgroundImage(System.Byte[])
   parent: DeckSurf.SDK.Models.Devices.StreamDeckPlus
   isExternal: false
-  name: SetScreen(Byte[], Int32, Int32, Int32)
-  nameWithType: StreamDeckPlus.SetScreen(Byte[], Int32, Int32, Int32)
-  fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetScreen(Byte[], Int32, Int32, Int32)
+  name: SetBackgroundImage(Byte[])
+  nameWithType: StreamDeckPlus.SetBackgroundImage(Byte[])
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetBackgroundImage(Byte[])
+  type: method
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetBootLogo(System.Byte[])
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckPlus
+  isExternal: false
+  name: SetBootLogo(Byte[])
+  nameWithType: StreamDeckPlus.SetBootLogo(Byte[])
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetBootLogo(Byte[])
+  type: method
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetFullScreenImage(System.Byte[])
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckPlus
+  isExternal: false
+  name: SetFullScreenImage(Byte[])
+  nameWithType: StreamDeckPlus.SetFullScreenImage(Byte[])
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetFullScreenImage(Byte[])
+  type: method
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetScreen(System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckPlus
+  isExternal: false
+  name: SetScreen(Byte[], Int32, Int32, Int32, Int32)
+  nameWithType: StreamDeckPlus.SetScreen(Byte[], Int32, Int32, Int32, Int32)
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetScreen(Byte[], Int32, Int32, Int32, Int32)
   type: method
 - uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.TouchButtonCount
   parent: DeckSurf.SDK.Models.Devices.StreamDeckPlus
@@ -853,7 +792,7 @@ references:
   nameWithType: StreamDeckPlus.StreamDeckPlus
   fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.StreamDeckPlus
   monikers:
-  - net9.0
+  - net10.0
   type: constructor
 - uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.ButtonColumns*
   commentId: Overload:DeckSurf.SDK.Models.Devices.StreamDeckPlus.ButtonColumns
@@ -863,7 +802,7 @@ references:
   nameWithType: StreamDeckPlus.ButtonColumns
   fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.ButtonColumns
   monikers:
-  - net9.0
+  - net10.0
   type: property
 - uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.ButtonCount*
   commentId: Overload:DeckSurf.SDK.Models.Devices.StreamDeckPlus.ButtonCount
@@ -873,7 +812,7 @@ references:
   nameWithType: StreamDeckPlus.ButtonCount
   fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.ButtonCount
   monikers:
-  - net9.0
+  - net10.0
   type: property
 - uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.ButtonResolution*
   commentId: Overload:DeckSurf.SDK.Models.Devices.StreamDeckPlus.ButtonResolution
@@ -883,7 +822,7 @@ references:
   nameWithType: StreamDeckPlus.ButtonResolution
   fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.ButtonResolution
   monikers:
-  - net9.0
+  - net10.0
   type: property
 - uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.ButtonRows*
   commentId: Overload:DeckSurf.SDK.Models.Devices.StreamDeckPlus.ButtonRows
@@ -893,28 +832,8 @@ references:
   nameWithType: StreamDeckPlus.ButtonRows
   fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.ButtonRows
   monikers:
-  - net9.0
+  - net10.0
   type: property
-- uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.FlipType*
-  commentId: Overload:DeckSurf.SDK.Models.Devices.StreamDeckPlus.FlipType
-  parent: DeckSurf.SDK.Models.Devices.StreamDeckPlus
-  isExternal: false
-  name: FlipType
-  nameWithType: StreamDeckPlus.FlipType
-  fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.FlipType
-  monikers:
-  - net9.0
-  type: property
-- uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.GetKeySetupHeader*
-  commentId: Overload:DeckSurf.SDK.Models.Devices.StreamDeckPlus.GetKeySetupHeader
-  parent: DeckSurf.SDK.Models.Devices.StreamDeckPlus
-  isExternal: false
-  name: GetKeySetupHeader
-  nameWithType: StreamDeckPlus.GetKeySetupHeader
-  fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.GetKeySetupHeader
-  monikers:
-  - net9.0
-  type: method
 - uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.HandleKeyPress*
   commentId: Overload:DeckSurf.SDK.Models.Devices.StreamDeckPlus.HandleKeyPress
   parent: DeckSurf.SDK.Models.Devices.StreamDeckPlus
@@ -923,7 +842,7 @@ references:
   nameWithType: StreamDeckPlus.HandleKeyPress
   fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.HandleKeyPress
   monikers:
-  - net9.0
+  - net10.0
   type: method
 - uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.IsKnobSupported*
   commentId: Overload:DeckSurf.SDK.Models.Devices.StreamDeckPlus.IsKnobSupported
@@ -933,37 +852,7 @@ references:
   nameWithType: StreamDeckPlus.IsKnobSupported
   fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.IsKnobSupported
   monikers:
-  - net9.0
-  type: property
-- uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.IsScreenSupported*
-  commentId: Overload:DeckSurf.SDK.Models.Devices.StreamDeckPlus.IsScreenSupported
-  parent: DeckSurf.SDK.Models.Devices.StreamDeckPlus
-  isExternal: false
-  name: IsScreenSupported
-  nameWithType: StreamDeckPlus.IsScreenSupported
-  fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.IsScreenSupported
-  monikers:
-  - net9.0
-  type: property
-- uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.KeyImageFormat*
-  commentId: Overload:DeckSurf.SDK.Models.Devices.StreamDeckPlus.KeyImageFormat
-  parent: DeckSurf.SDK.Models.Devices.StreamDeckPlus
-  isExternal: false
-  name: KeyImageFormat
-  nameWithType: StreamDeckPlus.KeyImageFormat
-  fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.KeyImageFormat
-  monikers:
-  - net9.0
-  type: property
-- uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.KeyImageHeaderSize*
-  commentId: Overload:DeckSurf.SDK.Models.Devices.StreamDeckPlus.KeyImageHeaderSize
-  parent: DeckSurf.SDK.Models.Devices.StreamDeckPlus
-  isExternal: false
-  name: KeyImageHeaderSize
-  nameWithType: StreamDeckPlus.KeyImageHeaderSize
-  fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.KeyImageHeaderSize
-  monikers:
-  - net9.0
+  - net10.0
   type: property
 - uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.Model*
   commentId: Overload:DeckSurf.SDK.Models.Devices.StreamDeckPlus.Model
@@ -973,17 +862,7 @@ references:
   nameWithType: StreamDeckPlus.Model
   fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.Model
   monikers:
-  - net9.0
-  type: property
-- uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.PacketSize*
-  commentId: Overload:DeckSurf.SDK.Models.Devices.StreamDeckPlus.PacketSize
-  parent: DeckSurf.SDK.Models.Devices.StreamDeckPlus
-  isExternal: false
-  name: PacketSize
-  nameWithType: StreamDeckPlus.PacketSize
-  fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.PacketSize
-  monikers:
-  - net9.0
+  - net10.0
   type: property
 - uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.ScreenHeight*
   commentId: Overload:DeckSurf.SDK.Models.Devices.StreamDeckPlus.ScreenHeight
@@ -993,7 +872,7 @@ references:
   nameWithType: StreamDeckPlus.ScreenHeight
   fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.ScreenHeight
   monikers:
-  - net9.0
+  - net10.0
   type: property
 - uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.ScreenImageHeaderSize*
   commentId: Overload:DeckSurf.SDK.Models.Devices.StreamDeckPlus.ScreenImageHeaderSize
@@ -1003,7 +882,7 @@ references:
   nameWithType: StreamDeckPlus.ScreenImageHeaderSize
   fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.ScreenImageHeaderSize
   monikers:
-  - net9.0
+  - net10.0
   type: property
 - uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.ScreenSegmentWidth*
   commentId: Overload:DeckSurf.SDK.Models.Devices.StreamDeckPlus.ScreenSegmentWidth
@@ -1013,7 +892,7 @@ references:
   nameWithType: StreamDeckPlus.ScreenSegmentWidth
   fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.ScreenSegmentWidth
   monikers:
-  - net9.0
+  - net10.0
   type: property
 - uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.ScreenWidth*
   commentId: Overload:DeckSurf.SDK.Models.Devices.StreamDeckPlus.ScreenWidth
@@ -1023,8 +902,38 @@ references:
   nameWithType: StreamDeckPlus.ScreenWidth
   fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.ScreenWidth
   monikers:
-  - net9.0
+  - net10.0
   type: property
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetBackgroundImage*
+  commentId: Overload:DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetBackgroundImage
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckPlus
+  isExternal: false
+  name: SetBackgroundImage
+  nameWithType: StreamDeckPlus.SetBackgroundImage
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetBackgroundImage
+  monikers:
+  - net10.0
+  type: method
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetBootLogo*
+  commentId: Overload:DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetBootLogo
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckPlus
+  isExternal: false
+  name: SetBootLogo
+  nameWithType: StreamDeckPlus.SetBootLogo
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetBootLogo
+  monikers:
+  - net10.0
+  type: method
+- uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetFullScreenImage*
+  commentId: Overload:DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetFullScreenImage
+  parent: DeckSurf.SDK.Models.Devices.StreamDeckPlus
+  isExternal: false
+  name: SetFullScreenImage
+  nameWithType: StreamDeckPlus.SetFullScreenImage
+  fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetFullScreenImage
+  monikers:
+  - net10.0
+  type: method
 - uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetScreen*
   commentId: Overload:DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetScreen
   parent: DeckSurf.SDK.Models.Devices.StreamDeckPlus
@@ -1033,7 +942,7 @@ references:
   nameWithType: StreamDeckPlus.SetScreen
   fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.SetScreen
   monikers:
-  - net9.0
+  - net10.0
   type: method
 - uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus.TouchButtonCount*
   commentId: Overload:DeckSurf.SDK.Models.Devices.StreamDeckPlus.TouchButtonCount
@@ -1043,8 +952,15 @@ references:
   nameWithType: StreamDeckPlus.TouchButtonCount
   fullName: DeckSurf.SDK.Models.Devices.StreamDeckPlus.TouchButtonCount
   monikers:
-  - net9.0
+  - net10.0
   type: property
+- uid: DeckSurf.SDK.Models.ConnectedDevice.ButtonPressed
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: ButtonPressed
+  nameWithType: ConnectedDevice.ButtonPressed
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.ButtonPressed
+  type: event
 - uid: DeckSurf.SDK.Models.ConnectedDevice.ClearButtons
   parent: DeckSurf.SDK.Models.ConnectedDevice
   isExternal: false
@@ -1052,6 +968,83 @@ references:
   nameWithType: ConnectedDevice.ClearButtons()
   fullName: DeckSurf.SDK.Models.ConnectedDevice.ClearButtons()
   type: method
+- uid: DeckSurf.SDK.Models.ConnectedDevice.DeviceDisconnected
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: DeviceDisconnected
+  nameWithType: ConnectedDevice.DeviceDisconnected
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.DeviceDisconnected
+  type: event
+- uid: DeckSurf.SDK.Models.ConnectedDevice.DeviceErrorOccurred
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: DeviceErrorOccurred
+  nameWithType: ConnectedDevice.DeviceErrorOccurred
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.DeviceErrorOccurred
+  type: event
+- uid: DeckSurf.SDK.Models.ConnectedDevice.DisplayName
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: DisplayName
+  nameWithType: ConnectedDevice.DisplayName
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.DisplayName
+  type: property
+- uid: DeckSurf.SDK.Models.ConnectedDevice.Dispose
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: Dispose()
+  nameWithType: ConnectedDevice.Dispose()
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.Dispose()
+  type: method
+- uid: DeckSurf.SDK.Models.ConnectedDevice.Dispose(System.Boolean)
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: Dispose(Boolean)
+  nameWithType: ConnectedDevice.Dispose(Boolean)
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.Dispose(Boolean)
+  type: method
+- uid: DeckSurf.SDK.Models.Devices.ScreenDevice.GetKeySetupHeader(System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: DeckSurf.SDK.Models.Devices.ScreenDevice
+  isExternal: false
+  name: GetKeySetupHeader(Int32, Int32, Int32, Int32)
+  nameWithType: ScreenDevice.GetKeySetupHeader(Int32, Int32, Int32, Int32)
+  fullName: DeckSurf.SDK.Models.Devices.ScreenDevice.GetKeySetupHeader(Int32, Int32, Int32, Int32)
+  type: method
+- uid: DeckSurf.SDK.Models.Devices.ScreenDevice.ImageRotation
+  parent: DeckSurf.SDK.Models.Devices.ScreenDevice
+  isExternal: false
+  name: ImageRotation
+  nameWithType: ScreenDevice.ImageRotation
+  fullName: DeckSurf.SDK.Models.Devices.ScreenDevice.ImageRotation
+  type: property
+- uid: DeckSurf.SDK.Models.ConnectedDevice.IsListening
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: IsListening
+  nameWithType: ConnectedDevice.IsListening
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.IsListening
+  type: property
+- uid: DeckSurf.SDK.Models.Devices.ScreenDevice.IsScreenSupported
+  parent: DeckSurf.SDK.Models.Devices.ScreenDevice
+  isExternal: false
+  name: IsScreenSupported
+  nameWithType: ScreenDevice.IsScreenSupported
+  fullName: DeckSurf.SDK.Models.Devices.ScreenDevice.IsScreenSupported
+  type: property
+- uid: DeckSurf.SDK.Models.Devices.ScreenDevice.KeyImageFormat
+  parent: DeckSurf.SDK.Models.Devices.ScreenDevice
+  isExternal: false
+  name: KeyImageFormat
+  nameWithType: ScreenDevice.KeyImageFormat
+  fullName: DeckSurf.SDK.Models.Devices.ScreenDevice.KeyImageFormat
+  type: property
+- uid: DeckSurf.SDK.Models.Devices.ScreenDevice.KeyImageHeaderSize
+  parent: DeckSurf.SDK.Models.Devices.ScreenDevice
+  isExternal: false
+  name: KeyImageHeaderSize
+  nameWithType: ScreenDevice.KeyImageHeaderSize
+  fullName: DeckSurf.SDK.Models.Devices.ScreenDevice.KeyImageHeaderSize
+  type: property
 - uid: DeckSurf.SDK.Models.ConnectedDevice.Name
   parent: DeckSurf.SDK.Models.ConnectedDevice
   isExternal: false
@@ -1059,20 +1052,13 @@ references:
   nameWithType: ConnectedDevice.Name
   fullName: DeckSurf.SDK.Models.ConnectedDevice.Name
   type: property
-- uid: DeckSurf.SDK.Models.ConnectedDevice.OnButtonPress
-  parent: DeckSurf.SDK.Models.ConnectedDevice
+- uid: DeckSurf.SDK.Models.Devices.ScreenDevice.PacketSize
+  parent: DeckSurf.SDK.Models.Devices.ScreenDevice
   isExternal: false
-  name: OnButtonPress
-  nameWithType: ConnectedDevice.OnButtonPress
-  fullName: DeckSurf.SDK.Models.ConnectedDevice.OnButtonPress
-  type: event
-- uid: DeckSurf.SDK.Models.ConnectedDevice.Open
-  parent: DeckSurf.SDK.Models.ConnectedDevice
-  isExternal: false
-  name: Open()
-  nameWithType: ConnectedDevice.Open()
-  fullName: DeckSurf.SDK.Models.ConnectedDevice.Open()
-  type: method
+  name: PacketSize
+  nameWithType: ScreenDevice.PacketSize
+  fullName: DeckSurf.SDK.Models.Devices.ScreenDevice.PacketSize
+  type: property
 - uid: DeckSurf.SDK.Models.ConnectedDevice.Path
   parent: DeckSurf.SDK.Models.ConnectedDevice
   isExternal: false
@@ -1094,19 +1080,26 @@ references:
   nameWithType: ConnectedDevice.SetBrightness(Byte)
   fullName: DeckSurf.SDK.Models.ConnectedDevice.SetBrightness(Byte)
   type: method
-- uid: DeckSurf.SDK.Models.ConnectedDevice.SetKey(System.Int32,System.Byte[])
+- uid: DeckSurf.SDK.Models.ConnectedDevice.SetKey(System.Int32,System.Byte[],System.Boolean)
   parent: DeckSurf.SDK.Models.ConnectedDevice
   isExternal: false
-  name: SetKey(Int32, Byte[])
-  nameWithType: ConnectedDevice.SetKey(Int32, Byte[])
-  fullName: DeckSurf.SDK.Models.ConnectedDevice.SetKey(Int32, Byte[])
+  name: SetKey(Int32, Byte[], Boolean)
+  nameWithType: ConnectedDevice.SetKey(Int32, Byte[], Boolean)
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.SetKey(Int32, Byte[], Boolean)
   type: method
-- uid: DeckSurf.SDK.Models.ConnectedDevice.SetKeyColor(System.Int32,System.Drawing.Color)
+- uid: DeckSurf.SDK.Models.ConnectedDevice.SetKeyColor(System.Int32,DeckSurf.SDK.Models.DeviceColor)
   parent: DeckSurf.SDK.Models.ConnectedDevice
   isExternal: false
-  name: SetKeyColor(Int32, Color)
-  nameWithType: ConnectedDevice.SetKeyColor(Int32, Color)
-  fullName: DeckSurf.SDK.Models.ConnectedDevice.SetKeyColor(Int32, Color)
+  name: SetKeyColor(Int32, DeviceColor)
+  nameWithType: ConnectedDevice.SetKeyColor(Int32, DeviceColor)
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.SetKeyColor(Int32, DeviceColor)
+  type: method
+- uid: DeckSurf.SDK.Models.ConnectedDevice.SetScreen(System.Byte[],System.Int32,System.Int32,System.Int32)
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: SetScreen(Byte[], Int32, Int32, Int32)
+  nameWithType: ConnectedDevice.SetScreen(Byte[], Int32, Int32, Int32)
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.SetScreen(Byte[], Int32, Int32, Int32)
   type: method
 - uid: DeckSurf.SDK.Models.ConnectedDevice.SetupDeviceButtonMap(System.Collections.Generic.IEnumerable{DeckSurf.SDK.Models.CommandMapping})
   parent: DeckSurf.SDK.Models.ConnectedDevice
@@ -1129,10 +1122,10 @@ references:
   nameWithType: ConnectedDevice.StopListening()
   fullName: DeckSurf.SDK.Models.ConnectedDevice.StopListening()
   type: method
-- uid: DeckSurf.SDK.Models.ConnectedDevice.VId
+- uid: DeckSurf.SDK.Models.ConnectedDevice.VendorId
   parent: DeckSurf.SDK.Models.ConnectedDevice
   isExternal: false
-  name: VId
-  nameWithType: ConnectedDevice.VId
-  fullName: DeckSurf.SDK.Models.ConnectedDevice.VId
+  name: VendorId
+  nameWithType: ConnectedDevice.VendorId
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.VendorId
   type: property

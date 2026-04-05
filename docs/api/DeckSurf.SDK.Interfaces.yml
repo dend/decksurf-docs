@@ -4,8 +4,9 @@ items:
   commentId: N:DeckSurf.SDK.Interfaces
   id: DeckSurf.SDK.Interfaces
   children:
-  - DeckSurf.SDK.Interfaces.IDSCommand
-  - DeckSurf.SDK.Interfaces.IDSPlugin
+  - DeckSurf.SDK.Interfaces.IConnectedDevice
+  - DeckSurf.SDK.Interfaces.IDeckSurfCommand
+  - DeckSurf.SDK.Interfaces.IDeckSurfPlugin
   langs:
   - csharp
   name: DeckSurf.SDK.Interfaces
@@ -13,21 +14,29 @@ items:
   fullName: DeckSurf.SDK.Interfaces
   type: Namespace
   monikers:
-  - net9.0
+  - net10.0
 references:
-- uid: DeckSurf.SDK.Interfaces.IDSCommand
-  commentId: T:DeckSurf.SDK.Interfaces.IDSCommand
+- uid: DeckSurf.SDK.Interfaces.IConnectedDevice
+  commentId: T:DeckSurf.SDK.Interfaces.IConnectedDevice
   parent: DeckSurf.SDK.Interfaces
   isExternal: false
-  name: IDSCommand
-  nameWithType: DeckSurf.SDK.Interfaces.IDSCommand
-  fullName: DeckSurf.SDK.Interfaces.IDSCommand
+  name: IConnectedDevice
+  nameWithType: DeckSurf.SDK.Interfaces.IConnectedDevice
+  fullName: DeckSurf.SDK.Interfaces.IConnectedDevice
   type: interface
-- uid: DeckSurf.SDK.Interfaces.IDSPlugin
-  commentId: T:DeckSurf.SDK.Interfaces.IDSPlugin
+- uid: DeckSurf.SDK.Interfaces.IDeckSurfCommand
+  commentId: T:DeckSurf.SDK.Interfaces.IDeckSurfCommand
   parent: DeckSurf.SDK.Interfaces
   isExternal: false
-  name: IDSPlugin
-  nameWithType: DeckSurf.SDK.Interfaces.IDSPlugin
-  fullName: DeckSurf.SDK.Interfaces.IDSPlugin
+  name: IDeckSurfCommand
+  nameWithType: DeckSurf.SDK.Interfaces.IDeckSurfCommand
+  fullName: DeckSurf.SDK.Interfaces.IDeckSurfCommand
+  type: interface
+- uid: DeckSurf.SDK.Interfaces.IDeckSurfPlugin
+  commentId: T:DeckSurf.SDK.Interfaces.IDeckSurfPlugin
+  parent: DeckSurf.SDK.Interfaces
+  isExternal: false
+  name: IDeckSurfPlugin
+  nameWithType: DeckSurf.SDK.Interfaces.IDeckSurfPlugin
+  fullName: DeckSurf.SDK.Interfaces.IDeckSurfPlugin
   type: interface

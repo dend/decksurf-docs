@@ -1,0 +1,112 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Models.DeviceImageFormat
+  commentId: T:DeckSurf.SDK.Models.DeviceImageFormat
+  id: DeviceImageFormat
+  children:
+  - DeckSurf.SDK.Models.DeviceImageFormat.Bmp
+  - DeckSurf.SDK.Models.DeviceImageFormat.Jpeg
+  langs:
+  - csharp
+  name: DeviceImageFormat
+  nameWithType: DeckSurf.SDK.Models.DeviceImageFormat
+  fullName: DeckSurf.SDK.Models.DeviceImageFormat
+  type: Enum
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Represents the image format used for Stream Deck device keys.
+  syntax:
+    content: public enum DeviceImageFormat
+    content.csharp: public enum DeviceImageFormat
+  inheritance:
+  - System.Enum
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net10.0
+- uid: DeckSurf.SDK.Models.DeviceImageFormat.Bmp
+  commentId: F:DeckSurf.SDK.Models.DeviceImageFormat.Bmp
+  id: Bmp
+  parent: DeckSurf.SDK.Models.DeviceImageFormat
+  langs:
+  - csharp
+  name: Bmp
+  nameWithType: DeviceImageFormat.Bmp
+  fullName: DeckSurf.SDK.Models.DeviceImageFormat.Bmp
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: BMP image format.
+  syntax:
+    content: Bmp
+    return:
+      type: DeckSurf.SDK.Models.DeviceImageFormat
+      description: ''
+    content.csharp: Bmp
+  exceptions: []
+  monikers:
+  - net10.0
+  literalValue: "1"
+- uid: DeckSurf.SDK.Models.DeviceImageFormat.Jpeg
+  commentId: F:DeckSurf.SDK.Models.DeviceImageFormat.Jpeg
+  id: Jpeg
+  parent: DeckSurf.SDK.Models.DeviceImageFormat
+  langs:
+  - csharp
+  name: Jpeg
+  nameWithType: DeviceImageFormat.Jpeg
+  fullName: DeckSurf.SDK.Models.DeviceImageFormat.Jpeg
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: JPEG image format.
+  syntax:
+    content: Jpeg
+    return:
+      type: DeckSurf.SDK.Models.DeviceImageFormat
+      description: ''
+    content.csharp: Jpeg
+  exceptions: []
+  monikers:
+  - net10.0
+  literalValue: "0"
+references:
+- uid: DeckSurf.SDK.Models
+  commentId: N:DeckSurf.SDK.Models
+  isExternal: false
+  name: DeckSurf.SDK.Models
+  nameWithType: DeckSurf.SDK.Models
+  fullName: DeckSurf.SDK.Models
+  type: namespace
+- uid: System.Enum
+  parent: System
+  isExternal: true
+  name: Enum
+  nameWithType: Enum
+  fullName: System.Enum
+- uid: DeckSurf.SDK.Models.DeviceImageFormat.Bmp
+  parent: DeckSurf.SDK.Models.DeviceImageFormat
+  isExternal: false
+  name: Bmp
+  nameWithType: DeviceImageFormat.Bmp
+  fullName: DeckSurf.SDK.Models.DeviceImageFormat.Bmp
+  type: field
+- uid: DeckSurf.SDK.Models.DeviceImageFormat
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: DeviceImageFormat
+  nameWithType: DeviceImageFormat
+  fullName: DeckSurf.SDK.Models.DeviceImageFormat
+- uid: DeckSurf.SDK.Models.DeviceImageFormat.Jpeg
+  parent: DeckSurf.SDK.Models.DeviceImageFormat
+  isExternal: false
+  name: Jpeg
+  nameWithType: DeviceImageFormat.Jpeg
+  fullName: DeckSurf.SDK.Models.DeviceImageFormat.Jpeg
+  type: field

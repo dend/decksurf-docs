@@ -1,0 +1,526 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Models.TouchPoint
+  commentId: T:DeckSurf.SDK.Models.TouchPoint
+  id: TouchPoint
+  children:
+  - DeckSurf.SDK.Models.TouchPoint.#ctor(System.Int32,System.Int32)
+  - DeckSurf.SDK.Models.TouchPoint.Equals(DeckSurf.SDK.Models.TouchPoint)
+  - DeckSurf.SDK.Models.TouchPoint.Equals(System.Object)
+  - DeckSurf.SDK.Models.TouchPoint.GetHashCode
+  - DeckSurf.SDK.Models.TouchPoint.op_Equality(DeckSurf.SDK.Models.TouchPoint,DeckSurf.SDK.Models.TouchPoint)
+  - DeckSurf.SDK.Models.TouchPoint.op_Inequality(DeckSurf.SDK.Models.TouchPoint,DeckSurf.SDK.Models.TouchPoint)
+  - DeckSurf.SDK.Models.TouchPoint.ToString
+  - DeckSurf.SDK.Models.TouchPoint.X
+  - DeckSurf.SDK.Models.TouchPoint.Y
+  langs:
+  - csharp
+  name: TouchPoint
+  nameWithType: DeckSurf.SDK.Models.TouchPoint
+  fullName: DeckSurf.SDK.Models.TouchPoint
+  type: Struct
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Represents a point on a Stream Deck touch screen.
+  remarks: >-
+    Coordinates use a top-left origin where (0,0) is the top-left corner of the touch area.
+
+
+    X increases rightward, Y increases downward.
+  syntax:
+    content: >-
+      [[System.Runtime.CompilerServices.IsReadOnly]]
+
+      public struct TouchPoint : IEquatable<DeckSurf.SDK.Models.TouchPoint>
+    content.csharp: >-
+      [[System.Runtime.CompilerServices.IsReadOnly]]
+
+      public struct TouchPoint : IEquatable<DeckSurf.SDK.Models.TouchPoint>
+  inheritance:
+  - System.ValueType
+  implements:
+  - System.IEquatable{DeckSurf.SDK.Models.TouchPoint}
+  attributes:
+  - type: '[System.Runtime.CompilerServices.IsReadOnly]Attribute'
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net10.0
+- uid: DeckSurf.SDK.Models.TouchPoint.#ctor(System.Int32,System.Int32)
+  commentId: M:DeckSurf.SDK.Models.TouchPoint.#ctor(System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32)'
+  parent: DeckSurf.SDK.Models.TouchPoint
+  langs:
+  - csharp
+  name: TouchPoint(Int32, Int32)
+  nameWithType: TouchPoint.TouchPoint(Int32, Int32)
+  fullName: DeckSurf.SDK.Models.TouchPoint.TouchPoint(Int32, Int32)
+  type: Constructor
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Initializes a new instance of the <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.TouchPoint"></xref> struct.
+  syntax:
+    content: public TouchPoint (int x, int y);
+    parameters:
+    - id: x
+      type: System.Int32
+      description: The X coordinate.
+    - id: y
+      type: System.Int32
+      description: The Y coordinate.
+    content.csharp: public TouchPoint (int x, int y);
+  overload: DeckSurf.SDK.Models.TouchPoint.#ctor*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.TouchPoint.Equals(DeckSurf.SDK.Models.TouchPoint)
+  commentId: M:DeckSurf.SDK.Models.TouchPoint.Equals(DeckSurf.SDK.Models.TouchPoint)
+  id: Equals(DeckSurf.SDK.Models.TouchPoint)
+  parent: DeckSurf.SDK.Models.TouchPoint
+  langs:
+  - csharp
+  name: Equals(TouchPoint)
+  nameWithType: TouchPoint.Equals(TouchPoint)
+  fullName: DeckSurf.SDK.Models.TouchPoint.Equals(TouchPoint)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  syntax:
+    content: public bool Equals (DeckSurf.SDK.Models.TouchPoint other);
+    parameters:
+    - id: other
+      type: DeckSurf.SDK.Models.TouchPoint
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.csharp: public bool Equals (DeckSurf.SDK.Models.TouchPoint other);
+  overload: DeckSurf.SDK.Models.TouchPoint.Equals*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.TouchPoint.Equals(System.Object)
+  commentId: M:DeckSurf.SDK.Models.TouchPoint.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: DeckSurf.SDK.Models.TouchPoint
+  langs:
+  - csharp
+  name: Equals(Object)
+  nameWithType: TouchPoint.Equals(Object)
+  fullName: DeckSurf.SDK.Models.TouchPoint.Equals(Object)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  syntax:
+    content: public override bool Equals (object obj);
+    parameters:
+    - id: obj
+      type: System.Object
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.csharp: public override bool Equals (object obj);
+  overload: DeckSurf.SDK.Models.TouchPoint.Equals*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.TouchPoint.GetHashCode
+  commentId: M:DeckSurf.SDK.Models.TouchPoint.GetHashCode
+  id: GetHashCode
+  parent: DeckSurf.SDK.Models.TouchPoint
+  langs:
+  - csharp
+  name: GetHashCode()
+  nameWithType: TouchPoint.GetHashCode()
+  fullName: DeckSurf.SDK.Models.TouchPoint.GetHashCode()
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  syntax:
+    content: public override int GetHashCode ();
+    parameters: []
+    return:
+      type: System.Int32
+      description: ''
+    content.csharp: public override int GetHashCode ();
+  overload: DeckSurf.SDK.Models.TouchPoint.GetHashCode*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.TouchPoint.op_Equality(DeckSurf.SDK.Models.TouchPoint,DeckSurf.SDK.Models.TouchPoint)
+  commentId: M:DeckSurf.SDK.Models.TouchPoint.op_Equality(DeckSurf.SDK.Models.TouchPoint,DeckSurf.SDK.Models.TouchPoint)
+  id: op_Equality(DeckSurf.SDK.Models.TouchPoint,DeckSurf.SDK.Models.TouchPoint)
+  parent: DeckSurf.SDK.Models.TouchPoint
+  langs:
+  - csharp
+  name: Equality(TouchPoint, TouchPoint)
+  nameWithType: TouchPoint.Equality(TouchPoint, TouchPoint)
+  fullName: DeckSurf.SDK.Models.TouchPoint.Equality(TouchPoint, TouchPoint)
+  type: Operator
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Determines whether two <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.TouchPoint"></xref> values are equal.
+  syntax:
+    content: public static bool operator == (DeckSurf.SDK.Models.TouchPoint left, DeckSurf.SDK.Models.TouchPoint right);
+    parameters:
+    - id: left
+      type: DeckSurf.SDK.Models.TouchPoint
+      description: The first touch point to compare.
+    - id: right
+      type: DeckSurf.SDK.Models.TouchPoint
+      description: The second touch point to compare.
+    return:
+      type: System.Boolean
+      description: <code data-dev-comment-type="c">true</code> if the two touch points are equal; otherwise, <code data-dev-comment-type="c">false</code>.
+    content.csharp: public static bool operator == (DeckSurf.SDK.Models.TouchPoint left, DeckSurf.SDK.Models.TouchPoint right);
+  overload: DeckSurf.SDK.Models.TouchPoint.op_Equality*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.TouchPoint.op_Inequality(DeckSurf.SDK.Models.TouchPoint,DeckSurf.SDK.Models.TouchPoint)
+  commentId: M:DeckSurf.SDK.Models.TouchPoint.op_Inequality(DeckSurf.SDK.Models.TouchPoint,DeckSurf.SDK.Models.TouchPoint)
+  id: op_Inequality(DeckSurf.SDK.Models.TouchPoint,DeckSurf.SDK.Models.TouchPoint)
+  parent: DeckSurf.SDK.Models.TouchPoint
+  langs:
+  - csharp
+  name: Inequality(TouchPoint, TouchPoint)
+  nameWithType: TouchPoint.Inequality(TouchPoint, TouchPoint)
+  fullName: DeckSurf.SDK.Models.TouchPoint.Inequality(TouchPoint, TouchPoint)
+  type: Operator
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Determines whether two <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.TouchPoint"></xref> values are not equal.
+  syntax:
+    content: public static bool operator != (DeckSurf.SDK.Models.TouchPoint left, DeckSurf.SDK.Models.TouchPoint right);
+    parameters:
+    - id: left
+      type: DeckSurf.SDK.Models.TouchPoint
+      description: The first touch point to compare.
+    - id: right
+      type: DeckSurf.SDK.Models.TouchPoint
+      description: The second touch point to compare.
+    return:
+      type: System.Boolean
+      description: <code data-dev-comment-type="c">true</code> if the two touch points are not equal; otherwise, <code data-dev-comment-type="c">false</code>.
+    content.csharp: public static bool operator != (DeckSurf.SDK.Models.TouchPoint left, DeckSurf.SDK.Models.TouchPoint right);
+  overload: DeckSurf.SDK.Models.TouchPoint.op_Inequality*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.TouchPoint.ToString
+  commentId: M:DeckSurf.SDK.Models.TouchPoint.ToString
+  id: ToString
+  parent: DeckSurf.SDK.Models.TouchPoint
+  langs:
+  - csharp
+  name: ToString()
+  nameWithType: TouchPoint.ToString()
+  fullName: DeckSurf.SDK.Models.TouchPoint.ToString()
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  syntax:
+    content: public override string ToString ();
+    parameters: []
+    return:
+      type: System.String
+      description: ''
+    content.csharp: public override string ToString ();
+  overload: DeckSurf.SDK.Models.TouchPoint.ToString*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.TouchPoint.X
+  commentId: P:DeckSurf.SDK.Models.TouchPoint.X
+  id: X
+  parent: DeckSurf.SDK.Models.TouchPoint
+  langs:
+  - csharp
+  name: X
+  nameWithType: TouchPoint.X
+  fullName: DeckSurf.SDK.Models.TouchPoint.X
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets the X coordinate.
+  syntax:
+    content: public int X { get; }
+    return:
+      type: System.Int32
+      description: ''
+    content.csharp: public int X { get; }
+  overload: DeckSurf.SDK.Models.TouchPoint.X*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.TouchPoint.Y
+  commentId: P:DeckSurf.SDK.Models.TouchPoint.Y
+  id: Y
+  parent: DeckSurf.SDK.Models.TouchPoint
+  langs:
+  - csharp
+  name: Y
+  nameWithType: TouchPoint.Y
+  fullName: DeckSurf.SDK.Models.TouchPoint.Y
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets the Y coordinate.
+  syntax:
+    content: public int Y { get; }
+    return:
+      type: System.Int32
+      description: ''
+    content.csharp: public int Y { get; }
+  overload: DeckSurf.SDK.Models.TouchPoint.Y*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net10.0
+references:
+- uid: DeckSurf.SDK.Models
+  commentId: N:DeckSurf.SDK.Models
+  isExternal: false
+  name: DeckSurf.SDK.Models
+  nameWithType: DeckSurf.SDK.Models
+  fullName: DeckSurf.SDK.Models
+  type: namespace
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: DeckSurf.SDK.Models.TouchPoint.#ctor(System.Int32,System.Int32)
+  parent: DeckSurf.SDK.Models.TouchPoint
+  isExternal: false
+  name: TouchPoint(Int32, Int32)
+  nameWithType: TouchPoint.TouchPoint(Int32, Int32)
+  fullName: DeckSurf.SDK.Models.TouchPoint.TouchPoint(Int32, Int32)
+  type: constructor
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: DeckSurf.SDK.Models.TouchPoint.Equals(DeckSurf.SDK.Models.TouchPoint)
+  parent: DeckSurf.SDK.Models.TouchPoint
+  isExternal: false
+  name: Equals(TouchPoint)
+  nameWithType: TouchPoint.Equals(TouchPoint)
+  fullName: DeckSurf.SDK.Models.TouchPoint.Equals(TouchPoint)
+  type: method
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: DeckSurf.SDK.Models.TouchPoint
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: TouchPoint
+  nameWithType: TouchPoint
+  fullName: DeckSurf.SDK.Models.TouchPoint
+- uid: DeckSurf.SDK.Models.TouchPoint.Equals(System.Object)
+  parent: DeckSurf.SDK.Models.TouchPoint
+  isExternal: false
+  name: Equals(Object)
+  nameWithType: TouchPoint.Equals(Object)
+  fullName: DeckSurf.SDK.Models.TouchPoint.Equals(Object)
+  type: method
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: DeckSurf.SDK.Models.TouchPoint.GetHashCode
+  parent: DeckSurf.SDK.Models.TouchPoint
+  isExternal: false
+  name: GetHashCode()
+  nameWithType: TouchPoint.GetHashCode()
+  fullName: DeckSurf.SDK.Models.TouchPoint.GetHashCode()
+  type: method
+- uid: DeckSurf.SDK.Models.TouchPoint.op_Equality(DeckSurf.SDK.Models.TouchPoint,DeckSurf.SDK.Models.TouchPoint)
+  parent: DeckSurf.SDK.Models.TouchPoint
+  isExternal: false
+  name: Equality(TouchPoint, TouchPoint)
+  nameWithType: TouchPoint.Equality(TouchPoint, TouchPoint)
+  fullName: DeckSurf.SDK.Models.TouchPoint.Equality(TouchPoint, TouchPoint)
+  type: operator
+- uid: DeckSurf.SDK.Models.TouchPoint.op_Inequality(DeckSurf.SDK.Models.TouchPoint,DeckSurf.SDK.Models.TouchPoint)
+  parent: DeckSurf.SDK.Models.TouchPoint
+  isExternal: false
+  name: Inequality(TouchPoint, TouchPoint)
+  nameWithType: TouchPoint.Inequality(TouchPoint, TouchPoint)
+  fullName: DeckSurf.SDK.Models.TouchPoint.Inequality(TouchPoint, TouchPoint)
+  type: operator
+- uid: DeckSurf.SDK.Models.TouchPoint.ToString
+  parent: DeckSurf.SDK.Models.TouchPoint
+  isExternal: false
+  name: ToString()
+  nameWithType: TouchPoint.ToString()
+  fullName: DeckSurf.SDK.Models.TouchPoint.ToString()
+  type: method
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DeckSurf.SDK.Models.TouchPoint.X
+  parent: DeckSurf.SDK.Models.TouchPoint
+  isExternal: false
+  name: X
+  nameWithType: TouchPoint.X
+  fullName: DeckSurf.SDK.Models.TouchPoint.X
+  type: property
+- uid: DeckSurf.SDK.Models.TouchPoint.Y
+  parent: DeckSurf.SDK.Models.TouchPoint
+  isExternal: false
+  name: Y
+  nameWithType: TouchPoint.Y
+  fullName: DeckSurf.SDK.Models.TouchPoint.Y
+  type: property
+- uid: DeckSurf.SDK.Models.TouchPoint.#ctor*
+  commentId: Overload:DeckSurf.SDK.Models.TouchPoint.#ctor
+  parent: DeckSurf.SDK.Models.TouchPoint
+  isExternal: false
+  name: TouchPoint
+  nameWithType: TouchPoint.TouchPoint
+  fullName: DeckSurf.SDK.Models.TouchPoint.TouchPoint
+  monikers:
+  - net10.0
+  type: constructor
+- uid: DeckSurf.SDK.Models.TouchPoint.Equals*
+  commentId: Overload:DeckSurf.SDK.Models.TouchPoint.Equals
+  parent: DeckSurf.SDK.Models.TouchPoint
+  isExternal: false
+  name: Equals
+  nameWithType: TouchPoint.Equals
+  fullName: DeckSurf.SDK.Models.TouchPoint.Equals
+  monikers:
+  - net10.0
+  type: method
+- uid: DeckSurf.SDK.Models.TouchPoint.GetHashCode*
+  commentId: Overload:DeckSurf.SDK.Models.TouchPoint.GetHashCode
+  parent: DeckSurf.SDK.Models.TouchPoint
+  isExternal: false
+  name: GetHashCode
+  nameWithType: TouchPoint.GetHashCode
+  fullName: DeckSurf.SDK.Models.TouchPoint.GetHashCode
+  monikers:
+  - net10.0
+  type: method
+- uid: DeckSurf.SDK.Models.TouchPoint.op_Equality*
+  commentId: Overload:DeckSurf.SDK.Models.TouchPoint.op_Equality
+  parent: DeckSurf.SDK.Models.TouchPoint
+  isExternal: false
+  name: Equality
+  nameWithType: TouchPoint.Equality
+  fullName: DeckSurf.SDK.Models.TouchPoint.Equality
+  monikers:
+  - net10.0
+  type: operator
+- uid: DeckSurf.SDK.Models.TouchPoint.op_Inequality*
+  commentId: Overload:DeckSurf.SDK.Models.TouchPoint.op_Inequality
+  parent: DeckSurf.SDK.Models.TouchPoint
+  isExternal: false
+  name: Inequality
+  nameWithType: TouchPoint.Inequality
+  fullName: DeckSurf.SDK.Models.TouchPoint.Inequality
+  monikers:
+  - net10.0
+  type: operator
+- uid: DeckSurf.SDK.Models.TouchPoint.ToString*
+  commentId: Overload:DeckSurf.SDK.Models.TouchPoint.ToString
+  parent: DeckSurf.SDK.Models.TouchPoint
+  isExternal: false
+  name: ToString
+  nameWithType: TouchPoint.ToString
+  fullName: DeckSurf.SDK.Models.TouchPoint.ToString
+  monikers:
+  - net10.0
+  type: method
+- uid: DeckSurf.SDK.Models.TouchPoint.X*
+  commentId: Overload:DeckSurf.SDK.Models.TouchPoint.X
+  parent: DeckSurf.SDK.Models.TouchPoint
+  isExternal: false
+  name: X
+  nameWithType: TouchPoint.X
+  fullName: DeckSurf.SDK.Models.TouchPoint.X
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Models.TouchPoint.Y*
+  commentId: Overload:DeckSurf.SDK.Models.TouchPoint.Y
+  parent: DeckSurf.SDK.Models.TouchPoint
+  isExternal: false
+  name: Y
+  nameWithType: TouchPoint.Y
+  fullName: DeckSurf.SDK.Models.TouchPoint.Y
+  monikers:
+  - net10.0
+  type: property
+- uid: System.IEquatable`1
+  isExternal: true
+  name: IEquatable
+  nameWithType: IEquatable
+  fullName: System.IEquatable
+- uid: System.IEquatable{DeckSurf.SDK.Models.TouchPoint}
+  parent: System
+  name: IEquatable<TouchPoint>
+  nameWithType: IEquatable<TouchPoint>
+  fullName: System.IEquatable<DeckSurf.SDK.Models.TouchPoint>
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: DeckSurf.SDK.Models.TouchPoint
+    name: TouchPoint
+    nameWithType: TouchPoint
+    fullName: DeckSurf.SDK.Models.TouchPoint
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'

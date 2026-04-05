@@ -1,0 +1,943 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Models.DeviceColor
+  commentId: T:DeckSurf.SDK.Models.DeviceColor
+  id: DeviceColor
+  children:
+  - DeckSurf.SDK.Models.DeviceColor.#ctor(System.Byte,System.Byte,System.Byte)
+  - DeckSurf.SDK.Models.DeviceColor.B
+  - DeckSurf.SDK.Models.DeviceColor.Black
+  - DeckSurf.SDK.Models.DeviceColor.Blue
+  - DeckSurf.SDK.Models.DeviceColor.Cyan
+  - DeckSurf.SDK.Models.DeviceColor.Equals(DeckSurf.SDK.Models.DeviceColor)
+  - DeckSurf.SDK.Models.DeviceColor.Equals(System.Object)
+  - DeckSurf.SDK.Models.DeviceColor.G
+  - DeckSurf.SDK.Models.DeviceColor.GetHashCode
+  - DeckSurf.SDK.Models.DeviceColor.Green
+  - DeckSurf.SDK.Models.DeviceColor.Magenta
+  - DeckSurf.SDK.Models.DeviceColor.op_Equality(DeckSurf.SDK.Models.DeviceColor,DeckSurf.SDK.Models.DeviceColor)
+  - DeckSurf.SDK.Models.DeviceColor.op_Inequality(DeckSurf.SDK.Models.DeviceColor,DeckSurf.SDK.Models.DeviceColor)
+  - DeckSurf.SDK.Models.DeviceColor.R
+  - DeckSurf.SDK.Models.DeviceColor.Red
+  - DeckSurf.SDK.Models.DeviceColor.ToString
+  - DeckSurf.SDK.Models.DeviceColor.White
+  - DeckSurf.SDK.Models.DeviceColor.Yellow
+  langs:
+  - csharp
+  name: DeviceColor
+  nameWithType: DeckSurf.SDK.Models.DeviceColor
+  fullName: DeckSurf.SDK.Models.DeviceColor
+  type: Struct
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Represents an RGB color for use with Stream Deck device keys.
+  syntax:
+    content: >-
+      [[System.Runtime.CompilerServices.IsReadOnly]]
+
+      public struct DeviceColor : IEquatable<DeckSurf.SDK.Models.DeviceColor>
+    content.csharp: >-
+      [[System.Runtime.CompilerServices.IsReadOnly]]
+
+      public struct DeviceColor : IEquatable<DeckSurf.SDK.Models.DeviceColor>
+  inheritance:
+  - System.ValueType
+  implements:
+  - System.IEquatable{DeckSurf.SDK.Models.DeviceColor}
+  attributes:
+  - type: '[System.Runtime.CompilerServices.IsReadOnly]Attribute'
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net10.0
+- uid: DeckSurf.SDK.Models.DeviceColor.#ctor(System.Byte,System.Byte,System.Byte)
+  commentId: M:DeckSurf.SDK.Models.DeviceColor.#ctor(System.Byte,System.Byte,System.Byte)
+  id: '#ctor(System.Byte,System.Byte,System.Byte)'
+  parent: DeckSurf.SDK.Models.DeviceColor
+  langs:
+  - csharp
+  name: DeviceColor(Byte, Byte, Byte)
+  nameWithType: DeviceColor.DeviceColor(Byte, Byte, Byte)
+  fullName: DeckSurf.SDK.Models.DeviceColor.DeviceColor(Byte, Byte, Byte)
+  type: Constructor
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Initializes a new instance of the <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.DeviceColor"></xref> struct.
+  syntax:
+    content: public DeviceColor (byte r, byte g, byte b);
+    parameters:
+    - id: r
+      type: System.Byte
+      description: The red component (0-255).
+    - id: g
+      type: System.Byte
+      description: The green component (0-255).
+    - id: b
+      type: System.Byte
+      description: The blue component (0-255).
+    content.csharp: public DeviceColor (byte r, byte g, byte b);
+  overload: DeckSurf.SDK.Models.DeviceColor.#ctor*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.DeviceColor.B
+  commentId: P:DeckSurf.SDK.Models.DeviceColor.B
+  id: B
+  parent: DeckSurf.SDK.Models.DeviceColor
+  langs:
+  - csharp
+  name: B
+  nameWithType: DeviceColor.B
+  fullName: DeckSurf.SDK.Models.DeviceColor.B
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets the blue component of the color.
+  syntax:
+    content: public byte B { get; }
+    return:
+      type: System.Byte
+      description: ''
+    content.csharp: public byte B { get; }
+  overload: DeckSurf.SDK.Models.DeviceColor.B*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.DeviceColor.Black
+  commentId: P:DeckSurf.SDK.Models.DeviceColor.Black
+  id: Black
+  parent: DeckSurf.SDK.Models.DeviceColor
+  langs:
+  - csharp
+  name: Black
+  nameWithType: DeviceColor.Black
+  fullName: DeckSurf.SDK.Models.DeviceColor.Black
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets a black color (0, 0, 0).
+  syntax:
+    content: public static DeckSurf.SDK.Models.DeviceColor Black { get; }
+    return:
+      type: DeckSurf.SDK.Models.DeviceColor
+      description: ''
+    content.csharp: public static DeckSurf.SDK.Models.DeviceColor Black { get; }
+  overload: DeckSurf.SDK.Models.DeviceColor.Black*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.DeviceColor.Blue
+  commentId: P:DeckSurf.SDK.Models.DeviceColor.Blue
+  id: Blue
+  parent: DeckSurf.SDK.Models.DeviceColor
+  langs:
+  - csharp
+  name: Blue
+  nameWithType: DeviceColor.Blue
+  fullName: DeckSurf.SDK.Models.DeviceColor.Blue
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets a blue color (0, 0, 255).
+  syntax:
+    content: public static DeckSurf.SDK.Models.DeviceColor Blue { get; }
+    return:
+      type: DeckSurf.SDK.Models.DeviceColor
+      description: ''
+    content.csharp: public static DeckSurf.SDK.Models.DeviceColor Blue { get; }
+  overload: DeckSurf.SDK.Models.DeviceColor.Blue*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.DeviceColor.Cyan
+  commentId: P:DeckSurf.SDK.Models.DeviceColor.Cyan
+  id: Cyan
+  parent: DeckSurf.SDK.Models.DeviceColor
+  langs:
+  - csharp
+  name: Cyan
+  nameWithType: DeviceColor.Cyan
+  fullName: DeckSurf.SDK.Models.DeviceColor.Cyan
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets a cyan color (0, 255, 255).
+  syntax:
+    content: public static DeckSurf.SDK.Models.DeviceColor Cyan { get; }
+    return:
+      type: DeckSurf.SDK.Models.DeviceColor
+      description: ''
+    content.csharp: public static DeckSurf.SDK.Models.DeviceColor Cyan { get; }
+  overload: DeckSurf.SDK.Models.DeviceColor.Cyan*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.DeviceColor.Equals(DeckSurf.SDK.Models.DeviceColor)
+  commentId: M:DeckSurf.SDK.Models.DeviceColor.Equals(DeckSurf.SDK.Models.DeviceColor)
+  id: Equals(DeckSurf.SDK.Models.DeviceColor)
+  parent: DeckSurf.SDK.Models.DeviceColor
+  langs:
+  - csharp
+  name: Equals(DeviceColor)
+  nameWithType: DeviceColor.Equals(DeviceColor)
+  fullName: DeckSurf.SDK.Models.DeviceColor.Equals(DeviceColor)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  syntax:
+    content: public bool Equals (DeckSurf.SDK.Models.DeviceColor other);
+    parameters:
+    - id: other
+      type: DeckSurf.SDK.Models.DeviceColor
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.csharp: public bool Equals (DeckSurf.SDK.Models.DeviceColor other);
+  overload: DeckSurf.SDK.Models.DeviceColor.Equals*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.DeviceColor.Equals(System.Object)
+  commentId: M:DeckSurf.SDK.Models.DeviceColor.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: DeckSurf.SDK.Models.DeviceColor
+  langs:
+  - csharp
+  name: Equals(Object)
+  nameWithType: DeviceColor.Equals(Object)
+  fullName: DeckSurf.SDK.Models.DeviceColor.Equals(Object)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  syntax:
+    content: public override bool Equals (object obj);
+    parameters:
+    - id: obj
+      type: System.Object
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.csharp: public override bool Equals (object obj);
+  overload: DeckSurf.SDK.Models.DeviceColor.Equals*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.DeviceColor.G
+  commentId: P:DeckSurf.SDK.Models.DeviceColor.G
+  id: G
+  parent: DeckSurf.SDK.Models.DeviceColor
+  langs:
+  - csharp
+  name: G
+  nameWithType: DeviceColor.G
+  fullName: DeckSurf.SDK.Models.DeviceColor.G
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets the green component of the color.
+  syntax:
+    content: public byte G { get; }
+    return:
+      type: System.Byte
+      description: ''
+    content.csharp: public byte G { get; }
+  overload: DeckSurf.SDK.Models.DeviceColor.G*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.DeviceColor.GetHashCode
+  commentId: M:DeckSurf.SDK.Models.DeviceColor.GetHashCode
+  id: GetHashCode
+  parent: DeckSurf.SDK.Models.DeviceColor
+  langs:
+  - csharp
+  name: GetHashCode()
+  nameWithType: DeviceColor.GetHashCode()
+  fullName: DeckSurf.SDK.Models.DeviceColor.GetHashCode()
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  syntax:
+    content: public override int GetHashCode ();
+    parameters: []
+    return:
+      type: System.Int32
+      description: ''
+    content.csharp: public override int GetHashCode ();
+  overload: DeckSurf.SDK.Models.DeviceColor.GetHashCode*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.DeviceColor.Green
+  commentId: P:DeckSurf.SDK.Models.DeviceColor.Green
+  id: Green
+  parent: DeckSurf.SDK.Models.DeviceColor
+  langs:
+  - csharp
+  name: Green
+  nameWithType: DeviceColor.Green
+  fullName: DeckSurf.SDK.Models.DeviceColor.Green
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets a green color (0, 128, 0).
+  syntax:
+    content: public static DeckSurf.SDK.Models.DeviceColor Green { get; }
+    return:
+      type: DeckSurf.SDK.Models.DeviceColor
+      description: ''
+    content.csharp: public static DeckSurf.SDK.Models.DeviceColor Green { get; }
+  overload: DeckSurf.SDK.Models.DeviceColor.Green*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.DeviceColor.Magenta
+  commentId: P:DeckSurf.SDK.Models.DeviceColor.Magenta
+  id: Magenta
+  parent: DeckSurf.SDK.Models.DeviceColor
+  langs:
+  - csharp
+  name: Magenta
+  nameWithType: DeviceColor.Magenta
+  fullName: DeckSurf.SDK.Models.DeviceColor.Magenta
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets a magenta color (255, 0, 255).
+  syntax:
+    content: public static DeckSurf.SDK.Models.DeviceColor Magenta { get; }
+    return:
+      type: DeckSurf.SDK.Models.DeviceColor
+      description: ''
+    content.csharp: public static DeckSurf.SDK.Models.DeviceColor Magenta { get; }
+  overload: DeckSurf.SDK.Models.DeviceColor.Magenta*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.DeviceColor.op_Equality(DeckSurf.SDK.Models.DeviceColor,DeckSurf.SDK.Models.DeviceColor)
+  commentId: M:DeckSurf.SDK.Models.DeviceColor.op_Equality(DeckSurf.SDK.Models.DeviceColor,DeckSurf.SDK.Models.DeviceColor)
+  id: op_Equality(DeckSurf.SDK.Models.DeviceColor,DeckSurf.SDK.Models.DeviceColor)
+  parent: DeckSurf.SDK.Models.DeviceColor
+  langs:
+  - csharp
+  name: Equality(DeviceColor, DeviceColor)
+  nameWithType: DeviceColor.Equality(DeviceColor, DeviceColor)
+  fullName: DeckSurf.SDK.Models.DeviceColor.Equality(DeviceColor, DeviceColor)
+  type: Operator
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Determines whether two <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.DeviceColor"></xref> values are equal.
+  syntax:
+    content: public static bool operator == (DeckSurf.SDK.Models.DeviceColor left, DeckSurf.SDK.Models.DeviceColor right);
+    parameters:
+    - id: left
+      type: DeckSurf.SDK.Models.DeviceColor
+      description: The first color to compare.
+    - id: right
+      type: DeckSurf.SDK.Models.DeviceColor
+      description: The second color to compare.
+    return:
+      type: System.Boolean
+      description: <code data-dev-comment-type="c">true</code> if the two colors are equal; otherwise, <code data-dev-comment-type="c">false</code>.
+    content.csharp: public static bool operator == (DeckSurf.SDK.Models.DeviceColor left, DeckSurf.SDK.Models.DeviceColor right);
+  overload: DeckSurf.SDK.Models.DeviceColor.op_Equality*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.DeviceColor.op_Inequality(DeckSurf.SDK.Models.DeviceColor,DeckSurf.SDK.Models.DeviceColor)
+  commentId: M:DeckSurf.SDK.Models.DeviceColor.op_Inequality(DeckSurf.SDK.Models.DeviceColor,DeckSurf.SDK.Models.DeviceColor)
+  id: op_Inequality(DeckSurf.SDK.Models.DeviceColor,DeckSurf.SDK.Models.DeviceColor)
+  parent: DeckSurf.SDK.Models.DeviceColor
+  langs:
+  - csharp
+  name: Inequality(DeviceColor, DeviceColor)
+  nameWithType: DeviceColor.Inequality(DeviceColor, DeviceColor)
+  fullName: DeckSurf.SDK.Models.DeviceColor.Inequality(DeviceColor, DeviceColor)
+  type: Operator
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Determines whether two <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.DeviceColor"></xref> values are not equal.
+  syntax:
+    content: public static bool operator != (DeckSurf.SDK.Models.DeviceColor left, DeckSurf.SDK.Models.DeviceColor right);
+    parameters:
+    - id: left
+      type: DeckSurf.SDK.Models.DeviceColor
+      description: The first color to compare.
+    - id: right
+      type: DeckSurf.SDK.Models.DeviceColor
+      description: The second color to compare.
+    return:
+      type: System.Boolean
+      description: <code data-dev-comment-type="c">true</code> if the two colors are not equal; otherwise, <code data-dev-comment-type="c">false</code>.
+    content.csharp: public static bool operator != (DeckSurf.SDK.Models.DeviceColor left, DeckSurf.SDK.Models.DeviceColor right);
+  overload: DeckSurf.SDK.Models.DeviceColor.op_Inequality*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.DeviceColor.R
+  commentId: P:DeckSurf.SDK.Models.DeviceColor.R
+  id: R
+  parent: DeckSurf.SDK.Models.DeviceColor
+  langs:
+  - csharp
+  name: R
+  nameWithType: DeviceColor.R
+  fullName: DeckSurf.SDK.Models.DeviceColor.R
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets the red component of the color.
+  syntax:
+    content: public byte R { get; }
+    return:
+      type: System.Byte
+      description: ''
+    content.csharp: public byte R { get; }
+  overload: DeckSurf.SDK.Models.DeviceColor.R*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.DeviceColor.Red
+  commentId: P:DeckSurf.SDK.Models.DeviceColor.Red
+  id: Red
+  parent: DeckSurf.SDK.Models.DeviceColor
+  langs:
+  - csharp
+  name: Red
+  nameWithType: DeviceColor.Red
+  fullName: DeckSurf.SDK.Models.DeviceColor.Red
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets a red color (255, 0, 0).
+  syntax:
+    content: public static DeckSurf.SDK.Models.DeviceColor Red { get; }
+    return:
+      type: DeckSurf.SDK.Models.DeviceColor
+      description: ''
+    content.csharp: public static DeckSurf.SDK.Models.DeviceColor Red { get; }
+  overload: DeckSurf.SDK.Models.DeviceColor.Red*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.DeviceColor.ToString
+  commentId: M:DeckSurf.SDK.Models.DeviceColor.ToString
+  id: ToString
+  parent: DeckSurf.SDK.Models.DeviceColor
+  langs:
+  - csharp
+  name: ToString()
+  nameWithType: DeviceColor.ToString()
+  fullName: DeckSurf.SDK.Models.DeviceColor.ToString()
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  syntax:
+    content: public override string ToString ();
+    parameters: []
+    return:
+      type: System.String
+      description: ''
+    content.csharp: public override string ToString ();
+  overload: DeckSurf.SDK.Models.DeviceColor.ToString*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.DeviceColor.White
+  commentId: P:DeckSurf.SDK.Models.DeviceColor.White
+  id: White
+  parent: DeckSurf.SDK.Models.DeviceColor
+  langs:
+  - csharp
+  name: White
+  nameWithType: DeviceColor.White
+  fullName: DeckSurf.SDK.Models.DeviceColor.White
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets a white color (255, 255, 255).
+  syntax:
+    content: public static DeckSurf.SDK.Models.DeviceColor White { get; }
+    return:
+      type: DeckSurf.SDK.Models.DeviceColor
+      description: ''
+    content.csharp: public static DeckSurf.SDK.Models.DeviceColor White { get; }
+  overload: DeckSurf.SDK.Models.DeviceColor.White*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.DeviceColor.Yellow
+  commentId: P:DeckSurf.SDK.Models.DeviceColor.Yellow
+  id: Yellow
+  parent: DeckSurf.SDK.Models.DeviceColor
+  langs:
+  - csharp
+  name: Yellow
+  nameWithType: DeviceColor.Yellow
+  fullName: DeckSurf.SDK.Models.DeviceColor.Yellow
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets a yellow color (255, 255, 0).
+  syntax:
+    content: public static DeckSurf.SDK.Models.DeviceColor Yellow { get; }
+    return:
+      type: DeckSurf.SDK.Models.DeviceColor
+      description: ''
+    content.csharp: public static DeckSurf.SDK.Models.DeviceColor Yellow { get; }
+  overload: DeckSurf.SDK.Models.DeviceColor.Yellow*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  monikers:
+  - net10.0
+references:
+- uid: DeckSurf.SDK.Models
+  commentId: N:DeckSurf.SDK.Models
+  isExternal: false
+  name: DeckSurf.SDK.Models
+  nameWithType: DeckSurf.SDK.Models
+  fullName: DeckSurf.SDK.Models
+  type: namespace
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: DeckSurf.SDK.Models.DeviceColor.#ctor(System.Byte,System.Byte,System.Byte)
+  parent: DeckSurf.SDK.Models.DeviceColor
+  isExternal: false
+  name: DeviceColor(Byte, Byte, Byte)
+  nameWithType: DeviceColor.DeviceColor(Byte, Byte, Byte)
+  fullName: DeckSurf.SDK.Models.DeviceColor.DeviceColor(Byte, Byte, Byte)
+  type: constructor
+- uid: System.Byte
+  parent: System
+  isExternal: true
+  name: Byte
+  nameWithType: Byte
+  fullName: System.Byte
+- uid: DeckSurf.SDK.Models.DeviceColor.B
+  parent: DeckSurf.SDK.Models.DeviceColor
+  isExternal: false
+  name: B
+  nameWithType: DeviceColor.B
+  fullName: DeckSurf.SDK.Models.DeviceColor.B
+  type: property
+- uid: DeckSurf.SDK.Models.DeviceColor.Black
+  parent: DeckSurf.SDK.Models.DeviceColor
+  isExternal: false
+  name: Black
+  nameWithType: DeviceColor.Black
+  fullName: DeckSurf.SDK.Models.DeviceColor.Black
+  type: property
+- uid: DeckSurf.SDK.Models.DeviceColor
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: DeviceColor
+  nameWithType: DeviceColor
+  fullName: DeckSurf.SDK.Models.DeviceColor
+- uid: DeckSurf.SDK.Models.DeviceColor.Blue
+  parent: DeckSurf.SDK.Models.DeviceColor
+  isExternal: false
+  name: Blue
+  nameWithType: DeviceColor.Blue
+  fullName: DeckSurf.SDK.Models.DeviceColor.Blue
+  type: property
+- uid: DeckSurf.SDK.Models.DeviceColor.Cyan
+  parent: DeckSurf.SDK.Models.DeviceColor
+  isExternal: false
+  name: Cyan
+  nameWithType: DeviceColor.Cyan
+  fullName: DeckSurf.SDK.Models.DeviceColor.Cyan
+  type: property
+- uid: DeckSurf.SDK.Models.DeviceColor.Equals(DeckSurf.SDK.Models.DeviceColor)
+  parent: DeckSurf.SDK.Models.DeviceColor
+  isExternal: false
+  name: Equals(DeviceColor)
+  nameWithType: DeviceColor.Equals(DeviceColor)
+  fullName: DeckSurf.SDK.Models.DeviceColor.Equals(DeviceColor)
+  type: method
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: DeckSurf.SDK.Models.DeviceColor.Equals(System.Object)
+  parent: DeckSurf.SDK.Models.DeviceColor
+  isExternal: false
+  name: Equals(Object)
+  nameWithType: DeviceColor.Equals(Object)
+  fullName: DeckSurf.SDK.Models.DeviceColor.Equals(Object)
+  type: method
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: DeckSurf.SDK.Models.DeviceColor.G
+  parent: DeckSurf.SDK.Models.DeviceColor
+  isExternal: false
+  name: G
+  nameWithType: DeviceColor.G
+  fullName: DeckSurf.SDK.Models.DeviceColor.G
+  type: property
+- uid: DeckSurf.SDK.Models.DeviceColor.GetHashCode
+  parent: DeckSurf.SDK.Models.DeviceColor
+  isExternal: false
+  name: GetHashCode()
+  nameWithType: DeviceColor.GetHashCode()
+  fullName: DeckSurf.SDK.Models.DeviceColor.GetHashCode()
+  type: method
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: DeckSurf.SDK.Models.DeviceColor.Green
+  parent: DeckSurf.SDK.Models.DeviceColor
+  isExternal: false
+  name: Green
+  nameWithType: DeviceColor.Green
+  fullName: DeckSurf.SDK.Models.DeviceColor.Green
+  type: property
+- uid: DeckSurf.SDK.Models.DeviceColor.Magenta
+  parent: DeckSurf.SDK.Models.DeviceColor
+  isExternal: false
+  name: Magenta
+  nameWithType: DeviceColor.Magenta
+  fullName: DeckSurf.SDK.Models.DeviceColor.Magenta
+  type: property
+- uid: DeckSurf.SDK.Models.DeviceColor.op_Equality(DeckSurf.SDK.Models.DeviceColor,DeckSurf.SDK.Models.DeviceColor)
+  parent: DeckSurf.SDK.Models.DeviceColor
+  isExternal: false
+  name: Equality(DeviceColor, DeviceColor)
+  nameWithType: DeviceColor.Equality(DeviceColor, DeviceColor)
+  fullName: DeckSurf.SDK.Models.DeviceColor.Equality(DeviceColor, DeviceColor)
+  type: operator
+- uid: DeckSurf.SDK.Models.DeviceColor.op_Inequality(DeckSurf.SDK.Models.DeviceColor,DeckSurf.SDK.Models.DeviceColor)
+  parent: DeckSurf.SDK.Models.DeviceColor
+  isExternal: false
+  name: Inequality(DeviceColor, DeviceColor)
+  nameWithType: DeviceColor.Inequality(DeviceColor, DeviceColor)
+  fullName: DeckSurf.SDK.Models.DeviceColor.Inequality(DeviceColor, DeviceColor)
+  type: operator
+- uid: DeckSurf.SDK.Models.DeviceColor.R
+  parent: DeckSurf.SDK.Models.DeviceColor
+  isExternal: false
+  name: R
+  nameWithType: DeviceColor.R
+  fullName: DeckSurf.SDK.Models.DeviceColor.R
+  type: property
+- uid: DeckSurf.SDK.Models.DeviceColor.Red
+  parent: DeckSurf.SDK.Models.DeviceColor
+  isExternal: false
+  name: Red
+  nameWithType: DeviceColor.Red
+  fullName: DeckSurf.SDK.Models.DeviceColor.Red
+  type: property
+- uid: DeckSurf.SDK.Models.DeviceColor.ToString
+  parent: DeckSurf.SDK.Models.DeviceColor
+  isExternal: false
+  name: ToString()
+  nameWithType: DeviceColor.ToString()
+  fullName: DeckSurf.SDK.Models.DeviceColor.ToString()
+  type: method
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DeckSurf.SDK.Models.DeviceColor.White
+  parent: DeckSurf.SDK.Models.DeviceColor
+  isExternal: false
+  name: White
+  nameWithType: DeviceColor.White
+  fullName: DeckSurf.SDK.Models.DeviceColor.White
+  type: property
+- uid: DeckSurf.SDK.Models.DeviceColor.Yellow
+  parent: DeckSurf.SDK.Models.DeviceColor
+  isExternal: false
+  name: Yellow
+  nameWithType: DeviceColor.Yellow
+  fullName: DeckSurf.SDK.Models.DeviceColor.Yellow
+  type: property
+- uid: DeckSurf.SDK.Models.DeviceColor.#ctor*
+  commentId: Overload:DeckSurf.SDK.Models.DeviceColor.#ctor
+  parent: DeckSurf.SDK.Models.DeviceColor
+  isExternal: false
+  name: DeviceColor
+  nameWithType: DeviceColor.DeviceColor
+  fullName: DeckSurf.SDK.Models.DeviceColor.DeviceColor
+  monikers:
+  - net10.0
+  type: constructor
+- uid: DeckSurf.SDK.Models.DeviceColor.B*
+  commentId: Overload:DeckSurf.SDK.Models.DeviceColor.B
+  parent: DeckSurf.SDK.Models.DeviceColor
+  isExternal: false
+  name: B
+  nameWithType: DeviceColor.B
+  fullName: DeckSurf.SDK.Models.DeviceColor.B
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Models.DeviceColor.Black*
+  commentId: Overload:DeckSurf.SDK.Models.DeviceColor.Black
+  parent: DeckSurf.SDK.Models.DeviceColor
+  isExternal: false
+  name: Black
+  nameWithType: DeviceColor.Black
+  fullName: DeckSurf.SDK.Models.DeviceColor.Black
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Models.DeviceColor.Blue*
+  commentId: Overload:DeckSurf.SDK.Models.DeviceColor.Blue
+  parent: DeckSurf.SDK.Models.DeviceColor
+  isExternal: false
+  name: Blue
+  nameWithType: DeviceColor.Blue
+  fullName: DeckSurf.SDK.Models.DeviceColor.Blue
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Models.DeviceColor.Cyan*
+  commentId: Overload:DeckSurf.SDK.Models.DeviceColor.Cyan
+  parent: DeckSurf.SDK.Models.DeviceColor
+  isExternal: false
+  name: Cyan
+  nameWithType: DeviceColor.Cyan
+  fullName: DeckSurf.SDK.Models.DeviceColor.Cyan
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Models.DeviceColor.Equals*
+  commentId: Overload:DeckSurf.SDK.Models.DeviceColor.Equals
+  parent: DeckSurf.SDK.Models.DeviceColor
+  isExternal: false
+  name: Equals
+  nameWithType: DeviceColor.Equals
+  fullName: DeckSurf.SDK.Models.DeviceColor.Equals
+  monikers:
+  - net10.0
+  type: method
+- uid: DeckSurf.SDK.Models.DeviceColor.G*
+  commentId: Overload:DeckSurf.SDK.Models.DeviceColor.G
+  parent: DeckSurf.SDK.Models.DeviceColor
+  isExternal: false
+  name: G
+  nameWithType: DeviceColor.G
+  fullName: DeckSurf.SDK.Models.DeviceColor.G
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Models.DeviceColor.GetHashCode*
+  commentId: Overload:DeckSurf.SDK.Models.DeviceColor.GetHashCode
+  parent: DeckSurf.SDK.Models.DeviceColor
+  isExternal: false
+  name: GetHashCode
+  nameWithType: DeviceColor.GetHashCode
+  fullName: DeckSurf.SDK.Models.DeviceColor.GetHashCode
+  monikers:
+  - net10.0
+  type: method
+- uid: DeckSurf.SDK.Models.DeviceColor.Green*
+  commentId: Overload:DeckSurf.SDK.Models.DeviceColor.Green
+  parent: DeckSurf.SDK.Models.DeviceColor
+  isExternal: false
+  name: Green
+  nameWithType: DeviceColor.Green
+  fullName: DeckSurf.SDK.Models.DeviceColor.Green
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Models.DeviceColor.Magenta*
+  commentId: Overload:DeckSurf.SDK.Models.DeviceColor.Magenta
+  parent: DeckSurf.SDK.Models.DeviceColor
+  isExternal: false
+  name: Magenta
+  nameWithType: DeviceColor.Magenta
+  fullName: DeckSurf.SDK.Models.DeviceColor.Magenta
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Models.DeviceColor.op_Equality*
+  commentId: Overload:DeckSurf.SDK.Models.DeviceColor.op_Equality
+  parent: DeckSurf.SDK.Models.DeviceColor
+  isExternal: false
+  name: Equality
+  nameWithType: DeviceColor.Equality
+  fullName: DeckSurf.SDK.Models.DeviceColor.Equality
+  monikers:
+  - net10.0
+  type: operator
+- uid: DeckSurf.SDK.Models.DeviceColor.op_Inequality*
+  commentId: Overload:DeckSurf.SDK.Models.DeviceColor.op_Inequality
+  parent: DeckSurf.SDK.Models.DeviceColor
+  isExternal: false
+  name: Inequality
+  nameWithType: DeviceColor.Inequality
+  fullName: DeckSurf.SDK.Models.DeviceColor.Inequality
+  monikers:
+  - net10.0
+  type: operator
+- uid: DeckSurf.SDK.Models.DeviceColor.R*
+  commentId: Overload:DeckSurf.SDK.Models.DeviceColor.R
+  parent: DeckSurf.SDK.Models.DeviceColor
+  isExternal: false
+  name: R
+  nameWithType: DeviceColor.R
+  fullName: DeckSurf.SDK.Models.DeviceColor.R
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Models.DeviceColor.Red*
+  commentId: Overload:DeckSurf.SDK.Models.DeviceColor.Red
+  parent: DeckSurf.SDK.Models.DeviceColor
+  isExternal: false
+  name: Red
+  nameWithType: DeviceColor.Red
+  fullName: DeckSurf.SDK.Models.DeviceColor.Red
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Models.DeviceColor.ToString*
+  commentId: Overload:DeckSurf.SDK.Models.DeviceColor.ToString
+  parent: DeckSurf.SDK.Models.DeviceColor
+  isExternal: false
+  name: ToString
+  nameWithType: DeviceColor.ToString
+  fullName: DeckSurf.SDK.Models.DeviceColor.ToString
+  monikers:
+  - net10.0
+  type: method
+- uid: DeckSurf.SDK.Models.DeviceColor.White*
+  commentId: Overload:DeckSurf.SDK.Models.DeviceColor.White
+  parent: DeckSurf.SDK.Models.DeviceColor
+  isExternal: false
+  name: White
+  nameWithType: DeviceColor.White
+  fullName: DeckSurf.SDK.Models.DeviceColor.White
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Models.DeviceColor.Yellow*
+  commentId: Overload:DeckSurf.SDK.Models.DeviceColor.Yellow
+  parent: DeckSurf.SDK.Models.DeviceColor
+  isExternal: false
+  name: Yellow
+  nameWithType: DeviceColor.Yellow
+  fullName: DeckSurf.SDK.Models.DeviceColor.Yellow
+  monikers:
+  - net10.0
+  type: property
+- uid: System.IEquatable`1
+  isExternal: true
+  name: IEquatable
+  nameWithType: IEquatable
+  fullName: System.IEquatable
+- uid: System.IEquatable{DeckSurf.SDK.Models.DeviceColor}
+  parent: System
+  name: IEquatable<DeviceColor>
+  nameWithType: IEquatable<DeviceColor>
+  fullName: System.IEquatable<DeckSurf.SDK.Models.DeviceColor>
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: DeckSurf.SDK.Models.DeviceColor
+    name: DeviceColor
+    nameWithType: DeviceColor
+    fullName: DeckSurf.SDK.Models.DeviceColor
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'

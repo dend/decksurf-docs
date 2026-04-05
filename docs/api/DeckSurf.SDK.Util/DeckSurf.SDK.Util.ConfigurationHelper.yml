@@ -4,7 +4,6 @@ items:
   commentId: T:DeckSurf.SDK.Util.ConfigurationHelper
   id: ConfigurationHelper
   children:
-  - DeckSurf.SDK.Util.ConfigurationHelper.#ctor
   - DeckSurf.SDK.Util.ConfigurationHelper.GetProfile(System.String)
   - DeckSurf.SDK.Util.ConfigurationHelper.GetProfilePath(System.String)
   - DeckSurf.SDK.Util.ConfigurationHelper.WriteToConfiguration(System.String,System.Int32,DeckSurf.SDK.Models.CommandMapping)
@@ -19,42 +18,19 @@ items:
   namespace: DeckSurf.SDK.Util
   summary: Class that is used to manage DeckSurf configuration files.
   syntax:
-    content: public class ConfigurationHelper
-    content.csharp: public class ConfigurationHelper
+    content: public static class ConfigurationHelper
+    content.csharp: public static class ConfigurationHelper
   inheritance:
   - System.Object
   implements: []
-  inheritedMembers: []
   modifiers.csharp:
   - public
+  - static
   monikers:
-  - net9.0
+  - net10.0
   _op_AssemblyMonikerMapping:
     DeckSurf.SDK:
-    - net9.0
-- uid: DeckSurf.SDK.Util.ConfigurationHelper.#ctor
-  commentId: M:DeckSurf.SDK.Util.ConfigurationHelper.#ctor
-  id: '#ctor'
-  parent: DeckSurf.SDK.Util.ConfigurationHelper
-  langs:
-  - csharp
-  name: ConfigurationHelper()
-  nameWithType: ConfigurationHelper.ConfigurationHelper()
-  fullName: DeckSurf.SDK.Util.ConfigurationHelper.ConfigurationHelper()
-  type: Constructor
-  assemblies:
-  - DeckSurf.SDK
-  namespace: DeckSurf.SDK.Util
-  syntax:
-    content: public ConfigurationHelper ();
-    parameters: []
-    content.csharp: public ConfigurationHelper ();
-  overload: DeckSurf.SDK.Util.ConfigurationHelper.#ctor*
-  exceptions: []
-  modifiers.csharp:
-  - public
-  monikers:
-  - net9.0
+    - net10.0
 - uid: DeckSurf.SDK.Util.ConfigurationHelper.GetProfile(System.String)
   commentId: M:DeckSurf.SDK.Util.ConfigurationHelper.GetProfile(System.String)
   id: GetProfile(System.String)
@@ -80,12 +56,15 @@ items:
       description: Object representing the DeckSurf configuration profile.
     content.csharp: public static DeckSurf.SDK.Models.ConfigurationProfile GetProfile (string profile);
   overload: DeckSurf.SDK.Util.ConfigurationHelper.GetProfile*
-  exceptions: []
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: Thrown when the profile file contains invalid JSON.
   modifiers.csharp:
   - public
   - static
   monikers:
-  - net9.0
+  - net10.0
 - uid: DeckSurf.SDK.Util.ConfigurationHelper.GetProfilePath(System.String)
   commentId: M:DeckSurf.SDK.Util.ConfigurationHelper.GetProfilePath(System.String)
   id: GetProfilePath(System.String)
@@ -116,7 +95,7 @@ items:
   - public
   - static
   monikers:
-  - net9.0
+  - net10.0
 - uid: DeckSurf.SDK.Util.ConfigurationHelper.WriteToConfiguration(System.String,System.Int32,DeckSurf.SDK.Models.CommandMapping)
   commentId: M:DeckSurf.SDK.Util.ConfigurationHelper.WriteToConfiguration(System.String,System.Int32,DeckSurf.SDK.Models.CommandMapping)
   id: WriteToConfiguration(System.String,System.Int32,DeckSurf.SDK.Models.CommandMapping)
@@ -153,7 +132,7 @@ items:
   - public
   - static
   monikers:
-  - net9.0
+  - net10.0
 references:
 - uid: DeckSurf.SDK.Util
   commentId: N:DeckSurf.SDK.Util
@@ -168,13 +147,9 @@ references:
   name: Object
   nameWithType: Object
   fullName: System.Object
-- uid: DeckSurf.SDK.Util.ConfigurationHelper.#ctor
-  parent: DeckSurf.SDK.Util.ConfigurationHelper
-  isExternal: false
-  name: ConfigurationHelper()
-  nameWithType: ConfigurationHelper.ConfigurationHelper()
-  fullName: DeckSurf.SDK.Util.ConfigurationHelper.ConfigurationHelper()
-  type: constructor
+- uid: System.InvalidOperationException
+  isExternal: true
+  name: System.InvalidOperationException
 - uid: DeckSurf.SDK.Util.ConfigurationHelper.GetProfile(System.String)
   parent: DeckSurf.SDK.Util.ConfigurationHelper
   isExternal: false
@@ -220,16 +195,6 @@ references:
   name: CommandMapping
   nameWithType: CommandMapping
   fullName: DeckSurf.SDK.Models.CommandMapping
-- uid: DeckSurf.SDK.Util.ConfigurationHelper.#ctor*
-  commentId: Overload:DeckSurf.SDK.Util.ConfigurationHelper.#ctor
-  parent: DeckSurf.SDK.Util.ConfigurationHelper
-  isExternal: false
-  name: ConfigurationHelper
-  nameWithType: ConfigurationHelper.ConfigurationHelper
-  fullName: DeckSurf.SDK.Util.ConfigurationHelper.ConfigurationHelper
-  monikers:
-  - net9.0
-  type: constructor
 - uid: DeckSurf.SDK.Util.ConfigurationHelper.GetProfile*
   commentId: Overload:DeckSurf.SDK.Util.ConfigurationHelper.GetProfile
   parent: DeckSurf.SDK.Util.ConfigurationHelper
@@ -238,7 +203,7 @@ references:
   nameWithType: ConfigurationHelper.GetProfile
   fullName: DeckSurf.SDK.Util.ConfigurationHelper.GetProfile
   monikers:
-  - net9.0
+  - net10.0
   type: method
 - uid: DeckSurf.SDK.Util.ConfigurationHelper.GetProfilePath*
   commentId: Overload:DeckSurf.SDK.Util.ConfigurationHelper.GetProfilePath
@@ -248,7 +213,7 @@ references:
   nameWithType: ConfigurationHelper.GetProfilePath
   fullName: DeckSurf.SDK.Util.ConfigurationHelper.GetProfilePath
   monikers:
-  - net9.0
+  - net10.0
   type: method
 - uid: DeckSurf.SDK.Util.ConfigurationHelper.WriteToConfiguration*
   commentId: Overload:DeckSurf.SDK.Util.ConfigurationHelper.WriteToConfiguration
@@ -258,5 +223,5 @@ references:
   nameWithType: ConfigurationHelper.WriteToConfiguration
   fullName: DeckSurf.SDK.Util.ConfigurationHelper.WriteToConfiguration
   monikers:
-  - net9.0
+  - net10.0
   type: method

@@ -1,0 +1,175 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Exceptions.ImageProcessingException
+  commentId: T:DeckSurf.SDK.Exceptions.ImageProcessingException
+  id: ImageProcessingException
+  children:
+  - DeckSurf.SDK.Exceptions.ImageProcessingException.#ctor
+  - DeckSurf.SDK.Exceptions.ImageProcessingException.#ctor(System.String)
+  - DeckSurf.SDK.Exceptions.ImageProcessingException.#ctor(System.String,System.Exception)
+  langs:
+  - csharp
+  name: ImageProcessingException
+  nameWithType: DeckSurf.SDK.Exceptions.ImageProcessingException
+  fullName: DeckSurf.SDK.Exceptions.ImageProcessingException
+  type: Class
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Exceptions
+  summary: Exception thrown when an image resize or decode operation fails.
+  syntax:
+    content: 'public class ImageProcessingException : DeckSurf.SDK.Exceptions.DeckSurfException'
+    content.csharp: 'public class ImageProcessingException : DeckSurf.SDK.Exceptions.DeckSurfException'
+  inheritance:
+  - System.Exception
+  - DeckSurf.SDK.Exceptions.DeckSurfException
+  implements: []
+  inheritedMembers: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net10.0
+- uid: DeckSurf.SDK.Exceptions.ImageProcessingException.#ctor
+  commentId: M:DeckSurf.SDK.Exceptions.ImageProcessingException.#ctor
+  id: '#ctor'
+  parent: DeckSurf.SDK.Exceptions.ImageProcessingException
+  langs:
+  - csharp
+  name: ImageProcessingException()
+  nameWithType: ImageProcessingException.ImageProcessingException()
+  fullName: DeckSurf.SDK.Exceptions.ImageProcessingException.ImageProcessingException()
+  type: Constructor
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Exceptions
+  summary: Initializes a new instance of the <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Exceptions.ImageProcessingException"></xref> class.
+  syntax:
+    content: public ImageProcessingException ();
+    parameters: []
+    content.csharp: public ImageProcessingException ();
+  overload: DeckSurf.SDK.Exceptions.ImageProcessingException.#ctor*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Exceptions.ImageProcessingException.#ctor(System.String)
+  commentId: M:DeckSurf.SDK.Exceptions.ImageProcessingException.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: DeckSurf.SDK.Exceptions.ImageProcessingException
+  langs:
+  - csharp
+  name: ImageProcessingException(String)
+  nameWithType: ImageProcessingException.ImageProcessingException(String)
+  fullName: DeckSurf.SDK.Exceptions.ImageProcessingException.ImageProcessingException(String)
+  type: Constructor
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Exceptions
+  summary: Initializes a new instance of the <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Exceptions.ImageProcessingException"></xref> class with a specified error message.
+  syntax:
+    content: public ImageProcessingException (string message);
+    parameters:
+    - id: message
+      type: System.String
+      description: The message that describes the error.
+    content.csharp: public ImageProcessingException (string message);
+  overload: DeckSurf.SDK.Exceptions.ImageProcessingException.#ctor*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Exceptions.ImageProcessingException.#ctor(System.String,System.Exception)
+  commentId: M:DeckSurf.SDK.Exceptions.ImageProcessingException.#ctor(System.String,System.Exception)
+  id: '#ctor(System.String,System.Exception)'
+  parent: DeckSurf.SDK.Exceptions.ImageProcessingException
+  langs:
+  - csharp
+  name: ImageProcessingException(String, Exception)
+  nameWithType: ImageProcessingException.ImageProcessingException(String, Exception)
+  fullName: DeckSurf.SDK.Exceptions.ImageProcessingException.ImageProcessingException(String, Exception)
+  type: Constructor
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Exceptions
+  summary: >-
+    Initializes a new instance of the <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Exceptions.ImageProcessingException"></xref> class with a specified error message
+
+    and a reference to the inner exception that is the cause of this exception.
+  syntax:
+    content: public ImageProcessingException (string message, Exception innerException);
+    parameters:
+    - id: message
+      type: System.String
+      description: The message that describes the error.
+    - id: innerException
+      type: System.Exception
+      description: The exception that is the cause of the current exception.
+    content.csharp: public ImageProcessingException (string message, Exception innerException);
+  overload: DeckSurf.SDK.Exceptions.ImageProcessingException.#ctor*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+references:
+- uid: DeckSurf.SDK.Exceptions
+  commentId: N:DeckSurf.SDK.Exceptions
+  isExternal: false
+  name: DeckSurf.SDK.Exceptions
+  nameWithType: DeckSurf.SDK.Exceptions
+  fullName: DeckSurf.SDK.Exceptions
+  type: namespace
+- uid: DeckSurf.SDK.Exceptions.DeckSurfException
+  parent: DeckSurf.SDK.Exceptions
+  isExternal: false
+  name: DeckSurfException
+  nameWithType: DeckSurfException
+  fullName: DeckSurf.SDK.Exceptions.DeckSurfException
+- uid: DeckSurf.SDK.Exceptions.ImageProcessingException.#ctor
+  parent: DeckSurf.SDK.Exceptions.ImageProcessingException
+  isExternal: false
+  name: ImageProcessingException()
+  nameWithType: ImageProcessingException.ImageProcessingException()
+  fullName: DeckSurf.SDK.Exceptions.ImageProcessingException.ImageProcessingException()
+  type: constructor
+- uid: DeckSurf.SDK.Exceptions.ImageProcessingException.#ctor(System.String)
+  parent: DeckSurf.SDK.Exceptions.ImageProcessingException
+  isExternal: false
+  name: ImageProcessingException(String)
+  nameWithType: ImageProcessingException.ImageProcessingException(String)
+  fullName: DeckSurf.SDK.Exceptions.ImageProcessingException.ImageProcessingException(String)
+  type: constructor
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DeckSurf.SDK.Exceptions.ImageProcessingException.#ctor(System.String,System.Exception)
+  parent: DeckSurf.SDK.Exceptions.ImageProcessingException
+  isExternal: false
+  name: ImageProcessingException(String, Exception)
+  nameWithType: ImageProcessingException.ImageProcessingException(String, Exception)
+  fullName: DeckSurf.SDK.Exceptions.ImageProcessingException.ImageProcessingException(String, Exception)
+  type: constructor
+- uid: System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: DeckSurf.SDK.Exceptions.ImageProcessingException.#ctor*
+  commentId: Overload:DeckSurf.SDK.Exceptions.ImageProcessingException.#ctor
+  parent: DeckSurf.SDK.Exceptions.ImageProcessingException
+  isExternal: false
+  name: ImageProcessingException
+  nameWithType: ImageProcessingException.ImageProcessingException
+  fullName: DeckSurf.SDK.Exceptions.ImageProcessingException.ImageProcessingException
+  monikers:
+  - net10.0
+  type: constructor

@@ -1,0 +1,214 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Models.DeviceListChangedEventArgs
+  commentId: T:DeckSurf.SDK.Models.DeviceListChangedEventArgs
+  id: DeviceListChangedEventArgs
+  children:
+  - DeckSurf.SDK.Models.DeviceListChangedEventArgs.#ctor(System.Collections.Generic.IReadOnlyList{DeckSurf.SDK.Models.DeviceInfo},System.Collections.Generic.IReadOnlyList{DeckSurf.SDK.Models.DeviceInfo})
+  - DeckSurf.SDK.Models.DeviceListChangedEventArgs.Added
+  - DeckSurf.SDK.Models.DeviceListChangedEventArgs.Removed
+  langs:
+  - csharp
+  name: DeviceListChangedEventArgs
+  nameWithType: DeckSurf.SDK.Models.DeviceListChangedEventArgs
+  fullName: DeckSurf.SDK.Models.DeviceListChangedEventArgs
+  type: Class
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: >-
+    Event arguments that describe which Stream Deck devices were added or removed
+
+    since the last time the device list was evaluated.
+  syntax:
+    content: 'public class DeviceListChangedEventArgs : EventArgs'
+    content.csharp: 'public class DeviceListChangedEventArgs : EventArgs'
+  inheritance:
+  - System.EventArgs
+  implements: []
+  inheritedMembers: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net10.0
+- uid: DeckSurf.SDK.Models.DeviceListChangedEventArgs.#ctor(System.Collections.Generic.IReadOnlyList{DeckSurf.SDK.Models.DeviceInfo},System.Collections.Generic.IReadOnlyList{DeckSurf.SDK.Models.DeviceInfo})
+  commentId: M:DeckSurf.SDK.Models.DeviceListChangedEventArgs.#ctor(System.Collections.Generic.IReadOnlyList{DeckSurf.SDK.Models.DeviceInfo},System.Collections.Generic.IReadOnlyList{DeckSurf.SDK.Models.DeviceInfo})
+  id: '#ctor(System.Collections.Generic.IReadOnlyList{DeckSurf.SDK.Models.DeviceInfo},System.Collections.Generic.IReadOnlyList{DeckSurf.SDK.Models.DeviceInfo})'
+  parent: DeckSurf.SDK.Models.DeviceListChangedEventArgs
+  langs:
+  - csharp
+  name: DeviceListChangedEventArgs(IReadOnlyList<DeviceInfo>, IReadOnlyList<DeviceInfo>)
+  nameWithType: DeviceListChangedEventArgs.DeviceListChangedEventArgs(IReadOnlyList<DeviceInfo>, IReadOnlyList<DeviceInfo>)
+  fullName: DeckSurf.SDK.Models.DeviceListChangedEventArgs.DeviceListChangedEventArgs(IReadOnlyList<DeviceInfo>, IReadOnlyList<DeviceInfo>)
+  type: Constructor
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Initializes a new instance of the <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.DeviceListChangedEventArgs"></xref> class.
+  syntax:
+    content: public DeviceListChangedEventArgs (System.Collections.Generic.IReadOnlyList<DeckSurf.SDK.Models.DeviceInfo> added, System.Collections.Generic.IReadOnlyList<DeckSurf.SDK.Models.DeviceInfo> removed);
+    parameters:
+    - id: added
+      type: System.Collections.Generic.IReadOnlyList{DeckSurf.SDK.Models.DeviceInfo}
+      description: The devices that were added since the last evaluation.
+    - id: removed
+      type: System.Collections.Generic.IReadOnlyList{DeckSurf.SDK.Models.DeviceInfo}
+      description: The devices that were removed since the last evaluation.
+    content.csharp: public DeviceListChangedEventArgs (System.Collections.Generic.IReadOnlyList<DeckSurf.SDK.Models.DeviceInfo> added, System.Collections.Generic.IReadOnlyList<DeckSurf.SDK.Models.DeviceInfo> removed);
+  overload: DeckSurf.SDK.Models.DeviceListChangedEventArgs.#ctor*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.DeviceListChangedEventArgs.Added
+  commentId: P:DeckSurf.SDK.Models.DeviceListChangedEventArgs.Added
+  id: Added
+  parent: DeckSurf.SDK.Models.DeviceListChangedEventArgs
+  langs:
+  - csharp
+  name: Added
+  nameWithType: DeviceListChangedEventArgs.Added
+  fullName: DeckSurf.SDK.Models.DeviceListChangedEventArgs.Added
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets the list of devices that were connected since the last evaluation.
+  syntax:
+    content: public System.Collections.Generic.IReadOnlyList<DeckSurf.SDK.Models.DeviceInfo> Added { get; }
+    return:
+      type: System.Collections.Generic.IReadOnlyList{DeckSurf.SDK.Models.DeviceInfo}
+      description: ''
+    content.csharp: public System.Collections.Generic.IReadOnlyList<DeckSurf.SDK.Models.DeviceInfo> Added { get; }
+  overload: DeckSurf.SDK.Models.DeviceListChangedEventArgs.Added*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.DeviceListChangedEventArgs.Removed
+  commentId: P:DeckSurf.SDK.Models.DeviceListChangedEventArgs.Removed
+  id: Removed
+  parent: DeckSurf.SDK.Models.DeviceListChangedEventArgs
+  langs:
+  - csharp
+  name: Removed
+  nameWithType: DeviceListChangedEventArgs.Removed
+  fullName: DeckSurf.SDK.Models.DeviceListChangedEventArgs.Removed
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets the list of devices that were disconnected since the last evaluation.
+  syntax:
+    content: public System.Collections.Generic.IReadOnlyList<DeckSurf.SDK.Models.DeviceInfo> Removed { get; }
+    return:
+      type: System.Collections.Generic.IReadOnlyList{DeckSurf.SDK.Models.DeviceInfo}
+      description: ''
+    content.csharp: public System.Collections.Generic.IReadOnlyList<DeckSurf.SDK.Models.DeviceInfo> Removed { get; }
+  overload: DeckSurf.SDK.Models.DeviceListChangedEventArgs.Removed*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net10.0
+references:
+- uid: DeckSurf.SDK.Models
+  commentId: N:DeckSurf.SDK.Models
+  isExternal: false
+  name: DeckSurf.SDK.Models
+  nameWithType: DeckSurf.SDK.Models
+  fullName: DeckSurf.SDK.Models
+  type: namespace
+- uid: System.EventArgs
+  parent: System
+  isExternal: true
+  name: EventArgs
+  nameWithType: EventArgs
+  fullName: System.EventArgs
+- uid: DeckSurf.SDK.Models.DeviceListChangedEventArgs.#ctor(System.Collections.Generic.IReadOnlyList{DeckSurf.SDK.Models.DeviceInfo},System.Collections.Generic.IReadOnlyList{DeckSurf.SDK.Models.DeviceInfo})
+  parent: DeckSurf.SDK.Models.DeviceListChangedEventArgs
+  isExternal: false
+  name: DeviceListChangedEventArgs(IReadOnlyList<DeviceInfo>, IReadOnlyList<DeviceInfo>)
+  nameWithType: DeviceListChangedEventArgs.DeviceListChangedEventArgs(IReadOnlyList<DeviceInfo>, IReadOnlyList<DeviceInfo>)
+  fullName: DeckSurf.SDK.Models.DeviceListChangedEventArgs.DeviceListChangedEventArgs(IReadOnlyList<DeviceInfo>, IReadOnlyList<DeviceInfo>)
+  type: constructor
+- uid: System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  name: IReadOnlyList
+  nameWithType: IReadOnlyList
+  fullName: System.Collections.Generic.IReadOnlyList
+- uid: DeckSurf.SDK.Models.DeviceInfo
+  name: DeviceInfo
+  nameWithType: DeviceInfo
+  fullName: DeckSurf.SDK.Models.DeviceInfo
+- uid: System.Collections.Generic.IReadOnlyList{DeckSurf.SDK.Models.DeviceInfo}
+  parent: System.Collections.Generic
+  name: IReadOnlyList<DeviceInfo>
+  nameWithType: IReadOnlyList<DeviceInfo>
+  fullName: System.Collections.Generic.IReadOnlyList<DeckSurf.SDK.Models.DeviceInfo>
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: DeckSurf.SDK.Models.DeviceInfo
+    name: DeviceInfo
+    nameWithType: DeviceInfo
+    fullName: DeckSurf.SDK.Models.DeviceInfo
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: DeckSurf.SDK.Models.DeviceListChangedEventArgs.Added
+  parent: DeckSurf.SDK.Models.DeviceListChangedEventArgs
+  isExternal: false
+  name: Added
+  nameWithType: DeviceListChangedEventArgs.Added
+  fullName: DeckSurf.SDK.Models.DeviceListChangedEventArgs.Added
+  type: property
+- uid: DeckSurf.SDK.Models.DeviceListChangedEventArgs.Removed
+  parent: DeckSurf.SDK.Models.DeviceListChangedEventArgs
+  isExternal: false
+  name: Removed
+  nameWithType: DeviceListChangedEventArgs.Removed
+  fullName: DeckSurf.SDK.Models.DeviceListChangedEventArgs.Removed
+  type: property
+- uid: DeckSurf.SDK.Models.DeviceListChangedEventArgs.#ctor*
+  commentId: Overload:DeckSurf.SDK.Models.DeviceListChangedEventArgs.#ctor
+  parent: DeckSurf.SDK.Models.DeviceListChangedEventArgs
+  isExternal: false
+  name: DeviceListChangedEventArgs
+  nameWithType: DeviceListChangedEventArgs.DeviceListChangedEventArgs
+  fullName: DeckSurf.SDK.Models.DeviceListChangedEventArgs.DeviceListChangedEventArgs
+  monikers:
+  - net10.0
+  type: constructor
+- uid: DeckSurf.SDK.Models.DeviceListChangedEventArgs.Added*
+  commentId: Overload:DeckSurf.SDK.Models.DeviceListChangedEventArgs.Added
+  parent: DeckSurf.SDK.Models.DeviceListChangedEventArgs
+  isExternal: false
+  name: Added
+  nameWithType: DeviceListChangedEventArgs.Added
+  fullName: DeckSurf.SDK.Models.DeviceListChangedEventArgs.Added
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Models.DeviceListChangedEventArgs.Removed*
+  commentId: Overload:DeckSurf.SDK.Models.DeviceListChangedEventArgs.Removed
+  parent: DeckSurf.SDK.Models.DeviceListChangedEventArgs
+  isExternal: false
+  name: Removed
+  nameWithType: DeviceListChangedEventArgs.Removed
+  fullName: DeckSurf.SDK.Models.DeviceListChangedEventArgs.Removed
+  monikers:
+  - net10.0
+  type: property

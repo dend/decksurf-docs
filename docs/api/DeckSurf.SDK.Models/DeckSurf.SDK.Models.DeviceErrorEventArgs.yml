@@ -1,0 +1,352 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Models.DeviceErrorEventArgs
+  commentId: T:DeckSurf.SDK.Models.DeviceErrorEventArgs
+  id: DeviceErrorEventArgs
+  children:
+  - DeckSurf.SDK.Models.DeviceErrorEventArgs.#ctor(System.Exception,DeckSurf.SDK.Models.DeviceErrorCategory,System.Boolean,System.String,System.String)
+  - DeckSurf.SDK.Models.DeviceErrorEventArgs.Category
+  - DeckSurf.SDK.Models.DeviceErrorEventArgs.Exception
+  - DeckSurf.SDK.Models.DeviceErrorEventArgs.IsTransient
+  - DeckSurf.SDK.Models.DeviceErrorEventArgs.OperationName
+  - DeckSurf.SDK.Models.DeviceErrorEventArgs.RecoveryHint
+  langs:
+  - csharp
+  name: DeviceErrorEventArgs
+  nameWithType: DeckSurf.SDK.Models.DeviceErrorEventArgs
+  fullName: DeckSurf.SDK.Models.DeviceErrorEventArgs
+  type: Class
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Event arguments that are passed when a device error occurs during operation.
+  remarks: Initializes a new instance of the <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.DeviceErrorEventArgs"></xref> class.
+  syntax:
+    content: 'public class DeviceErrorEventArgs : EventArgs'
+    content.csharp: 'public class DeviceErrorEventArgs : EventArgs'
+  inheritance:
+  - System.EventArgs
+  implements: []
+  inheritedMembers: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net10.0
+- uid: DeckSurf.SDK.Models.DeviceErrorEventArgs.#ctor(System.Exception,DeckSurf.SDK.Models.DeviceErrorCategory,System.Boolean,System.String,System.String)
+  commentId: M:DeckSurf.SDK.Models.DeviceErrorEventArgs.#ctor(System.Exception,DeckSurf.SDK.Models.DeviceErrorCategory,System.Boolean,System.String,System.String)
+  id: '#ctor(System.Exception,DeckSurf.SDK.Models.DeviceErrorCategory,System.Boolean,System.String,System.String)'
+  parent: DeckSurf.SDK.Models.DeviceErrorEventArgs
+  langs:
+  - csharp
+  name: DeviceErrorEventArgs(Exception, DeviceErrorCategory, Boolean, String, String)
+  nameWithType: DeviceErrorEventArgs.DeviceErrorEventArgs(Exception, DeviceErrorCategory, Boolean, String, String)
+  fullName: DeckSurf.SDK.Models.DeviceErrorEventArgs.DeviceErrorEventArgs(Exception, DeviceErrorCategory, Boolean, String, String)
+  type: Constructor
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Event arguments that are passed when a device error occurs during operation.
+  remarks: Initializes a new instance of the <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.DeviceErrorEventArgs"></xref> class.
+  syntax:
+    content: public DeviceErrorEventArgs (Exception exception, DeckSurf.SDK.Models.DeviceErrorCategory category, bool isTransient, string recoveryHint, string operationName);
+    parameters:
+    - id: exception
+      type: System.Exception
+      description: The underlying exception that caused the error.
+    - id: category
+      type: DeckSurf.SDK.Models.DeviceErrorCategory
+      description: The classification of the error.
+    - id: isTransient
+      type: System.Boolean
+      description: Whether the error is transient and a retry might succeed.
+    - id: recoveryHint
+      type: System.String
+      description: A suggested action for recovery.
+    - id: operationName
+      type: System.String
+      description: The name of the operation that failed.
+    content.csharp: public DeviceErrorEventArgs (Exception exception, DeckSurf.SDK.Models.DeviceErrorCategory category, bool isTransient, string recoveryHint, string operationName);
+  overload: DeckSurf.SDK.Models.DeviceErrorEventArgs.#ctor*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.DeviceErrorEventArgs.Category
+  commentId: P:DeckSurf.SDK.Models.DeviceErrorEventArgs.Category
+  id: Category
+  parent: DeckSurf.SDK.Models.DeviceErrorEventArgs
+  langs:
+  - csharp
+  name: Category
+  nameWithType: DeviceErrorEventArgs.Category
+  fullName: DeckSurf.SDK.Models.DeviceErrorEventArgs.Category
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets the classification of the error.
+  syntax:
+    content: public DeckSurf.SDK.Models.DeviceErrorCategory Category { get; }
+    return:
+      type: DeckSurf.SDK.Models.DeviceErrorCategory
+      description: ''
+    content.csharp: public DeckSurf.SDK.Models.DeviceErrorCategory Category { get; }
+  overload: DeckSurf.SDK.Models.DeviceErrorEventArgs.Category*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.DeviceErrorEventArgs.Exception
+  commentId: P:DeckSurf.SDK.Models.DeviceErrorEventArgs.Exception
+  id: Exception
+  parent: DeckSurf.SDK.Models.DeviceErrorEventArgs
+  langs:
+  - csharp
+  name: Exception
+  nameWithType: DeviceErrorEventArgs.Exception
+  fullName: DeckSurf.SDK.Models.DeviceErrorEventArgs.Exception
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets the underlying exception that caused the error.
+  syntax:
+    content: public Exception Exception { get; }
+    return:
+      type: System.Exception
+      description: ''
+    content.csharp: public Exception Exception { get; }
+  overload: DeckSurf.SDK.Models.DeviceErrorEventArgs.Exception*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.DeviceErrorEventArgs.IsTransient
+  commentId: P:DeckSurf.SDK.Models.DeviceErrorEventArgs.IsTransient
+  id: IsTransient
+  parent: DeckSurf.SDK.Models.DeviceErrorEventArgs
+  langs:
+  - csharp
+  name: IsTransient
+  nameWithType: DeviceErrorEventArgs.IsTransient
+  fullName: DeckSurf.SDK.Models.DeviceErrorEventArgs.IsTransient
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets a value indicating whether the error is transient and a retry might succeed.
+  syntax:
+    content: public bool IsTransient { get; }
+    return:
+      type: System.Boolean
+      description: ''
+    content.csharp: public bool IsTransient { get; }
+  overload: DeckSurf.SDK.Models.DeviceErrorEventArgs.IsTransient*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.DeviceErrorEventArgs.OperationName
+  commentId: P:DeckSurf.SDK.Models.DeviceErrorEventArgs.OperationName
+  id: OperationName
+  parent: DeckSurf.SDK.Models.DeviceErrorEventArgs
+  langs:
+  - csharp
+  name: OperationName
+  nameWithType: DeviceErrorEventArgs.OperationName
+  fullName: DeckSurf.SDK.Models.DeviceErrorEventArgs.OperationName
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets the name of the operation that failed (e.g., "SetKey", "ReadInput").
+  syntax:
+    content: public string OperationName { get; }
+    return:
+      type: System.String
+      description: ''
+    content.csharp: public string OperationName { get; }
+  overload: DeckSurf.SDK.Models.DeviceErrorEventArgs.OperationName*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.DeviceErrorEventArgs.RecoveryHint
+  commentId: P:DeckSurf.SDK.Models.DeviceErrorEventArgs.RecoveryHint
+  id: RecoveryHint
+  parent: DeckSurf.SDK.Models.DeviceErrorEventArgs
+  langs:
+  - csharp
+  name: RecoveryHint
+  nameWithType: DeviceErrorEventArgs.RecoveryHint
+  fullName: DeckSurf.SDK.Models.DeviceErrorEventArgs.RecoveryHint
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets a suggested action for recovering from the error.
+  syntax:
+    content: public string RecoveryHint { get; }
+    return:
+      type: System.String
+      description: ''
+    content.csharp: public string RecoveryHint { get; }
+  overload: DeckSurf.SDK.Models.DeviceErrorEventArgs.RecoveryHint*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net10.0
+references:
+- uid: DeckSurf.SDK.Models
+  commentId: N:DeckSurf.SDK.Models
+  isExternal: false
+  name: DeckSurf.SDK.Models
+  nameWithType: DeckSurf.SDK.Models
+  fullName: DeckSurf.SDK.Models
+  type: namespace
+- uid: System.EventArgs
+  parent: System
+  isExternal: true
+  name: EventArgs
+  nameWithType: EventArgs
+  fullName: System.EventArgs
+- uid: DeckSurf.SDK.Models.DeviceErrorEventArgs.#ctor(System.Exception,DeckSurf.SDK.Models.DeviceErrorCategory,System.Boolean,System.String,System.String)
+  parent: DeckSurf.SDK.Models.DeviceErrorEventArgs
+  isExternal: false
+  name: DeviceErrorEventArgs(Exception, DeviceErrorCategory, Boolean, String, String)
+  nameWithType: DeviceErrorEventArgs.DeviceErrorEventArgs(Exception, DeviceErrorCategory, Boolean, String, String)
+  fullName: DeckSurf.SDK.Models.DeviceErrorEventArgs.DeviceErrorEventArgs(Exception, DeviceErrorCategory, Boolean, String, String)
+  type: constructor
+- uid: System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: DeckSurf.SDK.Models.DeviceErrorCategory
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: DeviceErrorCategory
+  nameWithType: DeviceErrorCategory
+  fullName: DeckSurf.SDK.Models.DeviceErrorCategory
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DeckSurf.SDK.Models.DeviceErrorEventArgs.Category
+  parent: DeckSurf.SDK.Models.DeviceErrorEventArgs
+  isExternal: false
+  name: Category
+  nameWithType: DeviceErrorEventArgs.Category
+  fullName: DeckSurf.SDK.Models.DeviceErrorEventArgs.Category
+  type: property
+- uid: DeckSurf.SDK.Models.DeviceErrorEventArgs.Exception
+  parent: DeckSurf.SDK.Models.DeviceErrorEventArgs
+  isExternal: false
+  name: Exception
+  nameWithType: DeviceErrorEventArgs.Exception
+  fullName: DeckSurf.SDK.Models.DeviceErrorEventArgs.Exception
+  type: property
+- uid: DeckSurf.SDK.Models.DeviceErrorEventArgs.IsTransient
+  parent: DeckSurf.SDK.Models.DeviceErrorEventArgs
+  isExternal: false
+  name: IsTransient
+  nameWithType: DeviceErrorEventArgs.IsTransient
+  fullName: DeckSurf.SDK.Models.DeviceErrorEventArgs.IsTransient
+  type: property
+- uid: DeckSurf.SDK.Models.DeviceErrorEventArgs.OperationName
+  parent: DeckSurf.SDK.Models.DeviceErrorEventArgs
+  isExternal: false
+  name: OperationName
+  nameWithType: DeviceErrorEventArgs.OperationName
+  fullName: DeckSurf.SDK.Models.DeviceErrorEventArgs.OperationName
+  type: property
+- uid: DeckSurf.SDK.Models.DeviceErrorEventArgs.RecoveryHint
+  parent: DeckSurf.SDK.Models.DeviceErrorEventArgs
+  isExternal: false
+  name: RecoveryHint
+  nameWithType: DeviceErrorEventArgs.RecoveryHint
+  fullName: DeckSurf.SDK.Models.DeviceErrorEventArgs.RecoveryHint
+  type: property
+- uid: DeckSurf.SDK.Models.DeviceErrorEventArgs.#ctor*
+  commentId: Overload:DeckSurf.SDK.Models.DeviceErrorEventArgs.#ctor
+  parent: DeckSurf.SDK.Models.DeviceErrorEventArgs
+  isExternal: false
+  name: DeviceErrorEventArgs
+  nameWithType: DeviceErrorEventArgs.DeviceErrorEventArgs
+  fullName: DeckSurf.SDK.Models.DeviceErrorEventArgs.DeviceErrorEventArgs
+  monikers:
+  - net10.0
+  type: constructor
+- uid: DeckSurf.SDK.Models.DeviceErrorEventArgs.Category*
+  commentId: Overload:DeckSurf.SDK.Models.DeviceErrorEventArgs.Category
+  parent: DeckSurf.SDK.Models.DeviceErrorEventArgs
+  isExternal: false
+  name: Category
+  nameWithType: DeviceErrorEventArgs.Category
+  fullName: DeckSurf.SDK.Models.DeviceErrorEventArgs.Category
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Models.DeviceErrorEventArgs.Exception*
+  commentId: Overload:DeckSurf.SDK.Models.DeviceErrorEventArgs.Exception
+  parent: DeckSurf.SDK.Models.DeviceErrorEventArgs
+  isExternal: false
+  name: Exception
+  nameWithType: DeviceErrorEventArgs.Exception
+  fullName: DeckSurf.SDK.Models.DeviceErrorEventArgs.Exception
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Models.DeviceErrorEventArgs.IsTransient*
+  commentId: Overload:DeckSurf.SDK.Models.DeviceErrorEventArgs.IsTransient
+  parent: DeckSurf.SDK.Models.DeviceErrorEventArgs
+  isExternal: false
+  name: IsTransient
+  nameWithType: DeviceErrorEventArgs.IsTransient
+  fullName: DeckSurf.SDK.Models.DeviceErrorEventArgs.IsTransient
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Models.DeviceErrorEventArgs.OperationName*
+  commentId: Overload:DeckSurf.SDK.Models.DeviceErrorEventArgs.OperationName
+  parent: DeckSurf.SDK.Models.DeviceErrorEventArgs
+  isExternal: false
+  name: OperationName
+  nameWithType: DeviceErrorEventArgs.OperationName
+  fullName: DeckSurf.SDK.Models.DeviceErrorEventArgs.OperationName
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Models.DeviceErrorEventArgs.RecoveryHint*
+  commentId: Overload:DeckSurf.SDK.Models.DeviceErrorEventArgs.RecoveryHint
+  parent: DeckSurf.SDK.Models.DeviceErrorEventArgs
+  isExternal: false
+  name: RecoveryHint
+  nameWithType: DeviceErrorEventArgs.RecoveryHint
+  fullName: DeckSurf.SDK.Models.DeviceErrorEventArgs.RecoveryHint
+  monikers:
+  - net10.0
+  type: property

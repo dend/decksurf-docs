@@ -1,41 +1,41 @@
 ### YamlMime:ManagedReference
 items:
-- uid: DeckSurf.SDK.Interfaces.IDSPlugin
-  commentId: T:DeckSurf.SDK.Interfaces.IDSPlugin
-  id: IDSPlugin
+- uid: DeckSurf.SDK.Interfaces.IDeckSurfPlugin
+  commentId: T:DeckSurf.SDK.Interfaces.IDeckSurfPlugin
+  id: IDeckSurfPlugin
   children:
-  - DeckSurf.SDK.Interfaces.IDSPlugin.GetSupportedCommands
-  - DeckSurf.SDK.Interfaces.IDSPlugin.Metadata
+  - DeckSurf.SDK.Interfaces.IDeckSurfPlugin.GetSupportedCommands
+  - DeckSurf.SDK.Interfaces.IDeckSurfPlugin.Metadata
   langs:
   - csharp
-  name: IDSPlugin
-  nameWithType: DeckSurf.SDK.Interfaces.IDSPlugin
-  fullName: DeckSurf.SDK.Interfaces.IDSPlugin
+  name: IDeckSurfPlugin
+  nameWithType: DeckSurf.SDK.Interfaces.IDeckSurfPlugin
+  fullName: DeckSurf.SDK.Interfaces.IDeckSurfPlugin
   type: Interface
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Interfaces
   summary: Interface required by DeckSurf plugins to be recognized by DeckSurf tooling.
   syntax:
-    content: public interface IDSPlugin
-    content.csharp: public interface IDSPlugin
+    content: public interface IDeckSurfPlugin
+    content.csharp: public interface IDeckSurfPlugin
   implements: []
   modifiers.csharp:
   - public
   monikers:
-  - net9.0
+  - net10.0
   _op_AssemblyMonikerMapping:
     DeckSurf.SDK:
-    - net9.0
-- uid: DeckSurf.SDK.Interfaces.IDSPlugin.GetSupportedCommands
-  commentId: M:DeckSurf.SDK.Interfaces.IDSPlugin.GetSupportedCommands
+    - net10.0
+- uid: DeckSurf.SDK.Interfaces.IDeckSurfPlugin.GetSupportedCommands
+  commentId: M:DeckSurf.SDK.Interfaces.IDeckSurfPlugin.GetSupportedCommands
   id: GetSupportedCommands
-  parent: DeckSurf.SDK.Interfaces.IDSPlugin
+  parent: DeckSurf.SDK.Interfaces.IDeckSurfPlugin
   langs:
   - csharp
   name: GetSupportedCommands()
-  nameWithType: IDSPlugin.GetSupportedCommands()
-  fullName: DeckSurf.SDK.Interfaces.IDSPlugin.GetSupportedCommands()
+  nameWithType: IDeckSurfPlugin.GetSupportedCommands()
+  fullName: DeckSurf.SDK.Interfaces.IDeckSurfPlugin.GetSupportedCommands()
   type: Method
   assemblies:
   - DeckSurf.SDK
@@ -46,23 +46,23 @@ items:
     parameters: []
     return:
       type: System.Collections.Generic.List{System.Type}
-      description: List of managed types that represent <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Interfaces.IDSCommand"></xref> implementations.
+      description: List of managed types that represent <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Interfaces.IDeckSurfCommand"></xref> implementations.
     content.csharp: public System.Collections.Generic.List<Type> GetSupportedCommands ();
-  overload: DeckSurf.SDK.Interfaces.IDSPlugin.GetSupportedCommands*
+  overload: DeckSurf.SDK.Interfaces.IDeckSurfPlugin.GetSupportedCommands*
   exceptions: []
   modifiers.csharp:
   - public
   monikers:
-  - net9.0
-- uid: DeckSurf.SDK.Interfaces.IDSPlugin.Metadata
-  commentId: P:DeckSurf.SDK.Interfaces.IDSPlugin.Metadata
+  - net10.0
+- uid: DeckSurf.SDK.Interfaces.IDeckSurfPlugin.Metadata
+  commentId: P:DeckSurf.SDK.Interfaces.IDeckSurfPlugin.Metadata
   id: Metadata
-  parent: DeckSurf.SDK.Interfaces.IDSPlugin
+  parent: DeckSurf.SDK.Interfaces.IDeckSurfPlugin
   langs:
   - csharp
   name: Metadata
-  nameWithType: IDSPlugin.Metadata
-  fullName: DeckSurf.SDK.Interfaces.IDSPlugin.Metadata
+  nameWithType: IDeckSurfPlugin.Metadata
+  fullName: DeckSurf.SDK.Interfaces.IDeckSurfPlugin.Metadata
   type: Property
   assemblies:
   - DeckSurf.SDK
@@ -74,13 +74,13 @@ items:
       type: DeckSurf.SDK.Models.PluginMetadata
       description: ''
     content.csharp: public DeckSurf.SDK.Models.PluginMetadata Metadata { get; }
-  overload: DeckSurf.SDK.Interfaces.IDSPlugin.Metadata*
+  overload: DeckSurf.SDK.Interfaces.IDeckSurfPlugin.Metadata*
   exceptions: []
   modifiers.csharp:
   - public
   - get
   monikers:
-  - net9.0
+  - net10.0
 references:
 - uid: DeckSurf.SDK.Interfaces
   commentId: N:DeckSurf.SDK.Interfaces
@@ -89,12 +89,12 @@ references:
   nameWithType: DeckSurf.SDK.Interfaces
   fullName: DeckSurf.SDK.Interfaces
   type: namespace
-- uid: DeckSurf.SDK.Interfaces.IDSPlugin.GetSupportedCommands
-  parent: DeckSurf.SDK.Interfaces.IDSPlugin
+- uid: DeckSurf.SDK.Interfaces.IDeckSurfPlugin.GetSupportedCommands
+  parent: DeckSurf.SDK.Interfaces.IDeckSurfPlugin
   isExternal: false
   name: GetSupportedCommands()
-  nameWithType: IDSPlugin.GetSupportedCommands()
-  fullName: DeckSurf.SDK.Interfaces.IDSPlugin.GetSupportedCommands()
+  nameWithType: IDeckSurfPlugin.GetSupportedCommands()
+  fullName: DeckSurf.SDK.Interfaces.IDeckSurfPlugin.GetSupportedCommands()
   type: method
 - uid: System.Collections.Generic.List`1
   isExternal: true
@@ -126,12 +126,12 @@ references:
   - name: '>'
     nameWithType: '>'
     fullName: '>'
-- uid: DeckSurf.SDK.Interfaces.IDSPlugin.Metadata
-  parent: DeckSurf.SDK.Interfaces.IDSPlugin
+- uid: DeckSurf.SDK.Interfaces.IDeckSurfPlugin.Metadata
+  parent: DeckSurf.SDK.Interfaces.IDeckSurfPlugin
   isExternal: false
   name: Metadata
-  nameWithType: IDSPlugin.Metadata
-  fullName: DeckSurf.SDK.Interfaces.IDSPlugin.Metadata
+  nameWithType: IDeckSurfPlugin.Metadata
+  fullName: DeckSurf.SDK.Interfaces.IDeckSurfPlugin.Metadata
   type: property
 - uid: DeckSurf.SDK.Models.PluginMetadata
   parent: DeckSurf.SDK.Models
@@ -139,23 +139,23 @@ references:
   name: PluginMetadata
   nameWithType: PluginMetadata
   fullName: DeckSurf.SDK.Models.PluginMetadata
-- uid: DeckSurf.SDK.Interfaces.IDSPlugin.GetSupportedCommands*
-  commentId: Overload:DeckSurf.SDK.Interfaces.IDSPlugin.GetSupportedCommands
-  parent: DeckSurf.SDK.Interfaces.IDSPlugin
+- uid: DeckSurf.SDK.Interfaces.IDeckSurfPlugin.GetSupportedCommands*
+  commentId: Overload:DeckSurf.SDK.Interfaces.IDeckSurfPlugin.GetSupportedCommands
+  parent: DeckSurf.SDK.Interfaces.IDeckSurfPlugin
   isExternal: false
   name: GetSupportedCommands
-  nameWithType: IDSPlugin.GetSupportedCommands
-  fullName: DeckSurf.SDK.Interfaces.IDSPlugin.GetSupportedCommands
+  nameWithType: IDeckSurfPlugin.GetSupportedCommands
+  fullName: DeckSurf.SDK.Interfaces.IDeckSurfPlugin.GetSupportedCommands
   monikers:
-  - net9.0
+  - net10.0
   type: method
-- uid: DeckSurf.SDK.Interfaces.IDSPlugin.Metadata*
-  commentId: Overload:DeckSurf.SDK.Interfaces.IDSPlugin.Metadata
-  parent: DeckSurf.SDK.Interfaces.IDSPlugin
+- uid: DeckSurf.SDK.Interfaces.IDeckSurfPlugin.Metadata*
+  commentId: Overload:DeckSurf.SDK.Interfaces.IDeckSurfPlugin.Metadata
+  parent: DeckSurf.SDK.Interfaces.IDeckSurfPlugin
   isExternal: false
   name: Metadata
-  nameWithType: IDSPlugin.Metadata
-  fullName: DeckSurf.SDK.Interfaces.IDSPlugin.Metadata
+  nameWithType: IDeckSurfPlugin.Metadata
+  fullName: DeckSurf.SDK.Interfaces.IDeckSurfPlugin.Metadata
   monikers:
-  - net9.0
+  - net10.0
   type: property

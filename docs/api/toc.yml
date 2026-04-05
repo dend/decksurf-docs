@@ -2,133 +2,218 @@
 - uid: DeckSurf.SDK.Core
   name: DeckSurf.SDK.Core
   items:
+  - uid: DeckSurf.SDK.Core.DeckSurfConfiguration
+    name: DeckSurfConfiguration
+    monikers:
+    - net10.0
   - uid: DeckSurf.SDK.Core.DeviceManager
     name: DeviceManager
     monikers:
-    - net9.0
+    - net10.0
+  - uid: DeckSurf.SDK.Core.DeviceRegistry
+    name: DeviceRegistry
+    monikers:
+    - net10.0
+  - uid: DeckSurf.SDK.Core.DeviceWatcher
+    name: DeviceWatcher
+    monikers:
+    - net10.0
   monikers:
-  - net9.0
+  - net10.0
+- uid: DeckSurf.SDK.Exceptions
+  name: DeckSurf.SDK.Exceptions
+  items:
+  - uid: DeckSurf.SDK.Exceptions.DeckSurfException
+    name: DeckSurfException
+    monikers:
+    - net10.0
+  - uid: DeckSurf.SDK.Exceptions.DeviceCommunicationException
+    name: DeviceCommunicationException
+    monikers:
+    - net10.0
+  - uid: DeckSurf.SDK.Exceptions.DeviceDisconnectedException
+    name: DeviceDisconnectedException
+    monikers:
+    - net10.0
+  - uid: DeckSurf.SDK.Exceptions.DeviceNotFoundException
+    name: DeviceNotFoundException
+    monikers:
+    - net10.0
+  - uid: DeckSurf.SDK.Exceptions.ImageProcessingException
+    name: ImageProcessingException
+    monikers:
+    - net10.0
+  monikers:
+  - net10.0
 - uid: DeckSurf.SDK.Interfaces
   name: DeckSurf.SDK.Interfaces
   items:
-  - uid: DeckSurf.SDK.Interfaces.IDSCommand
-    name: IDSCommand
+  - uid: DeckSurf.SDK.Interfaces.IConnectedDevice
+    name: IConnectedDevice
     monikers:
-    - net9.0
-  - uid: DeckSurf.SDK.Interfaces.IDSPlugin
-    name: IDSPlugin
+    - net10.0
+  - uid: DeckSurf.SDK.Interfaces.IDeckSurfCommand
+    name: IDeckSurfCommand
     monikers:
-    - net9.0
+    - net10.0
+  - uid: DeckSurf.SDK.Interfaces.IDeckSurfPlugin
+    name: IDeckSurfPlugin
+    monikers:
+    - net10.0
   monikers:
-  - net9.0
+  - net10.0
 - uid: DeckSurf.SDK.Models
   name: DeckSurf.SDK.Models
   items:
   - uid: DeckSurf.SDK.Models.ButtonEventKind
     name: ButtonEventKind
     monikers:
-    - net9.0
+    - net10.0
   - uid: DeckSurf.SDK.Models.ButtonKind
     name: ButtonKind
     monikers:
-    - net9.0
+    - net10.0
   - uid: DeckSurf.SDK.Models.ButtonPressEventArgs
     name: ButtonPressEventArgs
     monikers:
-    - net9.0
+    - net10.0
   - uid: DeckSurf.SDK.Models.CommandMapping
     name: CommandMapping
     monikers:
-    - net9.0
+    - net10.0
   - uid: DeckSurf.SDK.Models.CompatibleWithAttribute
     name: CompatibleWithAttribute
     monikers:
-    - net9.0
+    - net10.0
   - uid: DeckSurf.SDK.Models.ConfigurationProfile
     name: ConfigurationProfile
     monikers:
-    - net9.0
+    - net10.0
   - uid: DeckSurf.SDK.Models.ConnectedDevice
     name: ConnectedDevice
     monikers:
-    - net9.0
-  - uid: DeckSurf.SDK.Models.ConnectedDevice.ReceivedButtonPressHandler
-    name: ConnectedDevice.ReceivedButtonPressHandler
+    - net10.0
+  - uid: DeckSurf.SDK.Models.DeviceColor
+    name: DeviceColor
     monikers:
-    - net9.0
+    - net10.0
+  - uid: DeckSurf.SDK.Models.DeviceErrorCategory
+    name: DeviceErrorCategory
+    monikers:
+    - net10.0
+  - uid: DeckSurf.SDK.Models.DeviceErrorEventArgs
+    name: DeviceErrorEventArgs
+    monikers:
+    - net10.0
+  - uid: DeckSurf.SDK.Models.DeviceImageFormat
+    name: DeviceImageFormat
+    monikers:
+    - net10.0
+  - uid: DeckSurf.SDK.Models.DeviceInfo
+    name: DeviceInfo
+    monikers:
+    - net10.0
+  - uid: DeckSurf.SDK.Models.DeviceListChangedEventArgs
+    name: DeviceListChangedEventArgs
+    monikers:
+    - net10.0
   - uid: DeckSurf.SDK.Models.DeviceModel
     name: DeviceModel
     monikers:
-    - net9.0
+    - net10.0
+  - uid: DeckSurf.SDK.Models.DeviceRotation
+    name: DeviceRotation
+    monikers:
+    - net10.0
   - uid: DeckSurf.SDK.Models.KnobRotationDirection
     name: KnobRotationDirection
     monikers:
-    - net9.0
+    - net10.0
   - uid: DeckSurf.SDK.Models.PluginMetadata
     name: PluginMetadata
     monikers:
-    - net9.0
+    - net10.0
   - uid: DeckSurf.SDK.Models.SIIGBF
     name: SIIGBF
     monikers:
-    - net9.0
+    - net10.0
+  - uid: DeckSurf.SDK.Models.TouchPoint
+    name: TouchPoint
+    monikers:
+    - net10.0
   monikers:
-  - net9.0
+  - net10.0
 - uid: DeckSurf.SDK.Models.Devices
   name: DeckSurf.SDK.Models.Devices
   items:
+  - uid: DeckSurf.SDK.Models.Devices.BitmapButtonsDevice
+    name: BitmapButtonsDevice
+    monikers:
+    - net10.0
+  - uid: DeckSurf.SDK.Models.Devices.JpegButtonsDevice
+    name: JpegButtonsDevice
+    monikers:
+    - net10.0
+  - uid: DeckSurf.SDK.Models.Devices.ScreenDevice
+    name: ScreenDevice
+    monikers:
+    - net10.0
   - uid: DeckSurf.SDK.Models.Devices.StreamDeckMini
     name: StreamDeckMini
     monikers:
-    - net9.0
+    - net10.0
   - uid: DeckSurf.SDK.Models.Devices.StreamDeckMini2022
     name: StreamDeckMini2022
     monikers:
-    - net9.0
+    - net10.0
   - uid: DeckSurf.SDK.Models.Devices.StreamDeckMK2
     name: StreamDeckMK2
     monikers:
-    - net9.0
+    - net10.0
   - uid: DeckSurf.SDK.Models.Devices.StreamDeckNeo
     name: StreamDeckNeo
     monikers:
-    - net9.0
+    - net10.0
   - uid: DeckSurf.SDK.Models.Devices.StreamDeckOriginal
     name: StreamDeckOriginal
     monikers:
-    - net9.0
+    - net10.0
   - uid: DeckSurf.SDK.Models.Devices.StreamDeckOriginal2019
     name: StreamDeckOriginal2019
     monikers:
-    - net9.0
+    - net10.0
   - uid: DeckSurf.SDK.Models.Devices.StreamDeckPlus
     name: StreamDeckPlus
     monikers:
-    - net9.0
+    - net10.0
   - uid: DeckSurf.SDK.Models.Devices.StreamDeckXL
     name: StreamDeckXL
     monikers:
-    - net9.0
+    - net10.0
   - uid: DeckSurf.SDK.Models.Devices.StreamDeckXL2022
     name: StreamDeckXL2022
     monikers:
-    - net9.0
+    - net10.0
   monikers:
-  - net9.0
+  - net10.0
 - uid: DeckSurf.SDK.Util
   name: DeckSurf.SDK.Util
   items:
+  - uid: DeckSurf.SDK.Util.CommandArgumentParser
+    name: CommandArgumentParser
+    monikers:
+    - net10.0
   - uid: DeckSurf.SDK.Util.ConfigurationHelper
     name: ConfigurationHelper
     monikers:
-    - net9.0
-  - uid: DeckSurf.SDK.Util.DataHelpers
-    name: DataHelpers
+    - net10.0
+  - uid: DeckSurf.SDK.Util.DataHelper
+    name: DataHelper
     monikers:
-    - net9.0
-  - uid: DeckSurf.SDK.Util.ImageHelpers
-    name: ImageHelpers
+    - net10.0
+  - uid: DeckSurf.SDK.Util.ImageHelper
+    name: ImageHelper
     monikers:
-    - net9.0
+    - net10.0
   monikers:
-  - net9.0
+  - net10.0

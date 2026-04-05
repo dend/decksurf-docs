@@ -1,0 +1,267 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Util.CommandArgumentParser
+  commentId: T:DeckSurf.SDK.Util.CommandArgumentParser
+  id: CommandArgumentParser
+  children:
+  - DeckSurf.SDK.Util.CommandArgumentParser.GetValueOrDefault(System.String,System.String,System.String)
+  - DeckSurf.SDK.Util.CommandArgumentParser.Parse(System.String)
+  - DeckSurf.SDK.Util.CommandArgumentParser.TryGetValue(System.String,System.String,System.String@)
+  langs:
+  - csharp
+  name: CommandArgumentParser
+  nameWithType: DeckSurf.SDK.Util.CommandArgumentParser
+  fullName: DeckSurf.SDK.Util.CommandArgumentParser
+  type: Class
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Util
+  summary: >-
+    Static utility class for parsing <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.CommandMapping.CommandArguments"></xref> strings
+
+    into structured key-value pairs.
+  syntax:
+    content: public static class CommandArgumentParser
+    content.csharp: public static class CommandArgumentParser
+  inheritance:
+  - System.Object
+  implements: []
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net10.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net10.0
+- uid: DeckSurf.SDK.Util.CommandArgumentParser.GetValueOrDefault(System.String,System.String,System.String)
+  commentId: M:DeckSurf.SDK.Util.CommandArgumentParser.GetValueOrDefault(System.String,System.String,System.String)
+  id: GetValueOrDefault(System.String,System.String,System.String)
+  parent: DeckSurf.SDK.Util.CommandArgumentParser
+  langs:
+  - csharp
+  name: GetValueOrDefault(String, String, String)
+  nameWithType: CommandArgumentParser.GetValueOrDefault(String, String, String)
+  fullName: DeckSurf.SDK.Util.CommandArgumentParser.GetValueOrDefault(String, String, String)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Util
+  summary: >-
+    Gets a value from a command arguments string by key, or returns a default value
+
+    if the key is not present.
+  syntax:
+    content: public static string GetValueOrDefault (string arguments, string key, string defaultValue = "");
+    parameters:
+    - id: arguments
+      type: System.String
+      description: A comma-separated string of key=value pairs.
+    - id: key
+      type: System.String
+      description: The key to look up.
+    - id: defaultValue
+      type: System.String
+      description: The value to return if the key is not found. Defaults to an empty string.
+    return:
+      type: System.String
+      description: >-
+        The value associated with the specified key, or <code data-dev-comment-type="paramref">defaultValue</code> if the
+
+        key is not found.
+    content.csharp: public static string GetValueOrDefault (string arguments, string key, string defaultValue = "");
+  overload: DeckSurf.SDK.Util.CommandArgumentParser.GetValueOrDefault*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Util.CommandArgumentParser.Parse(System.String)
+  commentId: M:DeckSurf.SDK.Util.CommandArgumentParser.Parse(System.String)
+  id: Parse(System.String)
+  parent: DeckSurf.SDK.Util.CommandArgumentParser
+  langs:
+  - csharp
+  name: Parse(String)
+  nameWithType: CommandArgumentParser.Parse(String)
+  fullName: DeckSurf.SDK.Util.CommandArgumentParser.Parse(String)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Util
+  summary: Parses a comma-separated key=value string into a read-only dictionary.
+  syntax:
+    content: public static System.Collections.Generic.IReadOnlyDictionary<string,string> Parse (string arguments);
+    parameters:
+    - id: arguments
+      type: System.String
+      description: >-
+        A comma-separated string of key=value pairs.
+
+        Example: "device_id=light_01,brightness=80" produces {"device_id": "light_01", "brightness": "80"}.
+    return:
+      type: System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}
+      description: >-
+        A read-only dictionary of parsed key-value pairs. Returns an empty dictionary if
+
+        <code data-dev-comment-type="paramref">arguments</code> is <code data-dev-comment-type="c">null</code> or empty. Keys missing an <code data-dev-comment-type="c">=</code> delimiter
+
+        are stored with an empty string value. Both keys and values are trimmed of surrounding whitespace.
+    content.csharp: public static System.Collections.Generic.IReadOnlyDictionary<string,string> Parse (string arguments);
+  overload: DeckSurf.SDK.Util.CommandArgumentParser.Parse*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Util.CommandArgumentParser.TryGetValue(System.String,System.String,System.String@)
+  commentId: M:DeckSurf.SDK.Util.CommandArgumentParser.TryGetValue(System.String,System.String,System.String@)
+  id: TryGetValue(System.String,System.String,System.String@)
+  parent: DeckSurf.SDK.Util.CommandArgumentParser
+  langs:
+  - csharp
+  name: TryGetValue(String, String, String)
+  nameWithType: CommandArgumentParser.TryGetValue(String, String, String)
+  fullName: DeckSurf.SDK.Util.CommandArgumentParser.TryGetValue(String, String, String)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Util
+  summary: Tries to get a value from a command arguments string by key.
+  syntax:
+    content: public static bool TryGetValue (string arguments, string key, out string value);
+    parameters:
+    - id: arguments
+      type: System.String
+      description: A comma-separated string of key=value pairs.
+    - id: key
+      type: System.String
+      description: The key to look up.
+    - id: value
+      type: System.String
+      description: >-
+        When this method returns, contains the value associated with the specified key if
+
+        the key is found; otherwise, <code data-dev-comment-type="c">null</code>.
+    return:
+      type: System.Boolean
+      description: <code data-dev-comment-type="c">true</code> if the key was found in the parsed arguments; otherwise, <code data-dev-comment-type="c">false</code>.
+    content.csharp: public static bool TryGetValue (string arguments, string key, out string value);
+  overload: DeckSurf.SDK.Util.CommandArgumentParser.TryGetValue*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net10.0
+references:
+- uid: DeckSurf.SDK.Util
+  commentId: N:DeckSurf.SDK.Util
+  isExternal: false
+  name: DeckSurf.SDK.Util
+  nameWithType: DeckSurf.SDK.Util
+  fullName: DeckSurf.SDK.Util
+  type: namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: DeckSurf.SDK.Util.CommandArgumentParser.GetValueOrDefault(System.String,System.String,System.String)
+  parent: DeckSurf.SDK.Util.CommandArgumentParser
+  isExternal: false
+  name: GetValueOrDefault(String, String, String)
+  nameWithType: CommandArgumentParser.GetValueOrDefault(String, String, String)
+  fullName: DeckSurf.SDK.Util.CommandArgumentParser.GetValueOrDefault(String, String, String)
+  type: method
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DeckSurf.SDK.Util.CommandArgumentParser.Parse(System.String)
+  parent: DeckSurf.SDK.Util.CommandArgumentParser
+  isExternal: false
+  name: Parse(String)
+  nameWithType: CommandArgumentParser.Parse(String)
+  fullName: DeckSurf.SDK.Util.CommandArgumentParser.Parse(String)
+  type: method
+- uid: System.Collections.Generic.IReadOnlyDictionary`2
+  isExternal: true
+  name: IReadOnlyDictionary
+  nameWithType: IReadOnlyDictionary
+  fullName: System.Collections.Generic.IReadOnlyDictionary
+- uid: System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  name: IReadOnlyDictionary<String,String>
+  nameWithType: IReadOnlyDictionary<String,String>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<System.String,System.String>
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    nameWithType: IReadOnlyDictionary
+    fullName: System.Collections.Generic.IReadOnlyDictionary
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: DeckSurf.SDK.Util.CommandArgumentParser.TryGetValue(System.String,System.String,System.String@)
+  parent: DeckSurf.SDK.Util.CommandArgumentParser
+  isExternal: false
+  name: TryGetValue(String, String, String)
+  nameWithType: CommandArgumentParser.TryGetValue(String, String, String)
+  fullName: DeckSurf.SDK.Util.CommandArgumentParser.TryGetValue(String, String, String)
+  type: method
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: DeckSurf.SDK.Util.CommandArgumentParser.GetValueOrDefault*
+  commentId: Overload:DeckSurf.SDK.Util.CommandArgumentParser.GetValueOrDefault
+  parent: DeckSurf.SDK.Util.CommandArgumentParser
+  isExternal: false
+  name: GetValueOrDefault
+  nameWithType: CommandArgumentParser.GetValueOrDefault
+  fullName: DeckSurf.SDK.Util.CommandArgumentParser.GetValueOrDefault
+  monikers:
+  - net10.0
+  type: method
+- uid: DeckSurf.SDK.Util.CommandArgumentParser.Parse*
+  commentId: Overload:DeckSurf.SDK.Util.CommandArgumentParser.Parse
+  parent: DeckSurf.SDK.Util.CommandArgumentParser
+  isExternal: false
+  name: Parse
+  nameWithType: CommandArgumentParser.Parse
+  fullName: DeckSurf.SDK.Util.CommandArgumentParser.Parse
+  monikers:
+  - net10.0
+  type: method
+- uid: DeckSurf.SDK.Util.CommandArgumentParser.TryGetValue*
+  commentId: Overload:DeckSurf.SDK.Util.CommandArgumentParser.TryGetValue
+  parent: DeckSurf.SDK.Util.CommandArgumentParser
+  isExternal: false
+  name: TryGetValue
+  nameWithType: CommandArgumentParser.TryGetValue
+  fullName: DeckSurf.SDK.Util.CommandArgumentParser.TryGetValue
+  monikers:
+  - net10.0
+  type: method
