@@ -56,13 +56,10 @@
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": [
-      "ds_template"
+      "default",
+      "modern"
     ],
     "postProcessors": [],
-    "markdownEngineName": "markdig",
-    "noLangKeyword": false,
-    "keepFileLink": false,
-    "cleanupCacheHistory": false,
     "disableGitFeatures": false
   }
 }

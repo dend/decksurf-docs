@@ -6,9 +6,6 @@ on:
       - '**/*.gitignore'
       - '**/*.gitattributes'
   workflow_dispatch:
-    paths-ignore:
-      - '**/*.gitignore'
-      - '**/*.gitattributes'
 
 jobs:
   build:
@@ -16,18 +13,17 @@ jobs:
     timeout-minutes: 15
     steps:
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v6
+    - uses: actions/setup-dotnet@v5
       with:
-        submodules: 'recursive'
-    - name: Download DocFX
-      run: Invoke-WebRequest https://github.com/dotnet/docfx/releases/download/v2.58/docfx.zip -OutFile docfx.zip
-    - name: Extract DocFX
-      run: Expand-Archive -Path docfx.zip -DestinationPath _docfx
+        dotnet-version: '10.0.x'
+    - name: Install DocFX
+      run: dotnet tool update -g docfx
     - name: Build DocFX docs
       working-directory: docs
-      run: ${{ github.workspace }}\_docfx\docfx.exe build
+      run: docfx build
     - name: Checkout HTML repo
-      uses: actions/checkout@v2
+      uses: actions/checkout@v6
       with:
         repository: 'dend/decksurf-docs-compiled'
         path: '_docs'
