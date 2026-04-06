@@ -9,7 +9,7 @@ The idea behind the SDK is to give you direct access to a Stream Deck device tha
 To get started, start a new .NET console application project in Visual Studio. You can bootstrap a project through other means - the internals will be the same.
 
 >[!NOTE]
->The SDK is designed to work with Windows only at this time. Future releases might be updated to support other platforms.
+>The core SDK is cross-platform and works on Windows, macOS, and Linux. A small number of helper methods (such as `ImageHelper.GetFileIcon`) are Windows-only and are marked with `[SupportedOSPlatform("windows")]`.
 
 ![Creating a new project in Visual Studio](../images/intro-to-decksurf/new-project.png)
 
@@ -34,7 +34,7 @@ using DeckSurf.SDK.Core;
 The [DeckSurf.SDK.Core](https://docs.deck.surf/api/DeckSurf.SDK.Core.html) is responsible for managing all connected devices. We will use it to list Stream Deck devices connected to the machine:
 
 ```csharp
-var devices =  DeviceManager.GetDeviceList();
+var devices = DeviceManager.GetDeviceList();
 
 foreach(var device in devices)
 {
@@ -46,9 +46,9 @@ If the device is successfully identified, you should see the device model and fu
 
 ![Example console output for the DeckSurf program](../images/intro-to-decksurf/console-output.png)
 
-With a device connected, you can now set up the application to listen to individual keys. To do that, you will need to make sure that you add a [`ManualResetEvent`](https://docs.microsoft.com/dotnet/api/system.threading.manualresetevent?view=net-5.0), which will act as a semaphore, that will prevent your application from closing once it finishes device initialization (_console applications behave this way_).
+With a device connected, you can now set up the application to listen to individual keys. To do that, you will need to make sure that you add a [`ManualResetEvent`](https://docs.microsoft.com/dotnet/api/system.threading.manualresetevent), which will act as a semaphore, that will prevent your application from closing once it finishes device initialization (_console applications behave this way_).
 
-To do that, add these two lines in your `Main` function:
+Add these lines to your `Program.cs` file:
 
 ```csharp
 var exitSignal = new ManualResetEvent(false);
@@ -56,12 +56,6 @@ var exitSignal = new ManualResetEvent(false);
 // Your code will go here.
 
 exitSignal.WaitOne();
-```
-
-This will also require that you add a reference to [`System.Threading`](https://docs.microsoft.com/dotnet/api/system.threading?view=net-5.0) in your `using` statement section:
-
-```csharp
-using System.Threading;
 ```
 
 To listen to device key presses, you will need to:
@@ -96,7 +90,7 @@ Once you build and run the application, for every button press you will see the 
 
 ![Example of C# application listening to Stream Deck key presses](../images/intro-to-decksurf/key-listener.gif)
 
-When the key is lifted, the ID shown is -1.
+When the key is lifted, the `EventKind` property will be set to `ButtonEventKind.Up` and `Id` will be `-1` (since no buttons are in the pressed list).
 
 You can also access various metadata about the button action in the event handler. For example, instead of inlining the event, you may want to define a custom event handler, and have it print the button actions:
 
@@ -107,9 +101,13 @@ private static void Device_ButtonPressed(object source, ButtonPressEventArgs e)
 }
 ```
 
-If you'd like to set an image for a device button, you can use the [`SetKey`](xref:DeckSurf.SDK.Models.ConnectedDevice.SetKey(System.Int32,System.Byte[])) function.
+If you'd like to set an image for a device button, you can use the [`SetKey`](xref:DeckSurf.SDK.Models.ConnectedDevice.SetKey(System.Int32,System.Byte[])) function. The image is automatically resized to fit the device, so you can pass in any JPEG, PNG, BMP, or GIF buffer directly:
 
-Prior to that, however, you should resize the image to fit the device requirements with the help of the [`ResizeImage`](xref:DeckSurf.SDK.Util.ImageHelper.ResizeImage(System.Byte[],System.Int32,System.Int32,DeckSurf.SDK.Models.DeviceRotation,DeckSurf.SDK.Models.DeviceImageFormat)) helper. You will need to add a reference to [`DeckSurf.SDK.Util`](https://docs.deck.surf/api/DeckSurf.SDK.Util.html):
+```csharp
+device.SetKey(1, testImage);
+```
+
+If you need more control over the resizing (for example, to pre-process images for performance), you can use the [`ResizeImage`](xref:DeckSurf.SDK.Util.ImageHelper.ResizeImage(System.Byte[],System.Int32,System.Int32,DeckSurf.SDK.Models.DeviceRotation,DeckSurf.SDK.Models.DeviceImageFormat)) helper and pass the result with `alreadyResized: true`:
 
 ```csharp
 using DeckSurf.SDK.Util;
@@ -117,7 +115,7 @@ using DeckSurf.SDK.Util;
 
 ```csharp
 var keyImage = ImageHelper.ResizeImage(testImage, device.ButtonResolution, device.ButtonResolution, device.ImageRotation, device.KeyImageFormat);
-device.SetKey(1, keyImage);
+device.SetKey(1, keyImage, alreadyResized: true);
 ```
 
 Congratulations - you just built your first DeckSurf-powered application!
