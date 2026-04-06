@@ -75,15 +75,15 @@ In C# code form, that will look like this:
 
 ```csharp
 var devices = DeviceManager.GetDeviceList();
-var device = ((List<ConnectedDevice>)devices)[0];
-device.OnButtonPress += (s, e) =>
+var device = devices[0];
+device.ButtonPressed += (s, e) =>
 {
     Console.WriteLine(e.Id);
 };
 device.StartListening();
 ```
 
-To use the [`ConnectedDevice`](https://docs.deck.surf/api/DeckSurf.SDK.Models/DeckSurf.SDK.Models.ConnectedDevice.html) class, you need to add a reference to [`DeckSurf.SDK.Models`](https://docs.deck.surf/api/DeckSurf.SDK.Models.html):
+To use the [`ConnectedDevice`](https://docs.deck.surf/api/DeckSurf.SDK.Models/DeckSurf.SDK.Models.ConnectedDevice.html) and [`ButtonPressEventArgs`](https://docs.deck.surf/api/DeckSurf.SDK.Models/DeckSurf.SDK.Models.ButtonPressEventArgs.html) classes, you need to add a reference to [`DeckSurf.SDK.Models`](https://docs.deck.surf/api/DeckSurf.SDK.Models.html):
 
 ```csharp
 using DeckSurf.SDK.Models;
@@ -101,18 +101,22 @@ When the key is lifted, the ID shown is -1.
 You can also access various metadata about the button action in the event handler. For example, instead of inlining the event, you may want to define a custom event handler, and have it print the button actions:
 
 ```csharp
-private static void Device_OnButtonPress(object source, ButtonPressEventArgs e)
+private static void Device_ButtonPressed(object source, ButtonPressEventArgs e)
 {
-    Console.WriteLine($"Button with ID {e.Id} was pressed. It's identified as {e.ButtonKind}. Event is {e.EventKind}. If this is a touch screen, coordinates are {e.TapCoordinates.X} and {e.TapCoordinates.Y}. Is knob rotated: {e.IsKnobRotating}. Rotation direction: {e.KnobRotationDirection}.");
+    Console.WriteLine($"Button with ID {e.Id} was pressed. It's identified as {e.ButtonKind}. Event is {e.EventKind}. If this is a touch screen, coordinates are {e.TapCoordinates?.X} and {e.TapCoordinates?.Y}. Is knob rotated: {e.IsKnobRotating}. Rotation direction: {e.KnobRotationDirection}.");
 }
 ```
 
 If you'd like to set an image for a device button, you can use the [`SetKey`](xref:DeckSurf.SDK.Models.ConnectedDevice.SetKey(System.Int32,System.Byte[])) function.
 
-Prior to that, however, you should resize the image to fit the device requirements with the help of the [`ResizeImage`](xref:DeckSurf.SDK.Util.ImageHelpers.ResizeImage(System.Byte[],System.Int32,System.Int32,System.Boolean)) helper.
+Prior to that, however, you should resize the image to fit the device requirements with the help of the [`ResizeImage`](xref:DeckSurf.SDK.Util.ImageHelper.ResizeImage(System.Byte[],System.Int32,System.Int32,DeckSurf.SDK.Models.DeviceRotation,DeckSurf.SDK.Models.DeviceImageFormat)) helper. You will need to add a reference to [`DeckSurf.SDK.Util`](https://docs.deck.surf/api/DeckSurf.SDK.Util.html):
 
 ```csharp
-var keyImage = ImageHelpers.ResizeImage(testImage, device.ButtonResolution, device.ButtonResolution, device.IsButtonImageFlipRequired);
+using DeckSurf.SDK.Util;
+```
+
+```csharp
+var keyImage = ImageHelper.ResizeImage(testImage, device.ButtonResolution, device.ButtonResolution, device.ImageRotation, device.KeyImageFormat);
 device.SetKey(1, keyImage);
 ```
 
