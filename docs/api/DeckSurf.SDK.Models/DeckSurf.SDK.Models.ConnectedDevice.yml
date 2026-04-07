@@ -56,11 +56,11 @@ items:
   namespace: DeckSurf.SDK.Models
   summary: Abstract class representing a connected Stream Deck device. Use specific implementations for a given connected model.
   remarks: >-
-    This class is not thread-safe. Callers must synchronize access when invoking methods
+    USB write operations (<xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.ConnectedDevice.SetKey(System.Int32,System.Byte[],System.Boolean)"></xref>, <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.ConnectedDevice.SetBrightness(System.Byte)"></xref>,
 
-    from multiple threads. In particular, <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.ConnectedDevice.SetKey(System.Int32,System.Byte[],System.Boolean)"></xref>, <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.ConnectedDevice.SetBrightness(System.Byte)"></xref>,
+    <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.ConnectedDevice.SetKeyColor(System.Int32,DeckSurf.SDK.Models.DeviceColor)"></xref>) are internally serialized so that multi-packet writes
 
-    and <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.ConnectedDevice.SetKeyColor(System.Int32,DeckSurf.SDK.Models.DeviceColor)"></xref> should not be called concurrently for the same device.
+    for one operation complete atomically before the next operation begins.
   syntax:
     content: 'public abstract class ConnectedDevice : DeckSurf.SDK.Interfaces.IConnectedDevice, IDisposable'
     content.csharp: 'public abstract class ConnectedDevice : DeckSurf.SDK.Interfaces.IConnectedDevice, IDisposable'
