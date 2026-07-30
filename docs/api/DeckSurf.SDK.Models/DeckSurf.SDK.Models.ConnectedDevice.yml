@@ -26,12 +26,15 @@ items:
   - DeckSurf.SDK.Models.ConnectedDevice.IsScreenSupported
   - DeckSurf.SDK.Models.ConnectedDevice.KeyImageFormat
   - DeckSurf.SDK.Models.ConnectedDevice.KeyImageHeaderSize
+  - DeckSurf.SDK.Models.ConnectedDevice.KeyImageSet
+  - DeckSurf.SDK.Models.ConnectedDevice.KnobCount
   - DeckSurf.SDK.Models.ConnectedDevice.Model
   - DeckSurf.SDK.Models.ConnectedDevice.Name
   - DeckSurf.SDK.Models.ConnectedDevice.PacketSize
   - DeckSurf.SDK.Models.ConnectedDevice.Path
   - DeckSurf.SDK.Models.ConnectedDevice.ScreenHeight
   - DeckSurf.SDK.Models.ConnectedDevice.ScreenImageHeaderSize
+  - DeckSurf.SDK.Models.ConnectedDevice.ScreenImageSet
   - DeckSurf.SDK.Models.ConnectedDevice.ScreenSegmentWidth
   - DeckSurf.SDK.Models.ConnectedDevice.ScreenWidth
   - DeckSurf.SDK.Models.ConnectedDevice.Serial
@@ -40,6 +43,7 @@ items:
   - DeckSurf.SDK.Models.ConnectedDevice.SetKeyColor(System.Int32,DeckSurf.SDK.Models.DeviceColor)
   - DeckSurf.SDK.Models.ConnectedDevice.SetScreen(System.Byte[],System.Int32,System.Int32,System.Int32)
   - DeckSurf.SDK.Models.ConnectedDevice.SetScreen(System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32)
+  - DeckSurf.SDK.Models.ConnectedDevice.SetScreenCore(System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32)
   - DeckSurf.SDK.Models.ConnectedDevice.SetupDeviceButtonMap(System.Collections.Generic.IEnumerable{DeckSurf.SDK.Models.CommandMapping})
   - DeckSurf.SDK.Models.ConnectedDevice.StartListening
   - DeckSurf.SDK.Models.ConnectedDevice.StopListening
@@ -721,6 +725,64 @@ items:
   - get
   monikers:
   - net10.0
+- uid: DeckSurf.SDK.Models.ConnectedDevice.KeyImageSet
+  commentId: E:DeckSurf.SDK.Models.ConnectedDevice.KeyImageSet
+  id: KeyImageSet
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  langs:
+  - csharp
+  name: KeyImageSet
+  nameWithType: ConnectedDevice.KeyImageSet
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.KeyImageSet
+  type: Event
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: >-
+    Event raised whenever an image is written to a key, carrying the image
+
+    content as passed to <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.ConnectedDevice.SetKey(System.Int32,System.Byte[],System.Boolean)"></xref> before device-specific
+
+    resizing or encoding. Lets hosts mirror the hardware in a live preview.
+  syntax:
+    content: public event EventHandler<DeckSurf.SDK.Models.KeyImageSetEventArgs> KeyImageSet;
+    content.csharp: public event EventHandler<DeckSurf.SDK.Models.KeyImageSetEventArgs> KeyImageSet;
+  exceptions: []
+  implements:
+  - DeckSurf.SDK.Interfaces.IConnectedDevice.KeyImageSet
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.ConnectedDevice.KnobCount
+  commentId: P:DeckSurf.SDK.Models.ConnectedDevice.KnobCount
+  id: KnobCount
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  langs:
+  - csharp
+  name: KnobCount
+  nameWithType: ConnectedDevice.KnobCount
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.KnobCount
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets the number of knobs on the Stream Deck device. Zero for devices without knobs.
+  syntax:
+    content: public virtual int KnobCount { get; }
+    return:
+      type: System.Int32
+      description: ''
+    content.csharp: public virtual int KnobCount { get; }
+  overload: DeckSurf.SDK.Models.ConnectedDevice.KnobCount*
+  exceptions: []
+  implements:
+  - DeckSurf.SDK.Interfaces.IConnectedDevice.KnobCount
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net10.0
 - uid: DeckSurf.SDK.Models.ConnectedDevice.Model
   commentId: P:DeckSurf.SDK.Models.ConnectedDevice.Model
   id: Model
@@ -894,6 +956,35 @@ items:
   - public
   - abstract
   - get
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.ConnectedDevice.ScreenImageSet
+  commentId: E:DeckSurf.SDK.Models.ConnectedDevice.ScreenImageSet
+  id: ScreenImageSet
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  langs:
+  - csharp
+  name: ScreenImageSet
+  nameWithType: ConnectedDevice.ScreenImageSet
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.ScreenImageSet
+  type: Event
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: >-
+    Event raised whenever an image is written to the device screen,
+
+    carrying the image content as passed to <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.ConnectedDevice.SetScreen(System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32)"></xref>.
+
+    Lets hosts mirror the hardware in a live preview.
+  syntax:
+    content: public event EventHandler<DeckSurf.SDK.Models.ScreenImageSetEventArgs> ScreenImageSet;
+    content.csharp: public event EventHandler<DeckSurf.SDK.Models.ScreenImageSetEventArgs> ScreenImageSet;
+  exceptions: []
+  implements:
+  - DeckSurf.SDK.Interfaces.IConnectedDevice.ScreenImageSet
+  modifiers.csharp:
+  - public
   monikers:
   - net10.0
 - uid: DeckSurf.SDK.Models.ConnectedDevice.ScreenSegmentWidth
@@ -1189,7 +1280,7 @@ items:
       0x0d for background) exist in the Stream Deck Plus protocol but are not yet implemented.
     </p>
   syntax:
-    content: public abstract bool SetScreen (byte[] image, int xOffset, int yOffset, int width, int height);
+    content: public bool SetScreen (byte[] image, int xOffset, int yOffset, int width, int height);
     parameters:
     - id: image
       type: System.Byte[]
@@ -1209,13 +1300,55 @@ items:
     return:
       type: System.Boolean
       description: True if successful. Returns false if the device does not support a screen. Throws on I/O failure.
-    content.csharp: public abstract bool SetScreen (byte[] image, int xOffset, int yOffset, int width, int height);
+    content.csharp: public bool SetScreen (byte[] image, int xOffset, int yOffset, int width, int height);
   overload: DeckSurf.SDK.Models.ConnectedDevice.SetScreen*
   exceptions: []
   implements:
   - DeckSurf.SDK.Interfaces.IConnectedDevice.SetScreen(System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32)
   modifiers.csharp:
   - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.ConnectedDevice.SetScreenCore(System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:DeckSurf.SDK.Models.ConnectedDevice.SetScreenCore(System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32)
+  id: SetScreenCore(System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  langs:
+  - csharp
+  name: SetScreenCore(Byte[], Int32, Int32, Int32, Int32)
+  nameWithType: ConnectedDevice.SetScreenCore(Byte[], Int32, Int32, Int32, Int32)
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.SetScreenCore(Byte[], Int32, Int32, Int32, Int32)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Device-specific implementation of <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.ConnectedDevice.SetScreen(System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32)"></xref>.
+  syntax:
+    content: protected abstract bool SetScreenCore (byte[] image, int xOffset, int yOffset, int width, int height);
+    parameters:
+    - id: image
+      type: System.Byte[]
+      description: Binary content of the image that needs to be set on the screen.
+    - id: xOffset
+      type: System.Int32
+      description: Horizontal offset from the left where the image needs to be set. Set to zero if setting the full image.
+    - id: yOffset
+      type: System.Int32
+      description: Vertical offset from the top where the image needs to be set. Set to zero if setting the full image.
+    - id: width
+      type: System.Int32
+      description: Image width.
+    - id: height
+      type: System.Int32
+      description: Image height.
+    return:
+      type: System.Boolean
+      description: True if successful. Returns false if the device does not support a screen. Throws on I/O failure.
+    content.csharp: protected abstract bool SetScreenCore (byte[] image, int xOffset, int yOffset, int width, int height);
+  overload: DeckSurf.SDK.Models.ConnectedDevice.SetScreenCore*
+  exceptions: []
+  modifiers.csharp:
+  - protected
   - abstract
   monikers:
   - net10.0
@@ -1719,6 +1852,44 @@ references:
   nameWithType: ConnectedDevice.KeyImageHeaderSize
   fullName: DeckSurf.SDK.Models.ConnectedDevice.KeyImageHeaderSize
   type: property
+- uid: DeckSurf.SDK.Models.ConnectedDevice.KeyImageSet
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: KeyImageSet
+  nameWithType: ConnectedDevice.KeyImageSet
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.KeyImageSet
+  type: event
+- uid: DeckSurf.SDK.Models.KeyImageSetEventArgs
+  name: KeyImageSetEventArgs
+  nameWithType: KeyImageSetEventArgs
+  fullName: DeckSurf.SDK.Models.KeyImageSetEventArgs
+- uid: System.EventHandler{DeckSurf.SDK.Models.KeyImageSetEventArgs}
+  parent: System
+  name: EventHandler<KeyImageSetEventArgs>
+  nameWithType: EventHandler<KeyImageSetEventArgs>
+  fullName: System.EventHandler<DeckSurf.SDK.Models.KeyImageSetEventArgs>
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: DeckSurf.SDK.Models.KeyImageSetEventArgs
+    name: KeyImageSetEventArgs
+    nameWithType: KeyImageSetEventArgs
+    fullName: DeckSurf.SDK.Models.KeyImageSetEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: DeckSurf.SDK.Models.ConnectedDevice.KnobCount
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: KnobCount
+  nameWithType: ConnectedDevice.KnobCount
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.KnobCount
+  type: property
 - uid: DeckSurf.SDK.Models.ConnectedDevice.Model
   parent: DeckSurf.SDK.Models.ConnectedDevice
   isExternal: false
@@ -1767,6 +1938,37 @@ references:
   nameWithType: ConnectedDevice.ScreenImageHeaderSize
   fullName: DeckSurf.SDK.Models.ConnectedDevice.ScreenImageHeaderSize
   type: property
+- uid: DeckSurf.SDK.Models.ConnectedDevice.ScreenImageSet
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: ScreenImageSet
+  nameWithType: ConnectedDevice.ScreenImageSet
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.ScreenImageSet
+  type: event
+- uid: DeckSurf.SDK.Models.ScreenImageSetEventArgs
+  name: ScreenImageSetEventArgs
+  nameWithType: ScreenImageSetEventArgs
+  fullName: DeckSurf.SDK.Models.ScreenImageSetEventArgs
+- uid: System.EventHandler{DeckSurf.SDK.Models.ScreenImageSetEventArgs}
+  parent: System
+  name: EventHandler<ScreenImageSetEventArgs>
+  nameWithType: EventHandler<ScreenImageSetEventArgs>
+  fullName: System.EventHandler<DeckSurf.SDK.Models.ScreenImageSetEventArgs>
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: DeckSurf.SDK.Models.ScreenImageSetEventArgs
+    name: ScreenImageSetEventArgs
+    nameWithType: ScreenImageSetEventArgs
+    fullName: DeckSurf.SDK.Models.ScreenImageSetEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
 - uid: DeckSurf.SDK.Models.ConnectedDevice.ScreenSegmentWidth
   parent: DeckSurf.SDK.Models.ConnectedDevice
   isExternal: false
@@ -1828,6 +2030,13 @@ references:
   name: SetScreen(Byte[], Int32, Int32, Int32, Int32)
   nameWithType: ConnectedDevice.SetScreen(Byte[], Int32, Int32, Int32, Int32)
   fullName: DeckSurf.SDK.Models.ConnectedDevice.SetScreen(Byte[], Int32, Int32, Int32, Int32)
+  type: method
+- uid: DeckSurf.SDK.Models.ConnectedDevice.SetScreenCore(System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: SetScreenCore(Byte[], Int32, Int32, Int32, Int32)
+  nameWithType: ConnectedDevice.SetScreenCore(Byte[], Int32, Int32, Int32, Int32)
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.SetScreenCore(Byte[], Int32, Int32, Int32, Int32)
   type: method
 - uid: DeckSurf.SDK.Models.ConnectedDevice.SetupDeviceButtonMap(System.Collections.Generic.IEnumerable{DeckSurf.SDK.Models.CommandMapping})
   parent: DeckSurf.SDK.Models.ConnectedDevice
@@ -2063,6 +2272,16 @@ references:
   monikers:
   - net10.0
   type: property
+- uid: DeckSurf.SDK.Models.ConnectedDevice.KnobCount*
+  commentId: Overload:DeckSurf.SDK.Models.ConnectedDevice.KnobCount
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: KnobCount
+  nameWithType: ConnectedDevice.KnobCount
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.KnobCount
+  monikers:
+  - net10.0
+  type: property
 - uid: DeckSurf.SDK.Models.ConnectedDevice.Model*
   commentId: Overload:DeckSurf.SDK.Models.ConnectedDevice.Model
   parent: DeckSurf.SDK.Models.ConnectedDevice
@@ -2190,6 +2409,16 @@ references:
   name: SetScreen
   nameWithType: ConnectedDevice.SetScreen
   fullName: DeckSurf.SDK.Models.ConnectedDevice.SetScreen
+  monikers:
+  - net10.0
+  type: method
+- uid: DeckSurf.SDK.Models.ConnectedDevice.SetScreenCore*
+  commentId: Overload:DeckSurf.SDK.Models.ConnectedDevice.SetScreenCore
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: SetScreenCore
+  nameWithType: ConnectedDevice.SetScreenCore
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.SetScreenCore
   monikers:
   - net10.0
   type: method

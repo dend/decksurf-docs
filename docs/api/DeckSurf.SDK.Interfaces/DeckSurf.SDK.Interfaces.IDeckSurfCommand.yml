@@ -8,6 +8,7 @@ items:
   - DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnAction(DeckSurf.SDK.Models.CommandMapping,DeckSurf.SDK.Interfaces.IConnectedDevice,System.Int32)
   - DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnActionAsync(DeckSurf.SDK.Models.CommandMapping,DeckSurf.SDK.Interfaces.IConnectedDevice,System.Int32,System.Threading.CancellationToken)
   - DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnActivation(DeckSurf.SDK.Models.CommandMapping,DeckSurf.SDK.Interfaces.IConnectedDevice)
+  - DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnEvent(DeckSurf.SDK.Models.CommandMapping,DeckSurf.SDK.Interfaces.IConnectedDevice,DeckSurf.SDK.Models.ButtonPressEventArgs)
   - DeckSurf.SDK.Interfaces.IDeckSurfCommand.Name
   langs:
   - csharp
@@ -161,6 +162,50 @@ items:
   - public
   monikers:
   - net10.0
+- uid: DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnEvent(DeckSurf.SDK.Models.CommandMapping,DeckSurf.SDK.Interfaces.IConnectedDevice,DeckSurf.SDK.Models.ButtonPressEventArgs)
+  commentId: M:DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnEvent(DeckSurf.SDK.Models.CommandMapping,DeckSurf.SDK.Interfaces.IConnectedDevice,DeckSurf.SDK.Models.ButtonPressEventArgs)
+  id: ExecuteOnEvent(DeckSurf.SDK.Models.CommandMapping,DeckSurf.SDK.Interfaces.IConnectedDevice,DeckSurf.SDK.Models.ButtonPressEventArgs)
+  parent: DeckSurf.SDK.Interfaces.IDeckSurfCommand
+  langs:
+  - csharp
+  name: ExecuteOnEvent(CommandMapping, IConnectedDevice, ButtonPressEventArgs)
+  nameWithType: IDeckSurfCommand.ExecuteOnEvent(CommandMapping, IConnectedDevice, ButtonPressEventArgs)
+  fullName: DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnEvent(CommandMapping, IConnectedDevice, ButtonPressEventArgs)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Interfaces
+  summary: >-
+    Function that is executed for every raw device event routed to the mapping,
+
+    including knob rotation and press events (<xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.ButtonKind.Knob"></xref>) and
+
+    touch screen taps (<xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.ButtonKind.Screen"></xref>). The default implementation
+
+    preserves legacy behavior by forwarding button-down events to
+
+    <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnAction(DeckSurf.SDK.Models.CommandMapping,DeckSurf.SDK.Interfaces.IConnectedDevice,System.Int32)"></xref>; override it in commands that react to knobs,
+
+    touch, or button-up events.
+  syntax:
+    content: public virtual void ExecuteOnEvent (DeckSurf.SDK.Models.CommandMapping mappedCommand, DeckSurf.SDK.Interfaces.IConnectedDevice mappedDevice, DeckSurf.SDK.Models.ButtonPressEventArgs eventArgs);
+    parameters:
+    - id: mappedCommand
+      type: DeckSurf.SDK.Models.CommandMapping
+      description: Instance of a command mapped to a device control.
+    - id: mappedDevice
+      type: DeckSurf.SDK.Interfaces.IConnectedDevice
+      description: Connected Stream Deck device.
+    - id: eventArgs
+      type: DeckSurf.SDK.Models.ButtonPressEventArgs
+      description: The raw device event.
+    content.csharp: public virtual void ExecuteOnEvent (DeckSurf.SDK.Models.CommandMapping mappedCommand, DeckSurf.SDK.Interfaces.IConnectedDevice mappedDevice, DeckSurf.SDK.Models.ButtonPressEventArgs eventArgs);
+  overload: DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnEvent*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
 - uid: DeckSurf.SDK.Interfaces.IDeckSurfCommand.Name
   commentId: P:DeckSurf.SDK.Interfaces.IDeckSurfCommand.Name
   id: Name
@@ -260,6 +305,19 @@ references:
   nameWithType: IDeckSurfCommand.ExecuteOnActivation(CommandMapping, IConnectedDevice)
   fullName: DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnActivation(CommandMapping, IConnectedDevice)
   type: method
+- uid: DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnEvent(DeckSurf.SDK.Models.CommandMapping,DeckSurf.SDK.Interfaces.IConnectedDevice,DeckSurf.SDK.Models.ButtonPressEventArgs)
+  parent: DeckSurf.SDK.Interfaces.IDeckSurfCommand
+  isExternal: false
+  name: ExecuteOnEvent(CommandMapping, IConnectedDevice, ButtonPressEventArgs)
+  nameWithType: IDeckSurfCommand.ExecuteOnEvent(CommandMapping, IConnectedDevice, ButtonPressEventArgs)
+  fullName: DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnEvent(CommandMapping, IConnectedDevice, ButtonPressEventArgs)
+  type: method
+- uid: DeckSurf.SDK.Models.ButtonPressEventArgs
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: ButtonPressEventArgs
+  nameWithType: ButtonPressEventArgs
+  fullName: DeckSurf.SDK.Models.ButtonPressEventArgs
 - uid: DeckSurf.SDK.Interfaces.IDeckSurfCommand.Name
   parent: DeckSurf.SDK.Interfaces.IDeckSurfCommand
   isExternal: false
@@ -304,6 +362,16 @@ references:
   name: ExecuteOnActivation
   nameWithType: IDeckSurfCommand.ExecuteOnActivation
   fullName: DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnActivation
+  monikers:
+  - net10.0
+  type: method
+- uid: DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnEvent*
+  commentId: Overload:DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnEvent
+  parent: DeckSurf.SDK.Interfaces.IDeckSurfCommand
+  isExternal: false
+  name: ExecuteOnEvent
+  nameWithType: IDeckSurfCommand.ExecuteOnEvent
+  fullName: DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnEvent
   monikers:
   - net10.0
   type: method

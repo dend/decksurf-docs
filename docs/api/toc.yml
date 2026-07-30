@@ -18,6 +18,10 @@
     name: DeviceWatcher
     monikers:
     - net10.0
+  - uid: DeckSurf.SDK.Core.PluginLoader
+    name: PluginLoader
+    monikers:
+    - net10.0
   monikers:
   - net10.0
 - uid: DeckSurf.SDK.Exceptions
@@ -52,12 +56,20 @@
     name: IConnectedDevice
     monikers:
     - net10.0
+  - uid: DeckSurf.SDK.Interfaces.IDeckSurfChoiceProvider
+    name: IDeckSurfChoiceProvider
+    monikers:
+    - net10.0
   - uid: DeckSurf.SDK.Interfaces.IDeckSurfCommand
     name: IDeckSurfCommand
     monikers:
     - net10.0
   - uid: DeckSurf.SDK.Interfaces.IDeckSurfPlugin
     name: IDeckSurfPlugin
+    monikers:
+    - net10.0
+  - uid: DeckSurf.SDK.Interfaces.IDeckSurfStatusProvider
+    name: IDeckSurfStatusProvider
     monikers:
     - net10.0
   monikers:
@@ -77,8 +89,40 @@
     name: ButtonPressEventArgs
     monikers:
     - net10.0
+  - uid: DeckSurf.SDK.Models.CommandArguments
+    name: CommandArguments
+    monikers:
+    - net10.0
+  - uid: DeckSurf.SDK.Models.CommandArgumentsJsonConverter
+    name: CommandArgumentsJsonConverter
+    monikers:
+    - net10.0
+  - uid: DeckSurf.SDK.Models.CommandDynamicDisplayAttribute
+    name: CommandDynamicDisplayAttribute
+    monikers:
+    - net10.0
+  - uid: DeckSurf.SDK.Models.CommandIconAttribute
+    name: CommandIconAttribute
+    monikers:
+    - net10.0
   - uid: DeckSurf.SDK.Models.CommandMapping
     name: CommandMapping
+    monikers:
+    - net10.0
+  - uid: DeckSurf.SDK.Models.CommandParameterAttribute
+    name: CommandParameterAttribute
+    monikers:
+    - net10.0
+  - uid: DeckSurf.SDK.Models.CommandParameterType
+    name: CommandParameterType
+    monikers:
+    - net10.0
+  - uid: DeckSurf.SDK.Models.CommandStatus
+    name: CommandStatus
+    monikers:
+    - net10.0
+  - uid: DeckSurf.SDK.Models.CommandStatusKind
+    name: CommandStatusKind
     monikers:
     - net10.0
   - uid: DeckSurf.SDK.Models.CompatibleWithAttribute
@@ -125,12 +169,24 @@
     name: DeviceRotation
     monikers:
     - net10.0
+  - uid: DeckSurf.SDK.Models.KeyImageSetEventArgs
+    name: KeyImageSetEventArgs
+    monikers:
+    - net10.0
   - uid: DeckSurf.SDK.Models.KnobRotationDirection
     name: KnobRotationDirection
     monikers:
     - net10.0
+  - uid: DeckSurf.SDK.Models.MappingTarget
+    name: MappingTarget
+    monikers:
+    - net10.0
   - uid: DeckSurf.SDK.Models.PluginMetadata
     name: PluginMetadata
+    monikers:
+    - net10.0
+  - uid: DeckSurf.SDK.Models.ScreenImageSetEventArgs
+    name: ScreenImageSetEventArgs
     monikers:
     - net10.0
   - uid: DeckSurf.SDK.Models.SIIGBF
@@ -199,8 +255,12 @@
 - uid: DeckSurf.SDK.Util
   name: DeckSurf.SDK.Util
   items:
-  - uid: DeckSurf.SDK.Util.CommandArgumentParser
-    name: CommandArgumentParser
+  - uid: DeckSurf.SDK.Util.CommandParameterValidator
+    name: CommandParameterValidator
+    monikers:
+    - net10.0
+  - uid: DeckSurf.SDK.Util.CommandSchemaReader
+    name: CommandSchemaReader
     monikers:
     - net10.0
   - uid: DeckSurf.SDK.Util.ConfigurationHelper

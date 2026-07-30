@@ -4,7 +4,8 @@ items:
   commentId: N:DeckSurf.SDK.Util
   id: DeckSurf.SDK.Util
   children:
-  - DeckSurf.SDK.Util.CommandArgumentParser
+  - DeckSurf.SDK.Util.CommandParameterValidator
+  - DeckSurf.SDK.Util.CommandSchemaReader
   - DeckSurf.SDK.Util.ConfigurationHelper
   - DeckSurf.SDK.Util.DataHelper
   - DeckSurf.SDK.Util.ImageHelper
@@ -17,13 +18,21 @@ items:
   monikers:
   - net10.0
 references:
-- uid: DeckSurf.SDK.Util.CommandArgumentParser
-  commentId: T:DeckSurf.SDK.Util.CommandArgumentParser
+- uid: DeckSurf.SDK.Util.CommandParameterValidator
+  commentId: T:DeckSurf.SDK.Util.CommandParameterValidator
   parent: DeckSurf.SDK.Util
   isExternal: false
-  name: CommandArgumentParser
-  nameWithType: DeckSurf.SDK.Util.CommandArgumentParser
-  fullName: DeckSurf.SDK.Util.CommandArgumentParser
+  name: CommandParameterValidator
+  nameWithType: DeckSurf.SDK.Util.CommandParameterValidator
+  fullName: DeckSurf.SDK.Util.CommandParameterValidator
+  type: class
+- uid: DeckSurf.SDK.Util.CommandSchemaReader
+  commentId: T:DeckSurf.SDK.Util.CommandSchemaReader
+  parent: DeckSurf.SDK.Util
+  isExternal: false
+  name: CommandSchemaReader
+  nameWithType: DeckSurf.SDK.Util.CommandSchemaReader
+  fullName: DeckSurf.SDK.Util.CommandSchemaReader
   type: class
 - uid: DeckSurf.SDK.Util.ConfigurationHelper
   commentId: T:DeckSurf.SDK.Util.ConfigurationHelper

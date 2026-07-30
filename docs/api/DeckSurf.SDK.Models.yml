@@ -7,7 +7,15 @@ items:
   - DeckSurf.SDK.Models.ButtonEventKind
   - DeckSurf.SDK.Models.ButtonKind
   - DeckSurf.SDK.Models.ButtonPressEventArgs
+  - DeckSurf.SDK.Models.CommandArguments
+  - DeckSurf.SDK.Models.CommandArgumentsJsonConverter
+  - DeckSurf.SDK.Models.CommandDynamicDisplayAttribute
+  - DeckSurf.SDK.Models.CommandIconAttribute
   - DeckSurf.SDK.Models.CommandMapping
+  - DeckSurf.SDK.Models.CommandParameterAttribute
+  - DeckSurf.SDK.Models.CommandParameterType
+  - DeckSurf.SDK.Models.CommandStatus
+  - DeckSurf.SDK.Models.CommandStatusKind
   - DeckSurf.SDK.Models.CompatibleWithAttribute
   - DeckSurf.SDK.Models.ConfigurationProfile
   - DeckSurf.SDK.Models.ConnectedDevice
@@ -19,8 +27,11 @@ items:
   - DeckSurf.SDK.Models.DeviceListChangedEventArgs
   - DeckSurf.SDK.Models.DeviceModel
   - DeckSurf.SDK.Models.DeviceRotation
+  - DeckSurf.SDK.Models.KeyImageSetEventArgs
   - DeckSurf.SDK.Models.KnobRotationDirection
+  - DeckSurf.SDK.Models.MappingTarget
   - DeckSurf.SDK.Models.PluginMetadata
+  - DeckSurf.SDK.Models.ScreenImageSetEventArgs
   - DeckSurf.SDK.Models.SIIGBF
   - DeckSurf.SDK.Models.TouchPoint
   langs:
@@ -56,6 +67,38 @@ references:
   nameWithType: DeckSurf.SDK.Models.ButtonPressEventArgs
   fullName: DeckSurf.SDK.Models.ButtonPressEventArgs
   type: class
+- uid: DeckSurf.SDK.Models.CommandArguments
+  commentId: T:DeckSurf.SDK.Models.CommandArguments
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: CommandArguments
+  nameWithType: DeckSurf.SDK.Models.CommandArguments
+  fullName: DeckSurf.SDK.Models.CommandArguments
+  type: class
+- uid: DeckSurf.SDK.Models.CommandArgumentsJsonConverter
+  commentId: T:DeckSurf.SDK.Models.CommandArgumentsJsonConverter
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: CommandArgumentsJsonConverter
+  nameWithType: DeckSurf.SDK.Models.CommandArgumentsJsonConverter
+  fullName: DeckSurf.SDK.Models.CommandArgumentsJsonConverter
+  type: class
+- uid: DeckSurf.SDK.Models.CommandDynamicDisplayAttribute
+  commentId: T:DeckSurf.SDK.Models.CommandDynamicDisplayAttribute
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: CommandDynamicDisplayAttribute
+  nameWithType: DeckSurf.SDK.Models.CommandDynamicDisplayAttribute
+  fullName: DeckSurf.SDK.Models.CommandDynamicDisplayAttribute
+  type: class
+- uid: DeckSurf.SDK.Models.CommandIconAttribute
+  commentId: T:DeckSurf.SDK.Models.CommandIconAttribute
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: CommandIconAttribute
+  nameWithType: DeckSurf.SDK.Models.CommandIconAttribute
+  fullName: DeckSurf.SDK.Models.CommandIconAttribute
+  type: class
 - uid: DeckSurf.SDK.Models.CommandMapping
   commentId: T:DeckSurf.SDK.Models.CommandMapping
   parent: DeckSurf.SDK.Models
@@ -64,6 +107,38 @@ references:
   nameWithType: DeckSurf.SDK.Models.CommandMapping
   fullName: DeckSurf.SDK.Models.CommandMapping
   type: class
+- uid: DeckSurf.SDK.Models.CommandParameterAttribute
+  commentId: T:DeckSurf.SDK.Models.CommandParameterAttribute
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: CommandParameterAttribute
+  nameWithType: DeckSurf.SDK.Models.CommandParameterAttribute
+  fullName: DeckSurf.SDK.Models.CommandParameterAttribute
+  type: class
+- uid: DeckSurf.SDK.Models.CommandParameterType
+  commentId: T:DeckSurf.SDK.Models.CommandParameterType
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: CommandParameterType
+  nameWithType: DeckSurf.SDK.Models.CommandParameterType
+  fullName: DeckSurf.SDK.Models.CommandParameterType
+  type: enum
+- uid: DeckSurf.SDK.Models.CommandStatus
+  commentId: T:DeckSurf.SDK.Models.CommandStatus
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: CommandStatus
+  nameWithType: DeckSurf.SDK.Models.CommandStatus
+  fullName: DeckSurf.SDK.Models.CommandStatus
+  type: class
+- uid: DeckSurf.SDK.Models.CommandStatusKind
+  commentId: T:DeckSurf.SDK.Models.CommandStatusKind
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: CommandStatusKind
+  nameWithType: DeckSurf.SDK.Models.CommandStatusKind
+  fullName: DeckSurf.SDK.Models.CommandStatusKind
+  type: enum
 - uid: DeckSurf.SDK.Models.CompatibleWithAttribute
   commentId: T:DeckSurf.SDK.Models.CompatibleWithAttribute
   parent: DeckSurf.SDK.Models
@@ -152,6 +227,14 @@ references:
   nameWithType: DeckSurf.SDK.Models.DeviceRotation
   fullName: DeckSurf.SDK.Models.DeviceRotation
   type: enum
+- uid: DeckSurf.SDK.Models.KeyImageSetEventArgs
+  commentId: T:DeckSurf.SDK.Models.KeyImageSetEventArgs
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: KeyImageSetEventArgs
+  nameWithType: DeckSurf.SDK.Models.KeyImageSetEventArgs
+  fullName: DeckSurf.SDK.Models.KeyImageSetEventArgs
+  type: class
 - uid: DeckSurf.SDK.Models.KnobRotationDirection
   commentId: T:DeckSurf.SDK.Models.KnobRotationDirection
   parent: DeckSurf.SDK.Models
@@ -160,6 +243,14 @@ references:
   nameWithType: DeckSurf.SDK.Models.KnobRotationDirection
   fullName: DeckSurf.SDK.Models.KnobRotationDirection
   type: enum
+- uid: DeckSurf.SDK.Models.MappingTarget
+  commentId: T:DeckSurf.SDK.Models.MappingTarget
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: MappingTarget
+  nameWithType: DeckSurf.SDK.Models.MappingTarget
+  fullName: DeckSurf.SDK.Models.MappingTarget
+  type: enum
 - uid: DeckSurf.SDK.Models.PluginMetadata
   commentId: T:DeckSurf.SDK.Models.PluginMetadata
   parent: DeckSurf.SDK.Models
@@ -167,6 +258,14 @@ references:
   name: PluginMetadata
   nameWithType: DeckSurf.SDK.Models.PluginMetadata
   fullName: DeckSurf.SDK.Models.PluginMetadata
+  type: class
+- uid: DeckSurf.SDK.Models.ScreenImageSetEventArgs
+  commentId: T:DeckSurf.SDK.Models.ScreenImageSetEventArgs
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: ScreenImageSetEventArgs
+  nameWithType: DeckSurf.SDK.Models.ScreenImageSetEventArgs
+  fullName: DeckSurf.SDK.Models.ScreenImageSetEventArgs
   type: class
 - uid: DeckSurf.SDK.Models.SIIGBF
   commentId: T:DeckSurf.SDK.Models.SIIGBF

@@ -10,6 +10,7 @@ items:
   - DeckSurf.SDK.Models.CommandMapping.Command
   - DeckSurf.SDK.Models.CommandMapping.CommandArguments
   - DeckSurf.SDK.Models.CommandMapping.Plugin
+  - DeckSurf.SDK.Models.CommandMapping.Target
   langs:
   - csharp
   name: CommandMapping
@@ -106,7 +107,10 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
-  summary: Gets or sets the numeric index of the button on the Stream Deck that is associated with a command.
+  summary: >-
+    Gets or sets the numeric index of the button on the Stream Deck that is associated with a command.
+
+    For <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.MappingTarget.Knob"></xref> mappings this is the zero-based knob index.
   syntax:
     content: >-
       [[System.Text.Json.Serialization.JsonPropertyName("button_index")]]
@@ -178,19 +182,26 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models
-  summary: Gets or sets a string value representing arguments that are passed to the command.
+  summary: >-
+    Gets or sets the arguments that are passed to the command. Stored in
+
+    profile JSON as an object of key/value pairs; the legacy comma-separated
+
+    string format is still accepted when reading. Never null. Assigning null
+
+    resets the mapping to <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.CommandArguments.Empty"></xref>.
   syntax:
     content: >-
       [[System.Text.Json.Serialization.JsonPropertyName("command_arguments")]]
 
-      public string CommandArguments { get; set; }
+      public DeckSurf.SDK.Models.CommandArguments CommandArguments { get; set; }
     return:
-      type: System.String
+      type: DeckSurf.SDK.Models.CommandArguments
       description: ''
     content.csharp: >-
       [[System.Text.Json.Serialization.JsonPropertyName("command_arguments")]]
 
-      public string CommandArguments { get; set; }
+      public DeckSurf.SDK.Models.CommandArguments CommandArguments { get; set; }
   overload: DeckSurf.SDK.Models.CommandMapping.CommandArguments*
   exceptions: []
   attributes:
@@ -230,6 +241,50 @@ items:
   overload: DeckSurf.SDK.Models.CommandMapping.Plugin*
   exceptions: []
   attributes:
+  - type: '[System.Text.Json.Serialization.JsonPropertyNameAttribute'
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.CommandMapping.Target
+  commentId: P:DeckSurf.SDK.Models.CommandMapping.Target
+  id: Target
+  parent: DeckSurf.SDK.Models.CommandMapping
+  langs:
+  - csharp
+  name: Target
+  nameWithType: CommandMapping.Target
+  fullName: DeckSurf.SDK.Models.CommandMapping.Target
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: >-
+    Gets or sets the hardware target of the mapping. Defaults to <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.MappingTarget.Key"></xref>,
+
+    which keeps profiles written before targets existed working unchanged.
+  syntax:
+    content: >-
+      [[System.Text.Json.Serialization.JsonConverter(typeof(System.Text.Json.Serialization.JsonStringEnumConverter))]]
+
+      [[System.Text.Json.Serialization.JsonPropertyName("target")]]
+
+      public DeckSurf.SDK.Models.MappingTarget Target { get; set; }
+    return:
+      type: DeckSurf.SDK.Models.MappingTarget
+      description: ''
+    content.csharp: >-
+      [[System.Text.Json.Serialization.JsonConverter(typeof(System.Text.Json.Serialization.JsonStringEnumConverter))]]
+
+      [[System.Text.Json.Serialization.JsonPropertyName("target")]]
+
+      public DeckSurf.SDK.Models.MappingTarget Target { get; set; }
+  overload: DeckSurf.SDK.Models.CommandMapping.Target*
+  exceptions: []
+  attributes:
+  - type: '[System.Text.Json.Serialization.JsonConverterAttribute'
   - type: '[System.Text.Json.Serialization.JsonPropertyNameAttribute'
   modifiers.csharp:
   - public
@@ -298,6 +353,12 @@ references:
   nameWithType: CommandMapping.CommandArguments
   fullName: DeckSurf.SDK.Models.CommandMapping.CommandArguments
   type: property
+- uid: DeckSurf.SDK.Models.CommandArguments
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: CommandArguments
+  nameWithType: CommandArguments
+  fullName: DeckSurf.SDK.Models.CommandArguments
 - uid: DeckSurf.SDK.Models.CommandMapping.Plugin
   parent: DeckSurf.SDK.Models.CommandMapping
   isExternal: false
@@ -305,6 +366,19 @@ references:
   nameWithType: CommandMapping.Plugin
   fullName: DeckSurf.SDK.Models.CommandMapping.Plugin
   type: property
+- uid: DeckSurf.SDK.Models.CommandMapping.Target
+  parent: DeckSurf.SDK.Models.CommandMapping
+  isExternal: false
+  name: Target
+  nameWithType: CommandMapping.Target
+  fullName: DeckSurf.SDK.Models.CommandMapping.Target
+  type: property
+- uid: DeckSurf.SDK.Models.MappingTarget
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: MappingTarget
+  nameWithType: MappingTarget
+  fullName: DeckSurf.SDK.Models.MappingTarget
 - uid: DeckSurf.SDK.Models.CommandMapping.#ctor*
   commentId: Overload:DeckSurf.SDK.Models.CommandMapping.#ctor
   parent: DeckSurf.SDK.Models.CommandMapping
@@ -362,6 +436,16 @@ references:
   name: Plugin
   nameWithType: CommandMapping.Plugin
   fullName: DeckSurf.SDK.Models.CommandMapping.Plugin
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Models.CommandMapping.Target*
+  commentId: Overload:DeckSurf.SDK.Models.CommandMapping.Target
+  parent: DeckSurf.SDK.Models.CommandMapping
+  isExternal: false
+  name: Target
+  nameWithType: CommandMapping.Target
+  fullName: DeckSurf.SDK.Models.CommandMapping.Target
   monikers:
   - net10.0
   type: property

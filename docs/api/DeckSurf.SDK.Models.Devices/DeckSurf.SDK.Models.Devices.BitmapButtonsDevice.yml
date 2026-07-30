@@ -18,7 +18,7 @@ items:
   - DeckSurf.SDK.Models.Devices.BitmapButtonsDevice.ScreenSegmentWidth
   - DeckSurf.SDK.Models.Devices.BitmapButtonsDevice.ScreenWidth
   - DeckSurf.SDK.Models.Devices.BitmapButtonsDevice.SetBrightness(System.Byte)
-  - DeckSurf.SDK.Models.Devices.BitmapButtonsDevice.SetScreen(System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32)
+  - DeckSurf.SDK.Models.Devices.BitmapButtonsDevice.SetScreenCore(System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32)
   - DeckSurf.SDK.Models.Devices.BitmapButtonsDevice.TouchButtonCount
   langs:
   - csharp
@@ -56,13 +56,17 @@ items:
   - DeckSurf.SDK.Models.ConnectedDevice.Dispose
   - DeckSurf.SDK.Models.ConnectedDevice.Dispose(System.Boolean)
   - DeckSurf.SDK.Models.ConnectedDevice.IsListening
+  - DeckSurf.SDK.Models.ConnectedDevice.KeyImageSet
+  - DeckSurf.SDK.Models.ConnectedDevice.KnobCount
   - DeckSurf.SDK.Models.ConnectedDevice.Model
   - DeckSurf.SDK.Models.ConnectedDevice.Name
   - DeckSurf.SDK.Models.ConnectedDevice.Path
+  - DeckSurf.SDK.Models.ConnectedDevice.ScreenImageSet
   - DeckSurf.SDK.Models.ConnectedDevice.Serial
   - DeckSurf.SDK.Models.ConnectedDevice.SetKey(System.Int32,System.Byte[],System.Boolean)
   - DeckSurf.SDK.Models.ConnectedDevice.SetKeyColor(System.Int32,DeckSurf.SDK.Models.DeviceColor)
   - DeckSurf.SDK.Models.ConnectedDevice.SetScreen(System.Byte[],System.Int32,System.Int32,System.Int32)
+  - DeckSurf.SDK.Models.ConnectedDevice.SetScreen(System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32)
   - DeckSurf.SDK.Models.ConnectedDevice.SetupDeviceButtonMap(System.Collections.Generic.IEnumerable{DeckSurf.SDK.Models.CommandMapping})
   - DeckSurf.SDK.Models.ConnectedDevice.StartListening
   - DeckSurf.SDK.Models.ConnectedDevice.StopListening
@@ -473,21 +477,21 @@ items:
   - public
   monikers:
   - net10.0
-- uid: DeckSurf.SDK.Models.Devices.BitmapButtonsDevice.SetScreen(System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32)
-  commentId: M:DeckSurf.SDK.Models.Devices.BitmapButtonsDevice.SetScreen(System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32)
-  id: SetScreen(System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32)
+- uid: DeckSurf.SDK.Models.Devices.BitmapButtonsDevice.SetScreenCore(System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:DeckSurf.SDK.Models.Devices.BitmapButtonsDevice.SetScreenCore(System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32)
+  id: SetScreenCore(System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32)
   parent: DeckSurf.SDK.Models.Devices.BitmapButtonsDevice
   langs:
   - csharp
-  name: SetScreen(Byte[], Int32, Int32, Int32, Int32)
-  nameWithType: BitmapButtonsDevice.SetScreen(Byte[], Int32, Int32, Int32, Int32)
-  fullName: DeckSurf.SDK.Models.Devices.BitmapButtonsDevice.SetScreen(Byte[], Int32, Int32, Int32, Int32)
+  name: SetScreenCore(Byte[], Int32, Int32, Int32, Int32)
+  nameWithType: BitmapButtonsDevice.SetScreenCore(Byte[], Int32, Int32, Int32, Int32)
+  fullName: DeckSurf.SDK.Models.Devices.BitmapButtonsDevice.SetScreenCore(Byte[], Int32, Int32, Int32, Int32)
   type: Method
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models.Devices
   syntax:
-    content: public override bool SetScreen (byte[] image, int xOffset, int yOffset, int width, int height);
+    content: protected override bool SetScreenCore (byte[] image, int xOffset, int yOffset, int width, int height);
     parameters:
     - id: image
       type: System.Byte[]
@@ -507,11 +511,11 @@ items:
     return:
       type: System.Boolean
       description: ''
-    content.csharp: public override bool SetScreen (byte[] image, int xOffset, int yOffset, int width, int height);
-  overload: DeckSurf.SDK.Models.Devices.BitmapButtonsDevice.SetScreen*
+    content.csharp: protected override bool SetScreenCore (byte[] image, int xOffset, int yOffset, int width, int height);
+  overload: DeckSurf.SDK.Models.Devices.BitmapButtonsDevice.SetScreenCore*
   exceptions: []
   modifiers.csharp:
-  - public
+  - protected
   monikers:
   - net10.0
 - uid: DeckSurf.SDK.Models.Devices.BitmapButtonsDevice.TouchButtonCount
@@ -712,12 +716,12 @@ references:
   nameWithType: BitmapButtonsDevice.SetBrightness(Byte)
   fullName: DeckSurf.SDK.Models.Devices.BitmapButtonsDevice.SetBrightness(Byte)
   type: method
-- uid: DeckSurf.SDK.Models.Devices.BitmapButtonsDevice.SetScreen(System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32)
+- uid: DeckSurf.SDK.Models.Devices.BitmapButtonsDevice.SetScreenCore(System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32)
   parent: DeckSurf.SDK.Models.Devices.BitmapButtonsDevice
   isExternal: false
-  name: SetScreen(Byte[], Int32, Int32, Int32, Int32)
-  nameWithType: BitmapButtonsDevice.SetScreen(Byte[], Int32, Int32, Int32, Int32)
-  fullName: DeckSurf.SDK.Models.Devices.BitmapButtonsDevice.SetScreen(Byte[], Int32, Int32, Int32, Int32)
+  name: SetScreenCore(Byte[], Int32, Int32, Int32, Int32)
+  nameWithType: BitmapButtonsDevice.SetScreenCore(Byte[], Int32, Int32, Int32, Int32)
+  fullName: DeckSurf.SDK.Models.Devices.BitmapButtonsDevice.SetScreenCore(Byte[], Int32, Int32, Int32, Int32)
   type: method
 - uid: DeckSurf.SDK.Models.Devices.BitmapButtonsDevice.TouchButtonCount
   parent: DeckSurf.SDK.Models.Devices.BitmapButtonsDevice
@@ -866,13 +870,13 @@ references:
   monikers:
   - net10.0
   type: method
-- uid: DeckSurf.SDK.Models.Devices.BitmapButtonsDevice.SetScreen*
-  commentId: Overload:DeckSurf.SDK.Models.Devices.BitmapButtonsDevice.SetScreen
+- uid: DeckSurf.SDK.Models.Devices.BitmapButtonsDevice.SetScreenCore*
+  commentId: Overload:DeckSurf.SDK.Models.Devices.BitmapButtonsDevice.SetScreenCore
   parent: DeckSurf.SDK.Models.Devices.BitmapButtonsDevice
   isExternal: false
-  name: SetScreen
-  nameWithType: BitmapButtonsDevice.SetScreen
-  fullName: DeckSurf.SDK.Models.Devices.BitmapButtonsDevice.SetScreen
+  name: SetScreenCore
+  nameWithType: BitmapButtonsDevice.SetScreenCore
+  fullName: DeckSurf.SDK.Models.Devices.BitmapButtonsDevice.SetScreenCore
   monikers:
   - net10.0
   type: method
@@ -970,6 +974,20 @@ references:
   nameWithType: ConnectedDevice.IsListening
   fullName: DeckSurf.SDK.Models.ConnectedDevice.IsListening
   type: property
+- uid: DeckSurf.SDK.Models.ConnectedDevice.KeyImageSet
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: KeyImageSet
+  nameWithType: ConnectedDevice.KeyImageSet
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.KeyImageSet
+  type: event
+- uid: DeckSurf.SDK.Models.ConnectedDevice.KnobCount
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: KnobCount
+  nameWithType: ConnectedDevice.KnobCount
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.KnobCount
+  type: property
 - uid: DeckSurf.SDK.Models.ConnectedDevice.Model
   parent: DeckSurf.SDK.Models.ConnectedDevice
   isExternal: false
@@ -991,6 +1009,13 @@ references:
   nameWithType: ConnectedDevice.Path
   fullName: DeckSurf.SDK.Models.ConnectedDevice.Path
   type: property
+- uid: DeckSurf.SDK.Models.ConnectedDevice.ScreenImageSet
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: ScreenImageSet
+  nameWithType: ConnectedDevice.ScreenImageSet
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.ScreenImageSet
+  type: event
 - uid: DeckSurf.SDK.Models.ConnectedDevice.Serial
   parent: DeckSurf.SDK.Models.ConnectedDevice
   isExternal: false
@@ -1018,6 +1043,13 @@ references:
   name: SetScreen(Byte[], Int32, Int32, Int32)
   nameWithType: ConnectedDevice.SetScreen(Byte[], Int32, Int32, Int32)
   fullName: DeckSurf.SDK.Models.ConnectedDevice.SetScreen(Byte[], Int32, Int32, Int32)
+  type: method
+- uid: DeckSurf.SDK.Models.ConnectedDevice.SetScreen(System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: SetScreen(Byte[], Int32, Int32, Int32, Int32)
+  nameWithType: ConnectedDevice.SetScreen(Byte[], Int32, Int32, Int32, Int32)
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.SetScreen(Byte[], Int32, Int32, Int32, Int32)
   type: method
 - uid: DeckSurf.SDK.Models.ConnectedDevice.SetupDeviceButtonMap(System.Collections.Generic.IEnumerable{DeckSurf.SDK.Models.CommandMapping})
   parent: DeckSurf.SDK.Models.ConnectedDevice

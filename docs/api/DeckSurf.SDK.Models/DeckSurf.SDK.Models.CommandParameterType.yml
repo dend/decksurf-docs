@@ -1,0 +1,317 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Models.CommandParameterType
+  commentId: T:DeckSurf.SDK.Models.CommandParameterType
+  id: CommandParameterType
+  children:
+  - DeckSurf.SDK.Models.CommandParameterType.Boolean
+  - DeckSurf.SDK.Models.CommandParameterType.Choice
+  - DeckSurf.SDK.Models.CommandParameterType.FilePath
+  - DeckSurf.SDK.Models.CommandParameterType.FolderPath
+  - DeckSurf.SDK.Models.CommandParameterType.ImagePath
+  - DeckSurf.SDK.Models.CommandParameterType.Integer
+  - DeckSurf.SDK.Models.CommandParameterType.Secret
+  - DeckSurf.SDK.Models.CommandParameterType.String
+  langs:
+  - csharp
+  name: CommandParameterType
+  nameWithType: DeckSurf.SDK.Models.CommandParameterType
+  fullName: DeckSurf.SDK.Models.CommandParameterType
+  type: Enum
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: >-
+    Describes the data type of a command parameter declared with <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.CommandParameterAttribute"></xref>.
+
+    Consumers (such as graphical configuration tools) use this to decide which input control to render.
+  syntax:
+    content: public enum CommandParameterType
+    content.csharp: public enum CommandParameterType
+  inheritance:
+  - System.Enum
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net10.0
+- uid: DeckSurf.SDK.Models.CommandParameterType.Boolean
+  commentId: F:DeckSurf.SDK.Models.CommandParameterType.Boolean
+  id: Boolean
+  parent: DeckSurf.SDK.Models.CommandParameterType
+  langs:
+  - csharp
+  name: Boolean
+  nameWithType: CommandParameterType.Boolean
+  fullName: DeckSurf.SDK.Models.CommandParameterType.Boolean
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Boolean value, serialized as "true" or "false".
+  syntax:
+    content: Boolean
+    return:
+      type: DeckSurf.SDK.Models.CommandParameterType
+      description: ''
+    content.csharp: Boolean
+  exceptions: []
+  monikers:
+  - net10.0
+  literalValue: "2"
+- uid: DeckSurf.SDK.Models.CommandParameterType.Choice
+  commentId: F:DeckSurf.SDK.Models.CommandParameterType.Choice
+  id: Choice
+  parent: DeckSurf.SDK.Models.CommandParameterType
+  langs:
+  - csharp
+  name: Choice
+  nameWithType: CommandParameterType.Choice
+  fullName: DeckSurf.SDK.Models.CommandParameterType.Choice
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: One value out of a fixed set declared in <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.CommandParameterAttribute.Choices"></xref>.
+  syntax:
+    content: Choice
+    return:
+      type: DeckSurf.SDK.Models.CommandParameterType
+      description: ''
+    content.csharp: Choice
+  exceptions: []
+  monikers:
+  - net10.0
+  literalValue: "3"
+- uid: DeckSurf.SDK.Models.CommandParameterType.FilePath
+  commentId: F:DeckSurf.SDK.Models.CommandParameterType.FilePath
+  id: FilePath
+  parent: DeckSurf.SDK.Models.CommandParameterType
+  langs:
+  - csharp
+  name: FilePath
+  nameWithType: CommandParameterType.FilePath
+  fullName: DeckSurf.SDK.Models.CommandParameterType.FilePath
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Path to a file on disk.
+  syntax:
+    content: FilePath
+    return:
+      type: DeckSurf.SDK.Models.CommandParameterType
+      description: ''
+    content.csharp: FilePath
+  exceptions: []
+  monikers:
+  - net10.0
+  literalValue: "4"
+- uid: DeckSurf.SDK.Models.CommandParameterType.FolderPath
+  commentId: F:DeckSurf.SDK.Models.CommandParameterType.FolderPath
+  id: FolderPath
+  parent: DeckSurf.SDK.Models.CommandParameterType
+  langs:
+  - csharp
+  name: FolderPath
+  nameWithType: CommandParameterType.FolderPath
+  fullName: DeckSurf.SDK.Models.CommandParameterType.FolderPath
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Path to a folder on disk.
+  syntax:
+    content: FolderPath
+    return:
+      type: DeckSurf.SDK.Models.CommandParameterType
+      description: ''
+    content.csharp: FolderPath
+  exceptions: []
+  monikers:
+  - net10.0
+  literalValue: "5"
+- uid: DeckSurf.SDK.Models.CommandParameterType.ImagePath
+  commentId: F:DeckSurf.SDK.Models.CommandParameterType.ImagePath
+  id: ImagePath
+  parent: DeckSurf.SDK.Models.CommandParameterType
+  langs:
+  - csharp
+  name: ImagePath
+  nameWithType: CommandParameterType.ImagePath
+  fullName: DeckSurf.SDK.Models.CommandParameterType.ImagePath
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Path to an image file on disk.
+  syntax:
+    content: ImagePath
+    return:
+      type: DeckSurf.SDK.Models.CommandParameterType
+      description: ''
+    content.csharp: ImagePath
+  exceptions: []
+  monikers:
+  - net10.0
+  literalValue: "6"
+- uid: DeckSurf.SDK.Models.CommandParameterType.Integer
+  commentId: F:DeckSurf.SDK.Models.CommandParameterType.Integer
+  id: Integer
+  parent: DeckSurf.SDK.Models.CommandParameterType
+  langs:
+  - csharp
+  name: Integer
+  nameWithType: CommandParameterType.Integer
+  fullName: DeckSurf.SDK.Models.CommandParameterType.Integer
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: >-
+    Integer numeric value. Can be constrained with <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.CommandParameterAttribute.MinValue"></xref>
+
+    and <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.CommandParameterAttribute.MaxValue"></xref>.
+  syntax:
+    content: Integer
+    return:
+      type: DeckSurf.SDK.Models.CommandParameterType
+      description: ''
+    content.csharp: Integer
+  exceptions: []
+  monikers:
+  - net10.0
+  literalValue: "1"
+- uid: DeckSurf.SDK.Models.CommandParameterType.Secret
+  commentId: F:DeckSurf.SDK.Models.CommandParameterType.Secret
+  id: Secret
+  parent: DeckSurf.SDK.Models.CommandParameterType
+  langs:
+  - csharp
+  name: Secret
+  nameWithType: CommandParameterType.Secret
+  fullName: DeckSurf.SDK.Models.CommandParameterType.Secret
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: >-
+    Sensitive free-form text, such as a password or API token. Behaves like
+
+    <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.CommandParameterType.String"></xref> except that tooling masks the input field. The value
+
+    is still stored as plain text in the profile file, like every other
+
+    parameter value.
+  syntax:
+    content: Secret
+    return:
+      type: DeckSurf.SDK.Models.CommandParameterType
+      description: ''
+    content.csharp: Secret
+  exceptions: []
+  monikers:
+  - net10.0
+  literalValue: "8"
+- uid: DeckSurf.SDK.Models.CommandParameterType.String
+  commentId: F:DeckSurf.SDK.Models.CommandParameterType.String
+  id: String
+  parent: DeckSurf.SDK.Models.CommandParameterType
+  langs:
+  - csharp
+  name: String
+  nameWithType: CommandParameterType.String
+  fullName: DeckSurf.SDK.Models.CommandParameterType.String
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Free-form text value.
+  syntax:
+    content: String
+    return:
+      type: DeckSurf.SDK.Models.CommandParameterType
+      description: ''
+    content.csharp: String
+  exceptions: []
+  monikers:
+  - net10.0
+  literalValue: "0"
+references:
+- uid: DeckSurf.SDK.Models
+  commentId: N:DeckSurf.SDK.Models
+  isExternal: false
+  name: DeckSurf.SDK.Models
+  nameWithType: DeckSurf.SDK.Models
+  fullName: DeckSurf.SDK.Models
+  type: namespace
+- uid: System.Enum
+  parent: System
+  isExternal: true
+  name: Enum
+  nameWithType: Enum
+  fullName: System.Enum
+- uid: DeckSurf.SDK.Models.CommandParameterType.Boolean
+  parent: DeckSurf.SDK.Models.CommandParameterType
+  isExternal: false
+  name: Boolean
+  nameWithType: CommandParameterType.Boolean
+  fullName: DeckSurf.SDK.Models.CommandParameterType.Boolean
+  type: field
+- uid: DeckSurf.SDK.Models.CommandParameterType
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: CommandParameterType
+  nameWithType: CommandParameterType
+  fullName: DeckSurf.SDK.Models.CommandParameterType
+- uid: DeckSurf.SDK.Models.CommandParameterType.Choice
+  parent: DeckSurf.SDK.Models.CommandParameterType
+  isExternal: false
+  name: Choice
+  nameWithType: CommandParameterType.Choice
+  fullName: DeckSurf.SDK.Models.CommandParameterType.Choice
+  type: field
+- uid: DeckSurf.SDK.Models.CommandParameterType.FilePath
+  parent: DeckSurf.SDK.Models.CommandParameterType
+  isExternal: false
+  name: FilePath
+  nameWithType: CommandParameterType.FilePath
+  fullName: DeckSurf.SDK.Models.CommandParameterType.FilePath
+  type: field
+- uid: DeckSurf.SDK.Models.CommandParameterType.FolderPath
+  parent: DeckSurf.SDK.Models.CommandParameterType
+  isExternal: false
+  name: FolderPath
+  nameWithType: CommandParameterType.FolderPath
+  fullName: DeckSurf.SDK.Models.CommandParameterType.FolderPath
+  type: field
+- uid: DeckSurf.SDK.Models.CommandParameterType.ImagePath
+  parent: DeckSurf.SDK.Models.CommandParameterType
+  isExternal: false
+  name: ImagePath
+  nameWithType: CommandParameterType.ImagePath
+  fullName: DeckSurf.SDK.Models.CommandParameterType.ImagePath
+  type: field
+- uid: DeckSurf.SDK.Models.CommandParameterType.Integer
+  parent: DeckSurf.SDK.Models.CommandParameterType
+  isExternal: false
+  name: Integer
+  nameWithType: CommandParameterType.Integer
+  fullName: DeckSurf.SDK.Models.CommandParameterType.Integer
+  type: field
+- uid: DeckSurf.SDK.Models.CommandParameterType.Secret
+  parent: DeckSurf.SDK.Models.CommandParameterType
+  isExternal: false
+  name: Secret
+  nameWithType: CommandParameterType.Secret
+  fullName: DeckSurf.SDK.Models.CommandParameterType.Secret
+  type: field
+- uid: DeckSurf.SDK.Models.CommandParameterType.String
+  parent: DeckSurf.SDK.Models.CommandParameterType
+  isExternal: false
+  name: String
+  nameWithType: CommandParameterType.String
+  fullName: DeckSurf.SDK.Models.CommandParameterType.String
+  type: field

@@ -1,0 +1,145 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Interfaces.IDeckSurfStatusProvider
+  commentId: T:DeckSurf.SDK.Interfaces.IDeckSurfStatusProvider
+  id: IDeckSurfStatusProvider
+  children:
+  - DeckSurf.SDK.Interfaces.IDeckSurfStatusProvider.GetStatusAsync(DeckSurf.SDK.Models.CommandArguments,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  name: IDeckSurfStatusProvider
+  nameWithType: DeckSurf.SDK.Interfaces.IDeckSurfStatusProvider
+  fullName: DeckSurf.SDK.Interfaces.IDeckSurfStatusProvider
+  type: Interface
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Interfaces
+  summary: >-
+    Optional interface for commands that depend on an external resource and can
+
+    report whether it is currently reachable. Configuration tooling queries it
+
+    while a command is being edited, alongside
+
+    <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Interfaces.IDeckSurfChoiceProvider"></xref> when both are implemented, so a
+
+    misconfigured host or password is visible immediately instead of when a
+
+    button press silently does nothing.
+  syntax:
+    content: public interface IDeckSurfStatusProvider
+    content.csharp: public interface IDeckSurfStatusProvider
+  implements: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net10.0
+- uid: DeckSurf.SDK.Interfaces.IDeckSurfStatusProvider.GetStatusAsync(DeckSurf.SDK.Models.CommandArguments,System.Threading.CancellationToken)
+  commentId: M:DeckSurf.SDK.Interfaces.IDeckSurfStatusProvider.GetStatusAsync(DeckSurf.SDK.Models.CommandArguments,System.Threading.CancellationToken)
+  id: GetStatusAsync(DeckSurf.SDK.Models.CommandArguments,System.Threading.CancellationToken)
+  parent: DeckSurf.SDK.Interfaces.IDeckSurfStatusProvider
+  langs:
+  - csharp
+  name: GetStatusAsync(CommandArguments, CancellationToken)
+  nameWithType: IDeckSurfStatusProvider.GetStatusAsync(CommandArguments, CancellationToken)
+  fullName: DeckSurf.SDK.Interfaces.IDeckSurfStatusProvider.GetStatusAsync(CommandArguments, CancellationToken)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Interfaces
+  summary: >-
+    Probes the command's backing resource with the given configuration.
+
+    Implementations should honor the cancellation token, return within a few
+
+    seconds, and report failures as <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.CommandStatusKind.Unavailable"></xref>
+
+    with a reason rather than throwing.
+  syntax:
+    content: public System.Threading.Tasks.Task<DeckSurf.SDK.Models.CommandStatus> GetStatusAsync (DeckSurf.SDK.Models.CommandArguments currentValues, System.Threading.CancellationToken cancellationToken = default);
+    parameters:
+    - id: currentValues
+      type: DeckSurf.SDK.Models.CommandArguments
+      description: The values the user has entered so far for the command's parameters.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token for the probe.
+    return:
+      type: System.Threading.Tasks.Task{DeckSurf.SDK.Models.CommandStatus}
+      description: The status report.
+    content.csharp: public System.Threading.Tasks.Task<DeckSurf.SDK.Models.CommandStatus> GetStatusAsync (DeckSurf.SDK.Models.CommandArguments currentValues, System.Threading.CancellationToken cancellationToken = default);
+  overload: DeckSurf.SDK.Interfaces.IDeckSurfStatusProvider.GetStatusAsync*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+references:
+- uid: DeckSurf.SDK.Interfaces
+  commentId: N:DeckSurf.SDK.Interfaces
+  isExternal: false
+  name: DeckSurf.SDK.Interfaces
+  nameWithType: DeckSurf.SDK.Interfaces
+  fullName: DeckSurf.SDK.Interfaces
+  type: namespace
+- uid: DeckSurf.SDK.Interfaces.IDeckSurfStatusProvider.GetStatusAsync(DeckSurf.SDK.Models.CommandArguments,System.Threading.CancellationToken)
+  parent: DeckSurf.SDK.Interfaces.IDeckSurfStatusProvider
+  isExternal: false
+  name: GetStatusAsync(CommandArguments, CancellationToken)
+  nameWithType: IDeckSurfStatusProvider.GetStatusAsync(CommandArguments, CancellationToken)
+  fullName: DeckSurf.SDK.Interfaces.IDeckSurfStatusProvider.GetStatusAsync(CommandArguments, CancellationToken)
+  type: method
+- uid: System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: DeckSurf.SDK.Models.CommandStatus
+  name: CommandStatus
+  nameWithType: CommandStatus
+  fullName: DeckSurf.SDK.Models.CommandStatus
+- uid: System.Threading.Tasks.Task{DeckSurf.SDK.Models.CommandStatus}
+  parent: System.Threading.Tasks
+  name: Task<CommandStatus>
+  nameWithType: Task<CommandStatus>
+  fullName: System.Threading.Tasks.Task<DeckSurf.SDK.Models.CommandStatus>
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: DeckSurf.SDK.Models.CommandStatus
+    name: CommandStatus
+    nameWithType: CommandStatus
+    fullName: DeckSurf.SDK.Models.CommandStatus
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: DeckSurf.SDK.Models.CommandArguments
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: CommandArguments
+  nameWithType: CommandArguments
+  fullName: DeckSurf.SDK.Models.CommandArguments
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: DeckSurf.SDK.Interfaces.IDeckSurfStatusProvider.GetStatusAsync*
+  commentId: Overload:DeckSurf.SDK.Interfaces.IDeckSurfStatusProvider.GetStatusAsync
+  parent: DeckSurf.SDK.Interfaces.IDeckSurfStatusProvider
+  isExternal: false
+  name: GetStatusAsync
+  nameWithType: IDeckSurfStatusProvider.GetStatusAsync
+  fullName: DeckSurf.SDK.Interfaces.IDeckSurfStatusProvider.GetStatusAsync
+  monikers:
+  - net10.0
+  type: method

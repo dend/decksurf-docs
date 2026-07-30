@@ -1,0 +1,696 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Models.CommandParameterAttribute
+  commentId: T:DeckSurf.SDK.Models.CommandParameterAttribute
+  id: CommandParameterAttribute
+  children:
+  - DeckSurf.SDK.Models.CommandParameterAttribute.#ctor(System.String,DeckSurf.SDK.Models.CommandParameterType)
+  - DeckSurf.SDK.Models.CommandParameterAttribute.Choices
+  - DeckSurf.SDK.Models.CommandParameterAttribute.DefaultValue
+  - DeckSurf.SDK.Models.CommandParameterAttribute.Description
+  - DeckSurf.SDK.Models.CommandParameterAttribute.DisplayName
+  - DeckSurf.SDK.Models.CommandParameterAttribute.DynamicChoices
+  - DeckSurf.SDK.Models.CommandParameterAttribute.Key
+  - DeckSurf.SDK.Models.CommandParameterAttribute.MaxValue
+  - DeckSurf.SDK.Models.CommandParameterAttribute.MinValue
+  - DeckSurf.SDK.Models.CommandParameterAttribute.Order
+  - DeckSurf.SDK.Models.CommandParameterAttribute.ParameterType
+  - DeckSurf.SDK.Models.CommandParameterAttribute.Required
+  langs:
+  - csharp
+  name: CommandParameterAttribute
+  nameWithType: DeckSurf.SDK.Models.CommandParameterAttribute
+  fullName: DeckSurf.SDK.Models.CommandParameterAttribute
+  type: Class
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: >-
+    Declares a configurable parameter for a DeckSurf command. Parameter values are
+
+    stored as entries of the <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.CommandMapping.CommandArguments"></xref> object and
+
+    read with its typed accessors. Declaring parameters lets tooling (such as
+
+    a graphical profile editor) generate configuration forms for a command without any
+
+    command-specific knowledge.
+  remarks: >-
+    Commands without any <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.CommandParameterAttribute"></xref> annotations are treated as
+
+    having no configurable parameters. Choice lists that are only known at runtime are
+
+    declared with <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.CommandParameterAttribute.DynamicChoices"></xref> and served by the command through
+
+    <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Interfaces.IDeckSurfChoiceProvider"></xref>.
+  syntax:
+    content: >-
+      [[System.AttributeUsage(System.AttributeTargets.Class, AllowMultiple=true, Inherited=true)]]
+
+      public sealed class CommandParameterAttribute : Attribute
+    content.csharp: >-
+      [[System.AttributeUsage(System.AttributeTargets.Class, AllowMultiple=true, Inherited=true)]]
+
+      public sealed class CommandParameterAttribute : Attribute
+  inheritance:
+  - System.Attribute
+  implements: []
+  inheritedMembers: []
+  attributes:
+  - type: '[System.AttributeUsageAttribute'
+  modifiers.csharp:
+  - public
+  - sealed
+  monikers:
+  - net10.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net10.0
+- uid: DeckSurf.SDK.Models.CommandParameterAttribute.#ctor(System.String,DeckSurf.SDK.Models.CommandParameterType)
+  commentId: M:DeckSurf.SDK.Models.CommandParameterAttribute.#ctor(System.String,DeckSurf.SDK.Models.CommandParameterType)
+  id: '#ctor(System.String,DeckSurf.SDK.Models.CommandParameterType)'
+  parent: DeckSurf.SDK.Models.CommandParameterAttribute
+  langs:
+  - csharp
+  name: CommandParameterAttribute(String, CommandParameterType)
+  nameWithType: CommandParameterAttribute.CommandParameterAttribute(String, CommandParameterType)
+  fullName: DeckSurf.SDK.Models.CommandParameterAttribute.CommandParameterAttribute(String, CommandParameterType)
+  type: Constructor
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: >-
+    Declares a configurable parameter for a DeckSurf command. Parameter values are
+
+    stored as entries of the <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.CommandMapping.CommandArguments"></xref> object and
+
+    read with its typed accessors. Declaring parameters lets tooling (such as
+
+    a graphical profile editor) generate configuration forms for a command without any
+
+    command-specific knowledge.
+  remarks: >-
+    Commands without any <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.CommandParameterAttribute"></xref> annotations are treated as
+
+    having no configurable parameters. Choice lists that are only known at runtime are
+
+    declared with <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.CommandParameterAttribute.DynamicChoices"></xref> and served by the command through
+
+    <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Interfaces.IDeckSurfChoiceProvider"></xref>.
+  syntax:
+    content: public CommandParameterAttribute (string key, DeckSurf.SDK.Models.CommandParameterType parameterType);
+    parameters:
+    - id: key
+      type: System.String
+      description: The parameter key used in the serialized command arguments string.
+    - id: parameterType
+      type: DeckSurf.SDK.Models.CommandParameterType
+      description: The data type of the parameter.
+    content.csharp: public CommandParameterAttribute (string key, DeckSurf.SDK.Models.CommandParameterType parameterType);
+  overload: DeckSurf.SDK.Models.CommandParameterAttribute.#ctor*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.CommandParameterAttribute.Choices
+  commentId: P:DeckSurf.SDK.Models.CommandParameterAttribute.Choices
+  id: Choices
+  parent: DeckSurf.SDK.Models.CommandParameterAttribute
+  langs:
+  - csharp
+  name: Choices
+  nameWithType: CommandParameterAttribute.Choices
+  fullName: DeckSurf.SDK.Models.CommandParameterAttribute.Choices
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets or sets the set of allowed values for a <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.CommandParameterType.Choice"></xref> parameter.
+  syntax:
+    content: public string[] Choices { get; set; }
+    return:
+      type: System.String[]
+      description: ''
+    content.csharp: public string[] Choices { get; set; }
+  overload: DeckSurf.SDK.Models.CommandParameterAttribute.Choices*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.CommandParameterAttribute.DefaultValue
+  commentId: P:DeckSurf.SDK.Models.CommandParameterAttribute.DefaultValue
+  id: DefaultValue
+  parent: DeckSurf.SDK.Models.CommandParameterAttribute
+  langs:
+  - csharp
+  name: DefaultValue
+  nameWithType: CommandParameterAttribute.DefaultValue
+  fullName: DeckSurf.SDK.Models.CommandParameterAttribute.DefaultValue
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets or sets the default value for the parameter, in its string form.
+  syntax:
+    content: public string DefaultValue { get; set; }
+    return:
+      type: System.String
+      description: ''
+    content.csharp: public string DefaultValue { get; set; }
+  overload: DeckSurf.SDK.Models.CommandParameterAttribute.DefaultValue*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.CommandParameterAttribute.Description
+  commentId: P:DeckSurf.SDK.Models.CommandParameterAttribute.Description
+  id: Description
+  parent: DeckSurf.SDK.Models.CommandParameterAttribute
+  langs:
+  - csharp
+  name: Description
+  nameWithType: CommandParameterAttribute.Description
+  fullName: DeckSurf.SDK.Models.CommandParameterAttribute.Description
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets or sets the help text describing what the parameter does.
+  syntax:
+    content: public string Description { get; set; }
+    return:
+      type: System.String
+      description: ''
+    content.csharp: public string Description { get; set; }
+  overload: DeckSurf.SDK.Models.CommandParameterAttribute.Description*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.CommandParameterAttribute.DisplayName
+  commentId: P:DeckSurf.SDK.Models.CommandParameterAttribute.DisplayName
+  id: DisplayName
+  parent: DeckSurf.SDK.Models.CommandParameterAttribute
+  langs:
+  - csharp
+  name: DisplayName
+  nameWithType: CommandParameterAttribute.DisplayName
+  fullName: DeckSurf.SDK.Models.CommandParameterAttribute.DisplayName
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: >-
+    Gets or sets the human-readable label for the parameter. Consumers fall back to
+
+    <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.CommandParameterAttribute.Key"></xref> when this is not set.
+  syntax:
+    content: public string DisplayName { get; set; }
+    return:
+      type: System.String
+      description: ''
+    content.csharp: public string DisplayName { get; set; }
+  overload: DeckSurf.SDK.Models.CommandParameterAttribute.DisplayName*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.CommandParameterAttribute.DynamicChoices
+  commentId: P:DeckSurf.SDK.Models.CommandParameterAttribute.DynamicChoices
+  id: DynamicChoices
+  parent: DeckSurf.SDK.Models.CommandParameterAttribute
+  langs:
+  - csharp
+  name: DynamicChoices
+  nameWithType: CommandParameterAttribute.DynamicChoices
+  fullName: DeckSurf.SDK.Models.CommandParameterAttribute.DynamicChoices
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: >-
+    Gets or sets a value indicating whether the parameter's choices are
+
+    resolved at runtime through <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Interfaces.IDeckSurfChoiceProvider"></xref>
+
+    rather than declared statically. Dynamic choices are suggestions, not a
+
+    closed set: tooling should keep the field editable as free text, since the
+
+    backing source (a network service, connected hardware) may be unavailable
+
+    while the profile is edited.
+  syntax:
+    content: public bool DynamicChoices { get; set; }
+    return:
+      type: System.Boolean
+      description: ''
+    content.csharp: public bool DynamicChoices { get; set; }
+  overload: DeckSurf.SDK.Models.CommandParameterAttribute.DynamicChoices*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.CommandParameterAttribute.Key
+  commentId: P:DeckSurf.SDK.Models.CommandParameterAttribute.Key
+  id: Key
+  parent: DeckSurf.SDK.Models.CommandParameterAttribute
+  langs:
+  - csharp
+  name: Key
+  nameWithType: CommandParameterAttribute.Key
+  fullName: DeckSurf.SDK.Models.CommandParameterAttribute.Key
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets the parameter key used in the serialized command arguments string.
+  syntax:
+    content: public string Key { get; }
+    return:
+      type: System.String
+      description: ''
+    content.csharp: public string Key { get; }
+  overload: DeckSurf.SDK.Models.CommandParameterAttribute.Key*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.CommandParameterAttribute.MaxValue
+  commentId: P:DeckSurf.SDK.Models.CommandParameterAttribute.MaxValue
+  id: MaxValue
+  parent: DeckSurf.SDK.Models.CommandParameterAttribute
+  langs:
+  - csharp
+  name: MaxValue
+  nameWithType: CommandParameterAttribute.MaxValue
+  fullName: DeckSurf.SDK.Models.CommandParameterAttribute.MaxValue
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets or sets the maximum allowed value for numeric parameters. Defaults to <xref data-throw-if-not-resolved="true" uid="System.Int32.MaxValue"></xref> (unbounded).
+  syntax:
+    content: public int MaxValue { get; set; }
+    return:
+      type: System.Int32
+      description: ''
+    content.csharp: public int MaxValue { get; set; }
+  overload: DeckSurf.SDK.Models.CommandParameterAttribute.MaxValue*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.CommandParameterAttribute.MinValue
+  commentId: P:DeckSurf.SDK.Models.CommandParameterAttribute.MinValue
+  id: MinValue
+  parent: DeckSurf.SDK.Models.CommandParameterAttribute
+  langs:
+  - csharp
+  name: MinValue
+  nameWithType: CommandParameterAttribute.MinValue
+  fullName: DeckSurf.SDK.Models.CommandParameterAttribute.MinValue
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets or sets the minimum allowed value for numeric parameters. Defaults to <xref data-throw-if-not-resolved="true" uid="System.Int32.MinValue"></xref> (unbounded).
+  syntax:
+    content: public int MinValue { get; set; }
+    return:
+      type: System.Int32
+      description: ''
+    content.csharp: public int MinValue { get; set; }
+  overload: DeckSurf.SDK.Models.CommandParameterAttribute.MinValue*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.CommandParameterAttribute.Order
+  commentId: P:DeckSurf.SDK.Models.CommandParameterAttribute.Order
+  id: Order
+  parent: DeckSurf.SDK.Models.CommandParameterAttribute
+  langs:
+  - csharp
+  name: Order
+  nameWithType: CommandParameterAttribute.Order
+  fullName: DeckSurf.SDK.Models.CommandParameterAttribute.Order
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: >-
+    Gets or sets the relative position of the parameter in generated configuration forms.
+
+    Parameters are sorted by this value, then by <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.CommandParameterAttribute.Key"></xref>.
+  syntax:
+    content: public int Order { get; set; }
+    return:
+      type: System.Int32
+      description: ''
+    content.csharp: public int Order { get; set; }
+  overload: DeckSurf.SDK.Models.CommandParameterAttribute.Order*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.CommandParameterAttribute.ParameterType
+  commentId: P:DeckSurf.SDK.Models.CommandParameterAttribute.ParameterType
+  id: ParameterType
+  parent: DeckSurf.SDK.Models.CommandParameterAttribute
+  langs:
+  - csharp
+  name: ParameterType
+  nameWithType: CommandParameterAttribute.ParameterType
+  fullName: DeckSurf.SDK.Models.CommandParameterAttribute.ParameterType
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets the data type of the parameter.
+  syntax:
+    content: public DeckSurf.SDK.Models.CommandParameterType ParameterType { get; }
+    return:
+      type: DeckSurf.SDK.Models.CommandParameterType
+      description: ''
+    content.csharp: public DeckSurf.SDK.Models.CommandParameterType ParameterType { get; }
+  overload: DeckSurf.SDK.Models.CommandParameterAttribute.ParameterType*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.CommandParameterAttribute.Required
+  commentId: P:DeckSurf.SDK.Models.CommandParameterAttribute.Required
+  id: Required
+  parent: DeckSurf.SDK.Models.CommandParameterAttribute
+  langs:
+  - csharp
+  name: Required
+  nameWithType: CommandParameterAttribute.Required
+  fullName: DeckSurf.SDK.Models.CommandParameterAttribute.Required
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: >-
+    Gets or sets a value indicating whether the parameter must be provided for the
+
+    command to function.
+  syntax:
+    content: public bool Required { get; set; }
+    return:
+      type: System.Boolean
+      description: ''
+    content.csharp: public bool Required { get; set; }
+  overload: DeckSurf.SDK.Models.CommandParameterAttribute.Required*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  monikers:
+  - net10.0
+references:
+- uid: DeckSurf.SDK.Models
+  commentId: N:DeckSurf.SDK.Models
+  isExternal: false
+  name: DeckSurf.SDK.Models
+  nameWithType: DeckSurf.SDK.Models
+  fullName: DeckSurf.SDK.Models
+  type: namespace
+- uid: System.Attribute
+  parent: System
+  isExternal: true
+  name: Attribute
+  nameWithType: Attribute
+  fullName: System.Attribute
+- uid: DeckSurf.SDK.Models.CommandParameterAttribute.#ctor(System.String,DeckSurf.SDK.Models.CommandParameterType)
+  parent: DeckSurf.SDK.Models.CommandParameterAttribute
+  isExternal: false
+  name: CommandParameterAttribute(String, CommandParameterType)
+  nameWithType: CommandParameterAttribute.CommandParameterAttribute(String, CommandParameterType)
+  fullName: DeckSurf.SDK.Models.CommandParameterAttribute.CommandParameterAttribute(String, CommandParameterType)
+  type: constructor
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DeckSurf.SDK.Models.CommandParameterType
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: CommandParameterType
+  nameWithType: CommandParameterType
+  fullName: DeckSurf.SDK.Models.CommandParameterType
+- uid: DeckSurf.SDK.Models.CommandParameterAttribute.Choices
+  parent: DeckSurf.SDK.Models.CommandParameterAttribute
+  isExternal: false
+  name: Choices
+  nameWithType: CommandParameterAttribute.Choices
+  fullName: DeckSurf.SDK.Models.CommandParameterAttribute.Choices
+  type: property
+- uid: System.String[]
+  parent: System
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: DeckSurf.SDK.Models.CommandParameterAttribute.DefaultValue
+  parent: DeckSurf.SDK.Models.CommandParameterAttribute
+  isExternal: false
+  name: DefaultValue
+  nameWithType: CommandParameterAttribute.DefaultValue
+  fullName: DeckSurf.SDK.Models.CommandParameterAttribute.DefaultValue
+  type: property
+- uid: DeckSurf.SDK.Models.CommandParameterAttribute.Description
+  parent: DeckSurf.SDK.Models.CommandParameterAttribute
+  isExternal: false
+  name: Description
+  nameWithType: CommandParameterAttribute.Description
+  fullName: DeckSurf.SDK.Models.CommandParameterAttribute.Description
+  type: property
+- uid: DeckSurf.SDK.Models.CommandParameterAttribute.DisplayName
+  parent: DeckSurf.SDK.Models.CommandParameterAttribute
+  isExternal: false
+  name: DisplayName
+  nameWithType: CommandParameterAttribute.DisplayName
+  fullName: DeckSurf.SDK.Models.CommandParameterAttribute.DisplayName
+  type: property
+- uid: DeckSurf.SDK.Models.CommandParameterAttribute.DynamicChoices
+  parent: DeckSurf.SDK.Models.CommandParameterAttribute
+  isExternal: false
+  name: DynamicChoices
+  nameWithType: CommandParameterAttribute.DynamicChoices
+  fullName: DeckSurf.SDK.Models.CommandParameterAttribute.DynamicChoices
+  type: property
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: DeckSurf.SDK.Models.CommandParameterAttribute.Key
+  parent: DeckSurf.SDK.Models.CommandParameterAttribute
+  isExternal: false
+  name: Key
+  nameWithType: CommandParameterAttribute.Key
+  fullName: DeckSurf.SDK.Models.CommandParameterAttribute.Key
+  type: property
+- uid: DeckSurf.SDK.Models.CommandParameterAttribute.MaxValue
+  parent: DeckSurf.SDK.Models.CommandParameterAttribute
+  isExternal: false
+  name: MaxValue
+  nameWithType: CommandParameterAttribute.MaxValue
+  fullName: DeckSurf.SDK.Models.CommandParameterAttribute.MaxValue
+  type: property
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: DeckSurf.SDK.Models.CommandParameterAttribute.MinValue
+  parent: DeckSurf.SDK.Models.CommandParameterAttribute
+  isExternal: false
+  name: MinValue
+  nameWithType: CommandParameterAttribute.MinValue
+  fullName: DeckSurf.SDK.Models.CommandParameterAttribute.MinValue
+  type: property
+- uid: DeckSurf.SDK.Models.CommandParameterAttribute.Order
+  parent: DeckSurf.SDK.Models.CommandParameterAttribute
+  isExternal: false
+  name: Order
+  nameWithType: CommandParameterAttribute.Order
+  fullName: DeckSurf.SDK.Models.CommandParameterAttribute.Order
+  type: property
+- uid: DeckSurf.SDK.Models.CommandParameterAttribute.ParameterType
+  parent: DeckSurf.SDK.Models.CommandParameterAttribute
+  isExternal: false
+  name: ParameterType
+  nameWithType: CommandParameterAttribute.ParameterType
+  fullName: DeckSurf.SDK.Models.CommandParameterAttribute.ParameterType
+  type: property
+- uid: DeckSurf.SDK.Models.CommandParameterAttribute.Required
+  parent: DeckSurf.SDK.Models.CommandParameterAttribute
+  isExternal: false
+  name: Required
+  nameWithType: CommandParameterAttribute.Required
+  fullName: DeckSurf.SDK.Models.CommandParameterAttribute.Required
+  type: property
+- uid: DeckSurf.SDK.Models.CommandParameterAttribute.#ctor*
+  commentId: Overload:DeckSurf.SDK.Models.CommandParameterAttribute.#ctor
+  parent: DeckSurf.SDK.Models.CommandParameterAttribute
+  isExternal: false
+  name: CommandParameterAttribute
+  nameWithType: CommandParameterAttribute.CommandParameterAttribute
+  fullName: DeckSurf.SDK.Models.CommandParameterAttribute.CommandParameterAttribute
+  monikers:
+  - net10.0
+  type: constructor
+- uid: DeckSurf.SDK.Models.CommandParameterAttribute.Choices*
+  commentId: Overload:DeckSurf.SDK.Models.CommandParameterAttribute.Choices
+  parent: DeckSurf.SDK.Models.CommandParameterAttribute
+  isExternal: false
+  name: Choices
+  nameWithType: CommandParameterAttribute.Choices
+  fullName: DeckSurf.SDK.Models.CommandParameterAttribute.Choices
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Models.CommandParameterAttribute.DefaultValue*
+  commentId: Overload:DeckSurf.SDK.Models.CommandParameterAttribute.DefaultValue
+  parent: DeckSurf.SDK.Models.CommandParameterAttribute
+  isExternal: false
+  name: DefaultValue
+  nameWithType: CommandParameterAttribute.DefaultValue
+  fullName: DeckSurf.SDK.Models.CommandParameterAttribute.DefaultValue
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Models.CommandParameterAttribute.Description*
+  commentId: Overload:DeckSurf.SDK.Models.CommandParameterAttribute.Description
+  parent: DeckSurf.SDK.Models.CommandParameterAttribute
+  isExternal: false
+  name: Description
+  nameWithType: CommandParameterAttribute.Description
+  fullName: DeckSurf.SDK.Models.CommandParameterAttribute.Description
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Models.CommandParameterAttribute.DisplayName*
+  commentId: Overload:DeckSurf.SDK.Models.CommandParameterAttribute.DisplayName
+  parent: DeckSurf.SDK.Models.CommandParameterAttribute
+  isExternal: false
+  name: DisplayName
+  nameWithType: CommandParameterAttribute.DisplayName
+  fullName: DeckSurf.SDK.Models.CommandParameterAttribute.DisplayName
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Models.CommandParameterAttribute.DynamicChoices*
+  commentId: Overload:DeckSurf.SDK.Models.CommandParameterAttribute.DynamicChoices
+  parent: DeckSurf.SDK.Models.CommandParameterAttribute
+  isExternal: false
+  name: DynamicChoices
+  nameWithType: CommandParameterAttribute.DynamicChoices
+  fullName: DeckSurf.SDK.Models.CommandParameterAttribute.DynamicChoices
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Models.CommandParameterAttribute.Key*
+  commentId: Overload:DeckSurf.SDK.Models.CommandParameterAttribute.Key
+  parent: DeckSurf.SDK.Models.CommandParameterAttribute
+  isExternal: false
+  name: Key
+  nameWithType: CommandParameterAttribute.Key
+  fullName: DeckSurf.SDK.Models.CommandParameterAttribute.Key
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Models.CommandParameterAttribute.MaxValue*
+  commentId: Overload:DeckSurf.SDK.Models.CommandParameterAttribute.MaxValue
+  parent: DeckSurf.SDK.Models.CommandParameterAttribute
+  isExternal: false
+  name: MaxValue
+  nameWithType: CommandParameterAttribute.MaxValue
+  fullName: DeckSurf.SDK.Models.CommandParameterAttribute.MaxValue
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Models.CommandParameterAttribute.MinValue*
+  commentId: Overload:DeckSurf.SDK.Models.CommandParameterAttribute.MinValue
+  parent: DeckSurf.SDK.Models.CommandParameterAttribute
+  isExternal: false
+  name: MinValue
+  nameWithType: CommandParameterAttribute.MinValue
+  fullName: DeckSurf.SDK.Models.CommandParameterAttribute.MinValue
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Models.CommandParameterAttribute.Order*
+  commentId: Overload:DeckSurf.SDK.Models.CommandParameterAttribute.Order
+  parent: DeckSurf.SDK.Models.CommandParameterAttribute
+  isExternal: false
+  name: Order
+  nameWithType: CommandParameterAttribute.Order
+  fullName: DeckSurf.SDK.Models.CommandParameterAttribute.Order
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Models.CommandParameterAttribute.ParameterType*
+  commentId: Overload:DeckSurf.SDK.Models.CommandParameterAttribute.ParameterType
+  parent: DeckSurf.SDK.Models.CommandParameterAttribute
+  isExternal: false
+  name: ParameterType
+  nameWithType: CommandParameterAttribute.ParameterType
+  fullName: DeckSurf.SDK.Models.CommandParameterAttribute.ParameterType
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Models.CommandParameterAttribute.Required*
+  commentId: Overload:DeckSurf.SDK.Models.CommandParameterAttribute.Required
+  parent: DeckSurf.SDK.Models.CommandParameterAttribute
+  isExternal: false
+  name: Required
+  nameWithType: CommandParameterAttribute.Required
+  fullName: DeckSurf.SDK.Models.CommandParameterAttribute.Required
+  monikers:
+  - net10.0
+  type: property

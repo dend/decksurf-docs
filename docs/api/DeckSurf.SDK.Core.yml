@@ -8,6 +8,7 @@ items:
   - DeckSurf.SDK.Core.DeviceManager
   - DeckSurf.SDK.Core.DeviceRegistry
   - DeckSurf.SDK.Core.DeviceWatcher
+  - DeckSurf.SDK.Core.PluginLoader
   langs:
   - csharp
   name: DeckSurf.SDK.Core
@@ -48,4 +49,12 @@ references:
   name: DeviceWatcher
   nameWithType: DeckSurf.SDK.Core.DeviceWatcher
   fullName: DeckSurf.SDK.Core.DeviceWatcher
+  type: class
+- uid: DeckSurf.SDK.Core.PluginLoader
+  commentId: T:DeckSurf.SDK.Core.PluginLoader
+  parent: DeckSurf.SDK.Core
+  isExternal: false
+  name: PluginLoader
+  nameWithType: DeckSurf.SDK.Core.PluginLoader
+  fullName: DeckSurf.SDK.Core.PluginLoader
   type: class

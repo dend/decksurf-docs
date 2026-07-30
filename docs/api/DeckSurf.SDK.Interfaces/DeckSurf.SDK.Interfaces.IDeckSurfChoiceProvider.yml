@@ -1,0 +1,171 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Interfaces.IDeckSurfChoiceProvider
+  commentId: T:DeckSurf.SDK.Interfaces.IDeckSurfChoiceProvider
+  id: IDeckSurfChoiceProvider
+  children:
+  - DeckSurf.SDK.Interfaces.IDeckSurfChoiceProvider.GetChoicesAsync(System.String,DeckSurf.SDK.Models.CommandArguments,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  name: IDeckSurfChoiceProvider
+  nameWithType: DeckSurf.SDK.Interfaces.IDeckSurfChoiceProvider
+  fullName: DeckSurf.SDK.Interfaces.IDeckSurfChoiceProvider
+  type: Interface
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Interfaces
+  summary: >-
+    Optional interface for commands whose parameter choices are only known at
+
+    runtime, for example the scene list of a running OBS instance or the
+
+    audio devices present on the machine. Tooling detects the interface on
+
+    commands that declare a parameter with
+
+    <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.CommandParameterAttribute.DynamicChoices"></xref> and queries it to
+
+    populate suggestions, keeping the field editable as free text since the
+
+    backing source may be unavailable.
+  syntax:
+    content: public interface IDeckSurfChoiceProvider
+    content.csharp: public interface IDeckSurfChoiceProvider
+  implements: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net10.0
+- uid: DeckSurf.SDK.Interfaces.IDeckSurfChoiceProvider.GetChoicesAsync(System.String,DeckSurf.SDK.Models.CommandArguments,System.Threading.CancellationToken)
+  commentId: M:DeckSurf.SDK.Interfaces.IDeckSurfChoiceProvider.GetChoicesAsync(System.String,DeckSurf.SDK.Models.CommandArguments,System.Threading.CancellationToken)
+  id: GetChoicesAsync(System.String,DeckSurf.SDK.Models.CommandArguments,System.Threading.CancellationToken)
+  parent: DeckSurf.SDK.Interfaces.IDeckSurfChoiceProvider
+  langs:
+  - csharp
+  name: GetChoicesAsync(String, CommandArguments, CancellationToken)
+  nameWithType: IDeckSurfChoiceProvider.GetChoicesAsync(String, CommandArguments, CancellationToken)
+  fullName: DeckSurf.SDK.Interfaces.IDeckSurfChoiceProvider.GetChoicesAsync(String, CommandArguments, CancellationToken)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Interfaces
+  summary: >-
+    Returns the currently available choices for a parameter. Implementations
+
+    should honor the cancellation token and return within a few seconds; when
+
+    the backing source is unreachable, returning an empty list is preferred
+
+    over throwing.
+  syntax:
+    content: public System.Threading.Tasks.Task<System.Collections.Generic.IReadOnlyList<string>> GetChoicesAsync (string parameterKey, DeckSurf.SDK.Models.CommandArguments currentValues, System.Threading.CancellationToken cancellationToken = default);
+    parameters:
+    - id: parameterKey
+      type: System.String
+      description: Key of the parameter being edited, as declared in its <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.CommandParameterAttribute"></xref>.
+    - id: currentValues
+      type: DeckSurf.SDK.Models.CommandArguments
+      description: >-
+        The values the user has entered so far for the command's other parameters.
+
+        Providers typically need these for connection settings: which host to
+
+        query, which credentials to use.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token for the lookup.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyList{System.String}}
+      description: The available choices, in the order they should be presented. Empty when none could be determined.
+    content.csharp: public System.Threading.Tasks.Task<System.Collections.Generic.IReadOnlyList<string>> GetChoicesAsync (string parameterKey, DeckSurf.SDK.Models.CommandArguments currentValues, System.Threading.CancellationToken cancellationToken = default);
+  overload: DeckSurf.SDK.Interfaces.IDeckSurfChoiceProvider.GetChoicesAsync*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+references:
+- uid: DeckSurf.SDK.Interfaces
+  commentId: N:DeckSurf.SDK.Interfaces
+  isExternal: false
+  name: DeckSurf.SDK.Interfaces
+  nameWithType: DeckSurf.SDK.Interfaces
+  fullName: DeckSurf.SDK.Interfaces
+  type: namespace
+- uid: DeckSurf.SDK.Interfaces.IDeckSurfChoiceProvider.GetChoicesAsync(System.String,DeckSurf.SDK.Models.CommandArguments,System.Threading.CancellationToken)
+  parent: DeckSurf.SDK.Interfaces.IDeckSurfChoiceProvider
+  isExternal: false
+  name: GetChoicesAsync(String, CommandArguments, CancellationToken)
+  nameWithType: IDeckSurfChoiceProvider.GetChoicesAsync(String, CommandArguments, CancellationToken)
+  fullName: DeckSurf.SDK.Interfaces.IDeckSurfChoiceProvider.GetChoicesAsync(String, CommandArguments, CancellationToken)
+  type: method
+- uid: System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  name: IReadOnlyList
+  nameWithType: IReadOnlyList
+  fullName: System.Collections.Generic.IReadOnlyList
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyList{System.String}}
+  parent: System.Threading.Tasks
+  name: Task<IReadOnlyList<String>>
+  nameWithType: Task<IReadOnlyList<String>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IReadOnlyList<System.String>>
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: DeckSurf.SDK.Models.CommandArguments
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: CommandArguments
+  nameWithType: CommandArguments
+  fullName: DeckSurf.SDK.Models.CommandArguments
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: DeckSurf.SDK.Interfaces.IDeckSurfChoiceProvider.GetChoicesAsync*
+  commentId: Overload:DeckSurf.SDK.Interfaces.IDeckSurfChoiceProvider.GetChoicesAsync
+  parent: DeckSurf.SDK.Interfaces.IDeckSurfChoiceProvider
+  isExternal: false
+  name: GetChoicesAsync
+  nameWithType: IDeckSurfChoiceProvider.GetChoicesAsync
+  fullName: DeckSurf.SDK.Interfaces.IDeckSurfChoiceProvider.GetChoicesAsync
+  monikers:
+  - net10.0
+  type: method

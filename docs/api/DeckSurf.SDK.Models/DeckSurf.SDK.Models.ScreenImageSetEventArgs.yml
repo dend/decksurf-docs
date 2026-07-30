@@ -1,0 +1,362 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Models.ScreenImageSetEventArgs
+  commentId: T:DeckSurf.SDK.Models.ScreenImageSetEventArgs
+  id: ScreenImageSetEventArgs
+  children:
+  - DeckSurf.SDK.Models.ScreenImageSetEventArgs.#ctor(System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32)
+  - DeckSurf.SDK.Models.ScreenImageSetEventArgs.Height
+  - DeckSurf.SDK.Models.ScreenImageSetEventArgs.Image
+  - DeckSurf.SDK.Models.ScreenImageSetEventArgs.Width
+  - DeckSurf.SDK.Models.ScreenImageSetEventArgs.XOffset
+  - DeckSurf.SDK.Models.ScreenImageSetEventArgs.YOffset
+  langs:
+  - csharp
+  name: ScreenImageSetEventArgs
+  nameWithType: DeckSurf.SDK.Models.ScreenImageSetEventArgs
+  fullName: DeckSurf.SDK.Models.ScreenImageSetEventArgs
+  type: Class
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: >-
+    Event arguments describing an image written to a Stream Deck screen. Lets
+
+    hosts observe what the hardware displays (for example to mirror the touch
+
+    strip in a live on-screen preview) without intercepting device I/O.
+  remarks: Initializes a new instance of the <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.ScreenImageSetEventArgs"></xref> class.
+  syntax:
+    content: 'public class ScreenImageSetEventArgs : EventArgs'
+    content.csharp: 'public class ScreenImageSetEventArgs : EventArgs'
+  inheritance:
+  - System.EventArgs
+  implements: []
+  inheritedMembers: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net10.0
+- uid: DeckSurf.SDK.Models.ScreenImageSetEventArgs.#ctor(System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:DeckSurf.SDK.Models.ScreenImageSetEventArgs.#ctor(System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32)
+  id: '#ctor(System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32)'
+  parent: DeckSurf.SDK.Models.ScreenImageSetEventArgs
+  langs:
+  - csharp
+  name: ScreenImageSetEventArgs(Byte[], Int32, Int32, Int32, Int32)
+  nameWithType: ScreenImageSetEventArgs.ScreenImageSetEventArgs(Byte[], Int32, Int32, Int32, Int32)
+  fullName: DeckSurf.SDK.Models.ScreenImageSetEventArgs.ScreenImageSetEventArgs(Byte[], Int32, Int32, Int32, Int32)
+  type: Constructor
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: >-
+    Event arguments describing an image written to a Stream Deck screen. Lets
+
+    hosts observe what the hardware displays (for example to mirror the touch
+
+    strip in a live on-screen preview) without intercepting device I/O.
+  remarks: Initializes a new instance of the <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.ScreenImageSetEventArgs"></xref> class.
+  syntax:
+    content: public ScreenImageSetEventArgs (byte[] image, int xOffset, int yOffset, int width, int height);
+    parameters:
+    - id: image
+      type: System.Byte[]
+      description: The image content exactly as passed to the set operation.
+    - id: xOffset
+      type: System.Int32
+      description: Horizontal offset from the left where the image was set.
+    - id: yOffset
+      type: System.Int32
+      description: Vertical offset from the top where the image was set.
+    - id: width
+      type: System.Int32
+      description: Image width.
+    - id: height
+      type: System.Int32
+      description: Image height.
+    content.csharp: public ScreenImageSetEventArgs (byte[] image, int xOffset, int yOffset, int width, int height);
+  overload: DeckSurf.SDK.Models.ScreenImageSetEventArgs.#ctor*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.ScreenImageSetEventArgs.Height
+  commentId: P:DeckSurf.SDK.Models.ScreenImageSetEventArgs.Height
+  id: Height
+  parent: DeckSurf.SDK.Models.ScreenImageSetEventArgs
+  langs:
+  - csharp
+  name: Height
+  nameWithType: ScreenImageSetEventArgs.Height
+  fullName: DeckSurf.SDK.Models.ScreenImageSetEventArgs.Height
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets the image height.
+  syntax:
+    content: public int Height { get; }
+    return:
+      type: System.Int32
+      description: ''
+    content.csharp: public int Height { get; }
+  overload: DeckSurf.SDK.Models.ScreenImageSetEventArgs.Height*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.ScreenImageSetEventArgs.Image
+  commentId: P:DeckSurf.SDK.Models.ScreenImageSetEventArgs.Image
+  id: Image
+  parent: DeckSurf.SDK.Models.ScreenImageSetEventArgs
+  langs:
+  - csharp
+  name: Image
+  nameWithType: ScreenImageSetEventArgs.Image
+  fullName: DeckSurf.SDK.Models.ScreenImageSetEventArgs.Image
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets the image content exactly as passed to the set operation.
+  syntax:
+    content: public byte[] Image { get; }
+    return:
+      type: System.Byte[]
+      description: ''
+    content.csharp: public byte[] Image { get; }
+  overload: DeckSurf.SDK.Models.ScreenImageSetEventArgs.Image*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.ScreenImageSetEventArgs.Width
+  commentId: P:DeckSurf.SDK.Models.ScreenImageSetEventArgs.Width
+  id: Width
+  parent: DeckSurf.SDK.Models.ScreenImageSetEventArgs
+  langs:
+  - csharp
+  name: Width
+  nameWithType: ScreenImageSetEventArgs.Width
+  fullName: DeckSurf.SDK.Models.ScreenImageSetEventArgs.Width
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets the image width.
+  syntax:
+    content: public int Width { get; }
+    return:
+      type: System.Int32
+      description: ''
+    content.csharp: public int Width { get; }
+  overload: DeckSurf.SDK.Models.ScreenImageSetEventArgs.Width*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.ScreenImageSetEventArgs.XOffset
+  commentId: P:DeckSurf.SDK.Models.ScreenImageSetEventArgs.XOffset
+  id: XOffset
+  parent: DeckSurf.SDK.Models.ScreenImageSetEventArgs
+  langs:
+  - csharp
+  name: XOffset
+  nameWithType: ScreenImageSetEventArgs.XOffset
+  fullName: DeckSurf.SDK.Models.ScreenImageSetEventArgs.XOffset
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets the horizontal offset from the left where the image was set.
+  syntax:
+    content: public int XOffset { get; }
+    return:
+      type: System.Int32
+      description: ''
+    content.csharp: public int XOffset { get; }
+  overload: DeckSurf.SDK.Models.ScreenImageSetEventArgs.XOffset*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.ScreenImageSetEventArgs.YOffset
+  commentId: P:DeckSurf.SDK.Models.ScreenImageSetEventArgs.YOffset
+  id: YOffset
+  parent: DeckSurf.SDK.Models.ScreenImageSetEventArgs
+  langs:
+  - csharp
+  name: YOffset
+  nameWithType: ScreenImageSetEventArgs.YOffset
+  fullName: DeckSurf.SDK.Models.ScreenImageSetEventArgs.YOffset
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets the vertical offset from the top where the image was set.
+  syntax:
+    content: public int YOffset { get; }
+    return:
+      type: System.Int32
+      description: ''
+    content.csharp: public int YOffset { get; }
+  overload: DeckSurf.SDK.Models.ScreenImageSetEventArgs.YOffset*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net10.0
+references:
+- uid: DeckSurf.SDK.Models
+  commentId: N:DeckSurf.SDK.Models
+  isExternal: false
+  name: DeckSurf.SDK.Models
+  nameWithType: DeckSurf.SDK.Models
+  fullName: DeckSurf.SDK.Models
+  type: namespace
+- uid: System.EventArgs
+  parent: System
+  isExternal: true
+  name: EventArgs
+  nameWithType: EventArgs
+  fullName: System.EventArgs
+- uid: DeckSurf.SDK.Models.ScreenImageSetEventArgs.#ctor(System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: DeckSurf.SDK.Models.ScreenImageSetEventArgs
+  isExternal: false
+  name: ScreenImageSetEventArgs(Byte[], Int32, Int32, Int32, Int32)
+  nameWithType: ScreenImageSetEventArgs.ScreenImageSetEventArgs(Byte[], Int32, Int32, Int32, Int32)
+  fullName: DeckSurf.SDK.Models.ScreenImageSetEventArgs.ScreenImageSetEventArgs(Byte[], Int32, Int32, Int32, Int32)
+  type: constructor
+- uid: System.Byte
+  isExternal: true
+  name: Byte
+  nameWithType: Byte
+  fullName: System.Byte
+- uid: System.Byte[]
+  parent: System
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: DeckSurf.SDK.Models.ScreenImageSetEventArgs.Height
+  parent: DeckSurf.SDK.Models.ScreenImageSetEventArgs
+  isExternal: false
+  name: Height
+  nameWithType: ScreenImageSetEventArgs.Height
+  fullName: DeckSurf.SDK.Models.ScreenImageSetEventArgs.Height
+  type: property
+- uid: DeckSurf.SDK.Models.ScreenImageSetEventArgs.Image
+  parent: DeckSurf.SDK.Models.ScreenImageSetEventArgs
+  isExternal: false
+  name: Image
+  nameWithType: ScreenImageSetEventArgs.Image
+  fullName: DeckSurf.SDK.Models.ScreenImageSetEventArgs.Image
+  type: property
+- uid: DeckSurf.SDK.Models.ScreenImageSetEventArgs.Width
+  parent: DeckSurf.SDK.Models.ScreenImageSetEventArgs
+  isExternal: false
+  name: Width
+  nameWithType: ScreenImageSetEventArgs.Width
+  fullName: DeckSurf.SDK.Models.ScreenImageSetEventArgs.Width
+  type: property
+- uid: DeckSurf.SDK.Models.ScreenImageSetEventArgs.XOffset
+  parent: DeckSurf.SDK.Models.ScreenImageSetEventArgs
+  isExternal: false
+  name: XOffset
+  nameWithType: ScreenImageSetEventArgs.XOffset
+  fullName: DeckSurf.SDK.Models.ScreenImageSetEventArgs.XOffset
+  type: property
+- uid: DeckSurf.SDK.Models.ScreenImageSetEventArgs.YOffset
+  parent: DeckSurf.SDK.Models.ScreenImageSetEventArgs
+  isExternal: false
+  name: YOffset
+  nameWithType: ScreenImageSetEventArgs.YOffset
+  fullName: DeckSurf.SDK.Models.ScreenImageSetEventArgs.YOffset
+  type: property
+- uid: DeckSurf.SDK.Models.ScreenImageSetEventArgs.#ctor*
+  commentId: Overload:DeckSurf.SDK.Models.ScreenImageSetEventArgs.#ctor
+  parent: DeckSurf.SDK.Models.ScreenImageSetEventArgs
+  isExternal: false
+  name: ScreenImageSetEventArgs
+  nameWithType: ScreenImageSetEventArgs.ScreenImageSetEventArgs
+  fullName: DeckSurf.SDK.Models.ScreenImageSetEventArgs.ScreenImageSetEventArgs
+  monikers:
+  - net10.0
+  type: constructor
+- uid: DeckSurf.SDK.Models.ScreenImageSetEventArgs.Height*
+  commentId: Overload:DeckSurf.SDK.Models.ScreenImageSetEventArgs.Height
+  parent: DeckSurf.SDK.Models.ScreenImageSetEventArgs
+  isExternal: false
+  name: Height
+  nameWithType: ScreenImageSetEventArgs.Height
+  fullName: DeckSurf.SDK.Models.ScreenImageSetEventArgs.Height
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Models.ScreenImageSetEventArgs.Image*
+  commentId: Overload:DeckSurf.SDK.Models.ScreenImageSetEventArgs.Image
+  parent: DeckSurf.SDK.Models.ScreenImageSetEventArgs
+  isExternal: false
+  name: Image
+  nameWithType: ScreenImageSetEventArgs.Image
+  fullName: DeckSurf.SDK.Models.ScreenImageSetEventArgs.Image
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Models.ScreenImageSetEventArgs.Width*
+  commentId: Overload:DeckSurf.SDK.Models.ScreenImageSetEventArgs.Width
+  parent: DeckSurf.SDK.Models.ScreenImageSetEventArgs
+  isExternal: false
+  name: Width
+  nameWithType: ScreenImageSetEventArgs.Width
+  fullName: DeckSurf.SDK.Models.ScreenImageSetEventArgs.Width
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Models.ScreenImageSetEventArgs.XOffset*
+  commentId: Overload:DeckSurf.SDK.Models.ScreenImageSetEventArgs.XOffset
+  parent: DeckSurf.SDK.Models.ScreenImageSetEventArgs
+  isExternal: false
+  name: XOffset
+  nameWithType: ScreenImageSetEventArgs.XOffset
+  fullName: DeckSurf.SDK.Models.ScreenImageSetEventArgs.XOffset
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Models.ScreenImageSetEventArgs.YOffset*
+  commentId: Overload:DeckSurf.SDK.Models.ScreenImageSetEventArgs.YOffset
+  parent: DeckSurf.SDK.Models.ScreenImageSetEventArgs
+  isExternal: false
+  name: YOffset
+  nameWithType: ScreenImageSetEventArgs.YOffset
+  fullName: DeckSurf.SDK.Models.ScreenImageSetEventArgs.YOffset
+  monikers:
+  - net10.0
+  type: property

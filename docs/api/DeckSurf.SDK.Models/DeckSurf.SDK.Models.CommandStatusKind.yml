@@ -1,0 +1,150 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Models.CommandStatusKind
+  commentId: T:DeckSurf.SDK.Models.CommandStatusKind
+  id: CommandStatusKind
+  children:
+  - DeckSurf.SDK.Models.CommandStatusKind.Ready
+  - DeckSurf.SDK.Models.CommandStatusKind.Unavailable
+  - DeckSurf.SDK.Models.CommandStatusKind.Unknown
+  langs:
+  - csharp
+  name: CommandStatusKind
+  nameWithType: DeckSurf.SDK.Models.CommandStatusKind
+  fullName: DeckSurf.SDK.Models.CommandStatusKind
+  type: Enum
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: >-
+    Coarse health of the external resource a command depends on, reported
+
+    through <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Interfaces.IDeckSurfStatusProvider"></xref>.
+  syntax:
+    content: public enum CommandStatusKind
+    content.csharp: public enum CommandStatusKind
+  inheritance:
+  - System.Enum
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net10.0
+- uid: DeckSurf.SDK.Models.CommandStatusKind.Ready
+  commentId: F:DeckSurf.SDK.Models.CommandStatusKind.Ready
+  id: Ready
+  parent: DeckSurf.SDK.Models.CommandStatusKind
+  langs:
+  - csharp
+  name: Ready
+  nameWithType: CommandStatusKind.Ready
+  fullName: DeckSurf.SDK.Models.CommandStatusKind.Ready
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: The command's backing resource is reachable and the command is expected to work.
+  syntax:
+    content: Ready
+    return:
+      type: DeckSurf.SDK.Models.CommandStatusKind
+      description: ''
+    content.csharp: Ready
+  exceptions: []
+  monikers:
+  - net10.0
+  literalValue: "1"
+- uid: DeckSurf.SDK.Models.CommandStatusKind.Unavailable
+  commentId: F:DeckSurf.SDK.Models.CommandStatusKind.Unavailable
+  id: Unavailable
+  parent: DeckSurf.SDK.Models.CommandStatusKind
+  langs:
+  - csharp
+  name: Unavailable
+  nameWithType: CommandStatusKind.Unavailable
+  fullName: DeckSurf.SDK.Models.CommandStatusKind.Unavailable
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: >-
+    The command's backing resource is unreachable or misconfigured;
+
+    triggering the command is expected to fail.
+  syntax:
+    content: Unavailable
+    return:
+      type: DeckSurf.SDK.Models.CommandStatusKind
+      description: ''
+    content.csharp: Unavailable
+  exceptions: []
+  monikers:
+  - net10.0
+  literalValue: "2"
+- uid: DeckSurf.SDK.Models.CommandStatusKind.Unknown
+  commentId: F:DeckSurf.SDK.Models.CommandStatusKind.Unknown
+  id: Unknown
+  parent: DeckSurf.SDK.Models.CommandStatusKind
+  langs:
+  - csharp
+  name: Unknown
+  nameWithType: CommandStatusKind.Unknown
+  fullName: DeckSurf.SDK.Models.CommandStatusKind.Unknown
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: The command's health could not be determined.
+  syntax:
+    content: Unknown
+    return:
+      type: DeckSurf.SDK.Models.CommandStatusKind
+      description: ''
+    content.csharp: Unknown
+  exceptions: []
+  monikers:
+  - net10.0
+  literalValue: "0"
+references:
+- uid: DeckSurf.SDK.Models
+  commentId: N:DeckSurf.SDK.Models
+  isExternal: false
+  name: DeckSurf.SDK.Models
+  nameWithType: DeckSurf.SDK.Models
+  fullName: DeckSurf.SDK.Models
+  type: namespace
+- uid: System.Enum
+  parent: System
+  isExternal: true
+  name: Enum
+  nameWithType: Enum
+  fullName: System.Enum
+- uid: DeckSurf.SDK.Models.CommandStatusKind.Ready
+  parent: DeckSurf.SDK.Models.CommandStatusKind
+  isExternal: false
+  name: Ready
+  nameWithType: CommandStatusKind.Ready
+  fullName: DeckSurf.SDK.Models.CommandStatusKind.Ready
+  type: field
+- uid: DeckSurf.SDK.Models.CommandStatusKind
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: CommandStatusKind
+  nameWithType: CommandStatusKind
+  fullName: DeckSurf.SDK.Models.CommandStatusKind
+- uid: DeckSurf.SDK.Models.CommandStatusKind.Unavailable
+  parent: DeckSurf.SDK.Models.CommandStatusKind
+  isExternal: false
+  name: Unavailable
+  nameWithType: CommandStatusKind.Unavailable
+  fullName: DeckSurf.SDK.Models.CommandStatusKind.Unavailable
+  type: field
+- uid: DeckSurf.SDK.Models.CommandStatusKind.Unknown
+  parent: DeckSurf.SDK.Models.CommandStatusKind
+  isExternal: false
+  name: Unknown
+  nameWithType: CommandStatusKind.Unknown
+  fullName: DeckSurf.SDK.Models.CommandStatusKind.Unknown
+  type: field

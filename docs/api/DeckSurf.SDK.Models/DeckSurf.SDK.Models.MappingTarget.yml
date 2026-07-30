@@ -1,0 +1,198 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Models.MappingTarget
+  commentId: T:DeckSurf.SDK.Models.MappingTarget
+  id: MappingTarget
+  children:
+  - DeckSurf.SDK.Models.MappingTarget.Key
+  - DeckSurf.SDK.Models.MappingTarget.Knob
+  - DeckSurf.SDK.Models.MappingTarget.Screen
+  - DeckSurf.SDK.Models.MappingTarget.TouchButton
+  langs:
+  - csharp
+  name: MappingTarget
+  nameWithType: DeckSurf.SDK.Models.MappingTarget
+  fullName: DeckSurf.SDK.Models.MappingTarget
+  type: Enum
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Identifies which piece of device hardware a <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.CommandMapping"></xref> is bound to.
+  syntax:
+    content: public enum MappingTarget
+    content.csharp: public enum MappingTarget
+  inheritance:
+  - System.Enum
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net10.0
+- uid: DeckSurf.SDK.Models.MappingTarget.Key
+  commentId: F:DeckSurf.SDK.Models.MappingTarget.Key
+  id: Key
+  parent: DeckSurf.SDK.Models.MappingTarget
+  langs:
+  - csharp
+  name: Key
+  nameWithType: MappingTarget.Key
+  fullName: DeckSurf.SDK.Models.MappingTarget.Key
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: >-
+    A physical key on the button grid. <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.CommandMapping.ButtonIndex"></xref> is the
+
+    zero-based key index, or -1 for the any-key catch-all.
+  syntax:
+    content: Key
+    return:
+      type: DeckSurf.SDK.Models.MappingTarget
+      description: ''
+    content.csharp: Key
+  exceptions: []
+  monikers:
+  - net10.0
+  literalValue: "0"
+- uid: DeckSurf.SDK.Models.MappingTarget.Knob
+  commentId: F:DeckSurf.SDK.Models.MappingTarget.Knob
+  id: Knob
+  parent: DeckSurf.SDK.Models.MappingTarget
+  langs:
+  - csharp
+  name: Knob
+  nameWithType: MappingTarget.Knob
+  fullName: DeckSurf.SDK.Models.MappingTarget.Knob
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: >-
+    A rotary knob (Stream Deck Plus). <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.CommandMapping.ButtonIndex"></xref> is the
+
+    zero-based knob index. Rotation and press events are delivered through
+
+    <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnEvent(DeckSurf.SDK.Models.CommandMapping,DeckSurf.SDK.Interfaces.IConnectedDevice,DeckSurf.SDK.Models.ButtonPressEventArgs)"></xref>.
+  syntax:
+    content: Knob
+    return:
+      type: DeckSurf.SDK.Models.MappingTarget
+      description: ''
+    content.csharp: Knob
+  exceptions: []
+  monikers:
+  - net10.0
+  literalValue: "1"
+- uid: DeckSurf.SDK.Models.MappingTarget.Screen
+  commentId: F:DeckSurf.SDK.Models.MappingTarget.Screen
+  id: Screen
+  parent: DeckSurf.SDK.Models.MappingTarget
+  langs:
+  - csharp
+  name: Screen
+  nameWithType: MappingTarget.Screen
+  fullName: DeckSurf.SDK.Models.MappingTarget.Screen
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: >-
+    The touch screen (Stream Deck Plus and Neo). Tap events are delivered through
+
+    <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Interfaces.IDeckSurfCommand.ExecuteOnEvent(DeckSurf.SDK.Models.CommandMapping,DeckSurf.SDK.Interfaces.IConnectedDevice,DeckSurf.SDK.Models.ButtonPressEventArgs)"></xref>, and
+
+    <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.CommandMapping.ButtonImagePath"></xref> is rendered to the screen on activation.
+  syntax:
+    content: Screen
+    return:
+      type: DeckSurf.SDK.Models.MappingTarget
+      description: ''
+    content.csharp: Screen
+  exceptions: []
+  monikers:
+  - net10.0
+  literalValue: "2"
+- uid: DeckSurf.SDK.Models.MappingTarget.TouchButton
+  commentId: F:DeckSurf.SDK.Models.MappingTarget.TouchButton
+  id: TouchButton
+  parent: DeckSurf.SDK.Models.MappingTarget
+  langs:
+  - csharp
+  name: TouchButton
+  nameWithType: MappingTarget.TouchButton
+  fullName: DeckSurf.SDK.Models.MappingTarget.TouchButton
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: >-
+    A touch key flanking the screen (Stream Deck Neo). <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.CommandMapping.ButtonIndex"></xref>
+
+    is the zero-based touch key index, left to right. Touch keys have no display of
+
+    their own; their backlight is driven with
+
+    <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Interfaces.IConnectedDevice.SetKeyColor(System.Int32,DeckSurf.SDK.Models.DeviceColor)"></xref> at an index offset by
+
+    <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Interfaces.IConnectedDevice.ButtonCount"></xref>.
+  syntax:
+    content: TouchButton
+    return:
+      type: DeckSurf.SDK.Models.MappingTarget
+      description: ''
+    content.csharp: TouchButton
+  exceptions: []
+  monikers:
+  - net10.0
+  literalValue: "3"
+references:
+- uid: DeckSurf.SDK.Models
+  commentId: N:DeckSurf.SDK.Models
+  isExternal: false
+  name: DeckSurf.SDK.Models
+  nameWithType: DeckSurf.SDK.Models
+  fullName: DeckSurf.SDK.Models
+  type: namespace
+- uid: System.Enum
+  parent: System
+  isExternal: true
+  name: Enum
+  nameWithType: Enum
+  fullName: System.Enum
+- uid: DeckSurf.SDK.Models.MappingTarget.Key
+  parent: DeckSurf.SDK.Models.MappingTarget
+  isExternal: false
+  name: Key
+  nameWithType: MappingTarget.Key
+  fullName: DeckSurf.SDK.Models.MappingTarget.Key
+  type: field
+- uid: DeckSurf.SDK.Models.MappingTarget
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: MappingTarget
+  nameWithType: MappingTarget
+  fullName: DeckSurf.SDK.Models.MappingTarget
+- uid: DeckSurf.SDK.Models.MappingTarget.Knob
+  parent: DeckSurf.SDK.Models.MappingTarget
+  isExternal: false
+  name: Knob
+  nameWithType: MappingTarget.Knob
+  fullName: DeckSurf.SDK.Models.MappingTarget.Knob
+  type: field
+- uid: DeckSurf.SDK.Models.MappingTarget.Screen
+  parent: DeckSurf.SDK.Models.MappingTarget
+  isExternal: false
+  name: Screen
+  nameWithType: MappingTarget.Screen
+  fullName: DeckSurf.SDK.Models.MappingTarget.Screen
+  type: field
+- uid: DeckSurf.SDK.Models.MappingTarget.TouchButton
+  parent: DeckSurf.SDK.Models.MappingTarget
+  isExternal: false
+  name: TouchButton
+  nameWithType: MappingTarget.TouchButton
+  fullName: DeckSurf.SDK.Models.MappingTarget.TouchButton
+  type: field

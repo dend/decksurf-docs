@@ -49,11 +49,14 @@ items:
   - DeckSurf.SDK.Models.ConnectedDevice.HandleKeyPress(System.IAsyncResult,System.Byte[])
   - DeckSurf.SDK.Models.ConnectedDevice.IsKnobSupported
   - DeckSurf.SDK.Models.ConnectedDevice.IsListening
+  - DeckSurf.SDK.Models.ConnectedDevice.KeyImageSet
+  - DeckSurf.SDK.Models.ConnectedDevice.KnobCount
   - DeckSurf.SDK.Models.ConnectedDevice.Model
   - DeckSurf.SDK.Models.ConnectedDevice.Name
   - DeckSurf.SDK.Models.ConnectedDevice.Path
   - DeckSurf.SDK.Models.ConnectedDevice.ScreenHeight
   - DeckSurf.SDK.Models.ConnectedDevice.ScreenImageHeaderSize
+  - DeckSurf.SDK.Models.ConnectedDevice.ScreenImageSet
   - DeckSurf.SDK.Models.ConnectedDevice.ScreenSegmentWidth
   - DeckSurf.SDK.Models.ConnectedDevice.ScreenWidth
   - DeckSurf.SDK.Models.ConnectedDevice.Serial
@@ -62,6 +65,7 @@ items:
   - DeckSurf.SDK.Models.ConnectedDevice.SetKeyColor(System.Int32,DeckSurf.SDK.Models.DeviceColor)
   - DeckSurf.SDK.Models.ConnectedDevice.SetScreen(System.Byte[],System.Int32,System.Int32,System.Int32)
   - DeckSurf.SDK.Models.ConnectedDevice.SetScreen(System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32)
+  - DeckSurf.SDK.Models.ConnectedDevice.SetScreenCore(System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32)
   - DeckSurf.SDK.Models.ConnectedDevice.SetupDeviceButtonMap(System.Collections.Generic.IEnumerable{DeckSurf.SDK.Models.CommandMapping})
   - DeckSurf.SDK.Models.ConnectedDevice.StartListening
   - DeckSurf.SDK.Models.ConnectedDevice.StopListening
@@ -564,6 +568,20 @@ references:
   nameWithType: ConnectedDevice.IsListening
   fullName: DeckSurf.SDK.Models.ConnectedDevice.IsListening
   type: property
+- uid: DeckSurf.SDK.Models.ConnectedDevice.KeyImageSet
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: KeyImageSet
+  nameWithType: ConnectedDevice.KeyImageSet
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.KeyImageSet
+  type: event
+- uid: DeckSurf.SDK.Models.ConnectedDevice.KnobCount
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: KnobCount
+  nameWithType: ConnectedDevice.KnobCount
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.KnobCount
+  type: property
 - uid: DeckSurf.SDK.Models.ConnectedDevice.Model
   parent: DeckSurf.SDK.Models.ConnectedDevice
   isExternal: false
@@ -599,6 +617,13 @@ references:
   nameWithType: ConnectedDevice.ScreenImageHeaderSize
   fullName: DeckSurf.SDK.Models.ConnectedDevice.ScreenImageHeaderSize
   type: property
+- uid: DeckSurf.SDK.Models.ConnectedDevice.ScreenImageSet
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: ScreenImageSet
+  nameWithType: ConnectedDevice.ScreenImageSet
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.ScreenImageSet
+  type: event
 - uid: DeckSurf.SDK.Models.ConnectedDevice.ScreenSegmentWidth
   parent: DeckSurf.SDK.Models.ConnectedDevice
   isExternal: false
@@ -654,6 +679,13 @@ references:
   name: SetScreen(Byte[], Int32, Int32, Int32, Int32)
   nameWithType: ConnectedDevice.SetScreen(Byte[], Int32, Int32, Int32, Int32)
   fullName: DeckSurf.SDK.Models.ConnectedDevice.SetScreen(Byte[], Int32, Int32, Int32, Int32)
+  type: method
+- uid: DeckSurf.SDK.Models.ConnectedDevice.SetScreenCore(System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: DeckSurf.SDK.Models.ConnectedDevice
+  isExternal: false
+  name: SetScreenCore(Byte[], Int32, Int32, Int32, Int32)
+  nameWithType: ConnectedDevice.SetScreenCore(Byte[], Int32, Int32, Int32, Int32)
+  fullName: DeckSurf.SDK.Models.ConnectedDevice.SetScreenCore(Byte[], Int32, Int32, Int32, Int32)
   type: method
 - uid: DeckSurf.SDK.Models.ConnectedDevice.SetupDeviceButtonMap(System.Collections.Generic.IEnumerable{DeckSurf.SDK.Models.CommandMapping})
   parent: DeckSurf.SDK.Models.ConnectedDevice

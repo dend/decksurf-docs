@@ -1,0 +1,192 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Util.CommandSchemaReader
+  commentId: T:DeckSurf.SDK.Util.CommandSchemaReader
+  id: CommandSchemaReader
+  children:
+  - DeckSurf.SDK.Util.CommandSchemaReader.GetParameters(DeckSurf.SDK.Interfaces.IDeckSurfCommand)
+  - DeckSurf.SDK.Util.CommandSchemaReader.GetParameters(System.Type)
+  langs:
+  - csharp
+  name: CommandSchemaReader
+  nameWithType: DeckSurf.SDK.Util.CommandSchemaReader
+  fullName: DeckSurf.SDK.Util.CommandSchemaReader
+  type: Class
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Util
+  summary: >-
+    Reads the declared parameter schema of a DeckSurf command from its
+
+    <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.CommandParameterAttribute"></xref> annotations, without requiring the command
+
+    to be instantiated.
+  syntax:
+    content: public static class CommandSchemaReader
+    content.csharp: public static class CommandSchemaReader
+  inheritance:
+  - System.Object
+  implements: []
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net10.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net10.0
+- uid: DeckSurf.SDK.Util.CommandSchemaReader.GetParameters(DeckSurf.SDK.Interfaces.IDeckSurfCommand)
+  commentId: M:DeckSurf.SDK.Util.CommandSchemaReader.GetParameters(DeckSurf.SDK.Interfaces.IDeckSurfCommand)
+  id: GetParameters(DeckSurf.SDK.Interfaces.IDeckSurfCommand)
+  parent: DeckSurf.SDK.Util.CommandSchemaReader
+  langs:
+  - csharp
+  name: GetParameters(IDeckSurfCommand)
+  nameWithType: CommandSchemaReader.GetParameters(IDeckSurfCommand)
+  fullName: DeckSurf.SDK.Util.CommandSchemaReader.GetParameters(IDeckSurfCommand)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Util
+  summary: Gets the declared parameters for a command instance.
+  syntax:
+    content: public static System.Collections.Generic.IReadOnlyList<DeckSurf.SDK.Models.CommandParameterAttribute> GetParameters (DeckSurf.SDK.Interfaces.IDeckSurfCommand command);
+    parameters:
+    - id: command
+      type: DeckSurf.SDK.Interfaces.IDeckSurfCommand
+      description: The command instance to inspect.
+    return:
+      type: System.Collections.Generic.IReadOnlyList{DeckSurf.SDK.Models.CommandParameterAttribute}
+      description: The declared parameters, or an empty list for commands without annotations.
+    content.csharp: public static System.Collections.Generic.IReadOnlyList<DeckSurf.SDK.Models.CommandParameterAttribute> GetParameters (DeckSurf.SDK.Interfaces.IDeckSurfCommand command);
+  overload: DeckSurf.SDK.Util.CommandSchemaReader.GetParameters*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code data-dev-comment-type="paramref">command</code> is null.
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Util.CommandSchemaReader.GetParameters(System.Type)
+  commentId: M:DeckSurf.SDK.Util.CommandSchemaReader.GetParameters(System.Type)
+  id: GetParameters(System.Type)
+  parent: DeckSurf.SDK.Util.CommandSchemaReader
+  langs:
+  - csharp
+  name: GetParameters(Type)
+  nameWithType: CommandSchemaReader.GetParameters(Type)
+  fullName: DeckSurf.SDK.Util.CommandSchemaReader.GetParameters(Type)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Util
+  summary: >-
+    Gets the declared parameters for a command type, sorted by
+
+    <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.CommandParameterAttribute.Order"></xref> and then by key. When a parameter key
+
+    is declared on both a base class and a derived class, the derived class declaration wins.
+  syntax:
+    content: public static System.Collections.Generic.IReadOnlyList<DeckSurf.SDK.Models.CommandParameterAttribute> GetParameters (Type commandType);
+    parameters:
+    - id: commandType
+      type: System.Type
+      description: The command type to inspect.
+    return:
+      type: System.Collections.Generic.IReadOnlyList{DeckSurf.SDK.Models.CommandParameterAttribute}
+      description: The declared parameters, or an empty list for commands without annotations.
+    content.csharp: public static System.Collections.Generic.IReadOnlyList<DeckSurf.SDK.Models.CommandParameterAttribute> GetParameters (Type commandType);
+  overload: DeckSurf.SDK.Util.CommandSchemaReader.GetParameters*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code data-dev-comment-type="paramref">commandType</code> is null.
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net10.0
+references:
+- uid: DeckSurf.SDK.Util
+  commentId: N:DeckSurf.SDK.Util
+  isExternal: false
+  name: DeckSurf.SDK.Util
+  nameWithType: DeckSurf.SDK.Util
+  fullName: DeckSurf.SDK.Util
+  type: namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.ArgumentNullException
+  isExternal: true
+  name: System.ArgumentNullException
+- uid: DeckSurf.SDK.Util.CommandSchemaReader.GetParameters(DeckSurf.SDK.Interfaces.IDeckSurfCommand)
+  parent: DeckSurf.SDK.Util.CommandSchemaReader
+  isExternal: false
+  name: GetParameters(IDeckSurfCommand)
+  nameWithType: CommandSchemaReader.GetParameters(IDeckSurfCommand)
+  fullName: DeckSurf.SDK.Util.CommandSchemaReader.GetParameters(IDeckSurfCommand)
+  type: method
+- uid: System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  name: IReadOnlyList
+  nameWithType: IReadOnlyList
+  fullName: System.Collections.Generic.IReadOnlyList
+- uid: DeckSurf.SDK.Models.CommandParameterAttribute
+  name: CommandParameterAttribute
+  nameWithType: CommandParameterAttribute
+  fullName: DeckSurf.SDK.Models.CommandParameterAttribute
+- uid: System.Collections.Generic.IReadOnlyList{DeckSurf.SDK.Models.CommandParameterAttribute}
+  parent: System.Collections.Generic
+  name: IReadOnlyList<CommandParameterAttribute>
+  nameWithType: IReadOnlyList<CommandParameterAttribute>
+  fullName: System.Collections.Generic.IReadOnlyList<DeckSurf.SDK.Models.CommandParameterAttribute>
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: DeckSurf.SDK.Models.CommandParameterAttribute
+    name: CommandParameterAttribute
+    nameWithType: CommandParameterAttribute
+    fullName: DeckSurf.SDK.Models.CommandParameterAttribute
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: DeckSurf.SDK.Interfaces.IDeckSurfCommand
+  parent: DeckSurf.SDK.Interfaces
+  isExternal: false
+  name: IDeckSurfCommand
+  nameWithType: IDeckSurfCommand
+  fullName: DeckSurf.SDK.Interfaces.IDeckSurfCommand
+- uid: DeckSurf.SDK.Util.CommandSchemaReader.GetParameters(System.Type)
+  parent: DeckSurf.SDK.Util.CommandSchemaReader
+  isExternal: false
+  name: GetParameters(Type)
+  nameWithType: CommandSchemaReader.GetParameters(Type)
+  fullName: DeckSurf.SDK.Util.CommandSchemaReader.GetParameters(Type)
+  type: method
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: DeckSurf.SDK.Util.CommandSchemaReader.GetParameters*
+  commentId: Overload:DeckSurf.SDK.Util.CommandSchemaReader.GetParameters
+  parent: DeckSurf.SDK.Util.CommandSchemaReader
+  isExternal: false
+  name: GetParameters
+  nameWithType: CommandSchemaReader.GetParameters
+  fullName: DeckSurf.SDK.Util.CommandSchemaReader.GetParameters
+  monikers:
+  - net10.0
+  type: method

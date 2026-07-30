@@ -1,0 +1,277 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Models.CommandStatus
+  commentId: T:DeckSurf.SDK.Models.CommandStatus
+  id: CommandStatus
+  children:
+  - DeckSurf.SDK.Models.CommandStatus.Kind
+  - DeckSurf.SDK.Models.CommandStatus.Message
+  - DeckSurf.SDK.Models.CommandStatus.Ready(System.String)
+  - DeckSurf.SDK.Models.CommandStatus.Unavailable(System.String)
+  langs:
+  - csharp
+  name: CommandStatus
+  nameWithType: DeckSurf.SDK.Models.CommandStatus
+  fullName: DeckSurf.SDK.Models.CommandStatus
+  type: Class
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: >-
+    A point-in-time health report from a command about the external resource it
+
+    depends on: a network service, connected hardware, a running application.
+
+    Produced by <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Interfaces.IDeckSurfStatusProvider"></xref> and displayed by
+
+    configuration tooling so users can tell a working setup from a broken one
+
+    before pressing a button.
+  syntax:
+    content: public sealed class CommandStatus
+    content.csharp: public sealed class CommandStatus
+  inheritance:
+  - System.Object
+  implements: []
+  inheritedMembers: []
+  modifiers.csharp:
+  - public
+  - sealed
+  monikers:
+  - net10.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net10.0
+- uid: DeckSurf.SDK.Models.CommandStatus.Kind
+  commentId: P:DeckSurf.SDK.Models.CommandStatus.Kind
+  id: Kind
+  parent: DeckSurf.SDK.Models.CommandStatus
+  langs:
+  - csharp
+  name: Kind
+  nameWithType: CommandStatus.Kind
+  fullName: DeckSurf.SDK.Models.CommandStatus.Kind
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets the coarse health classification.
+  syntax:
+    content: public DeckSurf.SDK.Models.CommandStatusKind Kind { get; }
+    return:
+      type: DeckSurf.SDK.Models.CommandStatusKind
+      description: ''
+    content.csharp: public DeckSurf.SDK.Models.CommandStatusKind Kind { get; }
+  overload: DeckSurf.SDK.Models.CommandStatus.Kind*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.CommandStatus.Message
+  commentId: P:DeckSurf.SDK.Models.CommandStatus.Message
+  id: Message
+  parent: DeckSurf.SDK.Models.CommandStatus
+  langs:
+  - csharp
+  name: Message
+  nameWithType: CommandStatus.Message
+  fullName: DeckSurf.SDK.Models.CommandStatus.Message
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: >-
+    Gets the human-readable status line, e.g. <code data-dev-comment-type="c">"Connected to OBS at
+
+    127.0.0.1:4455, 6 scenes."</code>. For <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.CommandStatusKind.Unavailable"></xref>
+
+    it should state the reason and, when known, what to fix.
+  syntax:
+    content: public string Message { get; }
+    return:
+      type: System.String
+      description: ''
+    content.csharp: public string Message { get; }
+  overload: DeckSurf.SDK.Models.CommandStatus.Message*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.CommandStatus.Ready(System.String)
+  commentId: M:DeckSurf.SDK.Models.CommandStatus.Ready(System.String)
+  id: Ready(System.String)
+  parent: DeckSurf.SDK.Models.CommandStatus
+  langs:
+  - csharp
+  name: Ready(String)
+  nameWithType: CommandStatus.Ready(String)
+  fullName: DeckSurf.SDK.Models.CommandStatus.Ready(String)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Creates a status report for a working command.
+  syntax:
+    content: public static DeckSurf.SDK.Models.CommandStatus Ready (string message);
+    parameters:
+    - id: message
+      type: System.String
+      description: The human-readable status line.
+    return:
+      type: DeckSurf.SDK.Models.CommandStatus
+      description: The status report.
+    content.csharp: public static DeckSurf.SDK.Models.CommandStatus Ready (string message);
+  overload: DeckSurf.SDK.Models.CommandStatus.Ready*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code data-dev-comment-type="paramref">message</code> is null or whitespace.
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.CommandStatus.Unavailable(System.String)
+  commentId: M:DeckSurf.SDK.Models.CommandStatus.Unavailable(System.String)
+  id: Unavailable(System.String)
+  parent: DeckSurf.SDK.Models.CommandStatus
+  langs:
+  - csharp
+  name: Unavailable(String)
+  nameWithType: CommandStatus.Unavailable(String)
+  fullName: DeckSurf.SDK.Models.CommandStatus.Unavailable(String)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: >-
+    Creates a status report for a command whose backing resource is
+
+    unreachable or misconfigured.
+  syntax:
+    content: public static DeckSurf.SDK.Models.CommandStatus Unavailable (string message);
+    parameters:
+    - id: message
+      type: System.String
+      description: The human-readable status line, stating the reason.
+    return:
+      type: DeckSurf.SDK.Models.CommandStatus
+      description: The status report.
+    content.csharp: public static DeckSurf.SDK.Models.CommandStatus Unavailable (string message);
+  overload: DeckSurf.SDK.Models.CommandStatus.Unavailable*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code data-dev-comment-type="paramref">message</code> is null or whitespace.
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net10.0
+references:
+- uid: DeckSurf.SDK.Models
+  commentId: N:DeckSurf.SDK.Models
+  isExternal: false
+  name: DeckSurf.SDK.Models
+  nameWithType: DeckSurf.SDK.Models
+  fullName: DeckSurf.SDK.Models
+  type: namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.ArgumentException
+  isExternal: true
+  name: System.ArgumentException
+- uid: DeckSurf.SDK.Models.CommandStatus.Kind
+  parent: DeckSurf.SDK.Models.CommandStatus
+  isExternal: false
+  name: Kind
+  nameWithType: CommandStatus.Kind
+  fullName: DeckSurf.SDK.Models.CommandStatus.Kind
+  type: property
+- uid: DeckSurf.SDK.Models.CommandStatusKind
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: CommandStatusKind
+  nameWithType: CommandStatusKind
+  fullName: DeckSurf.SDK.Models.CommandStatusKind
+- uid: DeckSurf.SDK.Models.CommandStatus.Message
+  parent: DeckSurf.SDK.Models.CommandStatus
+  isExternal: false
+  name: Message
+  nameWithType: CommandStatus.Message
+  fullName: DeckSurf.SDK.Models.CommandStatus.Message
+  type: property
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DeckSurf.SDK.Models.CommandStatus.Ready(System.String)
+  parent: DeckSurf.SDK.Models.CommandStatus
+  isExternal: false
+  name: Ready(String)
+  nameWithType: CommandStatus.Ready(String)
+  fullName: DeckSurf.SDK.Models.CommandStatus.Ready(String)
+  type: method
+- uid: DeckSurf.SDK.Models.CommandStatus
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: CommandStatus
+  nameWithType: CommandStatus
+  fullName: DeckSurf.SDK.Models.CommandStatus
+- uid: DeckSurf.SDK.Models.CommandStatus.Unavailable(System.String)
+  parent: DeckSurf.SDK.Models.CommandStatus
+  isExternal: false
+  name: Unavailable(String)
+  nameWithType: CommandStatus.Unavailable(String)
+  fullName: DeckSurf.SDK.Models.CommandStatus.Unavailable(String)
+  type: method
+- uid: DeckSurf.SDK.Models.CommandStatus.Kind*
+  commentId: Overload:DeckSurf.SDK.Models.CommandStatus.Kind
+  parent: DeckSurf.SDK.Models.CommandStatus
+  isExternal: false
+  name: Kind
+  nameWithType: CommandStatus.Kind
+  fullName: DeckSurf.SDK.Models.CommandStatus.Kind
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Models.CommandStatus.Message*
+  commentId: Overload:DeckSurf.SDK.Models.CommandStatus.Message
+  parent: DeckSurf.SDK.Models.CommandStatus
+  isExternal: false
+  name: Message
+  nameWithType: CommandStatus.Message
+  fullName: DeckSurf.SDK.Models.CommandStatus.Message
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Models.CommandStatus.Ready*
+  commentId: Overload:DeckSurf.SDK.Models.CommandStatus.Ready
+  parent: DeckSurf.SDK.Models.CommandStatus
+  isExternal: false
+  name: Ready
+  nameWithType: CommandStatus.Ready
+  fullName: DeckSurf.SDK.Models.CommandStatus.Ready
+  monikers:
+  - net10.0
+  type: method
+- uid: DeckSurf.SDK.Models.CommandStatus.Unavailable*
+  commentId: Overload:DeckSurf.SDK.Models.CommandStatus.Unavailable
+  parent: DeckSurf.SDK.Models.CommandStatus
+  isExternal: false
+  name: Unavailable
+  nameWithType: CommandStatus.Unavailable
+  fullName: DeckSurf.SDK.Models.CommandStatus.Unavailable
+  monikers:
+  - net10.0
+  type: method

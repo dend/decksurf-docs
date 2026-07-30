@@ -1,0 +1,197 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Util.CommandParameterValidator
+  commentId: T:DeckSurf.SDK.Util.CommandParameterValidator
+  id: CommandParameterValidator
+  children:
+  - DeckSurf.SDK.Util.CommandParameterValidator.Validate(System.Collections.Generic.IReadOnlyList{DeckSurf.SDK.Models.CommandParameterAttribute},System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})
+  langs:
+  - csharp
+  name: CommandParameterValidator
+  nameWithType: DeckSurf.SDK.Util.CommandParameterValidator
+  fullName: DeckSurf.SDK.Util.CommandParameterValidator
+  type: Class
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Util
+  summary: Validates a set of parameter values against a command's declared parameter schema.
+  syntax:
+    content: public static class CommandParameterValidator
+    content.csharp: public static class CommandParameterValidator
+  inheritance:
+  - System.Object
+  implements: []
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net10.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net10.0
+- uid: DeckSurf.SDK.Util.CommandParameterValidator.Validate(System.Collections.Generic.IReadOnlyList{DeckSurf.SDK.Models.CommandParameterAttribute},System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})
+  commentId: M:DeckSurf.SDK.Util.CommandParameterValidator.Validate(System.Collections.Generic.IReadOnlyList{DeckSurf.SDK.Models.CommandParameterAttribute},System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})
+  id: Validate(System.Collections.Generic.IReadOnlyList{DeckSurf.SDK.Models.CommandParameterAttribute},System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})
+  parent: DeckSurf.SDK.Util.CommandParameterValidator
+  langs:
+  - csharp
+  name: Validate(IReadOnlyList<CommandParameterAttribute>, IReadOnlyDictionary<String,String>)
+  nameWithType: CommandParameterValidator.Validate(IReadOnlyList<CommandParameterAttribute>, IReadOnlyDictionary<String,String>)
+  fullName: DeckSurf.SDK.Util.CommandParameterValidator.Validate(IReadOnlyList<CommandParameterAttribute>, IReadOnlyDictionary<String,String>)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Util
+  summary: >-
+    Validates parameter values against a schema. Checks that required parameters are
+
+    present and non-empty, that numeric parameters parse and fall within their declared
+
+    range, that boolean parameters parse, and that choice parameters use one of the
+
+    declared values. File and folder paths are not checked for existence, since profiles
+
+    may be shared across machines.
+  syntax:
+    content: public static System.Collections.Generic.IReadOnlyList<string> Validate (System.Collections.Generic.IReadOnlyList<DeckSurf.SDK.Models.CommandParameterAttribute> schema, System.Collections.Generic.IReadOnlyDictionary<string,string> values);
+    parameters:
+    - id: schema
+      type: System.Collections.Generic.IReadOnlyList{DeckSurf.SDK.Models.CommandParameterAttribute}
+      description: The declared parameters, as returned by <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Util.CommandSchemaReader"></xref>.
+    - id: values
+      type: System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}
+      description: The parameter values keyed by parameter key.
+    return:
+      type: System.Collections.Generic.IReadOnlyList{System.String}
+      description: A list of human-readable validation errors. Empty when the values are valid.
+    content.csharp: public static System.Collections.Generic.IReadOnlyList<string> Validate (System.Collections.Generic.IReadOnlyList<DeckSurf.SDK.Models.CommandParameterAttribute> schema, System.Collections.Generic.IReadOnlyDictionary<string,string> values);
+  overload: DeckSurf.SDK.Util.CommandParameterValidator.Validate*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code data-dev-comment-type="paramref">schema</code> or <code data-dev-comment-type="paramref">values</code> is null.
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net10.0
+references:
+- uid: DeckSurf.SDK.Util
+  commentId: N:DeckSurf.SDK.Util
+  isExternal: false
+  name: DeckSurf.SDK.Util
+  nameWithType: DeckSurf.SDK.Util
+  fullName: DeckSurf.SDK.Util
+  type: namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.ArgumentNullException
+  isExternal: true
+  name: System.ArgumentNullException
+- uid: DeckSurf.SDK.Util.CommandParameterValidator.Validate(System.Collections.Generic.IReadOnlyList{DeckSurf.SDK.Models.CommandParameterAttribute},System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})
+  parent: DeckSurf.SDK.Util.CommandParameterValidator
+  isExternal: false
+  name: Validate(IReadOnlyList<CommandParameterAttribute>, IReadOnlyDictionary<String,String>)
+  nameWithType: CommandParameterValidator.Validate(IReadOnlyList<CommandParameterAttribute>, IReadOnlyDictionary<String,String>)
+  fullName: DeckSurf.SDK.Util.CommandParameterValidator.Validate(IReadOnlyList<CommandParameterAttribute>, IReadOnlyDictionary<String,String>)
+  type: method
+- uid: System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  name: IReadOnlyList
+  nameWithType: IReadOnlyList
+  fullName: System.Collections.Generic.IReadOnlyList
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Collections.Generic.IReadOnlyList{System.String}
+  parent: System.Collections.Generic
+  name: IReadOnlyList<String>
+  nameWithType: IReadOnlyList<String>
+  fullName: System.Collections.Generic.IReadOnlyList<System.String>
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: DeckSurf.SDK.Models.CommandParameterAttribute
+  name: CommandParameterAttribute
+  nameWithType: CommandParameterAttribute
+  fullName: DeckSurf.SDK.Models.CommandParameterAttribute
+- uid: System.Collections.Generic.IReadOnlyList{DeckSurf.SDK.Models.CommandParameterAttribute}
+  parent: System.Collections.Generic
+  name: IReadOnlyList<CommandParameterAttribute>
+  nameWithType: IReadOnlyList<CommandParameterAttribute>
+  fullName: System.Collections.Generic.IReadOnlyList<DeckSurf.SDK.Models.CommandParameterAttribute>
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: DeckSurf.SDK.Models.CommandParameterAttribute
+    name: CommandParameterAttribute
+    nameWithType: CommandParameterAttribute
+    fullName: DeckSurf.SDK.Models.CommandParameterAttribute
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.Collections.Generic.IReadOnlyDictionary`2
+  isExternal: true
+  name: IReadOnlyDictionary
+  nameWithType: IReadOnlyDictionary
+  fullName: System.Collections.Generic.IReadOnlyDictionary
+- uid: System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  name: IReadOnlyDictionary<String,String>
+  nameWithType: IReadOnlyDictionary<String,String>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<System.String,System.String>
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    nameWithType: IReadOnlyDictionary
+    fullName: System.Collections.Generic.IReadOnlyDictionary
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: DeckSurf.SDK.Util.CommandParameterValidator.Validate*
+  commentId: Overload:DeckSurf.SDK.Util.CommandParameterValidator.Validate
+  parent: DeckSurf.SDK.Util.CommandParameterValidator
+  isExternal: false
+  name: Validate
+  nameWithType: CommandParameterValidator.Validate
+  fullName: DeckSurf.SDK.Util.CommandParameterValidator.Validate
+  monikers:
+  - net10.0
+  type: method

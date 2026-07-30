@@ -1,0 +1,461 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Core.PluginLoader
+  commentId: T:DeckSurf.SDK.Core.PluginLoader
+  id: PluginLoader
+  children:
+  - DeckSurf.SDK.Core.PluginLoader.GetCommandIconPath(System.Type)
+  - DeckSurf.SDK.Core.PluginLoader.GetCommandTypes(DeckSurf.SDK.Interfaces.IDeckSurfPlugin,System.Nullable{DeckSurf.SDK.Models.DeviceModel})
+  - DeckSurf.SDK.Core.PluginLoader.LoadCompatibleCommands(DeckSurf.SDK.Interfaces.IDeckSurfPlugin,DeckSurf.SDK.Models.DeviceModel,System.Action{System.String})
+  - DeckSurf.SDK.Core.PluginLoader.LoadPlugins(System.String,System.Action{System.String},System.Boolean)
+  langs:
+  - csharp
+  name: PluginLoader
+  nameWithType: DeckSurf.SDK.Core.PluginLoader
+  fullName: DeckSurf.SDK.Core.PluginLoader
+  type: Class
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Core
+  summary: >-
+    Discovers and loads DeckSurf plugins from disk. Plugin assemblies must follow the
+
+    <code data-dev-comment-type="c">DeckSurf.Plugin.*.dll</code> naming convention and are discovered either in a
+
+    <code data-dev-comment-type="c">plugins</code> subdirectory (scanned recursively) or directly next to the host
+
+    executable (top level only).
+  syntax:
+    content: public static class PluginLoader
+    content.csharp: public static class PluginLoader
+  inheritance:
+  - System.Object
+  implements: []
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net10.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net10.0
+- uid: DeckSurf.SDK.Core.PluginLoader.GetCommandIconPath(System.Type)
+  commentId: M:DeckSurf.SDK.Core.PluginLoader.GetCommandIconPath(System.Type)
+  id: GetCommandIconPath(System.Type)
+  parent: DeckSurf.SDK.Core.PluginLoader
+  langs:
+  - csharp
+  name: GetCommandIconPath(Type)
+  nameWithType: PluginLoader.GetCommandIconPath(Type)
+  fullName: DeckSurf.SDK.Core.PluginLoader.GetCommandIconPath(Type)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Core
+  summary: >-
+    Resolves the absolute path of a command's display icon, declared with
+
+    <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.CommandIconAttribute"></xref>. The attribute's path is resolved
+
+    relative to the directory containing the command's assembly, so plugins
+
+    can ship icon files alongside their binaries.
+  syntax:
+    content: public static string GetCommandIconPath (Type commandType);
+    parameters:
+    - id: commandType
+      type: System.Type
+      description: The command type whose icon should be resolved.
+    return:
+      type: System.String
+      description: >-
+        The absolute path of the icon file, or <code data-dev-comment-type="c">null</code> when the command
+
+        declares no icon or the declared file does not exist on disk.
+    content.csharp: public static string GetCommandIconPath (Type commandType);
+  overload: DeckSurf.SDK.Core.PluginLoader.GetCommandIconPath*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code data-dev-comment-type="paramref">commandType</code> is null.
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Core.PluginLoader.GetCommandTypes(DeckSurf.SDK.Interfaces.IDeckSurfPlugin,System.Nullable{DeckSurf.SDK.Models.DeviceModel})
+  commentId: M:DeckSurf.SDK.Core.PluginLoader.GetCommandTypes(DeckSurf.SDK.Interfaces.IDeckSurfPlugin,System.Nullable{DeckSurf.SDK.Models.DeviceModel})
+  id: GetCommandTypes(DeckSurf.SDK.Interfaces.IDeckSurfPlugin,System.Nullable{DeckSurf.SDK.Models.DeviceModel})
+  parent: DeckSurf.SDK.Core.PluginLoader
+  langs:
+  - csharp
+  name: GetCommandTypes(IDeckSurfPlugin, Nullable<DeviceModel>)
+  nameWithType: PluginLoader.GetCommandTypes(IDeckSurfPlugin, Nullable<DeviceModel>)
+  fullName: DeckSurf.SDK.Core.PluginLoader.GetCommandTypes(IDeckSurfPlugin, Nullable<DeviceModel>)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Core
+  summary: >-
+    Gets the command types declared by a plugin, optionally filtered by device model
+
+    compatibility. Commands with no <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.CompatibleWithAttribute"></xref> annotations
+
+    are considered compatible with every model; the attribute is only needed to
+
+    restrict a command to specific hardware. Unlike <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Core.PluginLoader.LoadCompatibleCommands(DeckSurf.SDK.Interfaces.IDeckSurfPlugin,DeckSurf.SDK.Models.DeviceModel,System.Action{System.String})"></xref>,
+
+    this does not instantiate the commands, which makes it suitable for reading command
+
+    metadata and parameter schemas without side effects.
+  syntax:
+    content: public static System.Collections.Generic.IReadOnlyList<Type> GetCommandTypes (DeckSurf.SDK.Interfaces.IDeckSurfPlugin plugin, DeckSurf.SDK.Models.DeviceModel? model = default);
+    parameters:
+    - id: plugin
+      type: DeckSurf.SDK.Interfaces.IDeckSurfPlugin
+      description: The plugin whose command types should be listed.
+    - id: model
+      type: System.Nullable{DeckSurf.SDK.Models.DeviceModel}
+      description: When set, only command types compatible with this device model are returned.
+    return:
+      type: System.Collections.Generic.IReadOnlyList{System.Type}
+      description: The command types.
+    content.csharp: public static System.Collections.Generic.IReadOnlyList<Type> GetCommandTypes (DeckSurf.SDK.Interfaces.IDeckSurfPlugin plugin, DeckSurf.SDK.Models.DeviceModel? model = default);
+  overload: DeckSurf.SDK.Core.PluginLoader.GetCommandTypes*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code data-dev-comment-type="paramref">plugin</code> is null.
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Core.PluginLoader.LoadCompatibleCommands(DeckSurf.SDK.Interfaces.IDeckSurfPlugin,DeckSurf.SDK.Models.DeviceModel,System.Action{System.String})
+  commentId: M:DeckSurf.SDK.Core.PluginLoader.LoadCompatibleCommands(DeckSurf.SDK.Interfaces.IDeckSurfPlugin,DeckSurf.SDK.Models.DeviceModel,System.Action{System.String})
+  id: LoadCompatibleCommands(DeckSurf.SDK.Interfaces.IDeckSurfPlugin,DeckSurf.SDK.Models.DeviceModel,System.Action{System.String})
+  parent: DeckSurf.SDK.Core.PluginLoader
+  langs:
+  - csharp
+  name: LoadCompatibleCommands(IDeckSurfPlugin, DeviceModel, Action<String>)
+  nameWithType: PluginLoader.LoadCompatibleCommands(IDeckSurfPlugin, DeviceModel, Action<String>)
+  fullName: DeckSurf.SDK.Core.PluginLoader.LoadCompatibleCommands(IDeckSurfPlugin, DeviceModel, Action<String>)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Core
+  summary: >-
+    Instantiates the commands of a plugin that are compatible with a given device model,
+
+    based on their <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.CompatibleWithAttribute"></xref> annotations.
+  syntax:
+    content: public static System.Collections.Generic.IReadOnlyList<DeckSurf.SDK.Interfaces.IDeckSurfCommand> LoadCompatibleCommands (DeckSurf.SDK.Interfaces.IDeckSurfPlugin plugin, DeckSurf.SDK.Models.DeviceModel model, Action<string> onWarning = default);
+    parameters:
+    - id: plugin
+      type: DeckSurf.SDK.Interfaces.IDeckSurfPlugin
+      description: The plugin whose commands should be loaded.
+    - id: model
+      type: DeckSurf.SDK.Models.DeviceModel
+      description: The device model the commands must be compatible with.
+    - id: onWarning
+      type: System.Action{System.String}
+      description: Optional callback invoked with a human-readable message for every command that fails to instantiate.
+    return:
+      type: System.Collections.Generic.IReadOnlyList{DeckSurf.SDK.Interfaces.IDeckSurfCommand}
+      description: The instantiated, compatible commands.
+    content.csharp: public static System.Collections.Generic.IReadOnlyList<DeckSurf.SDK.Interfaces.IDeckSurfCommand> LoadCompatibleCommands (DeckSurf.SDK.Interfaces.IDeckSurfPlugin plugin, DeckSurf.SDK.Models.DeviceModel model, Action<string> onWarning = default);
+  overload: DeckSurf.SDK.Core.PluginLoader.LoadCompatibleCommands*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code data-dev-comment-type="paramref">plugin</code> is null.
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Core.PluginLoader.LoadPlugins(System.String,System.Action{System.String},System.Boolean)
+  commentId: M:DeckSurf.SDK.Core.PluginLoader.LoadPlugins(System.String,System.Action{System.String},System.Boolean)
+  id: LoadPlugins(System.String,System.Action{System.String},System.Boolean)
+  parent: DeckSurf.SDK.Core.PluginLoader
+  langs:
+  - csharp
+  name: LoadPlugins(String, Action<String>, Boolean)
+  nameWithType: PluginLoader.LoadPlugins(String, Action<String>, Boolean)
+  fullName: DeckSurf.SDK.Core.PluginLoader.LoadPlugins(String, Action<String>, Boolean)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Core
+  summary: Discovers and instantiates all plugins under the given base directory.
+  syntax:
+    content: public static System.Collections.Generic.IReadOnlyList<DeckSurf.SDK.Interfaces.IDeckSurfPlugin> LoadPlugins (string baseDirectory, Action<string> onWarning = default, bool scanBaseRecursively = false);
+    parameters:
+    - id: baseDirectory
+      type: System.String
+      description: >-
+        Directory to scan. Both <code data-dev-comment-type="c">{baseDirectory}\plugins</code> (recursive) and
+
+        <code data-dev-comment-type="paramref">baseDirectory</code> itself (top level, or fully recursive when
+
+        <code data-dev-comment-type="paramref">scanBaseRecursively</code> is set) are searched; duplicate
+
+        assembly file names are loaded only once, preferring the <code data-dev-comment-type="c">plugins</code> copy.
+    - id: onWarning
+      type: System.Action{System.String}
+      description: Optional callback invoked with a human-readable message for every non-fatal load failure.
+    - id: scanBaseRecursively
+      type: System.Boolean
+      description: >-
+        When <code data-dev-comment-type="c">true</code>, the base directory is scanned recursively - appropriate for
+
+        user-configured plugin folders that contain one subdirectory per plugin.
+    return:
+      type: System.Collections.Generic.IReadOnlyList{DeckSurf.SDK.Interfaces.IDeckSurfPlugin}
+      description: The instantiated plugins. Empty when no plugin assemblies are found.
+    content.csharp: public static System.Collections.Generic.IReadOnlyList<DeckSurf.SDK.Interfaces.IDeckSurfPlugin> LoadPlugins (string baseDirectory, Action<string> onWarning = default, bool scanBaseRecursively = false);
+  overload: DeckSurf.SDK.Core.PluginLoader.LoadPlugins*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code data-dev-comment-type="paramref">baseDirectory</code> is null or whitespace.
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net10.0
+references:
+- uid: DeckSurf.SDK.Core
+  commentId: N:DeckSurf.SDK.Core
+  isExternal: false
+  name: DeckSurf.SDK.Core
+  nameWithType: DeckSurf.SDK.Core
+  fullName: DeckSurf.SDK.Core
+  type: namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.ArgumentNullException
+  isExternal: true
+  name: System.ArgumentNullException
+- uid: System.ArgumentException
+  isExternal: true
+  name: System.ArgumentException
+- uid: DeckSurf.SDK.Core.PluginLoader.GetCommandIconPath(System.Type)
+  parent: DeckSurf.SDK.Core.PluginLoader
+  isExternal: false
+  name: GetCommandIconPath(Type)
+  nameWithType: PluginLoader.GetCommandIconPath(Type)
+  fullName: DeckSurf.SDK.Core.PluginLoader.GetCommandIconPath(Type)
+  type: method
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: DeckSurf.SDK.Core.PluginLoader.GetCommandTypes(DeckSurf.SDK.Interfaces.IDeckSurfPlugin,System.Nullable{DeckSurf.SDK.Models.DeviceModel})
+  parent: DeckSurf.SDK.Core.PluginLoader
+  isExternal: false
+  name: GetCommandTypes(IDeckSurfPlugin, Nullable<DeviceModel>)
+  nameWithType: PluginLoader.GetCommandTypes(IDeckSurfPlugin, Nullable<DeviceModel>)
+  fullName: DeckSurf.SDK.Core.PluginLoader.GetCommandTypes(IDeckSurfPlugin, Nullable<DeviceModel>)
+  type: method
+- uid: System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  name: IReadOnlyList
+  nameWithType: IReadOnlyList
+  fullName: System.Collections.Generic.IReadOnlyList
+- uid: System.Collections.Generic.IReadOnlyList{System.Type}
+  parent: System.Collections.Generic
+  name: IReadOnlyList<Type>
+  nameWithType: IReadOnlyList<Type>
+  fullName: System.Collections.Generic.IReadOnlyList<System.Type>
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: DeckSurf.SDK.Interfaces.IDeckSurfPlugin
+  parent: DeckSurf.SDK.Interfaces
+  isExternal: false
+  name: IDeckSurfPlugin
+  nameWithType: IDeckSurfPlugin
+  fullName: DeckSurf.SDK.Interfaces.IDeckSurfPlugin
+- uid: System.Nullable`1
+  isExternal: true
+  name: Nullable
+  nameWithType: Nullable
+  fullName: System.Nullable
+- uid: DeckSurf.SDK.Models.DeviceModel
+  name: DeviceModel
+  nameWithType: DeviceModel
+  fullName: DeckSurf.SDK.Models.DeviceModel
+- uid: System.Nullable{DeckSurf.SDK.Models.DeviceModel}
+  parent: System
+  name: Nullable<DeviceModel>
+  nameWithType: Nullable<DeviceModel>
+  fullName: System.Nullable<DeckSurf.SDK.Models.DeviceModel>
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: DeckSurf.SDK.Models.DeviceModel
+    name: DeviceModel
+    nameWithType: DeviceModel
+    fullName: DeckSurf.SDK.Models.DeviceModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: DeckSurf.SDK.Core.PluginLoader.LoadCompatibleCommands(DeckSurf.SDK.Interfaces.IDeckSurfPlugin,DeckSurf.SDK.Models.DeviceModel,System.Action{System.String})
+  parent: DeckSurf.SDK.Core.PluginLoader
+  isExternal: false
+  name: LoadCompatibleCommands(IDeckSurfPlugin, DeviceModel, Action<String>)
+  nameWithType: PluginLoader.LoadCompatibleCommands(IDeckSurfPlugin, DeviceModel, Action<String>)
+  fullName: DeckSurf.SDK.Core.PluginLoader.LoadCompatibleCommands(IDeckSurfPlugin, DeviceModel, Action<String>)
+  type: method
+- uid: DeckSurf.SDK.Interfaces.IDeckSurfCommand
+  name: IDeckSurfCommand
+  nameWithType: IDeckSurfCommand
+  fullName: DeckSurf.SDK.Interfaces.IDeckSurfCommand
+- uid: System.Collections.Generic.IReadOnlyList{DeckSurf.SDK.Interfaces.IDeckSurfCommand}
+  parent: System.Collections.Generic
+  name: IReadOnlyList<IDeckSurfCommand>
+  nameWithType: IReadOnlyList<IDeckSurfCommand>
+  fullName: System.Collections.Generic.IReadOnlyList<DeckSurf.SDK.Interfaces.IDeckSurfCommand>
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: DeckSurf.SDK.Interfaces.IDeckSurfCommand
+    name: IDeckSurfCommand
+    nameWithType: IDeckSurfCommand
+    fullName: DeckSurf.SDK.Interfaces.IDeckSurfCommand
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.Action`1
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: System.Action{System.String}
+  parent: System
+  name: Action<String>
+  nameWithType: Action<String>
+  fullName: System.Action<System.String>
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: DeckSurf.SDK.Core.PluginLoader.LoadPlugins(System.String,System.Action{System.String},System.Boolean)
+  parent: DeckSurf.SDK.Core.PluginLoader
+  isExternal: false
+  name: LoadPlugins(String, Action<String>, Boolean)
+  nameWithType: PluginLoader.LoadPlugins(String, Action<String>, Boolean)
+  fullName: DeckSurf.SDK.Core.PluginLoader.LoadPlugins(String, Action<String>, Boolean)
+  type: method
+- uid: System.Collections.Generic.IReadOnlyList{DeckSurf.SDK.Interfaces.IDeckSurfPlugin}
+  parent: System.Collections.Generic
+  name: IReadOnlyList<IDeckSurfPlugin>
+  nameWithType: IReadOnlyList<IDeckSurfPlugin>
+  fullName: System.Collections.Generic.IReadOnlyList<DeckSurf.SDK.Interfaces.IDeckSurfPlugin>
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: DeckSurf.SDK.Interfaces.IDeckSurfPlugin
+    name: IDeckSurfPlugin
+    nameWithType: IDeckSurfPlugin
+    fullName: DeckSurf.SDK.Interfaces.IDeckSurfPlugin
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: DeckSurf.SDK.Core.PluginLoader.GetCommandIconPath*
+  commentId: Overload:DeckSurf.SDK.Core.PluginLoader.GetCommandIconPath
+  parent: DeckSurf.SDK.Core.PluginLoader
+  isExternal: false
+  name: GetCommandIconPath
+  nameWithType: PluginLoader.GetCommandIconPath
+  fullName: DeckSurf.SDK.Core.PluginLoader.GetCommandIconPath
+  monikers:
+  - net10.0
+  type: method
+- uid: DeckSurf.SDK.Core.PluginLoader.GetCommandTypes*
+  commentId: Overload:DeckSurf.SDK.Core.PluginLoader.GetCommandTypes
+  parent: DeckSurf.SDK.Core.PluginLoader
+  isExternal: false
+  name: GetCommandTypes
+  nameWithType: PluginLoader.GetCommandTypes
+  fullName: DeckSurf.SDK.Core.PluginLoader.GetCommandTypes
+  monikers:
+  - net10.0
+  type: method
+- uid: DeckSurf.SDK.Core.PluginLoader.LoadCompatibleCommands*
+  commentId: Overload:DeckSurf.SDK.Core.PluginLoader.LoadCompatibleCommands
+  parent: DeckSurf.SDK.Core.PluginLoader
+  isExternal: false
+  name: LoadCompatibleCommands
+  nameWithType: PluginLoader.LoadCompatibleCommands
+  fullName: DeckSurf.SDK.Core.PluginLoader.LoadCompatibleCommands
+  monikers:
+  - net10.0
+  type: method
+- uid: DeckSurf.SDK.Core.PluginLoader.LoadPlugins*
+  commentId: Overload:DeckSurf.SDK.Core.PluginLoader.LoadPlugins
+  parent: DeckSurf.SDK.Core.PluginLoader
+  isExternal: false
+  name: LoadPlugins
+  nameWithType: PluginLoader.LoadPlugins
+  fullName: DeckSurf.SDK.Core.PluginLoader.LoadPlugins
+  monikers:
+  - net10.0
+  type: method

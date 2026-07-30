@@ -1,0 +1,1195 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Models.CommandArguments
+  commentId: T:DeckSurf.SDK.Models.CommandArguments
+  id: CommandArguments
+  children:
+  - DeckSurf.SDK.Models.CommandArguments.ContainsKey(System.String)
+  - DeckSurf.SDK.Models.CommandArguments.Count
+  - DeckSurf.SDK.Models.CommandArguments.Empty
+  - DeckSurf.SDK.Models.CommandArguments.FromDictionary(System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})
+  - DeckSurf.SDK.Models.CommandArguments.FromLegacyString(System.String)
+  - DeckSurf.SDK.Models.CommandArguments.GetBoolean(System.String,System.Boolean)
+  - DeckSurf.SDK.Models.CommandArguments.GetEnumerator
+  - DeckSurf.SDK.Models.CommandArguments.GetInt32(System.String,System.Int32)
+  - DeckSurf.SDK.Models.CommandArguments.GetString(System.String,System.String)
+  - DeckSurf.SDK.Models.CommandArguments.Item(System.String)
+  - DeckSurf.SDK.Models.CommandArguments.Keys
+  - DeckSurf.SDK.Models.CommandArguments.LegacyText
+  - DeckSurf.SDK.Models.CommandArguments.ToString
+  - DeckSurf.SDK.Models.CommandArguments.TryGetValue(System.String,System.String@)
+  - DeckSurf.SDK.Models.CommandArguments.Values
+  - DeckSurf.SDK.Models.CommandArguments.System#Collections#IEnumerable#GetEnumerator
+  langs:
+  - csharp
+  name: CommandArguments
+  nameWithType: DeckSurf.SDK.Models.CommandArguments
+  fullName: DeckSurf.SDK.Models.CommandArguments
+  type: Class
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: >-
+    Immutable set of arguments passed to a command, keyed case-insensitively by
+
+    parameter key. In profile JSON the arguments are stored as a plain object
+
+    (<code data-dev-comment-type="c">"command_arguments": { "scene": "Gameplay" }</code>), which places no
+
+    restrictions on the characters a key or value may contain. The legacy
+
+    comma-separated <code data-dev-comment-type="c">key=value</code> string format is still accepted when
+
+    reading profiles and is written back unchanged (see <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.CommandArguments.LegacyText"></xref>)
+
+    so existing profiles round-trip losslessly until they are edited.
+  syntax:
+    content: >-
+      [[System.Text.Json.Serialization.JsonConverter(typeof(DeckSurf.SDK.Models.CommandArgumentsJsonConverter))]]
+
+      public sealed class CommandArguments : System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<string,string>>, System.Collections.Generic.IReadOnlyCollection<System.Collections.Generic.KeyValuePair<string,string>>, System.Collections.Generic.IReadOnlyDictionary<string,string>
+    content.csharp: >-
+      [[System.Text.Json.Serialization.JsonConverter(typeof(DeckSurf.SDK.Models.CommandArgumentsJsonConverter))]]
+
+      public sealed class CommandArguments : System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<string,string>>, System.Collections.Generic.IReadOnlyCollection<System.Collections.Generic.KeyValuePair<string,string>>, System.Collections.Generic.IReadOnlyDictionary<string,string>
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}}
+  - System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{TKey,TValue}}
+  - System.Collections.Generic.IEnumerable{T}
+  - System.Collections.Generic.IReadOnlyCollection{System.Collections.Generic.KeyValuePair{System.String,System.String}}
+  - System.Collections.Generic.IReadOnlyCollection{System.Collections.Generic.KeyValuePair{TKey,TValue}}
+  - System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}
+  - System.Collections.IEnumerable
+  inheritedMembers: []
+  attributes:
+  - type: '[System.Text.Json.Serialization.JsonConverterAttribute'
+  modifiers.csharp:
+  - public
+  - sealed
+  monikers:
+  - net10.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net10.0
+- uid: DeckSurf.SDK.Models.CommandArguments.ContainsKey(System.String)
+  commentId: M:DeckSurf.SDK.Models.CommandArguments.ContainsKey(System.String)
+  id: ContainsKey(System.String)
+  parent: DeckSurf.SDK.Models.CommandArguments
+  langs:
+  - csharp
+  name: ContainsKey(String)
+  nameWithType: CommandArguments.ContainsKey(String)
+  fullName: DeckSurf.SDK.Models.CommandArguments.ContainsKey(String)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  syntax:
+    content: public bool ContainsKey (string key);
+    parameters:
+    - id: key
+      type: System.String
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.csharp: public bool ContainsKey (string key);
+  overload: DeckSurf.SDK.Models.CommandArguments.ContainsKey*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.CommandArguments.Count
+  commentId: P:DeckSurf.SDK.Models.CommandArguments.Count
+  id: Count
+  parent: DeckSurf.SDK.Models.CommandArguments
+  langs:
+  - csharp
+  name: Count
+  nameWithType: CommandArguments.Count
+  fullName: DeckSurf.SDK.Models.CommandArguments.Count
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  syntax:
+    content: public int Count { get; }
+    return:
+      type: System.Int32
+      description: ''
+    content.csharp: public int Count { get; }
+  overload: DeckSurf.SDK.Models.CommandArguments.Count*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.CommandArguments.Empty
+  commentId: P:DeckSurf.SDK.Models.CommandArguments.Empty
+  id: Empty
+  parent: DeckSurf.SDK.Models.CommandArguments
+  langs:
+  - csharp
+  name: Empty
+  nameWithType: CommandArguments.Empty
+  fullName: DeckSurf.SDK.Models.CommandArguments.Empty
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: >-
+    Gets an empty argument set. Used as the default for
+
+    <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.CommandMapping.CommandArguments"></xref> so commands never need to
+
+    null-check their arguments.
+  syntax:
+    content: public static DeckSurf.SDK.Models.CommandArguments Empty { get; }
+    return:
+      type: DeckSurf.SDK.Models.CommandArguments
+      description: ''
+    content.csharp: public static DeckSurf.SDK.Models.CommandArguments Empty { get; }
+  overload: DeckSurf.SDK.Models.CommandArguments.Empty*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.CommandArguments.FromDictionary(System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})
+  commentId: M:DeckSurf.SDK.Models.CommandArguments.FromDictionary(System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})
+  id: FromDictionary(System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})
+  parent: DeckSurf.SDK.Models.CommandArguments
+  langs:
+  - csharp
+  name: FromDictionary(IReadOnlyDictionary<String,String>)
+  nameWithType: CommandArguments.FromDictionary(IReadOnlyDictionary<String,String>)
+  fullName: DeckSurf.SDK.Models.CommandArguments.FromDictionary(IReadOnlyDictionary<String,String>)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: >-
+    Creates an argument set from a dictionary of parameter values. Keys are
+
+    compared case-insensitively; when the source dictionary contains keys that
+
+    differ only in casing, the last one wins.
+  syntax:
+    content: public static DeckSurf.SDK.Models.CommandArguments FromDictionary (System.Collections.Generic.IReadOnlyDictionary<string,string> values);
+    parameters:
+    - id: values
+      type: System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}
+      description: The parameter values keyed by parameter key.
+    return:
+      type: DeckSurf.SDK.Models.CommandArguments
+      description: The argument set. Null values are normalized to empty strings.
+    content.csharp: public static DeckSurf.SDK.Models.CommandArguments FromDictionary (System.Collections.Generic.IReadOnlyDictionary<string,string> values);
+  overload: DeckSurf.SDK.Models.CommandArguments.FromDictionary*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code data-dev-comment-type="paramref">values</code> is null.
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.CommandArguments.FromLegacyString(System.String)
+  commentId: M:DeckSurf.SDK.Models.CommandArguments.FromLegacyString(System.String)
+  id: FromLegacyString(System.String)
+  parent: DeckSurf.SDK.Models.CommandArguments
+  langs:
+  - csharp
+  name: FromLegacyString(String)
+  nameWithType: CommandArguments.FromLegacyString(String)
+  fullName: DeckSurf.SDK.Models.CommandArguments.FromLegacyString(String)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: >-
+    Parses the legacy comma-separated <code data-dev-comment-type="c">key=value</code> format. Keys and values
+
+    are trimmed, segments without an <code data-dev-comment-type="c">=</code> become keys with empty values, and
+
+    duplicate keys keep the last value. The raw input is preserved in
+
+    <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.CommandArguments.LegacyText"></xref>. This format cannot represent commas in values;
+
+    new profiles should use the JSON object form instead.
+  syntax:
+    content: public static DeckSurf.SDK.Models.CommandArguments FromLegacyString (string arguments);
+    parameters:
+    - id: arguments
+      type: System.String
+      description: The delimited argument string. Null and empty inputs produce <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.CommandArguments.Empty"></xref>.
+    return:
+      type: DeckSurf.SDK.Models.CommandArguments
+      description: The parsed argument set.
+    content.csharp: public static DeckSurf.SDK.Models.CommandArguments FromLegacyString (string arguments);
+  overload: DeckSurf.SDK.Models.CommandArguments.FromLegacyString*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.CommandArguments.GetBoolean(System.String,System.Boolean)
+  commentId: M:DeckSurf.SDK.Models.CommandArguments.GetBoolean(System.String,System.Boolean)
+  id: GetBoolean(System.String,System.Boolean)
+  parent: DeckSurf.SDK.Models.CommandArguments
+  langs:
+  - csharp
+  name: GetBoolean(String, Boolean)
+  nameWithType: CommandArguments.GetBoolean(String, Boolean)
+  fullName: DeckSurf.SDK.Models.CommandArguments.GetBoolean(String, Boolean)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: >-
+    Gets the value for a key parsed as a boolean (<code data-dev-comment-type="c">true</code>/<code data-dev-comment-type="c">false</code>,
+
+    case-insensitive), or a default when the key is absent or the value does
+
+    not parse.
+  syntax:
+    content: public bool GetBoolean (string key, bool defaultValue);
+    parameters:
+    - id: key
+      type: System.String
+      description: The parameter key.
+    - id: defaultValue
+      type: System.Boolean
+      description: The value returned when the key is absent or invalid.
+    return:
+      type: System.Boolean
+      description: The parsed value, or <code data-dev-comment-type="paramref">defaultValue</code>.
+    content.csharp: public bool GetBoolean (string key, bool defaultValue);
+  overload: DeckSurf.SDK.Models.CommandArguments.GetBoolean*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.CommandArguments.GetEnumerator
+  commentId: M:DeckSurf.SDK.Models.CommandArguments.GetEnumerator
+  id: GetEnumerator
+  parent: DeckSurf.SDK.Models.CommandArguments
+  langs:
+  - csharp
+  name: GetEnumerator()
+  nameWithType: CommandArguments.GetEnumerator()
+  fullName: DeckSurf.SDK.Models.CommandArguments.GetEnumerator()
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  syntax:
+    content: public System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<string,string>> GetEnumerator ();
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{System.String,System.String}}
+      description: ''
+    content.csharp: public System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<string,string>> GetEnumerator ();
+  overload: DeckSurf.SDK.Models.CommandArguments.GetEnumerator*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.CommandArguments.GetInt32(System.String,System.Int32)
+  commentId: M:DeckSurf.SDK.Models.CommandArguments.GetInt32(System.String,System.Int32)
+  id: GetInt32(System.String,System.Int32)
+  parent: DeckSurf.SDK.Models.CommandArguments
+  langs:
+  - csharp
+  name: GetInt32(String, Int32)
+  nameWithType: CommandArguments.GetInt32(String, Int32)
+  fullName: DeckSurf.SDK.Models.CommandArguments.GetInt32(String, Int32)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: >-
+    Gets the value for a key parsed as an invariant-culture integer, or a
+
+    default when the key is absent or the value does not parse.
+  syntax:
+    content: public int GetInt32 (string key, int defaultValue);
+    parameters:
+    - id: key
+      type: System.String
+      description: The parameter key.
+    - id: defaultValue
+      type: System.Int32
+      description: The value returned when the key is absent or invalid.
+    return:
+      type: System.Int32
+      description: The parsed value, or <code data-dev-comment-type="paramref">defaultValue</code>.
+    content.csharp: public int GetInt32 (string key, int defaultValue);
+  overload: DeckSurf.SDK.Models.CommandArguments.GetInt32*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.CommandArguments.GetString(System.String,System.String)
+  commentId: M:DeckSurf.SDK.Models.CommandArguments.GetString(System.String,System.String)
+  id: GetString(System.String,System.String)
+  parent: DeckSurf.SDK.Models.CommandArguments
+  langs:
+  - csharp
+  name: GetString(String, String)
+  nameWithType: CommandArguments.GetString(String, String)
+  fullName: DeckSurf.SDK.Models.CommandArguments.GetString(String, String)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets the value for a key, or a default when the key is absent.
+  syntax:
+    content: public string GetString (string key, string defaultValue = "");
+    parameters:
+    - id: key
+      type: System.String
+      description: The parameter key.
+    - id: defaultValue
+      type: System.String
+      description: The value returned when the key is absent.
+    return:
+      type: System.String
+      description: The parameter value, or <code data-dev-comment-type="paramref">defaultValue</code>.
+    content.csharp: public string GetString (string key, string defaultValue = "");
+  overload: DeckSurf.SDK.Models.CommandArguments.GetString*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.CommandArguments.Item(System.String)
+  commentId: P:DeckSurf.SDK.Models.CommandArguments.Item(System.String)
+  id: Item(System.String)
+  parent: DeckSurf.SDK.Models.CommandArguments
+  langs:
+  - csharp
+  name: Item[String]
+  nameWithType: CommandArguments.Item[String]
+  fullName: DeckSurf.SDK.Models.CommandArguments.Item[String]
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  syntax:
+    content: public string this[string key] { get; }
+    parameters:
+    - id: key
+      type: System.String
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.csharp: public string this[string key] { get; }
+  overload: DeckSurf.SDK.Models.CommandArguments.Item*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.CommandArguments.Keys
+  commentId: P:DeckSurf.SDK.Models.CommandArguments.Keys
+  id: Keys
+  parent: DeckSurf.SDK.Models.CommandArguments
+  langs:
+  - csharp
+  name: Keys
+  nameWithType: CommandArguments.Keys
+  fullName: DeckSurf.SDK.Models.CommandArguments.Keys
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  syntax:
+    content: public System.Collections.Generic.IEnumerable<string> Keys { get; }
+    return:
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: ''
+    content.csharp: public System.Collections.Generic.IEnumerable<string> Keys { get; }
+  overload: DeckSurf.SDK.Models.CommandArguments.Keys*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.CommandArguments.LegacyText
+  commentId: P:DeckSurf.SDK.Models.CommandArguments.LegacyText
+  id: LegacyText
+  parent: DeckSurf.SDK.Models.CommandArguments
+  langs:
+  - csharp
+  name: LegacyText
+  nameWithType: CommandArguments.LegacyText
+  fullName: DeckSurf.SDK.Models.CommandArguments.LegacyText
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: >-
+    Gets the original delimited string when this instance was parsed from the
+
+    legacy comma-separated <code data-dev-comment-type="c">key=value</code> format, and <code data-dev-comment-type="c">null</code> when it was
+
+    created from a JSON object or a dictionary. Commands that historically
+
+    accepted a bare value instead of key/value pairs can fall back to this.
+  syntax:
+    content: public string LegacyText { get; }
+    return:
+      type: System.String
+      description: ''
+    content.csharp: public string LegacyText { get; }
+  overload: DeckSurf.SDK.Models.CommandArguments.LegacyText*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.CommandArguments.ToString
+  commentId: M:DeckSurf.SDK.Models.CommandArguments.ToString
+  id: ToString
+  parent: DeckSurf.SDK.Models.CommandArguments
+  langs:
+  - csharp
+  name: ToString()
+  nameWithType: CommandArguments.ToString()
+  fullName: DeckSurf.SDK.Models.CommandArguments.ToString()
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: >-
+    Returns a human-readable rendering of the arguments for logs and console
+
+    listings. Not a serialization format.
+  syntax:
+    content: public override string ToString ();
+    parameters: []
+    return:
+      type: System.String
+      description: The legacy text when present, otherwise the pairs joined as <code data-dev-comment-type="c">key=value</code>.
+    content.csharp: public override string ToString ();
+  overload: DeckSurf.SDK.Models.CommandArguments.ToString*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.CommandArguments.TryGetValue(System.String,System.String@)
+  commentId: M:DeckSurf.SDK.Models.CommandArguments.TryGetValue(System.String,System.String@)
+  id: TryGetValue(System.String,System.String@)
+  parent: DeckSurf.SDK.Models.CommandArguments
+  langs:
+  - csharp
+  name: TryGetValue(String, String)
+  nameWithType: CommandArguments.TryGetValue(String, String)
+  fullName: DeckSurf.SDK.Models.CommandArguments.TryGetValue(String, String)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  syntax:
+    content: public bool TryGetValue (string key, out string value);
+    parameters:
+    - id: key
+      type: System.String
+      description: ''
+    - id: value
+      type: System.String
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.csharp: public bool TryGetValue (string key, out string value);
+  overload: DeckSurf.SDK.Models.CommandArguments.TryGetValue*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.CommandArguments.Values
+  commentId: P:DeckSurf.SDK.Models.CommandArguments.Values
+  id: Values
+  parent: DeckSurf.SDK.Models.CommandArguments
+  langs:
+  - csharp
+  name: Values
+  nameWithType: CommandArguments.Values
+  fullName: DeckSurf.SDK.Models.CommandArguments.Values
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  syntax:
+    content: public System.Collections.Generic.IEnumerable<string> Values { get; }
+    return:
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: ''
+    content.csharp: public System.Collections.Generic.IEnumerable<string> Values { get; }
+  overload: DeckSurf.SDK.Models.CommandArguments.Values*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.CommandArguments.System#Collections#IEnumerable#GetEnumerator
+  commentId: M:DeckSurf.SDK.Models.CommandArguments.System#Collections#IEnumerable#GetEnumerator
+  id: System#Collections#IEnumerable#GetEnumerator
+  isEii: true
+  parent: DeckSurf.SDK.Models.CommandArguments
+  langs:
+  - csharp
+  name: IEnumerable.GetEnumerator()
+  nameWithType: CommandArguments.IEnumerable.GetEnumerator()
+  fullName: DeckSurf.SDK.Models.CommandArguments.System.Collections.IEnumerable.GetEnumerator()
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  syntax:
+    content: System.Collections.IEnumerator IEnumerable.GetEnumerator ();
+    parameters: []
+    return:
+      type: System.Collections.IEnumerator
+      description: ''
+    content.csharp: System.Collections.IEnumerator IEnumerable.GetEnumerator ();
+  overload: DeckSurf.SDK.Models.CommandArguments.System#Collections#IEnumerable#GetEnumerator*
+  exceptions: []
+  monikers:
+  - net10.0
+references:
+- uid: DeckSurf.SDK.Models
+  commentId: N:DeckSurf.SDK.Models
+  isExternal: false
+  name: DeckSurf.SDK.Models
+  nameWithType: DeckSurf.SDK.Models
+  fullName: DeckSurf.SDK.Models
+  type: namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.ArgumentNullException
+  isExternal: true
+  name: System.ArgumentNullException
+- uid: DeckSurf.SDK.Models.CommandArguments.ContainsKey(System.String)
+  parent: DeckSurf.SDK.Models.CommandArguments
+  isExternal: false
+  name: ContainsKey(String)
+  nameWithType: CommandArguments.ContainsKey(String)
+  fullName: DeckSurf.SDK.Models.CommandArguments.ContainsKey(String)
+  type: method
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DeckSurf.SDK.Models.CommandArguments.Count
+  parent: DeckSurf.SDK.Models.CommandArguments
+  isExternal: false
+  name: Count
+  nameWithType: CommandArguments.Count
+  fullName: DeckSurf.SDK.Models.CommandArguments.Count
+  type: property
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: DeckSurf.SDK.Models.CommandArguments.Empty
+  parent: DeckSurf.SDK.Models.CommandArguments
+  isExternal: false
+  name: Empty
+  nameWithType: CommandArguments.Empty
+  fullName: DeckSurf.SDK.Models.CommandArguments.Empty
+  type: property
+- uid: DeckSurf.SDK.Models.CommandArguments
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: CommandArguments
+  nameWithType: CommandArguments
+  fullName: DeckSurf.SDK.Models.CommandArguments
+- uid: DeckSurf.SDK.Models.CommandArguments.FromDictionary(System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})
+  parent: DeckSurf.SDK.Models.CommandArguments
+  isExternal: false
+  name: FromDictionary(IReadOnlyDictionary<String,String>)
+  nameWithType: CommandArguments.FromDictionary(IReadOnlyDictionary<String,String>)
+  fullName: DeckSurf.SDK.Models.CommandArguments.FromDictionary(IReadOnlyDictionary<String,String>)
+  type: method
+- uid: System.Collections.Generic.IReadOnlyDictionary`2
+  isExternal: true
+  name: IReadOnlyDictionary
+  nameWithType: IReadOnlyDictionary
+  fullName: System.Collections.Generic.IReadOnlyDictionary
+- uid: System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  name: IReadOnlyDictionary<String,String>
+  nameWithType: IReadOnlyDictionary<String,String>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<System.String,System.String>
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    nameWithType: IReadOnlyDictionary
+    fullName: System.Collections.Generic.IReadOnlyDictionary
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: DeckSurf.SDK.Models.CommandArguments.FromLegacyString(System.String)
+  parent: DeckSurf.SDK.Models.CommandArguments
+  isExternal: false
+  name: FromLegacyString(String)
+  nameWithType: CommandArguments.FromLegacyString(String)
+  fullName: DeckSurf.SDK.Models.CommandArguments.FromLegacyString(String)
+  type: method
+- uid: DeckSurf.SDK.Models.CommandArguments.GetBoolean(System.String,System.Boolean)
+  parent: DeckSurf.SDK.Models.CommandArguments
+  isExternal: false
+  name: GetBoolean(String, Boolean)
+  nameWithType: CommandArguments.GetBoolean(String, Boolean)
+  fullName: DeckSurf.SDK.Models.CommandArguments.GetBoolean(String, Boolean)
+  type: method
+- uid: DeckSurf.SDK.Models.CommandArguments.GetEnumerator
+  parent: DeckSurf.SDK.Models.CommandArguments
+  isExternal: false
+  name: GetEnumerator()
+  nameWithType: CommandArguments.GetEnumerator()
+  fullName: DeckSurf.SDK.Models.CommandArguments.GetEnumerator()
+  type: method
+- uid: System.Collections.Generic.IEnumerator`1
+  isExternal: true
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.Generic.IEnumerator
+- uid: System.Collections.Generic.KeyValuePair`2
+  isExternal: true
+  name: KeyValuePair
+  nameWithType: KeyValuePair
+  fullName: System.Collections.Generic.KeyValuePair
+- uid: System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{System.String,System.String}}
+  parent: System.Collections.Generic
+  name: IEnumerator<KeyValuePair<String,String>>
+  nameWithType: IEnumerator<KeyValuePair<String,String>>
+  fullName: System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<System.String,System.String>>
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: DeckSurf.SDK.Models.CommandArguments.GetInt32(System.String,System.Int32)
+  parent: DeckSurf.SDK.Models.CommandArguments
+  isExternal: false
+  name: GetInt32(String, Int32)
+  nameWithType: CommandArguments.GetInt32(String, Int32)
+  fullName: DeckSurf.SDK.Models.CommandArguments.GetInt32(String, Int32)
+  type: method
+- uid: DeckSurf.SDK.Models.CommandArguments.GetString(System.String,System.String)
+  parent: DeckSurf.SDK.Models.CommandArguments
+  isExternal: false
+  name: GetString(String, String)
+  nameWithType: CommandArguments.GetString(String, String)
+  fullName: DeckSurf.SDK.Models.CommandArguments.GetString(String, String)
+  type: method
+- uid: DeckSurf.SDK.Models.CommandArguments.Item(System.String)
+  parent: DeckSurf.SDK.Models.CommandArguments
+  isExternal: false
+  name: Item[String]
+  nameWithType: CommandArguments.Item[String]
+  fullName: DeckSurf.SDK.Models.CommandArguments.Item[String]
+  type: property
+- uid: DeckSurf.SDK.Models.CommandArguments.Keys
+  parent: DeckSurf.SDK.Models.CommandArguments
+  isExternal: false
+  name: Keys
+  nameWithType: CommandArguments.Keys
+  fullName: DeckSurf.SDK.Models.CommandArguments.Keys
+  type: property
+- uid: System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.Generic.IEnumerable
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  name: IEnumerable<String>
+  nameWithType: IEnumerable<String>
+  fullName: System.Collections.Generic.IEnumerable<System.String>
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: DeckSurf.SDK.Models.CommandArguments.LegacyText
+  parent: DeckSurf.SDK.Models.CommandArguments
+  isExternal: false
+  name: LegacyText
+  nameWithType: CommandArguments.LegacyText
+  fullName: DeckSurf.SDK.Models.CommandArguments.LegacyText
+  type: property
+- uid: DeckSurf.SDK.Models.CommandArguments.ToString
+  parent: DeckSurf.SDK.Models.CommandArguments
+  isExternal: false
+  name: ToString()
+  nameWithType: CommandArguments.ToString()
+  fullName: DeckSurf.SDK.Models.CommandArguments.ToString()
+  type: method
+- uid: DeckSurf.SDK.Models.CommandArguments.TryGetValue(System.String,System.String@)
+  parent: DeckSurf.SDK.Models.CommandArguments
+  isExternal: false
+  name: TryGetValue(String, String)
+  nameWithType: CommandArguments.TryGetValue(String, String)
+  fullName: DeckSurf.SDK.Models.CommandArguments.TryGetValue(String, String)
+  type: method
+- uid: DeckSurf.SDK.Models.CommandArguments.Values
+  parent: DeckSurf.SDK.Models.CommandArguments
+  isExternal: false
+  name: Values
+  nameWithType: CommandArguments.Values
+  fullName: DeckSurf.SDK.Models.CommandArguments.Values
+  type: property
+- uid: DeckSurf.SDK.Models.CommandArguments.System#Collections#IEnumerable#GetEnumerator
+  parent: DeckSurf.SDK.Models.CommandArguments
+  isExternal: false
+  name: IEnumerable.GetEnumerator()
+  nameWithType: CommandArguments.IEnumerable.GetEnumerator()
+  fullName: DeckSurf.SDK.Models.CommandArguments.System.Collections.IEnumerable.GetEnumerator()
+  type: method
+- uid: System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: DeckSurf.SDK.Models.CommandArguments.ContainsKey*
+  commentId: Overload:DeckSurf.SDK.Models.CommandArguments.ContainsKey
+  parent: DeckSurf.SDK.Models.CommandArguments
+  isExternal: false
+  name: ContainsKey
+  nameWithType: CommandArguments.ContainsKey
+  fullName: DeckSurf.SDK.Models.CommandArguments.ContainsKey
+  monikers:
+  - net10.0
+  type: method
+- uid: DeckSurf.SDK.Models.CommandArguments.Count*
+  commentId: Overload:DeckSurf.SDK.Models.CommandArguments.Count
+  parent: DeckSurf.SDK.Models.CommandArguments
+  isExternal: false
+  name: Count
+  nameWithType: CommandArguments.Count
+  fullName: DeckSurf.SDK.Models.CommandArguments.Count
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Models.CommandArguments.Empty*
+  commentId: Overload:DeckSurf.SDK.Models.CommandArguments.Empty
+  parent: DeckSurf.SDK.Models.CommandArguments
+  isExternal: false
+  name: Empty
+  nameWithType: CommandArguments.Empty
+  fullName: DeckSurf.SDK.Models.CommandArguments.Empty
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Models.CommandArguments.FromDictionary*
+  commentId: Overload:DeckSurf.SDK.Models.CommandArguments.FromDictionary
+  parent: DeckSurf.SDK.Models.CommandArguments
+  isExternal: false
+  name: FromDictionary
+  nameWithType: CommandArguments.FromDictionary
+  fullName: DeckSurf.SDK.Models.CommandArguments.FromDictionary
+  monikers:
+  - net10.0
+  type: method
+- uid: DeckSurf.SDK.Models.CommandArguments.FromLegacyString*
+  commentId: Overload:DeckSurf.SDK.Models.CommandArguments.FromLegacyString
+  parent: DeckSurf.SDK.Models.CommandArguments
+  isExternal: false
+  name: FromLegacyString
+  nameWithType: CommandArguments.FromLegacyString
+  fullName: DeckSurf.SDK.Models.CommandArguments.FromLegacyString
+  monikers:
+  - net10.0
+  type: method
+- uid: DeckSurf.SDK.Models.CommandArguments.GetBoolean*
+  commentId: Overload:DeckSurf.SDK.Models.CommandArguments.GetBoolean
+  parent: DeckSurf.SDK.Models.CommandArguments
+  isExternal: false
+  name: GetBoolean
+  nameWithType: CommandArguments.GetBoolean
+  fullName: DeckSurf.SDK.Models.CommandArguments.GetBoolean
+  monikers:
+  - net10.0
+  type: method
+- uid: DeckSurf.SDK.Models.CommandArguments.GetEnumerator*
+  commentId: Overload:DeckSurf.SDK.Models.CommandArguments.GetEnumerator
+  parent: DeckSurf.SDK.Models.CommandArguments
+  isExternal: false
+  name: GetEnumerator
+  nameWithType: CommandArguments.GetEnumerator
+  fullName: DeckSurf.SDK.Models.CommandArguments.GetEnumerator
+  monikers:
+  - net10.0
+  type: method
+- uid: DeckSurf.SDK.Models.CommandArguments.GetInt32*
+  commentId: Overload:DeckSurf.SDK.Models.CommandArguments.GetInt32
+  parent: DeckSurf.SDK.Models.CommandArguments
+  isExternal: false
+  name: GetInt32
+  nameWithType: CommandArguments.GetInt32
+  fullName: DeckSurf.SDK.Models.CommandArguments.GetInt32
+  monikers:
+  - net10.0
+  type: method
+- uid: DeckSurf.SDK.Models.CommandArguments.GetString*
+  commentId: Overload:DeckSurf.SDK.Models.CommandArguments.GetString
+  parent: DeckSurf.SDK.Models.CommandArguments
+  isExternal: false
+  name: GetString
+  nameWithType: CommandArguments.GetString
+  fullName: DeckSurf.SDK.Models.CommandArguments.GetString
+  monikers:
+  - net10.0
+  type: method
+- uid: DeckSurf.SDK.Models.CommandArguments.Item*
+  commentId: Overload:DeckSurf.SDK.Models.CommandArguments.Item
+  parent: DeckSurf.SDK.Models.CommandArguments
+  isExternal: false
+  name: Item[String]
+  nameWithType: CommandArguments.Item[String]
+  fullName: DeckSurf.SDK.Models.CommandArguments.Item[String]
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Models.CommandArguments.Keys*
+  commentId: Overload:DeckSurf.SDK.Models.CommandArguments.Keys
+  parent: DeckSurf.SDK.Models.CommandArguments
+  isExternal: false
+  name: Keys
+  nameWithType: CommandArguments.Keys
+  fullName: DeckSurf.SDK.Models.CommandArguments.Keys
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Models.CommandArguments.LegacyText*
+  commentId: Overload:DeckSurf.SDK.Models.CommandArguments.LegacyText
+  parent: DeckSurf.SDK.Models.CommandArguments
+  isExternal: false
+  name: LegacyText
+  nameWithType: CommandArguments.LegacyText
+  fullName: DeckSurf.SDK.Models.CommandArguments.LegacyText
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Models.CommandArguments.ToString*
+  commentId: Overload:DeckSurf.SDK.Models.CommandArguments.ToString
+  parent: DeckSurf.SDK.Models.CommandArguments
+  isExternal: false
+  name: ToString
+  nameWithType: CommandArguments.ToString
+  fullName: DeckSurf.SDK.Models.CommandArguments.ToString
+  monikers:
+  - net10.0
+  type: method
+- uid: DeckSurf.SDK.Models.CommandArguments.TryGetValue*
+  commentId: Overload:DeckSurf.SDK.Models.CommandArguments.TryGetValue
+  parent: DeckSurf.SDK.Models.CommandArguments
+  isExternal: false
+  name: TryGetValue
+  nameWithType: CommandArguments.TryGetValue
+  fullName: DeckSurf.SDK.Models.CommandArguments.TryGetValue
+  monikers:
+  - net10.0
+  type: method
+- uid: DeckSurf.SDK.Models.CommandArguments.Values*
+  commentId: Overload:DeckSurf.SDK.Models.CommandArguments.Values
+  parent: DeckSurf.SDK.Models.CommandArguments
+  isExternal: false
+  name: Values
+  nameWithType: CommandArguments.Values
+  fullName: DeckSurf.SDK.Models.CommandArguments.Values
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Models.CommandArguments.System#Collections#IEnumerable#GetEnumerator*
+  commentId: Overload:DeckSurf.SDK.Models.CommandArguments.System#Collections#IEnumerable#GetEnumerator
+  parent: DeckSurf.SDK.Models.CommandArguments
+  isExternal: false
+  name: IEnumerable.GetEnumerator
+  nameWithType: CommandArguments.IEnumerable.GetEnumerator
+  fullName: DeckSurf.SDK.Models.CommandArguments.System.Collections.IEnumerable.GetEnumerator
+  monikers:
+  - net10.0
+  type: method
+- uid: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}}
+  parent: System.Collections.Generic
+  name: IEnumerable<KeyValuePair<String,String>>
+  nameWithType: IEnumerable<KeyValuePair<String,String>>
+  fullName: System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<System.String,System.String>>
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: TKey
+  isExternal: true
+  name: TKey
+  nameWithType: TKey
+  fullName: TKey
+- uid: TValue
+  isExternal: true
+  name: TValue
+  nameWithType: TValue
+  fullName: TValue
+- uid: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{TKey,TValue}}
+  parent: System.Collections.Generic
+  name: IEnumerable<KeyValuePair<TKey,TValue>>
+  nameWithType: IEnumerable<KeyValuePair<TKey,TValue>>
+  fullName: System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>>
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: TKey
+    name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: TValue
+    name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: T
+  isExternal: true
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Collections.Generic.IEnumerable{T}
+  parent: System.Collections.Generic
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: T
+    name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: true
+  name: IReadOnlyCollection
+  nameWithType: IReadOnlyCollection
+  fullName: System.Collections.Generic.IReadOnlyCollection
+- uid: System.Collections.Generic.IReadOnlyCollection{System.Collections.Generic.KeyValuePair{System.String,System.String}}
+  parent: System.Collections.Generic
+  name: IReadOnlyCollection<KeyValuePair<String,String>>
+  nameWithType: IReadOnlyCollection<KeyValuePair<String,String>>
+  fullName: System.Collections.Generic.IReadOnlyCollection<System.Collections.Generic.KeyValuePair<System.String,System.String>>
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    nameWithType: IReadOnlyCollection
+    fullName: System.Collections.Generic.IReadOnlyCollection
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.Collections.Generic.IReadOnlyCollection{System.Collections.Generic.KeyValuePair{TKey,TValue}}
+  parent: System.Collections.Generic
+  name: IReadOnlyCollection<KeyValuePair<TKey,TValue>>
+  nameWithType: IReadOnlyCollection<KeyValuePair<TKey,TValue>>
+  fullName: System.Collections.Generic.IReadOnlyCollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    nameWithType: IReadOnlyCollection
+    fullName: System.Collections.Generic.IReadOnlyCollection
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: TKey
+    name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ','
+    nameWithType: ','
+    fullName: ','
+  - uid: TValue
+    name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable

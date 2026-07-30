@@ -18,10 +18,13 @@ items:
   - DeckSurf.SDK.Interfaces.IConnectedDevice.IsListening
   - DeckSurf.SDK.Interfaces.IConnectedDevice.IsScreenSupported
   - DeckSurf.SDK.Interfaces.IConnectedDevice.KeyImageFormat
+  - DeckSurf.SDK.Interfaces.IConnectedDevice.KeyImageSet
+  - DeckSurf.SDK.Interfaces.IConnectedDevice.KnobCount
   - DeckSurf.SDK.Interfaces.IConnectedDevice.Model
   - DeckSurf.SDK.Interfaces.IConnectedDevice.Name
   - DeckSurf.SDK.Interfaces.IConnectedDevice.Path
   - DeckSurf.SDK.Interfaces.IConnectedDevice.ScreenHeight
+  - DeckSurf.SDK.Interfaces.IConnectedDevice.ScreenImageSet
   - DeckSurf.SDK.Interfaces.IConnectedDevice.ScreenSegmentWidth
   - DeckSurf.SDK.Interfaces.IConnectedDevice.ScreenWidth
   - DeckSurf.SDK.Interfaces.IConnectedDevice.Serial
@@ -436,6 +439,58 @@ items:
   - get
   monikers:
   - net10.0
+- uid: DeckSurf.SDK.Interfaces.IConnectedDevice.KeyImageSet
+  commentId: E:DeckSurf.SDK.Interfaces.IConnectedDevice.KeyImageSet
+  id: KeyImageSet
+  parent: DeckSurf.SDK.Interfaces.IConnectedDevice
+  langs:
+  - csharp
+  name: KeyImageSet
+  nameWithType: IConnectedDevice.KeyImageSet
+  fullName: DeckSurf.SDK.Interfaces.IConnectedDevice.KeyImageSet
+  type: Event
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Interfaces
+  summary: >-
+    Event raised whenever an image is written to a key, carrying the image
+
+    content before device-specific resizing or encoding. Lets hosts mirror
+
+    the hardware in a live preview.
+  syntax:
+    content: event EventHandler<DeckSurf.SDK.Models.KeyImageSetEventArgs> KeyImageSet;
+    content.csharp: event EventHandler<DeckSurf.SDK.Models.KeyImageSetEventArgs> KeyImageSet;
+  exceptions: []
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Interfaces.IConnectedDevice.KnobCount
+  commentId: P:DeckSurf.SDK.Interfaces.IConnectedDevice.KnobCount
+  id: KnobCount
+  parent: DeckSurf.SDK.Interfaces.IConnectedDevice
+  langs:
+  - csharp
+  name: KnobCount
+  nameWithType: IConnectedDevice.KnobCount
+  fullName: DeckSurf.SDK.Interfaces.IConnectedDevice.KnobCount
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Interfaces
+  summary: Gets the number of knobs on the Stream Deck device. Zero for devices without knobs.
+  syntax:
+    content: public int KnobCount { get; }
+    return:
+      type: System.Int32
+      description: ''
+    content.csharp: public int KnobCount { get; }
+  overload: DeckSurf.SDK.Interfaces.IConnectedDevice.KnobCount*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net10.0
 - uid: DeckSurf.SDK.Interfaces.IConnectedDevice.Model
   commentId: P:DeckSurf.SDK.Interfaces.IConnectedDevice.Model
   id: Model
@@ -542,6 +597,29 @@ items:
   modifiers.csharp:
   - public
   - get
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Interfaces.IConnectedDevice.ScreenImageSet
+  commentId: E:DeckSurf.SDK.Interfaces.IConnectedDevice.ScreenImageSet
+  id: ScreenImageSet
+  parent: DeckSurf.SDK.Interfaces.IConnectedDevice
+  langs:
+  - csharp
+  name: ScreenImageSet
+  nameWithType: IConnectedDevice.ScreenImageSet
+  fullName: DeckSurf.SDK.Interfaces.IConnectedDevice.ScreenImageSet
+  type: Event
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Interfaces
+  summary: >-
+    Event raised whenever an image is written to the device screen. Lets
+
+    hosts mirror the hardware in a live preview.
+  syntax:
+    content: event EventHandler<DeckSurf.SDK.Models.ScreenImageSetEventArgs> ScreenImageSet;
+    content.csharp: event EventHandler<DeckSurf.SDK.Models.ScreenImageSetEventArgs> ScreenImageSet;
+  exceptions: []
   monikers:
   - net10.0
 - uid: DeckSurf.SDK.Interfaces.IConnectedDevice.ScreenSegmentWidth
@@ -1264,6 +1342,44 @@ references:
   name: DeviceImageFormat
   nameWithType: DeviceImageFormat
   fullName: DeckSurf.SDK.Models.DeviceImageFormat
+- uid: DeckSurf.SDK.Interfaces.IConnectedDevice.KeyImageSet
+  parent: DeckSurf.SDK.Interfaces.IConnectedDevice
+  isExternal: false
+  name: KeyImageSet
+  nameWithType: IConnectedDevice.KeyImageSet
+  fullName: DeckSurf.SDK.Interfaces.IConnectedDevice.KeyImageSet
+  type: event
+- uid: DeckSurf.SDK.Models.KeyImageSetEventArgs
+  name: KeyImageSetEventArgs
+  nameWithType: KeyImageSetEventArgs
+  fullName: DeckSurf.SDK.Models.KeyImageSetEventArgs
+- uid: System.EventHandler{DeckSurf.SDK.Models.KeyImageSetEventArgs}
+  parent: System
+  name: EventHandler<KeyImageSetEventArgs>
+  nameWithType: EventHandler<KeyImageSetEventArgs>
+  fullName: System.EventHandler<DeckSurf.SDK.Models.KeyImageSetEventArgs>
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: DeckSurf.SDK.Models.KeyImageSetEventArgs
+    name: KeyImageSetEventArgs
+    nameWithType: KeyImageSetEventArgs
+    fullName: DeckSurf.SDK.Models.KeyImageSetEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: DeckSurf.SDK.Interfaces.IConnectedDevice.KnobCount
+  parent: DeckSurf.SDK.Interfaces.IConnectedDevice
+  isExternal: false
+  name: KnobCount
+  nameWithType: IConnectedDevice.KnobCount
+  fullName: DeckSurf.SDK.Interfaces.IConnectedDevice.KnobCount
+  type: property
 - uid: DeckSurf.SDK.Interfaces.IConnectedDevice.Model
   parent: DeckSurf.SDK.Interfaces.IConnectedDevice
   isExternal: false
@@ -1298,6 +1414,37 @@ references:
   nameWithType: IConnectedDevice.ScreenHeight
   fullName: DeckSurf.SDK.Interfaces.IConnectedDevice.ScreenHeight
   type: property
+- uid: DeckSurf.SDK.Interfaces.IConnectedDevice.ScreenImageSet
+  parent: DeckSurf.SDK.Interfaces.IConnectedDevice
+  isExternal: false
+  name: ScreenImageSet
+  nameWithType: IConnectedDevice.ScreenImageSet
+  fullName: DeckSurf.SDK.Interfaces.IConnectedDevice.ScreenImageSet
+  type: event
+- uid: DeckSurf.SDK.Models.ScreenImageSetEventArgs
+  name: ScreenImageSetEventArgs
+  nameWithType: ScreenImageSetEventArgs
+  fullName: DeckSurf.SDK.Models.ScreenImageSetEventArgs
+- uid: System.EventHandler{DeckSurf.SDK.Models.ScreenImageSetEventArgs}
+  parent: System
+  name: EventHandler<ScreenImageSetEventArgs>
+  nameWithType: EventHandler<ScreenImageSetEventArgs>
+  fullName: System.EventHandler<DeckSurf.SDK.Models.ScreenImageSetEventArgs>
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: DeckSurf.SDK.Models.ScreenImageSetEventArgs
+    name: ScreenImageSetEventArgs
+    nameWithType: ScreenImageSetEventArgs
+    fullName: DeckSurf.SDK.Models.ScreenImageSetEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
 - uid: DeckSurf.SDK.Interfaces.IConnectedDevice.ScreenSegmentWidth
   parent: DeckSurf.SDK.Interfaces.IConnectedDevice
   isExternal: false
@@ -1550,6 +1697,16 @@ references:
   name: KeyImageFormat
   nameWithType: IConnectedDevice.KeyImageFormat
   fullName: DeckSurf.SDK.Interfaces.IConnectedDevice.KeyImageFormat
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Interfaces.IConnectedDevice.KnobCount*
+  commentId: Overload:DeckSurf.SDK.Interfaces.IConnectedDevice.KnobCount
+  parent: DeckSurf.SDK.Interfaces.IConnectedDevice
+  isExternal: false
+  name: KnobCount
+  nameWithType: IConnectedDevice.KnobCount
+  fullName: DeckSurf.SDK.Interfaces.IConnectedDevice.KnobCount
   monikers:
   - net10.0
   type: property

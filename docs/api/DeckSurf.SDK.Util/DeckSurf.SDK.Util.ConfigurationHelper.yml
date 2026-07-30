@@ -4,8 +4,12 @@ items:
   commentId: T:DeckSurf.SDK.Util.ConfigurationHelper
   id: ConfigurationHelper
   children:
+  - DeckSurf.SDK.Util.ConfigurationHelper.DeleteProfile(System.String)
   - DeckSurf.SDK.Util.ConfigurationHelper.GetProfile(System.String)
   - DeckSurf.SDK.Util.ConfigurationHelper.GetProfilePath(System.String)
+  - DeckSurf.SDK.Util.ConfigurationHelper.GetProfilesRootPath
+  - DeckSurf.SDK.Util.ConfigurationHelper.ListProfiles
+  - DeckSurf.SDK.Util.ConfigurationHelper.SaveProfile(System.String,DeckSurf.SDK.Models.ConfigurationProfile)
   - DeckSurf.SDK.Util.ConfigurationHelper.WriteToConfiguration(System.String,System.Int32,DeckSurf.SDK.Models.CommandMapping)
   langs:
   - csharp
@@ -31,6 +35,40 @@ items:
   _op_AssemblyMonikerMapping:
     DeckSurf.SDK:
     - net10.0
+- uid: DeckSurf.SDK.Util.ConfigurationHelper.DeleteProfile(System.String)
+  commentId: M:DeckSurf.SDK.Util.ConfigurationHelper.DeleteProfile(System.String)
+  id: DeleteProfile(System.String)
+  parent: DeckSurf.SDK.Util.ConfigurationHelper
+  langs:
+  - csharp
+  name: DeleteProfile(String)
+  nameWithType: ConfigurationHelper.DeleteProfile(String)
+  fullName: DeckSurf.SDK.Util.ConfigurationHelper.DeleteProfile(String)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Util
+  summary: Deletes a stored profile and its directory.
+  syntax:
+    content: public static bool DeleteProfile (string name);
+    parameters:
+    - id: name
+      type: System.String
+      description: Name of the profile.
+    return:
+      type: System.Boolean
+      description: <code data-dev-comment-type="c">true</code> when the profile existed and was deleted; otherwise, <code data-dev-comment-type="c">false</code>.
+    content.csharp: public static bool DeleteProfile (string name);
+  overload: DeckSurf.SDK.Util.ConfigurationHelper.DeleteProfile*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code data-dev-comment-type="paramref">name</code> is null, whitespace, or not a valid directory name.
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net10.0
 - uid: DeckSurf.SDK.Util.ConfigurationHelper.GetProfile(System.String)
   commentId: M:DeckSurf.SDK.Util.ConfigurationHelper.GetProfile(System.String)
   id: GetProfile(System.String)
@@ -96,6 +134,105 @@ items:
   - static
   monikers:
   - net10.0
+- uid: DeckSurf.SDK.Util.ConfigurationHelper.GetProfilesRootPath
+  commentId: M:DeckSurf.SDK.Util.ConfigurationHelper.GetProfilesRootPath
+  id: GetProfilesRootPath
+  parent: DeckSurf.SDK.Util.ConfigurationHelper
+  langs:
+  - csharp
+  name: GetProfilesRootPath()
+  nameWithType: ConfigurationHelper.GetProfilesRootPath()
+  fullName: DeckSurf.SDK.Util.ConfigurationHelper.GetProfilesRootPath()
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Util
+  summary: >-
+    Returns the fully qualified path to the root directory that contains all
+
+    DeckSurf configuration profiles.
+  syntax:
+    content: public static string GetProfilesRootPath ();
+    parameters: []
+    return:
+      type: System.String
+      description: Fully qualified path to the profiles root directory.
+    content.csharp: public static string GetProfilesRootPath ();
+  overload: DeckSurf.SDK.Util.ConfigurationHelper.GetProfilesRootPath*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Util.ConfigurationHelper.ListProfiles
+  commentId: M:DeckSurf.SDK.Util.ConfigurationHelper.ListProfiles
+  id: ListProfiles
+  parent: DeckSurf.SDK.Util.ConfigurationHelper
+  langs:
+  - csharp
+  name: ListProfiles()
+  nameWithType: ConfigurationHelper.ListProfiles()
+  fullName: DeckSurf.SDK.Util.ConfigurationHelper.ListProfiles()
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Util
+  summary: Lists the names of all stored profiles that contain a profile file, sorted alphabetically.
+  syntax:
+    content: public static System.Collections.Generic.IReadOnlyList<string> ListProfiles ();
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{System.String}
+      description: The profile names. Empty when no profiles exist.
+    content.csharp: public static System.Collections.Generic.IReadOnlyList<string> ListProfiles ();
+  overload: DeckSurf.SDK.Util.ConfigurationHelper.ListProfiles*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Util.ConfigurationHelper.SaveProfile(System.String,DeckSurf.SDK.Models.ConfigurationProfile)
+  commentId: M:DeckSurf.SDK.Util.ConfigurationHelper.SaveProfile(System.String,DeckSurf.SDK.Models.ConfigurationProfile)
+  id: SaveProfile(System.String,DeckSurf.SDK.Models.ConfigurationProfile)
+  parent: DeckSurf.SDK.Util.ConfigurationHelper
+  langs:
+  - csharp
+  name: SaveProfile(String, ConfigurationProfile)
+  nameWithType: ConfigurationHelper.SaveProfile(String, ConfigurationProfile)
+  fullName: DeckSurf.SDK.Util.ConfigurationHelper.SaveProfile(String, ConfigurationProfile)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Util
+  summary: >-
+    Saves a complete configuration profile, replacing any existing profile with the
+
+    same name. The profile directory is created when it does not exist.
+  syntax:
+    content: public static void SaveProfile (string name, DeckSurf.SDK.Models.ConfigurationProfile profile);
+    parameters:
+    - id: name
+      type: System.String
+      description: Name of the profile.
+    - id: profile
+      type: DeckSurf.SDK.Models.ConfigurationProfile
+      description: The profile to save.
+    content.csharp: public static void SaveProfile (string name, DeckSurf.SDK.Models.ConfigurationProfile profile);
+  overload: DeckSurf.SDK.Util.ConfigurationHelper.SaveProfile*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code data-dev-comment-type="paramref">name</code> is null, whitespace, or not a valid directory name.
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code data-dev-comment-type="paramref">profile</code> is null.
+  modifiers.csharp:
+  - public
+  - static
+  monikers:
+  - net10.0
 - uid: DeckSurf.SDK.Util.ConfigurationHelper.WriteToConfiguration(System.String,System.Int32,DeckSurf.SDK.Models.CommandMapping)
   commentId: M:DeckSurf.SDK.Util.ConfigurationHelper.WriteToConfiguration(System.String,System.Int32,DeckSurf.SDK.Models.CommandMapping)
   id: WriteToConfiguration(System.String,System.Int32,DeckSurf.SDK.Models.CommandMapping)
@@ -147,9 +284,34 @@ references:
   name: Object
   nameWithType: Object
   fullName: System.Object
+- uid: System.ArgumentException
+  isExternal: true
+  name: System.ArgumentException
 - uid: System.InvalidOperationException
   isExternal: true
   name: System.InvalidOperationException
+- uid: System.ArgumentNullException
+  isExternal: true
+  name: System.ArgumentNullException
+- uid: DeckSurf.SDK.Util.ConfigurationHelper.DeleteProfile(System.String)
+  parent: DeckSurf.SDK.Util.ConfigurationHelper
+  isExternal: false
+  name: DeleteProfile(String)
+  nameWithType: ConfigurationHelper.DeleteProfile(String)
+  fullName: DeckSurf.SDK.Util.ConfigurationHelper.DeleteProfile(String)
+  type: method
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: DeckSurf.SDK.Util.ConfigurationHelper.GetProfile(System.String)
   parent: DeckSurf.SDK.Util.ConfigurationHelper
   isExternal: false
@@ -163,18 +325,58 @@ references:
   name: ConfigurationProfile
   nameWithType: ConfigurationProfile
   fullName: DeckSurf.SDK.Models.ConfigurationProfile
-- uid: System.String
-  parent: System
-  isExternal: true
-  name: String
-  nameWithType: String
-  fullName: System.String
 - uid: DeckSurf.SDK.Util.ConfigurationHelper.GetProfilePath(System.String)
   parent: DeckSurf.SDK.Util.ConfigurationHelper
   isExternal: false
   name: GetProfilePath(String)
   nameWithType: ConfigurationHelper.GetProfilePath(String)
   fullName: DeckSurf.SDK.Util.ConfigurationHelper.GetProfilePath(String)
+  type: method
+- uid: DeckSurf.SDK.Util.ConfigurationHelper.GetProfilesRootPath
+  parent: DeckSurf.SDK.Util.ConfigurationHelper
+  isExternal: false
+  name: GetProfilesRootPath()
+  nameWithType: ConfigurationHelper.GetProfilesRootPath()
+  fullName: DeckSurf.SDK.Util.ConfigurationHelper.GetProfilesRootPath()
+  type: method
+- uid: DeckSurf.SDK.Util.ConfigurationHelper.ListProfiles
+  parent: DeckSurf.SDK.Util.ConfigurationHelper
+  isExternal: false
+  name: ListProfiles()
+  nameWithType: ConfigurationHelper.ListProfiles()
+  fullName: DeckSurf.SDK.Util.ConfigurationHelper.ListProfiles()
+  type: method
+- uid: System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  name: IReadOnlyList
+  nameWithType: IReadOnlyList
+  fullName: System.Collections.Generic.IReadOnlyList
+- uid: System.Collections.Generic.IReadOnlyList{System.String}
+  parent: System.Collections.Generic
+  name: IReadOnlyList<String>
+  nameWithType: IReadOnlyList<String>
+  fullName: System.Collections.Generic.IReadOnlyList<System.String>
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: DeckSurf.SDK.Util.ConfigurationHelper.SaveProfile(System.String,DeckSurf.SDK.Models.ConfigurationProfile)
+  parent: DeckSurf.SDK.Util.ConfigurationHelper
+  isExternal: false
+  name: SaveProfile(String, ConfigurationProfile)
+  nameWithType: ConfigurationHelper.SaveProfile(String, ConfigurationProfile)
+  fullName: DeckSurf.SDK.Util.ConfigurationHelper.SaveProfile(String, ConfigurationProfile)
   type: method
 - uid: DeckSurf.SDK.Util.ConfigurationHelper.WriteToConfiguration(System.String,System.Int32,DeckSurf.SDK.Models.CommandMapping)
   parent: DeckSurf.SDK.Util.ConfigurationHelper
@@ -195,6 +397,16 @@ references:
   name: CommandMapping
   nameWithType: CommandMapping
   fullName: DeckSurf.SDK.Models.CommandMapping
+- uid: DeckSurf.SDK.Util.ConfigurationHelper.DeleteProfile*
+  commentId: Overload:DeckSurf.SDK.Util.ConfigurationHelper.DeleteProfile
+  parent: DeckSurf.SDK.Util.ConfigurationHelper
+  isExternal: false
+  name: DeleteProfile
+  nameWithType: ConfigurationHelper.DeleteProfile
+  fullName: DeckSurf.SDK.Util.ConfigurationHelper.DeleteProfile
+  monikers:
+  - net10.0
+  type: method
 - uid: DeckSurf.SDK.Util.ConfigurationHelper.GetProfile*
   commentId: Overload:DeckSurf.SDK.Util.ConfigurationHelper.GetProfile
   parent: DeckSurf.SDK.Util.ConfigurationHelper
@@ -212,6 +424,36 @@ references:
   name: GetProfilePath
   nameWithType: ConfigurationHelper.GetProfilePath
   fullName: DeckSurf.SDK.Util.ConfigurationHelper.GetProfilePath
+  monikers:
+  - net10.0
+  type: method
+- uid: DeckSurf.SDK.Util.ConfigurationHelper.GetProfilesRootPath*
+  commentId: Overload:DeckSurf.SDK.Util.ConfigurationHelper.GetProfilesRootPath
+  parent: DeckSurf.SDK.Util.ConfigurationHelper
+  isExternal: false
+  name: GetProfilesRootPath
+  nameWithType: ConfigurationHelper.GetProfilesRootPath
+  fullName: DeckSurf.SDK.Util.ConfigurationHelper.GetProfilesRootPath
+  monikers:
+  - net10.0
+  type: method
+- uid: DeckSurf.SDK.Util.ConfigurationHelper.ListProfiles*
+  commentId: Overload:DeckSurf.SDK.Util.ConfigurationHelper.ListProfiles
+  parent: DeckSurf.SDK.Util.ConfigurationHelper
+  isExternal: false
+  name: ListProfiles
+  nameWithType: ConfigurationHelper.ListProfiles
+  fullName: DeckSurf.SDK.Util.ConfigurationHelper.ListProfiles
+  monikers:
+  - net10.0
+  type: method
+- uid: DeckSurf.SDK.Util.ConfigurationHelper.SaveProfile*
+  commentId: Overload:DeckSurf.SDK.Util.ConfigurationHelper.SaveProfile
+  parent: DeckSurf.SDK.Util.ConfigurationHelper
+  isExternal: false
+  name: SaveProfile
+  nameWithType: ConfigurationHelper.SaveProfile
+  fullName: DeckSurf.SDK.Util.ConfigurationHelper.SaveProfile
   monikers:
   - net10.0
   type: method

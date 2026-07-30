@@ -1,0 +1,249 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Models.CommandArgumentsJsonConverter
+  commentId: T:DeckSurf.SDK.Models.CommandArgumentsJsonConverter
+  id: CommandArgumentsJsonConverter
+  children:
+  - DeckSurf.SDK.Models.CommandArgumentsJsonConverter.#ctor
+  - DeckSurf.SDK.Models.CommandArgumentsJsonConverter.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)
+  - DeckSurf.SDK.Models.CommandArgumentsJsonConverter.Write(System.Text.Json.Utf8JsonWriter,DeckSurf.SDK.Models.CommandArguments,System.Text.Json.JsonSerializerOptions)
+  langs:
+  - csharp
+  name: CommandArgumentsJsonConverter
+  nameWithType: DeckSurf.SDK.Models.CommandArgumentsJsonConverter
+  fullName: DeckSurf.SDK.Models.CommandArgumentsJsonConverter
+  type: Class
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: >-
+    Serializes <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.CommandArguments"></xref> to and from profile JSON. Reads
+
+    both the canonical object form (<code data-dev-comment-type="c">{ "scene": "Gameplay" }</code>) and the
+
+    legacy comma-separated string form; scalar values (numbers, booleans, null)
+
+    are coerced to their string representation so hand-written profiles can use
+
+    natural JSON literals. Writes the object form, except for instances parsed
+
+    from a legacy string, which are written back verbatim so untouched profiles
+
+    round-trip without modification.
+  syntax:
+    content: 'public sealed class CommandArgumentsJsonConverter : System.Text.Json.Serialization.JsonConverter<DeckSurf.SDK.Models.CommandArguments>'
+    content.csharp: 'public sealed class CommandArgumentsJsonConverter : System.Text.Json.Serialization.JsonConverter<DeckSurf.SDK.Models.CommandArguments>'
+  inheritance:
+  - System.Text.Json.Serialization.JsonConverter`1
+  implements: []
+  inheritedMembers: []
+  modifiers.csharp:
+  - public
+  - sealed
+  monikers:
+  - net10.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net10.0
+- uid: DeckSurf.SDK.Models.CommandArgumentsJsonConverter.#ctor
+  commentId: M:DeckSurf.SDK.Models.CommandArgumentsJsonConverter.#ctor
+  id: '#ctor'
+  parent: DeckSurf.SDK.Models.CommandArgumentsJsonConverter
+  langs:
+  - csharp
+  name: CommandArgumentsJsonConverter()
+  nameWithType: CommandArgumentsJsonConverter.CommandArgumentsJsonConverter()
+  fullName: DeckSurf.SDK.Models.CommandArgumentsJsonConverter.CommandArgumentsJsonConverter()
+  type: Constructor
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  syntax:
+    content: public CommandArgumentsJsonConverter ();
+    parameters: []
+    content.csharp: public CommandArgumentsJsonConverter ();
+  overload: DeckSurf.SDK.Models.CommandArgumentsJsonConverter.#ctor*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.CommandArgumentsJsonConverter.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)
+  commentId: M:DeckSurf.SDK.Models.CommandArgumentsJsonConverter.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)
+  id: Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)
+  parent: DeckSurf.SDK.Models.CommandArgumentsJsonConverter
+  langs:
+  - csharp
+  name: Read(Utf8JsonReader, Type, JsonSerializerOptions)
+  nameWithType: CommandArgumentsJsonConverter.Read(Utf8JsonReader, Type, JsonSerializerOptions)
+  fullName: DeckSurf.SDK.Models.CommandArgumentsJsonConverter.Read(Utf8JsonReader, Type, JsonSerializerOptions)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  syntax:
+    content: public override DeckSurf.SDK.Models.CommandArguments Read (ref System.Text.Json.Utf8JsonReader reader, Type typeToConvert, System.Text.Json.JsonSerializerOptions options);
+    parameters:
+    - id: reader
+      type: System.Text.Json.Utf8JsonReader
+      description: ''
+    - id: typeToConvert
+      type: System.Type
+      description: ''
+    - id: options
+      type: System.Text.Json.JsonSerializerOptions
+      description: ''
+    return:
+      type: DeckSurf.SDK.Models.CommandArguments
+      description: ''
+    content.csharp: public override DeckSurf.SDK.Models.CommandArguments Read (ref System.Text.Json.Utf8JsonReader reader, Type typeToConvert, System.Text.Json.JsonSerializerOptions options);
+  overload: DeckSurf.SDK.Models.CommandArgumentsJsonConverter.Read*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.CommandArgumentsJsonConverter.Write(System.Text.Json.Utf8JsonWriter,DeckSurf.SDK.Models.CommandArguments,System.Text.Json.JsonSerializerOptions)
+  commentId: M:DeckSurf.SDK.Models.CommandArgumentsJsonConverter.Write(System.Text.Json.Utf8JsonWriter,DeckSurf.SDK.Models.CommandArguments,System.Text.Json.JsonSerializerOptions)
+  id: Write(System.Text.Json.Utf8JsonWriter,DeckSurf.SDK.Models.CommandArguments,System.Text.Json.JsonSerializerOptions)
+  parent: DeckSurf.SDK.Models.CommandArgumentsJsonConverter
+  langs:
+  - csharp
+  name: Write(Utf8JsonWriter, CommandArguments, JsonSerializerOptions)
+  nameWithType: CommandArgumentsJsonConverter.Write(Utf8JsonWriter, CommandArguments, JsonSerializerOptions)
+  fullName: DeckSurf.SDK.Models.CommandArgumentsJsonConverter.Write(Utf8JsonWriter, CommandArguments, JsonSerializerOptions)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  syntax:
+    content: public override void Write (System.Text.Json.Utf8JsonWriter writer, DeckSurf.SDK.Models.CommandArguments value, System.Text.Json.JsonSerializerOptions options);
+    parameters:
+    - id: writer
+      type: System.Text.Json.Utf8JsonWriter
+      description: ''
+    - id: value
+      type: DeckSurf.SDK.Models.CommandArguments
+      description: ''
+    - id: options
+      type: System.Text.Json.JsonSerializerOptions
+      description: ''
+    content.csharp: public override void Write (System.Text.Json.Utf8JsonWriter writer, DeckSurf.SDK.Models.CommandArguments value, System.Text.Json.JsonSerializerOptions options);
+  overload: DeckSurf.SDK.Models.CommandArgumentsJsonConverter.Write*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+references:
+- uid: DeckSurf.SDK.Models
+  commentId: N:DeckSurf.SDK.Models
+  isExternal: false
+  name: DeckSurf.SDK.Models
+  nameWithType: DeckSurf.SDK.Models
+  fullName: DeckSurf.SDK.Models
+  type: namespace
+- uid: System.Text.Json.Serialization.JsonConverter`1
+  isExternal: true
+  name: JsonConverter
+  nameWithType: JsonConverter
+  fullName: System.Text.Json.Serialization.JsonConverter
+- uid: DeckSurf.SDK.Models.CommandArguments
+  name: CommandArguments
+  nameWithType: CommandArguments
+  fullName: DeckSurf.SDK.Models.CommandArguments
+- uid: System.Text.Json.Serialization.JsonConverter{DeckSurf.SDK.Models.CommandArguments}
+  parent: System.Text.Json.Serialization
+  name: JsonConverter<CommandArguments>
+  nameWithType: JsonConverter<CommandArguments>
+  fullName: System.Text.Json.Serialization.JsonConverter<DeckSurf.SDK.Models.CommandArguments>
+  spec.csharp:
+  - uid: System.Text.Json.Serialization.JsonConverter`1
+    name: JsonConverter
+    nameWithType: JsonConverter
+    fullName: System.Text.Json.Serialization.JsonConverter
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: DeckSurf.SDK.Models.CommandArguments
+    name: CommandArguments
+    nameWithType: CommandArguments
+    fullName: DeckSurf.SDK.Models.CommandArguments
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: DeckSurf.SDK.Models.CommandArgumentsJsonConverter.#ctor
+  parent: DeckSurf.SDK.Models.CommandArgumentsJsonConverter
+  isExternal: false
+  name: CommandArgumentsJsonConverter()
+  nameWithType: CommandArgumentsJsonConverter.CommandArgumentsJsonConverter()
+  fullName: DeckSurf.SDK.Models.CommandArgumentsJsonConverter.CommandArgumentsJsonConverter()
+  type: constructor
+- uid: DeckSurf.SDK.Models.CommandArgumentsJsonConverter.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)
+  parent: DeckSurf.SDK.Models.CommandArgumentsJsonConverter
+  isExternal: false
+  name: Read(Utf8JsonReader, Type, JsonSerializerOptions)
+  nameWithType: CommandArgumentsJsonConverter.Read(Utf8JsonReader, Type, JsonSerializerOptions)
+  fullName: DeckSurf.SDK.Models.CommandArgumentsJsonConverter.Read(Utf8JsonReader, Type, JsonSerializerOptions)
+  type: method
+- uid: System.Text.Json.Utf8JsonReader
+  parent: System.Text.Json
+  isExternal: true
+  name: Utf8JsonReader
+  nameWithType: Utf8JsonReader
+  fullName: System.Text.Json.Utf8JsonReader
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Text.Json.JsonSerializerOptions
+  parent: System.Text.Json
+  isExternal: true
+  name: JsonSerializerOptions
+  nameWithType: JsonSerializerOptions
+  fullName: System.Text.Json.JsonSerializerOptions
+- uid: DeckSurf.SDK.Models.CommandArgumentsJsonConverter.Write(System.Text.Json.Utf8JsonWriter,DeckSurf.SDK.Models.CommandArguments,System.Text.Json.JsonSerializerOptions)
+  parent: DeckSurf.SDK.Models.CommandArgumentsJsonConverter
+  isExternal: false
+  name: Write(Utf8JsonWriter, CommandArguments, JsonSerializerOptions)
+  nameWithType: CommandArgumentsJsonConverter.Write(Utf8JsonWriter, CommandArguments, JsonSerializerOptions)
+  fullName: DeckSurf.SDK.Models.CommandArgumentsJsonConverter.Write(Utf8JsonWriter, CommandArguments, JsonSerializerOptions)
+  type: method
+- uid: System.Text.Json.Utf8JsonWriter
+  parent: System.Text.Json
+  isExternal: true
+  name: Utf8JsonWriter
+  nameWithType: Utf8JsonWriter
+  fullName: System.Text.Json.Utf8JsonWriter
+- uid: DeckSurf.SDK.Models.CommandArgumentsJsonConverter.#ctor*
+  commentId: Overload:DeckSurf.SDK.Models.CommandArgumentsJsonConverter.#ctor
+  parent: DeckSurf.SDK.Models.CommandArgumentsJsonConverter
+  isExternal: false
+  name: CommandArgumentsJsonConverter
+  nameWithType: CommandArgumentsJsonConverter.CommandArgumentsJsonConverter
+  fullName: DeckSurf.SDK.Models.CommandArgumentsJsonConverter.CommandArgumentsJsonConverter
+  monikers:
+  - net10.0
+  type: constructor
+- uid: DeckSurf.SDK.Models.CommandArgumentsJsonConverter.Read*
+  commentId: Overload:DeckSurf.SDK.Models.CommandArgumentsJsonConverter.Read
+  parent: DeckSurf.SDK.Models.CommandArgumentsJsonConverter
+  isExternal: false
+  name: Read
+  nameWithType: CommandArgumentsJsonConverter.Read
+  fullName: DeckSurf.SDK.Models.CommandArgumentsJsonConverter.Read
+  monikers:
+  - net10.0
+  type: method
+- uid: DeckSurf.SDK.Models.CommandArgumentsJsonConverter.Write*
+  commentId: Overload:DeckSurf.SDK.Models.CommandArgumentsJsonConverter.Write
+  parent: DeckSurf.SDK.Models.CommandArgumentsJsonConverter
+  isExternal: false
+  name: Write
+  nameWithType: CommandArgumentsJsonConverter.Write
+  fullName: DeckSurf.SDK.Models.CommandArgumentsJsonConverter.Write
+  monikers:
+  - net10.0
+  type: method

@@ -5,8 +5,10 @@ items:
   id: DeckSurf.SDK.Interfaces
   children:
   - DeckSurf.SDK.Interfaces.IConnectedDevice
+  - DeckSurf.SDK.Interfaces.IDeckSurfChoiceProvider
   - DeckSurf.SDK.Interfaces.IDeckSurfCommand
   - DeckSurf.SDK.Interfaces.IDeckSurfPlugin
+  - DeckSurf.SDK.Interfaces.IDeckSurfStatusProvider
   langs:
   - csharp
   name: DeckSurf.SDK.Interfaces
@@ -24,6 +26,14 @@ references:
   nameWithType: DeckSurf.SDK.Interfaces.IConnectedDevice
   fullName: DeckSurf.SDK.Interfaces.IConnectedDevice
   type: interface
+- uid: DeckSurf.SDK.Interfaces.IDeckSurfChoiceProvider
+  commentId: T:DeckSurf.SDK.Interfaces.IDeckSurfChoiceProvider
+  parent: DeckSurf.SDK.Interfaces
+  isExternal: false
+  name: IDeckSurfChoiceProvider
+  nameWithType: DeckSurf.SDK.Interfaces.IDeckSurfChoiceProvider
+  fullName: DeckSurf.SDK.Interfaces.IDeckSurfChoiceProvider
+  type: interface
 - uid: DeckSurf.SDK.Interfaces.IDeckSurfCommand
   commentId: T:DeckSurf.SDK.Interfaces.IDeckSurfCommand
   parent: DeckSurf.SDK.Interfaces
@@ -39,4 +49,12 @@ references:
   name: IDeckSurfPlugin
   nameWithType: DeckSurf.SDK.Interfaces.IDeckSurfPlugin
   fullName: DeckSurf.SDK.Interfaces.IDeckSurfPlugin
+  type: interface
+- uid: DeckSurf.SDK.Interfaces.IDeckSurfStatusProvider
+  commentId: T:DeckSurf.SDK.Interfaces.IDeckSurfStatusProvider
+  parent: DeckSurf.SDK.Interfaces
+  isExternal: false
+  name: IDeckSurfStatusProvider
+  nameWithType: DeckSurf.SDK.Interfaces.IDeckSurfStatusProvider
+  fullName: DeckSurf.SDK.Interfaces.IDeckSurfStatusProvider
   type: interface

@@ -1,0 +1,221 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Models.KeyImageSetEventArgs
+  commentId: T:DeckSurf.SDK.Models.KeyImageSetEventArgs
+  id: KeyImageSetEventArgs
+  children:
+  - DeckSurf.SDK.Models.KeyImageSetEventArgs.#ctor(System.Int32,System.Byte[])
+  - DeckSurf.SDK.Models.KeyImageSetEventArgs.Image
+  - DeckSurf.SDK.Models.KeyImageSetEventArgs.KeyId
+  langs:
+  - csharp
+  name: KeyImageSetEventArgs
+  nameWithType: DeckSurf.SDK.Models.KeyImageSetEventArgs
+  fullName: DeckSurf.SDK.Models.KeyImageSetEventArgs
+  type: Class
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: >-
+    Event arguments describing an image written to a Stream Deck key. Lets
+
+    hosts observe what the hardware displays (for example to mirror keys in
+
+    a live on-screen preview) without intercepting device I/O.
+  remarks: Initializes a new instance of the <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.KeyImageSetEventArgs"></xref> class.
+  syntax:
+    content: 'public class KeyImageSetEventArgs : EventArgs'
+    content.csharp: 'public class KeyImageSetEventArgs : EventArgs'
+  inheritance:
+  - System.EventArgs
+  implements: []
+  inheritedMembers: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net10.0
+- uid: DeckSurf.SDK.Models.KeyImageSetEventArgs.#ctor(System.Int32,System.Byte[])
+  commentId: M:DeckSurf.SDK.Models.KeyImageSetEventArgs.#ctor(System.Int32,System.Byte[])
+  id: '#ctor(System.Int32,System.Byte[])'
+  parent: DeckSurf.SDK.Models.KeyImageSetEventArgs
+  langs:
+  - csharp
+  name: KeyImageSetEventArgs(Int32, Byte[])
+  nameWithType: KeyImageSetEventArgs.KeyImageSetEventArgs(Int32, Byte[])
+  fullName: DeckSurf.SDK.Models.KeyImageSetEventArgs.KeyImageSetEventArgs(Int32, Byte[])
+  type: Constructor
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: >-
+    Event arguments describing an image written to a Stream Deck key. Lets
+
+    hosts observe what the hardware displays (for example to mirror keys in
+
+    a live on-screen preview) without intercepting device I/O.
+  remarks: Initializes a new instance of the <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.KeyImageSetEventArgs"></xref> class.
+  syntax:
+    content: public KeyImageSetEventArgs (int keyId, byte[] image);
+    parameters:
+    - id: keyId
+      type: System.Int32
+      description: Numeric ID of the key that was set.
+    - id: image
+      type: System.Byte[]
+      description: The image content exactly as passed to the set operation, before any device-specific resizing or encoding.
+    content.csharp: public KeyImageSetEventArgs (int keyId, byte[] image);
+  overload: DeckSurf.SDK.Models.KeyImageSetEventArgs.#ctor*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.KeyImageSetEventArgs.Image
+  commentId: P:DeckSurf.SDK.Models.KeyImageSetEventArgs.Image
+  id: Image
+  parent: DeckSurf.SDK.Models.KeyImageSetEventArgs
+  langs:
+  - csharp
+  name: Image
+  nameWithType: KeyImageSetEventArgs.Image
+  fullName: DeckSurf.SDK.Models.KeyImageSetEventArgs.Image
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: >-
+    Gets the image content exactly as passed to the set operation, before
+
+    any device-specific resizing or encoding.
+  syntax:
+    content: public byte[] Image { get; }
+    return:
+      type: System.Byte[]
+      description: ''
+    content.csharp: public byte[] Image { get; }
+  overload: DeckSurf.SDK.Models.KeyImageSetEventArgs.Image*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.KeyImageSetEventArgs.KeyId
+  commentId: P:DeckSurf.SDK.Models.KeyImageSetEventArgs.KeyId
+  id: KeyId
+  parent: DeckSurf.SDK.Models.KeyImageSetEventArgs
+  langs:
+  - csharp
+  name: KeyId
+  nameWithType: KeyImageSetEventArgs.KeyId
+  fullName: DeckSurf.SDK.Models.KeyImageSetEventArgs.KeyId
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: Gets the numeric ID of the key that was set.
+  syntax:
+    content: public int KeyId { get; }
+    return:
+      type: System.Int32
+      description: ''
+    content.csharp: public int KeyId { get; }
+  overload: DeckSurf.SDK.Models.KeyImageSetEventArgs.KeyId*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  monikers:
+  - net10.0
+references:
+- uid: DeckSurf.SDK.Models
+  commentId: N:DeckSurf.SDK.Models
+  isExternal: false
+  name: DeckSurf.SDK.Models
+  nameWithType: DeckSurf.SDK.Models
+  fullName: DeckSurf.SDK.Models
+  type: namespace
+- uid: System.EventArgs
+  parent: System
+  isExternal: true
+  name: EventArgs
+  nameWithType: EventArgs
+  fullName: System.EventArgs
+- uid: DeckSurf.SDK.Models.KeyImageSetEventArgs.#ctor(System.Int32,System.Byte[])
+  parent: DeckSurf.SDK.Models.KeyImageSetEventArgs
+  isExternal: false
+  name: KeyImageSetEventArgs(Int32, Byte[])
+  nameWithType: KeyImageSetEventArgs.KeyImageSetEventArgs(Int32, Byte[])
+  fullName: DeckSurf.SDK.Models.KeyImageSetEventArgs.KeyImageSetEventArgs(Int32, Byte[])
+  type: constructor
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Byte
+  isExternal: true
+  name: Byte
+  nameWithType: Byte
+  fullName: System.Byte
+- uid: System.Byte[]
+  parent: System
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: DeckSurf.SDK.Models.KeyImageSetEventArgs.Image
+  parent: DeckSurf.SDK.Models.KeyImageSetEventArgs
+  isExternal: false
+  name: Image
+  nameWithType: KeyImageSetEventArgs.Image
+  fullName: DeckSurf.SDK.Models.KeyImageSetEventArgs.Image
+  type: property
+- uid: DeckSurf.SDK.Models.KeyImageSetEventArgs.KeyId
+  parent: DeckSurf.SDK.Models.KeyImageSetEventArgs
+  isExternal: false
+  name: KeyId
+  nameWithType: KeyImageSetEventArgs.KeyId
+  fullName: DeckSurf.SDK.Models.KeyImageSetEventArgs.KeyId
+  type: property
+- uid: DeckSurf.SDK.Models.KeyImageSetEventArgs.#ctor*
+  commentId: Overload:DeckSurf.SDK.Models.KeyImageSetEventArgs.#ctor
+  parent: DeckSurf.SDK.Models.KeyImageSetEventArgs
+  isExternal: false
+  name: KeyImageSetEventArgs
+  nameWithType: KeyImageSetEventArgs.KeyImageSetEventArgs
+  fullName: DeckSurf.SDK.Models.KeyImageSetEventArgs.KeyImageSetEventArgs
+  monikers:
+  - net10.0
+  type: constructor
+- uid: DeckSurf.SDK.Models.KeyImageSetEventArgs.Image*
+  commentId: Overload:DeckSurf.SDK.Models.KeyImageSetEventArgs.Image
+  parent: DeckSurf.SDK.Models.KeyImageSetEventArgs
+  isExternal: false
+  name: Image
+  nameWithType: KeyImageSetEventArgs.Image
+  fullName: DeckSurf.SDK.Models.KeyImageSetEventArgs.Image
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Models.KeyImageSetEventArgs.KeyId*
+  commentId: Overload:DeckSurf.SDK.Models.KeyImageSetEventArgs.KeyId
+  parent: DeckSurf.SDK.Models.KeyImageSetEventArgs
+  isExternal: false
+  name: KeyId
+  nameWithType: KeyImageSetEventArgs.KeyId
+  fullName: DeckSurf.SDK.Models.KeyImageSetEventArgs.KeyId
+  monikers:
+  - net10.0
+  type: property

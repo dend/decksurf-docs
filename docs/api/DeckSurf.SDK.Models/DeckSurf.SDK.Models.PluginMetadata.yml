@@ -7,6 +7,7 @@ items:
   - DeckSurf.SDK.Models.PluginMetadata.#ctor
   - DeckSurf.SDK.Models.PluginMetadata.Author
   - DeckSurf.SDK.Models.PluginMetadata.Id
+  - DeckSurf.SDK.Models.PluginMetadata.Name
   - DeckSurf.SDK.Models.PluginMetadata.Version
   - DeckSurf.SDK.Models.PluginMetadata.Website
   langs:
@@ -112,6 +113,37 @@ items:
   - set
   monikers:
   - net10.0
+- uid: DeckSurf.SDK.Models.PluginMetadata.Name
+  commentId: P:DeckSurf.SDK.Models.PluginMetadata.Name
+  id: Name
+  parent: DeckSurf.SDK.Models.PluginMetadata
+  langs:
+  - csharp
+  name: Name
+  nameWithType: PluginMetadata.Name
+  fullName: DeckSurf.SDK.Models.PluginMetadata.Name
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: >-
+    Gets or sets the human-readable display name of the plugin. Consumers fall back
+
+    to <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.PluginMetadata.Id"></xref> when this is not set.
+  syntax:
+    content: public string Name { get; set; }
+    return:
+      type: System.String
+      description: ''
+    content.csharp: public string Name { get; set; }
+  overload: DeckSurf.SDK.Models.PluginMetadata.Name*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  monikers:
+  - net10.0
 - uid: DeckSurf.SDK.Models.PluginMetadata.Version
   commentId: P:DeckSurf.SDK.Models.PluginMetadata.Version
   id: Version
@@ -209,6 +241,13 @@ references:
   nameWithType: PluginMetadata.Id
   fullName: DeckSurf.SDK.Models.PluginMetadata.Id
   type: property
+- uid: DeckSurf.SDK.Models.PluginMetadata.Name
+  parent: DeckSurf.SDK.Models.PluginMetadata
+  isExternal: false
+  name: Name
+  nameWithType: PluginMetadata.Name
+  fullName: DeckSurf.SDK.Models.PluginMetadata.Name
+  type: property
 - uid: DeckSurf.SDK.Models.PluginMetadata.Version
   parent: DeckSurf.SDK.Models.PluginMetadata
   isExternal: false
@@ -250,6 +289,16 @@ references:
   name: Id
   nameWithType: PluginMetadata.Id
   fullName: DeckSurf.SDK.Models.PluginMetadata.Id
+  monikers:
+  - net10.0
+  type: property
+- uid: DeckSurf.SDK.Models.PluginMetadata.Name*
+  commentId: Overload:DeckSurf.SDK.Models.PluginMetadata.Name
+  parent: DeckSurf.SDK.Models.PluginMetadata
+  isExternal: false
+  name: Name
+  nameWithType: PluginMetadata.Name
+  fullName: DeckSurf.SDK.Models.PluginMetadata.Name
   monikers:
   - net10.0
   type: property
