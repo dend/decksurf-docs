@@ -1,0 +1,273 @@
+### YamlMime:ManagedReference
+items:
+- uid: DeckSurf.SDK.Models.DeviceColorJsonConverter
+  commentId: T:DeckSurf.SDK.Models.DeviceColorJsonConverter
+  id: DeviceColorJsonConverter
+  children:
+  - DeckSurf.SDK.Models.DeviceColorJsonConverter.#ctor
+  - DeckSurf.SDK.Models.DeviceColorJsonConverter.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)
+  - DeckSurf.SDK.Models.DeviceColorJsonConverter.Write(System.Text.Json.Utf8JsonWriter,System.Nullable{DeckSurf.SDK.Models.DeviceColor},System.Text.Json.JsonSerializerOptions)
+  langs:
+  - csharp
+  name: DeviceColorJsonConverter
+  nameWithType: DeckSurf.SDK.Models.DeviceColorJsonConverter
+  fullName: DeckSurf.SDK.Models.DeviceColorJsonConverter
+  type: Class
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: >-
+    Serializes an optional <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.DeviceColor"></xref> as a <code data-dev-comment-type="c">#RRGGBB</code> hex string,
+
+    the form profile files use for the touch key backlight color.
+  syntax:
+    content: 'public class DeviceColorJsonConverter : System.Text.Json.Serialization.JsonConverter<DeckSurf.SDK.Models.DeviceColor?>'
+    content.csharp: 'public class DeviceColorJsonConverter : System.Text.Json.Serialization.JsonConverter<DeckSurf.SDK.Models.DeviceColor?>'
+  inheritance:
+  - System.Text.Json.Serialization.JsonConverter`1
+  implements: []
+  inheritedMembers: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+  _op_AssemblyMonikerMapping:
+    DeckSurf.SDK:
+    - net10.0
+- uid: DeckSurf.SDK.Models.DeviceColorJsonConverter.#ctor
+  commentId: M:DeckSurf.SDK.Models.DeviceColorJsonConverter.#ctor
+  id: '#ctor'
+  parent: DeckSurf.SDK.Models.DeviceColorJsonConverter
+  langs:
+  - csharp
+  name: DeviceColorJsonConverter()
+  nameWithType: DeviceColorJsonConverter.DeviceColorJsonConverter()
+  fullName: DeckSurf.SDK.Models.DeviceColorJsonConverter.DeviceColorJsonConverter()
+  type: Constructor
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  syntax:
+    content: public DeviceColorJsonConverter ();
+    parameters: []
+    content.csharp: public DeviceColorJsonConverter ();
+  overload: DeckSurf.SDK.Models.DeviceColorJsonConverter.#ctor*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.DeviceColorJsonConverter.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)
+  commentId: M:DeckSurf.SDK.Models.DeviceColorJsonConverter.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)
+  id: Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)
+  parent: DeckSurf.SDK.Models.DeviceColorJsonConverter
+  langs:
+  - csharp
+  name: Read(Utf8JsonReader, Type, JsonSerializerOptions)
+  nameWithType: DeviceColorJsonConverter.Read(Utf8JsonReader, Type, JsonSerializerOptions)
+  fullName: DeckSurf.SDK.Models.DeviceColorJsonConverter.Read(Utf8JsonReader, Type, JsonSerializerOptions)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  syntax:
+    content: public override DeckSurf.SDK.Models.DeviceColor? Read (ref System.Text.Json.Utf8JsonReader reader, Type typeToConvert, System.Text.Json.JsonSerializerOptions options);
+    parameters:
+    - id: reader
+      type: System.Text.Json.Utf8JsonReader
+      description: ''
+    - id: typeToConvert
+      type: System.Type
+      description: ''
+    - id: options
+      type: System.Text.Json.JsonSerializerOptions
+      description: ''
+    return:
+      type: System.Nullable{DeckSurf.SDK.Models.DeviceColor}
+      description: ''
+    content.csharp: public override DeckSurf.SDK.Models.DeviceColor? Read (ref System.Text.Json.Utf8JsonReader reader, Type typeToConvert, System.Text.Json.JsonSerializerOptions options);
+  overload: DeckSurf.SDK.Models.DeviceColorJsonConverter.Read*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.DeviceColorJsonConverter.Write(System.Text.Json.Utf8JsonWriter,System.Nullable{DeckSurf.SDK.Models.DeviceColor},System.Text.Json.JsonSerializerOptions)
+  commentId: M:DeckSurf.SDK.Models.DeviceColorJsonConverter.Write(System.Text.Json.Utf8JsonWriter,System.Nullable{DeckSurf.SDK.Models.DeviceColor},System.Text.Json.JsonSerializerOptions)
+  id: Write(System.Text.Json.Utf8JsonWriter,System.Nullable{DeckSurf.SDK.Models.DeviceColor},System.Text.Json.JsonSerializerOptions)
+  parent: DeckSurf.SDK.Models.DeviceColorJsonConverter
+  langs:
+  - csharp
+  name: Write(Utf8JsonWriter, Nullable<DeviceColor>, JsonSerializerOptions)
+  nameWithType: DeviceColorJsonConverter.Write(Utf8JsonWriter, Nullable<DeviceColor>, JsonSerializerOptions)
+  fullName: DeckSurf.SDK.Models.DeviceColorJsonConverter.Write(Utf8JsonWriter, Nullable<DeviceColor>, JsonSerializerOptions)
+  type: Method
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  syntax:
+    content: public override void Write (System.Text.Json.Utf8JsonWriter writer, DeckSurf.SDK.Models.DeviceColor? value, System.Text.Json.JsonSerializerOptions options);
+    parameters:
+    - id: writer
+      type: System.Text.Json.Utf8JsonWriter
+      description: ''
+    - id: value
+      type: System.Nullable{DeckSurf.SDK.Models.DeviceColor}
+      description: ''
+    - id: options
+      type: System.Text.Json.JsonSerializerOptions
+      description: ''
+    content.csharp: public override void Write (System.Text.Json.Utf8JsonWriter writer, DeckSurf.SDK.Models.DeviceColor? value, System.Text.Json.JsonSerializerOptions options);
+  overload: DeckSurf.SDK.Models.DeviceColorJsonConverter.Write*
+  exceptions: []
+  modifiers.csharp:
+  - public
+  monikers:
+  - net10.0
+references:
+- uid: DeckSurf.SDK.Models
+  commentId: N:DeckSurf.SDK.Models
+  isExternal: false
+  name: DeckSurf.SDK.Models
+  nameWithType: DeckSurf.SDK.Models
+  fullName: DeckSurf.SDK.Models
+  type: namespace
+- uid: System.Text.Json.Serialization.JsonConverter`1
+  isExternal: true
+  name: JsonConverter
+  nameWithType: JsonConverter
+  fullName: System.Text.Json.Serialization.JsonConverter
+- uid: System.Nullable`1
+  isExternal: true
+  name: Nullable
+  nameWithType: Nullable
+  fullName: System.Nullable
+- uid: DeckSurf.SDK.Models.DeviceColor
+  name: DeviceColor
+  nameWithType: DeviceColor
+  fullName: DeckSurf.SDK.Models.DeviceColor
+- uid: System.Text.Json.Serialization.JsonConverter{System.Nullable{DeckSurf.SDK.Models.DeviceColor}}
+  parent: System.Text.Json.Serialization
+  name: JsonConverter<Nullable<DeviceColor>>
+  nameWithType: JsonConverter<Nullable<DeviceColor>>
+  fullName: System.Text.Json.Serialization.JsonConverter<System.Nullable<DeckSurf.SDK.Models.DeviceColor>>
+  spec.csharp:
+  - uid: System.Text.Json.Serialization.JsonConverter`1
+    name: JsonConverter
+    nameWithType: JsonConverter
+    fullName: System.Text.Json.Serialization.JsonConverter
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: DeckSurf.SDK.Models.DeviceColor
+    name: DeviceColor
+    nameWithType: DeviceColor
+    fullName: DeckSurf.SDK.Models.DeviceColor
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: DeckSurf.SDK.Models.DeviceColorJsonConverter.#ctor
+  parent: DeckSurf.SDK.Models.DeviceColorJsonConverter
+  isExternal: false
+  name: DeviceColorJsonConverter()
+  nameWithType: DeviceColorJsonConverter.DeviceColorJsonConverter()
+  fullName: DeckSurf.SDK.Models.DeviceColorJsonConverter.DeviceColorJsonConverter()
+  type: constructor
+- uid: DeckSurf.SDK.Models.DeviceColorJsonConverter.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)
+  parent: DeckSurf.SDK.Models.DeviceColorJsonConverter
+  isExternal: false
+  name: Read(Utf8JsonReader, Type, JsonSerializerOptions)
+  nameWithType: DeviceColorJsonConverter.Read(Utf8JsonReader, Type, JsonSerializerOptions)
+  fullName: DeckSurf.SDK.Models.DeviceColorJsonConverter.Read(Utf8JsonReader, Type, JsonSerializerOptions)
+  type: method
+- uid: System.Nullable{DeckSurf.SDK.Models.DeviceColor}
+  parent: System
+  name: Nullable<DeviceColor>
+  nameWithType: Nullable<DeviceColor>
+  fullName: System.Nullable<DeckSurf.SDK.Models.DeviceColor>
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: DeckSurf.SDK.Models.DeviceColor
+    name: DeviceColor
+    nameWithType: DeviceColor
+    fullName: DeckSurf.SDK.Models.DeviceColor
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+- uid: System.Text.Json.Utf8JsonReader
+  parent: System.Text.Json
+  isExternal: true
+  name: Utf8JsonReader
+  nameWithType: Utf8JsonReader
+  fullName: System.Text.Json.Utf8JsonReader
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Text.Json.JsonSerializerOptions
+  parent: System.Text.Json
+  isExternal: true
+  name: JsonSerializerOptions
+  nameWithType: JsonSerializerOptions
+  fullName: System.Text.Json.JsonSerializerOptions
+- uid: DeckSurf.SDK.Models.DeviceColorJsonConverter.Write(System.Text.Json.Utf8JsonWriter,System.Nullable{DeckSurf.SDK.Models.DeviceColor},System.Text.Json.JsonSerializerOptions)
+  parent: DeckSurf.SDK.Models.DeviceColorJsonConverter
+  isExternal: false
+  name: Write(Utf8JsonWriter, Nullable<DeviceColor>, JsonSerializerOptions)
+  nameWithType: DeviceColorJsonConverter.Write(Utf8JsonWriter, Nullable<DeviceColor>, JsonSerializerOptions)
+  fullName: DeckSurf.SDK.Models.DeviceColorJsonConverter.Write(Utf8JsonWriter, Nullable<DeviceColor>, JsonSerializerOptions)
+  type: method
+- uid: System.Text.Json.Utf8JsonWriter
+  parent: System.Text.Json
+  isExternal: true
+  name: Utf8JsonWriter
+  nameWithType: Utf8JsonWriter
+  fullName: System.Text.Json.Utf8JsonWriter
+- uid: DeckSurf.SDK.Models.DeviceColorJsonConverter.#ctor*
+  commentId: Overload:DeckSurf.SDK.Models.DeviceColorJsonConverter.#ctor
+  parent: DeckSurf.SDK.Models.DeviceColorJsonConverter
+  isExternal: false
+  name: DeviceColorJsonConverter
+  nameWithType: DeviceColorJsonConverter.DeviceColorJsonConverter
+  fullName: DeckSurf.SDK.Models.DeviceColorJsonConverter.DeviceColorJsonConverter
+  monikers:
+  - net10.0
+  type: constructor
+- uid: DeckSurf.SDK.Models.DeviceColorJsonConverter.Read*
+  commentId: Overload:DeckSurf.SDK.Models.DeviceColorJsonConverter.Read
+  parent: DeckSurf.SDK.Models.DeviceColorJsonConverter
+  isExternal: false
+  name: Read
+  nameWithType: DeviceColorJsonConverter.Read
+  fullName: DeckSurf.SDK.Models.DeviceColorJsonConverter.Read
+  monikers:
+  - net10.0
+  type: method
+- uid: DeckSurf.SDK.Models.DeviceColorJsonConverter.Write*
+  commentId: Overload:DeckSurf.SDK.Models.DeviceColorJsonConverter.Write
+  parent: DeckSurf.SDK.Models.DeviceColorJsonConverter
+  isExternal: false
+  name: Write
+  nameWithType: DeviceColorJsonConverter.Write
+  fullName: DeckSurf.SDK.Models.DeviceColorJsonConverter.Write
+  monikers:
+  - net10.0
+  type: method

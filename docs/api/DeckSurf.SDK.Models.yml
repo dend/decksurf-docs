@@ -20,6 +20,7 @@ items:
   - DeckSurf.SDK.Models.ConfigurationProfile
   - DeckSurf.SDK.Models.ConnectedDevice
   - DeckSurf.SDK.Models.DeviceColor
+  - DeckSurf.SDK.Models.DeviceColorJsonConverter
   - DeckSurf.SDK.Models.DeviceErrorCategory
   - DeckSurf.SDK.Models.DeviceErrorEventArgs
   - DeckSurf.SDK.Models.DeviceImageFormat
@@ -171,6 +172,14 @@ references:
   nameWithType: DeckSurf.SDK.Models.DeviceColor
   fullName: DeckSurf.SDK.Models.DeviceColor
   type: struct
+- uid: DeckSurf.SDK.Models.DeviceColorJsonConverter
+  commentId: T:DeckSurf.SDK.Models.DeviceColorJsonConverter
+  parent: DeckSurf.SDK.Models
+  isExternal: false
+  name: DeviceColorJsonConverter
+  nameWithType: DeckSurf.SDK.Models.DeviceColorJsonConverter
+  fullName: DeckSurf.SDK.Models.DeviceColorJsonConverter
+  type: class
 - uid: DeckSurf.SDK.Models.DeviceErrorCategory
   commentId: T:DeckSurf.SDK.Models.DeviceErrorCategory
   parent: DeckSurf.SDK.Models

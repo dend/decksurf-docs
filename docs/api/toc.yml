@@ -141,6 +141,10 @@
     name: DeviceColor
     monikers:
     - net10.0
+  - uid: DeckSurf.SDK.Models.DeviceColorJsonConverter
+    name: DeviceColorJsonConverter
+    monikers:
+    - net10.0
   - uid: DeckSurf.SDK.Models.DeviceErrorCategory
     name: DeviceErrorCategory
     monikers:

@@ -5,6 +5,7 @@ items:
   id: CommandMapping
   children:
   - DeckSurf.SDK.Models.CommandMapping.#ctor
+  - DeckSurf.SDK.Models.CommandMapping.ButtonColor
   - DeckSurf.SDK.Models.CommandMapping.ButtonImagePath
   - DeckSurf.SDK.Models.CommandMapping.ButtonIndex
   - DeckSurf.SDK.Models.CommandMapping.Command
@@ -56,6 +57,59 @@ items:
   exceptions: []
   modifiers.csharp:
   - public
+  monikers:
+  - net10.0
+- uid: DeckSurf.SDK.Models.CommandMapping.ButtonColor
+  commentId: P:DeckSurf.SDK.Models.CommandMapping.ButtonColor
+  id: ButtonColor
+  parent: DeckSurf.SDK.Models.CommandMapping
+  langs:
+  - csharp
+  name: ButtonColor
+  nameWithType: CommandMapping.ButtonColor
+  fullName: DeckSurf.SDK.Models.CommandMapping.ButtonColor
+  type: Property
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: >-
+    Gets or sets the backlight color for <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Models.MappingTarget.TouchButton"></xref>
+
+    mappings, applied through <xref data-throw-if-not-resolved="true" uid="DeckSurf.SDK.Interfaces.IConnectedDevice.SetKeyColor(System.Int32,DeckSurf.SDK.Models.DeviceColor)"></xref>
+
+    while the profile is active. Null leaves the host's default treatment.
+
+    Stored in profile JSON as a <code data-dev-comment-type="c">#RRGGBB</code> string.
+  syntax:
+    content: >-
+      [[System.Text.Json.Serialization.JsonConverter(typeof(DeckSurf.SDK.Models.DeviceColorJsonConverter))]]
+
+      [[System.Text.Json.Serialization.JsonIgnore(Condition=System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull)]]
+
+      [[System.Text.Json.Serialization.JsonPropertyName("button_color")]]
+
+      public DeckSurf.SDK.Models.DeviceColor? ButtonColor { get; set; }
+    return:
+      type: System.Nullable{DeckSurf.SDK.Models.DeviceColor}
+      description: ''
+    content.csharp: >-
+      [[System.Text.Json.Serialization.JsonConverter(typeof(DeckSurf.SDK.Models.DeviceColorJsonConverter))]]
+
+      [[System.Text.Json.Serialization.JsonIgnore(Condition=System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull)]]
+
+      [[System.Text.Json.Serialization.JsonPropertyName("button_color")]]
+
+      public DeckSurf.SDK.Models.DeviceColor? ButtonColor { get; set; }
+  overload: DeckSurf.SDK.Models.CommandMapping.ButtonColor*
+  exceptions: []
+  attributes:
+  - type: '[System.Text.Json.Serialization.JsonConverterAttribute'
+  - type: '[System.Text.Json.Serialization.JsonIgnoreAttribute'
+  - type: '[System.Text.Json.Serialization.JsonPropertyNameAttribute'
+  modifiers.csharp:
+  - public
+  - get
+  - set
   monikers:
   - net10.0
 - uid: DeckSurf.SDK.Models.CommandMapping.ButtonImagePath
@@ -313,6 +367,42 @@ references:
   nameWithType: CommandMapping.CommandMapping()
   fullName: DeckSurf.SDK.Models.CommandMapping.CommandMapping()
   type: constructor
+- uid: DeckSurf.SDK.Models.CommandMapping.ButtonColor
+  parent: DeckSurf.SDK.Models.CommandMapping
+  isExternal: false
+  name: ButtonColor
+  nameWithType: CommandMapping.ButtonColor
+  fullName: DeckSurf.SDK.Models.CommandMapping.ButtonColor
+  type: property
+- uid: System.Nullable`1
+  isExternal: true
+  name: Nullable
+  nameWithType: Nullable
+  fullName: System.Nullable
+- uid: DeckSurf.SDK.Models.DeviceColor
+  name: DeviceColor
+  nameWithType: DeviceColor
+  fullName: DeckSurf.SDK.Models.DeviceColor
+- uid: System.Nullable{DeckSurf.SDK.Models.DeviceColor}
+  parent: System
+  name: Nullable<DeviceColor>
+  nameWithType: Nullable<DeviceColor>
+  fullName: System.Nullable<DeckSurf.SDK.Models.DeviceColor>
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: DeckSurf.SDK.Models.DeviceColor
+    name: DeviceColor
+    nameWithType: DeviceColor
+    fullName: DeckSurf.SDK.Models.DeviceColor
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
 - uid: DeckSurf.SDK.Models.CommandMapping.ButtonImagePath
   parent: DeckSurf.SDK.Models.CommandMapping
   isExternal: false
@@ -389,6 +479,16 @@ references:
   monikers:
   - net10.0
   type: constructor
+- uid: DeckSurf.SDK.Models.CommandMapping.ButtonColor*
+  commentId: Overload:DeckSurf.SDK.Models.CommandMapping.ButtonColor
+  parent: DeckSurf.SDK.Models.CommandMapping
+  isExternal: false
+  name: ButtonColor
+  nameWithType: CommandMapping.ButtonColor
+  fullName: DeckSurf.SDK.Models.CommandMapping.ButtonColor
+  monikers:
+  - net10.0
+  type: property
 - uid: DeckSurf.SDK.Models.CommandMapping.ButtonImagePath*
   commentId: Overload:DeckSurf.SDK.Models.CommandMapping.ButtonImagePath
   parent: DeckSurf.SDK.Models.CommandMapping
