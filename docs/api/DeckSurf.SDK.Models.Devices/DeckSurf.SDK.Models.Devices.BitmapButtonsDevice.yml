@@ -204,6 +204,11 @@ items:
   assemblies:
   - DeckSurf.SDK
   namespace: DeckSurf.SDK.Models.Devices
+  remarks: >-
+    The Mini firmware expects key images rotated 270 degrees and then flipped vertically.
+
+
+    Rotation alone renders content inverted on the hardware.
   syntax:
     content: public override DeckSurf.SDK.Models.DeviceRotation ImageRotation { get; }
     return:

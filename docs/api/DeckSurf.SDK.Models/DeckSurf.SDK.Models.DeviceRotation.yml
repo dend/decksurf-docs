@@ -7,6 +7,7 @@ items:
   - DeckSurf.SDK.Models.DeviceRotation.None
   - DeckSurf.SDK.Models.DeviceRotation.Rotate180
   - DeckSurf.SDK.Models.DeviceRotation.Rotate270
+  - DeckSurf.SDK.Models.DeviceRotation.Rotate270FlipVertical
   langs:
   - csharp
   name: DeviceRotation
@@ -101,6 +102,37 @@ items:
   monikers:
   - net10.0
   literalValue: "2"
+- uid: DeckSurf.SDK.Models.DeviceRotation.Rotate270FlipVertical
+  commentId: F:DeckSurf.SDK.Models.DeviceRotation.Rotate270FlipVertical
+  id: Rotate270FlipVertical
+  parent: DeckSurf.SDK.Models.DeviceRotation
+  langs:
+  - csharp
+  name: Rotate270FlipVertical
+  nameWithType: DeviceRotation.Rotate270FlipVertical
+  fullName: DeckSurf.SDK.Models.DeviceRotation.Rotate270FlipVertical
+  type: Field
+  assemblies:
+  - DeckSurf.SDK
+  namespace: DeckSurf.SDK.Models
+  summary: >-
+    Rotate the image 270 degrees, then flip it vertically. The combined result is a transpose
+
+    across the main diagonal: the top-left corner stays in place while the top-right and
+
+    bottom-left corners swap. This is the orientation expected by BMP-based devices such as
+
+    the Stream Deck Mini, whose firmware otherwise displays rotated content mirrored.
+  syntax:
+    content: Rotate270FlipVertical
+    return:
+      type: DeckSurf.SDK.Models.DeviceRotation
+      description: ''
+    content.csharp: Rotate270FlipVertical
+  exceptions: []
+  monikers:
+  - net10.0
+  literalValue: "3"
 references:
 - uid: DeckSurf.SDK.Models
   commentId: N:DeckSurf.SDK.Models
@@ -141,4 +173,11 @@ references:
   name: Rotate270
   nameWithType: DeviceRotation.Rotate270
   fullName: DeckSurf.SDK.Models.DeviceRotation.Rotate270
+  type: field
+- uid: DeckSurf.SDK.Models.DeviceRotation.Rotate270FlipVertical
+  parent: DeckSurf.SDK.Models.DeviceRotation
+  isExternal: false
+  name: Rotate270FlipVertical
+  nameWithType: DeviceRotation.Rotate270FlipVertical
+  fullName: DeckSurf.SDK.Models.DeviceRotation.Rotate270FlipVertical
   type: field
