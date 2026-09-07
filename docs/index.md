@@ -12,4 +12,4 @@ If you are curious about exploring the tooling that is available, start with the
 
 ## Questions & Feedback
 
-Reach out to [Den Delimarsky](https://den.dev) on [Twitter](https://twitter.com/denniscode).
+Reach out to [Den](https://den.dev).
